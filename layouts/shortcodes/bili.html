@@ -1,0 +1,14 @@
+{{- $bvid := "" -}}
+{{if .Get "id"}}
+  {{$bvid = .Get "id"}}
+{{else if .Get 0}}
+  {{$bvid = .Get 0}}
+{{end}}
+{{ $part := .Get "p" | default (.Get 1 | default 1) }}
+{{if $bvid}}
+    <div class="video_wrapper" style="display: flex; justify-content: center;">
+      <iframe src="//player.bilibili.com/player.html?isOutside=true&bvid={{ $bvid }}&p={{ $part }}" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+    </div>
+{{else}}
+  <h6>请填写视频 url 中的视频 id，例如：BV1FV411d7u7</h6>
+{{end}}

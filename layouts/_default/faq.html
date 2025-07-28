@@ -1,0 +1,201 @@
+{{ define "main" }}
+  <!-- layouts/qa/list.html -->
+<style>
+:root {
+  --primary-color: #1890ff;          /* 主蓝色 */
+  --primary-hover-color: #096dd9;    /* 悬停蓝色 */
+  --text-gray: #6c757d;              /* 按钮默认灰色 */
+  --text-dark-gray: #5a6268;         /* 按钮悬停灰色 */
+  --text-darker-gray: #545b62;       /* 按钮按下灰色 */
+  --background-light: #f5f5f5;       /* 浅灰色背景 */
+  --border-light: #e0e0e0;           /* 浅灰色边框 */
+  --background-hover: #eaeaea;       /* 悬停浅灰色背景 */
+  --border-hover: #bdbdbd;           /* 悬停深灰色边框 */
+  --shadow-color: rgba(0, 0, 0, 0.1);/* 阴影颜色 */
+  --dark-mode-bg: #333;              /* 暗色模式背景 */
+  --dark-mode-text: #d8dde2;         /* 暗色模式文字 */
+  --gold-color: #ffd700;             /* 金色（用于管理员角色） */
+  --light-gray: #abb3c8;             /* 浅灰色（用于普通用户角色） */
+  --sponsor-bg: #4a90e2;             /* 赞助按钮背景色 */
+  --sponsor-hover-bg: #357abd;       /* 赞助按钮悬停背景色 */
+  --close-btn-color: #ff4d4f;        /* 关闭按钮颜色 */
+}
+/* Q&A页面 */
+.faq-container {
+    max-width: 780px;
+    margin: 0.5rem 0.5rem;
+    padding: 0.05rem 0.3rem;
+}
+
+.faq-msg {
+    display: flex;
+    margin: 1.2rem 0;
+    gap: 6px;
+}
+
+.faq-date {
+    justify-content: center;
+    font-size: 0.75em;
+    color: #aaa;
+}
+
+.faq-question { 
+  flex-direction: row;
+}
+.faq-answer { 
+  flex-direction: row;
+}
+
+.faq-userinfo {
+  display: flex;
+  align-items: center;
+}
+
+.faq-userrole {
+  color: #fff;
+  background-color: var(--text-gray); /* 使用全局灰色 */
+  border-radius: 3px;
+  padding: 0.05rem 0.5rem;
+  margin-right: 0.5rem;
+  font-size: 0.8em;
+}
+
+.faq-userrole.faq-admin {
+  background-color: var(--gold-color); /* 管理员角色颜色 */
+}
+.faq-userrole.faq-user {
+  background-color: var(--light-gray); /* 普通用户角色颜色 */
+}
+
+.faq-avatar {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50% !important;
+    border: 1px solid #e1e1e1;
+    flex-shrink: 0;
+}
+
+.faq-nickname {
+    color: #aaa;
+    font-size: 1em;
+}
+
+.faq-content {
+    max-width: 18rem;
+}
+
+.faq-bubble {
+    background-color: var(--background-light); /* 使用全局浅灰背景 */
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    width: fit-content; 
+    border-radius: 6px;
+    line-height: 1.6;
+    box-shadow: 0 1px 3px var(--shadow-color);
+    text-align: left !important;
+    flex-direction: row !important;
+}
+</style>
+
+<header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{- if .Description }}
+    <div class="post-description">
+        {{ .Description }}
+    </div>
+    {{- end }}
+</header>
+
+<div class="faq-container">
+    {{ range $id, $faq :=.Site.Data.faq }}
+        {{ $q := $faq.Q | default "" }} <!-- 问题 -->
+        {{ $a := $faq.A | default "" }} <!-- 回答 -->
+        {{ $b := $faq.B | default "" }} <!-- 补充 -->
+        {{ $du1 := 3228828029 }} <!-- brown -->
+        {{ $du2 := 3077385525 }} <!-- cyan -->
+        {{ $du3 := 1359973776 }} <!-- green -->
+        {{ $u1 := $faq.U1 | default $du1 }} <!-- 提问人 -->
+        {{ $u2 := $faq.U2 | default $du2 }} <!-- 回答人 -->
+        {{ $u3 := $faq.U3 | default $du3 }} <!-- 补充人 -->
+        {{ $n1 := $faq.N1 | default "" }}
+        {{ $n2 := $faq.N2 | default "" }}
+        {{ $n3 := $faq.N3 | default "" }}
+        
+        {{ if or $q $a $b}}
+            <p class="faq-msg faq-date">{{$id}}</p>
+        {{ end }}
+
+        <!-- 提问人 -->
+        {{ if and $q }}
+        <div class="faq-msg faq-question">
+          <img src='http://q1.qlogo.cn/g?b=qq&nk={{ $u1 }}&s=100'
+               class="faq-avatar"
+               alt="QQ头像 {{ $u1 }}">
+          <div class="faq-content">
+            <div class="faq-userinfo">
+              <!-- 身份部分 -->
+              <div class="faq-userrole {{ if eq $u1 1163650990 }}faq-admin{{ else if $n1 }}faq-user{{ end }}">
+                {{ if eq $u1 1163650990 }}群主{{ else if $n1 }}群员{{ else }}匿名{{ end }}
+              </div>
+              <!-- 昵称部分 -->
+              <div class="faq-nickname">
+                {{ if $n1 }}{{ $n1 }}{{ else }}神秘群员{{ end }}【问】
+              </div>
+            </div>
+            <div class="faq-bubble faq-q">{{ $q | markdownify }}</div>
+          </div>
+        </div>
+      {{ end }}
+        
+        
+        <!-- 回答人 -->
+        {{ if and $a }}
+          <div class="faq-msg faq-answer">
+            <img src='http://q1.qlogo.cn/g?b=qq&nk={{ $u2 }}&s=100'
+                 class="faq-avatar"
+                 alt="QQ头像 {{ $u2 }}">
+            <div class="faq-content">
+              <div class="faq-userinfo">
+                <!-- 身份部分 -->
+                <div class="faq-userrole {{ if eq $u2 1163650990 }}faq-admin{{ else if $n2 }}faq-user{{ end }}">
+                  {{ if eq $u2 1163650990 }}群主{{ else if $n2 }}群员{{ else }}匿名{{ end }}
+                </div>
+                <!-- 昵称部分 -->
+                <div class="faq-nickname">
+                  {{ if $n2 }}{{ $n2 }}{{ else }}热心群员{{ end }}〖答〗
+                </div>
+              </div>
+              <div class="faq-bubble faq-a">{{ $a | markdownify }}</div>
+            </div>
+          </div>
+        {{ end }}
+
+        <!-- 补充人 -->
+        {{ if and $b }}
+          <div class="faq-msg faq-answer">
+            <img src='http://q1.qlogo.cn/g?b=qq&nk={{ $u3 }}&s=100'
+                 class="faq-avatar"
+                 alt="QQ头像 {{ $u3 }}">
+            <div class="faq-content">
+              <div class="faq-userinfo">
+                <!-- 身份部分 -->
+                <div class="faq-userrole {{ if eq $u3 1163650990 }}faq-admin{{ end }}">
+                  {{ if eq $u3 1163650990 }}群主{{ else if $n3 }}群员{{ else }}匿名{{ end }}
+                </div>
+                <!-- 昵称部分 -->
+                <div class="faq-nickname">
+                  {{ if $n3 }}{{ $n3 }}{{ else }}热心群员{{ end }}〖补〗
+                </div>
+              </div>
+              <div class="faq-bubble faq-a">{{ $b | markdownify }}</div>
+            </div>
+          </div>
+        {{ end }}
+
+        <hr>
+    {{ end }}
+</div>
+
+
+
+{{ end }}

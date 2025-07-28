@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Don't Starve 资源文件工具</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        :root {
+            /* 白天模式变量 */
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --text-secondary: #666666;
+            --accent-color: #e64a19;
+            --border-color: #e0e0e0;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            --success: #4caf50;
+            --info: #2196f3;
+            --warning: #ff9800;
+            --error: #f44336;
+            --file-bg: #f5f7fa;
+            --progress-bg: #e9ecef;
+            --progress-fill: #e64a19;
+            --icon-color: #5f6368;
+            --tab-active: #e64a19;
+            --tab-inactive: #bdbdbd;
+        }
+
+        body.dark-mode {
+            /* 黑暗模式变量 */
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --text-color: #e0e0e0;
+            --text-secondary: #b0b0b0;
+            --accent-color: #ff6e40;
+            --border-color: #333333;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+            --success: #66bb6a;
+            --info: #42a5f5;
+            --warning: #ffa726;
+            --error: #ef5350;
+            --file-bg: #252525;
+            --progress-bg: #2d2d2d;
+            --progress-fill: #ff6e40;
+            --icon-color: #b0b0b0;
+            --tab-active: #ff6e40;
+            --tab-inactive: #616161;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            min-height: 100vh;
+            // padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 1.6;
+        }
+
+        header {
+            width: 100%;
+            max-width: 1000px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            padding: 0 10px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .mode-toggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--icon-color);
+            font-size: 1.5rem;
+            padding: 8px;
+            border-radius: 50%;
+            transition: all 0.3s;
+        }
+
+        .mode-toggle:hover {
+            background: rgba(0, 0, 0, 0.05);
+            color: var(--accent-color);
+        }
+
+        .dark-mode .mode-toggle:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .tabs {
+            display: flex;
+            border-bottom: 2px solid var(--border-color);
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            padding: 15px 30px;
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--tab-inactive);
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s;
+        }
+
+        .tab.active {
+            color: var(--accent-color);
+            border-bottom: 3px solid var(--tab-active);
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .section {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--accent-color);
+        }
+
+        .download-area {
+            text-align: center;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .upload-area {
+            border: 2px dashed var(--border-color);
+            border-radius: 12px;
+            padding: 40px 20px;
+            text-align: center;
+            transition: all 0.3s;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .upload-area:hover, .upload-area.drag-over {
+            border-color: var(--accent-color);
+            background: rgba(230, 74, 25, 0.05);
+        }
+
+        .dark-mode .upload-area:hover, .dark-mode .upload-area.drag-over {
+            background: rgba(255, 110, 64, 0.08);
+        }
+
+        .upload-icon {
+            font-size: 3.5rem;
+            color: var(--accent-color);
+            margin-bottom: 20px;
+        }
+
+        .upload-text {
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin-bottom: 15px;
+            color: var(--text-color);
+        }
+
+        .upload-subtext {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            background: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+
+        .btn-success {
+            background: var(--success);
+        }
+
+        .btn-info {
+            background: var(--info);
+        }
+
+        .btn-warning {
+            background: var(--warning);
+        }
+
+        .file-input {
+            display: none;
+        }
+
+        .info-list {
+            list-style: none;
+        }
+
+        .info-list li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+            color: var(--text-secondary);
+        }
+
+        .info-list li:before {
+            content: "•";
+            position: absolute;
+            left: 10px;
+            color: var(--accent-color);
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+
+        .progress-container {
+            margin: 20px 0;
+        }
+
+        .progress-bar {
+            height: 10px;
+            background-color: var(--progress-bg);
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background-color: var(--progress-fill);
+            width: 0%;
+            transition: width 0.3s;
+            border-radius: 5px;
+        }
+
+        .progress-text {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            text-align: center;
+        }
+
+        .result-area {
+            display: none;
+        }
+
+.stats {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.stat-item {
+    flex: 1;
+    padding: 5px 0;
+    border-radius: 4px;
+}
+.stat-value {
+    font-size: 1rem;
+    margin-bottom: 2px;
+}
+.stat-label {
+    font-size: 0.7rem;
+}
+
+
+        .file-list {
+            max-height: 300px;
+            overflow-y: auto;
+            background-color: var(--file-bg);
+            border-radius: 8px;
+            padding: 15px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 25px;
+        }
+
+        .file-item {
+            padding: 12px 15px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            font-family: monospace;
+        }
+
+        .file-item:last-child {
+            border-bottom: none;
+        }
+
+        .file-name {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            flex: 1;
+        }
+
+        .file-size {
+            color: var(--text-secondary);
+            min-width: 80px;
+            text-align: right;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .action-btn {
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            min-width: 200px;
+            justify-content: center;
+        }
+
+        .download-btn {
+            background: var(--success);
+            color: white;
+        }
+
+        .reset-btn {
+            background: var(--text-secondary);
+            color: white;
+        }
+
+        .pack-btn {
+            background: var(--info);
+            color: white;
+        }
+
+        .filename-preview {
+            margin-top: 20px;
+            padding: 12px 15px;
+            background-color: var(--file-bg);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
+        .filename-preview span {
+            font-weight: 600;
+            color: var(--accent-color);
+        }
+
+        .error-message {
+            color: var(--error);
+            font-weight: 500;
+            text-align: center;
+            margin-top: 15px;
+            display: none;
+        }
+
+        .filename-input {
+            width: 100%;
+            padding: 12px 15px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            background-color: var(--file-bg);
+            color: var(--text-color);
+            font-size: 1rem;
+            margin: 15px 0;
+        }
+
+        footer {
+            width: 100%;
+            max-width: 1000px;
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .process-flow {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 30px 0;
+            position: relative;
+        }
+        
+        .process-flow:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--border-color);
+            z-index: 0;
+        }
+        
+        .flow-step {
+            background: var(--card-bg);
+            border: 2px solid var(--border-color);
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: var(--accent-color);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .flow-text {
+            position: absolute;
+            bottom: -30px;
+            text-align: center;
+            width: 100%;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            <i class="fas fa-fire"></i>
+            Don't Starve 资源文件工具
+        </h1>
+        <button class="mode-toggle" id="modeToggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </header>
+
+    <div class="container">
+        <div class="tabs">
+            <div class="tab active" data-tab="unpack">解包资源文件</div>
+            <div class="tab" data-tab="pack">打包资源文件</div>
+        </div>
+
+        <!-- 解包标签内容 -->
+        <div id="unpack-tab" class="tab-content active">
+
+            <div class="section">
+                <h2 class="section-title">
+                    <i class="fas fa-info-circle"></i>
+                    解包说明
+                </h2>
+                <ul class="info-list">
+                    <li>浏览器本地处理，不会消耗手机流量</li>
+                    <li>解包后的文件将会生成 .zip 文件供您下载</li>
+                    <li>解包过程可能需要一些时间，具体取决于文件大小</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">
+                    <i class="fas fa-file-export"></i>
+                    解包资源文件
+                </h2>
+                <div class="process-flow">
+                    <div class="flow-step">
+                        <i class="fas fa-archive"></i>
+                        <div class="flow-text">上传.archive</div>
+                    </div>
+                    <div class="flow-step">
+                        <i class="fas fa-cog"></i>
+                        <div class="flow-text">处理文件...</div>
+                    </div>
+                    <div class="flow-step">
+                        <i class="fas fa-file-archive"></i>
+                        <div class="flow-text">生成.zip</div>
+                    </div>
+                </div>
+                <div class="upload-area" id="unpack-dropZone">
+                    <div class="upload-icon">
+                        <i class="fas fa-file-archive"></i>
+                    </div>
+                    <div class="upload-text">拖放 .archive 文件到此处</div>
+                    <p class="upload-subtext">或</p>
+                    <button class="btn" id="unpack-browseBtn">
+                        <i class="fas fa-folder-open"></i>
+                        <span>选择文件</span>
+                    </button>
+                    <input type="file" id="unpack-fileInput" class="file-input" accept=".archive">
+                    
+                    <div class="filename-preview" id="unpack-filenamePreview" style="display:none;">
+                        下载文件将保存为: <span id="unpack-downloadFilename">_example.zip</span>
+                    </div>
+                    
+                    <div class="error-message" id="unpack-errorMessage"></div>
+                </div>
+            </div>
+
+            
+
+            <div class="section result-area" id="unpack-resultArea">
+                <h2 class="section-title">
+                    <i class="fas fa-file-alt"></i>
+                    解包结果
+                </h2>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-value" id="unpack-fileCount">0</div>
+                        <div class="stat-label">文件数量</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="unpack-totalSize">0 KB</div>
+                        <div class="stat-label">全部文件</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="unpack-archiveSize">0 KB</div>
+                        <div class="stat-label">资源文件</div>
+                    </div>
+                </div>
+                
+                <h3 style="margin-bottom: 15px; font-weight: 500; color: var(--text-color);">包含的文件:</h3>
+                <div class="file-list" id="unpack-fileList">
+                    <div class="file-item">
+                        <div class="file-name">文件列表将在解包后显示...</div>
+                        <div class="file-size">0 KB</div>
+                    </div>
+                </div>
+
+                <div class=" progress-container" id="unpack-progressContainer" style="display:none;">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="unpack-progressFill"></div>
+                    </div>
+                    <div class="progress-text" id="unpack-progressText">正在初始化...</div>
+                </div>
+                
+                <div class="action-buttons">
+                    <button class="action-btn download-btn" id="unpack-downloadBtn">
+                        <i class="fas fa-download"></i>
+                        <span>下载解包文件</span>
+                    </button>
+                    <button class="action-btn reset-btn" id="unpack-resetBtn">
+                        <i class="fas fa-redo"></i>
+                        <span>处理新文件</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 打包标签内容 -->
+        <div id="pack-tab" class="tab-content">
+
+            <div class="section">
+                <h2 class="section-title">
+                    <i class="fas fa-info-circle"></i>
+                    打包说明
+                </h2>
+                <ul class="info-list">
+                    <li>浏览器本地处理，不会消耗手机流量</li>
+                    <li>请上传通过本工具解包生成的 .zip 文件</li>
+                    <li>打包过程可能需要一些时间，具体取决于文件大小</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">
+                    <i class="fas fa-file-import"></i>
+                    创建资源文件
+                </h2>
+                <div class="process-flow">
+                    <div class="flow-step">
+                        <i class="fas fa-file-archive"></i>
+                        <div class="flow-text">上传.zip</div>
+                    </div>
+                    <div class="flow-step">
+                        <i class="fas fa-cog"></i>
+                        <div class="flow-text">处理文件...</div>
+                    </div>
+                    <div class="flow-step">
+                        <i class="fas fa-archive"></i>
+                        <div class="flow-text">生成.archive</div>
+                    </div>
+                </div>
+                
+                <div class="upload-area" id="pack-dropZone">
+                    <div class="upload-icon">
+                        <i class="fas fa-file-zipper"></i>
+                    </div>
+                    <div class="upload-text">拖放 .zip 文件到此处</div>
+                    <p class="upload-subtext">或</p>
+                    <button class="btn" id="pack-browseBtn">
+                        <i class="fas fa-folder-open"></i>
+                        <span>选择ZIP文件</span>
+                    </button>
+                    <input type="file" id="pack-fileInput" class="file-input" accept=".zip">
+                    
+                    <div class="filename-preview" id="pack-filenamePreview" style="display:none;">
+                        资源文件将保存为: <span id="pack-downloadFilename">dlc0002.archive</span>
+                    </div>
+                    
+                    <div class="error-message" id="pack-errorMessage"></div>
+                </div>
+            </div>
+
+            <div class="section download-area">
+
+                <div class="progress-container" id="pack-progressContainer" style="display:none;">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="pack-progressFill"></div>
+                    </div>
+                    <div class="progress-text" id="pack-progressText">正在初始化...</div>
+                </div>
+            
+                <button class="btn pack-btn" id="pack-btn" disabled>
+                    <i class="fas fa-box"></i>
+                    <span>开始打包</span>
+                </button>
+            </div>
+
+            <div class="section result-area" id="pack-resultArea" style="display:none;">
+                <h2 class="section-title">
+                    <i class="fas fa-check-circle"></i>
+                    打包完成
+                </h2>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-value" id="pack-fileCount">0</div>
+                        <div class="stat-label">文件数量</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="pack-totalSize">0 KB</div>
+                        <div class="stat-label">全部文件</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="pack-archiveSize">0 KB</div>
+                        <div class="stat-label">资源文件</div>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <button class="action-btn download-btn" id="pack-downloadBtn">
+                        <i class="fas fa-download"></i>
+                        <span>下载资源文件</span>
+                    </button>
+                    <button class="action-btn reset-btn" id="pack-resetBtn">
+                        <i class="fas fa-redo"></i>
+                        <span>创建新资源文件</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p><i class="fas fa-exclamation-circle"></i> 此工具仅用于教育目的 | 文件处理在本地浏览器中完成</p>
+    </footer>
+
+    <!-- 引入外部库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <!-- 引入核心库 -->
+    <script src="{{ (resources.Get "js/klfa.encrypt.js" | minify | fingerprint).RelPermalink }}" defer></script>
+</body>
+</html>

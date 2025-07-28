@@ -1,0 +1,264 @@
+# baseURL: 'https://example.org/'
+# languageCode: 'zh-cn'
+# title: "BM Mod Site"
+theme: "PaperMod"
+
+pagination.pagerSize: 20
+
+# ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- #
+
+outputs:
+  home:
+    - HTML
+    # - RSS
+    - JSON
+minify:
+  disableXML: true
+  minifyOutput: true
+
+# ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- #
+
+defaultContentLanguage: zh
+
+languages:
+  zh:
+    languageName: "Zh"
+    weight: 1
+    menu:
+      main:
+        - name: 主页
+          url: /
+          weight: -1
+        - name: 日志
+          url: tags/日志/
+          weight: 2
+        - name: 资料
+          url: tags/资料/
+          weight: 3
+        - name: 搜索
+          url: search/
+          weight: 4
+        - name: 问答
+          url: faq/
+          weight: 5
+        - name: 归档
+          url: archives/
+          weight: 5
+        # - name: 标签
+          # url: tags/
+          # weight: 5
+        - name: 关于
+          url: about/
+          weight: 10
+    params:
+      homeInfoParams:
+        Title: "👋 档案馆 - 兔人协会"
+        Content: >
+          - 　兔人框架，为单机版饥荒( <i class="bi bi-android2"></i> & <i class="bi bi-apple"></i> )提供模组运行环境。
+
+# - 　欢迎加入玩家交流社群：
+# - 　　[<i class="bi bi-link-45deg">联系邮箱</i>](mailto:cnzixn@qq.com)　　[<i class="bi bi-link-45deg">B站主页</i>](https://b23.tv/kf3yuSv)　　[<i class="bi bi-link-45deg">腾讯频道</i>](https://pd.qq.com/s/bl6w0albb?b=5)
+# - 　　[<i class="bi bi-link-45deg">养老主群</i>](https://qm.qq.com/q/g0weZCVQMU)　　[<i class="bi bi-link-45deg">安卓互助</i>](https://qm.qq.com/q/3xoKf5H4EM)　　[<i class="bi bi-link-45deg">苹果互助</i>](https://qm.qq.com/q/88L6QyUQVi)
+      DateFormat: "2006/01/02" # 06/01/02 03:04:05
+      socialIcons:
+        - name: email
+          title: 邮箱
+          url: "mailto:cnzixn@qq.com"
+        - name: bilibili
+          title: B站
+          url: "https://b23.tv/kf3yuSv"
+        - name: qunpro
+          title: 频道
+          url: "https://pd.qq.com/s/bl6w0albb?b=5"
+        - name: qq
+          title: 养老群
+          url: "https://qm.qq.com/q/g0weZCVQMU"
+        - name: qq
+          title: 安卓群
+          url: "https://qm.qq.com/q/3xoKf5H4EM"
+        - name: qq
+          title: 苹果群
+          url: "https://qm.qq.com/q/88L6QyUQVi"
+      # editPost:
+        # URL: "/cms/#/edit"
+        # Text: "编辑" # edit text
+        # appendFilePath: true # to append file path to Edit link
+        # removeMDExtension: true  # true=移除.md | false=保留.md（默认true）
+
+  # en:
+    # languageName: "En"
+    # weight: 2
+    # menu:
+      # main:
+        # - name: Posts
+          # url: /
+          # weight: 1
+        # - name: Archive
+          # url: archives/
+          # weight: 5
+        # - name: Search
+          # url: search/
+          # weight: 10
+        # - name: Tags
+          # url: tags/
+          # weight: 10
+    # params:
+      # dateFormat: "Jan 2, 2006"
+      # homeInfoParams:
+        # Title: "👋 Welcome to T363’Log"
+        # Content: >
+          # - **PaperMod**  is designed to be clean and simple but fast and responsive theme with useful feature-set that enhances UX.
+
+          # - Feel free to show your support by giving us a star 🌟 on GitHub and sharing with your friends and social media .
+    
+          # - [**PaperMod**](https://github.com/adityatelange/hugo-PaperMod) is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper/tree/4330c8b12aa48bfdecbcad6ad66145f679a430b3).
+      # editPost:
+        # URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
+        # Text: "Edit" # edit text
+        # appendFilePath: true # to append file path to Edit link
+        # removeMDExtension: false  # true=移除.md | false=保留.md（默认true）
+
+# ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- #
+
+# 可以放到“语言”下面
+
+params:
+  env: development # production/development，to enable google analytics, opengraph, twitter-cards and schema.
+  description: "兔人框架，为饥荒手游提供模组运行环境。"
+  author: 管理员
+  # author: ["Me", "You"] # multiple authors
+
+  defaultTheme: auto
+  # disableThemeToggle: true
+  # ShowShareButtons: true
+  # ShowWordCount: true
+  # ShowReadingTime: true
+  # disableSpecial1stPost: true
+  # displayFullLangName: true
+  ShowPostNavLinks: true
+  # ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  # ShowRssButtonInSectionTermList: true
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+  # ShowToc: true
+  comments: true
+  images: ["img/logo.webp"]
+
+  # profileMode:
+    # enabled: false
+    # title: PaperMod
+    # imageUrl: "#"
+    # imageTitle: my image
+    # # imageWidth: 120
+    # # imageHeight: 120
+    # buttons:
+      # - name: Archives
+        # url: archives
+      # - name: Tags
+        # url: tags
+
+  # homeInfoParams:
+        # Title: "👋 Welcome to Lil’Log"
+        # Content: >
+          # Hi, this is Lilian. I’m documenting my learning notes in this blog since 2017. Based on the number of grammar mistakes in my posts, you can tell how much ChatGPT is involved 😉.x
+
+  # socialIcons:
+    # - name: github
+      # title: View Source on Github
+      # url: "https://github.com/adityatelange/hugo-PaperMod"
+    # - name: Discord
+      # title: Join discord community
+      # url: "https://discord.gg/ahpmTvhVmp"
+    # - name: X
+      # title: Share PaperMod on X/Twitter
+      # url: "https://x.com/intent/tweet/?text=Checkout%20Hugo%20PaperMod%20%E2%9C%A8%0AA%20fast,%20clean,%20responsive%20Hugo%20theme.&url=https://github.com/adityatelange/hugo-PaperMod&hashtags=Hugo,PaperMod"
+    # - name: KoFi
+      # title: Buy me a Ko-Fi :)
+      # url: "https://ko-fi.com/adityatelange"
+
+  # editPost:
+    # URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
+    # Text: "Edit" # edit text
+    # appendFilePath: true # to append file path to Edit link
+
+  # label:
+  # iconSVG: '<svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 -960 960 960" fill="currentColor"><path d="M320-240h320v-80H320v80Zm0-160h320v-80H320v80ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"/></svg>'
+  # text: "Home"
+  # icon: icon.png
+  # iconHeight: 35
+
+  # analytics:
+  #     google:
+  #         SiteVerificationTag: "XYZabc"
+
+  assets:
+    disableHLJS: true
+  #     favicon: "<link / abs url>"
+  #     favicon16x16: "<link / abs url>"
+  #     favicon32x32: "<link / abs url>"
+  #     apple_touch_icon: "<link / abs url>"
+  #     safari_pinned_tab: "<link / abs url>"
+
+  # cover:
+  #     hidden: true # hide everywhere but not in structured data
+  #     hiddenInList: true # hide on list pages and home
+  #     hiddenInSingle: true # hide on single page
+
+  # fuseOpts:
+  #     isCaseSensitive: false
+  #     shouldSort: true
+  #     location: 0
+  #     distance: 1000
+  #     threshold: 0.4
+  #     minMatchCharLength: 0
+  #     keys: ["title", "permalink", "summary", "content"]
+
+  customCSS:
+    - "css/extended/custom.css"  # 对应 assets/css/custom.css
+
+
+# ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- #
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: true
+    anchorLineNos: false
+    codeFences: true
+    guessSyntax: true
+    lineNos: false
+    style: rrt # https://xyproto.github.io/splash/docs/all.html?app_lang=zh-CN
+
+privacy:
+  vimeo:
+    disabled: false
+    simple: true
+
+  twitter:
+    disabled: false
+    enableDNT: true
+    simple: true
+
+  instagram:
+    disabled: false
+    simple: true
+
+  youtube:
+    disabled: false
+    privacyEnhanced: true
+
+# ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- #
+
+services:
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true
+
+# ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- #
+
+
+

@@ -1,0 +1,62 @@
+/*
+This is just a placeholder blank stylesheet so as to support adding custom styles budled with theme's default styles
+
+Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-css-with-themes-assets for more info
+*/
+
+
+
+
+
+/* 图片添加边框（全局生效） */
+.post-content img {
+  /* 边框样式：浅灰色细边框，与白色图片形成区分 */
+  border: 2px solid #e5e7eb;
+  /* 边框与图片间留一点空隙，避免紧贴 */
+  padding: 1px;
+  /* 可选：添加圆角，与主题风格统一 */
+  border-radius: var(--radius);
+  /* 可选：轻微阴影，增强立体感（适合白色背景图） */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+/* 暗色模式下调整边框颜色（避免边框在深色背景下不明显） */
+.dark .post-content img {
+  border-color: #4b5563; /* 深色模式下用深灰色边框 */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* 阴影稍深，增强对比 */
+}
+
+
+
+
+
+/* 代码块圆角样式 */
+.post-content pre {
+  border-radius: var(--radius); /* 使用主题默认圆角变量，保持风格统一 */
+  overflow: hidden; /* 避免内部内容超出圆角范围 */
+}
+
+
+
+
+
+/*首页 socialIcons 添加标题*/
+.social-icons {
+    display: flex;
+    gap: 3px; /* 图标之间的间距 */
+    align-items: center; /* 整体垂直居中 */
+}
+.social-icon-item {
+    display: flex;
+    flex-direction: column; /* 垂直排列图标和文字 */
+    align-items: center; /* 水平居中 */
+    text-decoration: none;
+}
+.social-icon-title {
+    margin-top: 3px; /* 图标和标题的间距 */
+    font-size: 0.8rem; /* 标题文字大小 */
+    text-align: center;
+}
+
+
+
+

@@ -1,0 +1,3 @@
+# 忽略Hugo生成的public目录
+/public/
+/resources/

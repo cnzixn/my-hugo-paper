@@ -1,0 +1,29 @@
+local_backend: true
+
+backend:
+  name: git-gateway
+  branch: main
+  squash_merges: true
+  open_authoring: true
+
+media_folder: static/img
+public_folder: /img
+
+publish_mode: editorial_workflow
+
+
+collections:
+  - name: "posts"
+    label: "文章"
+    folder: "content/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "标题", name: "title" }
+      - { label: "时间", name: "date", widget: "datetime", timezone: "Asia/Shanghai" }
+      - { label: "作者", name: "author" }
+      - { label: "标签", name: "tags", widget: "list"}
+      # - { label: "短链", name: "aliases", widget: "list"}
+      # - { label: "讨论", name: "comments", default: "true"}
+      - { label: "内容", name: "body", widget: "markdown"}
+    publish: false  # 普通用户不可发布
