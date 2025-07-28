@@ -1,6 +1,6 @@
 # baseURL: 'https://example.org/'
 # languageCode: 'zh-cn'
-# title: "BM Mod Site"
+title: "BM Mods"
 theme: "PaperMod"
 
 pagination.pagerSize: 20
