@@ -17,19 +17,19 @@ layout: about
 
 - 兔人框架  
 
-  - 框架已适配饥荒 [<i class="bi bi-android2"></i>](https://play.google.com/store/apps/details?id=com.kleientertainment.doNotStarveShipwrecked) 和 [<i class="bi bi-apple"></i>](https://apps.apple.com/us/app/dont-starve-shipwrecked/id1147297267?l=zh) 版本。  
-
   - 框架本质上是一个“模组”，修复了被官方删减的模组支持功能。  
   
   - 框架安装后，可以使用“海洋之椅”在“巨人国”(RoG)和“船难”(SW)进行穿越。骑牛、栅栏、打包纸等内容，需要通过模组加入到游戏。  
   
   - “DS补丁”由于早期代码公开，被拿去各种魔改用于“收费”，现已停止维护。框架是“DS补丁”的升级版本。  
 
+  - 框架已适配饥荒 [<i class="bi bi-android2"></i>](https://play.google.com/store/apps/details?id=com.kleientertainment.doNotStarveShipwrecked) 和 [<i class="bi bi-apple"></i>](https://apps.apple.com/us/app/dont-starve-shipwrecked/id1147297267?l=zh) 版本。  
+
 
 
 - 兔人模组
 
-  - 来源于“创意工坊”，由各位玩家大佬“移植”。兔人协会将适用于框架的模组进行整理，统一命名为 BMXXX 格式。  
+  - 大部分模组，由各位玩家大佬从“创意工坊”移植而来。兔人协会将适用于框架的模组进行整理，统一命名为 BMXXX 格式。  
   
   - 模组 BM000 是一个测试包，删掉也不影响使用框架。这个模组不会公开代码，想要学习请去看官方原版代码。
 
@@ -56,7 +56,6 @@ layout: about
   - 持续改进和丰富网站的内容。  
 
 - 你可以通过以下方式赞助本站：  
-  - 点击页面广告  
   - 扫描一下二维码  
   {{< figure 
     src="/img/pay-qrcode.webp" 

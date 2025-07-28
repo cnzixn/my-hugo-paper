@@ -1,6 +1,6 @@
 # baseURL: 'https://example.org/'
 # languageCode: 'zh-cn'
-title: "BM Mods"
+title: ""
 theme: "PaperMod"
 
 pagination.pagerSize: 20
@@ -41,9 +41,9 @@ languages:
         - name: 问答
           url: faq/
           weight: 5
-        - name: 归档
-          url: archives/
-          weight: 5
+        # - name: 归档
+          # url: archives/
+          # weight: 5
         # - name: 标签
           # url: tags/
           # weight: 5
@@ -55,10 +55,6 @@ languages:
         Title: "👋 档案馆 - 兔人协会"
         Content: >
           - 　兔人框架，为单机版饥荒( <i class="bi bi-android2"></i> & <i class="bi bi-apple"></i> )提供模组运行环境。
-
-# - 　欢迎加入玩家交流社群：
-# - 　　[<i class="bi bi-link-45deg">联系邮箱</i>](mailto:cnzixn@qq.com)　　[<i class="bi bi-link-45deg">B站主页</i>](https://b23.tv/kf3yuSv)　　[<i class="bi bi-link-45deg">腾讯频道</i>](https://pd.qq.com/s/bl6w0albb?b=5)
-# - 　　[<i class="bi bi-link-45deg">养老主群</i>](https://qm.qq.com/q/g0weZCVQMU)　　[<i class="bi bi-link-45deg">安卓互助</i>](https://qm.qq.com/q/3xoKf5H4EM)　　[<i class="bi bi-link-45deg">苹果互助</i>](https://qm.qq.com/q/88L6QyUQVi)
       DateFormat: "2006/01/02" # 06/01/02 03:04:05
       socialIcons:
         - name: email
@@ -67,16 +63,16 @@ languages:
         - name: bilibili
           title: B站
           url: "https://b23.tv/kf3yuSv"
-        - name: qunpro
+        - name: qq-qunpro
           title: 频道
           url: "https://pd.qq.com/s/bl6w0albb?b=5"
-        - name: qq
+        - name: qq-qun
           title: 养老群
           url: "https://qm.qq.com/q/g0weZCVQMU"
-        - name: qq
+        - name: qq-qun
           title: 安卓群
           url: "https://qm.qq.com/q/3xoKf5H4EM"
-        - name: qq
+        - name: qq-qun
           title: 苹果群
           url: "https://qm.qq.com/q/88L6QyUQVi"
       # editPost:
