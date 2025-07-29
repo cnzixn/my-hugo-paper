@@ -199,9 +199,9 @@ params:
     - name: qq-qun
       title: 安卓群
       url: "https://qm.qq.com/q/3xoKf5H4EM"
-    - name: qq-qun
-      title: 苹果群
-      url: "https://qm.qq.com/q/88L6QyUQVi"
+    # - name: qq-qun
+      # title: 苹果群
+      # url: "https://qm.qq.com/q/88L6QyUQVi"
 
   # editPost:
     # URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
