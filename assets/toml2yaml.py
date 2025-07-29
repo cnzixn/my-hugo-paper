@@ -1,5 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/python3
 
+# python /sdcard/acode/my-hugo-paper/assets/toml2yaml.py
+
 import os
 import re
 import json

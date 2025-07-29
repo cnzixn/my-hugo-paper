@@ -1,7 +1,7 @@
 ---
 'title': '苹果 - 巨魔商店'
-'date': 2025-07-16
-'author': 'bny'
+'date': 2025-12-28
+'author': 'Bny'
 'draft': true
 'tags':
 - '资料'

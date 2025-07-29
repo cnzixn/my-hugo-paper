@@ -1,7 +1,7 @@
 ---
 'title': '文章 - 编辑流程'
 'date': 2025-03-26 18:17:00+00:00
-'author': 'bny'
+'author': 'Bny'
 'draft': true
 'tags':
 - '资料'

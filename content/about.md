@@ -1,7 +1,7 @@
 ---
 title: "关于"
-single: true
 layout: about
+searchHidden: true
 ---
 
 
