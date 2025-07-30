@@ -10,8 +10,8 @@ import yaml
 from pathlib import Path
 
 # ===== 配置 =====
-CONTENT_DIR = "../content/posts"
-MAPPING_FILE = "../assets/article_id_mapping.json"
+CONTENT_DIR = "/sdcard/acode/my-hugo-paper/content/posts"
+MAPPING_FILE = "/sdcard/acode/my-hugo-paper/assets/article_id_mapping.json"
 URL_PREFIX = "/p/"
 
 # ===== 映射文件处理 =====

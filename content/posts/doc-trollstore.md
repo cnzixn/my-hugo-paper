@@ -2,7 +2,6 @@
 'title': '苹果 - 巨魔商店'
 'date': 2025-12-28
 'author': 'Bny'
-'draft': true
 'tags':
 - '资料'
 'aliases':

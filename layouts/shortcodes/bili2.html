@@ -1,0 +1,25 @@
+{{- $bvid := "" -}}
+{{if .Get "id"}}
+  {{$bvid = .Get "id"}}
+{{else if .Get 0}}
+  {{$bvid = .Get 0}}
+{{end}}
+{{ $part := .Get "p" | default (.Get 1 | default 1) }}
+{{if $bvid}}
+    <div class="video_wrapper" style="display: flex; justify-content: center; max-width: 500px; margin: 0 auto;">
+      <!-- 竖屏比例（9:16）：通过容器控制宽高比，iframe自适应填充 -->
+      <div style="position: relative; width: 100%; padding-top: 133%;"> <!-- 16/9 ≈ 177.78% -->
+        <iframe 
+          src="//player.bilibili.com/player.html?isOutside=true&bvid={{ $bvid }}&p={{ $part }}" 
+          scrolling="no" 
+          border="0" 
+          frameborder="no" 
+          framespacing="0" 
+          allowfullscreen="true"
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+        ></iframe>
+      </div>
+    </div>
+{{else}}
+  <h6>请填写视频 url 中的视频 id，例如：BV1FV411d7u7</h6>
+{{end}}

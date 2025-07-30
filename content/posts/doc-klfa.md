@@ -2,7 +2,6 @@
 'title': 'KLFA - 解包/打包'
 'date': 2025-12-28
 'author': 'Bny'
-'draft': true
 'tags':
 - '资料'
 'aliases':
