@@ -1,0 +1,11 @@
+{{- if not (.Param "hidePageViews") -}}
+<span class="page-view-counter">
+  <span>&nbsp;·&nbsp;</span>
+  {{ i18n "views" | default "Views" }}: 
+  <span class="view-count">Loading...</span>
+</span>
+{{- end }}
+
+{{- /* 加载访问量统计脚本 */ -}}
+{{- $js := resources.Get "js/page-view-tracker.js" | minify | fingerprint -}}
+<script src="{{ $js.RelPermalink }}" defer></script>

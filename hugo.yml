@@ -95,7 +95,7 @@ languages:
       homeInfoParams:
         Title: "👋 档案馆 - 兔人协会"
         Content: >
-          - 　兔人框架，为单机版饥荒( <i class="bi bi-android2"></i> & <i class="bi bi-apple"></i> )提供模组运行环境。
+          - 　兔人框架，为单机版饥荒( <i class="bi bi-android2"></i> & <i class="bi bi-apple"></i> )提供模组运行环境。【此网站为预览版，暂未正式使用！！！】
       # editPost:
         # URL: "/cms/#/edit"
         # Text: "编辑" # edit text
@@ -199,9 +199,9 @@ params:
     - name: qq-qun
       title: 安卓群
       url: "https://qm.qq.com/q/3xoKf5H4EM"
-    # - name: qq-qun
-      # title: 苹果群
-      # url: "https://qm.qq.com/q/88L6QyUQVi"
+    - name: qq-qun
+      title: 苹果群
+      url: "https://qm.qq.com/q/88L6QyUQVi"
 
   # editPost:
     # URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
