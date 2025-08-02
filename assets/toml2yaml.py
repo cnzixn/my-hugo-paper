@@ -11,7 +11,7 @@ from pathlib import Path
 
 # ===== 配置 =====
 CONTENT_DIR = "/sdcard/acode/my-hugo-paper/content/posts"
-MAPPING_FILE = "/sdcard/acode/my-hugo-paper/assets/article_id_mapping.json"
+MAPPING_FILE = "/sdcard/acode/my-hugo-paper/assets/toml2yaml_data.json"
 URL_PREFIX = "/p/"
 
 # ===== 映射文件处理 =====

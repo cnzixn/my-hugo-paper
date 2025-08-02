@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // 规范化URL
         pageUrl = normalizeUrl(pageUrl);
+        alert(pageUrl)
         
         // 生成5位哈希值（符合后端要求）
         const pageHash = generatePageHash(pageUrl);
