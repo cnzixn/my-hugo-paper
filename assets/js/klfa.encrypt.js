@@ -61,9 +61,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const unpackErrorMessage = document.getElementById('unpack-errorMessage');
     
     let unpackArchiveData = null;
+    let unpackZipBlob = null;
     let unpackExtractedFiles = [];
     let unpackOriginalFilename = '';
-    let unpackBlobData = null;
     
     // 浏览按钮点击事件
     unpackBrowseBtn.addEventListener('click', () => {
@@ -222,6 +222,61 @@ document.addEventListener('DOMContentLoaded', () => {
                 }, 800);
                 
             }, 500);
+            
+            unpackProgressText.textContent = '正在创建ZIP文件...';
+        unpackProgressFill.style.width = '0%';
+        
+        setTimeout(() => {
+            try {
+                const zip = new JSZip();
+
+                // 需要排除的文件夹/文件类型
+                const excludePatterns = [/.svn/, /.git/, /__MACOSX/, /.DS_Store/, /Thumbs.db/i];
+                
+                // 过滤不需要的文件
+                const filesToPack = unpackExtractedFiles.filter(file => {
+                    return !excludePatterns.some(regex => regex.test(file.name));
+                });
+
+                if (filesToPack.length === 0) {
+                    showUnpackError('没有需要打包的有效文件');
+                    return;
+                }
+
+                // 添加文件到ZIP
+                filesToPack.forEach((file, index) => {
+                    zip.file(file.name, file.data, { 
+                        createFolders: true,
+                        comment: "UTF-8",
+                    });
+                    
+                    // 更新进度
+                    const progress = (index / unpackExtractedFiles.length) * 100;
+                    unpackProgressFill.style.width = `${progress}%`;
+                    unpackProgressText.textContent = `添加文件中... ${index+1}/${unpackExtractedFiles.length}`;
+                });
+                
+                // 生成ZIP时明确使用UTF-8编码
+                zip.generateAsync({ 
+                    type: 'blob',
+                    compression: 'DEFLATE',
+                    compressionOptions: { level: 6 },
+                    encodeFileName: (str) => str // 保持UTF-8编码
+                }, (metadata) => {
+                    if (metadata.percent) {
+                        unpackProgressFill.style.width = `${metadata.percent}%`;
+                    }
+                }).then((blob) => {
+                    unpackZipBlob = blob;
+                    unpackProgressFill.style.width = '100%';
+                    unpackProgressText.textContent = 'ZIP文件创建完成！';
+                }).catch(showUnpackError);
+
+            } catch (error) {
+                showUnpackError('创建ZIP文件失败: ' + error.message);
+            }
+        }, 500);
+            
         } catch (error) {
             showUnpackError('解包过程中出错: ' + error.message);
         }
@@ -257,91 +312,29 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     // 解包下载按钮事件（修复中文名乱码）
-// 解包下载按钮事件（修复中文名乱码 + 改用a.download）
-unpackDownloadBtn.addEventListener('click', () => {
-    // 重置进度条
-    unpackProgressText.textContent = '正在创建ZIP文件...';
-    unpackProgressFill.style.width = '0%';
-    
-    // 延迟开始以避免UI阻塞
-    setTimeout(async () => {
-        try {
-            const zip = new JSZip();
-            let hasError = false;
+    unpackDownloadBtn.addEventListener('click', () => {
 
-            // 添加文件到ZIP（带进度更新）
-            for (let i = 0; i < unpackExtractedFiles.length; i++) {
-                try {
-                    const file = unpackExtractedFiles[i];
-                    zip.file(file.name, file.data, {
-                        createFolders: true,
-                        comment: "UTF-8"
-                    });
+        // saveAs(unpackZipBlob, unpackDownloadFilename.textContent);
 
-                    // 更新进度（改用requestAnimationFrame平滑渲染）
-                    const progress = (i / unpackExtractedFiles.length) * 100;
-                    requestAnimationFrame(() => {
-                        unpackProgressFill.style.width = `${progress}%`;
-                        unpackProgressText.textContent = `添加文件中... ${i+1}/${unpackExtractedFiles.length}`;
-                    });
+        // 最终处理
+        const url = URL.createObjectURL(unpackZipBlob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = unpackDownloadFilename.textContent || 'archive.zip';
+        document.body.appendChild(a);
+        a.click();
                     
-                    // 每处理10个文件让出主线程（防止卡顿）
-                    if (i % 10 === 0) await new Promise(resolve => setTimeout(resolve, 0));
-                } catch (error) {
-                    hasError = true;
-                    showUnpackError(`添加文件失败: ${error.message}`);
-                    break;
-                }
-            }
+    });
 
-            if (hasError) return;
 
-            // 生成ZIP（带双重进度：生成+下载）
-            zip.generateAsync({
-                type: 'blob',
-                compression: 'DEFLATE',
-                compressionOptions: { level: 6 },
-                encodeFileName: str => str // 保持UTF-8编码
-            }, metadata => {
-                // 生成阶段进度（0-90%）
-                const generateProgress = metadata.percent * 0.5;
-                unpackProgressFill.style.width = `${generateProgress}%`;
-                unpackProgressText.textContent = `生成ZIP中... ${Math.round(metadata.percent)}%`;
-            }).then(blob => {
-                // 生成完成（90%）
-                unpackProgressFill.style.width = '50%';
-                unpackProgressText.textContent = '准备下载...';
 
-                // 使用a.download触发下载（替代saveAs）
-                const url = URL.createObjectURL(blob);
-                const a = document.createElement('a');
-                a.href = url;
-                a.download = unpackDownloadFilename.textContent || 'archive.zip';
-                a.style.display = 'none';
-                document.body.appendChild(a);
-                
-                // 添加下载完成监听（进度100%）
-                a.addEventListener('click', () => {
-                    setTimeout(() => {
-                        unpackProgressFill.style.width = '100%';
-                        unpackProgressText.textContent = '下载完成！';
-                        document.body.removeChild(a);
-                        URL.revokeObjectURL(url); // 释放内存
-                    }, 1000); // 留出时间确保下载触发
-                });
-                
-                a.click();
-            }).catch(error => {
-                showUnpackError('生成ZIP失败: ' + error.message);
-            });
 
-        } catch (error) {
-            showUnpackError('创建ZIP失败: ' + error.message);
-        }
-    }, 100); // 缩短延迟时间
-});
 
-    
+
+
+
+
+
     // 解包重置按钮事件
     unpackResetBtn.addEventListener('click', () => {
         unpackFileInput.value = '';
@@ -365,301 +358,224 @@ unpackDownloadBtn.addEventListener('click', () => {
         unpackErrorMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
     
-    // ================== 打包功能 ==================
-    const packDropZone = document.getElementById('pack-dropZone');
-    const packFileInput = document.getElementById('pack-fileInput');
-    const packBrowseBtn = document.getElementById('pack-browseBtn');
-    const packProgressContainer = document.getElementById('pack-progressContainer');
-    const packProgressFill = document.getElementById('pack-progressFill');
-    const packProgressText = document.getElementById('pack-progressText');
-    const packResultArea = document.getElementById('pack-resultArea');
-    const packFileCount = document.getElementById('pack-fileCount');
-    const packTotalSize = document.getElementById('pack-totalSize');
-    const packArchiveSize = document.getElementById('pack-archiveSize');
-    const packDownloadBtn = document.getElementById('pack-downloadBtn');
-    const packResetBtn = document.getElementById('pack-resetBtn');
-    const packErrorMessage = document.getElementById('pack-errorMessage');
-    const packBtn = document.getElementById('pack-btn');
-    const packFilenamePreview = document.getElementById('pack-filenamePreview');
-    const packDownloadFilename = document.getElementById('pack-downloadFilename');
-    
-    let packFiles = [];
-    let packArchiveBlob = null;
-    let packArchiveSizeValue = 0;
-    let packOriginalFilename = '';
-    
-    // 浏览按钮点击事件
-    packBrowseBtn.addEventListener('click', () => {
-        packFileInput.click();
-    });
-    
-    // 文件选择变化事件
-    packFileInput.addEventListener('change', (e) => {
-        if (e.target.files.length > 0) {
-            handlePackFile(e.target.files[0]);
-        }
-    });
-    
-    // 拖放事件处理
-    ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
-        packDropZone.addEventListener(eventName, preventDefaults, false);
-    });
-    
-    ['dragenter', 'dragover'].forEach(eventName => {
-        packDropZone.addEventListener(eventName, () => {
-            packDropZone.classList.add('drag-over');
-        }, false);
-    });
-    
-    ['dragleave', 'drop'].forEach(eventName => {
-        packDropZone.addEventListener(eventName, () => {
-            packDropZone.classList.remove('drag-over');
-        }, false);
-    });
-    
-    packDropZone.addEventListener('drop', (e) => {
-        const dt = e.dataTransfer;
-        if (dt.files.length > 0) {
-            handlePackFile(dt.files[0]);
-        }
-    });
-    
-    // 处理选择的文件
-    function handlePackFile(file) {
-        if (!file.name.endsWith('.zip')) {
-            showPackError('请选择 .zip 文件');
-            return;
-        }
-        
-        // 隐藏错误信息
-        packErrorMessage.style.display = 'none';
-        
-        // 设置资源文件名称
-        let archiveName = file.name;
-        if (archiveName.startsWith('_')) {
-            archiveName = archiveName.substring(1);
-        }
-        if (archiveName.endsWith('.zip')) {
-            archiveName = archiveName.replace('.zip', '.archive');
-        }
-        
-        packDownloadFilename.textContent = archiveName;
-        packFilenamePreview.style.display = 'block';
-        packOriginalFilename = archiveName;
-        
-        // 启用打包按钮
-        packBtn.disabled = false;
-        
-        // 保存文件引用
-        packFiles = [file];
-    }
-    
-    // 打包按钮事件
-    packBtn.addEventListener('click', () => {
-        if (packFiles.length === 0) {
-            showPackError('请上传ZIP文件');
-            return;
-        }
-        
-        packProgressContainer.style.display = 'block';
-        packProgressText.textContent = '开始打包...';
-        packProgressFill.style.width = '0%';
-        
-        setTimeout(() => {
-            createArchive();
-        }, 500);
-    });
-    
-    // 工具函数：验证文件名
-    function isValidFileName(name) {
-        if (!name || name.length === 0) return false;
-        // 禁止控制字符和特殊字符
-        if (/[\x00-\x1F\x7F<>:"|?*]/.test(name)) return false;
-        // 禁止以点开头（隐藏文件）
-        if (/^\./.test(name)) return false;
-        return true;
-    }
-    
-    // 工具函数：标准化文件名（修复中文名乱码）
-    function normalizeFileName(name) {
-        // 确保UTF-8编码
-        try {
-            const encoder = new TextEncoder();
-            const decoder = new TextDecoder('utf-8', { fatal: true });
-            const bytes = encoder.encode(name);
-            decoder.decode(bytes);
-        } catch (e) {
-            console.warn('文件名包含非UTF-8字符:', name);
-        }
-        
-        return name.replace(/\\/g, '/')          // 统一使用正斜杠
-                   .replace(/^\.+\//, '')       // 移除开头的相对路径
-                   .replace(/\/\.+\//g, '/')    // 移除中间的相对路径
-                   .replace(/\/+/g, '/');       // 合并连续斜杠
-    }
-    
-    // 创建资源文件（修复中文名乱码）
-    async function createArchive() {
-        try {
-            const file = packFiles[0];
-            if (!file) {
-                showPackError('请先选择ZIP文件');
-                return;
-            }
-    
-            const reader = new FileReader();
-            
-            reader.onload = async (e) => {
-                try {
-                    // 使用JSZip读取ZIP文件（明确使用UTF-8解码文件名）
-                    const zip = new JSZip();
-                    const zipData = await zip.loadAsync(e.target.result, {
-                        decodeFileName: (bytes) => new TextDecoder('utf-8').decode(bytes)
-                    });
-                    
-                    // 获取所有文件
-                    const fileNames = Object.keys(zipData.files);
-                    const files = [];
-                    let totalSize = 0;
-                    
-                    packProgressText.textContent = '读取ZIP内容...';
-                    packProgressFill.style.width = '20%';
-                    
-                    // 提取所有文件
-                    for (let i = 0; i < fileNames.length; i++) {
-                        const fileName = fileNames[i];
-                        const zipEntry = zipData.files[fileName];
-                        
-                        // 跳过目录
-                        if (zipEntry.dir) continue;
-                        
-                        // 验证文件名
-                        if (!isValidFileName(fileName)) {
-                            console.warn(`跳过无效文件名: ${fileName}`);
-                            continue;
-                        }
-                        
-                        // 获取文件内容
-                        const fileContent = await zipEntry.async('uint8array');
-                        files.push({
-                            name: fileName,
-                            size: fileContent.length,
-                            data: fileContent
-                        });
-                        
-                        totalSize += fileContent.length;
-                        
-                        // 更新进度
-                        const progress = 20 + (i / fileNames.length) * 30;
-                        packProgressFill.style.width = `${progress}%`;
-                        packProgressText.textContent = `读取文件 ${i+1}/${fileNames.length}...`;
-                    }
-                    
-                    if (files.length === 0) {
-                        showPackError('ZIP文件中没有有效的可打包文件');
-                        return;
-                    }
-                    
-                    // 计算文件头长度
-                    let headerSize = 8; // KLFA + 文件数量
-                    const encoder = new TextEncoder();
-                    
-                    for (const file of files) {
-                        const normalizedName = normalizeFileName(file.name);
-                        const nameBytes = encoder.encode(normalizedName);
-                        headerSize += 4 + nameBytes.length + 8 + 1;
-                    }
-                    
-                    // 创建ArrayBuffer
-                    let totalArchiveSize = headerSize + totalSize;
-                    const buffer = new ArrayBuffer(totalArchiveSize);
-                    const dataView = new DataView(buffer);
-                    const headerArray = new Uint8Array(buffer, 0, headerSize);
-                    const dataArray = new Uint8Array(buffer, headerSize);
-                    
-                    // 写入文件头
-                    // KLFA
-                    headerArray[0] = 'K'.charCodeAt(0);
-                    headerArray[1] = 'L'.charCodeAt(0);
-                    headerArray[2] = 'F'.charCodeAt(0);
-                    headerArray[3] = 'A'.charCodeAt(0);
-                    
-                    // 文件数量
-                    dataView.setUint32(4, files.length, true);
-                    
-                    let headerOffset = 8;
-                    let dataOffset = 0;
-                    
-                    // 写入文件信息（确保UTF-8编码）
-                    for (let i = 0; i < files.length; i++) {
-                        try {
-                            const file = files[i];
-                            const normalizedName = normalizeFileName(file.name);
-                            const encoder = new TextEncoder();
-                            const nameBytes = encoder.encode(normalizedName);
-                            
-                            // 文件名长度
-                            dataView.setUint32(headerOffset, nameBytes.length, true);
-                            headerOffset += 4;
-                            
-                            // 文件名（UTF-8编码）
-                            for (let j = 0; j < nameBytes.length; j++) {
-                                headerArray[headerOffset++] = nameBytes[j];
-                            }
-                            
-                            // 文件偏移量
-                            dataView.setUint32(headerOffset, headerSize + dataOffset, true);
-                            headerOffset += 4;
-                            
-                            // 文件大小
-                            dataView.setUint32(headerOffset, file.size, true);
-                            headerOffset += 4;
+// ================== 打包功能 ==================
+const packDropZone = document.getElementById('pack-dropZone');
+const packFileInput = document.getElementById('pack-fileInput');
+const packBrowseBtn = document.getElementById('pack-browseBtn');
+const packProgressContainer = document.getElementById('pack-progressContainer');
+const packProgressFill = document.getElementById('pack-progressFill');
+const packProgressText = document.getElementById('pack-progressText');
+const packResultArea = document.getElementById('pack-resultArea');
+const packFileCount = document.getElementById('pack-fileCount');
+const packTotalSize = document.getElementById('pack-totalSize');
+const packArchiveSize = document.getElementById('pack-archiveSize');
+const packDownloadBtn = document.getElementById('pack-downloadBtn');
+const packResetBtn = document.getElementById('pack-resetBtn');
+const packErrorMessage = document.getElementById('pack-errorMessage');
+const packFilenamePreview = document.getElementById('pack-filenamePreview');
+const packDownloadFilename = document.getElementById('pack-downloadFilename');
 
-                            // dummy字节
-                            headerArray[headerOffset++] = 0;
-                            
-                            // 复制文件数据
-                            dataArray.set(file.data, dataOffset);
-                            dataOffset += file.size;
-                            
-                            // 更新进度
-                            const progress = 50 + (i / files.length) * 50;
-                            packProgressFill.style.width = `${progress}%`;
-                            packProgressText.textContent = `打包文件 ${i+1}/${files.length}...`;
-                        } catch (error) {
-                            console.error(`处理文件 ${files[i] && files[i].name || '未知'} 时出错:`, error);
-                            throw error;
-                        }
-                    }
-                    
-                    // 创建Blob
-                    packArchiveBlob = new Blob([buffer], {type: 'application/octet-stream'});
-                    packArchiveSizeValue = packArchiveBlob.size;
-                    
-                    packProgressFill.style.width = '100%';
-                    packProgressText.textContent = '打包完成！';
-                    
-                    setTimeout(() => {
-                        showPackResults(files);
-                    }, 800);
-                    
-                } catch (error) {
-                    showPackError('打包过程中出错: ' + error.message);
-                    console.error('打包错误详情:', error);
-                }
-            };
-            
-            reader.onerror = () => {
-                showPackError('文件读取失败');
-            };
-            
-            reader.readAsArrayBuffer(file);
-            
-        } catch (error) {
-            showPackError('打包过程中出错: ' + error.message);
-            console.error('初始化错误详情:', error);
-        }
+let packFiles = [];
+let packArchiveBlob = null;
+let packArchiveSizeValue = 0;
+let packOriginalFilename = '';
+
+// 浏览按钮点击事件
+packBrowseBtn.addEventListener('click', () => {
+    packFileInput.click();
+});
+
+// 文件选择变化事件（自动触发打包）
+packFileInput.addEventListener('change', (e) => {
+    if (e.target.files.length > 0) {
+        handlePackFile(e.target.files[0]);
     }
+});
+
+// 拖放事件处理（自动触发打包）
+packDropZone.addEventListener('drop', (e) => {
+    const dt = e.dataTransfer;
+    if (dt.files.length > 0) {
+        handlePackFile(dt.files[0]);
+    }
+});
+
+// 处理选择的文件（自动开始打包）
+function handlePackFile(file) {
+    if (!file.name.endsWith('.zip')) {
+        showPackError('请选择 .zip 文件');
+        return;
+    }
+
+    // 重置状态
+    packErrorMessage.style.display = 'none';
+    packProgressContainer.style.display = 'block';
+    packProgressText.textContent = '准备打包...';
+    packProgressFill.style.width = '0%';
+
+    // 设置输出文件名
+    let archiveName = file.name;
+    if (archiveName.startsWith('_')) archiveName = archiveName.substring(1);
+    if (archiveName.endsWith('.zip')) archiveName = archiveName.replace('.zip', '.archive');
+    
+    packDownloadFilename.textContent = archiveName;
+    packFilenamePreview.style.display = 'block';
+    packOriginalFilename = archiveName;
+
+    // 保存文件并开始打包
+    packFiles = [file];
+    createArchive(); // 自动触发打包流程
+}
+
+// 自动打包函数（带进度条）
+async function createArchive() {
+    try {
+        const file = packFiles[0];
+        if (!file) {
+            showPackError('未找到可打包的文件');
+            return;
+        }
+
+        // 更新进度
+        updatePackProgress(10, '读取ZIP文件中...');
+
+        const reader = new FileReader();
+        
+        reader.onload = async (e) => {
+            try {
+                // 使用JSZip读取ZIP文件
+                const zip = new JSZip();
+                const zipData = await zip.loadAsync(e.target.result, {
+                    decodeFileName: (bytes) => new TextDecoder('utf-8').decode(bytes)
+                });
+
+                // 获取所有文件
+                const fileNames = Object.keys(zipData.files);
+                const files = [];
+                let totalSize = 0;
+
+                // 提取文件内容（带进度）
+                for (let i = 0; i < fileNames.length; i++) {
+                    const fileName = fileNames[i];
+                    const zipEntry = zipData.files[fileName];
+                    
+                    if (zipEntry.dir) continue; // 跳过目录
+
+                    // 更新进度（20-50%）
+                    const progress = 20 + (i / fileNames.length) * 30;
+                    updatePackProgress(progress, `解析文件 ${i+1}/${fileNames.length}`);
+
+                    const fileContent = await zipEntry.async('uint8array');
+                    files.push({
+                        name: fileName,
+                        size: fileContent.length,
+                        data: fileContent
+                    });
+                    totalSize += fileContent.length;
+                }
+
+                if (files.length === 0) {
+                    showPackError('ZIP文件中没有有效文件');
+                    return;
+                }
+
+                // 计算文件头长度（50-60%）
+                updatePackProgress(50, '计算文件头...');
+                await new Promise(resolve => setTimeout(resolve, 100)); // 让UI更新
+
+                let headerSize = 8; // KLFA + 文件数量
+                const encoder = new TextEncoder();
+                
+                for (const file of files) {
+                    const nameBytes = encoder.encode(file.name);
+                    headerSize += 4 + nameBytes.length + 8 + 1;
+                }
+
+                // 创建ArrayBuffer（60-80%）
+                updatePackProgress(60, '创建数据缓冲区...');
+                await new Promise(resolve => setTimeout(resolve, 100));
+
+                const totalArchiveSize = headerSize + totalSize;
+                const buffer = new ArrayBuffer(totalArchiveSize);
+                const dataView = new DataView(buffer);
+                const headerArray = new Uint8Array(buffer, 0, headerSize);
+                const dataArray = new Uint8Array(buffer, headerSize);
+
+                // 写入文件头（80-90%）
+                updatePackProgress(80, '写入文件头...');
+                
+                // KLFA
+                headerArray.set([75, 76, 70, 65]); // 'KLFA'的ASCII码
+                dataView.setUint32(4, files.length, true); // 文件数量
+
+                let headerOffset = 8;
+                let dataOffset = 0;
+
+                // 写入文件数据（90-100%）
+                for (let i = 0; i < files.length; i++) {
+                    const file = files[i];
+                    const nameBytes = encoder.encode(file.name);
+                    
+                    // 文件名长度
+                    dataView.setUint32(headerOffset, nameBytes.length, true);
+                    headerOffset += 4;
+                    
+                    // 文件名
+                    headerArray.set(nameBytes, headerOffset);
+                    headerOffset += nameBytes.length;
+                    
+                    // 文件偏移量
+                    dataView.setUint32(headerOffset, headerSize + dataOffset, true);
+                    headerOffset += 4;
+                    
+                    // 文件大小
+                    dataView.setUint32(headerOffset, file.size, true);
+                    headerOffset += 4;
+                    
+                    // dummy字节
+                    headerArray[headerOffset++] = 0;
+                    
+                    // 文件内容
+                    dataArray.set(file.data, dataOffset);
+                    dataOffset += file.size;
+
+                    // 更新进度
+                    const progress = 90 + (i / files.length) * 10;
+                    updatePackProgress(progress, `写入文件数据 ${i+1}/${files.length}`);
+                }
+
+                // 完成打包
+                packArchiveBlob = new Blob([buffer], {type: 'application/octet-stream'});
+                packArchiveSizeValue = packArchiveBlob.size;
+                
+                updatePackProgress(100, '打包完成！');
+                setTimeout(() => showPackResults(files), 500);
+
+            } catch (error) {
+                showPackError('打包失败: ' + error.message);
+                console.error(error);
+            }
+        };
+        
+        reader.onerror = () => showPackError('文件读取失败');
+        reader.readAsArrayBuffer(file);
+
+    } catch (error) {
+        showPackError('初始化失败: ' + error.message);
+    }
+}
+
+// 更新打包进度函数
+function updatePackProgress(percent, text) {
+    requestAnimationFrame(() => {
+        packProgressFill.style.width = `${percent}%`;
+        packProgressText.textContent = text;
+    });
+}
+
+// 其他辅助函数保持不变...
+// normalizeFileName(), showPackResults(), showPackError() 等...
+
 
     // 显示打包结果
     function showPackResults(files) {
@@ -676,7 +592,14 @@ unpackDownloadBtn.addEventListener('click', () => {
     
     // 打包下载按钮事件
     packDownloadBtn.addEventListener('click', () => {
-        saveAs(packArchiveBlob, packOriginalFilename);
+        // saveAs(packArchiveBlob, packOriginalFilename);
+        
+        const url = URL.createObjectURL(packArchiveBlob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = packOriginalFilename || 'archive.zip';
+        document.body.appendChild(a);
+        a.click();
     });
     
     // 打包重置按钮事件
