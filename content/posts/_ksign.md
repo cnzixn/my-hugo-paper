@@ -2,6 +2,7 @@
 title: "iOS18免费永久自签"
 layout: "page"
 searchHidden: "true"
+draft: true
 ---
 
 ## 安装Ksign
