@@ -27,7 +27,7 @@ function generateTodayPassword() {
 function updatePassword() {
     const password = generateTodayPassword();
     document.querySelectorAll('.today_password').forEach(el => {
-        el.textContent = password;
+        el.textContent = "验证码：" + password + "，你可能会需要它！";
     });
 }
 
