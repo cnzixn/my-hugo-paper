@@ -1,6 +1,6 @@
 ---
 title: "BM MODS TOOL"
-layout: tool
+layout: tools
 searchHidden: truep
 draft: true
 ---
