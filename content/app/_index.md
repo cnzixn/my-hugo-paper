@@ -1,6 +1,6 @@
 ---
 title: "BM MODS TOOL"
 layout: tools
-searchHidden: truep
-draft: true
+searchHidden: true
+date: 2025-12-28
 ---
