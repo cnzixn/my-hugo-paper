@@ -1,17 +1,16 @@
 ---
-'title': '框架 - 更新日志'
+'title': '框架 - 六月更新'
 'date': 2025-06-10
 'author': 'Bny'
 'draft': true
+'summary': '框架BM25.06.01版本更新，请注意查收！'
 'tags':
-- '日志'
+- '公告'
 - '框架'
 'comments': false
 'weight': -8
 'url': '/p/731/'
 ---
-
-> 框架 BM25.06.01 版本相关
 
 {{< bili BV1KY7nzAEhZ >}}
 

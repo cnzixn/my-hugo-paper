@@ -1,9 +1,10 @@
 ---
-'title': '框架 - 更新日志'
+'title': '框架 - 八月更新'
 'date': 2025-07-30
 'author': 'Bny'
+'summary': '框架BM25.08.01版本更新，请注意查收！'
 'tags':
-- '日志'
+- '公告'
 - '框架'
 'comments': false
 'weight': -8

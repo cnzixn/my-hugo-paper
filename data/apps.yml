@@ -1,5 +1,5 @@
 header:
-  title: "兔人工具中心"
+  title: "工具中心"
   subtitle: "游戏模组制作与管理工具集合"
 
 items:
@@ -7,25 +7,25 @@ items:
     name: "安卓模组安装器"
     description: "为Android游戏APK安装模组的工具，支持框架和模组的合并安装，自动处理assets目录。"
     url: "/app/amod"
-    status: "available"  # 可用状态
+    status: "available"
 
   - icon: "🍎"
     name: "iOS模组安装器"
     description: "专为iOS游戏设计的模组安装工具，处理IPA文件并修改data.archive和dlc0002.archive。"
     url: "/app/imod"
-    status: "available"
-
-  - icon: "📦"
-    name: "KLFA工具"
-    description: "专业的游戏资源打包/解包工具，支持archive格式文件的快速处理，可批量操作资源文件。"
-    url: "/app/klfa"
-    status: "available"
+    status: "coming"
 
   - icon: "🖼️"
     name: "KTEX编辑器"
     description: "这是一个饥荒模组贴图工具，可以进行png和tex互相转化。"
     url: "/app/ktex"
-    status: "available"
+    status: "coming"
+
+  - icon: "📦"
+    name: "KLFA处理工具"
+    description: "专业的游戏资源打包/解包工具，支持archive格式文件的快速处理，可批量操作资源文件。"
+    url: "/app/klfa"
+    status: "coming"
 
   - icon: "🌐"
     name: "本地化工具"

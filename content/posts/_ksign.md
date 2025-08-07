@@ -1,8 +1,9 @@
 ---
-title: "iOS18免费永久自签"
-layout: "page"
-searchHidden: "true"
-draft: true
+'title': 'iOS18免费永久自签'
+'layout': 'page'
+'searchHidden': 'true'
+'draft': true
+'url': '/p/818/'
 ---
 
 ## 安装Ksign

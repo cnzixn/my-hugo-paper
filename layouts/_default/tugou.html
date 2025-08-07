@@ -9,7 +9,7 @@
         padding: 12px 15px;
         margin: 0 0 20px 0;
         border: 1px solid #e0e0e0;
-        border-radius: 25px;
+        border-radius: 5px;
         font-size: 16px;
         outline: none;
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -58,7 +58,7 @@
         position: relative;  /* 关键定位基准 */
         width: 100%;
         padding-top: 133.33%;
-        margin-bottom: 8px;
+        margin-top: 8px;
     }
 
     .drama-cover {
@@ -85,18 +85,20 @@
         /* 保证布局稳定性 */
         padding: 0 4px;
         margin: 4px 0 0;
-        max-height: 1.3em; /* line-height × 行数 */
-        min-height: 1.3em; /* 保持统一高度 */
+        max-height: 1.2em; /* line-height × 行数 */
+        min-height: 1.2em; /* 保持统一高度 */
         position: relative;
+        background: rgba(0,0,0,0.5);
+        padding: 3px 0; /* 高度压缩，更扁 */
+        border-radius: 2px; /* 圆角减小，更利落 */
     }
-        drama-name::after {
+    drama-name::after {
         content: "";
         position: absolute;
         bottom: 0;
         right: 0;
         width: 20%;
         height: 1.2em;
-        background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 80%);
     }
     
     .cover-wrapper {
@@ -117,7 +119,6 @@
         display: flex;
         gap: 5px; /* 按钮间距缩小 */
         padding: 4px; /* 边缘留白减少 */
-        background: linear-gradient(transparent, rgba(0,0,0,0.5)); /* 渐变弱化，更低调 */
     }
     
     .drama-btn {
@@ -125,7 +126,7 @@
         padding: 3px 0; /* 高度压缩，更扁 */
         font-size: 12px; /* 文字缩小 */
         text-align: center;
-        background: rgba(0,0,0,0.3);
+        background: rgba(0,0,0,0.5);
         color: #fff;
         text-decoration: none;
         border-radius: 2px; /* 圆角减小，更利落 */
@@ -150,6 +151,7 @@
         {{ range $.Site.Data.dramas }}
         <div class="drama-item-wrapper">
             <div class="drama-item">
+                <!-- <div class="drama-name">{{ .name }}</div> -->
                 <div class="cover-wrapper">
                     <img src="{{ .cover }}" class="drama-cover" alt="{{ .name }}">
                     <!-- 扁小简洁的底部按钮组 -->
@@ -158,7 +160,6 @@
                         <a href="{{ .link2 }}" class="drama-btn">夸克</a>
                     </div>
                 </div>
-                <div class="drama-name">{{ .name }}</div>
             </div>
         </div>
         {{ end }}

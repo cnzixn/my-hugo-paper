@@ -78,3 +78,65 @@ searchHidden: true
 
 
 ---
+
+#### 五、社群&频道
+
+<!-- - name: email -->
+  <!-- title: 邮箱 -->
+  <!-- url: "mailto:cnzixn@qq.com" -->
+<!-- - name: bilibili -->
+  <!-- title: B站 -->
+  <!-- url: "https://b23.tv/kf3yuSv" -->
+<!-- - name: qq-qunpro -->
+  <!-- title: 频道 -->
+  <!-- url: "https://pd.qq.com/s/bl6w0albb?b=5" -->
+<!-- - name: qq-qun -->
+  <!-- title: 养老群 -->
+  <!-- url: "https://qm.qq.com/q/g0weZCVQMU" -->
+<!-- - name: qq-qun -->
+  <!-- title: 安卓群 -->
+  <!-- url: "https://qm.qq.com/q/3xoKf5H4EM" -->
+<!-- - name: qq-qun -->
+  <!-- title: 苹果群 -->
+  <!-- url: "https://qm.qq.com/q/88L6QyUQVi" -->
+
+- 【频道】[<i class="bi bi-link-45deg">兔人协会</i>](https://pd.qq.com/s/bl6w0albb?b=5)，发帖交流便于大家“分享日常”、“反馈问题”。  
+
+- 【主群3k】[<i class="bi bi-link-45deg">614255348</i>](https://qm.qq.com/q/g0weZCVQMU)，🚷暂停入群，仅用于搜索群号找到我们。  
+
+- 【分群2k】[<i class="bi bi-link-45deg">696529613</i>](https://qm.qq.com/q/3xoKf5H4EM)，<i class="bi bi-android2"></i>安卓分区，免费加群，群员自治，新人互帮互助。  
+
+- 【分群1k】[<i class="bi bi-link-45deg">905142474</i>](https://qm.qq.com/q/88L6QyUQVi)，<i class="bi bi-apple"></i>苹果分区，免费加群，群员自治，新人互帮互助。  
+
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

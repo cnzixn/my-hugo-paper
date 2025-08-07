@@ -7,5 +7,4 @@
 {{- end }}
 
 {{- /* 加载访问量统计脚本 */ -}}
-{{- $js := resources.Get "js/pv.encrypt.js" | minify | fingerprint -}}
-<script src="{{ $js.RelPermalink }}" defer></script>
+<script defer src="/js/pv.encrypt.js"></script>
