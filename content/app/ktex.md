@@ -2,7 +2,6 @@
 title: ""
 layout: page
 searchHidden: true
-draft: true
 ---
 
 <style>

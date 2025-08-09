@@ -2,7 +2,6 @@
 title: ""
 layout: page
 searchHidden: true
-draft: true
 ---
 
 {{< apps >}}
@@ -69,7 +68,7 @@ draft: true
     }
     
     .tool-icon {
-        font-size: 1.1rem;
+        font-size: 2rem;
         color: var(--primary);
     }
     

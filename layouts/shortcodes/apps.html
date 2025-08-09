@@ -1,7 +1,6 @@
 <div class="tools-container">
     <header class="tools-header">
         <h1 class="tools-title">{{ .Site.Data.apps.header.title }}</h1>
-        <!-- <p class="tools-subtitle">{{ .Site.Data.tools.header.subtitle }}</p> -->
     </header>
     
     <div class="tools-grid">
@@ -9,7 +8,8 @@
         <article class="tool-card {{ if eq .status "coming" }}coming-soon{{ end }}">
             <div class="tool-header">
                 <h2 class="tool-title">
-                    <span class="tool-icon">{{ .icon }}</span>
+                    <!-- 使用 safeHTML 确保图标标签被正确渲染 -->
+                    <span class="tool-icon">{{ .icon | safeHTML }}</span>
                     {{ .name }}
                 </h2>
             </div>

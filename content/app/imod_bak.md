@@ -51,20 +51,17 @@ draft: true
     .progress-container {
         margin: 10px 0;
         display: none;
-      }
-      .progress-bar {
-        height: 5px;
-        border: 1px solid #666;
+    }
+    .progress-bar {
+        height: 20px;
         border-radius: 3px;
         overflow: hidden;
-      }
-      
-      .progress-fill {
+    }
+    .progress-fill {
         height: 100%;
         width: 0%;
         transition: width 0.3s;
-        background-color: #4cd964; /* 进度填充色（绿色示例） */
-      }
+    }
     .error {
         color: red;
         margin: 10px 0;
@@ -88,6 +85,7 @@ draft: true
 </style>
 
 
+
 <h1><i class="bi bi-apple"></i> 模组安装器</h1>
 
 <div class="section">
@@ -106,10 +104,20 @@ draft: true
 </div>
 
 <div class="section">
-    <h2>2. 选择模组文件 (多选)</h2>
-    <p class="note">支持BM框架、BM模组和三方模组</p>
+    <h2>2. 选择框架文件</h2>
+    <div id="frameworkDropZone" class="drop-zone">
+        <p>拖放 BM框架.zip 文件到这里 或</p>
+        <button id="frameworkBrowseBtn">选择框架文件</button>
+        <input type="file" id="frameworkFileInput" accept=".zip" style="display: none;">
+    </div>
+    <div id="frameworkFileInfo" class="file-info" style="display: none;"></div>
+    <div id="frameworkError" class="error"></div>
+</div>
+
+<div class="section">
+    <h2>3. 选择模组文件 (多选)</h2>
     <div id="modsDropZone" class="drop-zone">
-        <p>拖放模组文件(.zip)到这里 或</p>
+        <p>拖放 BM模组.zip 文件到这里 或</p>
         <button id="modsBrowseBtn">选择模组文件</button>
         <input type="file" id="modsFileInput" accept=".zip" multiple style="display: none;">
     </div>
@@ -118,7 +126,7 @@ draft: true
 </div>
 
 <div class="section">
-    <h2>3. 安装模组</h2>
+    <h2>4. 安装模组</h2>
     <button id="installBtn" disabled>开始安装</button>
     <div id="installProgress" class="progress-container">
         <div class="progress-bar">
@@ -133,6 +141,11 @@ draft: true
     </div>
 </div>
 
+
+<!-- <div class="section"> -->
+  <!-- <p><strong>免责声明：</strong> 本工具仅供学习使用，请勿用于任何非法用途。使用本工具即表示您了解并同意承担所有责任。</p> -->
+<!-- </div> -->
+
 <script src="/js/klfa.encrypt.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
@@ -140,6 +153,7 @@ draft: true
     document.addEventListener('DOMContentLoaded', () => {
         // 文件变量
         let ipaFile = null;
+        let frameworkFile = null;
         let modFiles = [];
         let modifiedIpa = null;
         
@@ -149,6 +163,12 @@ draft: true
         const ipaBrowseBtn = document.getElementById('ipaBrowseBtn');
         const ipaFileInfo = document.getElementById('ipaFileInfo');
         const ipaError = document.getElementById('ipaError');
+        
+        const frameworkDropZone = document.getElementById('frameworkDropZone');
+        const frameworkFileInput = document.getElementById('frameworkFileInput');
+        const frameworkBrowseBtn = document.getElementById('frameworkBrowseBtn');
+        const frameworkFileInfo = document.getElementById('frameworkFileInfo');
+        const frameworkError = document.getElementById('frameworkError');
         
         const modsDropZone = document.getElementById('modsDropZone');
         const modsFileInput = document.getElementById('modsFileInput');
@@ -166,15 +186,21 @@ draft: true
         
         // 初始化拖放区域
         initDropZone(ipaDropZone, ipaFileInput, handleIpaFile);
+        initDropZone(frameworkDropZone, frameworkFileInput, handleFrameworkFile);
         initDropZone(modsDropZone, modsFileInput, handleModFiles);
         
         // 浏览按钮事件
         ipaBrowseBtn.addEventListener('click', () => ipaFileInput.click());
+        frameworkBrowseBtn.addEventListener('click', () => frameworkFileInput.click());
         modsBrowseBtn.addEventListener('click', () => modsFileInput.click());
         
         // 文件选择事件
         ipaFileInput.addEventListener('change', (e) => {
             if (e.target.files.length > 0) handleIpaFile(e.target.files[0]);
+        });
+        
+        frameworkFileInput.addEventListener('change', (e) => {
+            if (e.target.files.length > 0) handleFrameworkFile(e.target.files[0]);
         });
         
         modsFileInput.addEventListener('change', (e) => {
@@ -211,18 +237,30 @@ draft: true
             checkReadyState();
         }
         
+        // 处理框架文件
+        function handleFrameworkFile(file) {
+            if (!file.name.match(/BM\d+\.\d+\.\d+\(.*\)\.zip/i)) {
+                showError(frameworkError, '请选择有效的BM框架文件 (格式应为BMXX.XX.XX(X.XX).zip)');
+                return;
+            }
+            
+            frameworkError.style.display = 'none';
+            frameworkFile = file;
+            frameworkFileInfo.innerHTML = `已选择: <strong>${file.name}</strong> (${formatFileSize(file.size)})`;
+            frameworkFileInfo.style.display = 'block';
+            checkReadyState();
+        }
+        
         // 处理模组文件
         function handleModFiles(files) {
             modsError.style.display = 'none';
-            
-            // 更宽松的过滤规则
             modFiles = files.filter(file => 
-                file.name.match(/\.zip/i) &&  // 接受所有ZIP文件
-                !file.name.match(/\.smali$/i) // 排除明显的非模组文件
+                file.name.match(/BM\d{3}\.zip/i) || 
+                file.name.match(/BM\d+\.\d+\.\d+\(.*\)\.zip/i)
             );
             
             if (modFiles.length === 0) {
-                showError(modsError, '未找到有效的模组文件');
+                showError(modsError, '未找到有效的BM模组文件 (格式应为BMXXX.zip或BMXX.XX.XX(X.XX).zip)');
                 return;
             }
             
@@ -230,23 +268,7 @@ draft: true
             modFiles.forEach(file => {
                 const fileItem = document.createElement('div');
                 fileItem.className = 'file-item';
-                
-                // 识别文件类型
-                let modType = 'unknown';
-                let icon = '❓';
-                
-                if (file.name.match(/BM\d{3}\.zip/i)) {
-                    modType = 'BM模组';
-                    icon = '🧩';
-                } else if (file.name.match(/BM\d+\.\d+\.\d+\(.*\)\.zip/i)) {
-                    modType = '框架';
-                    icon = '🔧';
-                } else {
-                    modType = '三方模组';
-                    icon = '📦';
-                }
-                
-                fileItem.innerHTML = `${icon} <strong>${modType}</strong>: ${file.name} (${formatFileSize(file.size)})`;
+                fileItem.textContent = `${file.name} (${formatFileSize(file.size)})`;
                 modsFileList.appendChild(fileItem);
             });
             modsFileList.style.display = 'block';
@@ -255,7 +277,7 @@ draft: true
         
         // 检查是否准备好安装
         function checkReadyState() {
-            installBtn.disabled = !(ipaFile && modFiles.length > 0);
+            installBtn.disabled = !(ipaFile && frameworkFile);
         }
         
         // 安装模组
@@ -266,33 +288,23 @@ draft: true
             installProgressFill.style.width = '0%';
             
             try {
+                // 1. 解压框架和模组文件
+                installProgressText.textContent = '正在解压框架和模组...';
+                installProgressFill.style.width = '10%';
+                
                 // 收集所有要添加的文件
                 const modFilesToAdd = {
                     '_data': {},  // 对应data.archive
                     '_dlc0002': {} // 对应dlc0002.archive
                 };
                 
-                // 三方模组列表（用于生成配置文件）
-                const thirdPartyMods = [];
+                // 先解压框架
+                await extractModFiles(frameworkFile, modFilesToAdd, '20%');
                 
-                // 处理所有模组文件
-                installProgressText.textContent = '正在处理模组文件...';
-                
-                let processed = 0;
-                for (const modFile of modFiles) {
-                    const progress = 10 + (processed / modFiles.length) * 40;
-                    installProgressFill.style.width = `${progress}%`;
-                    
-                    // 更新进度文本
-                    installProgressText.textContent = `正在处理: ${modFile.name} (${processed+1}/${modFiles.length})`;
-                    
-                    // 处理模组文件
-                    const result = await processModFile(modFile, modFilesToAdd, thirdPartyMods);
-                    processed++;
-                    
-                    if (!result) {
-                        console.warn(`跳过不支持的模组: ${modFile.name}`);
-                    }
+                // 再解压模组
+                for (let i = 0; i < modFiles.length; i++) {
+                    const progress = 20 + (i / modFiles.length) * 30;
+                    await extractModFiles(modFiles[i], modFilesToAdd, `${Math.round(progress)}%`);
                 }
                 
                 // 2. 读取IPA文件
@@ -382,30 +394,14 @@ draft: true
                     }
                 }
                 
-                // 6. 生成并添加三方模组配置文件
-                if (mergedDataFiles.length > 0) {
-                    installProgressText.textContent = '生成三方模组配置文件...';
-                    
-                    // 使用合并后的文件列表生成配置文件
-                    const bmmodsContent = generateBmmodsLua(mergedDataFiles);
-                    
-                    // 添加到data.archive
-                    mergedDataFiles.push({
-                        name: 'mods/bmmods.lua',
-                        data: new TextEncoder().encode(bmmodsContent),
-                        size: bmmodsContent.length
-                    });
-                }
-
-                
-                // 7. 重新打包archive文件
+                // 6. 重新打包archive文件
                 installProgressText.textContent = '正在重新打包游戏数据...';
                 installProgressFill.style.width = '85%';
                 
                 const newDataArchive = await KLFA.pack(mergedDataFiles);
                 const newDlcArchive = dlcArchiveData ? await KLFA.pack(mergedDlcFiles) : null;
                 
-                // 8. 更新IPA文件
+                // 7. 更新IPA文件
                 installProgressText.textContent = '正在更新IPA文件...';
                 installProgressFill.style.width = '90%';
                 
@@ -421,7 +417,7 @@ draft: true
                     ipaZip.file(dlcArchivePath, newDlcArchive);
                 }
                 
-                // 9. 生成修改后的IPA
+                // 8. 生成修改后的IPA
                 installProgressText.textContent = '正在生成修改后的IPA...';
                 installProgressFill.style.width = '95%';
                 
@@ -450,161 +446,54 @@ draft: true
             }
         }
         
-        // 处理单个模组文件
-        async function processModFile(modFile, modFilesToAdd, thirdPartyMods) {
-            try {
-                const arrayBuffer = await readFileAsArrayBuffer(modFile);
-                const zip = await JSZip.loadAsync(arrayBuffer);
-                
-                let isBMXXX = false;
-                let isFramework = false;
-                let isThirdParty = false;
-                
-                // 识别模组类型
-                if (modFile.name.match(/BM\d{3}\.zip/i)) {
-                    isBMXXX = true;
-                } else if (modFile.name.match(/BM\d+\.\d+\.\d+\(.*\)\.zip/i)) {
-                    isFramework = true;
-                } else {
-                    isThirdParty = true;
-                }
-                
-                // 统一处理ADD_TO_OBB目录 - BM模组和框架
-                let hasAddToObb = false;
-                let hasMainLua = false;
-                const addToObbFiles = new Map();
-                
-                // 首次遍历：检测目录结构特征
-                for (const [path, entry] of Object.entries(zip.files)) {
-                    if (entry.dir) continue;
-                    
-                    // 仅统一路径分隔符，保持原始大小写
-                    const normalizedPath = path.replace(/\\/g, '/');
-                    // 临时转小写用于匹配判断（忽略大小写）
-                    const lowerPath = normalizedPath.toLowerCase();
-                    
-                    // 检测 main.lua（忽略大小写）
-                    if (lowerPath.endsWith('/main.lua')) {
-                        hasMainLua = true;
-                    }
-                
-                    // 检测 ADD_TO_OBB 目录（忽略大小写）
-                    const obbMatch = lowerPath.match(/(^|\/)add_to_obb\/(.+)/);
-                    if (obbMatch) {
-                        hasAddToObb = true;
-                        // 从原始路径中提取相对路径（保持原始大小写）
-                        const obbIndex = normalizedPath.toLowerCase().indexOf('add_to_obb/');
-                        if (obbIndex !== -1) {
-                            const relPath = normalizedPath.slice(obbIndex + 'add_to_obb/'.length);
-                            addToObbFiles.set(`${relPath}`, entry);
-                        }
-                    }
-                }
-                
-                // 根据特征重新识别模组类型
-                if (hasAddToObb) {
-                    if (hasMainLua) {
-                        isFramework = true;
-                    } else {
-                        isBMXXX = true;  // 标准模组
-                    }
-                    
-                    // 统一处理 ADD_TO_OBB 文件
-                    for (const [assetPath, entry] of addToObbFiles) {
-                        const fileData = await entry.async('uint8array');
-                        
-                        // 根据路径决定添加到哪个archive
-                        if (assetPath.startsWith('mods/') || assetPath.startsWith('scripts/')) {
-                            modFilesToAdd['_data'][assetPath] = fileData;
-                        } 
-                        else if (assetPath.startsWith('DLC0002/')) {
-                            const targetPath = assetPath.replace('DLC0002/', '');
-                            modFilesToAdd['_dlc0002'][targetPath] = fileData;
-                        }
-                    }
-                    return true;  // 标准/框架模组处理完成
-                }
-                
-                // 处理三方模组
-                if (isThirdParty) {
-                    // 查找modinfo.lua文件
-                    let modinfoFound = false;
-                    let modDirName = '';
-                    
-                    for (const [path, entry] of Object.entries(zip.files)) {
-                        if (entry.dir) continue;
-                        
-                        const normalizedPath = path.replace(/\\/g, '/');
-                        if (normalizedPath.toLowerCase().endsWith('/modinfo.lua')) {
-                            modinfoFound = true;
-                            // 提取模组目录名
-                            modDirName = normalizedPath.split('/')[0];
-                            break;
-                        }
-                    }
-                    
-                    if (!modinfoFound) {
-                        console.warn(`三方模组 ${modFile.name} 缺少 modinfo.lua 文件`);
-                        return false;
-                    }
-                    
-                    // 记录三方模组
-                    thirdPartyMods.push(modDirName);
-                    
-                    // 添加所有文件到data.archive
-                    for (const [path, entry] of Object.entries(zip.files)) {
-                        if (entry.dir) continue;
-                        
-                        const normalizedPath = path.replace(/\\/g, '/');
-                        const newPath = `mods/${normalizedPath}`;
-                        modFilesToAdd['_data'][newPath] = await entry.async('uint8array');
-                    }
-                    
-                    return true;
-                }
-                
-                return false;
-                
-            } catch (error) {
-                console.error(`处理模组失败: ${modFile.name}`, error);
-                throw new Error(`处理模组失败: ${modFile.name}`);
-            }
-        }
-        
-        // 生成三方模组配置文件
-        function generateBmmodsLua(mergedDataFiles) {
-            const modsFolder = 'mods/';
-            const thirdPartyModDirs = new Set();
+        // 从ZIP提取模组文件
+        async function extractModFiles(zipFile, modFilesToAdd, progressPercent) {
+            installProgressFill.style.width = progressPercent;
+            installProgressText.textContent = `正在解压: ${zipFile.name}...`;
             
-            // 从合并后的文件列表中查找三方模组目录
-            for (const file of mergedDataFiles) {
-                // 检查文件路径是否符合 mods/xxx/modinfo.lua 格式
-                if (file.name.startsWith(modsFolder) && file.name.includes('/modinfo.lua')) {
-                    // 提取模组目录名（mods/后的第一级目录）
-                    const relPath = file.name.substring(modsFolder.length);
-                    const modDir = relPath.split('/')[0];
-                    
-                    // 排除标准BM模组（以BM后跟三位数字开头）
-                    if (modDir && !modDir.match(/^BM\d{3}/)) {
-                        thirdPartyModDirs.add(modDir);
-                    }
+            const arrayBuffer = await readFileAsArrayBuffer(zipFile);
+            const zip = await JSZip.loadAsync(arrayBuffer);
+            
+            // 查找ADD_TO_OBB文件夹
+            let addToObbPrefix = '';
+            for (const filename of Object.keys(zip.files)) {
+                if (filename.includes('ADD_TO_OBB/') || filename.includes('ADD_TO_OBB\\')) {
+                    addToObbPrefix = filename.split('ADD_TO_OBB')[0] + 'ADD_TO_OBB/';
+                    break;
                 }
             }
             
-            // 生成配置文件内容
-            let bmmodsContent = '-- 模组配置文件 - 自动生成\n\n';
+            if (!addToObbPrefix) {
+                console.warn(`未找到ADD_TO_OBB目录: ${zipFile.name}`);
+                return;
+            }
             
-            thirdPartyModDirs.forEach(modDir => {
-                bmmodsContent += `Add('${modDir}')\n`;
-            });
-            
-            bmmodsContent += '\nreturn {}';
-            
-            return bmmodsContent;
+            // 提取文件
+            for (const filename of Object.keys(zip.files)) {
+                const zipEntry = zip.files[filename];
+                if (zipEntry.dir) continue;
+                
+                // 处理ADD_TO_OBB中的文件
+                if (filename.startsWith(addToObbPrefix)) {
+                    const relativePath = filename.slice(addToObbPrefix.length);
+                    
+                    // 根据路径决定添加到哪个archive
+                    if (relativePath.startsWith('mods/') || relativePath.startsWith('scripts/')) {
+                        // 添加到_data (data.archive)
+                        const targetPath = relativePath;
+                        const fileData = await zipEntry.async('uint8array');
+                        modFilesToAdd['_data'][targetPath] = fileData;
+                    } 
+                    else if (relativePath.startsWith('DLC0002/')) {
+                        // 添加到_dlc0002 (dlc0002.archive)
+                        const targetPath = relativePath.replace('DLC0002/', '');
+                        const fileData = await zipEntry.async('uint8array');
+                        modFilesToAdd['_dlc0002'][targetPath] = fileData;
+                    }
+                }
+            }
         }
         
-
-
         // 辅助函数
         function initDropZone(dropZone, fileInput, handler) {
             ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
