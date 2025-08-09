@@ -34,16 +34,6 @@ hugo --gc server -D --noBuildLock
 
 访问 http://localhost:1313/ ，可以看到 My New Hugo Site ，建站成功。
 
-## 后台管理
-
-创建 cms 文件(即将编写)
-
-启用本地验证
-
-```
-npx decap-server
-```
-
 
 ## 生成静态网站文件(可选)
 
@@ -71,17 +61,13 @@ git push -u origin main
 
 
 
-
+本地自用命令(备忘)
 
 cd /sdcard/acode/*paper/
 
 rm -rf public; hugo server -w --minify --noBuildLock 
 
 rm -rf public; hugo --minify --noBuildLock
-
- 
-
-
 
 
 # 1. 先获取远程更新（不合并）

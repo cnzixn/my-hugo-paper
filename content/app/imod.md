@@ -238,13 +238,13 @@ disableJsonLd: true
                 
                 if (file.name.match(/BM\d{3}\.zip/i)) {
                     modType = 'BM模组';
-                    icon = '🧩';
+                    icon = '<i class="bi bi-puzzle">';
                 } else if (file.name.match(/BM\d+\.\d+\.\d+\(.*\)\.zip/i)) {
-                    modType = '框架';
-                    icon = '🔧';
+                    modType = 'BM框架';
+                    icon = '<i class="bi bi-cpu"></i>';
                 } else {
-                    modType = '三方模组';
-                    icon = '📦';
+                    modType = '其他模组';
+                    icon = '<i class="bi bi-box-seam">';
                 }
                 
                 fileItem.innerHTML = `${icon} <strong>${modType}</strong>: ${file.name} (${formatFileSize(file.size)})`;
