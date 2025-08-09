@@ -16,12 +16,14 @@ git branch -m main
 ```
 
 ## 安装主题
+
+
 ```
 git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
 git submodule update --init --recursive # needed when you reclone your repo (submodules may not get cloned automatically)
 echo theme = "PaperMod" >> hugo.toml
 ```
-
+'72615b6d49ab8b102e92e2e487ab420f41ba9223'
 
 ## 本地部署
 ```

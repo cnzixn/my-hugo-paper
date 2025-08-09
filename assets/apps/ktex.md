@@ -23,7 +23,7 @@ searchHidden: true
   border-radius: 8px;
   margin-bottom: 20px;
   font-size: 0.95rem;
-  border: 1px solid var(--border-color);
+  border: 1px solid #ddd;
   }
   
   .tool-info ul {
@@ -69,13 +69,13 @@ searchHidden: true
   border-radius: 8px;
   margin: 15px 0;
   font-size: 0.9rem;
-  border: 1px solid var(--border-color);
+  border: 1px solid #ddd;
   }
 
   select, .format-selector {
   width: 100%;
   padding: 12px;
-  border: 2px solid var(--border-color);
+  border: 2px solid #ddd;
   border-radius: 4px;
   margin: 15px 0;
   font-size: 1rem;
@@ -90,7 +90,7 @@ searchHidden: true
   }
   
   .option-card {
-  border: 2px solid var(--border-color);
+  border: 2px solid #ddd;
   border-radius: 8px;
   padding: 10px;
   margin-bottom: 0;
@@ -115,7 +115,6 @@ searchHidden: true
   
   .option-card h4 {
   margin: 0 0 5px 0;
-  color: var(--dark-gray);
   font-size: 0.9rem;
   }
   
@@ -141,7 +140,6 @@ searchHidden: true
   }
   .option-card-disabled h4 {
   margin: 0 0 5px 0;
-  color: var(--dark-gray);
   font-size: 0.9rem;
   color: #999;
   }
@@ -161,7 +159,7 @@ searchHidden: true
   
   .progress-fill {
   height: 100%;
-  background: var(--primary-color);
+  background: #4cd964;
   width: 0%;
   transition: width 0.5s ease;
   border-radius: 4px;
@@ -177,7 +175,7 @@ searchHidden: true
   justify-content: center;
   overflow: hidden;
   display: none;
-  border: 1px solid var(--border-color);
+  border: 1px solid #ddd;
   }
   
   .thumbnail img {
@@ -191,7 +189,7 @@ searchHidden: true
   }
   
   .error-message {
-  color: var(--danger-color);
+  color: red;
   background: rgba(231, 76, 60, 0.1);
   padding: 10px;
   border-radius: 4px;

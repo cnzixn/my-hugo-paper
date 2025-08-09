@@ -1,14 +1,15 @@
-{{- define "main" }}
+{{- define "main" -}}
 
-<header class="page-header">
-    <h1>{{ .Title }}</h1>
-</header>
+  {{- if .Title }}
+    <header class="page-header">
+      <h1>{{ .Title }}</h1>
+    </header>
+  {{- end }}
 
-{{- if .Content }}
-  <div class="post-content">
-    {{ .Content }}
-  </div>
+  {{- if .Content }}
+    <div class="post-content">
+      {{ .Content | safeHTML }}
+    </div>
+  {{- end }}
+
 {{- end }}
-
-
-{{- end }}{{/* end main */}}

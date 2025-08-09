@@ -1,26 +1,25 @@
 {{- $.Scratch.Add "index" slice -}}
 {{- range site.RegularPages -}}
-    {{- if and (not .Params.searchHidden) (ne .Layout `archives`) (ne .Layout `search`) }}
-    {{- /* 处理 summary：移除所有代码块及 HTML 标签 */}}
-    {{- $summary := .Summary }}
-    {{- $summary = replaceRE `<pre[^>]*>[\s\S]*?</pre>` "" $summary | safeHTML -}}{{/* 移除<pre>代码块 */}}
-    {{- $summary = replaceRE `<code[^>]*>[\s\S]*?</code>` "" $summary | safeHTML -}}{{/* 移除<code>代码 */}}
-    {{- $summary = $summary | plainify -}}{{/* 转为纯文本 */}}
+    {{- if and (not .Params.searchHidden) (ne .Layout "archives") (ne .Layout "search") }}
+        {{- /* 处理 summary */}}
+        {{- $summary := .Summary | replaceRE `<pre[^>]*>[\s\S]*?</pre>` "" | replaceRE `<code[^>]*>[\s\S]*?</code>` "" | plainify -}}
 
-    {{- /* 处理 content：移除所有代码块，保留其他正文内容 */}}
-    {{- $content := .Content }}
-    {{- $content = replaceRE `<pre[^>]*>[\s\S]*?</pre>` "" $content | safeHTML -}}{{/* 移除<pre>代码块 */}}
-    {{- $content = replaceRE `<code[^>]*>[\s\S]*?</code>` "" $content | safeHTML -}}{{/* 移除<code>代码 */}}
-    {{- $content = $content | plainify -}}{{/* 转为纯文本 */}}
+        {{- /* 处理 content */}}
+        {{- $content := .Content | replaceRE `<pre[^>]*>[\s\S]*?</pre>` "" | replaceRE `<code[^>]*>[\s\S]*?</code>` "" | plainify -}}
 
-    {{- /* 加入索引 */}}
-    {{- $.Scratch.Add "index" (dict 
-        "title" .Title 
-        "content" $content
-        "permalink" .Permalink 
-        "summary" $summary
-        "tags" .Params.tags
-    ) -}}
+        {{- /* 确保 tags 是数组 */}}
+        {{- $tags := .Params.tags | default (slice) -}}
+
+        {{- /* 加入索引，所有字符串先 safeJS 防止 JSON 崩溃 */}}
+        {{- $.Scratch.Add "index" (dict 
+            "title" (.Title | safeJS) 
+            "content" ($content | safeJS) 
+            "permalink" (.Permalink | safeJS)
+            "summary" ($summary | safeJS) 
+            "tags" $tags
+        ) -}}
     {{- end }}
 {{- end -}}
+
+{{- /* 最终输出 JSON */}}
 {{- $.Scratch.Get "index" | jsonify -}}

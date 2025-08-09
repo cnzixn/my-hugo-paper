@@ -2,6 +2,7 @@
 title: ""
 layout: page
 searchHidden: true
+disableJsonLd: true
 ---
 
 <style>

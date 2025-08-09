@@ -121,9 +121,9 @@ const DXTUtils = {
 
   getComponentsFromRGB565(color) {
     return {
-      R: ((color & 0b11111000_00000000) >> 8) / 0xff,
-      G: ((color & 0b00000111_11100000) >> 3) / 0xff,
-      B: ((color & 0b00000000_00011111) << 3) / 0xff
+      R: ((color & 0b11111000000000000) >> 8) / 0xff,
+      G: ((color & 0b00000111011100000) >> 3) / 0xff,
+      B: ((color & 0b00000000000011111) << 3) / 0xff
     }
   },
 
@@ -243,64 +243,6 @@ function compressBlockDXT3(pixels, outArray = null) {
   return out;
 }
 
-
-// 带优化的高质量 DXT5 Alpha 查找表生成
-function generateHighQualityDXT5AlphaLookup(alphaData, array = null) {
-  // 参数校验
-  if (!alphaData || typeof alphaData[Symbol.iterator] !== 'function') {
-    console.error('alphaData must be an array or typed array');
-    // 可选：返回默认值或抛出错误
-    return DXTUtils.generateDXT5AlphaLookup(255, 0, array); // fallback
-  }
-
-  let bestAlpha0 = 0, bestAlpha1 = 0;
-  let bestError = Infinity;
-
-  // 粗搜
-  for (let a0 = 0; a0 <= 255; a0 += 16) {
-    for (let a1 = 0; a1 <= 255; a1 += 16) {
-      const lookup = DXTUtils.generateDXT5AlphaLookup(a0, a1);
-      let error = 0;
-      for (let alpha of alphaData) {
-        let minDiff = Infinity;
-        for (let i = 0; i < 8; i++) {
-          const diff = alpha - lookup[i];
-          minDiff = Math.min(minDiff, diff * diff);
-        }
-        error += minDiff;
-      }
-      if (error < bestError) {
-        bestError = error;
-        bestAlpha0 = a0;
-        bestAlpha1 = a1;
-      }
-    }
-  }
-
-  // 细搜
-  for (let a0 = Math.max(0, bestAlpha0 - 16); a0 <= Math.min(255, bestAlpha0 + 16); a0++) {
-    for (let a1 = Math.max(0, bestAlpha1 - 16); a1 <= Math.min(255, bestAlpha1 + 16); a1++) {
-      const lookup = DXTUtils.generateDXT5AlphaLookup(a0, a1);
-      let error = 0;
-      for (let alpha of alphaData) {
-        let minDiff = Infinity;
-        for (let i = 0; i < 8; i++) {
-          const diff = alpha - lookup[i];
-          minDiff = Math.min(minDiff, diff * diff);
-        }
-        error += minDiff;
-      }
-      if (error < bestError) {
-        bestError = error;
-        bestAlpha0 = a0;
-        bestAlpha1 = a1;
-      }
-    }
-  }
-
-  return DXTUtils.generateDXT5AlphaLookup(bestAlpha0, bestAlpha1, array);
-}
-
 function compressBlockDXT5(pixels, outArray = null) {
   let out = outArray || new Uint8Array(DXT5BlockSize);
   compressBlockDXT1(pixels, out, true);
@@ -318,8 +260,7 @@ function compressBlockDXT5(pixels, outArray = null) {
   out[0] = minAlpha;
   out[1] = maxAlpha;
   
-  // let alphaLookup = DXTUtils.generateDXT5AlphaLookup(minAlpha, maxAlpha, alphaLookupBuffer);
-  let alphaLookup = generateHighQualityDXT5AlphaLookup(minAlpha, maxAlpha, alphaLookupBuffer);
+  let alphaLookup = DXTUtils.generateDXT5AlphaLookup(minAlpha, maxAlpha, alphaLookupBuffer);
 
   let alphaIndices = tmpDXT5AlphaBuffer;
   for (let i = 0; i < 16; i++) {

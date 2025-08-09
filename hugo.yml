@@ -49,11 +49,11 @@ markup:
 
 # ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- #
 
-services:
-  instagram:
-    disableInlineCSS: true
-  twitter:
-    disableInlineCSS: true
+# services:
+  # instagram:
+    # disableInlineCSS: true
+  # twitter:
+    # disableInlineCSS: true
 
 # ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- #
 
@@ -144,7 +144,7 @@ languages:
 # 可以放到“语言”下面
 
 params:
-  # env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
   description: "兔人框架，为饥荒手游提供模组运行环境。"
   author: BM
   # author: ["Me", "You"] # multiple authors
