@@ -19,7 +19,7 @@ items:
     name: 'KTEX编辑器'
     description: '这是一个饥荒TEX贴图处理工具，可以进行png和tex互相转化。'
     url: '/app/ktex'
-    status: 'coming'
+    status: 'available'
 
   - icon: '<i class="bi bi-archive"></i>'
     name: 'KLFA处理工具'
