@@ -27,7 +27,7 @@ echo theme = "PaperMod" >> hugo.toml
 
 ## 本地部署
 ```
-hugo server -D --noBuildLock
+hugo --gc server -D --noBuildLock
 ```
 
 ## 本地访问
@@ -62,3 +62,39 @@ hugo --minify
 git remote add origin https://github.com/xxxxxx/my-hugo-paper.git
 git branch -M main
 git push -u origin main
+
+
+
+
+
+
+
+
+
+
+
+cd /sdcard/acode/*paper/
+
+rm -rf public; hugo server -w --minify --noBuildLock 
+
+rm -rf public; hugo --minify --noBuildLock
+
+ 
+
+
+
+
+# 1. 先获取远程更新（不合并）
+git fetch origin
+
+# 2. 对比本地分支与远程分支的差异
+git diff HEAD..origin/main    # 查看当前分支与远程main分支的差异
+git diff origin/main          # 查看远程分支具体改动内容
+
+# 3. 确认无误后再合并
+git merge origin/main
+
+
+# 提交更新
+git add . ; git commit -m "Update main at $(date '+%Y-%m-%d %H:%M:%S')" ; git push -u origin main
+
