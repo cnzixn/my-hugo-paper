@@ -50,49 +50,43 @@ async function getPriorityTime() {
         // month: now.getMonth() + 1,
         // day: now.getDate()
     // };
+
+    // 在 getPriorityTime 最后添加
+    throw new Error('所有时间源均不可用'); // 新增代码
 }
 
 // 生成今日密码（带优先级网络时间）
 async function generateTodayPassword() {
-    try {
-        const timeData = await getPriorityTime();
-        const { year, month, day } = timeData;
-        
-        // 统一日期格式（两位数）
-        const dateStr = `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
-        
-        const salt = "bm hello world";
-        const key = `day:${dateStr}-${salt}`;
-        
-        const hash = simpleHash(key);
-        return ("0000" + (hash % 10000)).slice(-4);
-    } catch (error) {
-        console.error('密码生成失败:', error);
-        return "????"; // 终极降级方案
-    }
+    const timeData = await getPriorityTime(); // 同步错误会在此处抛出
+    const { year, month, day } = timeData;
+    
+    // 统一日期格式（两位数）
+    const dateStr = `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+    
+    const salt = "bm hello world";
+    const key = `day:${dateStr}-${salt}`;
+    
+    const hash = simpleHash(key);
+    return ("0000" + (hash % 10000)).slice(-4);
 }
+
 
 // 更新密码（带重试机制）
 async function updatePasswordWithRetry(retries = 3) {
     try {
-        // 显示加载状态
         document.querySelectorAll('.today_password').forEach(el => {
             el.textContent = "今日密码：加载中...";
         });
 
-        const password = await generateTodayPassword();
+        const password = await generateTodayPassword(); // 此处会捕获同步和异步错误
         document.querySelectorAll('.today_password').forEach(el => {
             el.textContent = `今日密码：${password}`;
         });
     } catch (error) {
         if (retries > 0) {
             console.log(`重试中（剩余${retries}次）...`);
-            await new Promise(resolve => setTimeout(resolve, 1000)); // 延迟1秒重试
+            await new Promise(resolve => setTimeout(resolve, 1000));
             await updatePasswordWithRetry(retries - 1);
-        } else {
-            document.querySelectorAll('.today_password').forEach(el => {
-                el.textContent = "今日密码：获取失败，请检查网络";
-            });
         }
     }
 }

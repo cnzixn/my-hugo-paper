@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "KLFA 测试工具"
 layout: page
 searchHidden: true
 draft: true
@@ -79,7 +79,7 @@ draft: true
 
 
 
-<h1>KLFA 测试工具</h1>
+
 
 <div class="section">
 特别鸣谢：<a href="http://quickbms.aluigi.org" target="_blank">QuickBMS</a>

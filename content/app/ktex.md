@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "KTEX 编辑器"
 layout: page
 searchHidden: true
 ---
@@ -207,8 +207,6 @@ searchHidden: true
 </style>
 
 
-
-<h1>KTEX编辑器</h1>
 
 <div class="section">
 <p>特别鸣谢：<a href="https://github.com/LordVonAdel/dxtn" target="_blank">dxtn</a>

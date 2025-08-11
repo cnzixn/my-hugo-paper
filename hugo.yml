@@ -95,11 +95,10 @@ languages:
       homeInfoParams:
         Title: "👋 档案馆 - 兔人协会"
         Content: >
-          - 　兔人框架，为单机版饥荒( <i class="bi bi-android2"></i> & <i class="bi bi-apple"></i> )提供模组运行环境。【<span style="font-weight: bold; " class="today_password"></span>】
+          - 　📌 <span style="font-weight: bold; color:red;" class="today_password"></span>，游戏(无需联网)本地计算此密码！
           
-          - 　本站分享的文件，仅供个人使用。全部免费下载，禁止倒卖。
+          - 　📌 兔人框架：为单机版饥荒( <i class="bi bi-android2"></i> & <i class="bi bi-apple"></i> )提供模组运行环境。  
           
-          - 　注意：此网站为预览版，暂未正式使用！！！
       # editPost:
         # URL: "/cms/#/edit"
         # Text: "编辑" # edit text

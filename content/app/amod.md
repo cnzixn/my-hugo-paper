@@ -1,8 +1,8 @@
 ---
-title: ""
+title: "安卓-模组安装器"
 layout: page
 searchHidden: true
-disableJsonLd: true
+hideTitlt: true
 ---
 
 <style>
@@ -90,8 +90,6 @@ disableJsonLd: true
   }
 </style>
 
-
-<h1><i class="bi bi-android2"></i> 模组安装器 </h1>
 
 <div class="section reminder">
     <p><strong>温馨提示：</strong> 本工具<strong>不消耗流量</strong>，文件在浏览器本地处理，不需要上传到服务器。经过测试，Chrome、Edge浏览器可正常使用本工具，其他浏览器兼容性未知。</p>
