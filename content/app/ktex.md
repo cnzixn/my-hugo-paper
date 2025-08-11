@@ -211,8 +211,10 @@ searchHidden: true
 <h1>KTEX编辑器</h1>
 
 <div class="section">
-特别鸣谢：<a href="https://github.com/LordVonAdel/dxtn" target="_blank">dxtn</a>
+<p>特别鸣谢：<a href="https://github.com/LordVonAdel/dxtn" target="_blank">dxtn</a>
 & <a href="https://github.com/handsomematt/dont-starve-tools" target="_blank">dont-starve-tools</a>
+</p>
+不支持“批处理”，仅供临时应急使用
 </div>
 
 <!-- TEX转PNG部分 -->
@@ -332,6 +334,7 @@ searchHidden: true
 
 <!-- 外部ktex.js文件 -->
 <script src="/js/ktex.encrypt.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
 
 <script>
     // 网页交互功能
@@ -749,30 +752,27 @@ searchHidden: true
         downloadPngBtn.addEventListener('click', function() {
             if (!convertedPngData) return;
             
-            const link = document.createElement('a');
-            link.href = convertedPngData;
-            link.download = currentTexFile ? 
+            const filename = currentTexFile ? 
                 currentTexFile.name.replace('.tex', '.png') : 'converted.png';
+            
+            // 创建a标签并触发下载
+            const link = document.createElement('a');
+            link.href = convertedPngData; // 直接使用dataURL作为链接
+            link.download = filename; // 文件名（指定后浏览器会下载而非跳转）
             document.body.appendChild(link);
             link.click();
-            document.body.removeChild(link);
+            document.body.removeChild(link); // 清理DOM
+
         });
         
         // 下载转换后的TEX文件
         downloadTexBtn.addEventListener('click', function() {
             if (!convertedTexData) return;
             
-            const url = URL.createObjectURL(convertedTexData);
-            const link = document.createElement('a');
-            link.href = url;
-            link.download = currentPngFile ? 
+            const blob = URL.createObjectURL(convertedTexData);
+            const filename = currentPngFile ? 
                 currentPngFile.name.replace('.png', '.tex') : 'converted.tex';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-            
-            // 释放对象URL
-            setTimeout(() => URL.revokeObjectURL(url), 100);
+            saveAs(blob, filename);
         });
         
         // 显示/隐藏进度条

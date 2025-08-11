@@ -272,20 +272,7 @@ draft: true
                 const originalName = unpackFileInput.files[0]?.name || 'archive';
                 const zipName = `_${originalName.replace('.archive', '')}.zip`;
                 
-                // 使用更可靠的下载方式
-                const url = URL.createObjectURL(blob);
-                const a = document.createElement('a');
-                a.href = url;
-                a.download = zipName;
-                a.style.display = 'none';
-                document.body.appendChild(a);
-                a.click();
-                
-                // 清理
-                setTimeout(() => {
-                    document.body.removeChild(a);
-                    URL.revokeObjectURL(url);
-                }, 100);
+                saveAs(blob, zipName);
             } catch (error) {
                 showUnpackError('创建 zip 文件失败: ' + error.message);
             }
@@ -432,24 +419,7 @@ draft: true
         // 下载KLFA文件
         downloadKlfaBtn.addEventListener('click', () => {
             const blob = new Blob([klfaData], { type: 'application/octet-stream' });
-            // saveAs(blob, packOriginalName);
-            
-            const filename= packOriginalName;
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = filename;
-            a.style.display = 'none';
-            // 先移除可能存在的同名元素
-            document.querySelectorAll('a[download="'+filename+'"]').forEach(el => el.remove());
-            // 模拟点击
-            document.body.appendChild(a);
-            a.click();
-            // 清理
-            setTimeout(() => {
-                document.body.removeChild(a);
-                URL.revokeObjectURL(url);
-            }, 100);
+            saveAs(blob, packOriginalName);
         });
         
         // 显示错误

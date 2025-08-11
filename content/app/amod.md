@@ -191,19 +191,15 @@ disableJsonLd: true
         // 下载按钮事件
         downloadBtn.addEventListener('click', () => {
             if (modifiedApk) {
-                const filename = apkFile.name.replace(/\.apk$/i, '_modded.apk');
+                // const filename = apkFile.name.replace(/\.apk$/i, '_modded.apk');
+                // 先移除文件名中可能存在的 _xxxxx 后缀（假设是下划线+任意字符的结尾）
+                // 再替换 .apk 为 _modded_时间戳.apk
+                const filename = apkFile.name
+                  .replace(/_.*?(?=\.apk$)/i, '') // 移除 .apk 前的 _xxxxx 部分
+                  .replace(/\.apk$/i, `_${Date.now()}.apk`); // 加上时间戳
+
                 const blob = new Blob([modifiedApk], { type: 'application/vnd.android.package-archive' });
-                const url = URL.createObjectURL(blob);
-                const a = document.createElement('a');
-                a.href = url;
-                a.download = filename;
-                a.style.display = 'none';
-                document.body.appendChild(a);
-                a.click();
-                setTimeout(() => {
-                    document.body.removeChild(a);
-                    URL.revokeObjectURL(url);
-                }, 100);
+                saveAs(blob, filename);
             }
         });
         

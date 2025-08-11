@@ -1,34 +1,101 @@
-// 简单哈希函数：输入字符串，返回一个整数哈希值
+// 简单哈希函数保持不变
 function simpleHash(str) {
     let hash = 0;
     for (let i = 0; i < str.length; i++) {
-        // 简单累加 + 移位，确保哈希值分散
         hash = (hash << 5) - hash + str.charCodeAt(i);
-        hash = hash & hash; // 转为32位整数（去符号）
+        hash = hash & hash;
     }
-    return Math.abs(hash); // 取绝对值
+    return Math.abs(hash);
 }
 
-// 生成今日密码
-function generateTodayPassword() {
-    const now = new Date();
-    // 固定盐值（与Lua保持一致）
-    const salt = "bm hello world";
-    // 生成key：年月日 + 盐值（格式与Lua统一）
-    const key = `day:${now.getFullYear()}-${now.getMonth() + 1}-${now.getDate()}-${salt}`;
-    
-    // 计算哈希并取4位
-    const hash = simpleHash(key);
-    const code = ("0000" + (hash % 10000)).slice(-4);
-    return code;
+// 多优先级时间获取器
+async function getPriorityTime() {
+    // 苏宁API优先
+    try {
+        const suningRes = await fetch('https://quan.suning.com/getSysTime.do');
+        if (!suningRes.ok) throw new Error('苏宁API响应失败');
+        
+        const data = await suningRes.json();
+        const [year, month, day] = data.sysTime2.split(' ')[0].split('-');
+        return { year: +year, month: +month, day: +day };
+    } catch (e) {
+        console.log('苏宁API失败:', e);
+    }
+
+    // 北京时间API次选
+    try {
+        const beijingRes = await fetch('https://www.beijing-time.org/t/time.asp');
+        if (!beijingRes.ok) throw new Error('北京API响应失败');
+        
+        const text = await beijingRes.text();
+        const regex = /nyear=(\d+).*?nmonth=(\d+).*?nday=(\d+)/;
+        const matches = text.match(regex);
+        
+        if (matches) {
+            return {
+                year: +matches[1],
+                month: +matches[2],
+                day: +matches[3]
+            };
+        }
+        throw new Error('解析失败');
+    } catch (e) {
+        console.log('北京API失败:', e);
+    }
+
+    // 本地时间保底
+    // const now = new Date();
+    // return {
+        // year: now.getFullYear(),
+        // month: now.getMonth() + 1,
+        // day: now.getDate()
+    // };
 }
 
-// 更新密码
-function updatePassword() {
-    const password = generateTodayPassword();
-    document.querySelectorAll('.today_password').forEach(el => {
-        el.textContent = "验证码：" + password + "，你可能会需要它！";
-    });
+// 生成今日密码（带优先级网络时间）
+async function generateTodayPassword() {
+    try {
+        const timeData = await getPriorityTime();
+        const { year, month, day } = timeData;
+        
+        // 统一日期格式（两位数）
+        const dateStr = `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+        
+        const salt = "bm hello world";
+        const key = `day:${dateStr}-${salt}`;
+        
+        const hash = simpleHash(key);
+        return ("0000" + (hash % 10000)).slice(-4);
+    } catch (error) {
+        console.error('密码生成失败:', error);
+        return "????"; // 终极降级方案
+    }
 }
 
-updatePassword();
+// 更新密码（带重试机制）
+async function updatePasswordWithRetry(retries = 3) {
+    try {
+        // 显示加载状态
+        document.querySelectorAll('.today_password').forEach(el => {
+            el.textContent = "今日密码：加载中...";
+        });
+
+        const password = await generateTodayPassword();
+        document.querySelectorAll('.today_password').forEach(el => {
+            el.textContent = `今日密码：${password}`;
+        });
+    } catch (error) {
+        if (retries > 0) {
+            console.log(`重试中（剩余${retries}次）...`);
+            await new Promise(resolve => setTimeout(resolve, 1000)); // 延迟1秒重试
+            await updatePasswordWithRetry(retries - 1);
+        } else {
+            document.querySelectorAll('.today_password').forEach(el => {
+                el.textContent = "今日密码：获取失败，请检查网络";
+            });
+        }
+    }
+}
+
+// 初始化
+updatePasswordWithRetry();
