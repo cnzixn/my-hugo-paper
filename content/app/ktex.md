@@ -2,6 +2,7 @@
 title: "KTEX 编辑器"
 layout: page
 searchHidden: true
+draft: true
 ---
 
 <style>
