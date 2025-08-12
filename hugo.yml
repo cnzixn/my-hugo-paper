@@ -98,7 +98,7 @@ languages:
           - 　📌 <span style="font-weight: bold; color:red;" class="today_password"></span>，游戏(无需联网)本地计算此密码！
           
           - 　📌 兔人框架：为单机版饥荒( <i class="bi bi-android2"></i> & <i class="bi bi-apple"></i> )提供模组运行环境。  
-          
+          - 　⚠️ 此网站为预览版，未正式使用！！！
       # editPost:
         # URL: "/cms/#/edit"
         # Text: "编辑" # edit text
