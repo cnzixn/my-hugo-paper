@@ -28,15 +28,16 @@ hideTitlt: true
     border-color: #666;
   }
   .section button {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px; /* 可去掉左右固定padding，避免与width冲突 */
-    margin: 10px auto;
-    border-radius: 3px;
-    cursor: pointer;
-    display: block;
-    width: 200px; /* 固定宽度，根据需求调整数值 */
-  }
+        border-radius: 8px;
+        padding: 10px; /* 可去掉左右固定padding，避免与width冲突 */
+        margin: 10px auto;
+        cursor: pointer;
+        display: block;
+        width: 200px; /* 固定宽度，根据需求调整数值 */
+        background-color: #0183FD;
+        background-color: #4CAF50;
+
+    }
   .section button:hover {
     transform: translateY(-1px);
     box-shadow: 0 2px 8px #666;
@@ -79,6 +80,7 @@ hideTitlt: true
     max-height: 200px;
     overflow-y: auto;
     border: 1px solid #ddd;
+    border-radius: 3px;
     padding: 10px;
   }
   .file-item {
@@ -90,6 +92,15 @@ hideTitlt: true
   }
 </style>
 
+<!-- <div class="section"> -->
+  <!-- <button class="btn-view-counter" data-id="download-zip"> -->
+  <!-- 下载 <span class="btn-view-count">0</span> -->
+  <!-- </button> -->
+  <!--  -->
+  <!-- <button class="btn-view-counter" data-id="like-post"> -->
+  <!-- 点赞 <span class="btn-view-count">0</span> -->
+  <!-- </button> -->
+<!-- </div> -->
 
 <div class="section reminder">
     <p><strong>温馨提示：</strong> 本工具<strong>不消耗流量</strong>，文件在浏览器本地处理，不需要上传到服务器。经过测试，Chrome、Edge浏览器可正常使用本工具，其他浏览器兼容性未知。</p>
@@ -129,10 +140,12 @@ hideTitlt: true
     </div>
     <div id="installError" class="error"></div>
     <div id="installResult" style="display: none;">
-        <button id="downloadBtn">下载修改后的APK</button>
+        <button id="downloadBtn" class="btn-view-counter" data-id="amod-download-apk">保存文件</button>
+        本工具使用次数统计：<span class="amod-download-apk-count">0</span>
     </div>
 </div>
 
+<script defer src="/js/bv.encrypt.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
 
@@ -198,6 +211,7 @@ hideTitlt: true
 
                 const blob = new Blob([modifiedApk], { type: 'application/vnd.android.package-archive' });
                 saveAs(blob, filename);
+                trackButtonClick('downloadBtn', '.click-count')
             }
         });
         
@@ -248,7 +262,7 @@ hideTitlt: true
                     modType = '其他模组';
                     icon = '<i class="bi bi-box-seam">';
                 }
-                
+                modType = ' - ';
                 fileItem.innerHTML = `${icon} <strong>${modType}</strong>: ${file.name} (${formatFileSize(file.size)})`;
                 modsFileList.appendChild(fileItem);
             });

@@ -1,5 +1,6 @@
 // 部署在 cloudflare 的 Worker，网站前端不使用此代码
 // curl -X GET 'https://pv.bxq.me?site=localhost&page=abcde'
+// curl -X GET 'https://pv.bxq.me?site=localhost&page=abcde&mode=query'
 // curl -X POST 'https://pv.bxq.me?site=localhost' -H 'X-Auth-Key: DEFAULT_SECURE_KEY'
 export default {
   async fetch(request, env) {
@@ -81,23 +82,26 @@ export default {
           headers: { ...corsHeaders, 'Content-Type': 'text/plain' }
         });
       }
-
+    
+      const mode = url.searchParams.get('mode'); // query 或 空
+    
       try {
         // 2. 获取站点数据
         const siteKey = `site:${site}`;
         let siteData = {};
         const storedData = await env.WEB_PAGE_VIEWS.get(siteKey);
         if (storedData) siteData = JSON.parse(storedData);
-
-        // 3. 原子更新计数
-        siteData[pageHash] = (siteData[pageHash] || 0) + 1;
-
-        // 4. 保存数据
-        await env.WEB_PAGE_VIEWS.put(siteKey, JSON.stringify(siteData));
-
-        // 5. 返回当前计数
+    
+        // 3. 根据 mode 判断是否自增
+        if (mode !== 'query') {
+          siteData[pageHash] = (siteData[pageHash] || 0) + 1;
+          // 保存数据
+          await env.WEB_PAGE_VIEWS.put(siteKey, JSON.stringify(siteData));
+        }
+    
+        // 4. 返回当前计数
         return new Response(JSON.stringify({ 
-          views: siteData[pageHash] 
+          views: siteData[pageHash] || 0
         }), {
           headers: { 
             ...corsHeaders, 
@@ -105,7 +109,7 @@ export default {
             'Cache-Control': 'no-store, max-age=0'
           }
         });
-        
+    
       } catch (error) {
         console.error('计数处理错误:', error);
         return new Response(JSON.stringify({ error: "Server error" }), {
