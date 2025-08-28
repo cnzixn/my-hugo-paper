@@ -44,6 +44,10 @@ hideTitlt: true
           transform: translateY(-1px);
           box-shadow: 0 2px 8px #666;
       }
+      /* 测试按钮样式区分 */
+      .section button.test-btn {
+          background-color: #2196F3;
+      }
       .file-info {
           margin: 10px 0;
           padding: 10px;
@@ -114,7 +118,7 @@ hideTitlt: true
 
 
 <div class="section reminder">
-    <p><strong>使用方法：</strong> 访问本页面时，若带有参数"data=xxxxx"，则会将"xxxxx"显示在下面的内容框，方便复制。</p>
+    <p><strong>使用方法：</strong> 访问本页面带有"data=xxxxx"，则会将"xxxxx"显示在下面的内容框，方便复制。</p>
 </div>
 
 
@@ -124,8 +128,12 @@ hideTitlt: true
 </div>
 
 <div class="section">
+ 
+  <!-- 测试按钮 -->
+  <button class="test-btn" id="test-btn">测试一下</button>
+
   <!-- 复制按钮 -->
-  <button id="copy-btn">复制到剪贴板</button>
+  <button id="copy-btn">复制内容</button>
   
   <!-- 复制成功提示 -->
   <div class="copied-notice" id="copied-notice">
@@ -137,3 +145,14 @@ hideTitlt: true
 </div>
 
 <script defer src="/js/app-copy.js"></script>
+
+<!-- 测试按钮脚本 -->
+<script>
+document.getElementById('test-btn').addEventListener('click', function() {
+    // 替换为你的指定网址（例如带测试数据的链接）
+    const testUrl = '/app/copy?data=这是测试数据，用于验证功能';
+    // 跳转到指定网址
+    window.location.href = testUrl;
+});
+</script>
+

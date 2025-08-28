@@ -15,6 +15,12 @@ items:
     url: '/app/imod'
     status: 'coming'
 
+  - icon: '<i class="bi bi-clipboard"></i>'
+    name: '在线剪贴板'
+    description: '访问本页面带有"?data=xxxxx"，则会将"xxxxx"显示在下面的内容框，方便复制。'
+    url: '/app/copy'
+    status: 'available'
+
   - icon: '<i class="bi bi-image"></i>'
     name: 'KTEX编辑器'
     description: '这是一个饥荒TEX贴图处理工具，可以进行png和tex互相转化。'
