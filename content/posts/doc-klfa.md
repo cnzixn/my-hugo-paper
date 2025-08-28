@@ -2,6 +2,7 @@
 title: 'KLFA - 解包/打包'
 date: 2025-12-28
 author: 'Bny'
+summary: '本文介绍饥荒 ios 版本中的 data.archive 解包/打包。'
 tags:
 - '资料'
 aliases:
@@ -10,8 +11,6 @@ url: '/p/431/'
 ---
 
 ![图片](/img/Image_1752847449499.jpg)
-
-> 本文介绍饥荒 ios 版本中的 data.archive 解包/打包。
 
 - - -
 

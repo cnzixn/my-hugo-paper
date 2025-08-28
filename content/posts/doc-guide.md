@@ -3,6 +3,7 @@ title: '教程 - 新人指引'
 date: 2025-01-20
 weight: -9
 author: 'Bny'
+summary: '此文章为新人教学，包含下载文件、安装框架&模组等内容。'
 tags:
 - '资料'
 aliases:
@@ -10,8 +11,6 @@ aliases:
 comments: false
 url: '/p/159/'
 ---
-
-> 此文章包含下载文件、安装框架&模组的相关内容。  
 
 --- 
 

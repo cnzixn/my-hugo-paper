@@ -2,6 +2,7 @@
 title: '苹果 - 巨魔商店'
 date: 2025-12-28
 author: 'Bny'
+summary: '本文从零开始记录一下 iOS 使用 TrollStore 的过程。'
 tags:
 - '资料'
 aliases:
@@ -10,8 +11,6 @@ url: '/p/728/'
 ---
 
 > 把吃灰好久的果子拿出来折腾一下，用 Win10 电脑给 iPhone 6s 安装巨魔商店。  
-> 
-> 不需要花钱，不用买证书！！！
 
 ---
 

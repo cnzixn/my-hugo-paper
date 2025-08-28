@@ -2,6 +2,7 @@
 title: '存档 - iCloud'
 date: 2025-08-28
 author: 'Bny'
+summary: '本文介绍 iOS 如何使用 iCloud 云存档。'
 tags:
 - '资料'
 aliases:
@@ -10,7 +11,7 @@ comments: false
 url: '/p/821/'
 ---
 
-> 本文介绍如何使用 iCloud 云存档。
+> 本文介绍 iOS 如何使用 iCloud 云存档。
 
 
 ---

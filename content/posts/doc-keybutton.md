@@ -2,6 +2,7 @@
 title: '按键 - 使用教程'
 date: 2025-04-18
 author: 'Bny'
+summary: '本文介绍 BM000 模拟“按键操作”的功能，支持组合按键。'
 tags:
 - '资料'
 aliases:
@@ -10,9 +11,6 @@ comments: false
 url: '/p/315/'
 ---
 
-> 本文介绍如何新增按键功能。
-
----
 
 ### 游戏截图
 
