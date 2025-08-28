@@ -192,7 +192,23 @@ disableJsonLd: true
         // 下载按钮事件
         downloadBtn.addEventListener('click', () => {
             if (modifiedIpa) {
-                const filename = ipaFile.name.replace('.ipa', '_modded.ipa');
+
+                const date = new Date();
+                // 提取并格式化时间各部分（补零处理）
+                const yy = String(date.getFullYear()).slice(-2);
+                const mm = String(date.getMonth() + 1).padStart(2, '0');
+                const dd = String(date.getDate()).padStart(2, '0');
+                const hh = String(date.getHours()).padStart(2, '0');
+                const min = String(date.getMinutes()).padStart(2, '0');
+                const ss = String(date.getSeconds()).padStart(2, '0');
+                
+                const timeStr = `${yy}${mm}${dd}_${hh}${min}${ss}`;
+                
+                // 替换 .ipa 后缀，添加时间戳
+                const filename = ipaFile.name
+                    .replace(/_.*?(?=\.ipa$)/i, '') // 移除 .apk 前的 _xxxxx 部分
+                    .replace(/\.ipa$/i, `_${timeStr}.ipa`); // 替换为格式化后的时间
+
                 const blob = new Blob([modifiedIpa], { 
                     type: 'application/octet-stream' 
                 });

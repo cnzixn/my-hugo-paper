@@ -202,12 +202,23 @@ hideTitlt: true
         // 下载按钮事件
         downloadBtn.addEventListener('click', () => {
             if (modifiedApk) {
-                // const filename = apkFile.name.replace(/\.apk$/i, '_modded.apk');
-                // 先移除文件名中可能存在的 _xxxxx 后缀（假设是下划线+任意字符的结尾）
-                // 再替换 .apk 为 _modded_时间戳.apk
+
+                const date = new Date();
+                // 提取年、月、日、时、分、秒并补零
+                const yy = String(date.getFullYear()).slice(-2); // 取年份后两位
+                const mm = String(date.getMonth() + 1).padStart(2, '0'); // 月份从0开始，需+1
+                const dd = String(date.getDate()).padStart(2, '0');
+                const hh = String(date.getHours()).padStart(2, '0');
+                const min = String(date.getMinutes()).padStart(2, '0');
+                const ss = String(date.getSeconds()).padStart(2, '0');
+                
+                // 拼接为 yymmdd-hh:mm:ss 格式
+                const timeStr = `${yy}${mm}${dd}_${hh}${min}${ss}`;
+                
                 const filename = apkFile.name
                   .replace(/_.*?(?=\.apk$)/i, '') // 移除 .apk 前的 _xxxxx 部分
-                  .replace(/\.apk$/i, `_${Date.now()}.apk`); // 加上时间戳
+                  .replace(/\.apk$/i, `_${timeStr}.apk`); // 替换为格式化后的时间
+
 
                 const blob = new Blob([modifiedApk], { type: 'application/vnd.android.package-archive' });
                 saveAs(blob, filename);

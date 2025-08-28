@@ -29,7 +29,7 @@ url: '/p/159/'
 > 用到的文件，请提前下载  
 
 [<i class="bi bi-link-45deg">工具</i>](#工具) MT管理器  
-[<i class="bi bi-link-45deg">游戏</i>](#游戏) BM25.08.28(1.33.5).APK  
+[<i class="bi bi-link-45deg">游戏</i>](#游戏) BM25.08.20(1.33.5).APK  
 [<i class="bi bi-link-45deg">框架</i>](#框架) BM25.09.01.ZIP.XZ  
 [<i class="bi bi-link-45deg">模组</i>](#模组) BM035.ZIP.XZ  
 
