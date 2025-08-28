@@ -1,13 +1,13 @@
 ---
-'title': 'BM165-魔法号角'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM165-魔法号角'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '装备'
-'aliases':
+aliases:
 - 'BM165'
-'url': '/p/137/'
+url: '/p/137/'
 ---
 
 > 本文介绍了模组 **魔法号角** 的功能与特点。

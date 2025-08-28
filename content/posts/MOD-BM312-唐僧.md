@@ -1,13 +1,13 @@
 ---
-'title': 'BM312-唐僧'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM312-唐僧'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM312'
-'url': '/p/318/'
+url: '/p/318/'
 ---
 
 > 本文介绍了模组 **唐僧** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM370-樱花树'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM370-樱花树'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '美化'
-'aliases':
+aliases:
 - 'BM370'
-'url': '/p/546/'
+url: '/p/546/'
 ---
 
 > 本文介绍了模组 **樱花树** 的功能与特点。

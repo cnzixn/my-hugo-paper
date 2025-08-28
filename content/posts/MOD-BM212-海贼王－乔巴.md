@@ -1,13 +1,13 @@
 ---
-'title': 'BM212-海贼王－乔巴'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM212-海贼王－乔巴'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM212'
-'url': '/p/164/'
+url: '/p/164/'
 ---
 
 > 本文介绍了模组 **海贼王－乔巴** 的功能与特点。

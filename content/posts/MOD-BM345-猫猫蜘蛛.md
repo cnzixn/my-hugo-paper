@@ -1,13 +1,13 @@
 ---
-'title': 'BM345-猫猫蜘蛛'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM345-猫猫蜘蛛'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '美化'
-'aliases':
+aliases:
 - 'BM345'
-'url': '/p/537/'
+url: '/p/537/'
 ---
 
 > 本文介绍了模组 **猫猫蜘蛛** 的功能与特点。

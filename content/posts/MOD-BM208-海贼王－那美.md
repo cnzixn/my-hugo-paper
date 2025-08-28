@@ -1,13 +1,13 @@
 ---
-'title': 'BM208-海贼王－那美'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM208-海贼王－那美'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM208'
-'url': '/p/162/'
+url: '/p/162/'
 ---
 
 > 本文介绍了模组 **海贼王－那美** 的功能与特点。

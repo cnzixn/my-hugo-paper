@@ -1,13 +1,13 @@
 ---
-'title': 'BM114-手电筒'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM114-手电筒'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM114'
-'url': '/p/215/'
+url: '/p/215/'
 ---
 
 > 本文介绍了模组 **手电筒** 的功能与特点。

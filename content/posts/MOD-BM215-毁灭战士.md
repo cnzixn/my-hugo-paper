@@ -1,13 +1,13 @@
 ---
-'title': 'BM215-毁灭战士'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM215-毁灭战士'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '玩法'
-'aliases':
+aliases:
 - 'BM215'
-'url': '/p/262/'
+url: '/p/262/'
 ---
 
 > 本文介绍了模组 **毁灭战士** 的功能与特点。

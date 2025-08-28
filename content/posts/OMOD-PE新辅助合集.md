@@ -1,13 +1,13 @@
 ---
-'title': 'PE新辅助合集'
-'date': 2025-04-10
-'author': 'Bny'
-'tags':
+title: 'PE新辅助合集'
+date: 2025-04-10
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'dax3'
-'url': '/p/559/'
+url: '/p/559/'
 ---
 
 > 本文介绍了模组 **PE新辅助合集** 的功能与特点。

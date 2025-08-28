@@ -1,13 +1,13 @@
 ---
-'title': 'BM106-亚索'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM106-亚索'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM106'
-'url': '/p/107/'
+url: '/p/107/'
 ---
 
 > 本文介绍了模组 **亚索** 的功能与特点。

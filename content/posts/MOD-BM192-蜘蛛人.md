@@ -1,13 +1,13 @@
 ---
-'title': 'BM192-蜘蛛人'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM192-蜘蛛人'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM192'
-'url': '/p/152/'
+url: '/p/152/'
 ---
 
 > 本文介绍了模组 **蜘蛛人** 的功能与特点。

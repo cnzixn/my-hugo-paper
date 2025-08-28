@@ -1,13 +1,13 @@
 ---
-'title': 'BM266-蚱蜢'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM266-蚱蜢'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '玩法'
-'aliases':
+aliases:
 - 'BM266'
-'url': '/p/191/'
+url: '/p/191/'
 ---
 
 > 本文介绍了模组 **蚱蜢** 的功能与特点。

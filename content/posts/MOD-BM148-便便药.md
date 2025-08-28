@@ -1,13 +1,13 @@
 ---
-'title': 'BM148-便便药'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM148-便便药'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '玩法'
-'aliases':
+aliases:
 - 'BM148'
-'url': '/p/233/'
+url: '/p/233/'
 ---
 
 > 本文介绍了模组 **便便药** 的功能与特点。

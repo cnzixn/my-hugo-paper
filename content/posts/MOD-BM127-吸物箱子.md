@@ -1,13 +1,13 @@
 ---
-'title': 'BM127-吸物箱子'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM127-吸物箱子'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM127'
-'url': '/p/116/'
+url: '/p/116/'
 ---
 
 > 本文介绍了模组 **吸物箱子** 的功能与特点。

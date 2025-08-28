@@ -1,13 +1,13 @@
 ---
-'title': 'BM320-骑牛'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM320-骑牛'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM320'
-'url': '/p/530/'
+url: '/p/530/'
 ---
 
 > 本文介绍了模组 **骑牛** 的功能与特点。

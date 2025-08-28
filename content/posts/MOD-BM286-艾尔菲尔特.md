@@ -1,13 +1,13 @@
 ---
-'title': 'BM286-艾尔菲尔特'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM286-艾尔菲尔特'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM286'
-'url': '/p/299/'
+url: '/p/299/'
 ---
 
 > 本文介绍了模组 **艾尔菲尔特** 的功能与特点。

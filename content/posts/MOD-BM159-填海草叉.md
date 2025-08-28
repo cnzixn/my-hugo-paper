@@ -1,13 +1,13 @@
 ---
-'title': 'BM159-填海草叉'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM159-填海草叉'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'BM159'
-'url': '/p/238/'
+url: '/p/238/'
 ---
 
 > 本文介绍了模组 **填海草叉** 的功能与特点。

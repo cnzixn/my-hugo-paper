@@ -1,13 +1,13 @@
 ---
-'title': 'BM113-便便发射器'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM113-便便发射器'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM113'
-'url': '/p/111/'
+url: '/p/111/'
 ---
 
 > 本文介绍了模组 **便便发射器** 的功能与特点。

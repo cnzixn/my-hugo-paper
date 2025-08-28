@@ -1,13 +1,13 @@
 ---
-'title': 'BM398-旺达Wanda'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM398-旺达Wanda'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM398'
-'url': '/p/554/'
+url: '/p/554/'
 ---
 
 > 本文介绍了模组 **旺达Wanda** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM075-精灵公主'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM075-精灵公主'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM075'
-'url': '/p/76/'
+url: '/p/76/'
 ---
 
 > 本文介绍了模组 **精灵公主** 的功能与特点。

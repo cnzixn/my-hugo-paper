@@ -1,13 +1,13 @@
 ---
-'title': 'BM058-剑鱼'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM058-剑鱼'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '装备'
-'aliases':
+aliases:
 - 'BM058'
-'url': '/p/59/'
+url: '/p/59/'
 ---
 
 > 本文介绍了模组 **剑鱼** 的功能与特点。

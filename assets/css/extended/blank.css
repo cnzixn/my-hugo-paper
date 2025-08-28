@@ -6,8 +6,6 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 
 
 
-
-
 /* 图片添加边框（全局生效） */
 .post-content img {
   /* 边框样式：浅灰色细边框，与白色图片形成区分 */
@@ -56,7 +54,4 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
     font-size: 0.8rem; /* 标题文字大小 */
     text-align: center;
 }
-
-
-
 

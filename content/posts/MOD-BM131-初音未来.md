@@ -1,13 +1,13 @@
 ---
-'title': 'BM131-初音未来'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM131-初音未来'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM131'
-'url': '/p/118/'
+url: '/p/118/'
 ---
 
 > 本文介绍了模组 **初音未来** 的功能与特点。

@@ -1,7 +1,7 @@
 // 部署在 cloudflare 的 Worker，网站前端不使用此代码
-// curl -X GET 'https://pv.bxq.me?site=localhost&page=abcde'
-// curl -X GET 'https://pv.bxq.me?site=localhost&page=abcde&mode=query'
-// curl -X POST 'https://pv.bxq.me?site=localhost' -H 'X-Auth-Key: DEFAULT_SECURE_KEY'
+// curl -X GET 'https://example.com?site=localhost&page=abcde'
+// curl -X GET 'https://example.com?site=localhost&page=abcde&mode=query'
+// curl -X POST 'https://example.com?site=localhost' -H 'X-Auth-Key: DEFAULT_SECURE_KEY'
 export default {
   async fetch(request, env) {
     // 跨域配置（支持GET/DELETE/OPTIONS）

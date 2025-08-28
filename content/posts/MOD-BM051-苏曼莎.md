@@ -1,13 +1,13 @@
 ---
-'title': 'BM051-苏曼莎'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM051-苏曼莎'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM051'
-'url': '/p/51/'
+url: '/p/51/'
 ---
 
 > 本文介绍了模组 **苏曼莎** 的功能与特点。

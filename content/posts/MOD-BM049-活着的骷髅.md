@@ -1,13 +1,13 @@
 ---
-'title': 'BM049-活着的骷髅'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM049-活着的骷髅'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '玩法'
-'aliases':
+aliases:
 - 'BM049'
-'url': '/p/49/'
+url: '/p/49/'
 ---
 
 > 本文介绍了模组 **活着的骷髅** 的功能与特点。

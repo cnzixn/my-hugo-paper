@@ -1,13 +1,13 @@
 ---
-'title': 'BM067-彩色虫洞标记'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM067-彩色虫洞标记'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'BM067'
-'url': '/p/67/'
+url: '/p/67/'
 ---
 
 > 本文介绍了模组 **彩色虫洞标记** 的功能与特点。

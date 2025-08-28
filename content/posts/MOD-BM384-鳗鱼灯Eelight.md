@@ -1,13 +1,13 @@
 ---
-'title': 'BM384-鳗鱼灯Eelight'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM384-鳗鱼灯Eelight'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '装备'
-'aliases':
+aliases:
 - 'BM384'
-'url': '/p/337/'
+url: '/p/337/'
 ---
 
 > 本文介绍了模组 **鳗鱼灯Eelight** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM222-吃屎'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM222-吃屎'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '调整'
-'aliases':
+aliases:
 - 'BM222'
-'url': '/p/266/'
+url: '/p/266/'
 ---
 
 > 本文介绍了模组 **吃屎** 的功能与特点。

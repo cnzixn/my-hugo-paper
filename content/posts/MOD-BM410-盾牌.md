@@ -1,13 +1,13 @@
 ---
-'title': 'BM410-盾牌'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM410-盾牌'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '装备'
-'aliases':
+aliases:
 - 'BM410'
-'url': '/p/557/'
+url: '/p/557/'
 ---
 
 > 本文介绍了模组 **盾牌** 的功能与特点。

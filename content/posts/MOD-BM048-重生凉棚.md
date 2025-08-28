@@ -1,13 +1,13 @@
 ---
-'title': 'BM048-重生凉棚'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM048-重生凉棚'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM048'
-'url': '/p/48/'
+url: '/p/48/'
 ---
 
 > 本文介绍了模组 **重生凉棚** 的功能与特点。

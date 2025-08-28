@@ -1,13 +1,13 @@
 ---
-'title': 'BM252-左轮手枪'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM252-左轮手枪'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '装备'
-'aliases':
+aliases:
 - 'BM252'
-'url': '/p/182/'
+url: '/p/182/'
 ---
 
 > 本文介绍了模组 **左轮手枪** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM314-生存笔记'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM314-生存笔记'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '玩法'
-'aliases':
+aliases:
 - 'BM314'
-'url': '/p/314/'
+url: '/p/314/'
 ---
 
 > 本文介绍了模组 **生存笔记** 的功能与特点。

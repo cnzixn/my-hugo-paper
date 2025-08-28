@@ -1,13 +1,13 @@
 ---
-'title': 'BM407-黄金长矛'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM407-黄金长矛'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '装备'
-'aliases':
+aliases:
 - 'BM407'
-'url': '/p/477/'
+url: '/p/477/'
 ---
 
 > 本文介绍了模组 **黄金长矛** 的功能与特点。

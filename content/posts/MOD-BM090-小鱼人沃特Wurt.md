@@ -1,13 +1,13 @@
 ---
-'title': 'BM090-小鱼人沃特Wurt'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM090-小鱼人沃特Wurt'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM090'
-'url': '/p/91/'
+url: '/p/91/'
 ---
 
 > 本文介绍了模组 **小鱼人沃特Wurt** 的功能与特点。

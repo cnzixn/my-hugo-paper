@@ -1,13 +1,13 @@
 ---
-'title': 'BM184-龙女仆－康娜'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM184-龙女仆－康娜'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM184'
-'url': '/p/248/'
+url: '/p/248/'
 ---
 
 > 本文介绍了模组 **龙女仆－康娜** 的功能与特点。

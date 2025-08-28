@@ -1,13 +1,13 @@
 ---
-'title': 'BM262-阴影剑士'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM262-阴影剑士'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM262'
-'url': '/p/189/'
+url: '/p/189/'
 ---
 
 > 本文介绍了模组 **阴影剑士** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM247-玉藻'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM247-玉藻'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM247'
-'url': '/p/178/'
+url: '/p/178/'
 ---
 
 > 本文介绍了模组 **玉藻** 的功能与特点。

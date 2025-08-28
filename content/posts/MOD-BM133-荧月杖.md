@@ -1,13 +1,13 @@
 ---
-'title': 'BM133-荧月杖'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM133-荧月杖'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '装备'
-'aliases':
+aliases:
 - 'BM133'
-'url': '/p/225/'
+url: '/p/225/'
 ---
 
 > 本文介绍了模组 **荧月杖** 的功能与特点。

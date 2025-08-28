@@ -1,13 +1,13 @@
 ---
-'title': 'BM046-红胡子海盗团'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM046-红胡子海盗团'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '玩法'
-'aliases':
+aliases:
 - 'BM046'
-'url': '/p/46/'
+url: '/p/46/'
 ---
 
 > 本文介绍了模组 **红胡子海盗团** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM272-杀手艾希斯'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM272-杀手艾希斯'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM272'
-'url': '/p/290/'
+url: '/p/290/'
 ---
 
 > 本文介绍了模组 **杀手艾希斯** 的功能与特点。

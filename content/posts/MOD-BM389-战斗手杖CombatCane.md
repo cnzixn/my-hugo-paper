@@ -1,13 +1,13 @@
 ---
-'title': 'BM389-战斗手杖CombatCane'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM389-战斗手杖CombatCane'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '装备'
-'aliases':
+aliases:
 - 'BM389'
-'url': '/p/475/'
+url: '/p/475/'
 ---
 
 > 本文介绍了模组 **战斗手杖CombatCane** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM010-查理'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM010-查理'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM010'
-'url': '/p/10/'
+url: '/p/10/'
 ---
 
 > 本文介绍了模组 **查理** 的功能与特点。

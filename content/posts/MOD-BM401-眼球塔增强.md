@@ -1,13 +1,13 @@
 ---
-'title': 'BM401-眼球塔增强'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM401-眼球塔增强'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '调整'
-'aliases':
+aliases:
 - 'BM401'
-'url': '/p/342/'
+url: '/p/342/'
 ---
 
 > 本文介绍了模组 **眼球塔增强** 的功能与特点。

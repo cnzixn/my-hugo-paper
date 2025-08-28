@@ -1,13 +1,13 @@
 ---
-'title': 'BM411-魔法魂灯'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM411-魔法魂灯'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '玩法'
-'aliases':
+aliases:
 - 'BM411'
-'url': '/p/479/'
+url: '/p/479/'
 ---
 
 > 本文介绍了模组 **魔法魂灯** 的功能与特点。

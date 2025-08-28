@@ -1,13 +1,13 @@
 ---
-'title': 'BM220-炼金术与科学'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM220-炼金术与科学'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '玩法'
-'aliases':
+aliases:
 - 'BM220'
-'url': '/p/168/'
+url: '/p/168/'
 ---
 
 > 本文介绍了模组 **炼金术与科学** 的功能与特点。

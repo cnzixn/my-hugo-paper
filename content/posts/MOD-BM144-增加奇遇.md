@@ -1,13 +1,13 @@
 ---
-'title': 'BM144-增加奇遇'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM144-增加奇遇'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'BM144'
-'url': '/p/229/'
+url: '/p/229/'
 ---
 
 > 本文介绍了模组 **增加奇遇** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM251-水果刀'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM251-水果刀'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '装备'
-'aliases':
+aliases:
 - 'BM251'
-'url': '/p/181/'
+url: '/p/181/'
 ---
 
 > 本文介绍了模组 **水果刀** 的功能与特点。

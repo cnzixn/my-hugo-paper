@@ -1,13 +1,13 @@
 ---
-'title': 'BM340-田园风格'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM340-田园风格'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '美化'
-'aliases':
+aliases:
 - 'BM340'
-'url': '/p/328/'
+url: '/p/328/'
 ---
 
 > 本文介绍了模组 **田园风格** 的功能与特点。

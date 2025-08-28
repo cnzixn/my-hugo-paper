@@ -1,13 +1,13 @@
 ---
-'title': 'BM388-薇洛＆伯尼Bernie'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM388-薇洛＆伯尼Bernie'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '调整'
-'aliases':
+aliases:
 - 'BM388'
-'url': '/p/550/'
+url: '/p/550/'
 ---
 
 > 本文介绍了模组 **薇洛＆伯尼Bernie** 的功能与特点。

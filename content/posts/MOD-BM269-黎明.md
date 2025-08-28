@@ -1,13 +1,13 @@
 ---
-'title': 'BM269-黎明'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM269-黎明'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '玩法'
-'aliases':
+aliases:
 - 'BM269'
-'url': '/p/194/'
+url: '/p/194/'
 ---
 
 > 本文介绍了模组 **黎明** 的功能与特点。

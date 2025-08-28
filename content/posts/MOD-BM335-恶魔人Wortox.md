@@ -1,13 +1,13 @@
 ---
-'title': 'BM335-恶魔人Wortox'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM335-恶魔人Wortox'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM335'
-'url': '/p/327/'
+url: '/p/327/'
 ---
 
 > 本文介绍了模组 **恶魔人Wortox** 的功能与特点。

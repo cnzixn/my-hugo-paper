@@ -1,13 +1,13 @@
 ---
-'title': 'BM362-HUD－熔炉'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM362-HUD－熔炉'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '美化'
-'aliases':
+aliases:
 - 'BM362'
-'url': '/p/332/'
+url: '/p/332/'
 ---
 
 > 本文介绍了模组 **HUD－熔炉** 的功能与特点。

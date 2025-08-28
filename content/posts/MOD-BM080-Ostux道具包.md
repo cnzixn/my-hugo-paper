@@ -1,13 +1,13 @@
 ---
-'title': 'BM080-Ostux道具包'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM080-Ostux道具包'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '装备'
-'aliases':
+aliases:
 - 'BM080'
-'url': '/p/81/'
+url: '/p/81/'
 ---
 
 > 本文介绍了模组 **Ostux道具包** 的功能与特点。

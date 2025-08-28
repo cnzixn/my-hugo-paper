@@ -1,13 +1,13 @@
 ---
-'title': '[DST] HUD皮肤 X11'
-'date': '2025-06-23'
-'author': 'Bny'
-'tags':
+title: '[DST] HUD皮肤 X11'
+date: '2025-06-23'
+author: 'Bny'
+tags:
 - '模组'
 - '美化'
-'aliases':
+aliases:
 - 'DST-HUD'
-'url': '/p/409/'
+url: '/p/409/'
 ---
 
 > 本文给大家推荐11款 **HUD皮肤** 模组。

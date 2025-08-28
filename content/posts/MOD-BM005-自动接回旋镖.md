@@ -1,13 +1,13 @@
 ---
-'title': 'BM005-自动接回旋镖'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM005-自动接回旋镖'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'BM005'
-'url': '/p/5/'
+url: '/p/5/'
 ---
 
 > 本文介绍了模组 **自动接回旋镖** 的功能与特点。

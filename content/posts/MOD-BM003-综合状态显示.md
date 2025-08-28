@@ -1,13 +1,13 @@
 ---
-'title': 'BM003-综合状态显示'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM003-综合状态显示'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'BM003'
-'url': '/p/3/'
+url: '/p/3/'
 ---
 
 > 本文介绍了模组 **综合状态显示** 的功能与特点。

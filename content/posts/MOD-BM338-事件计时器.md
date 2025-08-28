@@ -1,13 +1,13 @@
 ---
-'title': 'BM338-事件计时器'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM338-事件计时器'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'BM338'
-'url': '/p/460/'
+url: '/p/460/'
 ---
 
 > 本文介绍了模组 **事件计时器** 的功能与特点。

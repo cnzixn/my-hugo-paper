@@ -1,13 +1,13 @@
 ---
-'title': '耄耋蜘蛛换肤'
-'date': 2025-05-07
-'author': 'NGP'
-'tags':
+title: '耄耋蜘蛛换肤'
+date: 2025-05-07
+author: 'NGP'
+tags:
 - '模组'
 - '美化'
-'aliases':
+aliases:
 - 'boxing-cat'
-'url': '/p/412/'
+url: '/p/412/'
 ---
 
 > 本文介绍了源自中国网络社区的 **耄耋蜘蛛换肤** 模组，现已作为敌对实体出现在永恒大陆游戏中。

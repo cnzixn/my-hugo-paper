@@ -1,13 +1,13 @@
 ---
-'title': 'BM294-八重樱'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM294-八重樱'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM294'
-'url': '/p/204/'
+url: '/p/204/'
 ---
 
 > 本文介绍了模组 **八重樱** 的功能与特点。

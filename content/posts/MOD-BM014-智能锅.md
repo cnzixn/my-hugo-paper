@@ -1,13 +1,13 @@
 ---
-'title': 'BM014-智能锅'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM014-智能锅'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'BM014'
-'url': '/p/14/'
+url: '/p/14/'
 ---
 
 > 本文介绍了模组 **智能锅** 的功能与特点。

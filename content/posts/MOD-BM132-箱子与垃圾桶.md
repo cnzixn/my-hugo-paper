@@ -1,13 +1,13 @@
 ---
-'title': 'BM132-箱子与垃圾桶'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM132-箱子与垃圾桶'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM132'
-'url': '/p/119/'
+url: '/p/119/'
 ---
 
 > 本文介绍了模组 **箱子与垃圾桶** 的功能与特点。

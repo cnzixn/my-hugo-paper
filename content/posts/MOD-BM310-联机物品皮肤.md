@@ -1,13 +1,13 @@
 ---
-'title': 'BM310-联机物品皮肤'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM310-联机物品皮肤'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '美化'
-'aliases':
+aliases:
 - 'BM310'
-'url': '/p/313/'
+url: '/p/313/'
 ---
 
 > 本文介绍了模组 **联机物品皮肤** 的功能与特点。

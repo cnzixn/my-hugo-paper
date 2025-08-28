@@ -1,13 +1,13 @@
 ---
-'title': 'BM206-海贼王－索隆'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM206-海贼王－索隆'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM206'
-'url': '/p/257/'
+url: '/p/257/'
 ---
 
 > 本文介绍了模组 **海贼王－索隆** 的功能与特点。

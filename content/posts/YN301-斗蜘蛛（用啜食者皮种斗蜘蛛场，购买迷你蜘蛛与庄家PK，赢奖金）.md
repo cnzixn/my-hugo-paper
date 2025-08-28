@@ -1,13 +1,13 @@
 ---
-'title': 'YN301-斗蜘蛛（用啜食者皮种斗蜘蛛场，购买迷你蜘蛛与庄家PK，赢奖金）'
-'date': '2025-04-23'
-'author': 'Bny'
-'tags':
+title: 'YN301-斗蜘蛛（用啜食者皮种斗蜘蛛场，购买迷你蜘蛛与庄家PK，赢奖金）'
+date: '2025-04-23'
+author: 'Bny'
+tags:
 - '易宁'
-'aliases':
+aliases:
 - 'YN301'
-'comments': false
-'url': '/p/616/'
+comments: false
+url: '/p/616/'
 ---
 
 > 代码来源于“易宁”大佬的分享，仅供学习，不要直接复制粘贴。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM274-莹草'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM274-莹草'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM274'
-'url': '/p/292/'
+url: '/p/292/'
 ---
 
 > 本文介绍了模组 **莹草** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM239-白色月姬'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM239-白色月姬'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM239'
-'url': '/p/175/'
+url: '/p/175/'
 ---
 
 > 本文介绍了模组 **白色月姬** 的功能与特点。

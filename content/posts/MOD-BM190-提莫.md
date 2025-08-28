@@ -1,13 +1,13 @@
 ---
-'title': 'BM190-提莫'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM190-提莫'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM190'
-'url': '/p/150/'
+url: '/p/150/'
 ---
 
 > 本文介绍了模组 **提莫** 的功能与特点。

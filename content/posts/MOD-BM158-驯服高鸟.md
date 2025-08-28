@@ -1,13 +1,13 @@
 ---
-'title': 'BM158-驯服高鸟'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM158-驯服高鸟'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '调整'
-'aliases':
+aliases:
 - 'BM158'
-'url': '/p/237/'
+url: '/p/237/'
 ---
 
 > 本文介绍了模组 **驯服高鸟** 的功能与特点。

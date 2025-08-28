@@ -1,13 +1,13 @@
 ---
-'title': 'BM139-敌我标记'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM139-敌我标记'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'BM139'
-'url': '/p/228/'
+url: '/p/228/'
 ---
 
 > 本文介绍了模组 **敌我标记** 的功能与特点。

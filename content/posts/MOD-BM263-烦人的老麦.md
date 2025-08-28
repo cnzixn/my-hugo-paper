@@ -1,13 +1,13 @@
 ---
-'title': 'BM263-烦人的老麦'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM263-烦人的老麦'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '玩法'
-'aliases':
+aliases:
 - 'BM263'
-'url': '/p/287/'
+url: '/p/287/'
 ---
 
 > 本文介绍了模组 **烦人的老麦** 的功能与特点。

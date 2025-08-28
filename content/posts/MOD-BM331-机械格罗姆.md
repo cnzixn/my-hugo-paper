@@ -1,13 +1,13 @@
 ---
-'title': 'BM331-机械格罗姆'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM331-机械格罗姆'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM331'
-'url': '/p/325/'
+url: '/p/325/'
 ---
 
 > 本文介绍了模组 **机械格罗姆** 的功能与特点。

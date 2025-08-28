@@ -1,13 +1,13 @@
 ---
-'title': 'YN223-我是神龙（按键盘L键主角变身神龙，能吐火，再按L键变回人）'
-'date': '2025-04-23'
-'author': 'Bny'
-'tags':
+title: 'YN223-我是神龙（按键盘L键主角变身神龙，能吐火，再按L键变回人）'
+date: '2025-04-23'
+author: 'Bny'
+tags:
 - '易宁'
-'aliases':
+aliases:
 - 'YN223'
-'comments': false
-'url': '/p/658/'
+comments: false
+url: '/p/658/'
 ---
 
 > 代码来源于“易宁”大佬的分享，仅供学习，不要直接复制粘贴。

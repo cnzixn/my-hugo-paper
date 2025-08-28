@@ -1,6 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/python3
 
-# python /sdcard/acode/my-hugo-paper/assets/toml2yaml.py
+# cd /sdcard/acode/my-hugo-paper/assets/ ; python toml2yaml.py
 
 import os
 import re
@@ -75,6 +75,7 @@ def process_file(file_path, mapping):
                 sort_keys=False,
                 default_flow_style=False
             )
+            re.sub(r"'(.*?)':", r"\1:", yaml_str)
             new_front = f"---\n{yaml_str}---"
             new_content = toml_pattern.sub(new_front, content)
             with open(file_path, 'w', encoding='utf-8') as f:
@@ -98,6 +99,7 @@ def process_file(file_path, mapping):
                 sort_keys=False,
                 default_flow_style=False
             )
+            yaml_str=re.sub(r"'(.*?)':", r"\1:", yaml_str)
             new_front = f"---\n{yaml_str}---"
             new_content = yaml_pattern.sub(new_front, content)
             with open(file_path, 'w', encoding='utf-8') as f:

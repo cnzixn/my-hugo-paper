@@ -1,13 +1,13 @@
 ---
-'title': 'BM009-五格装备栏'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM009-五格装备栏'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'BM009'
-'url': '/p/9/'
+url: '/p/9/'
 ---
 
 > 本文介绍了模组 **五格装备栏** 的功能与特点。

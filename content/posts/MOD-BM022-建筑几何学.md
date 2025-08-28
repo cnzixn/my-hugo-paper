@@ -1,13 +1,13 @@
 ---
-'title': 'BM022-建筑几何学'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM022-建筑几何学'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'BM022'
-'url': '/p/22/'
+url: '/p/22/'
 ---
 
 > 本文介绍了模组 **建筑几何学** 的功能与特点。

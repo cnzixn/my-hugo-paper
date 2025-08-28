@@ -1,13 +1,13 @@
 ---
-'title': 'BM344-薇诺娜Winona'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM344-薇诺娜Winona'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM344'
-'url': '/p/393/'
+url: '/p/393/'
 ---
 
 > 本文介绍了模组 **薇诺娜Winona** 的功能与特点。

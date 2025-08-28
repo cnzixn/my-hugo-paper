@@ -1,13 +1,13 @@
 ---
-'title': 'BM343-赫默Silence'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM343-赫默Silence'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM343'
-'url': '/p/329/'
+url: '/p/329/'
 ---
 
 > 本文介绍了模组 **赫默Silence** 的功能与特点。

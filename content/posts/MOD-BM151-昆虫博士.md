@@ -1,13 +1,13 @@
 ---
-'title': 'BM151-昆虫博士'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM151-昆虫博士'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM151'
-'url': '/p/129/'
+url: '/p/129/'
 ---
 
 > 本文介绍了模组 **昆虫博士** 的功能与特点。

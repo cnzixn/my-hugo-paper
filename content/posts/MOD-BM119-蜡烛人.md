@@ -1,13 +1,13 @@
 ---
-'title': 'BM119-蜡烛人'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM119-蜡烛人'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM119'
-'url': '/p/218/'
+url: '/p/218/'
 ---
 
 > 本文介绍了模组 **蜡烛人** 的功能与特点。

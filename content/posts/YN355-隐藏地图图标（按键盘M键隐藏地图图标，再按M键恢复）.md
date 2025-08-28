@@ -1,13 +1,13 @@
 ---
-'title': 'YN355-隐藏地图图标（按键盘M键隐藏地图图标，再按M键恢复）'
-'date': '2025-04-23'
-'author': 'Bny'
-'tags':
+title: 'YN355-隐藏地图图标（按键盘M键隐藏地图图标，再按M键恢复）'
+date: '2025-04-23'
+author: 'Bny'
+tags:
 - '易宁'
-'aliases':
+aliases:
 - 'YN355'
-'comments': false
-'url': '/p/788/'
+comments: false
+url: '/p/788/'
 ---
 
 > 代码来源于“易宁”大佬的分享，仅供学习，不要直接复制粘贴。

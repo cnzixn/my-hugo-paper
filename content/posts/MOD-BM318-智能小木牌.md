@@ -1,13 +1,13 @@
 ---
-'title': 'BM318-智能小木牌'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM318-智能小木牌'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM318'
-'url': '/p/321/'
+url: '/p/321/'
 ---
 
 > 本文介绍了模组 **智能小木牌** 的功能与特点。

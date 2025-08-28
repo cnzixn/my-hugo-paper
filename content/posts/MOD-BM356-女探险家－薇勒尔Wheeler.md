@@ -1,13 +1,13 @@
 ---
-'title': 'BM356-女探险家－薇勒尔Wheeler'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM356-女探险家－薇勒尔Wheeler'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM356'
-'url': '/p/394/'
+url: '/p/394/'
 ---
 
 > 本文介绍了模组 **女探险家－薇勒尔Wheeler** 的功能与特点。

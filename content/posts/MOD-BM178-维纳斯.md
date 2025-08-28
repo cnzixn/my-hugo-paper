@@ -1,13 +1,13 @@
 ---
-'title': 'BM178-维纳斯'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM178-维纳斯'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM178'
-'url': '/p/145/'
+url: '/p/145/'
 ---
 
 > 本文介绍了模组 **维纳斯** 的功能与特点。

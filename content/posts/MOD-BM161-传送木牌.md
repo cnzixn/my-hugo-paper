@@ -1,13 +1,13 @@
 ---
-'title': 'BM161-传送木牌'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM161-传送木牌'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM161'
-'url': '/p/134/'
+url: '/p/134/'
 ---
 
 > 本文介绍了模组 **传送木牌** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM234-绅士猎犬'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM234-绅士猎犬'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM234'
-'url': '/p/173/'
+url: '/p/173/'
 ---
 
 > 本文介绍了模组 **绅士猎犬** 的功能与特点。

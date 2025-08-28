@@ -1,14 +1,14 @@
 ---
-'title': '框架 - 扩展功能'
-'date': '2024-11-22'
-'weight': -7
-'author': 'Bny'
-'tags':
+title: '框架 - 扩展功能'
+date: '2024-11-22'
+weight: -7
+author: 'Bny'
+tags:
 - '资料'
-'aliases':
+aliases:
 - 'patch'
-'comments': false
-'url': '/p/210/'
+comments: false
+url: '/p/210/'
 ---
 
 > 帮助你了解“框架”的扩展模组(BM000)功能

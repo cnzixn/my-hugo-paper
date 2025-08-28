@@ -1,13 +1,13 @@
 ---
-'title': 'BM378-暗影之门OldTeleport'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM378-暗影之门OldTeleport'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'BM378'
-'url': '/p/400/'
+url: '/p/400/'
 ---
 
 > 本文介绍了模组 **暗影之门OldTeleport** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM351-小羊Ringo'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM351-小羊Ringo'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM351'
-'url': '/p/465/'
+url: '/p/465/'
 ---
 
 > 本文介绍了模组 **小羊Ringo** 的功能与特点。

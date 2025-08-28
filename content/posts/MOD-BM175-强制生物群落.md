@@ -1,13 +1,13 @@
 ---
-'title': 'BM175-强制生物群落'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM175-强制生物群落'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'BM175'
-'url': '/p/244/'
+url: '/p/244/'
 ---
 
 > 本文介绍了模组 **强制生物群落** 的功能与特点。

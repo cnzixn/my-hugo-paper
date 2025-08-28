@@ -1,13 +1,13 @@
 ---
-'title': 'BM271-森林狼群'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM271-森林狼群'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '玩法'
-'aliases':
+aliases:
 - 'BM271'
-'url': '/p/195/'
+url: '/p/195/'
 ---
 
 > 本文介绍了模组 **森林狼群** 的功能与特点。

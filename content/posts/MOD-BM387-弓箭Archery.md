@@ -1,13 +1,13 @@
 ---
-'title': 'BM387-弓箭Archery'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM387-弓箭Archery'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '装备'
-'aliases':
+aliases:
 - 'BM387'
-'url': '/p/551/'
+url: '/p/551/'
 ---
 
 > 本文介绍了模组 **弓箭Archery** 的功能与特点。

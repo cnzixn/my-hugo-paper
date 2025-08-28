@@ -1,13 +1,13 @@
 ---
-'title': 'BM200-暗影科技'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM200-暗影科技'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '装备'
-'aliases':
+aliases:
 - 'BM200'
-'url': '/p/157/'
+url: '/p/157/'
 ---
 
 > 本文介绍了模组 **暗影科技** 的功能与特点。

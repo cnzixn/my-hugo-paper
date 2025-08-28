@@ -1,13 +1,13 @@
 ---
-'title': 'BM238-铁甲克里斯'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM238-铁甲克里斯'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM238'
-'url': '/p/174/'
+url: '/p/174/'
 ---
 
 > 本文介绍了模组 **铁甲克里斯** 的功能与特点。

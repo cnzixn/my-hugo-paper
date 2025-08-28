@@ -1,13 +1,13 @@
 ---
-'title': 'BM136-变身钢铁侠'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM136-变身钢铁侠'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '装备'
-'aliases':
+aliases:
 - 'BM136'
-'url': '/p/226/'
+url: '/p/226/'
 ---
 
 > 本文介绍了模组 **变身钢铁侠** 的功能与特点。

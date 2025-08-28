@@ -1,13 +1,13 @@
 ---
-'title': 'BM169-板砖'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM169-板砖'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '装备'
-'aliases':
+aliases:
 - 'BM169'
-'url': '/p/241/'
+url: '/p/241/'
 ---
 
 > 本文介绍了模组 **板砖** 的功能与特点。

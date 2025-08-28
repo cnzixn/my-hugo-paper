@@ -1,13 +1,13 @@
 ---
-'title': 'BM303-特斯拉'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM303-特斯拉'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM303'
-'url': '/p/309/'
+url: '/p/309/'
 ---
 
 > 本文介绍了模组 **特斯拉** 的功能与特点。

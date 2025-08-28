@@ -1,13 +1,13 @@
 ---
-'title': 'BM300-全能信息面板'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM300-全能信息面板'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'BM300'
-'url': '/p/307/'
+url: '/p/307/'
 ---
 
 > 本文介绍了模组 **全能信息面板** 的功能与特点。

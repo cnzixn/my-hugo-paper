@@ -1,13 +1,13 @@
 ---
-'title': 'BM324-大箱子'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM324-大箱子'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM324'
-'url': '/p/324/'
+url: '/p/324/'
 ---
 
 > 本文介绍了模组 **大箱子** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM130-骷髅随从'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM130-骷髅随从'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '其他'
-'aliases':
+aliases:
 - 'BM130'
-'url': '/p/224/'
+url: '/p/224/'
 ---
 
 > 本文介绍了模组 **骷髅随从** 的功能与特点。

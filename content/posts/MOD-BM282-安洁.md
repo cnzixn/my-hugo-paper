@@ -1,13 +1,13 @@
 ---
-'title': 'BM282-安洁'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM282-安洁'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM282'
-'url': '/p/198/'
+url: '/p/198/'
 ---
 
 > 本文介绍了模组 **安洁** 的功能与特点。

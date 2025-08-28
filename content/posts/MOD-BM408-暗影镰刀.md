@@ -1,13 +1,13 @@
 ---
-'title': 'BM408-暗影镰刀'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM408-暗影镰刀'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '装备'
-'aliases':
+aliases:
 - 'BM408'
-'url': '/p/478/'
+url: '/p/478/'
 ---
 
 > 本文介绍了模组 **暗影镰刀** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM323-死神'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM323-死神'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM323'
-'url': '/p/531/'
+url: '/p/531/'
 ---
 
 > 本文介绍了模组 **死神** 的功能与特点。

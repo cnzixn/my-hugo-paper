@@ -1,13 +1,13 @@
 ---
-'title': 'BM289-绵月依姬'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM289-绵月依姬'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM289'
-'url': '/p/301/'
+url: '/p/301/'
 ---
 
 > 本文介绍了模组 **绵月依姬** 的功能与特点。

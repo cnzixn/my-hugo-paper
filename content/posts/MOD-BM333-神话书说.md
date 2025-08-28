@@ -1,13 +1,13 @@
 ---
-'title': 'BM333-神话书说'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM333-神话书说'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM333'
-'url': '/p/326/'
+url: '/p/326/'
 ---
 
 > 本文介绍了模组 **神话书说** 的功能与特点。

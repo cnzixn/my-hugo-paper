@@ -1,13 +1,13 @@
 ---
-'title': 'BM354-鬼灭之刃'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM354-鬼灭之刃'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM354'
-'url': '/p/467/'
+url: '/p/467/'
 ---
 
 > 本文介绍了模组 **鬼灭之刃** 的功能与特点。

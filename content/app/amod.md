@@ -123,7 +123,7 @@ hideTitlt: true
     <div id="modsDropZone" class="drop-zone">
         <p>拖放 .zip 文件到这里 或</p>
         <button id="modsBrowseBtn">选择模组文件</button>
-        <input type="file" id="modsFileInput" accept=".zip" multiple style="display: none;">
+        <input type="file" id="modsFileInput" accept=".zip,.xz" multiple style="display: none;">
     </div>
     <div id="modsFileList" class="file-list" style="display: none;"></div>
     <div id="modsError" class="error"></div>
@@ -223,7 +223,7 @@ hideTitlt: true
             }
             apkError.style.display = 'none';
             apkFile = file;
-            apkFileInfo.innerHTML = `<i class="bi bi-android2">${file.name} (${formatFileSize(file.size)})`;
+            apkFileInfo.innerHTML = `<i class="bi bi-android2"> - </i>${file.name} (${formatFileSize(file.size)})`;
             apkFileInfo.style.display = 'block';
             checkReadyState();
         }
@@ -244,28 +244,57 @@ hideTitlt: true
             }
             
             modsFileList.innerHTML = '';
-            modFiles.forEach(file => {
-                const fileItem = document.createElement('div');
-                fileItem.className = 'file-item';
-                
-                // 识别文件类型
-                let modType = 'unknown';
-                let icon = '❓';
-                
-                if (file.name.match(/BM\d{3}\.zip/i)) {
-                    modType = 'BM模组';
-                    icon = '<i class="bi bi-puzzle">';
-                } else if (file.name.match(/BM\d+\.\d+\.\d+\(.*\)\.zip/i)) {
-                    modType = 'BM框架';
-                    icon = '<i class="bi bi-cpu"></i>';
-                } else {
-                    modType = '其他模组';
-                    icon = '<i class="bi bi-box-seam">';
-                }
-                modType = ' - ';
-                fileItem.innerHTML = `${icon} <strong>${modType}</strong>: ${file.name} (${formatFileSize(file.size)})`;
-                modsFileList.appendChild(fileItem);
+            
+            
+            // 先对文件数组进行排序
+            modFiles.sort((a, b) => {
+              // 定义分类权重（权重越小优先级越高）
+              const getWeight = (fileName) => {
+                if (/BM\d+\.\d+\.\d+\.zip\.xz/i.test(fileName)) return 0;   // BM框架（版本号格式）
+                if (/BM\d{3}\.zip\.xz/i.test(fileName)) return 1;          // BM模组（三位数字格式）
+                if (/BM.*\.zip\.xz/i.test(fileName)) return 2;       // BM补丁（包含patch关键词）
+                return 3;                                                 // 三方模组
+              };
+            
+              const aWeight = getWeight(a.name);
+              const bWeight = getWeight(b.name);
+              
+              // 先按类别权重排序
+              if (aWeight !== bWeight) {
+                return aWeight - bWeight;
+              }
+              
+              // 同类文件按文件名排序（字母升序）
+              return a.name.localeCompare(b.name);
             });
+            
+            // 渲染排序后的文件列表
+            modFiles.forEach(file => {
+              const fileItem = document.createElement('div');
+              fileItem.className = 'file-item';
+              
+              // 识别文件类型
+              let modType, icon;
+              
+              if (file.name.match(/BM\d+\.\d+\.\d+\.zip\.xz/i)) {
+                modType = 'BM框架';
+                icon = '<i class="bi bi-cpu"></i>';               // CPU图标
+              } else if (file.name.match(/BM\d{3}\.zip\.xz/i)) {
+                modType = 'BM模组';
+                icon = '<i class="bi bi-puzzle"></i>';             // 拼图图标
+              } else if (file.name.match(/BM.*\.zip\.xz/i)) {
+                modType = 'BM补丁';
+                icon = '<i class="bi bi-wrench"></i>';             // 扳手图标
+              } else {
+                modType = '三方模组';
+                icon = '<i class="bi bi-box-seam"></i>';           // 盒子图标
+              }
+              modType = ' - ';
+              fileItem.innerHTML = `${icon} <strong>${modType}</strong>  ${file.name} (${formatFileSize(file.size)})`;
+              modsFileList.appendChild(fileItem);
+            });
+
+
             modsFileList.style.display = 'block';
             checkReadyState();
         }
@@ -381,10 +410,10 @@ hideTitlt: true
                 let isThirdParty = false;
                 
                 // 识别模组类型
-                if (modFile.name.match(/BM\d{3}\.zip/i)) {
+                if (modFile.name.match(/BM\d{3}\.zip.xz/i)) {
                     isBMXXX = true;
                     counters.bmxxx++;
-                } else if (modFile.name.match(/BM\d+\.\d+\.\d+\(.*\)\.zip/i)) {
+                } else if (modFile.name.match(/BM\d+\.\d+\.\d+.*\.zip.xz/i)) {
                     isFramework = true;
                     counters.framework++;
                 } else {

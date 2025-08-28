@@ -1,13 +1,13 @@
 ---
-'title': 'BM194-圣骑士'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM194-圣骑士'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM194'
-'url': '/p/154/'
+url: '/p/154/'
 ---
 
 > 本文介绍了模组 **圣骑士** 的功能与特点。

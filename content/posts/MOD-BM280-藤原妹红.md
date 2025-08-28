@@ -1,13 +1,13 @@
 ---
-'title': 'BM280-藤原妹红'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM280-藤原妹红'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM280'
-'url': '/p/197/'
+url: '/p/197/'
 ---
 
 > 本文介绍了模组 **藤原妹红** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM040-更多存档栏'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM040-更多存档栏'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'BM040'
-'url': '/p/40/'
+url: '/p/40/'
 ---
 
 > 本文介绍了模组 **更多存档栏** 的功能与特点。

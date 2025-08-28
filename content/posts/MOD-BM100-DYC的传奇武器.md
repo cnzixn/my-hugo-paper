@@ -1,13 +1,13 @@
 ---
-'title': 'BM100-DYC的传奇武器'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM100-DYC的传奇武器'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '玩法'
-'aliases':
+aliases:
 - 'BM100'
-'url': '/p/101/'
+url: '/p/101/'
 ---
 
 > 本文介绍了模组 **DYC的传奇武器** 的功能与特点。

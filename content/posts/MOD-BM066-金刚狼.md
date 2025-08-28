@@ -1,13 +1,13 @@
 ---
-'title': 'BM066-金刚狼'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM066-金刚狼'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM066'
-'url': '/p/68/'
+url: '/p/68/'
 ---
 
 > 本文介绍了模组 **金刚狼** 的功能与特点。

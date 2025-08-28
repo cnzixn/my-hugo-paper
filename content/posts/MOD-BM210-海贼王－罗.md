@@ -1,13 +1,13 @@
 ---
-'title': 'BM210-海贼王－罗'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM210-海贼王－罗'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM210'
-'url': '/p/260/'
+url: '/p/260/'
 ---
 
 > 本文介绍了模组 **海贼王－罗** 的功能与特点。

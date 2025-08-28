@@ -1,13 +1,13 @@
 ---
-'title': 'BM008-更好的阿比盖尔'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM008-更好的阿比盖尔'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '调整'
-'aliases':
+aliases:
 - 'BM008'
-'url': '/p/8/'
+url: '/p/8/'
 ---
 
 > 本文介绍了模组 **更好的阿比盖尔** 的功能与特点。

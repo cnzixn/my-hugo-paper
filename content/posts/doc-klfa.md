@@ -1,12 +1,12 @@
 ---
-'title': 'KLFA - 解包/打包'
-'date': 2025-12-28
-'author': 'Bny'
-'tags':
+title: 'KLFA - 解包/打包'
+date: 2025-12-28
+author: 'Bny'
+tags:
 - '资料'
-'aliases':
+aliases:
 - 'klfa'
-'url': '/p/431/'
+url: '/p/431/'
 ---
 
 ![图片](/img/Image_1752847449499.jpg)

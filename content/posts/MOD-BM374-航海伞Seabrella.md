@@ -1,13 +1,13 @@
 ---
-'title': 'BM374-航海伞Seabrella'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM374-航海伞Seabrella'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '装备'
-'aliases':
+aliases:
 - 'BM374'
-'url': '/p/398/'
+url: '/p/398/'
 ---
 
 > 本文介绍了模组 **航海伞Seabrella** 的功能与特点。

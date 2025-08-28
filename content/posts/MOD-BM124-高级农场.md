@@ -1,13 +1,13 @@
 ---
-'title': 'BM124-高级农场'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM124-高级农场'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM124'
-'url': '/p/115/'
+url: '/p/115/'
 ---
 
 > 本文介绍了模组 **高级农场** 的功能与特点。

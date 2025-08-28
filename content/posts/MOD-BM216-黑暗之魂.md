@@ -1,13 +1,13 @@
 ---
-'title': 'BM216-黑暗之魂'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM216-黑暗之魂'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM216'
-'url': '/p/166/'
+url: '/p/166/'
 ---
 
 > 本文介绍了模组 **黑暗之魂** 的功能与特点。

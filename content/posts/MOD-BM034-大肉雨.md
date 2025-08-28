@@ -1,13 +1,13 @@
 ---
-'title': 'BM034-大肉雨'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM034-大肉雨'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '玩法'
-'aliases':
+aliases:
 - 'BM034'
-'url': '/p/34/'
+url: '/p/34/'
 ---
 
 > 本文介绍了模组 **大肉雨** 的功能与特点。

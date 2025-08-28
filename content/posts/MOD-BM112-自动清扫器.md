@@ -1,13 +1,13 @@
 ---
-'title': 'BM112-自动清扫器'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM112-自动清扫器'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM112'
-'url': '/p/213/'
+url: '/p/213/'
 ---
 
 > 本文介绍了模组 **自动清扫器** 的功能与特点。

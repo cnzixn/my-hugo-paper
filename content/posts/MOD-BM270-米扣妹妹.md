@@ -1,13 +1,13 @@
 ---
-'title': 'BM270-米扣妹妹'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM270-米扣妹妹'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM270'
-'url': '/p/289/'
+url: '/p/289/'
 ---
 
 > 本文介绍了模组 **米扣妹妹** 的功能与特点。

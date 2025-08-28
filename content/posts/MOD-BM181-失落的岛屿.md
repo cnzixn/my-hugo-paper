@@ -1,13 +1,13 @@
 ---
-'title': 'BM181-失落的岛屿'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM181-失落的岛屿'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '调整'
-'aliases':
+aliases:
 - 'BM181'
-'url': '/p/246/'
+url: '/p/246/'
 ---
 
 > 本文介绍了模组 **失落的岛屿** 的功能与特点。

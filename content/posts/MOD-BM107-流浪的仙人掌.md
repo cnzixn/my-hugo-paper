@@ -1,13 +1,13 @@
 ---
-'title': 'BM107-流浪的仙人掌'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM107-流浪的仙人掌'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM107'
-'url': '/p/211/'
+url: '/p/211/'
 ---
 
 > 本文介绍了模组 **流浪的仙人掌** 的功能与特点。

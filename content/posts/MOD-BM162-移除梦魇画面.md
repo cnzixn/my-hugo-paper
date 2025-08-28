@@ -1,13 +1,13 @@
 ---
-'title': 'BM162-移除梦魇画面'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM162-移除梦魇画面'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'BM162'
-'url': '/p/135/'
+url: '/p/135/'
 ---
 
 > 本文介绍了模组 **移除梦魇画面** 的功能与特点。

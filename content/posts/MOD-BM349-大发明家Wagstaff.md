@@ -1,13 +1,13 @@
 ---
-'title': 'BM349-大发明家Wagstaff'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM349-大发明家Wagstaff'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM349'
-'url': '/p/539/'
+url: '/p/539/'
 ---
 
 > 本文介绍了模组 **大发明家Wagstaff** 的功能与特点。

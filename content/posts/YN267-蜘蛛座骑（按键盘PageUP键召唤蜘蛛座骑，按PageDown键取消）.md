@@ -1,13 +1,13 @@
 ---
-'title': 'YN267-蜘蛛座骑（按键盘PageUP键召唤蜘蛛座骑，按PageDown键取消）'
-'date': '2025-04-23'
-'author': 'Bny'
-'tags':
+title: 'YN267-蜘蛛座骑（按键盘PageUP键召唤蜘蛛座骑，按PageDown键取消）'
+date: '2025-04-23'
+author: 'Bny'
+tags:
 - '易宁'
-'aliases':
+aliases:
 - 'YN267'
-'comments': false
-'url': '/p/710/'
+comments: false
+url: '/p/710/'
 ---
 
 > 代码来源于“易宁”大佬的分享，仅供学习，不要直接复制粘贴。

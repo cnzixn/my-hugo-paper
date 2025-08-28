@@ -1,13 +1,13 @@
 ---
-'title': 'BM386-小牦牛Beef'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM386-小牦牛Beef'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM386'
-'url': '/p/338/'
+url: '/p/338/'
 ---
 
 > 本文介绍了模组 **小牦牛Beef** 的功能与特点。

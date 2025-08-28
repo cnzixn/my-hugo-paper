@@ -1,13 +1,13 @@
 ---
-'title': 'BM150-烤肉可晾干'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM150-烤肉可晾干'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '调整'
-'aliases':
+aliases:
 - 'BM150'
-'url': '/p/127/'
+url: '/p/127/'
 ---
 
 > 本文介绍了模组 **烤肉可晾干** 的功能与特点。

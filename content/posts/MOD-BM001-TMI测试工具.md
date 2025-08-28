@@ -1,13 +1,13 @@
 ---
-'title': 'BM001-TMI测试工具'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM001-TMI测试工具'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'BM001'
-'url': '/p/1/'
+url: '/p/1/'
 ---
 
 > 本文介绍了模组 **TMI测试工具** 的功能与特点。

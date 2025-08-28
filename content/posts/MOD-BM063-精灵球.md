@@ -1,13 +1,13 @@
 ---
-'title': 'BM063-精灵球'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM063-精灵球'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM063'
-'url': '/p/64/'
+url: '/p/64/'
 ---
 
 > 本文介绍了模组 **精灵球** 的功能与特点。

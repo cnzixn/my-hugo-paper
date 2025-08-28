@@ -1,13 +1,13 @@
 ---
-'title': 'BM111-凯特琳Caitlin'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM111-凯特琳Caitlin'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM111'
-'url': '/p/212/'
+url: '/p/212/'
 ---
 
 > 本文介绍了模组 **凯特琳Caitlin** 的功能与特点。

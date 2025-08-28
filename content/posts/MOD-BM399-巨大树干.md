@@ -1,13 +1,13 @@
 ---
-'title': 'BM399-巨大树干'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM399-巨大树干'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '玩法'
-'aliases':
+aliases:
 - 'BM399'
-'url': '/p/405/'
+url: '/p/405/'
 ---
 
 > 本文介绍了模组 **巨大树干** 的功能与特点。

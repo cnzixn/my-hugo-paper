@@ -1,13 +1,13 @@
 ---
-'title': 'BM035-千年狐'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM035-千年狐'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM035'
-'url': '/p/35/'
+url: '/p/35/'
 ---
 
 > 本文介绍了模组 **千年狐** 的功能与特点。

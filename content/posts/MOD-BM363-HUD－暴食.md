@@ -1,13 +1,13 @@
 ---
-'title': 'BM363-HUD－暴食'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM363-HUD－暴食'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '美化'
-'aliases':
+aliases:
 - 'BM363'
-'url': '/p/333/'
+url: '/p/333/'
 ---
 
 > 本文介绍了模组 **HUD－暴食** 的功能与特点。

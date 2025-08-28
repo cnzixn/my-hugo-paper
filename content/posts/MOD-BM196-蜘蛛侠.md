@@ -1,13 +1,13 @@
 ---
-'title': 'BM196-蜘蛛侠'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM196-蜘蛛侠'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM196'
-'url': '/p/155/'
+url: '/p/155/'
 ---
 
 > 本文介绍了模组 **蜘蛛侠** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM029-甜品女仆'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM029-甜品女仆'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM029'
-'url': '/p/29/'
+url: '/p/29/'
 ---
 
 > 本文介绍了模组 **甜品女仆** 的功能与特点。

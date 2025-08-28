@@ -1,13 +1,13 @@
 ---
-'title': 'BM404-飞机'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM404-飞机'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '玩法'
-'aliases':
+aliases:
 - 'BM404'
-'url': '/p/408/'
+url: '/p/408/'
 ---
 
 > 本文介绍了模组 **飞机** 的功能与特点。

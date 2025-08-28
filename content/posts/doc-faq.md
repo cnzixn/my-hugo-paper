@@ -1,16 +1,15 @@
 ---
-'title': '解答 - 常见问题'
-'date': 2025-01-01
-'author': 'Bny'
-'weight': -9
-'draft': true
-'tags':
-- '资料'
-'aliases':
+title: '解答 - 常见问题'
+date: 2025-01-01
+author: 'Bny'
+weight: -9
+tags:
+- '公告'
+aliases:
 - 'faq'
-'comments': true
-'searchHidden': true
-'url': '/p/819/'
+comments: true
+searchHidden: true
+url: '/p/819/'
 ---
 
 {{< faqs >}}

@@ -1,13 +1,13 @@
 ---
-'title': 'BM129-野生动物'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM129-野生动物'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '玩法'
-'aliases':
+aliases:
 - 'BM129'
-'url': '/p/223/'
+url: '/p/223/'
 ---
 
 > 本文介绍了模组 **野生动物** 的功能与特点。

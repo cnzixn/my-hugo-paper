@@ -1,17 +1,16 @@
 ---
-'title': '模组 - 最近更新'
-'date': '2025-05-28'
-'author': 'Bny'
-'draft': true
-'summary': '修复了“千年狐”的一些小问题，请注意查收！'
-'tags':
+title: '模组 - 更新日志'
+date: '2025-08-25'
+author: 'Bny'
+summary: '修复了“可杀猪王”、“樱花树”等模组无法载入的问题。'
+tags:
 - '公告'
 - '模组'
-'aliases':
+aliases:
 - 'mlog'
-'comments': false
-'weight': -8
-'url': '/p/732/'
+comments: false
+weight: -8
+url: '/p/732/'
 ---
 
 ---
@@ -19,6 +18,12 @@
 临时存放，后续会更新单独链接：  
 
 {{< pan "更新" >}}  
+
+---
+
+25.08.25
+
+- BMXXX 修复 BM317(可杀猪王)、BM370(樱花树) 等模组的 modinfo.lua 文件错误
 
 ---
 

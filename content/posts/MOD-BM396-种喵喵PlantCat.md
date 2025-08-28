@@ -1,13 +1,13 @@
 ---
-'title': 'BM396-种喵喵PlantCat'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM396-种喵喵PlantCat'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '玩法'
-'aliases':
+aliases:
 - 'BM396'
-'url': '/p/553/'
+url: '/p/553/'
 ---
 
 > 本文介绍了模组 **种喵喵PlantCat** 的功能与特点。

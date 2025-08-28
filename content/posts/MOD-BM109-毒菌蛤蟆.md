@@ -1,13 +1,13 @@
 ---
-'title': 'BM109-毒菌蛤蟆'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM109-毒菌蛤蟆'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '玩法'
-'aliases':
+aliases:
 - 'BM109'
-'url': '/p/109/'
+url: '/p/109/'
 ---
 
 > 本文介绍了模组 **毒菌蛤蟆** 的功能与特点。

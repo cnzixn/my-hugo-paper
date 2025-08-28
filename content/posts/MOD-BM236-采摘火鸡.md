@@ -1,13 +1,13 @@
 ---
-'title': 'BM236-采摘火鸡'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM236-采摘火鸡'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM236'
-'url': '/p/276/'
+url: '/p/276/'
 ---
 
 > 本文介绍了模组 **采摘火鸡** 的功能与特点。

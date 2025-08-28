@@ -1,13 +1,13 @@
 ---
-'title': 'BM268-兔毫笔'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM268-兔毫笔'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM268'
-'url': '/p/193/'
+url: '/p/193/'
 ---
 
 > 本文介绍了模组 **兔毫笔** 的功能与特点。

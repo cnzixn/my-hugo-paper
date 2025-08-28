@@ -1,13 +1,13 @@
 ---
-'title': 'BM173-从箱子里查找'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM173-从箱子里查找'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'BM173'
-'url': '/p/141/'
+url: '/p/141/'
 ---
 
 > 本文介绍了模组 **从箱子里查找** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM292-卡牌魔术师'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM292-卡牌魔术师'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM292'
-'url': '/p/303/'
+url: '/p/303/'
 ---
 
 > 本文介绍了模组 **卡牌魔术师** 的功能与特点。

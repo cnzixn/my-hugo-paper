@@ -1,13 +1,13 @@
 ---
-'title': 'BM195-机器人进化'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM195-机器人进化'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '调整'
-'aliases':
+aliases:
 - 'BM195'
-'url': '/p/252/'
+url: '/p/252/'
 ---
 
 > 本文介绍了模组 **机器人进化** 的功能与特点。

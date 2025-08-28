@@ -1,13 +1,13 @@
 ---
-'title': 'BM327-娜娜奇'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM327-娜娜奇'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM327'
-'url': '/p/390/'
+url: '/p/390/'
 ---
 
 > 本文介绍了模组 **娜娜奇** 的功能与特点。

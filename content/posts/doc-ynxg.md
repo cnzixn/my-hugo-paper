@@ -1,13 +1,13 @@
 ---
-'title': '易宁 - 代码修改'
-'date': '2025-04-22'
-'author': 'Bny'
-'tags':
+title: '易宁 - 代码修改'
+date: '2025-04-22'
+author: 'Bny'
+tags:
 - '资料'
-'aliases':
+aliases:
 - 'ynxg'
-'comments': false
-'url': '/p/765/'
+comments: false
+url: '/p/765/'
 ---
 
 > 易宁大佬分享的修改技巧，代码可能“过时”，但是修改思路和创意仍然值得学习。

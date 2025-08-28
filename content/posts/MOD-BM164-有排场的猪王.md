@@ -1,13 +1,13 @@
 ---
-'title': 'BM164-有排场的猪王'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM164-有排场的猪王'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '调整'
-'aliases':
+aliases:
 - 'BM164'
-'url': '/p/136/'
+url: '/p/136/'
 ---
 
 > 本文介绍了模组 **有排场的猪王** 的功能与特点。

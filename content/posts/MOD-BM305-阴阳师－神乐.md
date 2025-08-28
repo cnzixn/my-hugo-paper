@@ -1,13 +1,13 @@
 ---
-'title': 'BM305-阴阳师－神乐'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM305-阴阳师－神乐'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM305'
-'url': '/p/208/'
+url: '/p/208/'
 ---
 
 > 本文介绍了模组 **阴阳师－神乐** 的功能与特点。

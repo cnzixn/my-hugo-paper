@@ -1,13 +1,13 @@
 ---
-'title': 'BM205-海贼王－艾斯'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM205-海贼王－艾斯'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM205'
-'url': '/p/255/'
+url: '/p/255/'
 ---
 
 > 本文介绍了模组 **海贼王－艾斯** 的功能与特点。

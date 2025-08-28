@@ -20,7 +20,7 @@
 
 .logo {
     flex-wrap: inherit;
-    flex: 0 0 20%; /* 固定占比，不伸缩 */
+    flex: 0 0 10%; /* 固定占比，不伸缩 */
 }
 
 .logo a {

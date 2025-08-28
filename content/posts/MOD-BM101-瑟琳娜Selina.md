@@ -1,13 +1,13 @@
 ---
-'title': 'BM101-瑟琳娜Selina'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM101-瑟琳娜Selina'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM101'
-'url': '/p/102/'
+url: '/p/102/'
 ---
 
 > 本文介绍了模组 **瑟琳娜Selina** 的功能与特点。

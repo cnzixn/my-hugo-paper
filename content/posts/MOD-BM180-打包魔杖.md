@@ -1,13 +1,13 @@
 ---
-'title': 'BM180-打包魔杖'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM180-打包魔杖'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM180'
-'url': '/p/146/'
+url: '/p/146/'
 ---
 
 > 本文介绍了模组 **打包魔杖** 的功能与特点。

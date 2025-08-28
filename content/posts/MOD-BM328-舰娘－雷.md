@@ -1,13 +1,13 @@
 ---
-'title': 'BM328-舰娘－雷'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM328-舰娘－雷'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM328'
-'url': '/p/533/'
+url: '/p/533/'
 ---
 
 > 本文介绍了模组 **舰娘－雷** 的功能与特点。

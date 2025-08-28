@@ -1,13 +1,13 @@
 ---
-'title': 'BM298-夜刀神十香'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM298-夜刀神十香'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM298'
-'url': '/p/206/'
+url: '/p/206/'
 ---
 
 > 本文介绍了模组 **夜刀神十香** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM068-树人'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM068-树人'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM068'
-'url': '/p/69/'
+url: '/p/69/'
 ---
 
 > 本文介绍了模组 **树人** 的功能与特点。

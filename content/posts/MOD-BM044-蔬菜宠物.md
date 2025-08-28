@@ -1,13 +1,13 @@
 ---
-'title': 'BM044-蔬菜宠物'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM044-蔬菜宠物'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '其他'
-'aliases':
+aliases:
 - 'BM044'
-'url': '/p/44/'
+url: '/p/44/'
 ---
 
 > 本文介绍了模组 **蔬菜宠物** 的功能与特点。

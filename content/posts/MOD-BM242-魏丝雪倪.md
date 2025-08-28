@@ -1,13 +1,13 @@
 ---
-'title': 'BM242-魏丝雪倪'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM242-魏丝雪倪'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM242'
-'url': '/p/176/'
+url: '/p/176/'
 ---
 
 > 本文介绍了模组 **魏丝雪倪** 的功能与特点。

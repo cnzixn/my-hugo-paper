@@ -1,13 +1,13 @@
 ---
-'title': 'BM254-日番谷冬狮郎'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM254-日番谷冬狮郎'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM254'
-'url': '/p/184/'
+url: '/p/184/'
 ---
 
 > 本文介绍了模组 **日番谷冬狮郎** 的功能与特点。

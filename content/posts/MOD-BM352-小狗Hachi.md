@@ -1,13 +1,13 @@
 ---
-'title': 'BM352-小狗Hachi'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM352-小狗Hachi'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM352'
-'url': '/p/540/'
+url: '/p/540/'
 ---
 
 > 本文介绍了模组 **小狗Hachi** 的功能与特点。

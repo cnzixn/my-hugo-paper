@@ -1,13 +1,13 @@
 ---
-'title': 'BM176-龙宫礼奈'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM176-龙宫礼奈'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM176'
-'url': '/p/143/'
+url: '/p/143/'
 ---
 
 > 本文介绍了模组 **龙宫礼奈** 的功能与特点。

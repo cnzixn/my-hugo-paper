@@ -1,13 +1,13 @@
 ---
-'title': 'BM050-储物室'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM050-储物室'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM050'
-'url': '/p/50/'
+url: '/p/50/'
 ---
 
 > 本文介绍了模组 **储物室** 的功能与特点。

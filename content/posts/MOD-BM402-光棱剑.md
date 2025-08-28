@@ -1,13 +1,13 @@
 ---
-'title': 'BM402-光棱剑'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM402-光棱剑'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '装备'
-'aliases':
+aliases:
 - 'BM402'
-'url': '/p/407/'
+url: '/p/407/'
 ---
 
 > 本文介绍了模组 **光棱剑** 的功能与特点。

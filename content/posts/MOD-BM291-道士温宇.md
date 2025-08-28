@@ -1,13 +1,13 @@
 ---
-'title': 'BM291-道士温宇'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM291-道士温宇'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM291'
-'url': '/p/302/'
+url: '/p/302/'
 ---
 
 > 本文介绍了模组 **道士温宇** 的功能与特点。

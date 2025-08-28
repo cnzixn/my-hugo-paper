@@ -1,13 +1,13 @@
 ---
-'title': 'BM185-舰娘－晓'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM185-舰娘－晓'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM185'
-'url': '/p/249/'
+url: '/p/249/'
 ---
 
 > 本文介绍了模组 **舰娘－晓** 的功能与特点。

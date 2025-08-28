@@ -1,13 +1,13 @@
 ---
-'title': 'BM172-从箱子里制作'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM172-从箱子里制作'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'BM172'
-'url': '/p/243/'
+url: '/p/243/'
 ---
 
 > 本文介绍了模组 **从箱子里制作** 的功能与特点。

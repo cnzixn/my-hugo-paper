@@ -1,13 +1,13 @@
 ---
-'title': 'BM278-烈火之剑－琳'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM278-烈火之剑－琳'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM278'
-'url': '/p/295/'
+url: '/p/295/'
 ---
 
 > 本文介绍了模组 **烈火之剑－琳** 的功能与特点。

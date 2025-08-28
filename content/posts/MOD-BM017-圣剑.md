@@ -1,13 +1,13 @@
 ---
-'title': 'BM017-圣剑'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM017-圣剑'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '装备'
-'aliases':
+aliases:
 - 'BM017'
-'url': '/p/17/'
+url: '/p/17/'
 ---
 
 > 本文介绍了模组 **圣剑** 的功能与特点。

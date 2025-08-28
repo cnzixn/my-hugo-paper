@@ -1,13 +1,13 @@
 ---
-'title': 'BM020-火神之剑'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM020-火神之剑'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '装备'
-'aliases':
+aliases:
 - 'BM020'
-'url': '/p/19/'
+url: '/p/19/'
 ---
 
 > 本文介绍了模组 **火神之剑** 的功能与特点。

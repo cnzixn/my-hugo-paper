@@ -1,13 +1,13 @@
 ---
-'title': 'BM330-傀儡师'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM330-傀儡师'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM330'
-'url': '/p/458/'
+url: '/p/458/'
 ---
 
 > 本文介绍了模组 **傀儡师** 的功能与特点。

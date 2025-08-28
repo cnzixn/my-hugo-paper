@@ -1,13 +1,13 @@
 ---
-'title': 'YN226-遁形术（按键盘I键主角变身随机小动物，敌人会失去攻击目标，再按I键变回人）'
-'date': '2025-04-23'
-'author': 'Bny'
-'tags':
+title: 'YN226-遁形术（按键盘I键主角变身随机小动物，敌人会失去攻击目标，再按I键变回人）'
+date: '2025-04-23'
+author: 'Bny'
+tags:
 - '易宁'
-'aliases':
+aliases:
 - 'YN226'
-'comments': false
-'url': '/p/741/'
+comments: false
+url: '/p/741/'
 ---
 
 > 代码来源于“易宁”大佬的分享，仅供学习，不要直接复制粘贴。

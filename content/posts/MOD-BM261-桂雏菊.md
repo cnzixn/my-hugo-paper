@@ -1,13 +1,13 @@
 ---
-'title': 'BM261-桂雏菊'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM261-桂雏菊'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM261'
-'url': '/p/188/'
+url: '/p/188/'
 ---
 
 > 本文介绍了模组 **桂雏菊** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM002-荒岛'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM002-荒岛'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '玩法'
-'aliases':
+aliases:
 - 'BM002'
-'url': '/p/2/'
+url: '/p/2/'
 ---
 
 > 本文介绍了模组 **荒岛** 的功能与特点。

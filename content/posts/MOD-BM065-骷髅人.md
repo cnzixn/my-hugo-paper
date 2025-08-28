@@ -1,13 +1,13 @@
 ---
-'title': 'BM065-骷髅人'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM065-骷髅人'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM065'
-'url': '/p/65/'
+url: '/p/65/'
 ---
 
 > 本文介绍了模组 **骷髅人** 的功能与特点。

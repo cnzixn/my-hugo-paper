@@ -1,13 +1,13 @@
 ---
-'title': 'BM322-种植机器人'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM322-种植机器人'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM322'
-'url': '/p/388/'
+url: '/p/388/'
 ---
 
 > 本文介绍了模组 **种植机器人** 的功能与特点。

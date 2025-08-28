@@ -1,13 +1,13 @@
 ---
-'title': 'BM147-蛛丝蠕虫'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM147-蛛丝蠕虫'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '玩法'
-'aliases':
+aliases:
 - 'BM147'
-'url': '/p/232/'
+url: '/p/232/'
 ---
 
 > 本文介绍了模组 **蛛丝蠕虫** 的功能与特点。

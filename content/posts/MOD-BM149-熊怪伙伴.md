@@ -1,13 +1,13 @@
 ---
-'title': 'BM149-熊怪伙伴'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM149-熊怪伙伴'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '调整'
-'aliases':
+aliases:
 - 'BM149'
-'url': '/p/128/'
+url: '/p/128/'
 ---
 
 > 本文介绍了模组 **熊怪伙伴** 的功能与特点。

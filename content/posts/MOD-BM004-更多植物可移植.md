@@ -1,13 +1,13 @@
 ---
-'title': 'BM004-更多植物可移植'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM004-更多植物可移植'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '调整'
-'aliases':
+aliases:
 - 'BM004'
-'url': '/p/4/'
+url: '/p/4/'
 ---
 
 > 本文介绍了模组 **更多植物可移植** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM397-扔石头'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM397-扔石头'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '玩法'
-'aliases':
+aliases:
 - 'BM397'
-'url': '/p/341/'
+url: '/p/341/'
 ---
 
 > 本文介绍了模组 **扔石头** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM039-孙大圣'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM039-孙大圣'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM039'
-'url': '/p/39/'
+url: '/p/39/'
 ---
 
 > 本文介绍了模组 **孙大圣** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM250-卫宫士郎'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM250-卫宫士郎'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM250'
-'url': '/p/283/'
+url: '/p/283/'
 ---
 
 > 本文介绍了模组 **卫宫士郎** 的功能与特点。

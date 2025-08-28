@@ -1,13 +1,13 @@
 ---
-'title': 'BM285-南小鸟'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM285-南小鸟'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM285'
-'url': '/p/298/'
+url: '/p/298/'
 ---
 
 > 本文介绍了模组 **南小鸟** 的功能与特点。

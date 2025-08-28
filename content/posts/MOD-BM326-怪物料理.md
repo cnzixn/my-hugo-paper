@@ -1,13 +1,13 @@
 ---
-'title': 'BM326-怪物料理'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM326-怪物料理'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '玩法'
-'aliases':
+aliases:
 - 'BM326'
-'url': '/p/532/'
+url: '/p/532/'
 ---
 
 > 本文介绍了模组 **怪物料理** 的功能与特点。

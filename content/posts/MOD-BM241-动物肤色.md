@@ -1,13 +1,13 @@
 ---
-'title': 'BM241-动物肤色'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM241-动物肤色'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '美化'
-'aliases':
+aliases:
 - 'BM241'
-'url': '/p/279/'
+url: '/p/279/'
 ---
 
 > 本文介绍了模组 **动物肤色** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM126-绿晶石'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM126-绿晶石'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '装备'
-'aliases':
+aliases:
 - 'BM126'
-'url': '/p/222/'
+url: '/p/222/'
 ---
 
 > 本文介绍了模组 **绿晶石** 的功能与特点。

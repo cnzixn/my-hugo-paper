@@ -1,13 +1,13 @@
 ---
-'title': 'BM168-建筑无间隔'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM168-建筑无间隔'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'BM168'
-'url': '/p/139/'
+url: '/p/139/'
 ---
 
 > 本文介绍了模组 **建筑无间隔** 的功能与特点。

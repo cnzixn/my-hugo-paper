@@ -1,13 +1,13 @@
 ---
-'title': 'BM143-爱丽丝Alice'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM143-爱丽丝Alice'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM143'
-'url': '/p/230/'
+url: '/p/230/'
 ---
 
 > 本文介绍了模组 **爱丽丝Alice** 的功能与特点。

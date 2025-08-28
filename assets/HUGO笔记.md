@@ -65,9 +65,7 @@ git push -u origin main
 
 cd /sdcard/acode/*paper/
 
-rm -rf public; hugo server -w --minify --noBuildLock 
-
-rm -rf public; hugo --minify --noBuildLock
+hugo --gc server -D --noBuildLock
 
 
 # 1. 先获取远程更新（不合并）

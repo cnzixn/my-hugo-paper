@@ -1,13 +1,13 @@
 ---
-'title': 'BM218-七彩萤火虫'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM218-七彩萤火虫'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '美化'
-'aliases':
+aliases:
 - 'BM218'
-'url': '/p/167/'
+url: '/p/167/'
 ---
 
 > 本文介绍了模组 **七彩萤火虫** 的功能与特点。

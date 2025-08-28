@@ -65,22 +65,22 @@ languages:
     weight: 2
     menu:
       main:
-        - name: 主页
+        - name: "[🛖]"
           url: /
           weight: -1
-        - name: 公告
+        - name: "[🖥]"
           url: tags/公告/
           weight: 2
-        - name: 资料
+        - name: "[📚]"
           url: tags/资料/
           weight: 3
-        - name: 工具
+        - name: "[🗃]"
           url: app/
           weight: 4
-        - name: 搜索
+        - name: "[🔍]"
           url: search/
           weight: 5
-        - name: 关于
+        - name: "[📋]"
           url: about/
           weight: 6
         # - name: 归档
@@ -95,11 +95,13 @@ languages:
       homeInfoParams:
         Title: "👋 档案馆 - 兔人协会"
         Content: >
-          - 　📌 <span style="font-weight: bold; color:red;" class="today_password"></span>，游戏(无需联网)本地计算此密码！
-          
-          - 　📌 兔人框架：为单机版饥荒( <i class="bi bi-android2"></i> & <i class="bi bi-apple"></i> )提供模组运行环境。  
-          
-          - 　📌 <span style="font-weight: bold; color:red;">此网站为预览版，未正式使用！！！</span>
+          -
+          　📌 礼包码「<span style="font-weight: bold; color:red;" class="today_password"></span>」｜测试码「<span style="font-weight: bold; color:red;" class="today_password_test"></span>」  
+
+          　📌 兔人框架为( <i class="bi bi-android2"></i> & <i class="bi bi-apple"></i> )单机版饥荒提供模组运行环境。  
+
+#          - <span style="font-weight: bold; color:red;">此网站未正式使用！！！</span>
+
       # editPost:
         # URL: "/cms/#/edit"
         # Text: "编辑" # edit text
@@ -198,13 +200,13 @@ params:
       title: 频道
       url: "https://pd.qq.com/s/bl6w0albb?b=5"
     - name: qq-qun
-      title: 养老群
+      title: 主群
       url: "https://qm.qq.com/q/g0weZCVQMU"
     - name: qq-qun
-      title: 安卓群
+      title: 安卓互助
       url: "https://qm.qq.com/q/3xoKf5H4EM"
     - name: qq-qun
-      title: 苹果群
+      title: 苹果互助
       url: "https://qm.qq.com/q/88L6QyUQVi"
 
   # editPost:

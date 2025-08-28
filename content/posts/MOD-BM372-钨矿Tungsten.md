@@ -1,13 +1,13 @@
 ---
-'title': 'BM372-钨矿Tungsten'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM372-钨矿Tungsten'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '玩法'
-'aliases':
+aliases:
 - 'BM372'
-'url': '/p/548/'
+url: '/p/548/'
 ---
 
 > 本文介绍了模组 **钨矿Tungsten** 的功能与特点。

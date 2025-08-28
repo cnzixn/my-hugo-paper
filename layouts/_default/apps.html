@@ -1,10 +1,12 @@
 {{- define "main" -}}
 
+<header class="page-header">
+    <h1 class="tools-title">{{ .Site.Data.apps.header.title }}</h1>
+</header>
+
 <div class="post-content">
+        
     <div class="tools-container">
-        <header class="tools-header">
-            <h1 class="tools-title">{{ .Site.Data.apps.header.title }}</h1>
-        </header>
         
         <div class="tools-grid">
             {{ range .Site.Data.apps.items }}
@@ -47,18 +49,6 @@
         padding: 0 1rem;
     }
     
-    .tools-header {
-        text-align: center;
-        margin-bottom: 2.5rem;
-        padding-bottom: 1.5rem;
-        border-bottom: 1px solid var(--border);
-    }
-    
-    .tools-title {
-        font-size: 2rem;
-        margin-bottom: 0.5rem;
-        color: var(--primary);
-    }
     
     .tools-subtitle {
         color: var(--secondary);

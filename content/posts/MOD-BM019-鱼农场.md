@@ -1,13 +1,13 @@
 ---
-'title': 'BM019-鱼农场'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM019-鱼农场'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM019'
-'url': '/p/20/'
+url: '/p/20/'
 ---
 
 > 本文介绍了模组 **鱼农场** 的功能与特点。

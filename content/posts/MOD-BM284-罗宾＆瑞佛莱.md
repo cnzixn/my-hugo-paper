@@ -1,13 +1,13 @@
 ---
-'title': 'BM284-罗宾＆瑞佛莱'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM284-罗宾＆瑞佛莱'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM284'
-'url': '/p/200/'
+url: '/p/200/'
 ---
 
 > 本文介绍了模组 **罗宾＆瑞佛莱** 的功能与特点。

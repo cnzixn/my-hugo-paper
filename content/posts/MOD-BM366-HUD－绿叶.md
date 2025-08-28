@@ -1,13 +1,13 @@
 ---
-'title': 'BM366-HUD－绿叶'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM366-HUD－绿叶'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '美化'
-'aliases':
+aliases:
 - 'BM366'
-'url': '/p/543/'
+url: '/p/543/'
 ---
 
 > 本文介绍了模组 **HUD－绿叶** 的功能与特点。

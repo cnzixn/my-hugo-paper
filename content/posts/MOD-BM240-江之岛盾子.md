@@ -1,13 +1,13 @@
 ---
-'title': 'BM240-江之岛盾子'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM240-江之岛盾子'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM240'
-'url': '/p/278/'
+url: '/p/278/'
 ---
 
 > 本文介绍了模组 **江之岛盾子** 的功能与特点。

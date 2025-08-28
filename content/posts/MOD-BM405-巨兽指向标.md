@@ -1,13 +1,13 @@
 ---
-'title': 'BM405-巨兽指向标'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM405-巨兽指向标'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'BM405'
-'url': '/p/343/'
+url: '/p/343/'
 ---
 
 > 本文介绍了模组 **巨兽指向标** 的功能与特点。

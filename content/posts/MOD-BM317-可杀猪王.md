@@ -1,13 +1,13 @@
 ---
-'title': 'BM317-可杀猪王'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM317-可杀猪王'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '调整'
-'aliases':
+aliases:
 - 'BM317'
-'url': '/p/529/'
+url: '/p/529/'
 ---
 
 > 本文介绍了模组 **可杀猪王** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM092-兔兔女王'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM092-兔兔女王'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '玩法'
-'aliases':
+aliases:
 - 'BM092'
-'url': '/p/93/'
+url: '/p/93/'
 ---
 
 > 本文介绍了模组 **兔兔女王** 的功能与特点。

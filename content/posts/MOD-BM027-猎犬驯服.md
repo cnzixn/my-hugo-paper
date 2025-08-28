@@ -1,13 +1,13 @@
 ---
-'title': 'BM027-猎犬驯服'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM027-猎犬驯服'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '调整'
-'aliases':
+aliases:
 - 'BM027'
-'url': '/p/27/'
+url: '/p/27/'
 ---
 
 > 本文介绍了模组 **猎犬驯服** 的功能与特点。

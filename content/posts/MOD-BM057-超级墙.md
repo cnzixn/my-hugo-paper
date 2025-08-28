@@ -1,13 +1,13 @@
 ---
-'title': 'BM057-超级墙'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM057-超级墙'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM057'
-'url': '/p/58/'
+url: '/p/58/'
 ---
 
 > 本文介绍了模组 **超级墙** 的功能与特点。

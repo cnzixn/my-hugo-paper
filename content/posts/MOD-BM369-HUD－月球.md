@@ -1,13 +1,13 @@
 ---
-'title': 'BM369-HUD－月球'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM369-HUD－月球'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '美化'
-'aliases':
+aliases:
 - 'BM369'
-'url': '/p/545/'
+url: '/p/545/'
 ---
 
 > 本文介绍了模组 **HUD－月球** 的功能与特点。

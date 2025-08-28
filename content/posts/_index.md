@@ -1,6 +1,6 @@
 ---
-'aliases':
+aliases:
 - 'posts'
-'title': '全部'
-'url': '/p/52/'
+title: '全部'
+url: '/p/52/'
 ---

@@ -1,13 +1,13 @@
 ---
-'title': 'BM365-HUD－噩梦'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM365-HUD－噩梦'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '美化'
-'aliases':
+aliases:
 - 'BM365'
-'url': '/p/469/'
+url: '/p/469/'
 ---
 
 > 本文介绍了模组 **HUD－噩梦** 的功能与特点。

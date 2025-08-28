@@ -1,13 +1,13 @@
 ---
-'title': 'BM160-噩梦铃铛'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM160-噩梦铃铛'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '装备'
-'aliases':
+aliases:
 - 'BM160'
-'url': '/p/133/'
+url: '/p/133/'
 ---
 
 > 本文介绍了模组 **噩梦铃铛** 的功能与特点。

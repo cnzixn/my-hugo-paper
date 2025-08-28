@@ -1,13 +1,13 @@
 ---
-'title': 'BM253-赤血利刃'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM253-赤血利刃'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '装备'
-'aliases':
+aliases:
 - 'BM253'
-'url': '/p/183/'
+url: '/p/183/'
 ---
 
 > 本文介绍了模组 **赤血利刃** 的功能与特点。

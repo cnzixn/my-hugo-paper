@@ -1,13 +1,13 @@
 ---
-'title': '存档 - 导入导出'
-'date': 2025-02-01
-'author': 'Bny'
-'tags':
+title: '存档 - 导入导出'
+date: 2025-02-01
+author: 'Bny'
+tags:
 - '资料'
-'aliases':
+aliases:
 - 'slots'
-'comments': false
-'url': '/p/598/'
+comments: false
+url: '/p/598/'
 ---
 
 > 本文介绍如何导入、导出存档文件。

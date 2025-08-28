@@ -1,13 +1,13 @@
 ---
-'title': 'BM154-保险箱Safe'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM154-保险箱Safe'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM154'
-'url': '/p/235/'
+url: '/p/235/'
 ---
 
 > 本文介绍了模组 **保险箱Safe** 的功能与特点。

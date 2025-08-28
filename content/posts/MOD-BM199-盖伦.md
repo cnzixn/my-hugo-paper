@@ -1,13 +1,13 @@
 ---
-'title': 'BM199-盖伦'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM199-盖伦'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM199'
-'url': '/p/254/'
+url: '/p/254/'
 ---
 
 > 本文介绍了模组 **盖伦** 的功能与特点。

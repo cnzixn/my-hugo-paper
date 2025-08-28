@@ -1,13 +1,13 @@
 ---
-'title': 'BM375-兔耳朵RabbitEars'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM375-兔耳朵RabbitEars'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '装备'
-'aliases':
+aliases:
 - 'BM375'
-'url': '/p/399/'
+url: '/p/399/'
 ---
 
 > 本文介绍了模组 **兔耳朵RabbitEars** 的功能与特点。

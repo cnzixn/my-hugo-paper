@@ -1,13 +1,13 @@
 ---
-'title': 'BM279-古惑狼'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM279-古惑狼'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM279'
-'url': '/p/296/'
+url: '/p/296/'
 ---
 
 > 本文介绍了模组 **古惑狼** 的功能与特点。

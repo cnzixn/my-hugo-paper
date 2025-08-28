@@ -1,13 +1,13 @@
 ---
-'title': 'BM037-古明地觉'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM037-古明地觉'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM037'
-'url': '/p/37/'
+url: '/p/37/'
 ---
 
 > 本文介绍了模组 **古明地觉** 的功能与特点。

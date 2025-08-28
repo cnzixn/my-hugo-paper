@@ -1,13 +1,13 @@
 ---
-'title': 'BM171-水下世界'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM171-水下世界'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '玩法'
-'aliases':
+aliases:
 - 'BM171'
-'url': '/p/242/'
+url: '/p/242/'
 ---
 
 > 本文介绍了模组 **水下世界** 的功能与特点。

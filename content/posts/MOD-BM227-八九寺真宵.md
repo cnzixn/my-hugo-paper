@@ -1,13 +1,13 @@
 ---
-'title': 'BM227-八九寺真宵'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM227-八九寺真宵'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM227'
-'url': '/p/270/'
+url: '/p/270/'
 ---
 
 > 本文介绍了模组 **八九寺真宵** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM163-BOSS数据'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM163-BOSS数据'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '调整'
-'aliases':
+aliases:
 - 'BM163'
-'url': '/p/239/'
+url: '/p/239/'
 ---
 
 > 本文介绍了模组 **BOSS数据** 的功能与特点。

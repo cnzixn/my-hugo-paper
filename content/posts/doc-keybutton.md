@@ -1,13 +1,13 @@
 ---
-'title': '按键 - 使用教程'
-'date': 2025-04-18
-'author': 'Bny'
-'tags':
+title: '按键 - 使用教程'
+date: 2025-04-18
+author: 'Bny'
+tags:
 - '资料'
-'aliases':
+aliases:
 - 'keybutton'
-'comments': false
-'url': '/p/315/'
+comments: false
+url: '/p/315/'
 ---
 
 > 本文介绍如何新增按键功能。

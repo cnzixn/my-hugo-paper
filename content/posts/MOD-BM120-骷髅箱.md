@@ -1,13 +1,13 @@
 ---
-'title': 'BM120-骷髅箱'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM120-骷髅箱'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM120'
-'url': '/p/219/'
+url: '/p/219/'
 ---
 
 > 本文介绍了模组 **骷髅箱** 的功能与特点。

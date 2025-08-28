@@ -1,13 +1,13 @@
 ---
-'title': 'BM209-海贼王－山治'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM209-海贼王－山治'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM209'
-'url': '/p/259/'
+url: '/p/259/'
 ---
 
 > 本文介绍了模组 **海贼王－山治** 的功能与特点。

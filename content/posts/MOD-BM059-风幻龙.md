@@ -1,13 +1,13 @@
 ---
-'title': 'BM059-风幻龙'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM059-风幻龙'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM059'
-'url': '/p/60/'
+url: '/p/60/'
 ---
 
 > 本文介绍了模组 **风幻龙** 的功能与特点。

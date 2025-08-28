@@ -1,13 +1,13 @@
 ---
-'title': 'BM246-烹饪锅皮肤'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM246-烹饪锅皮肤'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '美化'
-'aliases':
+aliases:
 - 'BM246'
-'url': '/p/282/'
+url: '/p/282/'
 ---
 
 > 本文介绍了模组 **烹饪锅皮肤** 的功能与特点。

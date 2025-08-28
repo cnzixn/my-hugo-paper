@@ -1,13 +1,13 @@
 ---
-'title': 'BM277-朝田诗乃'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM277-朝田诗乃'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM277'
-'url': '/p/294/'
+url: '/p/294/'
 ---
 
 > 本文介绍了模组 **朝田诗乃** 的功能与特点。

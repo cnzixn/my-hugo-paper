@@ -1,13 +1,13 @@
 ---
-'title': 'BM193-远古力量'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM193-远古力量'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM193'
-'url': '/p/153/'
+url: '/p/153/'
 ---
 
 > 本文介绍了模组 **远古力量** 的功能与特点。

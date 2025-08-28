@@ -1,13 +1,13 @@
 ---
-'title': 'BM376-五大波兰球Polandball'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM376-五大波兰球Polandball'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM376'
-'url': '/p/549/'
+url: '/p/549/'
 ---
 
 > 本文介绍了模组 **五大波兰球Polandball** 的功能与特点。

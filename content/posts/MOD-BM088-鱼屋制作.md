@@ -1,13 +1,13 @@
 ---
-'title': 'BM088-鱼屋制作'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM088-鱼屋制作'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '调整'
-'aliases':
+aliases:
 - 'BM088'
-'url': '/p/89/'
+url: '/p/89/'
 ---
 
 > 本文介绍了模组 **鱼屋制作** 的功能与特点。

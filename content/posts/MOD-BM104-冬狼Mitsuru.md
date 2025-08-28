@@ -1,13 +1,13 @@
 ---
-'title': 'BM104-冬狼Mitsuru'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM104-冬狼Mitsuru'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM104'
-'url': '/p/105/'
+url: '/p/105/'
 ---
 
 > 本文介绍了模组 **冬狼Mitsuru** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM383-鱼的故事FishStories'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM383-鱼的故事FishStories'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '装备'
-'aliases':
+aliases:
 - 'BM383'
-'url': '/p/474/'
+url: '/p/474/'
 ---
 
 > 本文介绍了模组 **鱼的故事FishStories** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM308-海难石油版'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM308-海难石油版'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '其他'
-'aliases':
+aliases:
 - 'BM308'
-'url': '/p/312/'
+url: '/p/312/'
 ---
 
 > 本文介绍了模组 **海难石油版** 的功能与特点。

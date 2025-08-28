@@ -1,13 +1,13 @@
 ---
-'title': 'BM182-制作地毯'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM182-制作地毯'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '美化'
-'aliases':
+aliases:
 - 'BM182'
-'url': '/p/147/'
+url: '/p/147/'
 ---
 
 > 本文介绍了模组 **制作地毯** 的功能与特点。

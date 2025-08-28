@@ -1,13 +1,13 @@
 ---
-'title': 'BM030-更多地图图标'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM030-更多地图图标'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'BM030'
-'url': '/p/30/'
+url: '/p/30/'
 ---
 
 > 本文介绍了模组 **更多地图图标** 的功能与特点。

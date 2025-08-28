@@ -1,13 +1,13 @@
 ---
-'title': 'BM299-亚丝娜'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM299-亚丝娜'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM299'
-'url': '/p/207/'
+url: '/p/207/'
 ---
 
 > 本文介绍了模组 **亚丝娜** 的功能与特点。

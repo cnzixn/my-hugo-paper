@@ -1,13 +1,13 @@
 ---
-'title': 'BM226-八云紫'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM226-八云紫'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM226'
-'url': '/p/170/'
+url: '/p/170/'
 ---
 
 > 本文介绍了模组 **八云紫** 的功能与特点。

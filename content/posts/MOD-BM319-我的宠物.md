@@ -1,13 +1,13 @@
 ---
-'title': 'BM319-我的宠物'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM319-我的宠物'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '其他'
-'aliases':
+aliases:
 - 'BM319'
-'url': '/p/322/'
+url: '/p/322/'
 ---
 
 > 本文介绍了模组 **我的宠物** 的功能与特点。

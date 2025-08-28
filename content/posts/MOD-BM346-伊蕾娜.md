@@ -1,13 +1,13 @@
 ---
-'title': 'BM346-伊蕾娜'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM346-伊蕾娜'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM346'
-'url': '/p/463/'
+url: '/p/463/'
 ---
 
 > 本文介绍了模组 **伊蕾娜** 的功能与特点。

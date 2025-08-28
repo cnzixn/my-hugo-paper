@@ -1,13 +1,13 @@
 ---
-'title': 'YN018-地图全开（游戏中按Ctrl+1）'
-'date': '2025-04-23'
-'author': 'Bny'
-'tags':
+title: 'YN018-地图全开（游戏中按Ctrl+1）'
+date: '2025-04-23'
+author: 'Bny'
+tags:
 - '易宁'
-'aliases':
+aliases:
 - 'YN018'
-'comments': false
-'url': '/p/347/'
+comments: false
+url: '/p/347/'
 ---
 
 > 代码来源于“易宁”大佬的分享，仅供学习，不要直接复制粘贴。

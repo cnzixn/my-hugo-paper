@@ -1,13 +1,13 @@
 ---
-'title': 'BM177-阴影怪'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM177-阴影怪'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '玩法'
-'aliases':
+aliases:
 - 'BM177'
-'url': '/p/144/'
+url: '/p/144/'
 ---
 
 > 本文介绍了模组 **阴影怪** 的功能与特点。

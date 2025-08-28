@@ -1,13 +1,13 @@
 ---
-'title': 'BM123-我可爱的物品'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM123-我可爱的物品'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '装备'
-'aliases':
+aliases:
 - 'BM123'
-'url': '/p/113/'
+url: '/p/113/'
 ---
 
 > 本文介绍了模组 **我可爱的物品** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM060-耳朵'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM060-耳朵'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM060'
-'url': '/p/61/'
+url: '/p/61/'
 ---
 
 > 本文介绍了模组 **耳朵** 的功能与特点。

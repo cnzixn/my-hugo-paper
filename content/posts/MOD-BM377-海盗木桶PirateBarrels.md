@@ -1,13 +1,13 @@
 ---
-'title': 'BM377-海盗木桶PirateBarrels'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM377-海盗木桶PirateBarrels'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM377'
-'url': '/p/471/'
+url: '/p/471/'
 ---
 
 > 本文介绍了模组 **海盗木桶PirateBarrels** 的功能与特点。

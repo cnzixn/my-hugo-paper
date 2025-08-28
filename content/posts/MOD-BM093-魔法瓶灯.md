@@ -1,13 +1,13 @@
 ---
-'title': 'BM093-魔法瓶灯'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM093-魔法瓶灯'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '美化'
-'aliases':
+aliases:
 - 'BM093'
-'url': '/p/94/'
+url: '/p/94/'
 ---
 
 > 本文介绍了模组 **魔法瓶灯** 的功能与特点。

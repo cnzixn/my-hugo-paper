@@ -1,13 +1,13 @@
 ---
-'title': 'BM021-霜之哀伤'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM021-霜之哀伤'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '装备'
-'aliases':
+aliases:
 - 'BM021'
-'url': '/p/21/'
+url: '/p/21/'
 ---
 
 > 本文介绍了模组 **霜之哀伤** 的功能与特点。

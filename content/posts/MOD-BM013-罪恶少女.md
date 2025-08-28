@@ -1,13 +1,13 @@
 ---
-'title': 'BM013-罪恶少女'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM013-罪恶少女'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM013'
-'url': '/p/13/'
+url: '/p/13/'
 ---
 
 > 本文介绍了模组 **罪恶少女** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM117-狼女Wulfe'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM117-狼女Wulfe'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM117'
-'url': '/p/112/'
+url: '/p/112/'
 ---
 
 > 本文介绍了模组 **狼女Wulfe** 的功能与特点。

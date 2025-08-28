@@ -1,13 +1,13 @@
 ---
-'title': 'BM336-法华林'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM336-法华林'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM336'
-'url': '/p/536/'
+url: '/p/536/'
 ---
 
 > 本文介绍了模组 **法华林** 的功能与特点。

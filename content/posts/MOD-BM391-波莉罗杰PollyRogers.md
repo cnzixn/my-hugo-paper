@@ -1,13 +1,13 @@
 ---
-'title': 'BM391-波莉罗杰PollyRogers'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM391-波莉罗杰PollyRogers'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM391'
-'url': '/p/402/'
+url: '/p/402/'
 ---
 
 > 本文介绍了模组 **波莉罗杰PollyRogers** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM309-博丽灵梦'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM309-博丽灵梦'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM309'
-'url': '/p/316/'
+url: '/p/316/'
 ---
 
 > 本文介绍了模组 **博丽灵梦** 的功能与特点。

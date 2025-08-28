@@ -1,13 +1,13 @@
 ---
-'title': 'BM204-海贼王－路飞'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM204-海贼王－路飞'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM204'
-'url': '/p/256/'
+url: '/p/256/'
 ---
 
 > 本文介绍了模组 **海贼王－路飞** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': '哈姆雷特房子'
-'date': 2025-06-22
-'author': 'Bny'
-'tags':
+title: '哈姆雷特房子'
+date: 2025-06-22
+author: 'Bny'
+tags:
 - '模组'
 - '玩法'
-'aliases':
+aliases:
 - 'home'
-'url': '/p/411/'
+url: '/p/411/'
 ---
 
 > 本文介绍了模组 **哈姆雷特房子** 的功能与特点。

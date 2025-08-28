@@ -1,13 +1,13 @@
 ---
-'title': 'BM007-蜂后BOSS'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM007-蜂后BOSS'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '玩法'
-'aliases':
+aliases:
 - 'BM007'
-'url': '/p/7/'
+url: '/p/7/'
 ---
 
 > 本文介绍了模组 **蜂后BOSS** 的功能与特点。

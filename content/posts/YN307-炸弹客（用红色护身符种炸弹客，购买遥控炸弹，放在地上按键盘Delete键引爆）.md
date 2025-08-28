@@ -1,13 +1,13 @@
 ---
-'title': 'YN307-炸弹客（用红色护身符种炸弹客，购买遥控炸弹，放在地上按键盘Delete键引爆）'
-'date': '2025-04-23'
-'author': 'Bny'
-'tags':
+title: 'YN307-炸弹客（用红色护身符种炸弹客，购买遥控炸弹，放在地上按键盘Delete键引爆）'
+date: '2025-04-23'
+author: 'Bny'
+tags:
 - '易宁'
-'aliases':
+aliases:
 - 'YN307'
-'comments': false
-'url': '/p/617/'
+comments: false
+url: '/p/617/'
 ---
 
 > 代码来源于“易宁”大佬的分享，仅供学习，不要直接复制粘贴。

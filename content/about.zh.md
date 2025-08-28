@@ -1,6 +1,8 @@
 ---
 title: "关于"
-layout: page
+layout: single
+date: 2025-01-01
+author: 'Bny'
 searchHidden: true
 ---
 
@@ -23,7 +25,7 @@ searchHidden: true
   
   - “DS补丁”由于早期代码公开，被拿去各种魔改用于“收费”，现已停止维护。框架是“DS补丁”的升级版本。  
 
-  - 框架已适配饥荒 [<i class="bi bi-android2"></i>](https://play.google.com/store/apps/details?id=com.kleientertainment.doNotStarveShipwrecked) 和 [<i class="bi bi-apple"></i>](https://apps.apple.com/us/app/dont-starve-shipwrecked/id1147297267?l=zh) 版本。  
+  - 框架已适配饥荒 [<i class="bi bi-android2">1.33</i>](https://play.google.com/store/apps/details?id=com.kleientertainment.doNotStarveShipwrecked) 和 [<i class="bi bi-apple">1.84</i>](https://apps.apple.com/us/app/dont-starve-shipwrecked/id1147297267?l=zh)。  
 
 
 
@@ -102,7 +104,7 @@ searchHidden: true
 
 - 【频道】[<i class="bi bi-link-45deg">兔人协会</i>](https://pd.qq.com/s/bl6w0albb?b=5)，发帖交流便于大家“分享日常”、“反馈问题”。  
 
-- 【主群3k】[<i class="bi bi-link-45deg">614255348</i>](https://qm.qq.com/q/g0weZCVQMU)，🚷暂停入群，仅用于搜索群号找到我们。  
+- 【主群3k】[<i class="bi bi-link-45deg">614255348</i>](https://qm.qq.com/q/g0weZCVQMU)，🚫暂停入群，仅用于搜索群号找到我们。  
 
 - 【分群2k】[<i class="bi bi-link-45deg">696529613</i>](https://qm.qq.com/q/3xoKf5H4EM)，<i class="bi bi-android2"></i>安卓分区，免费加群，群员自治，新人互帮互助。  
 

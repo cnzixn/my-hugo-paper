@@ -1,13 +1,13 @@
 ---
-'title': 'BM071-视野增强'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM071-视野增强'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'BM071'
-'url': '/p/72/'
+url: '/p/72/'
 ---
 
 > 本文介绍了模组 **视野增强** 的功能与特点。

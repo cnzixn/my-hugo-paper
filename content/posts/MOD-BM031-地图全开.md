@@ -1,13 +1,13 @@
 ---
-'title': 'BM031-地图全开'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM031-地图全开'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'BM031'
-'url': '/p/31/'
+url: '/p/31/'
 ---
 
 > 本文介绍了模组 **地图全开** 的功能与特点。

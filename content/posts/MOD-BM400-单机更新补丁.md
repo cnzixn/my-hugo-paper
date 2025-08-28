@@ -1,13 +1,13 @@
 ---
-'title': 'BM400-单机更新补丁'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM400-单机更新补丁'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '调整'
-'aliases':
+aliases:
 - 'BM400'
-'url': '/p/406/'
+url: '/p/406/'
 ---
 
 > 本文介绍了模组 **单机更新补丁** 的功能与特点。

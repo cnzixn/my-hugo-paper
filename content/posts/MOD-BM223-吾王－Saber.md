@@ -1,13 +1,13 @@
 ---
-'title': 'BM223-吾王－Saber'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM223-吾王－Saber'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM223'
-'url': '/p/267/'
+url: '/p/267/'
 ---
 
 > 本文介绍了模组 **吾王－Saber** 的功能与特点。

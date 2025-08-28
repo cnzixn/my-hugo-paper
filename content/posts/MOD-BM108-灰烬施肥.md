@@ -1,13 +1,13 @@
 ---
-'title': 'BM108-灰烬施肥'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM108-灰烬施肥'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM108'
-'url': '/p/108/'
+url: '/p/108/'
 ---
 
 > 本文介绍了模组 **灰烬施肥** 的功能与特点。

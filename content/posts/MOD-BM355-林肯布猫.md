@@ -1,13 +1,13 @@
 ---
-'title': 'BM355-林肯布猫'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM355-林肯布猫'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM355'
-'url': '/p/331/'
+url: '/p/331/'
 ---
 
 > 本文介绍了模组 **林肯布猫** 的功能与特点。

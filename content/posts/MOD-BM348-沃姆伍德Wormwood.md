@@ -1,13 +1,13 @@
 ---
-'title': 'BM348-沃姆伍德Wormwood'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM348-沃姆伍德Wormwood'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM348'
-'url': '/p/330/'
+url: '/p/330/'
 ---
 
 > 本文介绍了模组 **沃姆伍德Wormwood** 的功能与特点。

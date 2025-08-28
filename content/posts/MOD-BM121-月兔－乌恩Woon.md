@@ -1,13 +1,13 @@
 ---
-'title': 'BM121-月兔－乌恩Woon'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM121-月兔－乌恩Woon'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM121'
-'url': '/p/220/'
+url: '/p/220/'
 ---
 
 > 本文介绍了模组 **月兔－乌恩Woon** 的功能与特点。

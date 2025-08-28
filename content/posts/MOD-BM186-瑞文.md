@@ -1,13 +1,13 @@
 ---
-'title': 'BM186-瑞文'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM186-瑞文'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM186'
-'url': '/p/148/'
+url: '/p/148/'
 ---
 
 > 本文介绍了模组 **瑞文** 的功能与特点。

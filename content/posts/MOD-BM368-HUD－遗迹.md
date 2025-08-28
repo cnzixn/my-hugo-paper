@@ -1,13 +1,13 @@
 ---
-'title': 'BM368-HUD－遗迹'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM368-HUD－遗迹'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '美化'
-'aliases':
+aliases:
 - 'BM368'
-'url': '/p/544/'
+url: '/p/544/'
 ---
 
 > 本文介绍了模组 **HUD－遗迹** 的功能与特点。

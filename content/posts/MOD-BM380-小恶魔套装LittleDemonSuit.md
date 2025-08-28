@@ -1,13 +1,13 @@
 ---
-'title': 'BM380-小恶魔套装LittleDemonSuit'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM380-小恶魔套装LittleDemonSuit'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '装备'
-'aliases':
+aliases:
 - 'BM380'
-'url': '/p/335/'
+url: '/p/335/'
 ---
 
 > 本文介绍了模组 **小恶魔套装LittleDemonSuit** 的功能与特点。

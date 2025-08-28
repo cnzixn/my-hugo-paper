@@ -1,13 +1,13 @@
 ---
-'title': 'BM146-人形玩偶'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM146-人形玩偶'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '美化'
-'aliases':
+aliases:
 - 'BM146'
-'url': '/p/231/'
+url: '/p/231/'
 ---
 
 > 本文介绍了模组 **人形玩偶** 的功能与特点。

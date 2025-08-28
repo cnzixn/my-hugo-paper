@@ -1,13 +1,13 @@
 ---
-'title': 'BM091-咕噜'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM091-咕噜'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM091'
-'url': '/p/92/'
+url: '/p/92/'
 ---
 
 > 本文介绍了模组 **咕噜** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM138-制冰机'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM138-制冰机'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM138'
-'url': '/p/122/'
+url: '/p/122/'
 ---
 
 > 本文介绍了模组 **制冰机** 的功能与特点。

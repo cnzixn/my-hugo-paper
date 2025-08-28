@@ -1,13 +1,13 @@
 ---
-'title': 'BM033-动漫地皮'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM033-动漫地皮'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '美化'
-'aliases':
+aliases:
 - 'BM033'
-'url': '/p/33/'
+url: '/p/33/'
 ---
 
 > 本文介绍了模组 **动漫地皮** 的功能与特点。

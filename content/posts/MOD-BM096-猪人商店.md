@@ -1,13 +1,13 @@
 ---
-'title': 'BM096-猪人商店'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM096-猪人商店'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '玩法'
-'aliases':
+aliases:
 - 'BM096'
-'url': '/p/97/'
+url: '/p/97/'
 ---
 
 > 本文介绍了模组 **猪人商店** 的功能与特点。

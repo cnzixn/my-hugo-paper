@@ -1,13 +1,13 @@
 ---
-'title': 'BM103-猫妹子Sollyz'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM103-猫妹子Sollyz'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM103'
-'url': '/p/104/'
+url: '/p/104/'
 ---
 
 > 本文介绍了模组 **猫妹子Sollyz** 的功能与特点。

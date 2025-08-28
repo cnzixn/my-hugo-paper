@@ -1,13 +1,13 @@
 ---
-'title': 'YN258-强迫症标尺（按键盘Insert键在地上画坐标，方便建造、种植，再按Insert键消失）'
-'date': '2025-04-23'
-'author': 'Bny'
-'tags':
+title: 'YN258-强迫症标尺（按键盘Insert键在地上画坐标，方便建造、种植，再按Insert键消失）'
+date: '2025-04-23'
+author: 'Bny'
+tags:
 - '易宁'
-'aliases':
+aliases:
 - 'YN258'
-'comments': false
-'url': '/p/745/'
+comments: false
+url: '/p/745/'
 ---
 
 > 代码来源于“易宁”大佬的分享，仅供学习，不要直接复制粘贴。

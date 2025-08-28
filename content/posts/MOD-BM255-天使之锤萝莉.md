@@ -1,13 +1,13 @@
 ---
-'title': 'BM255-天使之锤萝莉'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM255-天使之锤萝莉'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM255'
-'url': '/p/185/'
+url: '/p/185/'
 ---
 
 > 本文介绍了模组 **天使之锤萝莉** 的功能与特点。

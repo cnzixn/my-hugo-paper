@@ -1,13 +1,13 @@
 ---
-'title': 'BM406-友好的蜜蜂'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM406-友好的蜜蜂'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '调整'
-'aliases':
+aliases:
 - 'BM406'
-'url': '/p/476/'
+url: '/p/476/'
 ---
 
 > 本文介绍了模组 **友好的蜜蜂** 的功能与特点。

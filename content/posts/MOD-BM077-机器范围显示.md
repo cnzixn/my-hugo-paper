@@ -1,13 +1,13 @@
 ---
-'title': 'BM077-机器范围显示'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM077-机器范围显示'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'BM077'
-'url': '/p/77/'
+url: '/p/77/'
 ---
 
 > 本文介绍了模组 **机器范围显示** 的功能与特点。

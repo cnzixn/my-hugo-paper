@@ -1,13 +1,13 @@
 ---
-'title': 'BM032-物品叠加'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM032-物品叠加'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'BM032'
-'url': '/p/32/'
+url: '/p/32/'
 ---
 
 > 本文介绍了模组 **物品叠加** 的功能与特点。

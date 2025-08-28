@@ -1,13 +1,13 @@
 ---
-'title': 'BM325-泄湖生成'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM325-泄湖生成'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '调整'
-'aliases':
+aliases:
 - 'BM325'
-'url': '/p/389/'
+url: '/p/389/'
 ---
 
 > 本文介绍了模组 **泄湖生成** 的功能与特点。

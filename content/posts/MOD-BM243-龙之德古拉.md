@@ -1,13 +1,13 @@
 ---
-'title': 'BM243-龙之德古拉'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM243-龙之德古拉'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM243'
-'url': '/p/280/'
+url: '/p/280/'
 ---
 
 > 本文介绍了模组 **龙之德古拉** 的功能与特点。

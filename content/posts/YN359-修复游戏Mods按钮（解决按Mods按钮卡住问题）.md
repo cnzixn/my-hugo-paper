@@ -1,13 +1,13 @@
 ---
-'title': 'YN359-修复游戏Mods按钮（解决按Mods按钮卡住问题）'
-'date': '2025-04-23'
-'author': 'Bny'
-'tags':
+title: 'YN359-修复游戏Mods按钮（解决按Mods按钮卡住问题）'
+date: '2025-04-23'
+author: 'Bny'
+tags:
 - '易宁'
-'aliases':
+aliases:
 - 'YN359'
-'comments': false
-'url': '/p/681/'
+comments: false
+url: '/p/681/'
 ---
 
 > 代码来源于“易宁”大佬的分享，仅供学习，不要直接复制粘贴。

@@ -1,13 +1,13 @@
 ---
-'title': 'YN309-度假营地（按键盘B键租赁度假营地，各种设施一应俱全，再按B键退房）'
-'date': '2025-04-23'
-'author': 'Bny'
-'tags':
+title: 'YN309-度假营地（按键盘B键租赁度假营地，各种设施一应俱全，再按B键退房）'
+date: '2025-04-23'
+author: 'Bny'
+tags:
 - '易宁'
-'aliases':
+aliases:
 - 'YN309'
-'comments': false
-'url': '/p/785/'
+comments: false
+url: '/p/785/'
 ---
 
 > 代码来源于“易宁”大佬的分享，仅供学习，不要直接复制粘贴。

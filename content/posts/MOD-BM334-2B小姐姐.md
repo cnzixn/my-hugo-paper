@@ -1,13 +1,13 @@
 ---
-'title': 'BM334-2B小姐姐'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM334-2B小姐姐'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM334'
-'url': '/p/535/'
+url: '/p/535/'
 ---
 
 > 本文介绍了模组 **2B小姐姐** 的功能与特点。

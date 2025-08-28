@@ -1,13 +1,13 @@
 ---
-'title': 'BM085-高级冰箱'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM085-高级冰箱'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM085'
-'url': '/p/86/'
+url: '/p/86/'
 ---
 
 > 本文介绍了模组 **高级冰箱** 的功能与特点。

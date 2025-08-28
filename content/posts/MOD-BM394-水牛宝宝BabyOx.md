@@ -1,13 +1,13 @@
 ---
-'title': 'BM394-水牛宝宝BabyOx'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM394-水牛宝宝BabyOx'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '调整'
-'aliases':
+aliases:
 - 'BM394'
-'url': '/p/340/'
+url: '/p/340/'
 ---
 
 > 本文介绍了模组 **水牛宝宝BabyOx** 的功能与特点。

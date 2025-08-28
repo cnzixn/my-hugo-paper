@@ -1,13 +1,13 @@
 ---
-'title': 'BM082-威廉卡特'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM082-威廉卡特'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM082'
-'url': '/p/83/'
+url: '/p/83/'
 ---
 
 > 本文介绍了模组 **威廉卡特** 的功能与特点。

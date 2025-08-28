@@ -1,13 +1,13 @@
 ---
-'title': 'BM381-格罗姆冲击波GlommerShockwave'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM381-格罗姆冲击波GlommerShockwave'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '调整'
-'aliases':
+aliases:
 - 'BM381'
-'url': '/p/473/'
+url: '/p/473/'
 ---
 
 > 本文介绍了模组 **格罗姆冲击波GlommerShockwave** 的功能与特点。

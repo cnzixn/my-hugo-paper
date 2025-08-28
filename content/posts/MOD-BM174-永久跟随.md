@@ -1,13 +1,13 @@
 ---
-'title': 'BM174-永久跟随'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM174-永久跟随'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'BM174'
-'url': '/p/142/'
+url: '/p/142/'
 ---
 
 > 本文介绍了模组 **永久跟随** 的功能与特点。

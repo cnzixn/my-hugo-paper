@@ -1,13 +1,13 @@
 ---
-'title': 'BM214-入侵者'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM214-入侵者'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM214'
-'url': '/p/165/'
+url: '/p/165/'
 ---
 
 > 本文介绍了模组 **入侵者** 的功能与特点。

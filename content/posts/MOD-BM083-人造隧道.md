@@ -1,13 +1,13 @@
 ---
-'title': 'BM083-人造隧道'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM083-人造隧道'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM083'
-'url': '/p/84/'
+url: '/p/84/'
 ---
 
 > 本文介绍了模组 **人造隧道** 的功能与特点。

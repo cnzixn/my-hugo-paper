@@ -1,13 +1,13 @@
 ---
-'title': 'BM134-大象繁殖'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM134-大象繁殖'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '调整'
-'aliases':
+aliases:
 - 'BM134'
-'url': '/p/120/'
+url: '/p/120/'
 ---
 
 > 本文介绍了模组 **大象繁殖** 的功能与特点。

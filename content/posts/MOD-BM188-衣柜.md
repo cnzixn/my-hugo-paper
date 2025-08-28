@@ -1,13 +1,13 @@
 ---
-'title': 'BM188-衣柜'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM188-衣柜'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM188'
-'url': '/p/250/'
+url: '/p/250/'
 ---
 
 > 本文介绍了模组 **衣柜** 的功能与特点。

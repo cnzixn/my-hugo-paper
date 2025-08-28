@@ -1,13 +1,13 @@
 ---
-'title': 'BM412-玩家房子'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM412-玩家房子'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '玩法'
-'aliases':
+aliases:
 - 'BM412'
-'url': '/p/558/'
+url: '/p/558/'
 ---
 
 > 本文介绍了模组 **玩家房子** 的功能与特点。

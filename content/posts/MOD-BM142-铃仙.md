@@ -1,13 +1,13 @@
 ---
-'title': 'BM142-铃仙'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM142-铃仙'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM142'
-'url': '/p/125/'
+url: '/p/125/'
 ---
 
 > 本文介绍了模组 **铃仙** 的功能与特点。

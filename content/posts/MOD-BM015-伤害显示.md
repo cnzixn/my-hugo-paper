@@ -1,13 +1,13 @@
 ---
-'title': 'BM015-伤害显示'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM015-伤害显示'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'BM015'
-'url': '/p/15/'
+url: '/p/15/'
 ---
 
 > 本文介绍了模组 **伤害显示** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': '冬日之花雪莉'
-'date': '2025-05-01'
-'author': 'HelloHan'
-'tags':
+title: '冬日之花雪莉'
+date: '2025-05-01'
+author: 'HelloHan'
+tags:
 - '人物'
-'aliases':
+aliases:
 - 'sherry'
-'comments': true
-'url': '/p/410/'
+comments: true
+url: '/p/410/'
 ---
 
 > 本文介绍了模组 **Sherry (冬日之花——新版雪莉)** 的功能与特点。

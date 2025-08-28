@@ -1,13 +1,13 @@
 ---
-'title': 'BM341-生物指示器'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM341-生物指示器'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'BM341'
-'url': '/p/392/'
+url: '/p/392/'
 ---
 
 > 本文介绍了模组 **生物指示器** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM179-雨衣'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM179-雨衣'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM179'
-'url': '/p/245/'
+url: '/p/245/'
 ---
 
 > 本文介绍了模组 **雨衣** 的功能与特点。

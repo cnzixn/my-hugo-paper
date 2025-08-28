@@ -1,13 +1,13 @@
 ---
-'title': 'BM259-医生'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM259-医生'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM259'
-'url': '/p/187/'
+url: '/p/187/'
 ---
 
 > 本文介绍了模组 **医生** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM135-随从时间'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM135-随从时间'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'BM135'
-'url': '/p/227/'
+url: '/p/227/'
 ---
 
 > 本文介绍了模组 **随从时间** 的功能与特点。

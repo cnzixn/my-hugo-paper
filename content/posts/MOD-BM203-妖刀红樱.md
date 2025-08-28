@@ -1,13 +1,13 @@
 ---
-'title': 'BM203-妖刀红樱'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM203-妖刀红樱'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '装备'
-'aliases':
+aliases:
 - 'BM203'
-'url': '/p/161/'
+url: '/p/161/'
 ---
 
 > 本文介绍了模组 **妖刀红樱** 的功能与特点。

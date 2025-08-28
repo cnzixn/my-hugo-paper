@@ -1,13 +1,13 @@
 ---
-'title': 'BM069-我妻由乃'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM069-我妻由乃'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM069'
-'url': '/p/70/'
+url: '/p/70/'
 ---
 
 > 本文介绍了模组 **我妻由乃** 的功能与特点。

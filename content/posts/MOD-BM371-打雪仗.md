@@ -1,13 +1,13 @@
 ---
-'title': 'BM371-打雪仗'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM371-打雪仗'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '玩法'
-'aliases':
+aliases:
 - 'BM371'
-'url': '/p/547/'
+url: '/p/547/'
 ---
 
 > 本文介绍了模组 **打雪仗** 的功能与特点。

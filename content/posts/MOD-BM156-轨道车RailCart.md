@@ -1,13 +1,13 @@
 ---
-'title': 'BM156-轨道车RailCart'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM156-轨道车RailCart'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM156'
-'url': '/p/132/'
+url: '/p/132/'
 ---
 
 > 本文介绍了模组 **轨道车RailCart** 的功能与特点。

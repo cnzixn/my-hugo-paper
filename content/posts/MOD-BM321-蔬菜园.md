@@ -1,13 +1,13 @@
 ---
-'title': 'BM321-蔬菜园'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM321-蔬菜园'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM321'
-'url': '/p/323/'
+url: '/p/323/'
 ---
 
 > 本文介绍了模组 **蔬菜园** 的功能与特点。

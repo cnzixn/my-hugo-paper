@@ -1,13 +1,13 @@
 ---
-'title': 'BM197-黑剑使'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM197-黑剑使'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM197'
-'url': '/p/253/'
+url: '/p/253/'
 ---
 
 > 本文介绍了模组 **黑剑使** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM225-王尼玛'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM225-王尼玛'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM225'
-'url': '/p/269/'
+url: '/p/269/'
 ---
 
 > 本文介绍了模组 **王尼玛** 的功能与特点。

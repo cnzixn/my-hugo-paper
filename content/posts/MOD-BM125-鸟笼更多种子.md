@@ -1,13 +1,13 @@
 ---
-'title': 'BM125-鸟笼更多种子'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM125-鸟笼更多种子'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '调整'
-'aliases':
+aliases:
 - 'BM125'
-'url': '/p/221/'
+url: '/p/221/'
 ---
 
 > 本文介绍了模组 **鸟笼更多种子** 的功能与特点。

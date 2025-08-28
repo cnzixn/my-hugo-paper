@@ -1,13 +1,13 @@
 ---
-'title': 'BM024-鬼屋'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM024-鬼屋'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '玩法'
-'aliases':
+aliases:
 - 'BM024'
-'url': '/p/24/'
+url: '/p/24/'
 ---
 
 > 本文介绍了模组 **鬼屋** 的功能与特点。

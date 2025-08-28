@@ -1,13 +1,13 @@
 ---
-'title': 'BM201-物品无限耐久'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM201-物品无限耐久'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'BM201'
-'url': '/p/158/'
+url: '/p/158/'
 ---
 
 > 本文介绍了模组 **物品无限耐久** 的功能与特点。

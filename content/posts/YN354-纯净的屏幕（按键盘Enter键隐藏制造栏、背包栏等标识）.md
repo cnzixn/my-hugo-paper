@@ -1,13 +1,13 @@
 ---
-'title': 'YN354-纯净的屏幕（按键盘Enter键隐藏制造栏、背包栏等标识）'
-'date': '2025-04-23'
-'author': 'Bny'
-'tags':
+title: 'YN354-纯净的屏幕（按键盘Enter键隐藏制造栏、背包栏等标识）'
+date: '2025-04-23'
+author: 'Bny'
+tags:
 - '易宁'
-'aliases':
+aliases:
 - 'YN354'
-'comments': false
-'url': '/p/679/'
+comments: false
+url: '/p/679/'
 ---
 
 > 代码来源于“易宁”大佬的分享，仅供学习，不要直接复制粘贴。

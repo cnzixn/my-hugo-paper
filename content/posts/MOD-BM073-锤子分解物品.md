@@ -1,13 +1,13 @@
 ---
-'title': 'BM073-锤子分解物品'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM073-锤子分解物品'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '调整'
-'aliases':
+aliases:
 - 'BM073'
-'url': '/p/74/'
+url: '/p/74/'
 ---
 
 > 本文介绍了模组 **锤子分解物品** 的功能与特点。

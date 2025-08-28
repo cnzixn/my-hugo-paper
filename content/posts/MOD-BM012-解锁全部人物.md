@@ -1,13 +1,13 @@
 ---
-'title': 'BM012-解锁全部人物'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM012-解锁全部人物'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'BM012'
-'url': '/p/12/'
+url: '/p/12/'
 ---
 
 > 本文介绍了模组 **解锁全部人物** 的功能与特点。

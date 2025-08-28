@@ -1,13 +1,13 @@
 ---
-'title': 'BM152-异形'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM152-异形'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM152'
-'url': '/p/130/'
+url: '/p/130/'
 ---
 
 > 本文介绍了模组 **异形** 的功能与特点。

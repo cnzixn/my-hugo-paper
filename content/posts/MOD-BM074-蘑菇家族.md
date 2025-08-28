@@ -1,13 +1,13 @@
 ---
-'title': 'BM074-蘑菇家族'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM074-蘑菇家族'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM074'
-'url': '/p/75/'
+url: '/p/75/'
 ---
 
 > 本文介绍了模组 **蘑菇家族** 的功能与特点。

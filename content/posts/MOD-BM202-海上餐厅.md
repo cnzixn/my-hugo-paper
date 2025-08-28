@@ -1,13 +1,13 @@
 ---
-'title': 'BM202-海上餐厅'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM202-海上餐厅'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM202'
-'url': '/p/160/'
+url: '/p/160/'
 ---
 
 > 本文介绍了模组 **海上餐厅** 的功能与特点。

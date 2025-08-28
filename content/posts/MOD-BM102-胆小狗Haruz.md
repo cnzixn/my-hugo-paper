@@ -1,13 +1,13 @@
 ---
-'title': 'BM102-胆小狗Haruz'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM102-胆小狗Haruz'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM102'
-'url': '/p/103/'
+url: '/p/103/'
 ---
 
 > 本文介绍了模组 **胆小狗Haruz** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM141-暖熊WarmBear'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM141-暖熊WarmBear'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM141'
-'url': '/p/124/'
+url: '/p/124/'
 ---
 
 > 本文介绍了模组 **暖熊WarmBear** 的功能与特点。

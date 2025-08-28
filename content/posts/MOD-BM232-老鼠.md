@@ -1,13 +1,13 @@
 ---
-'title': 'BM232-老鼠'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM232-老鼠'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM232'
-'url': '/p/273/'
+url: '/p/273/'
 ---
 
 > 本文介绍了模组 **老鼠** 的功能与特点。

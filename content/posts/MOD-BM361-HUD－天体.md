@@ -1,13 +1,13 @@
 ---
-'title': 'BM361-HUD－天体'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM361-HUD－天体'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '美化'
-'aliases':
+aliases:
 - 'BM361'
-'url': '/p/396/'
+url: '/p/396/'
 ---
 
 > 本文介绍了模组 **HUD－天体** 的功能与特点。

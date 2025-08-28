@@ -1,13 +1,13 @@
 ---
-'title': 'YN270-筋斗云（按键盘Z键召唤筋斗云在天上飞行，再按Z键落地）'
-'date': '2025-04-23'
-'author': 'Bny'
-'tags':
+title: 'YN270-筋斗云（按键盘Z键召唤筋斗云在天上飞行，再按Z键落地）'
+date: '2025-04-23'
+author: 'Bny'
+tags:
 - '易宁'
-'aliases':
+aliases:
 - 'YN270'
-'comments': false
-'url': '/p/694/'
+comments: false
+url: '/p/694/'
 ---
 
 > 代码来源于“易宁”大佬的分享，仅供学习，不要直接复制粘贴。

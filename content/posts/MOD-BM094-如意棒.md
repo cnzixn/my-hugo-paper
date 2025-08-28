@@ -1,13 +1,13 @@
 ---
-'title': 'BM094-如意棒'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM094-如意棒'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '装备'
-'aliases':
+aliases:
 - 'BM094'
-'url': '/p/95/'
+url: '/p/95/'
 ---
 
 > 本文介绍了模组 **如意棒** 的功能与特点。

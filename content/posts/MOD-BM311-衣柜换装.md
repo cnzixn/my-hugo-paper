@@ -1,13 +1,13 @@
 ---
-'title': 'BM311-衣柜换装'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM311-衣柜换装'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '美化'
-'aliases':
+aliases:
 - 'BM311'
-'url': '/p/317/'
+url: '/p/317/'
 ---
 
 > 本文介绍了模组 **衣柜换装** 的功能与特点。

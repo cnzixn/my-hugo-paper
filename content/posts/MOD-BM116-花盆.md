@@ -1,13 +1,13 @@
 ---
-'title': 'BM116-花盆'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM116-花盆'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM116'
-'url': '/p/216/'
+url: '/p/216/'
 ---
 
 > 本文介绍了模组 **花盆** 的功能与特点。

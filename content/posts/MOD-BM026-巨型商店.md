@@ -1,13 +1,13 @@
 ---
-'title': 'BM026-巨型商店'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM026-巨型商店'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '玩法'
-'aliases':
+aliases:
 - 'BM026'
-'url': '/p/26/'
+url: '/p/26/'
 ---
 
 > 本文介绍了模组 **巨型商店** 的功能与特点。

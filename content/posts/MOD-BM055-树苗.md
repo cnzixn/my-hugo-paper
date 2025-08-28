@@ -1,13 +1,13 @@
 ---
-'title': 'BM055-树苗'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM055-树苗'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '调整'
-'aliases':
+aliases:
 - 'BM055'
-'url': '/p/56/'
+url: '/p/56/'
 ---
 
 > 本文介绍了模组 **树苗** 的功能与特点。

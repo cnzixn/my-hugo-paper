@@ -1,13 +1,13 @@
 ---
-'title': 'BM302-卡尼猫Carney'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM302-卡尼猫Carney'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM302'
-'url': '/p/308/'
+url: '/p/308/'
 ---
 
 > 本文介绍了模组 **卡尼猫Carney** 的功能与特点。

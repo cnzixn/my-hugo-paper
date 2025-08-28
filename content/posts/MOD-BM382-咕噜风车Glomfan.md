@@ -1,13 +1,13 @@
 ---
-'title': 'BM382-咕噜风车Glomfan'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM382-咕噜风车Glomfan'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM382'
-'url': '/p/336/'
+url: '/p/336/'
 ---
 
 > 本文介绍了模组 **咕噜风车Glomfan** 的功能与特点。

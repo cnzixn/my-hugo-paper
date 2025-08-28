@@ -1,13 +1,13 @@
 ---
-'title': 'BM217-狂怒的安诺'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM217-狂怒的安诺'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM217'
-'url': '/p/264/'
+url: '/p/264/'
 ---
 
 > 本文介绍了模组 **狂怒的安诺** 的功能与特点。

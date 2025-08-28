@@ -1,13 +1,13 @@
 ---
-'title': 'BM257-海盗狐狸'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM257-海盗狐狸'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM257'
-'url': '/p/186/'
+url: '/p/186/'
 ---
 
 > 本文介绍了模组 **海盗狐狸** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM167-毛瑟步枪'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM167-毛瑟步枪'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '装备'
-'aliases':
+aliases:
 - 'BM167'
-'url': '/p/138/'
+url: '/p/138/'
 ---
 
 > 本文介绍了模组 **毛瑟步枪** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM228-圣诞节套装'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM228-圣诞节套装'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '装备'
-'aliases':
+aliases:
 - 'BM228'
-'url': '/p/271/'
+url: '/p/271/'
 ---
 
 > 本文介绍了模组 **圣诞节套装** 的功能与特点。

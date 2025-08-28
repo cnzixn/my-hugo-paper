@@ -1,13 +1,13 @@
 ---
-'title': 'YN356-地图不显示已探索区域（按键盘Ctrl+2关闭地图显示，再按一次解锁）'
-'date': '2025-04-23'
-'author': 'Bny'
-'tags':
+title: 'YN356-地图不显示已探索区域（按键盘Ctrl+2关闭地图显示，再按一次解锁）'
+date: '2025-04-23'
+author: 'Bny'
+tags:
 - '易宁'
-'aliases':
+aliases:
 - 'YN356'
-'comments': false
-'url': '/p/724/'
+comments: false
+url: '/p/724/'
 ---
 
 > 代码来源于“易宁”大佬的分享，仅供学习，不要直接复制粘贴。

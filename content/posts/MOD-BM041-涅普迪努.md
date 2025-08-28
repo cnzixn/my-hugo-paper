@@ -1,13 +1,13 @@
 ---
-'title': 'BM041-涅普迪努'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM041-涅普迪努'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM041'
-'url': '/p/41/'
+url: '/p/41/'
 ---
 
 > 本文介绍了模组 **涅普迪努** 的功能与特点。

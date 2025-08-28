@@ -1,13 +1,13 @@
 ---
-'title': 'BM081-万圣节'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM081-万圣节'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '玩法'
-'aliases':
+aliases:
 - 'BM081'
-'url': '/p/82/'
+url: '/p/82/'
 ---
 
 > 本文介绍了模组 **万圣节** 的功能与特点。

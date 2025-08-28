@@ -1,13 +1,13 @@
 ---
-'title': 'BM409-翅膀＆背包'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM409-翅膀＆背包'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '装备'
-'aliases':
+aliases:
 - 'BM409'
-'url': '/p/556/'
+url: '/p/556/'
 ---
 
 > 本文介绍了模组 **翅膀＆背包** 的功能与特点。

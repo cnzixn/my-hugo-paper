@@ -1,13 +1,13 @@
 ---
-'title': 'BM395-牛奶＆奶酪'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM395-牛奶＆奶酪'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '玩法'
-'aliases':
+aliases:
 - 'BM395'
-'url': '/p/404/'
+url: '/p/404/'
 ---
 
 > 本文介绍了模组 **牛奶＆奶酪** 的功能与特点。

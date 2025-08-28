@@ -1,13 +1,13 @@
 ---
-'title': 'BM016-死亡不删档'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM016-死亡不删档'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'BM016'
-'url': '/p/16/'
+url: '/p/16/'
 ---
 
 > 本文介绍了模组 **死亡不删档** 的功能与特点。

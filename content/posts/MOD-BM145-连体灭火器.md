@@ -1,13 +1,13 @@
 ---
-'title': 'BM145-连体灭火器'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM145-连体灭火器'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'BM145'
-'url': '/p/126/'
+url: '/p/126/'
 ---
 
 > 本文介绍了模组 **连体灭火器** 的功能与特点。

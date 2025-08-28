@@ -1,13 +1,13 @@
 ---
-'title': 'BM237-失落的学生'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM237-失落的学生'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM237'
-'url': '/p/277/'
+url: '/p/277/'
 ---
 
 > 本文介绍了模组 **失落的学生** 的功能与特点。

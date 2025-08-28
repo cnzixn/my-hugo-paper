@@ -1,13 +1,13 @@
 ---
-'title': 'BM157-自动重置陷阱'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM157-自动重置陷阱'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'BM157'
-'url': '/p/236/'
+url: '/p/236/'
 ---
 
 > 本文介绍了模组 **自动重置陷阱** 的功能与特点。

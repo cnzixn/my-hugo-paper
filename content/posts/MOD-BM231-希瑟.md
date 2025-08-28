@@ -1,13 +1,13 @@
 ---
-'title': 'BM231-希瑟'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM231-希瑟'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM231'
-'url': '/p/172/'
+url: '/p/172/'
 ---
 
 > 本文介绍了模组 **希瑟** 的功能与特点。

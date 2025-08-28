@@ -1,13 +1,13 @@
 ---
-'title': 'BM353-UMP40'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM353-UMP40'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM353'
-'url': '/p/466/'
+url: '/p/466/'
 ---
 
 > 本文介绍了模组 **UMP40** 的功能与特点。

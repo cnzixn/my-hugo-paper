@@ -1,13 +1,13 @@
 ---
-'title': 'BM224-盆栽植物'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM224-盆栽植物'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '美化'
-'aliases':
+aliases:
 - 'BM224'
-'url': '/p/268/'
+url: '/p/268/'
 ---
 
 > 本文介绍了模组 **盆栽植物** 的功能与特点。

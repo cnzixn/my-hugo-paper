@@ -1,13 +1,13 @@
 ---
-'title': 'BM155-发电机Generator'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM155-发电机Generator'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM155'
-'url': '/p/131/'
+url: '/p/131/'
 ---
 
 > 本文介绍了模组 **发电机Generator** 的功能与特点。

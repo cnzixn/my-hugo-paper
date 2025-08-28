@@ -1,13 +1,13 @@
 ---
-'title': 'BM339-重选人物'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM339-重选人物'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'BM339'
-'url': '/p/461/'
+url: '/p/461/'
 ---
 
 > 本文介绍了模组 **重选人物** 的功能与特点。

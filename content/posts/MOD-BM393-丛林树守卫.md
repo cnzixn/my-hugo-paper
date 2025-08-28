@@ -1,13 +1,13 @@
 ---
-'title': 'BM393-丛林树守卫'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM393-丛林树守卫'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '玩法'
-'aliases':
+aliases:
 - 'BM393'
-'url': '/p/403/'
+url: '/p/403/'
 ---
 
 > 本文介绍了模组 **丛林树守卫** 的功能与特点。

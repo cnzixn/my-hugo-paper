@@ -1,13 +1,13 @@
 ---
-'title': 'BM364-HUD－航海'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM364-HUD－航海'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '美化'
-'aliases':
+aliases:
 - 'BM364'
-'url': '/p/334/'
+url: '/p/334/'
 ---
 
 > 本文介绍了模组 **HUD－航海** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM084-切斯特选择'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM084-切斯特选择'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '调整'
-'aliases':
+aliases:
 - 'BM084'
-'url': '/p/85/'
+url: '/p/85/'
 ---
 
 > 本文介绍了模组 **切斯特选择** 的功能与特点。

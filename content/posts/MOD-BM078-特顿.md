@@ -1,13 +1,13 @@
 ---
-'title': 'BM078-特顿'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM078-特顿'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM078'
-'url': '/p/79/'
+url: '/p/79/'
 ---
 
 > 本文介绍了模组 **特顿** 的功能与特点。

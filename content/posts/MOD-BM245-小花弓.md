@@ -1,13 +1,13 @@
 ---
-'title': 'BM245-小花弓'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM245-小花弓'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '装备'
-'aliases':
+aliases:
 - 'BM245'
-'url': '/p/281/'
+url: '/p/281/'
 ---
 
 > 本文介绍了模组 **小花弓** 的功能与特点。

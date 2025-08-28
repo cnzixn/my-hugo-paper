@@ -1,13 +1,13 @@
 ---
-'title': 'BM390-远古守卫者AncientGuardian'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM390-远古守卫者AncientGuardian'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '调整'
-'aliases':
+aliases:
 - 'BM390'
-'url': '/p/552/'
+url: '/p/552/'
 ---
 
 > 本文介绍了模组 **远古守卫者AncientGuardian** 的功能与特点。

@@ -1,13 +1,13 @@
 ---
-'title': 'BM036-小地图'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM036-小地图'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'BM036'
-'url': '/p/36/'
+url: '/p/36/'
 ---
 
 > 本文介绍了模组 **小地图** 的功能与特点。

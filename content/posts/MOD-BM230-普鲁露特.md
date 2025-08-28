@@ -1,13 +1,13 @@
 ---
-'title': 'BM230-普鲁露特'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM230-普鲁露特'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM230'
-'url': '/p/272/'
+url: '/p/272/'
 ---
 
 > 本文介绍了模组 **普鲁露特** 的功能与特点。

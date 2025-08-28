@@ -1,13 +1,13 @@
 ---
-'title': 'BM287-远坂凛'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM287-远坂凛'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM287'
-'url': '/p/300/'
+url: '/p/300/'
 ---
 
 > 本文介绍了模组 **远坂凛** 的功能与特点。

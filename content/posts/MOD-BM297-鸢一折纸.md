@@ -1,13 +1,13 @@
 ---
-'title': 'BM297-鸢一折纸'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM297-鸢一折纸'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM297'
-'url': '/p/305/'
+url: '/p/305/'
 ---
 
 > 本文介绍了模组 **鸢一折纸** 的功能与特点。

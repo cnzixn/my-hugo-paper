@@ -1,13 +1,13 @@
 ---
-'title': 'BM265-自动灌溉植物'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM265-自动灌溉植物'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM265'
-'url': '/p/288/'
+url: '/p/288/'
 ---
 
 > 本文介绍了模组 **自动灌溉植物** 的功能与特点。

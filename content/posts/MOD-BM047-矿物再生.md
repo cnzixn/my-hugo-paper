@@ -1,13 +1,13 @@
 ---
-'title': 'BM047-矿物再生'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM047-矿物再生'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '调整'
-'aliases':
+aliases:
 - 'BM047'
-'url': '/p/47/'
+url: '/p/47/'
 ---
 
 > 本文介绍了模组 **矿物再生** 的功能与特点。

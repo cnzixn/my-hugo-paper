@@ -1,13 +1,13 @@
 ---
-'title': 'BM244-赤目'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM244-赤目'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM244'
-'url': '/p/177/'
+url: '/p/177/'
 ---
 
 > 本文介绍了模组 **赤目** 的功能与特点。

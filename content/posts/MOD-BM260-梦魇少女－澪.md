@@ -1,13 +1,13 @@
 ---
-'title': 'BM260-梦魇少女－澪'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM260-梦魇少女－澪'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM260'
-'url': '/p/286/'
+url: '/p/286/'
 ---
 
 > 本文介绍了模组 **梦魇少女－澪** 的功能与特点。

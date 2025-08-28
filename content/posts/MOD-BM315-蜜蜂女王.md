@@ -1,13 +1,13 @@
 ---
-'title': 'BM315-蜜蜂女王'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM315-蜜蜂女王'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM315'
-'url': '/p/320/'
+url: '/p/320/'
 ---
 
 > 本文介绍了模组 **蜜蜂女王** 的功能与特点。

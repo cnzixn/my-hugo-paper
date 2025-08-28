@@ -1,13 +1,13 @@
 ---
-'title': 'BM128-羽毛农场'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM128-羽毛农场'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '调整'
-'aliases':
+aliases:
 - 'BM128'
-'url': '/p/117/'
+url: '/p/117/'
 ---
 
 > 本文介绍了模组 **羽毛农场** 的功能与特点。

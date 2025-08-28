@@ -1,13 +1,13 @@
 ---
-'title': 'BM233-苏松木'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM233-苏松木'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM233'
-'url': '/p/274/'
+url: '/p/274/'
 ---
 
 > 本文介绍了模组 **苏松木** 的功能与特点。

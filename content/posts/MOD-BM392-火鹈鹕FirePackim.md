@@ -1,13 +1,13 @@
 ---
-'title': 'BM392-火鹈鹕FirePackim'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM392-火鹈鹕FirePackim'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '调整'
-'aliases':
+aliases:
 - 'BM392'
-'url': '/p/339/'
+url: '/p/339/'
 ---
 
 > 本文介绍了模组 **火鹈鹕FirePackim** 的功能与特点。

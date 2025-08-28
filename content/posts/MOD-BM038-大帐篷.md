@@ -1,13 +1,13 @@
 ---
-'title': 'BM038-大帐篷'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM038-大帐篷'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM038'
-'url': '/p/38/'
+url: '/p/38/'
 ---
 
 > 本文介绍了模组 **大帐篷** 的功能与特点。

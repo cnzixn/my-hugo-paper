@@ -1,13 +1,13 @@
 ---
-'title': 'BM099-Boss皮肤'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM099-Boss皮肤'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '美化'
-'aliases':
+aliases:
 - 'BM099'
-'url': '/p/100/'
+url: '/p/100/'
 ---
 
 > 本文介绍了模组 **Boss皮肤** 的功能与特点。

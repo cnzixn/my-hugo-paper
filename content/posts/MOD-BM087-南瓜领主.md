@@ -1,13 +1,13 @@
 ---
-'title': 'BM087-南瓜领主'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM087-南瓜领主'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '其他'
-'aliases':
+aliases:
 - 'BM087'
-'url': '/p/88/'
+url: '/p/88/'
 ---
 
 > 本文介绍了模组 **南瓜领主** 的功能与特点。

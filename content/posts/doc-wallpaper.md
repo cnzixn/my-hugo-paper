@@ -1,13 +1,13 @@
 ---
-'date': '2025-02-28T12:50:06Z'
-'title': '壁纸 - 制作教程'
-'author': 'Bny'
-'tags':
+date: '2025-02-28T12:50:06Z'
+title: '壁纸 - 制作教程'
+author: 'Bny'
+tags:
 - '资料'
-'aliases':
+aliases:
 - 'wallpaper'
-'comments': false
-'url': '/p/386/'
+comments: false
+url: '/p/386/'
 ---
 
 

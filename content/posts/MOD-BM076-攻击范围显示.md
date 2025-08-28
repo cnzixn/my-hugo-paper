@@ -1,13 +1,13 @@
 ---
-'title': 'BM076-攻击范围显示'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM076-攻击范围显示'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'BM076'
-'url': '/p/78/'
+url: '/p/78/'
 ---
 
 > 本文介绍了模组 **攻击范围显示** 的功能与特点。

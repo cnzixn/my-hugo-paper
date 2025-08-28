@@ -1,13 +1,13 @@
 ---
-'title': 'BM332-洒水机'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM332-洒水机'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '实用'
-'aliases':
+aliases:
 - 'BM332'
-'url': '/p/391/'
+url: '/p/391/'
 ---
 
 > 本文介绍了模组 **洒水机** 的功能与特点。

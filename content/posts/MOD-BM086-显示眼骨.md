@@ -1,13 +1,13 @@
 ---
-'title': 'BM086-显示眼骨'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM086-显示眼骨'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '辅助'
-'aliases':
+aliases:
 - 'BM086'
-'url': '/p/87/'
+url: '/p/87/'
 ---
 
 > 本文介绍了模组 **显示眼骨** 的功能与特点。

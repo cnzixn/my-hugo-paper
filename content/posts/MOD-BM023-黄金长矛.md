@@ -1,13 +1,13 @@
 ---
-'title': 'BM023-黄金长矛'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM023-黄金长矛'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '装备'
-'aliases':
+aliases:
 - 'BM023'
-'url': '/p/23/'
+url: '/p/23/'
 ---
 
 > 本文介绍了模组 **黄金长矛** 的功能与特点。

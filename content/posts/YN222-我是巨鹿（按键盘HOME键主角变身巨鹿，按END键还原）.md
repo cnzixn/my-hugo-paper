@@ -1,13 +1,13 @@
 ---
-'title': 'YN222-我是巨鹿（按键盘HOME键主角变身巨鹿，按END键还原）'
-'date': '2025-04-23'
-'author': 'Bny'
-'tags':
+title: 'YN222-我是巨鹿（按键盘HOME键主角变身巨鹿，按END键还原）'
+date: '2025-04-23'
+author: 'Bny'
+tags:
 - '易宁'
-'aliases':
+aliases:
 - 'YN222'
-'comments': false
-'url': '/p/605/'
+comments: false
+url: '/p/605/'
 ---
 
 > 代码来源于“易宁”大佬的分享，仅供学习，不要直接复制粘贴。

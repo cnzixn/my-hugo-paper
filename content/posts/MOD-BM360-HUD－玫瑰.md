@@ -1,13 +1,13 @@
 ---
-'title': 'BM360-HUD－玫瑰'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM360-HUD－玫瑰'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '美化'
-'aliases':
+aliases:
 - 'BM360'
-'url': '/p/468/'
+url: '/p/468/'
 ---
 
 > 本文介绍了模组 **HUD－玫瑰** 的功能与特点。

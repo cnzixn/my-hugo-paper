@@ -1,13 +1,13 @@
 ---
-'title': 'BM105-兔娘Faroz'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM105-兔娘Faroz'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '人物'
-'aliases':
+aliases:
 - 'BM105'
-'url': '/p/106/'
+url: '/p/106/'
 ---
 
 > 本文介绍了模组 **兔娘Faroz** 的功能与特点。

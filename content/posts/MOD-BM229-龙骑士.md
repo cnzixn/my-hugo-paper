@@ -1,13 +1,13 @@
 ---
-'title': 'BM229-龙骑士'
-'date': '2025-03-07'
-'author': 'Bny'
-'tags':
+title: 'BM229-龙骑士'
+date: '2025-03-07'
+author: 'Bny'
+tags:
 - '模组'
 - '玩法'
-'aliases':
+aliases:
 - 'BM229'
-'url': '/p/171/'
+url: '/p/171/'
 ---
 
 > 本文介绍了模组 **龙骑士** 的功能与特点。
