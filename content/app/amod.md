@@ -102,8 +102,8 @@ hideTitlt: true
   <!-- </button> -->
 <!-- </div> -->
 
-<div class="section reminder">
-    <p><strong>温馨提示：</strong> 本工具<strong>不消耗流量</strong>，文件在浏览器本地处理，不需要上传到服务器。经过测试，Chrome、Edge浏览器可正常使用本工具，其他浏览器兼容性未知。</p>
+<div class="section">
+    <small><strong>温馨提示：</strong><br>　• 本工具<strong>不消耗流量</strong>，文件在浏览器本地处理，不需要上传到服务器。<br>　• 经过测试，Chrome、Edge浏览器可正常使用本工具。<br>　• 本工具打包的 App 需要签名，才能安装到手机。</small>
 </div>
 
 <div class="section">
