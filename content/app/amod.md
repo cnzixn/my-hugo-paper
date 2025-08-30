@@ -261,9 +261,9 @@ hideTitlt: true
             modFiles.sort((a, b) => {
               // 定义分类权重（权重越小优先级越高）
               const getWeight = (fileName) => {
-                if (/BM\d+\.\d+\.\d+\.zip\.xz/i.test(fileName)) return 0;   // BM框架（版本号格式）
-                if (/BM\d{3}\.zip\.xz/i.test(fileName)) return 1;          // BM模组（三位数字格式）
-                if (/BM.*\.zip\.xz/i.test(fileName)) return 2;       // BM补丁（包含patch关键词）
+                if (/BM\d+\.\d+\.\d+\.zip.*/i.test(fileName)) return 0;   // BM框架（版本号格式）
+                if (/BM\d{3}\.zip.*/i.test(fileName)) return 1;          // BM模组（三位数字格式）
+                if (/BM.*\.zip.*/i.test(fileName)) return 2;       // BM补丁（包含patch关键词）
                 return 3;                                                 // 三方模组
               };
             
@@ -287,13 +287,13 @@ hideTitlt: true
               // 识别文件类型
               let modType, icon;
               
-              if (file.name.match(/BM\d+\.\d+\.\d+\.zip\.xz/i)) {
+              if (file.name.match(/BM\d+\.\d+\.\d+\.zip.*/i)) {
                 modType = 'BM框架';
                 icon = '<i class="bi bi-cpu"></i>';               // CPU图标
-              } else if (file.name.match(/BM\d{3}\.zip\.xz/i)) {
+              } else if (file.name.match(/BM\d{3}\.zip.*/i)) {
                 modType = 'BM模组';
                 icon = '<i class="bi bi-puzzle"></i>';             // 拼图图标
-              } else if (file.name.match(/BM.*\.zip\.xz/i)) {
+              } else if (file.name.match(/BM.*\.zip.*/i)) {
                 modType = 'BM补丁';
                 icon = '<i class="bi bi-wrench"></i>';             // 扳手图标
               } else {
@@ -421,10 +421,10 @@ hideTitlt: true
                 let isThirdParty = false;
                 
                 // 识别模组类型
-                if (modFile.name.match(/BM\d{3}\.zip.xz/i)) {
+                if (modFile.name.match(/BM\d{3}\.zip.*/i)) {
                     isBMXXX = true;
                     counters.bmxxx++;
-                } else if (modFile.name.match(/BM\d+\.\d+\.\d+.*\.zip.xz/i)) {
+                } else if (modFile.name.match(/BM\d+\.\d+\.\d+.*\.zip.*/i)) {
                     isFramework = true;
                     counters.framework++;
                 } else {
