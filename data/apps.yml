@@ -13,12 +13,6 @@ items:
     name: 'iOS模组安装器'
     description: '这是一个安装模组的工具，支持安装BM框架和BM模组，也支持安装玩家自制模组。'
     url: '/app/imod'
-    status: 'coming'
-
-  - icon: '<i class="bi bi-clipboard"></i>'
-    name: '在线剪贴板'
-    description: '访问本页面带有"?data=xxxxx"，则会将"xxxxx"显示在下面的内容框，方便复制。'
-    url: '/app/copy'
     status: 'available'
 
   - icon: '<i class="bi bi-image"></i>'
@@ -32,6 +26,12 @@ items:
     description: '这是一个苹果版饥荒资源打包/解包工具，支持archive格式文件(data.archive和dlc0002.archive)的处理。'
     url: '/app/klfa'
     status: 'coming'
+
+  - icon: '<i class="bi bi-clipboard"></i>'
+    name: '在线剪贴板'
+    description: '访问本页面带有"?data=xxxxx"，则会将"xxxxx"显示在下面的内容框，方便复制。'
+    url: '/app/copy'
+    status: 'available'
 
   - icon: '<i class="bi bi-translate"></i>'
     name: '本地化工具'

@@ -1,7 +1,8 @@
 ---
 title: '苹果 - 巨魔商店'
-date: 2025-12-28
+date: 2025-08-01
 author: 'Bny'
+draft: true
 summary: '本文从零开始记录一下 iOS 使用 TrollStore 的过程。'
 tags:
 - '资料'

@@ -13,78 +13,59 @@ searchHidden: true
 url: '/p/819/'
 ---
 
-{{< faqs >}}
+---
+
+Q: 话说饥荒有手机联机版嘛？  
+
+A: 官方暂无手机联机版。手机上用某些“云电脑”、“模拟器”能玩 Steam 的联机版，动手能力强可以自行折腾。
+
+---
+
+Q: 只有海难的吗？能加巨兽地图进去吗？  
+
+A: 添加框架后，新建存档时可以选择：RoG(巨人国) 或 SW(海难)，游戏内可以实在“海洋之椅”互相穿越。
+
+---
+
+Q: 有哈姆雷特吗？  
+
+A: 官方版(手游)暂无DLC3“猪镇”；有大佬将PC版的“部分内容”制作为模组 [[homex]](/p/home/) 。
+
+---
+
+Q: 为什么框架里面的那个按钮优化和制作优化没有了😭这是为什么？兄弟们有人知道为什么嘛？
+
+A：部分测试功能，需要“积分”才能使用。  
+
+    - 主页，秘技，B.M.礼包；输入网站首页的“礼包码”，可领取 1 积分。  
+    
+    - 模组，BM000，模组配置，积分礼包(启用)；每天游戏一定时长可以领取积分。
+
+---
+
+Q: 说实话这傻逼签到功能真不知道做出来干啥？
+
+A: 不知道，自己猜。
+
+![图片](/img/Image_1755787680660.png)  
+![图片](/img/Image_1755746875311.png)  
+
+---
 
 
 
-<style>
-.faq-msg {
-    display: flex;
-    margin: 1.2rem 0;
-    gap: 6px;
-}
 
-.faq-date {
-    justify-content: center;
-    font-size: 0.75em;
-    color: #aaa;
-}
 
-.faq-question { 
-  flex-direction: row;
-}
-.faq-answer { 
-  flex-direction: row;
-}
 
-.faq-userinfo {
-  display: flex;
-  align-items: center;
-}
 
-.faq-userrole {
-  color: #fff;
-  background-color: #6c757d; /* 使用全局灰色 */
-  border-radius: 3px;
-  padding: 0.05rem 0.5rem;
-  margin-right: 0.5rem;
-  font-size: 0.8em;
-}
 
-.faq-userrole.faq-admin {
-  background-color: #ffd700; /* 管理员角色颜色 */
-}
-.faq-userrole.faq-user {
-  background-color: #abb3c8; /* 普通用户角色颜色 */
-}
 
-.faq-avatar {
-    width: 40px !important;
-    height: 40px !important;
-    border-radius: 50% !important;
-    border: 1px solid #e1e1e1;
-    flex-shrink: 0;
-}
 
-.faq-nickname {
-    color: #aaa;
-    font-size: 1em;
-}
 
-.faq-content {
-    max-width: 18rem;
-}
 
-.faq-bubble {
-    background-color: #f5f5f5; /* 使用全局浅灰背景 */
-    margin-top: 0.5rem;
-    padding: 0.5rem;
-    width: fit-content; 
-    border-radius: 6px;
-    line-height: 1.6;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    text-align: left !important;
-    flex-direction: row !important;
-}
-</style>
+
+
+
+
+
 
