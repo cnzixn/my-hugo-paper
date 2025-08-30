@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>APK 分块追加大文件</title>
+<style>
+  #progressContainer {
+    width: 80%;
+    background: #eee;
+    margin: 10px 0;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  #progressBar {
+    height: 100%;
+    width: 0;
+    background: #4caf50;
+    transition: width 0.1s;
+  }
+</style>
+<script type="module">
+import { ZipWriter, BlobWriter, strToU8 } from 'https://cdn.jsdelivr.net/npm/fflate@0.7.4/esm/browser/index.js';
+
+async function appendToApk(apkFile, filesToAdd, onProgress) {
+    const zipWriter = new ZipWriter(new BlobWriter("application/vnd.android.package-archive"));
+
+    // --- 1. 原 APK 也分块写入 ---
+    const CHUNK_SIZE = 2*1024*1024; // 2MB
+    const apkStream = apkFile.stream();
+    const reader = apkStream.getReader();
+    const chunks = [];
+    let done, value;
+    while (true) {
+        ({done, value} = await reader.read());
+        if (done) break;
+        chunks.push(value);
+        if (onProgress) onProgress( Math.min(5, 5 * chunks.length) ); // APK 占 5%
+    }
+    await zipWriter.add("original.apk", new Blob(chunks));
+    chunks.length = 0; // 清理内存
+
+    // --- 2. 追加文件 ---
+    const totalFiles = filesToAdd.length;
+    for (let i = 0; i < totalFiles; i++) {
+        const f = filesToAdd[i];
+        if (f.type === "text") {
+            await zipWriter.add(f.name, strToU8(f.content));
+        } else if (f.type === "blob") {
+            const fReader = f.content.stream().getReader();
+            const fChunks = [];
+            while (true) {
+                ({done, value} = await fReader.read());
+                if (done) break;
+                fChunks.push(value);
+                // 更新进度
+                if (onProgress) {
+                    const percent = 5 + Math.floor( 90 * (i + fChunks.length / Math.ceil(f.content.size / CHUNK_SIZE)) / totalFiles );
+                    onProgress(percent);
+                }
+            }
+            await zipWriter.add(f.name, new Blob(fChunks));
+            fChunks.length = 0; // 清理内存
+        }
+        console.log(`Added: ${f.name}`);
+    }
+
+    // --- 3. 完成 ---
+    const newApkBlob = await zipWriter.close();
+    if (onProgress) onProgress(100);
+    return newApkBlob;
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+    const apkInput = document.getElementById("apkInput");
+    const filesInput = document.getElementById("filesInput");
+    const btn = document.getElementById("appendBtn");
+    const progressBar = document.getElementById("progressBar");
+
+    btn.addEventListener("click", async () => {
+        const apkFile = apkInput.files[0];
+        if (!apkFile) return alert("请选择 APK 文件");
+
+        const selectedFiles = Array.from(filesInput.files);
+        const filesToAdd = selectedFiles.map(f => ({name: f.name, type: "blob", content: f}));
+
+        progressBar.style.width = "0%";
+        console.log("开始追加...");
+        const newApkBlob = await appendToApk(apkFile, filesToAdd, (percent) => {
+            progressBar.style.width = percent + "%";
+        });
+        console.log("追加完成！");
+
+        const url = URL.createObjectURL(newApkBlob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "modified.apk";
+        a.click();
+    });
+});
+</script>
+</head>
+<body>
+<h2>APK 分块追加大文件测试</h2>
+<p>选择 APK 文件：</p>
+<input type="file" id="apkInput"><br><br>
+<p>选择要追加的文件（支持多选）：</p>
+<input type="file" id="filesInput" multiple><br><br>
+<div id="progressContainer">
+  <div id="progressBar"></div>
+</div>
+<button id="appendBtn">追加并下载</button>
+</body>
+</html>
