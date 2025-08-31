@@ -1,6 +1,7 @@
 ---
 title: "B.M.安装器"
 layout: page
+draft: true
 searchHidden: true
 hideTitlt: true
 ---
