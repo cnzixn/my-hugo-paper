@@ -29,6 +29,12 @@ url: '/p/159/'
   - <small>MT管理器.APK</small>  
   - <small>BM25.08.20(1.33.5).APK</small>  
   - <small>BM25.09.01.ZIP.XZ</small>  
+  - <small>BM000.ZIP.XZ</small>  
+  - <small>BM001.ZIP.XZ</small>  
+  - <small>BM002.ZIP.XZ</small>  
+  - <small>BM003.ZIP.XZ</small>  
+  - <small>BM004.ZIP.XZ</small>  
+  - <small>BM005.ZIP.XZ</small>  
   - <small>BM035.ZIP.XZ</small>  
 {{< /details >}}  
 
@@ -36,7 +42,7 @@ url: '/p/159/'
 
 苹果：请通过 [B.M.安装器](/app/imod/) 安装模组。
 
-安卓：{{< video src="/img/lv_0_20250831065437.mp4" scale="60%" >}}
+安卓：{{< video src="/img/lv_0_20250831174843.mp4" scale="68%" >}}
 <!-- {{"{{< bili BV1k8UFYAEjq >}}"}} -->
 
 - - -
