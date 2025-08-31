@@ -43,7 +43,9 @@ url: '/p/159/'
 苹果：请通过 [B.M.安装器](/app/imod/) 安装模组。
 
 安卓：00:53 4.74M  
-{{< video src="/img/lv_0_20250831182656.mp4" scale="80%" >}}
+
+{{< video src="/img/lv_0_20250831182656.mp4" poster="/img/lv_0_20250831182656.png" scale="80%" >}}
+
 <!-- {{"{{< bili BV1k8UFYAEjq >}}"}} -->
 
 - - -
