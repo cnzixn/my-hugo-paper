@@ -53,7 +53,7 @@ hideTitlt: true
   <div id="pkgDropZone" class="drop-zone">
     <p>拖放 .apk / .ipa 到这里 或</p>
     <button id="pkgBrowseBtn">选择安装包</button>
-    <input type="file" id="pkgFileInput" accept=".apk,.ipa" style="display:none;">
+    <input type="file" id="pkgFileInput" accept=".apk,.ipa,.ipk" style="display:none;">
   </div>
   <div id="pkgFileInfo" class="file-info" style="display:none;"></div>
   <div id="pkgError" class="error"></div>
@@ -158,6 +158,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (name.endsWith('.apk')) {
       platform = 'android';
     } else if (name.endsWith('.ipa')) {
+      platform = 'ios';
+    } else if (name.endsWith('.ipk')) {
       platform = 'ios';
     } else {
       showError(pkgError, '请选择有效的安装包（.apk 或 .ipa）');
