@@ -5,7 +5,6 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 */
 
 
-
 /* 图片添加边框（全局生效） */
 .post-content img {
   /* 边框样式：浅灰色细边框，与白色图片形成区分 */
@@ -25,15 +24,11 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 
 
 
-
-
 /* 代码块圆角样式 */
 .post-content pre {
   border-radius: var(--radius); /* 使用主题默认圆角变量，保持风格统一 */
   overflow: hidden; /* 避免内部内容超出圆角范围 */
 }
-
-
 
 
 
@@ -55,3 +50,10 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
     text-align: center;
 }
 
+/* 自定义 mark 标签样式 */
+mark {
+  background-color: #aaa; /* 浅灰色背景，可根据喜好调整 */
+  color: #000; /* 文字颜色（黑色，与主题统一） */
+  padding: 1px 3px; /* 稍微增加内边距，避免文字贴边 */
+  border-radius: 2px; /* 轻微圆角，更美观 */
+}

@@ -14,13 +14,13 @@ hideTitlt: true
 <style>
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "PingFang SC","Hiragino Sans GB","Microsoft YaHei", sans-serif;  line-height: 1.6; }
   h1 { text-align: center; margin-bottom: 16px; }
-  .note { color:#444; }
+  .note { color:#666; }
   .section { margin: 20px 0 28px; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
   .drop-zone { border: 2px dashed #aaa; padding: 20px; text-align: center; margin: 10px 0; cursor: pointer; border-radius: 8px; transition: .2s; }
-  .drop-zone.drag-over { border-color: #666; background: #fafafa; }
+  .drop-zone.drag-over { border-color: #666; }
   .section button { border-radius: 10px; padding: 10px; margin: 10px auto; cursor: pointer; display: block; width: 220px; background-color: #1AB8F9; color:#fff; border: 0; font-size: 16px; }
   .section button:hover { transform: translateY(-1px); box-shadow: 0 2px 8px #6663; }
-  .file-info, .file-list { margin: 10px 0; padding: 10px; border: 1px solid #ddd; border-radius: 8px; background: #fff; }
+  .file-info, .file-list { margin: 10px 0; padding: 10px; border: 1px solid #ddd; border-radius: 8px; }
   .file-info { white-space: nowrap; overflow-x: auto; }
   .file-item { padding: 6px 4px; border-bottom: 1px solid #eee; }
   .file-item:last-child { border-bottom: none; }
@@ -39,8 +39,8 @@ hideTitlt: true
 
 <div class="section">
   <small class="note">
-    <strong>温馨提示：</strong><br>
-    • <strong>不消耗流量</strong>，文件在浏览器本地处理。<br>
+    <h4>温馨提示：</h4>
+    • <mark>不消耗流量</mark>，文件在浏览器本地处理。<br>
     • 已测试在 Chrome / Edge 可正常使用。<br>
     • 生成的 APK / IPA 需要签名才能安装。<br>
     • 支持 BM 框架、BM 模组和三方模组。
