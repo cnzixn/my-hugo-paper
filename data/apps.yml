@@ -4,8 +4,8 @@ header:
 
 items:
   - icon: '<i class="bi bi-phone"></i>'
-    name: '模组安装器'
-    description: '这是一个安装模组的工具，支持安装BM框架和BM模组，也支持安装玩家自制模组。'
+    name: 'B.M.安装器'
+    description: '这是一个模组安装工具，支持安装BM框架/模组，也支持安装玩家自制模组。'
     url: '/app/imod'
     status: 'available'
 

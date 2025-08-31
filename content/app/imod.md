@@ -1,5 +1,5 @@
 ---
-title: "模组安装器"
+title: "B.M.安装器"
 layout: page
 searchHidden: true
 hideTitlt: true
@@ -40,10 +40,10 @@ hideTitlt: true
 <div class="section">
   <small class="note">
     <strong>温馨提示：</strong><br>
-    • 本工具<strong>不消耗流量</strong>，所有文件在浏览器本地处理，不会上传服务器。<br>
-    • 已测试 Chrome / Edge 浏览器可正常使用。<br>
-    • iOS 生成的 IPA / Android 生成的 APK 需要自行签名后才能安装到手机。<br>
-    • 支持 BM 框架、BM 模组和三方模组（zip / xz）。
+    • <strong>不消耗流量</strong>，文件在浏览器本地处理。<br>
+    • 已测试在 Chrome / Edge 可正常使用。<br>
+    • 生成的 APK / IPA 需要签名才能安装。<br>
+    • 支持 BM 框架、BM 模组和三方模组。
   </small>
 </div>
 

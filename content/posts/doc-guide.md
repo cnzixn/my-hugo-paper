@@ -25,22 +25,25 @@ url: '/p/159/'
 
 ## 教程
 
-> 用到的文件，请提前下载  
+{{< details summary="点击查看，教程用到的文件：" openByDefault="true" >}}  
+  - <small>MT管理器.APK</small>  
+  - <small>BM25.08.20(1.33.5).APK</small>  
+  - <small>BM25.09.01.ZIP.XZ</small>  
+  - <small>BM035.ZIP.XZ</small>  
+{{< /details >}}  
 
-[<i class="bi bi-link-45deg">工具</i>](#工具) MT管理器  
-[<i class="bi bi-link-45deg">游戏</i>](#游戏) BM25.08.20(1.33.5).APK  
-[<i class="bi bi-link-45deg">框架</i>](#框架) BM25.09.01.ZIP.XZ  
-[<i class="bi bi-link-45deg">模组</i>](#模组) BM035.ZIP.XZ  
+<br>
 
-{{< bili BV1k8UFYAEjq >}}
+苹果：请通过 [B.M.安装器](/app/imod/) 安装模组。
 
-<small> **注意**：视频中搜索“~~千年狐~~”，现改为“BM035”。</small>  
+安卓：{{< video src="/img/lv_0_20250831065437.mp4" scale="60%" >}}
+<!-- {{"{{< bili BV1k8UFYAEjq >}}"}} -->
 
 - - -
 
 ## 工具
 
-> MT 管理器，是一款操作简单、功能强大的 Android 平台的文件管理器。  
+> 一款功能强大的文件管理软件。  
 
 　文件后缀 `.XZ` 可以删掉，只是为了防止“在线解压”导致文件被和谐。  
 
@@ -66,7 +69,11 @@ url: '/p/159/'
 
 > 框架已适配饥荒 [<i class="bi bi-android2">1.33</i>](https://play.google.com/store/apps/details?id=com.kleientertainment.doNotStarveShipwrecked) 和 [<i class="bi bi-apple">1.84</i>](https://apps.apple.com/us/app/dont-starve-shipwrecked/id1147297267?l=zh)。  
 
-{{< pan "框架" >}}  
+{{< pan "框架" >}}
+
+<br>
+
+{{< details summary="点击查看文件说明" openByDefault="true" >}}
 
     -- 文件说明，建议从上到下依次安装：
     BM25.09.01.ZIP.XZ     -- (必须)兔人框架
@@ -75,7 +82,7 @@ url: '/p/159/'
     BM000.壁纸.ZIP.XZ     -- (可选)兔人测试包-壁纸
     
     后缀 `.XZ` 可以删掉，只是为了防止“在线解压”导致文件被和谐。
-
+{{< /details >}}
 
 - - -
 
@@ -85,19 +92,37 @@ url: '/p/159/'
 
 　请 [<i class="bi bi-link-45deg">搜索</i>](/search) 你想玩的模组，进入相应页面下载文件。  
 
-[注释]: {{<pan"模组">}}  
+　(大佬自制的)未收录的其他模组，需要按照 `_bmmods.lua` 文件里的说明进行添加。  
 
-<small> **其他模组**：点击进入`mods/_bmmods.lua` 文件，查看说明进行相应操作。</small>  
+<!-- {{'  {{<pan"模组">}}  '}} -->
 
-    -- mods/bmmods.lua
+{{< details summary="点击查看 mods/_bmmods.lua" openByDefault="true" >}}  
 
-    -- 这个是“其他模组”的配置文件，不来这里“报名”的模组，框架不认识！
-    -- 其他模组不可以冒充“BM模组”(BM000~BM999)，被框架发现也不认！
-    -- 原来的方法都还能继续用，在 mods/_bmmods.lua 里有具体的介绍。
+    -- BM_NO_ENCODE
+    
+    -- 作者：樂不思蜀	时间：2025.09.01
+    
+    -- 1. 此文件必须改名为 bmmods.lua 才会生效
+    -- 2. 模组名不能用 BM 开头（比如BMXXX），会被屏蔽
+    
+    -- 【如何找到正确的模组文件夹？】
+    -- 解压后可能出现“套娃”（比如A文件夹里还有A文件夹）
+    -- 正确的模组文件夹里，一定能看到 modinfo.lua 文件
+    
+    -- 【添加模组步骤】
+    -- 第一步：把正确的模组文件夹，放到 mods 文件夹里
+    -- 第二步：记下这个模组文件夹的名字（比如“战斗增强”）
+    -- 第三步：按下面的格式添加模组名（二选一即可）
+    
+    -- 【开发者用】
+    -- Set("樂不思蜀")   -- 添加模组，并强制启用
+    -- Add("新辅助合集") -- 添加模组
+    
+    -- 【新手用】格式："模组名，模组名，模组名，..."
+    return "用逗号分隔，樂不思蜀，新辅助合集，DST-TMI，"  -- 这是最后一行，下面不能有代码！！！
+    
+{{< /details >}}
 
-    -- 框架(250901)新增“字符串”格式添加模组：模组一，模组二，.....
-
-    return "AAA建材老王，我不吃牛肉，新辅助合集，"  -- 这是最后一行，别在下面写代码！！！
     
 
 
@@ -106,26 +131,28 @@ url: '/p/159/'
 
 ## 网盘
 
-#### 下载目录
-
+{{< details summary="点击查看下载目录" openByDefault="true" >}}
     夸克网盘：
     /sdcard/download/QuarkDownloads/
 
     百度网盘：
     /sdcard/Download/BaiduNetdisk/
+{{< /details >}}
 
-#### 临时使用，推荐“百度网盘 SVIP”：  
 
+{{< details summary="临时使用，推荐“百度网盘 SVIP”" openByDefault="true" >}}
 - `⚠️警告` 虚拟产品交易，谨防上当受骗！  
 - `1元/天` 闲鱼搜“百度网盘”，随便选销量多的卖家(自动发货)。  
+{{< /details >}}
 
-#### 长期使用，推荐“夸克网盘 88VIP”：  
 
+{{< details summary="长期使用，推荐“夸克网盘 88VIP”" openByDefault="true" >}}
 - `⚠️警告` 虚拟产品交易，谨防上当受骗！  
 - `0元/年` 淘宝开通88VIP，闲鱼39卖掉“年费-视频权益”，49卖掉“年费-音乐权益”，一共回血88元。  
 - `10元/年` 闲鱼搜“夸克88VIP”，推荐选择24小时内发布的商品。  
 
 ![88vip下载速度](/img/1000205033.jpg)
+{{< /details >}}
 
 
 - - -
