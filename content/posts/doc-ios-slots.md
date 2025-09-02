@@ -19,7 +19,6 @@ url: '/p/821/'
 ### 〇、需要如何设置  
 
 - 进入“设置”应用，登录你的Apple ID。
-- 进入“App Store”，登录你的Apple ID。
 - 进入“Shipwrecked”，主页，设置，使用iCloud(禁用)。
 
 <small> **注意**：如果“使用iCloud(启用)”，则会自动同步存档。你游戏里死亡被删档，iCloud也自动同步删档。</small>  
