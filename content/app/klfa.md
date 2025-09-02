@@ -133,7 +133,7 @@ draft: true
   <!-- <p><strong>免责声明：</strong> 本工具仅供学习使用，请勿用于任何非法用途。使用本工具即表示您了解并同意承担所有责任。</p> -->
 <!-- </div> -->
 
-<script src="/js/klfa.encrypt.js"></script>
+<!-- <script src="/js/klfa.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
 <script>

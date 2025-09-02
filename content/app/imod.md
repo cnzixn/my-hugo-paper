@@ -106,9 +106,14 @@ hideTitlt: true
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
 
-<script defer src="/js/bv.encrypt.js"></script>
-<script src="/js/klfa.encrypt.js"></script>
-<script src="/js/imod.encrypt.js"></script>
+
+
+<!-- <script defer src="/js/bv.js"></script> -->
+<!-- <script src="/js/klfa.js"></script> -->
+<!-- <script src="/js/imod.js"></script> -->
+
+
+
 
 <!-- </body> -->
 <!-- </html> -->
