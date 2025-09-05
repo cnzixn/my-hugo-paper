@@ -25,18 +25,15 @@ url: '/p/159/'
 
 ## 教程
 
-{{< details summary="点击查看，教程用到的文件：" openByDefault="true" >}}  
+{{< details summary="点击查看 → 文件列表" openByDefault="true" >}}
   - <small>MT管理器.APK</small>  
   - <small>BM25.08.20(1.33.5).APK</small>  
   - <small>BM25.09.01.ZIP.XZ</small>  
   - <small>BM000.ZIP.XZ</small>  
   - <small>BM001.ZIP.XZ</small>  
-  - <small>BM002.ZIP.XZ</small>  
-  - <small>BM003.ZIP.XZ</small>  
-  - <small>BM004.ZIP.XZ</small>  
-  - <small>BM005.ZIP.XZ</small>  
+  - <small>...</small>  
   - <small>BM035.ZIP.XZ</small>  
-{{< /details >}}  
+{{< /details >}}
 
 <br>
 
@@ -45,6 +42,7 @@ url: '/p/159/'
 安卓：00:53 4.74M  
 
 {{< video src="/img/lv_0_20250831182656.mp4" poster="/img/lv_0_20250831182656.png" scale="80%" >}}
+
 
 <!-- {{"{{< bili BV1k8UFYAEjq >}}"}} -->
 
@@ -82,9 +80,9 @@ url: '/p/159/'
 
 <br>
 
-{{< details summary="点击查看文件说明" openByDefault="true" >}}
 
-    -- 文件说明，建议从上到下依次安装：
+{{< details summary="点击查看 → 文件说明" openByDefault="true" >}}
+    -- 建议从上到下依次安装：
     BM25.09.01.ZIP.XZ     -- (必须)兔人框架
     BM000.ZIP.XZ          -- (推荐)兔人框架-测试包
     BM000.词库.ZIP.XZ     -- (可选)兔人测试包-词库
@@ -105,8 +103,9 @@ url: '/p/159/'
 
 <!-- {{'  {{<pan"模组">}}  '}} -->
 
-{{< details summary="点击查看 mods/_bmmods.lua" openByDefault="true" >}}  
 
+
+{{< details summary="点击查看 → bmmods.lua文件" openByDefault="true" >}}
     -- BM_NO_ENCODE
     
     -- 作者：樂不思蜀	时间：2025.09.01
@@ -129,39 +128,38 @@ url: '/p/159/'
     
     -- 【新手用】格式："模组名，模组名，模组名，..."
     return "用逗号分隔，樂不思蜀，新辅助合集，DST-TMI，"  -- 这是最后一行，下面不能有代码！！！
-    
 {{< /details >}}
-
-    
-
 
 
 - - -
 
 ## 网盘
 
-{{< details summary="点击查看下载目录" openByDefault="true" >}}
-    夸克网盘：
-    /sdcard/download/QuarkDownloads/
+下载目录
 
-    百度网盘：
-    /sdcard/Download/BaiduNetdisk/
-{{< /details >}}
+    夸克：
+        /sdcard/download/QuarkDownloads/
 
-
-{{< details summary="临时使用，推荐“百度网盘 SVIP”" openByDefault="true" >}}
-- `⚠️警告` 虚拟产品交易，谨防上当受骗！  
-- `1元/天` 闲鱼搜“百度网盘”，随便选销量多的卖家(自动发货)。  
-{{< /details >}}
+    百度：
+        /sdcard/Download/BaiduNetdisk/
 
 
-{{< details summary="长期使用，推荐“夸克网盘 88VIP”" openByDefault="true" >}}
-- `⚠️警告` 虚拟产品交易，谨防上当受骗！  
-- `0元/年` 淘宝开通88VIP，闲鱼39卖掉“年费-视频权益”，49卖掉“年费-音乐权益”，一共回血88元。  
-- `10元/年` 闲鱼搜“夸克88VIP”，推荐选择24小时内发布的商品。  
 
-![88vip下载速度](/img/1000205033.jpg)
-{{< /details >}}
+<!--  -->
+<!-- {{< details summary="临时使用，推荐“百度网盘 SVIP”" openByDefault="true" >}} -->
+<!-- - `⚠️警告` 虚拟产品交易，谨防上当受骗！ -->  
+<!-- - `1元/天` 闲鱼搜“百度网盘”，随便选销量多的卖家(自动发货)。 -->  
+<!-- {{< /details >}} -->
+<!--  -->
+<!--  -->
+<!-- {{< details summary="长期使用，推荐“夸克网盘 88VIP”" openByDefault="true" >}} -->
+<!-- - `⚠️警告` 虚拟产品交易，谨防上当受骗！ -->  
+<!-- - `0元/年` 淘宝开通88VIP，闲鱼39卖掉“年费-视频权益”，49卖掉“年费-音乐权益”，一共回血88元。 -->  
+<!-- - `10元/年` 闲鱼搜“夸克88VIP”，推荐选择24小时内发布的商品。 -->  
+<!--  -->
+<!-- ![88vip下载速度](/img/1000205033.jpg) -->
+<!-- {{< /details >}} -->
+
 
 
 - - -

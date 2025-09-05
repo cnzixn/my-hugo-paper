@@ -27,7 +27,7 @@ markup:
     codeFences: true
     guessSyntax: true
     lineNos: false
-    style: rrt # https://xyproto.github.io/splash/docs/all.html?app_lang=zh-CN
+    style: "algol_nu" # https://xyproto.github.io/splash/docs/all.html?app_lang=zh-CN
 
 # privacy:
   # vimeo:
@@ -96,7 +96,7 @@ languages:
         Title: "👋 档案馆 - 兔人协会"
         Content: >
           -
-          　📌 礼包码「<span style="font-weight: bold; color:red;" class="today_password">????</span>」，测试码「~????~」  
+          　📌 礼包码「<span style="font-weight: bold; color:red;" class="today_password">0000</span>」，测试码「~0000~」  
           
           　📌 兔人框架为( <i class="bi bi-android2"></i> & <i class="bi bi-apple"></i> )饥荒提供模组支持。  
 
@@ -248,7 +248,7 @@ params:
   #     keys: ["title", "permalink", "summary", "content"]
 
   customCSS:
-    - "css/extended/custom.css"  # 对应 assets/css/custom.css
+    - "css/extended/blank.css"  # 对应 assets/css/blank.css
 
 
 # ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- #
