@@ -98,15 +98,15 @@ url: '/p/159/'
 
 > 由大佬从“创意工坊”移植而来。  
 
-　请 [<i class="bi bi-link-45deg">搜索</i>](/search) 你想玩的模组，进入相应页面下载文件。  
+　[<i class="bi bi-link-45deg">点击查看</i>](/mods) → 全部 BM 模组列表。  
 
-　(大佬自制的)未收录的其他模组，需要按照 `_bmmods.lua` 文件里的说明进行添加。  
+　[<i class="bi bi-link-45deg">点击搜索</i>](/search) → 更多其他模组相关内容。  
 
 <!-- {{'  {{<pan"模组">}}  '}} -->
 
 
 
-{{< details summary="点击查看 → bmmods.lua文件" openByDefault="true" >}}
+{{< details summary="点击查看 → `_bmmods.lua`" openByDefault="true" >}}
     -- BM_NO_ENCODE
     
     -- 作者：樂不思蜀	时间：2025.09.01

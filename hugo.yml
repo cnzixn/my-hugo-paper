@@ -1,6 +1,6 @@
 # baseURL: 'https://example.org/'
 # languageCode: 'zh-cn'
-title: ""
+title: "档案馆"
 copyright: "© 2025 档案馆 - 兔人协会"
 theme: "PaperMod"
 pagination.pagerSize: 20
@@ -77,12 +77,12 @@ languages:
         - name: "[🧰]"
           url: app/
           weight: 4
-        - name: "[🔍]"
-          url: search/
-          weight: 5
+        # - name: "[🔍]"
+          # url: search/
+          # weight: 5
         - name: "[📋]"
           url: about/
-          weight: 6
+          weight: 5
         # - name: 归档
           # url: archives/
           # weight: 5
@@ -194,20 +194,20 @@ params:
     - name: email
       title: 邮箱
       url: "mailto:admin@bxq.me"
-    - name: bilibili
-      title: B站
-      url: "https://b23.tv/kf3yuSv"
+    # - name: bilibili
+      # title: B站
+      # url: "https://b23.tv/kf3yuSv"
     - name: qq-qunpro
       title: 频道
       url: "https://pd.qq.com/s/bl6w0albb?b=5"
     - name: qq-qun
-      title: 主群
+      title: 主群(3k)
       url: "https://qm.qq.com/q/g0weZCVQMU"
     - name: qq-qun
-      title: 安卓互助
+      title: 安卓(2k)
       url: "https://qm.qq.com/q/3xoKf5H4EM"
     - name: qq-qun
-      title: 苹果互助
+      title: 苹果(1k)
       url: "https://qm.qq.com/q/88L6QyUQVi"
 
   # editPost:

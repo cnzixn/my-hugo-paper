@@ -18,16 +18,21 @@
     margin: auto var(--gap);
 }
 
+/* 关键调整：固定logo宽度适配内容，强制不换行 */
 .logo {
     flex-wrap: inherit;
-    flex: 0 0 10%; /* 固定占比，不伸缩 */
+    flex: 0 0 auto; /* 取消固定10%占比，改为自适应内容宽度 */
+    white-space: nowrap; /* 强制内容不换行 */
 }
 
+/* logo内容固定为“B.M. 🔆”，确保文字显示正常 */
 .logo a {
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 1.2rem;
+    font-weight: 6rem;
+    white-space: nowrap; /* 双重保障：链接内文字不换行 */
 }
 
+/* 若logo不使用图片/图标，可保留此段但不影响文字显示；若仅用文字，可删除此段 */
 .logo a img, .logo a svg {
     display: inline;
     vertical-align: middle;
