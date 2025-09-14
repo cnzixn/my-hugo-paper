@@ -22,11 +22,11 @@
         {{ $baiduUrl := index (where . "url1" "ne" nil) 0 "url1" }}
         {{ if $baiduUrl }}
           <button onclick="window.open('{{ $baiduUrl }}&t={{ $currentDate }}', '_blank')" class="action-btn baidu" title="百度网盘下载">
-            <img src="/img/pan_baidu.jpg" alt="百度网盘">
+            <img src="/img/pan_baidu.webp" alt="百度网盘">
           </button>
         {{ else }}
           <button class="action-btn baidu" title="暂无百度网盘下载" disabled>
-            <img src="/img/pan_baidu.jpg" alt="百度网盘">
+            <img src="/img/pan_baidu.webp" alt="百度网盘">
           </button>
         {{ end }}
   
@@ -34,11 +34,11 @@
         {{ $xunleiUrl := index (where . "url2" "ne" nil) 0 "url2" }}
         {{ if $xunleiUrl }}
           <button onclick="window.open('{{ $xunleiUrl }}&t={{ $currentDate }}', '_blank')" class="action-btn xunlei" title="迅雷网盘下载">
-            <img src="/img/pan_xunlei.jpg" alt="迅雷网盘">
+            <img src="/img/pan_xunlei.webp" alt="迅雷网盘">
           </button>
         {{ else }}
           <button class="action-btn xunlei" title="暂无迅雷网盘下载" disabled>
-            <img src="/img/pan_xunlei.jpg" alt="迅雷网盘">
+            <img src="/img/pan_xunlei.webp" alt="迅雷网盘">
           </button>
         {{ end }}
   
@@ -46,11 +46,11 @@
         {{ $quarkUrl := index (where . "url3" "ne" nil) 0 "url3" }}
         {{ if $quarkUrl }}
           <button onclick="window.open('{{ $quarkUrl }}&t={{ $currentDate }}', '_blank')" class="action-btn quark" title="夸克网盘下载">
-            <img src="/img/pan_quark.jpg" alt="夸克网盘">
+            <img src="/img/pan_quark.webp" alt="夸克网盘">
           </button>
         {{ else }}
           <button class="action-btn quark" title="暂无夸克网盘下载" disabled>
-            <img src="/img/pan_quark.jpg" alt="夸克网盘">
+            <img src="/img/pan_quark.webp" alt="夸克网盘">
           </button>
         {{ end }}
       </div>

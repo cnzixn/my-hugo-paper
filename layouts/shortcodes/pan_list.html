@@ -25,11 +25,11 @@
             {{ $baiduUrl := index (where $itemData "url1" "ne" nil) 0 "url1" }}
             {{ if $baiduUrl }}
               <button onclick="window.open('{{ $baiduUrl }}&t={{ $currentDate }}', '_blank')" class="action-btn baidu" title="百度网盘下载">
-                <img src="/img/pan_baidu.jpg" alt="百度">
+                <img src="/img/pan_baidu.webp" alt="百度">
               </button>
             {{ else }}
               <button class="action-btn baidu" title="暂无百度下载" disabled>
-                <img src="/img/pan_baidu.jpg" alt="百度">
+                <img src="/img/pan_baidu.webp" alt="百度">
               </button>
             {{ end }}
             
@@ -37,11 +37,11 @@
             {{ $xunleiUrl := index (where $itemData "url2" "ne" nil) 0 "url2" }}
             {{ if $xunleiUrl }}
               <button onclick="window.open('{{ $xunleiUrl }}&t={{ $currentDate }}', '_blank')" class="action-btn xunlei" title="迅雷网盘下载">
-                <img src="/img/pan_xunlei.jpg" alt="迅雷">
+                <img src="/img/pan_xunlei.webp" alt="迅雷">
               </button>
             {{ else }}
               <button class="action-btn xunlei" title="暂无迅雷下载" disabled>
-                <img src="/img/pan_xunlei.jpg" alt="迅雷">
+                <img src="/img/pan_xunlei.webp" alt="迅雷">
               </button>
             {{ end }}
             
@@ -49,11 +49,11 @@
             {{ $quarkUrl := index (where $itemData "url3" "ne" nil) 0 "url3" }}
             {{ if $quarkUrl }}
               <button onclick="window.open('{{ $quarkUrl }}&t={{ $currentDate }}', '_blank')" class="action-btn quark" title="夸克网盘下载">
-                <img src="/img/pan_quark.jpg" alt="夸克">
+                <img src="/img/pan_quark.webp" alt="夸克">
               </button>
             {{ else }}
               <button class="action-btn quark" title="暂无夸克下载" disabled>
-                <img src="/img/pan_quark.jpg" alt="夸克">
+                <img src="/img/pan_quark.webp" alt="夸克">
               </button>
             {{ end }}
           </div>
