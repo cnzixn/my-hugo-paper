@@ -150,55 +150,51 @@
   flex-shrink: 0;
 }
 
-/* 按钮基础样式（整合原内联样式） */
+
+/* 按钮基础样式：精简冗余属性 */
 .action-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   text-decoration: none;
   transition: all 0.2s ease;
   border: none;
   background: transparent;
   padding: 0;
   cursor: pointer;
+  border-radius: 4px;
 }
 
-/* 按钮图片样式（整合原内联样式） */
+/* 按钮图片：统一边框与尺寸 */
 .action-btn img {
-  width: 28px;
-  height: 28px;
-  vertical-align: middle;
-  margin: 0 0.2em;
+  width: 32px;
+  height: 32px;
   border: 1px solid var(--border);
   border-radius: 3px;
+  object-fit: cover;
 }
 
-/* 无链接按钮样式 */
-.action-btn[title^="暂无"] {
+/* 禁用按钮样式：保持统一透明度 */
+.action-btn:disabled {
   pointer-events: none;
-  opacity: 0.5;
+  opacity: 0.5; /* 统一禁用状态透明度 */
 }
 
-/* 无链接按钮图片样式 */
-.action-btn[title^="暂无"] img {
+.action-btn:disabled img {
   filter: grayscale(100%);
 }
 
-.action-btn.baidu {
-  /*background: #2932e1;*/
-  color: white;
-}
-
-.action-btn.quark {
-  /*background: #ff2440;*/
-  color: white;
-}
-
+/* 按钮交互：统一缩放与边框效果 */
 .action-btn:hover {
   opacity: 0.9;
-  transform: scale(1.05);
+  transform: scale(1.08);
+}
+
+.action-btn:hover img {
+  filter: grayscale(0%);
+  border-color: var(--primary);
 }
 
 .action-na {
