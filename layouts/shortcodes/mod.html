@@ -1,0 +1,15 @@
+{{/* 模组/文件信息短代码，用法：{{< mod 键值 >}}，如 {{< mod BM001 >}} */}}
+{{ $key := .Get 0 }} {{/* 获取短代码传入的键值（如 BM001） */}}
+{{ $panData := index .Site.Data.pan $key }} {{/* 从 pan.yml 中读取对应键值的数据 */}}
+
+{{ if $panData }}
+  {{/* 提取 name 和 size 字段（适配 YAML 中的列表结构） */}}
+  {{ $name := index (where $panData "name" "!=" nil) 0 "name" | default $key }}
+  {{ $size := index (where $panData "size" "!=" nil) 0 "size" | default "未知大小" }}
+  
+  {{/* 输出格式：模组名(文件大小) */}}
+  <span class="mod-info">[{{ $key }}] {{ $name }}({{ $size }})</span>
+{{ else }}
+  {{/* 键值不存在时的提示 */}}
+  <span class="mod-info text-gray-500">[{{ $key }}] 未找到</span>
+{{ end }}

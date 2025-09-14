@@ -1,5 +1,6 @@
 ---
-title: ""
-layout: apps
+title: ''
+layout: 'apps'
 searchHidden: true
+url: '/app'
 ---

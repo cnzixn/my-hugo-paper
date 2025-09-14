@@ -1,19 +1,188 @@
 {{ $name := .Get 0 }}
 {{ $currentDate := now.Format "20060102" }} {{/* Hugo 时间格式化固定使用 20060102 作为模板 */}}
 {{ with index site.Data.pan $name }}
-  {{ range . }}
-    {{ if .size }}
-      <!-- <strong>文件大小</strong>: {{ .size }}<br> -->
-    {{ else if .url1 }}
-      <strong>百度网盘</strong>: <a href="{{ .url1 }}&t={{ $currentDate }}" target="_blank"><i class="bi bi-link-45deg"></i> 点击下载</a><br>
-    {{ else if .url2 }}
-      <strong>迅雷网盘</strong>: <a href="{{ .url2 }}&t={{ $currentDate }}" target="_blank"><i class="bi bi-link-45deg"></i> 点击下载</a><br>
-    {{ else if .url3 }}
-      <strong>夸克网盘</strong>: <a href="{{ .url3 }}&t={{ $currentDate }}" target="_blank"><i class="bi bi-link-45deg"></i> 点击下载</a><br>
-    {{ end }}
-  {{ end }}
-  <small><strong style="color:red !important;">友情提醒</strong>: 网盘中可能有部分文件被和谐，请换另一个试试。</small><br>
+
+  <div class="pan-actions">
+    {{/* 1. 文件大小：已注释（保留代码） */}}
+    {{/* <div class="pan-text-group">
+      {{ range . }}
+        {{ if and .size (ne .size "0B") }}
+          <strong>文件大小: </strong> {{ .size }}
+        {{ end }}
+      {{ end }}
+    </div> */}}
+
+    {{/* 2. 网盘链接+按钮组 */}}
+    <div class="pan-text-group">
+      <strong>网盘链接: </strong>
+
+      {{/* 按钮组容器 */}}
+      <div class="pan-btn-group">
+        {{/* 百度网盘按钮（对应 url1） */}}
+        {{ $baiduUrl := index (where . "url1" "ne" nil) 0 "url1" }}
+        {{ if $baiduUrl }}
+          <button onclick="window.open('{{ $baiduUrl }}&t={{ $currentDate }}', '_blank')" class="action-btn baidu" title="百度网盘下载">
+            <img src="/img/pan_baidu.jpg" alt="百度网盘">
+          </button>
+        {{ else }}
+          <button class="action-btn baidu" title="暂无百度网盘下载" disabled>
+            <img src="/img/pan_baidu.jpg" alt="百度网盘">
+          </button>
+        {{ end }}
+  
+        {{/* 迅雷网盘按钮（对应 url2） */}}
+        {{ $xunleiUrl := index (where . "url2" "ne" nil) 0 "url2" }}
+        {{ if $xunleiUrl }}
+          <button onclick="window.open('{{ $xunleiUrl }}&t={{ $currentDate }}', '_blank')" class="action-btn xunlei" title="迅雷网盘下载">
+            <img src="/img/pan_xunlei.jpg" alt="迅雷网盘">
+          </button>
+        {{ else }}
+          <button class="action-btn xunlei" title="暂无迅雷网盘下载" disabled>
+            <img src="/img/pan_xunlei.jpg" alt="迅雷网盘">
+          </button>
+        {{ end }}
+  
+        {{/* 夸克网盘按钮（对应 url3） */}}
+        {{ $quarkUrl := index (where . "url3" "ne" nil) 0 "url3" }}
+        {{ if $quarkUrl }}
+          <button onclick="window.open('{{ $quarkUrl }}&t={{ $currentDate }}', '_blank')" class="action-btn quark" title="夸克网盘下载">
+            <img src="/img/pan_quark.jpg" alt="夸克网盘">
+          </button>
+        {{ else }}
+          <button class="action-btn quark" title="暂无夸克网盘下载" disabled>
+            <img src="/img/pan_quark.jpg" alt="夸克网盘">
+          </button>
+        {{ end }}
+      </div>
+    </div>
+
+    {{/* 3. 注意：支持换行显示 */}}
+    <div class="pan-text-group pan-text-remind">
+      <small>
+        <strong style="color:red !important;">注意: </strong>
+        <span>网盘中可能有部分文件被和谐，请换另一个试试。</span>
+      </small>
+    </div>
+  </div>
 {{ else }}
   <span>未找到 {{ $name }} 对应的网盘资源</span>
 {{ end }}
 
+
+  <style>
+    /* 网盘容器：统一外层边距与内边距 */
+    .pan-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start; /* 顶部对齐，适配换行文本 */
+      gap: 0.8rem; /* 统一文本组之间的间距 */
+      background: var(--entry);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem; /* 统一容器内边距 */
+      margin: 1.5rem 0; /* 统一容器外间距 */
+    }
+
+    /* 文本组：统一内部对齐与间距 */
+    .pan-text-group {
+      display: flex;
+      align-items: flex-start; /* 顶部对齐，避免换行后文字错位 */
+      gap: 0.5rem; /* 统一文本与后续元素的间距 */
+      width: 100%; /* 强制占满一行 */
+      line-height: 1.6; /* 增加行高，提升换行后可读性 */
+    }
+
+    /* 注意文本组：支持换行，文字独立占行 */
+    .pan-text-remind {
+      gap: 0.3rem;
+    }
+    /* 提醒文本容器：允许换行，宽度自适应 */
+    .pan-text-remind span {
+      flex: 1; /* 占满剩余宽度，确保长文本自动换行 */
+      white-space: normal; /* 允许自动换行 */
+    }
+
+    /* 文本样式：统一权重与颜色 */
+    .pan-actions strong {
+      color: var(--primary);
+      font-weight: 600; /* 稍加重以突出标题 */
+      padding-top: 0.1rem; /* 微调对齐，与换行文本基线一致 */
+    }
+
+    /* 按钮组：统一按钮间距，移除多余边距 */
+    .pan-btn-group {
+      display: flex;
+      gap: 0.6rem; /* 统一按钮之间的间距 */
+      margin: 0; /* 移除多余上间距 */
+    }
+
+    /* 按钮基础样式：精简冗余属性 */
+    .action-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      border: none;
+      background: transparent;
+      padding: 0;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    /* 按钮图片：统一边框与尺寸 */
+    .action-btn img {
+      width: 32px;
+      height: 32px;
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      object-fit: cover;
+    }
+
+    /* 禁用按钮样式：保持统一透明度 */
+    .action-btn:disabled {
+      pointer-events: none;
+      opacity: 0.5; /* 统一禁用状态透明度 */
+    }
+
+    .action-btn:disabled img {
+      filter: grayscale(100%);
+    }
+
+    /* 按钮交互：统一缩放与边框效果 */
+    .action-btn:hover {
+      opacity: 0.9;
+      transform: scale(1.08);
+    }
+
+    .action-btn:hover img {
+      filter: grayscale(0%);
+      border-color: var(--primary);
+    }
+
+    /* 移动端适配：按比例缩小间距与尺寸 */
+    @media (max-width: 480px) {
+      .pan-actions {
+        padding: 0.8rem; /* 按比例缩小内边距 */
+        gap: 0.6rem; /* 缩小文本组间距 */
+        margin: 1rem 0; /* 缩小外间距 */
+      }
+
+      .pan-text-group {
+        gap: 0.4rem; /* 缩小文本内部间距 */
+        line-height: 1.5; /* 适配移动端行高 */
+      }
+
+      .pan-btn-group {
+        gap: 0.4rem; /* 缩小按钮间距 */
+      }
+
+      .action-btn,
+      .action-btn img {
+        width: 28px;
+        height: 28px; /* 按钮尺寸适配移动端 */
+      }
+    }
+  </style>

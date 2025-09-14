@@ -1,35 +1,19 @@
 {{ $name := .Get 0 }}
-
-{{ with index site.Data.pan_quark $name }}
-    <strong>夸克网盘</strong>: <a href="{{ .url }}"><i class="bi bi-link-45deg">点击下载</i></a><br>
-    <!-- 密码: <mark>{{ .psw }}</mark><br> -->
+{{ $currentDate := now.Format "20060102" }} {{/* Hugo 时间格式化固定使用 20060102 作为模板 */}}
+{{ with index site.Data.pan $name }}
+  {{ range . }}
+    {{ if .size }}
+      <!-- <strong>文件大小</strong>: {{ .size }}<br> -->
+    {{ else if .url1 }}
+      <strong>百度网盘</strong>: <a href="{{ .url1 }}&t={{ $currentDate }}" target="_blank"><i class="bi bi-link-45deg"></i> 点击下载</a><br>
+    {{ else if .url2 }}
+      <strong>迅雷网盘</strong>: <a href="{{ .url2 }}&t={{ $currentDate }}" target="_blank"><i class="bi bi-link-45deg"></i> 点击下载</a><br>
+    {{ else if .url3 }}
+      <strong>夸克网盘</strong>: <a href="{{ .url3 }}&t={{ $currentDate }}" target="_blank"><i class="bi bi-link-45deg"></i> 点击下载</a><br>
+    {{ end }}
+  {{ end }}
+  <small><strong style="color:red !important;">友情提醒</strong>: 网盘中可能有部分文件被和谐，请换另一个试试。</small><br>
 {{ else }}
-    <!-- <strong>夸克网盘</strong>: <a href="https://pan.quark.cn/s/6368b2aabbad"><i class="bi bi-link-45deg">点击下载</i></a> 密码: <mark>hdLK</mark><br> -->
-    <!-- <strong>夸克网盘</strong>: 暂无链接<br> -->
-{{ end }}
-
-{{ with index site.Data.pan_baidu $name }}
-    <strong>百度网盘</strong>: <a href="{{ .url }}"><i class="bi bi-link-45deg">点击下载</i></a><br>
-    <!-- 密码: <mark>{{ .psw }}</mark><br> -->
-{{ else }}
-    <!-- <strong>百度网盘</strong>: <a href="https://pan.baidu.com/s/1fwKl199sdPrrkUOUrwADFA"><i class="bi bi-link-45deg">点击下载</i></a> 密码: <mark>otfc</mark><br> -->
-    <!-- <strong>百度网盘</strong>: 暂无链接<br> -->
-{{ end }}
-
-
-
-{{ with index site.Data.pan_xunlei $name }}
-    <!-- <strong>迅雷网盘</strong>: <a href="{{ .url }}?pwd={{ .psw }}"><i class="bi bi-link-45deg">点击下载</i></a> -->
-    <!-- 密码: <mark>{{ .psw }}</mark><br> -->
-{{ else }}
-    <!-- <strong>迅雷网盘</strong>: <a href="https://pan.xunlei.com/s/VOC9fKcAKT7Av35IhFifm7aXA1"><i class="bi bi-link-45deg">点击下载</i></a> 密码: <mark>5jia</mark><br> -->
-    <!-- <strong>迅雷网盘</strong>: 暂无链接<br> -->
-{{ end }}
-
-{{ with index site.Data.pan_pan123 $name }}
-    <!-- <strong>123 网盘</strong>: <a href="{{ .url }}"><i class="bi bi-link-45deg">点击下载</i></a> 密码: <mark>{{ .psw }}</mark><br> -->
-{{ else }}
-    <!-- <strong>123 网盘</strong>: <a href="https://www.123pan.com/s/IC8lVv-ftuAv.html"><i class="bi bi-link-45deg">点击下载</i></a> 密码: <mark>ZFyG</mark><br> -->
-    <!-- <strong>123 网盘</strong>: 暂无链接<br> -->
+  <span>未找到 {{ $name }} 对应的网盘资源</span>
 {{ end }}
 

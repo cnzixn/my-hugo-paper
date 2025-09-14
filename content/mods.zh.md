@@ -1,8 +1,6 @@
 ---
-title: "模组"
-layout: single
-url: "/mods/"
-summary: "可下载的模组列表"
+title: '模组'
+layout: 'single'
 ---
 
 <small>
@@ -15,5 +13,5 @@ summary: "可下载的模组列表"
 
 </small>
 
-{{< all_mods >}}
+{{< pan_list >}}
 
