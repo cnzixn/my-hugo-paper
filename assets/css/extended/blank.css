@@ -8,18 +8,13 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 /* 图片添加边框（全局生效） */
 .post-content img {
   /* 边框样式：浅灰色细边框，与白色图片形成区分 */
-  border: 2px solid #e5e7eb;
+  border: 2px solid var(--radius);;
   /* 边框与图片间留一点空隙，避免紧贴 */
   padding: 1px;
   /* 可选：添加圆角，与主题风格统一 */
   border-radius: var(--radius);
   /* 可选：轻微阴影，增强立体感（适合白色背景图） */
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-}
-/* 暗色模式下调整边框颜色（避免边框在深色背景下不明显） */
-.dark .post-content img {
-  border-color: #4b5563; /* 深色模式下用深灰色边框 */
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* 阴影稍深，增强对比 */
 }
 
 
@@ -52,8 +47,8 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 
 /* 自定义 mark 标签样式 */
 mark {
-  background-color: #aaa; /* 浅灰色背景，可根据喜好调整 */
-  color: #000; /* 文字颜色（黑色，与主题统一） */
+  background-color: var(--border); /* 浅灰色背景，可根据喜好调整 */
+  color: var(--secondary); /* 文字颜色（黑色，与主题统一） */
   padding: 1px 3px; /* 稍微增加内边距，避免文字贴边 */
   border-radius: 2px; /* 轻微圆角，更美观 */
 }

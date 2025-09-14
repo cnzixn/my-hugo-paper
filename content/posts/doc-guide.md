@@ -139,7 +139,7 @@ url: '/p/159/'
 下载目录
 
     夸克：
-        /sdcard/download/QuarkDownloads/
+        /sdcard/Download/QuarkDownloads/
 
     百度：
         /sdcard/Download/BaiduNetdisk/

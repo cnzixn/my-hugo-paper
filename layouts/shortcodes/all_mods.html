@@ -1,57 +1,62 @@
 {{ $modNames := index site.Data "mod_name" }}
-{{ $baiduPan := index site.Data "pan_baidu" }}
-{{ $quarkPan := index site.Data "pan_quark" }}
+{{ $panData := index site.Data "pan" }} {{/* 读取整合后的 pan.yml */}}
+{{ $currentDate := now.Format "20060102" }} {{/* 生成 yyyymmdd 格式日期 */}}
 
 <div class="mods-list">
   {{ range $id, $names := $modNames }}
-    {{ $baiduData := index $baiduPan $id }}
-    {{ $quarkData := index $quarkPan $id }}
-    {{ if or $baiduData $quarkData}}
+    {{ $itemData := index $panData $id }} {{/* 根据 BM 标识获取对应网盘数据 */}}
+    {{ if $itemData }}
     <div class="mod-item">
       <div class="item-main">
         <div class="item-info">
-          <!-- <span class="mod-id">{{ $id }}</span> -->
           <a href="/p/{{ $id }}" class="mod-id" target="_self"> {{ $id }} </a>
-
-          <span class="mod-name">{{ index $names 0 }}</span>
+          <span class="mod-name">{{ index $names 0 }}
+          {{/* 新增文件大小显示（可选） */}}
+          {{ range $item := $itemData }}
+            {{ if $item.size }}
+              ({{ $item.size }})
+            {{ end }}
+          {{ end }}
+          </span>
         </div>
         <div class="item-actions">
-          {{ if $baiduData }}
-            <a href="{{ $baiduData.url }}" target="_blank" rel="noopener" class="action-btn baidu" title="百度网盘下载">
-            <img 
-              src="/img/pan_baidu.jpg" 
-              alt="百度" 
-              style="width: 24px; height: 24px; vertical-align: middle; margin: 0 0.2em;" 
-            >
-            </a>
+          {{/* 百度网盘（对应 url1） */}}
+          {{ $baiduUrl := index (where $itemData "url1" "ne" nil) 0 "url1" }}
+          {{ if $baiduUrl }}
+            <button onclick="window.open('{{ $baiduUrl }}&t={{ $currentDate }}', '_blank')" class="action-btn baidu" title="百度网盘下载">
+              <img src="/img/pan_baidu.jpg" alt="百度">
+            </button>
           {{ else }}
-            <span class="action-na" title="暂无百度下载"> — </span>
+            <button class="action-btn baidu" title="暂无百度下载">
+              <img src="/img/pan_baidu.jpg" alt="百度">
+            </button>
           {{ end }}
           
-          {{ if $quarkData }}
-            <a href="{{ $quarkData.url }}" target="_blank" rel="noopener" class="action-btn quark" title="夸克网盘下载">
-              <img 
-                src="/img/pan_quark.jpg" 
-                alt="夸克" 
-                style="width: 24px; height: 24px; vertical-align: middle; margin: 0 0.2em;" 
-              >
-            </a>
+          {{/* 迅雷网盘（对应 url2） */}}
+          {{ $xunleiUrl := index (where $itemData "url2" "ne" nil) 0 "url2" }}
+          {{ if $xunleiUrl }}
+            <button onclick="window.open('{{ $xunleiUrl }}&t={{ $currentDate }}', '_blank')" class="action-btn xunlei" title="迅雷网盘下载">
+              <img src="/img/pan_xunlei.jpg" alt="迅雷">
+            </button>
           {{ else }}
-            <span class="action-na" title="暂无夸克下载"> — </span>
+            <button class="action-btn xunlei" title="暂无迅雷下载">
+              <img src="/img/pan_xunlei.jpg" alt="迅雷">
+            </button>
+          {{ end }}
+          
+          {{/* 夸克网盘（对应 url3） */}}
+          {{ $quarkUrl := index (where $itemData "url3" "ne" nil) 0 "url3" }}
+          {{ if $quarkUrl }}
+            <button onclick="window.open('{{ $quarkUrl }}&t={{ $currentDate }}', '_blank')" class="action-btn quark" title="夸克网盘下载">
+              <img src="/img/pan_quark.jpg" alt="夸克">
+            </button>
+          {{ else }}
+            <button class="action-btn quark" title="暂无夸克下载">
+              <img src="/img/pan_quark.jpg" alt="夸克">
+            </button>
           {{ end }}
         </div>
       </div>
-      
-      <!-- {{ if or $baiduData $quarkData }} -->
-      <!-- <div class="item-details"> -->
-        <!-- {{ if $baiduData }} -->
-          <!-- <span class="detail-code">百度:{{ $baiduData.pwd }}</span> -->
-        <!-- {{ end }} -->
-        <!-- {{ if $quarkData }} -->
-          <!-- <span class="detail-code">夸克:{{ $quarkData.psw }}</span> -->
-        <!-- {{ end }} -->
-      <!-- </div> -->
-      <!-- {{ end }} -->
     </div>
     {{ end }}
   {{ end }}
@@ -92,14 +97,13 @@
   gap: 0.5rem;
 }
 
-
 .mod-id {
   font-family: monospace;
   font-size: 0.5rem;
   color: var(--secondary);
   white-space: nowrap;
   background: var(--code-bg);
-  padding: 0.2rem 0.4rem;
+  padding: 0.1rem 0.2rem;
   border: 1px solid var(--secondary);
   border-radius: 3px;
 }
@@ -107,7 +111,6 @@
 .mod-name {
   font-size: 0.6rem;
   font-weight: 500;
-  color: var(--primary);
   white-space: nowrap; /* 强制文字不换行（关键，确保横向滚动） */
   /* 删掉以下2行：不再需要省略号，改为完整显示 */
   /* overflow: hidden; */
@@ -120,20 +123,18 @@
   padding-bottom: 3px; /* 给滚动条预留空间，避免遮挡文字 */
 }
 
-/* 优化滚动条样式（可选，让滚动条更像代码块） */
+/* 优化滚动条样式 */
 .mod-name::-webkit-scrollbar {
-  height: 3px; /* 横向滚动条高度 */
-  color: var(--code-bg);
+  height: 1.5px; /* 横向滚动条高度 */
 }
 .mod-name::-webkit-scrollbar-thumb {
-  border-radius: 3px; /* 滑块圆角 */
-  border: 1px solid var(--secondary);
-}
-.mod-name::-webkit-scrollbar-track {
-  background-color: var(--secondary); /* 滚动条轨道颜色 */
   border-radius: 3px;
 }
-
+.mod-name::-webkit-scrollbar-track {
+  background-color: var(--secondary); /* 轨道颜色（保持原设置） */
+  border: 0.6px solid var(--border);
+  border-radius: 3px;
+}
 
 .item-actions {
   display: flex;
@@ -141,19 +142,40 @@
   flex-shrink: 0;
 }
 
+/* 按钮基础样式（整合原内联样式） */
 .action-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   text-decoration: none;
   transition: all 0.2s ease;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
 }
 
+/* 按钮图片样式（整合原内联样式） */
 .action-btn img {
+  width: 28px;
+  height: 28px;
+  vertical-align: middle;
+  margin: 0 0.2em;
   border: 1px solid var(--border);
   border-radius: 3px;
+}
+
+/* 无链接按钮样式 */
+.action-btn[title^="暂无"] {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* 无链接按钮图片样式 */
+.action-btn[title^="暂无"] img {
+  filter: grayscale(100%);
 }
 
 .action-btn.baidu {
@@ -226,4 +248,8 @@
   }
 }
 
+/* 区分不同网盘的hover效果（可选） */
+.action-btn.baidu:hover img { filter: grayscale(0%); }
+.action-btn.quark:hover img { filter: grayscale(0%); }
+.action-btn.xunlei:hover img { filter: grayscale(0%); }
 </style>

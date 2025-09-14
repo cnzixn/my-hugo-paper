@@ -1,9 +1,19 @@
 {{ $name := .Get 0 }}
-
-{{ with index site.Data.pan_quark $name }}
-    <strong>夸克网盘</strong>: <a href="{{ .url }}"><i class="bi bi-link-45deg">点击下载</i></a><br>
+{{ $currentDate := now.Format "20060102" }} {{/* Hugo 时间格式化固定使用 20060102 作为模板 */}}
+{{ with index site.Data.pan $name }}
+  {{ range . }}
+    {{ if .size }}
+      <!-- <strong>文件大小</strong>: {{ .size }}<br> -->
+    {{ else if .url1 }}
+      <strong>百度网盘</strong>: <a href="{{ .url1 }}&t={{ $currentDate }}" target="_blank"><i class="bi bi-link-45deg"></i> 点击下载</a><br>
+    {{ else if .url2 }}
+      <strong>迅雷网盘</strong>: <a href="{{ .url2 }}&t={{ $currentDate }}" target="_blank"><i class="bi bi-link-45deg"></i> 点击下载</a><br>
+    {{ else if .url3 }}
+      <strong>夸克网盘</strong>: <a href="{{ .url3 }}&t={{ $currentDate }}" target="_blank"><i class="bi bi-link-45deg"></i> 点击下载</a><br>
+    {{ end }}
+  {{ end }}
+  <small><strong style="color:red !important;">友情提醒</strong>: 网盘中可能有部分文件被和谐，请换另一个试试。</small><br>
+{{ else }}
+  <span>未找到 {{ $name }} 对应的网盘资源</span>
 {{ end }}
 
-{{ with index site.Data.pan_baidu $name }}
-    <strong>百度网盘</strong>: <a href="{{ .url }}"><i class="bi bi-link-45deg">点击下载</i></a><br>
-{{ end }}

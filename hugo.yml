@@ -65,24 +65,24 @@ languages:
     weight: 2
     menu:
       main:
-        - name: "[🏠]"
+        - name: '<i class="bi bi-house"></i>'
           url: /
           weight: -1
-        - name: "[🗨️]"
+        - name: '<i class="bi bi-card-text"></i>'
           url: tags/公告/
           weight: 2
-        - name: "[📚]"
+        - name: '<i class="bi bi-journals"></i>'
           url: tags/资料/
           weight: 3
-        - name: "[🧰]"
+        - name: '<i class="bi bi-briefcase"></i>'
           url: app/
           weight: 4
-        # - name: "[🔍]"
-          # url: search/
-          # weight: 5
-        - name: "[📋]"
-          url: about/
+        - name: '<i class="bi bi-search"></i>'
+          url: search/
           weight: 5
+        - name: '<i class="bi bi-info-square"></i>'
+          url: about/
+          weight: 6
         # - name: 归档
           # url: archives/
           # weight: 5
@@ -93,12 +93,12 @@ languages:
     # custom params for each language should be under [langcode].parms - hugo v0.120.0
     params:
       homeInfoParams:
-        Title: "👋 档案馆 - 兔人协会"
+        Title: "🏆 档案馆 - 兔人协会"
         Content: >
           -
-          　📌 礼包码「<span style="font-weight: bold; color:red;" class="today_password">0000</span>」，测试码「~0000~」  
+          　📌 礼包码「<span style="color:red !important;" class="today_password">0000</span>」，测试码「~0000~」  
           
-          　📌 兔人框架为( <i class="bi bi-android2"></i> & <i class="bi bi-apple"></i> )饥荒提供模组支持。  
+          　📌 兔人框架，为饥荒手游提供模组支持！  
 
 #          - <span style="font-weight: bold; color:red;">此网站未正式使用！！！</span>
 #          - 测试码(限时)「<span style="font-weight: bold; color:red;" class="today_password_test">XXXX</span>」  
