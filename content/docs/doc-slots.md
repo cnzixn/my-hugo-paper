@@ -28,17 +28,20 @@ url: '/p/808/'
 ```lua
 /data/data/hei.kleientertainment.doNotStarveShipwrecked/
 ```
+
 ![图片](/img/o7ElukfGOHILdMa.webp)  
 
 外部：`/sdcard/Android/data/<package>/`  
 ```lua
 /sdcard/Android/data/hei.kleientertainment.doNotStarveShipwrecked/
 ```
+
 ![图片](/img/6NeRqFsbrIfmX7u.webp)  
 
 >获取权限
 - “外部”文件夹可能“无权访问、无权操作”，推荐使用“MT管理器”+“Shizuku”获取操作权限。  
 - 手机QQ下载的文件，大家应该都会弄。这里的存档文件与之类似，简单说一下流程：MT管理器->设置->安装Shiziku->打开Shiziku(内部自带教程)。  
+
 ![图片](/img/tAOYdK1EyqxDl28.webp)  
 
 
@@ -48,6 +51,7 @@ url: '/p/808/'
 ### 二、“导入”与“导出”存档  
 
 游戏主页->秘技，打开以下菜单  
+
 ![图片](/img/Im86xKTC2EDN3fF.webp)  
 
 修复存档：修复“内部”的存档文件“命名错误”。  
@@ -63,6 +67,7 @@ url: '/p/808/'
 0. 存档1：主世界的文件为“xxxxx_1”，洞穴文件为“cave_n_l_1”，火山文件为volcano_1。
 
 1. 如果你的“存档目录”设置为“外部”，那么直接将下载的别人的存档改名，去“替换”相应的存档就行。  
+
 ![图片](/img/FEqSObe31tQ48f2.webp)  
 ![图片](/img/iSTtxPCaj3Yq9ZX.webp)  
 

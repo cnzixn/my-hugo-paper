@@ -11,7 +11,7 @@ aliases:
 url: '/p/7/'
 ---
 
-!<span class="ext-url">[图片](/img/Image_1752847449499.jpg)</span>
+!<span class="ext-url">[图片](/img/Image_1752847449499.webp)</span>
 
 - - -
 
