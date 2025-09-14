@@ -3,7 +3,6 @@ title: 'KLFA 测试工具'
 layout: 'page'
 searchHidden: true
 draft: true
-url: '/p/814/'
 ---
 
 <style>
