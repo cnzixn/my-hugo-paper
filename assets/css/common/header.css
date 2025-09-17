@@ -12,6 +12,14 @@
     display: block;
 }
 
+.nav img, .nav svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid var(--secondary);
+    border-radius: 3px;
+    padding: 3px; /* 垂直内边距 4px，水平内边距 8px */
+}
+
 .logo,
 #menu {
     display: flex;
@@ -27,7 +35,7 @@
 
 /* logo内容固定为“B.M. 🔆”，确保文字显示正常 */
 .logo a {
-    font-size: 1.2rem;
+    font-size: 20px;
     font-weight: 6rem;
     white-space: nowrap; /* 双重保障：链接内文字不换行 */
 }
@@ -38,12 +46,11 @@
     vertical-align: middle;
     pointer-events: none;
     transform: translate(0, -10%);
-    border-radius: 6px;
     margin-inline-end: 8px;
 }
 
 button#theme-toggle {
-    font-size: 24px;
+    font-size: 20px;
     margin: auto 4px;
 }
 
@@ -69,11 +76,6 @@ body:not(.dark) #sun {
 
 #menu a {
     font-size: 20px;
-}
-
-#menu .active {
-    font-weight: 500;
-    border-bottom: 2px solid currentColor;
 }
 
 .lang-switch li,

@@ -184,15 +184,15 @@ def main():
     ensure_mapping_file_exists()
     mapping = load_mapping()
 
-    # 1. 遍历content下所有子目录的md文件（排除根目录文件）
+    # 1. 遍历content下所有子目录的md文件（排除根目录文件 + 排除_index.md）
     md_files = []
     for file in Path(CONTENT_DIR).glob("**/*.md"):
-        # 判断：文件的父目录是否为content根目录？是则跳过，否则加入列表
-        if file.parent.resolve() != Path(CONTENT_DIR).resolve():
+        # 双重判断：1. 不在content根目录 2. 文件名不是_index.md
+        if file.parent.resolve() != Path(CONTENT_DIR).resolve() and file.name != "_index.md":
             md_files.append(file)
     
     if not md_files:
-        print("⚠️  未找到任何子目录下的md文件")
+        print("⚠️  未找到任何符合条件的md文件（需在子目录且非_index.md）")
         return
 
     # 2. 排序：先按weight升序，weight相同则按date降序
@@ -211,7 +211,7 @@ def main():
 
     # 5. 保存更新后的映射
     save_mapping(mapping)
-    print(f"🎉 处理完成！共处理 {len(md_files)} 个文件（仅子目录，排除根目录）")
+    print(f"🎉 处理完成！共处理 {len(md_files)} 个文件（仅子目录，排除根目录及_index.md）")
 
 if __name__ == "__main__":
     main()

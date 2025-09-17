@@ -1,8 +1,10 @@
 {
     "docs/doc-guide.md": "1",
+    "logs/log-faq.md": "2",
     "logs/log-update-250901.md": "3",
     "logs/log-update-mods.md": "4",
     "docs/doc-patch.md": "5",
+    "docs/doc-disclaimer.md": "6",
     "docs/doc-ios-slots.md": "7",
     "docs/doc-klfa.md": "8",
     "docs/doc-trollstore.md": "9",
@@ -807,11 +809,8 @@
     "docs/doc-wallpaper.md": "808",
     "docs/doc-slots.md": "809",
     "others/test-markdown-syntax.md": "810",
-    "app/_index.md": "811",
-    "app/imod.md": "812",
-    "app/copy.md": "813",
-    "app/ktex.md": "814",
-    "app/klfa.md": "815",
-    "logs/log-faq.md": "2",
-    "docs/doc-disclaimer.md": "6"
+    "app/imod.md": "811",
+    "app/copy.md": "812",
+    "app/ktex.md": "813",
+    "app/klfa.md": "814"
 }

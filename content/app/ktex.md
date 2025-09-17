@@ -3,7 +3,7 @@ title: 'KTEX 编辑器'
 layout: 'page'
 searchHidden: true
 draft: true
-url: '/p/814/'
+url: '/p/813/'
 ---
 
 <style>
