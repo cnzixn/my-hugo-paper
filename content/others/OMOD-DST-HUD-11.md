@@ -7,7 +7,7 @@ tags:
 - '美化'
 aliases:
 - 'DST-HUD'
-url: '/p/9/'
+url: '/p/10/'
 ---
 
 > 本文给大家推荐11款 **HUD皮肤** 模组。

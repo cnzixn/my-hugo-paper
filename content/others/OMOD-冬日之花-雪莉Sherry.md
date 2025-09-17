@@ -7,7 +7,7 @@ tags:
 aliases:
 - 'sherry'
 comments: true
-url: '/p/13/'
+url: '/p/14/'
 ---
 
 > 本文介绍了模组 **Sherry (冬日之花——新版雪莉)** 的功能与特点。

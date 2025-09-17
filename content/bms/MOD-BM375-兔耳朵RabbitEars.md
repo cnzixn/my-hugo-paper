@@ -7,7 +7,7 @@ tags:
 - '装备'
 aliases:
 - 'BM375'
-url: '/p/714/'
+url: '/p/715/'
 ---
 
 > 本文介绍了模组 **兔耳朵RabbitEars** 的功能与特点。

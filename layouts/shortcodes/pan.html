@@ -14,7 +14,7 @@
 
     {{/* 2. 网盘链接+按钮组 */}}
     <div class="pan-text-group">
-      <strong>网盘链接: </strong>
+      <strong>下载地址: </strong>
 
       {{/* 按钮组容器 */}}
       <div class="pan-btn-group">
@@ -60,12 +60,14 @@
     <div class="pan-text-group pan-text-remind">
       <small>
         <strong style="color:red !important;">注意: </strong>
-        <span>网盘中可能有部分文件被和谐，请换另一个试试。</span>
+        <span>分享内容可能失效，请换一个网盘试试。</span>
       </small>
     </div>
   </div>
 {{ else }}
-  <span>未找到 {{ $name }} 对应的网盘资源</span>
+  <div class="pan-actions">
+    <span>网盘文件「{{ $name }}」已被删除......</span>
+  </div>
 {{ end }}
 
 

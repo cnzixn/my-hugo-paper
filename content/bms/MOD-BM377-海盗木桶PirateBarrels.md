@@ -7,7 +7,7 @@ tags:
 - '实用'
 aliases:
 - 'BM377'
-url: '/p/800/'
+url: '/p/801/'
 ---
 
 > 本文介绍了模组 **海盗木桶PirateBarrels** 的功能与特点。

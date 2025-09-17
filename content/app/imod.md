@@ -3,6 +3,7 @@ title: 'B.M.安装器'
 layout: 'page'
 searchHidden: true
 hideTitlt: true
+url: '/p/812/'
 ---
 
 <!-- <!DOCTYPE html> -->

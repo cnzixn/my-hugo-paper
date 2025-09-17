@@ -3,6 +3,7 @@ title: '网页剪贴板'
 layout: 'page'
 searchHidden: true
 hideTitlt: true
+url: '/p/813/'
 ---
 
   <style>
