@@ -196,24 +196,24 @@ params:
 
   DateFormat: "2006/01/02" # 06/01/02 03:04:05
   socialIcons:
-    - name: email
-      title: 邮箱
-      url: "mailto:admin@bxq.me"
     # - name: bilibili
       # title: B站
       # url: "https://b23.tv/kf3yuSv"
+    - name: qq-qun
+      title: 主群-3k
+      url: "https://qm.qq.com/q/g0weZCVQMU"
+    - name: qq-qun
+      title: 安卓-2k
+      url: "https://qm.qq.com/q/3xoKf5H4EM"
+    - name: qq-qun
+      title: 苹果-1k
+      url: "https://qm.qq.com/q/88L6QyUQVi"
     - name: qq-qunpro
       title: 频道
       url: "https://pd.qq.com/s/bl6w0albb?b=5"
-    - name: qq-qun
-      title: 主群(3k)
-      url: "https://qm.qq.com/q/g0weZCVQMU"
-    - name: qq-qun
-      title: 安卓(2k)
-      url: "https://qm.qq.com/q/3xoKf5H4EM"
-    - name: qq-qun
-      title: 苹果(1k)
-      url: "https://qm.qq.com/q/88L6QyUQVi"
+    - name: email
+      title: 邮箱
+      url: "mailto:admin@bxq.me"
 
   # editPost:
     # URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
