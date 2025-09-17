@@ -41,7 +41,9 @@ url: '/p/1/'
 
 安卓：00:53 4.74M  
 
-{{< video src="/img/lv_0_20250831182656.mp4" poster="/img/lv_0_20250831182656.webp" scale="80%" >}}
+{{< video src="/img/lv_0_20250831182656.mp4" poster="/img/lv_0_20250831182656.webp" scale="80%" >}}  
+
+<small>文件说明：网盘分享文件 `XXX.ZIP.XZ` 中的 `.XZ` 可以删掉，它只是用于防止“在线解压”导致链接炸掉。</small>  
 
 
 <!-- {{"{{< bili BV1k8UFYAEjq >}}"}} -->
@@ -142,8 +144,6 @@ url: '/p/1/'
 
     百度：
         /sdcard/Download/BaiduNetdisk/
-
-<small>文件说明：网盘分享文件 `XXX.ZIP.XZ` 中的 `.XZ` 可以删掉，它只是用于防止“在线解压”导致链接炸掉。</small>  
 
 <!--  -->
 <!-- {{< details summary="临时使用，推荐“百度网盘 SVIP”" openByDefault="true" >}} -->
