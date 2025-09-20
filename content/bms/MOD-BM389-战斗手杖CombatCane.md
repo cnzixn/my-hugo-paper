@@ -7,7 +7,7 @@ tags:
 - '装备'
 aliases:
 - 'BM389'
-url: '/p/748/'
+url: '/p/752/'
 ---
 
 > 本文介绍了模组 **战斗手杖CombatCane** 的功能与特点。

@@ -3,7 +3,7 @@ title: '网页剪贴板'
 layout: 'page'
 searchHidden: true
 hideTitlt: true
-url: '/p/812/'
+summary: '访问本页面带有"?data=xxxxx"，则会将"xxxxx"显示在下面的内容框，方便复制。'
 ---
 
   <style>
@@ -145,15 +145,5 @@ url: '/p/812/'
   <div class="error" id="error-msg"></div>
 </div>
 
-<script defer src="/js/app-copy.js"></script>
-
-<!-- 测试按钮脚本 -->
-<script>
-document.getElementById('test-btn').addEventListener('click', function() {
-    // 替换为你的指定网址（例如带测试数据的链接）
-    const testUrl = '/app/copy?data=这是测试数据，用于验证功能';
-    // 跳转到指定网址
-    window.location.href = testUrl;
-});
-</script>
+<!-- <script defer src="/js/app-copy.js"></script> -->
 

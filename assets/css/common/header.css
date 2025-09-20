@@ -36,7 +36,7 @@
 /* logo内容固定为“B.M. 🔆”，确保文字显示正常 */
 .logo a {
     font-size: 20px;
-    font-weight: 6rem;
+    font-weight: 600; /* 修正：font-weight无rem单位，6rem改为600 */
     white-space: nowrap; /* 双重保障：链接内文字不换行 */
 }
 
@@ -66,8 +66,15 @@ body:not(.dark) #sun {
 #menu {
     list-style: none;
     word-break: keep-all;
-    overflow-x: auto;
+    overflow-x: auto; /* 允许水平滚动 */
     white-space: nowrap;
+    /* 核心新增：固定宽度=5个元素宽度+间距总和 */
+    padding: 0; /* 清除默认内边距 */
+}
+
+/* 隐藏Chrome等浏览器滚动条（可选，更美观） */
+#menu::-webkit-scrollbar {
+    display: none;
 }
 
 #menu li + li {

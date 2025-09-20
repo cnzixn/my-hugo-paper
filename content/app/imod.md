@@ -1,9 +1,8 @@
 ---
 title: 'B.M.安装器'
-layout: 'page'
 searchHidden: true
 hideTitlt: true
-url: '/p/811/'
+summary: '支持安装BM框架/模组，也支持安装玩家自制模组。'
 ---
 
 <!-- <!DOCTYPE html> -->

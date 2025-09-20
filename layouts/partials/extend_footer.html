@@ -3,6 +3,8 @@
 {{- /* Footer custom content area end */ -}}
 
 
+{{ $appCopyEncrypt := resources.Get "js/app-copy.js" | fingerprint }}
+<script defer src="{{ $appCopyEncrypt.RelPermalink }}"></script>
 
 {{ $bvEncrypt := resources.Get "js/bv.encrypt.js" | fingerprint }}
 <script defer src="{{ $bvEncrypt.RelPermalink }}"></script>

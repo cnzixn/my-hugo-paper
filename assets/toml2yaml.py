@@ -1,5 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/python3
 
+
 # cd /sdcard/acode/my-hugo-paper/assets/ ; python toml2yaml.py
 
 import os
@@ -184,13 +185,14 @@ def main():
     ensure_mapping_file_exists()
     mapping = load_mapping()
 
-    # 1. 遍历content下所有子目录的md文件（排除根目录文件 + 排除_index.md）
+    # 1. 不在content根目录 2. 文件名不是_index.md 3. 不在content/app目录下
     md_files = []
     for file in Path(CONTENT_DIR).glob("**/*.md"):
-        # 双重判断：1. 不在content根目录 2. 文件名不是_index.md
-        if file.parent.resolve() != Path(CONTENT_DIR).resolve() and file.name != "_index.md":
+        if (file.parent.resolve() != Path(CONTENT_DIR).resolve() 
+            and file.name != "_index.md" 
+            and "content/app" not in str(file.parent.resolve())):
             md_files.append(file)
-    
+
     if not md_files:
         print("⚠️  未找到任何符合条件的md文件（需在子目录且非_index.md）")
         return

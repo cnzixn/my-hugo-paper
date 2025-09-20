@@ -7,7 +7,7 @@ tags:
 - '调整'
 aliases:
 - 'BM392'
-url: '/p/806/'
+url: '/p/810/'
 ---
 
 > 本文介绍了模组 **火鹈鹕FirePackim** 的功能与特点。

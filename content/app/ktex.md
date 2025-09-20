@@ -1,9 +1,8 @@
 ---
 title: 'KTEX 编辑器'
-layout: 'page'
 searchHidden: true
 draft: true
-url: '/p/813/'
+summary: '饥荒TEX贴图处理工具，可以进行png和tex互相转化。'
 ---
 
 <style>

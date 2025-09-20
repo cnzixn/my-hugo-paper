@@ -1,9 +1,8 @@
 ---
 title: 'KLFA 测试工具'
-layout: 'page'
 searchHidden: true
 draft: true
-url: '/p/814/'
+summary: '支持archive格式文件(data.archive和dlc0002.archive)的处理。'
 ---
 
 <style>
