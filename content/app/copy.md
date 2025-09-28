@@ -1,10 +1,44 @@
 ---
-title: '网页剪贴板'
-layout: 'page'
+title: 'B.M.剪贴板'
+layout: 'aapp'
 searchHidden: true
 hideTitlt: true
-summary: '访问本页面带有"?data=xxxxx"，则会将"xxxxx"显示在下面的内容框，方便复制。'
+summary: '通过链接将游戏内“数据”导出，方便复制使用。'
 ---
+
+
+<h1>B.M.剪贴板</h1>
+
+<div class="section reminder">
+    <p><strong>使用方法：</strong> 访问本页面带有"data=xxxxx"，则会将"xxxxx"显示在下面的内容框，方便复制。</p>
+</div>
+
+
+<!-- 显示从URL获取的数据 -->
+<div class="file-info" id="data-container">
+    正在从URL加载数据...
+</div>
+
+<div class="section">
+ 
+  <!-- 测试按钮 -->
+  <button class="test-btn" id="test-btn">测试一下</button>
+
+  <!-- 复制按钮 -->
+  <button id="copy-btn">复制内容</button>
+  
+  <!-- 复制成功提示 -->
+  <div class="copied-notice" id="copied-notice">
+      已复制到剪贴板！
+  </div>
+  
+  <!-- 错误提示区域 -->
+  <div class="error" id="error-msg"></div>
+</div>
+
+<!-- <script defer src="/js/app-copy.js"></script> -->
+
+
 
   <style>
       /* 您提供的CSS样式 */
@@ -116,34 +150,3 @@ summary: '访问本页面带有"?data=xxxxx"，则会将"xxxxx"显示在下面�
           100% { opacity: 0; }
       }
   </style>
-
-
-<div class="section reminder">
-    <p><strong>使用方法：</strong> 访问本页面带有"data=xxxxx"，则会将"xxxxx"显示在下面的内容框，方便复制。</p>
-</div>
-
-
-<!-- 显示从URL获取的数据 -->
-<div class="file-info" id="data-container">
-    正在从URL加载数据...
-</div>
-
-<div class="section">
- 
-  <!-- 测试按钮 -->
-  <button class="test-btn" id="test-btn">测试一下</button>
-
-  <!-- 复制按钮 -->
-  <button id="copy-btn">复制内容</button>
-  
-  <!-- 复制成功提示 -->
-  <div class="copied-notice" id="copied-notice">
-      已复制到剪贴板！
-  </div>
-  
-  <!-- 错误提示区域 -->
-  <div class="error" id="error-msg"></div>
-</div>
-
-<!-- <script defer src="/js/app-copy.js"></script> -->
-

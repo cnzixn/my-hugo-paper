@@ -99,11 +99,11 @@ languages:
         Title: "🏆 档案馆 - 兔人协会"
         Content: >
           -
-          📌 礼包码「<span style="color:red !important;" class="today_password">0000</span>」，测试码「~0000~」  
+          📌礼包码「<span style="color:red !important;" class="today_password">0000</span>」，测试码「~0000~」  
           
-          📌 兔人框架：为饥荒手游提供模组支持。  
+          📌兔人框架：为饥荒手游提供模组支持。  
           
-          📌 请阅读 <span class="ext-url">[免责声明](/disclaimer)</span>再下载本站分享文件。  
+          📌请阅读<span class="ext-url">[免责声明](/disclaimer)</span>，再下载本站分享文件。  
 
 #          - <span style="font-weight: bold; color:red;">此网站未正式使用！！！</span>
 #          - 测试码(限时)「<span style="font-weight: bold; color:red;" class="today_password_test">XXXX</span>」  
@@ -193,12 +193,6 @@ params:
         # Content: >
           # Hi, this is Lilian. I’m documenting my learning notes in this blog since 2017. Based on the number of grammar mistakes in my posts, you can tell how much ChatGPT is involved 😉.x
 
-  mainSections:
-    - "bm"       # 已有的 bm 文件夹
-    - "posts"    # 新增 posts 文件夹
-    - "docs"     # 新增 docs 文件夹（根据你的实际文件夹名添加）
-
-
   DateFormat: "2006/01/02" # 06/01/02 03:04:05
   socialIcons:
     # - name: bilibili
@@ -248,19 +242,18 @@ params:
   #     hiddenInList: true # hide on list pages and home
   #     hiddenInSingle: true # hide on single page
 
-  # fuseOpts:
-  #     isCaseSensitive: false
-  #     shouldSort: true
-  #     location: 0
-  #     distance: 1000
-  #     threshold: 0.4
-  #     minMatchCharLength: 0
-  #     keys: ["title", "permalink", "summary", "content"]
+  fuseOpts:
+      isCaseSensitive: false
+      shouldSort: true
+      location: 0
+      distance: 1000
+      threshold: 0.4
+      minMatchCharLength: 0
+      keys: ["title", "permalink", "summary", "content"]
 
   # 首页需要显示的文章
   mainSections:
     - "posts"    # 默认 posts 文件夹
-    - "app"       # 新增 app 文件夹
     - "bms"       # 新增 bms 文件夹
     - "yns"       # 新增 yns 文件夹
     - "docs"     # 新增 docs 文件夹

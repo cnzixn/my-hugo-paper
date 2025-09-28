@@ -63,18 +63,18 @@ url: '/p/1/'
 
 > 《Shipwrecked》是一款生存冒险或策略类游戏。  
 
-**AppStore**: <span class="ext-url">[付费购买](https://apps.apple.com/us/app/dont-starve-shipwrecked/id1147297267?l=zh)</span>  
-**Play商店**: <span class="ext-url">[付费购买](https://play.google.com/store/apps/details?id=com.kleientertainment.doNotStarveShipwrecked)</span>  
+**官方正版**: <span class="ext-url">[Android 1.33](https://play.google.com/store/apps/details?id=com.kleientertainment.doNotStarveShipwrecked)</span> <span class="ext-url">[iOS 1.84](https://apps.apple.com/us/app/dont-starve-shipwrecked/id1147297267?l=zh)</span>  
+
 {{< pan 游戏 >}}  
 
-<small> **免责**：<br>　目前“国区”无法购买正版手游(单机版)，网盘分享只是提供一个“干净”的版本。<br>　我们尊重版权，请大家去 AppStore 、Play商店 购买正版(可能需要“海外”账号)。如果你不会“科学上网”，可以上 Steam 或 Wegame 购买一份 DST 补票。</small>  
+<small> **免责**：<br>　目前“国区”无法购买正版手游(单机版)，网盘分享只是提供一个“干净”的试玩版本。<br>　我们尊重版权，请大家去 AppStore 、Play商店 购买正版(可能需要“海外”账号)。如果你不会“科学上网”，可以上 Steam 或 Wegame 购买一份 DST 补票。</small>  
 
 
 - - -
 
 ## 框架
 
-> 已适配 [Android 1.33](https://play.google.com/store/apps/details?id=com.kleientertainment.doNotStarveShipwrecked) 和 [iOS 1.84](https://apps.apple.com/us/app/dont-starve-shipwrecked/id1147297267?l=zh)  
+> [25.09.20] 已适配 [Android 1.33] 和 [iOS 1.84]  
 
 {{< pan "框架" >}}
 
@@ -83,12 +83,12 @@ url: '/p/1/'
 
 {{< details summary="点击查看 → 文件说明" openByDefault="true" >}}
     
-    BM25.09.01.ZIP.XZ     -- (必须)兔人框架
+    BM25.09.20.ZIP.XZ     -- (必须)兔人框架
     BM000.ZIP.XZ          -- (推荐)框架-测试包
     
-    -- 新人不用安装(没啥用)：
-    BM000.词库.ZIP.XZ     -- (可选)测试包-词库
-    BM000.壁纸.ZIP.XZ     -- (可选)测试包-壁纸
+    -- 新人不用安装：
+    BM000.扩展词库.ZIP.XZ     -- (可选)扩展包-词库
+    BM000.扩展壁纸.ZIP.XZ     -- (可选)扩展包-壁纸
     
     文件 `XXX.ZIP.XZ` 的 `.XZ` 可删掉，它仅用于防止链接因“在线解压”而挂掉。
 {{< /details >}}
@@ -137,13 +137,17 @@ url: '/p/1/'
 
 ## 网盘
 
-下载目录  
+(安卓)手机下载目录  
+
+    百度：
+        /sdcard/Download/BaiduNetdisk/
+
+    迅雷：
+        /sdcard/Android/data/com.xunlei.downloadprovider/files/ThunderDownload/
 
     夸克：
         /sdcard/Download/QuarkDownloads/
 
-    百度：
-        /sdcard/Download/BaiduNetdisk/
 
 <!--  -->
 <!-- {{< details summary="临时使用，推荐“百度网盘 SVIP”" openByDefault="true" >}} -->

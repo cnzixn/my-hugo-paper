@@ -1,5 +1,6 @@
 ---
 title: 'KLFA 测试工具'
+layout: 'aapp'
 searchHidden: true
 draft: true
 summary: '支持archive格式文件(data.archive和dlc0002.archive)的处理。'

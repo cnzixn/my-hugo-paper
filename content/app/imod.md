@@ -1,8 +1,9 @@
 ---
 title: 'B.M.安装器'
+layout: 'aapp'
 searchHidden: true
 hideTitlt: true
-summary: '支持安装BM框架/模组，也支持安装玩家自制模组。'
+summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
 ---
 
 <!-- <!DOCTYPE html> -->
@@ -35,15 +36,15 @@ summary: '支持安装BM框架/模组，也支持安装玩家自制模组。'
 <!-- </head> -->
 <!-- <body> -->
 
-<!-- <h1>模组安装器 <span class="pill">自动识别 APK / IPA</span></h1> -->
+<h1>B.M.安装器</h1>
+<!-- <span class="pill">自动识别 APK / IPA</span> -->
 
 <div class="section">
   <small class="note">
     <h4>温馨提示：</h4>
+    • 推荐使用 Chrome / Edge 浏览器。<br>
+    • 由于系统限制，暂不支持 iOS 使用。<br>
     • <mark>不消耗流量</mark>，文件在浏览器本地处理。<br>
-    • 已测试在 Chrome / Edge 可正常使用。<br>
-    • 生成的 APK / IPA 需要签名才能安装。<br>
-    • 支持 BM 框架、BM 模组和三方模组。
   </small>
 </div>
 
