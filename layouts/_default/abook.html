@@ -1,0 +1,478 @@
+{{- define "main" }}
+{{- $params := .Params }}
+
+<!-- 主容器：侧边目录 + 正文（适配移动端） -->
+<div class="book-layout">
+  <!-- 1. 侧边目录（手机端可唤起，带遮罩） -->
+  <!-- 遮罩层：手机端唤起目录时显示，点击关闭 -->
+  <div class="sidebar-overlay"></div>
+  
+  <aside class="book-sidebar">
+    <!-- 侧边栏头部：标题+作者+关闭按钮（手机端显示） -->
+    <div class="sidebar-header">
+      <h1 class="book-title">{{ .Title }}</h1>
+      {{- if $params.Author }}
+      <span class="book-author">作者: {{ $params.Author }}</span>
+      {{- end }}
+      {{- if $params.Data }}
+      <span class="book-author">时间: {{ $params.Data }}</span>
+      {{- end }}
+      <!-- 手机端关闭按钮（PC端隐藏） -->
+      <button class="sidebar-close" aria-label="关闭目录">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- 复用主题 toc.html 生成目录 -->
+    {{- if .Param "ShowToc" }}
+    <div class="toc-container">
+      {{- partial "toc.html" . -}}
+    </div>
+    {{- else }}
+    <div class="no-toc">
+      需在 MD 头部添加 `ShowToc: true` 显示目录
+    </div>
+    {{- end }}
+  </aside>
+
+  <!-- 2. 正文区（手机端顶部加目录唤起按钮） -->
+  <main class="book-content">
+    <!-- 手机端目录唤起按钮（PC端隐藏） -->
+    <button class="sidebar-open" aria-label="目录">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+      <!-- <span>目录</span> -->
+    </button>
+
+    <!-- <article class="post-single"> -->
+      <header class="page-header">
+        <h1>{{- (printf "%s&nbsp;" .Title ) | htmlUnescape -}}</h1>
+      </header>
+      {{- if .Content }}
+      <div class="post-content">
+        {{ .Content }}
+      </div>
+      {{- end }}
+    <!-- </article> -->
+
+  </main>
+</div>
+
+
+
+<style> 
+p {
+  // text-indent: 2em;
+}
+
+.top-link {
+  visibility: hidden; 
+  display: none; 
+}
+
+
+/* 基础布局：PC端双栏，手机端单栏 */
+.book-layout {
+  display: flex;
+  min-height: calc(100vh - var(--header-height) );
+  position: relative;
+}
+
+/* 1. 侧边目录样式：微调宽度，确保与文章衔接 */
+.book-sidebar {
+  width: 240px; /* 关键1：适当缩小目录宽度（原280px），避免过宽导致视觉分离，可根据需求调整 */
+  height: 90%;
+  background: var(--theme);
+  border-right: 1px solid var(--border);
+  padding: 8px 12px; /* 优化内边距，让目录内容更紧凑 */
+  position: fixed;
+  box-sizing: border-box;
+  z-index: 1000;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+}
+
+/* 侧边栏头部：固定不滚动，与目录区区分 */
+.sidebar-header {
+  margin-bottom: 1rem; /* 减少底部间距，让目录更靠上，贴近文章顶部 */
+  padding: 0.5rem 0 0.8rem; 
+  border-bottom: 1px solid var(--border);
+  position: relative;
+}
+
+.book-title {
+  font-size: 1.1rem; /* 缩小标题字体，让头部更紧凑 */
+  font-weight: 600;
+  color: var(--text-color);
+  margin: 0 0 0.3rem;
+  line-height: 1.3;
+}
+
+.book-author {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin: 0 0 0.2rem;
+  display: block;
+}
+
+/* 手机端关闭按钮（PC端隐藏） */
+.sidebar-close {
+  display: none;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: transparent;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+/* 目录容器样式：核心！单独滚动，适配PC+手机端 */
+.toc-container {
+  margin-top: 0.5rem; /* 减少顶部间距，让目录更贴近头部 */
+  height: 90%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 2px;
+}
+
+/* 优化目录滚动条样式 */
+.toc-container::-webkit-scrollbar {
+  width: 3px;
+}
+.toc-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+.toc-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+}
+.toc-container::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* 调整目录标题 */
+.toc-container .toc-title {
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+  color: var(--text-color);
+  font-weight: 600;
+  padding-left: 0.2rem;
+}
+
+/* 目录列表：更紧凑，减少留白 */
+.toc-container .toc-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.toc-container .toc-list-item {
+  margin: 0.3rem 0; /* 减少列表项间距，让目录更密集 */
+}
+
+/* 二级目录缩进 */
+.toc-container .toc-list .toc-list {
+  padding-left: 0.6rem;
+  margin-top: 0.1rem;
+}
+
+/* 目录链接：紧凑点击区域 */
+.toc-container .toc-link {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.85rem; /* 缩小链接字体，增加目录密度 */
+  padding: 0.3rem 0.5rem; /* 减少内边距，让链接更紧凑 */
+  border-radius: var(--radius);
+  display: block;
+  transition: all 0.2s;
+}
+
+.toc-container .toc-link:hover,
+.toc-container .toc-link.active {
+  color: var(--text-color);
+  background: var(--hover-bg);
+}
+
+/* 无目录提示 */
+.no-toc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  padding: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+  height: calc(100% - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 2. 正文区样式：关键！取消左侧留白，让文章紧贴目录 */
+.book-content {
+  width: calc(100% - 240px); /* 关键3：计算正文宽度=页面总宽-目录宽，避免正文过宽 */
+  box-sizing: border-box;
+  position: relative;
+  padding: 0 0.5rem;
+}
+
+/* 移动端目录按钮优化（默认隐藏） */
+.sidebar-open {
+  position: fixed;
+  bottom: 1.0rem;
+  right: 1.0rem;
+  width: 40px;
+  height: 40px;
+  padding: 32px;
+  border-radius: 50%;
+  background: var(--tertiary);
+  color: var(--secondary);
+  border: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 999;
+  transform: translateZ(0);
+  display: none;
+}
+
+.sidebar-open:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.sidebar-open {
+  touch-action: manipulation;
+}
+
+/* 3. 遮罩层：手机端唤起目录时显示 */
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  z-index: 900;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.sidebar-overlay.active {
+  display: block;
+  opacity: 1;
+}
+
+/* -------------------------- 手机端适配（<768px） -------------------------- */
+@media (max-width: 768px) {
+  .book-sidebar {
+    width: 85%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    max-width: 320px;
+    transform: translateX(-100%);
+    padding: 1.2rem;
+    box-shadow: 2px 0 12px rgba(0,0,0,0.1);
+  }
+
+  .book-sidebar.active {
+    transform: translateX(0);
+  }
+
+  .sidebar-close {
+    display: block;
+  }
+
+  .toc-container {
+    height: calc(100% - 100px);
+  }
+
+  .book-content {
+    width: 100%; /* 手机端正文宽度恢复100% */
+  }
+
+  .post-title {
+    font-size: 1.4rem;
+  }
+}
+
+/* 小屏幕手机优化（<480px） */
+@media (max-width: 480px) {
+  .book-sidebar {
+    width: 90%;
+  }
+  
+  .toc-container {
+    height: calc(100% - 90px);
+  }
+  
+  .sidebar-open {
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px;
+    font-size: 0.85rem;
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+  }
+}
+
+
+</style>
+
+
+<!-- 移动端目录交互脚本：唤起/关闭/高亮/点击跳转 -->
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  // 元素获取（原有代码）
+  const sidebar = document.querySelector('.book-sidebar');
+  const overlay = document.querySelector('.sidebar-overlay');
+  const openBtn = document.querySelector('.sidebar-open'); // 按钮元素保留
+  const closeBtn = document.querySelector('.sidebar-close');
+  const tocLinks = document.querySelectorAll('.toc-link');
+  const headings = document.querySelectorAll('.post-content h1, .post-content h2, .post-content h3, .post-content h4');
+  
+  // 【核心修改1：默认隐藏按钮（保留元素，后续可恢复）】
+  if (openBtn) {
+    openBtn.style.display = 'none'; // 初始隐藏按钮，代码不删除
+  }
+  // if (closeBtn) {
+    // closeBtn.style.display = 'none'; // 初始隐藏按钮，代码不删除
+  // }
+
+  // 【核心修改2：页面交互逻辑替换——点击/触摸页面直接打开目录】
+  function handlePageInteract(e) {
+    // 排除点击目录、遮罩区域（避免重复打开/关闭冲突）
+    const isExcludeArea = e.target.closest('.book-sidebar') || e.target.closest('.sidebar-overlay');
+    if (!isExcludeArea && isMobile()) { // 仅移动端生效，与原有逻辑一致
+      openSidebar(); // 替换“显示按钮”为“直接打开目录”
+      // 显示按钮
+      // openBtn.style.display = 'block';
+      // 注释掉原按钮隐藏定时器（保留代码，后续可恢复）
+      // clearTimeout(window.openBtnTimer);
+      // window.openBtnTimer = setTimeout(() => {
+      //   openBtn.style.display = 'none';
+      // }, 999);
+    }
+  }
+
+  // 绑定触摸事件（移动端核心）和点击事件（兼容PC测试）（原有代码保留）
+  // document.addEventListener('touchstart', handlePageInteract);
+  document.addEventListener('click', handlePageInteract);
+
+  // 优化：强制隐藏 top-link，彻底覆盖 footer.html 的滚动显示逻辑
+  const topLinkEl = document.querySelector('.top-link');
+  if (topLinkEl) {
+    // 1. 移除类（保留原有功能，不删除）
+    topLinkEl.classList.remove('top-link');
+    
+    // 2. 强制隐藏：视觉不可见 + 不占据页面空间（优先级高于 footer 的滚动样式）
+    topLinkEl.style.visibility = 'hidden';
+    topLinkEl.style.opacity = '0';
+    topLinkEl.style.display = 'none'; // 关键：让元素完全从布局中消失，避免占位
+    
+    // 3. 清除 footer.html 中绑定的滚动事件（防止滚动时被重新显示）
+    // 先保存原滚动事件，避免影响其他功能，再重新绑定空处理
+    const originalScroll = window.onscroll;
+    window.onscroll = function() {
+      // 执行原滚动事件（确保页面其他滚动逻辑正常）
+      if (typeof originalScroll === 'function') {
+        originalScroll();
+      }
+      // 强制重置 top-link 为隐藏状态（覆盖 footer 的显示逻辑）
+      topLinkEl.style.visibility = 'hidden';
+      topLinkEl.style.opacity = '0';
+      topLinkEl.style.display = 'none';
+    };
+  }
+
+
+  function isMobile() {
+    return window.innerWidth <= 768;
+  }
+
+  function openSidebar() {
+    if (!isMobile()) return;
+    sidebar.classList.add('active');
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeSidebar() {
+    if (!isMobile()) return;
+    sidebar.classList.remove('active');
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  // 按钮点击事件保留（后续恢复按钮时可直接用，无需重新写）
+  openBtn.addEventListener('click', openSidebar);
+  closeBtn.addEventListener('click', closeSidebar);
+  overlay.addEventListener('click', closeSidebar);
+
+  tocLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      if (isMobile()) {
+        closeSidebar();
+      }
+      const targetId = this.getAttribute('href');
+      if (targetId && targetId.startsWith('#')) {
+        const targetHeading = document.getElementById(targetId.slice(1));
+        if (targetHeading) {
+          e.preventDefault();
+          window.scrollTo({
+            top: targetHeading.offsetTop - 80,
+            behavior: 'smooth'
+          });
+        }
+      }
+    });
+  });
+
+  function updateTocHighlight() {
+    let currentId = '';
+    let currentTop = -Infinity;
+    headings.forEach(heading => {
+      const rect = heading.getBoundingClientRect();
+      if (rect.top <= 150 && rect.top > currentTop) {
+        currentTop = rect.top;
+        currentId = heading.id;
+      }
+    });
+    tocLinks.forEach(link => {
+      link.classList.remove('active');
+      const href = link.getAttribute('href');
+      if (href && href === `#${currentId}`) {
+        link.classList.add('active');
+      }
+    });
+  }
+  window.addEventListener('scroll', updateTocHighlight);
+  updateTocHighlight();
+
+  window.addEventListener('resize', function() {
+    if (!isMobile()) {
+      sidebar.classList.remove('active');
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  });
+});
+
+
+</script>
+
+
+
+
+
+
+{{- end }}

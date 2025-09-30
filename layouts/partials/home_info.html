@@ -1,0 +1,46 @@
+{{- with site.Params.homeInfoParams }}
+
+
+{{- /* 公告/广告 滚动文字 */ -}}
+{{- $adText := "" }}
+{{- $adUrl := "" }}
+{{- $adSvg := "" }}
+{{- if reflect.IsMap site.Params.announcement }}
+  {{- $adText = site.Params.announcement.text | default "" }}
+  {{- $adUrl = site.Params.announcement.url | default "" }}
+  {{- $adSvg = site.Params.announcement.svg | default "" }}
+{{- end }}
+{{- if and $adText $adUrl }}
+<div class="announcement-bar" onclick="window.location.href='{{ $adUrl }}'">
+  <!-- SVG图标部分 -->
+  {{ $adSvg | safeHTML }}
+  <!-- 滚动容器 -->
+  <div class="announcement-scroll-wrap">
+      <div class="announcement-marquee">
+        {{ $adText | safeHTML | markdownify }}
+      </div>
+  </div>
+</div>
+{{- end }}
+{{- /* 公告/广告 滚动文字结束 */ -}}
+
+
+
+
+
+<article class="first-entry home-info">
+    <header class="entry-header">
+        <h1>{{ .Title | markdownify }}</h1>
+    </header>
+    <div class="entry-content">
+        {{ .Content | markdownify }}
+    </div>
+    <footer class="entry-footer">
+        {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
+    </footer>
+</article>
+
+{{- end -}}
+
+
+

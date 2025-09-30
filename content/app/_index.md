@@ -1,5 +1,5 @@
 ---
-title: '工具'
+title: '应用'
 searchHidden: true
 ---
 

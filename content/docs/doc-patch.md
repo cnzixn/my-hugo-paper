@@ -1,7 +1,6 @@
 ---
 title: '框架 - 扩展功能'
 date: '2024-11-22'
-weight: -7
 author: 'Bny'
 summary: '帮助你了解“框架”的测试模组(BM000)的一些功能。'
 tags:
@@ -9,6 +8,7 @@ tags:
 aliases:
 - 'patch'
 comments: false
+weight: 0
 url: '/p/5/'
 ---
 

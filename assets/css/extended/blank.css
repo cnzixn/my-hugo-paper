@@ -8,7 +8,7 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 /* 图片添加边框（全局生效） */
 .post-content img {
   /* 边框样式：浅灰色细边框，与白色图片形成区分 */
-  border: 2px solid var(--radius);;
+  border: 2px solid var(--border);
   /* 边框与图片间留一点空隙，避免紧贴 */
   padding: 1px;
   /* 可选：添加圆角，与主题风格统一 */
@@ -81,3 +81,54 @@ mark {
 .ext-url:hover::after {
   opacity: 1;
 }
+
+
+
+
+/* 首页 公告/广告 滚动文字 */
+.announcement-bar {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 8px 12px;
+  margin: 8px 0;
+  border: 1px solid var(--secondary);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.announcement-bar svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0; /* 固定图标宽度，不压缩 */
+}
+/* 滚动范围容器：限制文字滚动区域，不侵占图标空间 */
+.announcement-scroll-wrap {
+  /*flex: 1;*/
+  overflow: hidden; /* 只在这个容器内滚动，超出隐藏 */
+  position: relative;
+  min-width: 0;
+  flex-grow: 1;
+}
+/* 跑马灯文字：左侧加边距，确保不碰图标 */
+.announcement-marquee {
+  white-space: nowrap;
+  animation: marquee 8s linear infinite;
+  margin-left: 10px; /* 左侧边距，与图标保持距离 */
+  pointer-events: none;
+}
+/* 调整动画起点：从容器右侧开始，而非文字自身右侧 */
+@keyframes marquee {
+  0% { transform: translateX(1%); } /* 从滚动容器右侧进入 */
+  100% { transform: translateX(-150%); } /* 滚出滚动容器左侧 */
+}
+.announcement-marquee:hover {
+  animation-play-state: paused;
+  text-decoration: underline;
+} 
+
+
+
+

@@ -1,18 +1,18 @@
 ---
 title: '教程 - 新人指引'
 date: 2025-01-20
-weight: -9
 author: 'Bny'
 summary: '此文章为新人教学，包含下载文件、安装框架&模组等内容。'
 tags:
 - '资料'
 aliases:
 - 'guide'
-comments: false
+comments: true
+weight: -9
 url: '/p/1/'
 ---
 
---- 
+---
 
 ## 前言
 
@@ -39,7 +39,9 @@ url: '/p/1/'
 
 苹果：请通过 <span class="ext-url">[B.M.安装器](/app/imod/)</span> 安装模组。
 
-安卓：00:53 4.74M  
+{{< video src="/img/lv_0_20250901210841.mp4" poster="/img/lv_0_20250901210841.webp" scale="80%" >}}  
+
+安卓：请通过 MT管理器 安装模组。
 
 {{< video src="/img/lv_0_20250831182656.mp4" poster="/img/lv_0_20250831182656.webp" scale="80%" >}}  
 

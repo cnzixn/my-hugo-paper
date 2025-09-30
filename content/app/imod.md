@@ -42,9 +42,9 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
 <div class="section">
   <small class="note">
     <h4>温馨提示：</h4>
+    • <mark>不消耗流量</mark>，文件在本地处理。<br>
     • 推荐使用 Chrome / Edge 浏览器。<br>
-    • 由于系统限制，暂不支持 iOS 使用。<br>
-    • <mark>不消耗流量</mark>，文件在浏览器本地处理。<br>
+    • 支持 Android / Win ，暂不支持 iOS 。<br>
   </small>
 </div>
 
