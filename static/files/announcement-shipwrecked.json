@@ -1,18 +1,19 @@
 {
-  "lv": 251003,
+  "lv": 251001,
+  "date": "25-10-01",
   "sc": {
-      "date": "25-09-20",
       "title": "B.M.",
       "content": "国庆快乐!",
       "button": "查看",
-      "url": "https://d.bxq.me/p/new/"
+      "url": "https://d.bxq.me/p/new/",
+      "new": "当前版本过低！"
   },
   "en": {
-      "date": "25-09-20",
       "title": "B.M.",
       "content": "Happy National Day!",
       "button": "Details",
-      "url": "https://d.bxq.me/p/new/"
+      "url": "https://d.bxq.me/p/new/",
+      "new": "The version is too low!"
   },
-  "note": "lv(最小版本) Klei商店　快来看看Klei商店最新上架的好东西吧！　http://store.kleientertainment.com"
+  "note": "Klei商店　快来看看Klei商店最新上架的好东西吧！　http://store.kleientertainment.com"
 }
