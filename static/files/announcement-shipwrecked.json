@@ -1,17 +1,18 @@
 {
+  "lv": 250920,
   "sc": {
-      "date": "2025-09-05",
-      "title": "B.M.公告",
-      "content": "抵制“倒卖”模组!",
+      "date": "25-09-20",
+      "title": "B.M.",
+      "content": "国庆快乐!",
       "button": "查看",
-      "url": "https://d.bxq.me/p/3/"
+      "url": "https://d.bxq.me/p/new/"
   },
   "en": {
-      "date": "2025-09-05",
+      "date": "25-09-20",
       "title": "B.M.",
-      "content": "Thanks for participating in the iOS test!",
+      "content": "Happy National Day!",
       "button": "Details",
-      "url": "https://d.bxq.me/p/820/"
+      "url": "https://d.bxq.me/p/new/"
   },
-  "note": "Klei商店　快来看看Klei商店最新上架的好东西吧！　http://store.kleientertainment.com"
+  "note": "lv(最小版本) Klei商店　快来看看Klei商店最新上架的好东西吧！　http://store.kleientertainment.com"
 }

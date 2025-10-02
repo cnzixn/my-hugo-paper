@@ -6,6 +6,8 @@ summary: '框架BM25.09.01版本更新，请注意查收！'
 tags:
 - '公告'
 - '框架'
+aliases:
+- 'new'
 comments: false
 weight: 0
 url: '/p/3/'
