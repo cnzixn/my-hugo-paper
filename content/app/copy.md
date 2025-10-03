@@ -9,9 +9,14 @@ summary: '通过链接将游戏内“数据”导出，方便复制使用。'
 
 <h1>B.M.剪贴板</h1>
 
-<div class="section reminder">
-    <p><strong>使用方法：</strong> 访问本页面带有"data=xxxxx"，则会将"xxxxx"显示在下面的内容框，方便复制。</p>
+<div class="reminder">
+  <small class="note">
+    <h4>温馨提示：</h4>
+    • 模组<span style="color:red !important;" class="">免费下载和使用</span>，谨防上当受骗!!!<br>
+    • 本站不提供付费服务，被骗别找站长!!!
+  </small>
 </div>
+
 
 
 <!-- 显示从URL获取的数据 -->
