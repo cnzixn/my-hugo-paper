@@ -1,5 +1,28 @@
 {{- define "main" }}
 
+{{- /* 公告/广告 滚动文字 */ -}}
+{{- $adText := "" }}
+{{- $adUrl := "" }}
+{{- $adSvg := "" }}
+{{- if reflect.IsMap site.Params.announcement }}
+  {{- $adText = site.Params.announcement.text | default "" }}
+  {{- $adUrl = site.Params.announcement.url | default "" }}
+  {{- $adSvg = site.Params.announcement.svg | default "" }}
+{{- end }}
+{{- if and $adText $adUrl }}
+<div class="announcement-bar" onclick="window.location.href='{{ $adUrl }}'">
+  <!-- SVG图标部分 -->
+  {{ $adSvg | safeHTML }}
+  <!-- 滚动容器 -->
+  <div class="announcement-scroll-wrap">
+      <div class="announcement-marquee">
+        {{ $adText | safeHTML | markdownify }}
+      </div>
+  </div>
+</div>
+{{- end }}
+{{- /* 公告/广告 滚动文字结束 */ -}}
+
 <header class="page-header">
     <h1>{{- (printf "%s&nbsp;" .Title ) | htmlUnescape -}}</h1>
     {{- if .Description }}

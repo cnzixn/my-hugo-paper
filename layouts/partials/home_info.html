@@ -1,6 +1,5 @@
 {{- with site.Params.homeInfoParams }}
 
-
 {{- /* 公告/广告 滚动文字 */ -}}
 {{- $adText := "" }}
 {{- $adUrl := "" }}
@@ -24,10 +23,6 @@
 {{- end }}
 {{- /* 公告/广告 滚动文字结束 */ -}}
 
-
-
-
-
 <article class="first-entry home-info">
     <header class="entry-header">
         <h1>{{ .Title | markdownify }}</h1>
@@ -39,8 +34,4 @@
         {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
     </footer>
 </article>
-
 {{- end -}}
-
-
-

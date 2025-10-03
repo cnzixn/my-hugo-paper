@@ -3,13 +3,13 @@ title: '模组'
 layout: 'single'
 ---
 
+
+
 <small>
 
-- 联系邮箱: [admin@bxq.me](mailto:admin@bxq.me)
+- 模组<span style="color:red !important;" class="">免费下载和使用</span>，谨防上当受骗!!!
 
-- 欢迎反馈问题、投稿您创作的模组。
-
-- 分享内容可能失效，请换一个网盘试试。
+- 本站不提供付费服务，被骗别找站长!!!
 
 </small>
 
