@@ -12,19 +12,17 @@
 {{ $pvEncrypt := resources.Get "js/pv.encrypt.js" | fingerprint }}
 <script defer src="{{ $pvEncrypt.RelPermalink }}"></script>
 
-
-
 {{ $bptEncrypt := resources.Get "js/bpt.encrypt.js" | fingerprint }}
 <script defer src="{{ $bptEncrypt.RelPermalink }}"></script>
 
-
+{{ $buidEncrypt := resources.Get "js/buid.encrypt.js" | fingerprint }}
+<script defer src="{{ $buidEncrypt.RelPermalink }}"></script>
 
 {{ $klfaEncrypt := resources.Get "js/klfa.encrypt.js" | fingerprint }}
 <script src="{{ $klfaEncrypt.RelPermalink }}"></script>
 
 {{ $ktexEncrypt := resources.Get "js/ktex.encrypt.js" | fingerprint }}
 <script src="{{ $ktexEncrypt.RelPermalink }}"></script>
-
 
 
 {{ $imodEncrypt := resources.Get "js/imod.encrypt.js" | fingerprint }}
