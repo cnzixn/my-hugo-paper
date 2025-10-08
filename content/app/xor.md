@@ -1,18 +1,12 @@
 ---
-title: 'B.M.安装器'
+title: 'B.M.解密器'
 layout: 'aapp'
 searchHidden: true
 hideTitlt: true
-weight: 250001
-summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
+weight: 250002
+summary: '使用XOR处理文件，防止网盘分享文件被和谐。'
 ---
 
-<!-- <!DOCTYPE html> -->
-<!-- <html lang="zh-CN"> -->
-<!-- <head> -->
-<!-- <meta charset="UTF-8" /> -->
-<!-- <meta name="viewport" content="width=device-width,initial-scale=1" /> -->
-<!-- <title>模组安装器（安卓/苹果自动识别）</title> -->
 <style>
   body { 
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "PingFang SC","Hiragino Sans GB","Microsoft YaHei", sans-serif;  
@@ -33,7 +27,7 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
     background: var(--entry); /* 卡片背景色 */
   }
   .drop-zone { 
-    border: 2px dashed var(--tertiary); /*  tertiary色做虚线边框 */
+    border: 2px dashed var(--tertiary); /* tertiary色做虚线边框 */
     padding: 20px; 
     text-align: center; 
     margin: 10px 0; 
@@ -60,6 +54,13 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
     box-shadow: 0 2px 8px var(--secondary); /* 阴影色与按钮色一致 */
     opacity: 0.9; /* 增加hover透明度变化 */
   }
+  .section button:disabled { 
+    background-color: var(--tertiary); 
+    cursor: not-allowed; 
+    transform: none; 
+    box-shadow: none; 
+    opacity: 0.7; 
+  }
   .file-info, .file-list { 
     margin: 10px 0; 
     padding: 10px; 
@@ -67,12 +68,24 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
     border-radius: var(--radius); 
     background: var(--theme); /* 用主题色做背景 */
   }
-  .file-info, .file-list { white-space: nowrap; overflow-x: auto; }
+  .file-info { white-space: nowrap; overflow-x: auto; }
+  .file-list { max-height: 160px; overflow-y: auto; }
   .file-item { 
     padding: 6px 4px; 
     border-bottom: 1px solid var(--border); /* 统一分割线 */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
   }
   .file-item:last-child { border-bottom: none; }
+  .file-remove { 
+    color: var(--secondary); 
+    cursor: pointer; 
+    font-size: 14px; 
+    padding: 2px 6px; 
+    border-radius: 4px; 
+    background: var(--border); 
+  }
   .progress-container { margin: 12px 0; display: none; }
   .progress-bar { 
     height: 6px; 
@@ -102,13 +115,25 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
     color: var(--secondary); /* 标签用次要色 */
   }
   .muted { color: var(--secondary); } /* 弱化文本用次要色 */
+  .limit-hint { 
+    margin: 8px 0; 
+    padding: 6px; 
+    background: var(--border); 
+    border-radius: var(--radius); 
+    font-size: 14px; 
+    color: var(--secondary); 
+  }
+  .case-hint {
+    margin: 5px 0;
+    font-size: 13px;
+    color: var(--secondary);
+    font-style: italic;
+  }
 </style>
 
-<!-- </head> -->
-<!-- <body> -->
+<h1>B.M.解密器</h1>
+<!-- <span class="pill">任意格式 | 后缀不区分大小写 | 本地安全</span> -->
 
-<h1>B.M.安装器</h1>
-<!-- <span class="pill">自动识别 APK / IPA</span> -->
 
 <div class="section">
   <small class="note">
@@ -119,73 +144,43 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
   </small>
 </div>
 
-<div class="section">
-  <h2>1. 选择安装包<span class="pill">自动识别 APK / IPA</span></h2>
-  <!-- <p class="muted">拖入或选择 <strong>.apk</strong>（安卓）或 <strong>.ipa</strong>（苹果）。</p> -->
-  <div id="pkgDropZone" class="drop-zone">
-    <p>拖放 .apk / .ipa 到这里 或</p>
-    <button id="pkgBrowseBtn">选择安装包</button>
-    <input type="file" id="pkgFileInput" accept=".apk,.ipa" style="display:none;">
-  </div>
-  <div id="pkgFileInfo" class="file-info" style="display:none;"></div>
-  <div id="pkgError" class="error"></div>
-</div>
 
 <div class="section">
-  <h2>2. 选择模组文件<span class="pill">支持 BM框架/BM模组/BM补丁/自制模组 </span></h2>
-  <!-- <p class="muted">支持 BM 框架 / BM 模组 / BM 补丁 / 三方模组（<code>.zip</code> / <code>.xz</code>）。</p> -->
-  <div id="modsDropZone" class="drop-zone">
-    <p>拖放 .zip / .xz 到这里 或</p>
-    <button id="modsBrowseBtn">选择模组文件</button>
-    <input type="file" id="modsFileInput" accept=".zip,.xz" multiple style="display:none;">
-  </div>
-  <div id="modsFileList" class="file-list" style="display:none;"></div>
-  <div id="modsError" class="error"></div>
-</div>
-
-<div class="section">
-  <h2>3. 安装模组</h2>
-  <div class="muted" id="platformHint">当前平台：未选择</div>
-  <button id="installBtn" disabled>开始安装</button>
-  <div id="installProgress" class="progress-container">
-    <div class="progress-bar"><div id="installProgressFill" class="progress-fill"></div></div>
-    <p id="installProgressText">准备就绪</p>
-  </div>
-  <div id="installError" class="error"></div>
-  <!-- <div id="installResult" style="display:none;"> -->
-   <!-- <button id="downloadBtn" class="btn-view-counter">保存生成文件</button> -->
-   <!-- <span class="muted" id="resultHint"></span> -->
-  <!-- </div> -->
+  <h2>1. 选择文件<span class="pill">支持任意格式</span></h2>
+  <!-- <p class="muted">拖入或选择任意格式文件</p> -->
+  <!-- <p class="case-hint">提示：后缀不区分大小写（如.ZIP、.Zip、.zip.xor、.ZIP.XOR均能正确识别）</p> -->
+  <div class="limit-hint">⚠️ 最多选择100个文件，当前已选：<span id="fileCount">0</span>/100</div>
   
-<div id="installResult" style="display: none;">
-  <div class="platform-result" id="androidResult" style="display:none;">
-    <button id="downloadBtnAndroid" class="btn-view-counter" data-id="amod-download-apk">保存APK文件</button>
-    <span class="muted">已使用：<span class="amod-download-apk-count">0</span> 次</span>
+  <div id="fileDropZone" class="drop-zone">
+    <p>拖放文件到这里 或</p>
+    <button id="fileBrowseBtn">选择文件</button>
+    <input type="file" id="fileInput" multiple style="display:none;">
   </div>
-
-  <div class="platform-result" id="iosResult" style="display:none; margin-top:10px;">
-    <button id="downloadBtnIOS" class="btn-view-counter" data-id="imod-download-ipa">保存IPA文件</button>
-    <span class="muted">已使用：<span class="imod-download-ipa-count">0</span> 次</span>
-  </div>
-
-  <div class="muted" id="resultHint" style="margin-top:12px;"></div>
+  
+  <div id="fileList" class="file-list" style="display:none;"></div>
+  <div id="fileError" class="error"></div>
 </div>
 
-
+<div class="section">
+  <h2>2. 处理文件</h2>
+  <p class="muted">处理后单文件将直接下载，多文件将自动打包为ZIP压缩包下载。</p>
+  
+  <button id="processBtn" disabled>开始处理</button>
+  
+  <div id="processProgress" class="progress-container">
+    <div class="progress-bar"><div id="processProgressFill" class="progress-fill"></div></div>
+    <p id="processProgressText" class="muted">准备就绪</p>
+  </div>
+  
+  <div id="processError" class="error"></div>
+  
+  <div id="processResult" style="display: none;">
+    <button id="downloadBtn" class="btn-view-counter">保存处理结果</button>
+    <span class="muted" id="resultHint" style="margin-left: 10px;">处理完成，共生成1个文件</span>
+  </div>
 </div>
 
 <!-- 必需库 -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
 
-
-
-<!-- <script defer src="/js/bv.js"></script> -->
-<!-- <script src="/js/klfa.js"></script> -->
-<!-- <script src="/js/imod.js"></script> -->
-
-
-
-
-<!-- </body> -->
-<!-- </html> -->

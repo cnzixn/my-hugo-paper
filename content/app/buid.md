@@ -3,6 +3,7 @@ title: 'B.M.用户码'
 layout: 'aapp'
 searchHidden: true
 hideTitlt: true
+weight: 250003
 summary: '通过链接获取用户码，生成“BM补丁”文件。'
 ---
 
@@ -11,28 +12,26 @@ summary: '通过链接获取用户码，生成“BM补丁”文件。'
 
 <div class="reminder">
   <small class="note">
-    <h4>温馨提示：</h4>
-    • 模组<span style="color:red !important;" class="">免费</span>下载和使用，谨防上当受骗!!!<br>
-    • 如果自愿付费，一切纠纷与本站无关!!!
+    温馨提示：<br> - 模组<span style="color:red !important;" class="">免费</span>下载和使用，谨防上当受骗!!!
   </small>
 </div>
 
 <!-- 显示从URL获取的用户码 -->
-<div class="file-info" id="data-container">
+<div class="file-info" id="app-buid-data-container">
     正在从URL加载用户码...
 </div>
 
 <div class="section">
-  <!-- 生成压缩包按钮：默认状态用btn-default，禁用状态添加btn-disabled -->
-  <button id="generate-btn" class="btn-default">生成压缩包</button>
+  <!-- 生成补丁包按钮：默认状态用btn-default，禁用状态添加btn-disabled -->
+  <button id="app-buid-generate-btn" class="btn-default">生成补丁包</button>
   
   <!-- 生成成功提示 -->
-  <div class="copied-notice" id="success-notice">
-      压缩包生成成功，已开始下载！
+  <div class="copied-notice" id="app-buid-success-notice">
+      补丁包生成成功，已开始下载！
   </div>
   
   <!-- 错误提示区域 -->
-  <div class="error" id="error-msg"></div>
+  <div class="error" id="app-buid-error-msg"></div>
 </div>
 
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
@@ -114,7 +113,8 @@ h1 {
     font-weight: bold;
 }
 
-.file-info {
+/* 为id选择器添加前缀：app-buid- */
+#app-buid-data-container {
     margin: 10px 0;
     padding: 10px;
     border: 1px solid #ddd;
@@ -143,7 +143,8 @@ h1 {
     background-color: #4cd964;
 }
 
-.error {
+/* 为id选择器添加前缀：app-buid- */
+#app-buid-error-msg {
     color: red;
     margin: 10px 0;
     display: none;
@@ -167,8 +168,8 @@ h1 {
     border-bottom: none;
 }
 
-/* 成功提示样式 */
-.copied-notice {
+/* 成功提示样式：为id选择器添加前缀 */
+#app-buid-success-notice {
     display: none;
     position: fixed;
     top: 20px;

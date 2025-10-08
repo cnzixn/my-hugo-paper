@@ -27,6 +27,13 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 
 
 
+}
+
+
+
+
+
+
 /*首页 socialIcons 添加标题*/
 .social-icons {
     display: flex;
@@ -52,38 +59,6 @@ mark {
   padding: 1px 3px; /* 稍微增加内边距，避免文字贴边 */
   border-radius: 2px; /* 轻微圆角，更美观 */
 }
-
-
-
-/* 外链图标基础样式 */
-.ext-url {
-  position: relative;
-  padding-right: 18px; /* 为图标预留空间 */
-}
-
-/* 通过伪元素添加外链图标（使用 SVG 避免额外图片请求） */
-.ext-url::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  /* SVG 图标（外部链接符号，可按需调整大小/颜色） */
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='currentColor' viewBox='0 0 16 16'%3E%3Cpath d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z'/%3E%3Cpath d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z'/%3E%3C/svg%3E");
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 12px;
-  height: 12px;
-  opacity: 0.7; /* 图标透明度，与文字区分 */
-}
-
-/* 可选：hover 时增强图标可见性 */
-.ext-url:hover::after {
-  opacity: 1;
-}
-
-
-
 
 /* 首页 公告/广告 滚动文字 */
 .announcement-bar {

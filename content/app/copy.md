@@ -3,42 +3,41 @@ title: 'B.M.剪贴板'
 layout: 'aapp'
 searchHidden: true
 hideTitlt: true
-summary: '通过链接将游戏内“数据”导出，方便复制使用。'
+weight: 250009
+summary: '通过访问链接将[数据]导出，方便复制使用。'
 ---
 
 
 <h1>B.M.剪贴板</h1>
 
-<div class="reminder">
-  <small class="note">
-    <h4>温馨提示：</h4>
-    • 模组<span style="color:red !important;" class="">免费下载和使用</span>，谨防上当受骗!!!<br>
-    • 本站不提供付费服务，被骗别找站长!!!
-  </small>
-</div>
+<!-- <div class="reminder"> -->
+  <!-- <small class="note"> -->
+  <!-- 温馨提示：<br> - 模组<span style="color:red !important;" class="">免费</span>下载和使用，谨防上当受骗!!! -->
+  <!-- </small> -->
+<!-- </div> -->
 
 
 
 <!-- 显示从URL获取的数据 -->
-<div class="file-info" id="data-container">
+<div class="file-info" id="app-copy-data-container">
     正在从URL加载数据...
 </div>
 
 <div class="section">
  
   <!-- 测试按钮 -->
-  <button class="test-btn" id="test-btn">测试一下</button>
+  <button class="test-btn" id="app-copy-test-btn">测试一下</button>
 
   <!-- 复制按钮 -->
-  <button id="copy-btn">复制内容</button>
+  <button id="app-copy-copy-btn">复制内容</button>
   
   <!-- 复制成功提示 -->
-  <div class="copied-notice" id="copied-notice">
+  <div class="copied-notice" id="app-copy-copied-notice">
       已复制到剪贴板！
   </div>
   
   <!-- 错误提示区域 -->
-  <div class="error" id="error-msg"></div>
+  <div class="error" id="app-copy-error-msg"></div>
 </div>
 
 <!-- <script defer src="/js/app-copy.js"></script> -->
@@ -88,7 +87,8 @@ summary: '通过链接将游戏内“数据”导出，方便复制使用。'
       .section button.test-btn {
           background-color: #2196F3;
       }
-      .file-info {
+      /* 为id选择器添加前缀：app-copy- */
+      #app-copy-data-container {
           margin: 10px 0;
           padding: 10px;
           border: 1px solid #ddd;
@@ -113,7 +113,8 @@ summary: '通过链接将游戏内“数据”导出，方便复制使用。'
           transition: width 0.3s;
           background-color: #4cd964;
       }
-      .error {
+      /* 为id选择器添加前缀：app-copy- */
+      #app-copy-error-msg {
           color: red;
           margin: 10px 0;
           display: none;
@@ -135,7 +136,8 @@ summary: '通过链接将游戏内“数据”导出，方便复制使用。'
       }
 
       /* 新增样式 */
-      .copied-notice {
+      /* 为id选择器添加前缀：app-copy- */
+      #app-copy-copied-notice {
           display: none;
           position: fixed;
           top: 20px;
