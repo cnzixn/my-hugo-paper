@@ -20,15 +20,4 @@
 <script defer src="{{ $temp.RelPermalink }}"></script>
 
 
-{{ $temp := resources.Get "js/app-buid.js" | fingerprint }}
-<script defer src="{{ $temp.RelPermalink }}"></script>
-
-{{ $temp := resources.Get "js/app-copy.js" | fingerprint }}
-<script defer src="{{ $temp.RelPermalink }}"></script>
-
-{{ $temp := resources.Get "js/app-imod.js" | fingerprint }}
-<script defer src="{{ $temp.RelPermalink }}"></script>
-
-{{ $temp := resources.Get "js/app-xor.js" | fingerprint }}
-<script defer src="{{ $temp.RelPermalink }}"></script>
 

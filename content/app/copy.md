@@ -41,7 +41,7 @@ summary: '通过访问链接将[数据]导出，方便复制使用。'
 </div>
 
 <!-- <script defer src="/js/app-copy.js"></script> -->
-
+{{< js-app-copy >}}
 
 
   <style>

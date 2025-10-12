@@ -1,0 +1,3 @@
+
+{{ $temp := resources.Get "js/app-xor.js" | fingerprint }}
+<script defer src="{{ $temp.RelPermalink }}"></script>
