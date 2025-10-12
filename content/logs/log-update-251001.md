@@ -2,6 +2,7 @@
 title: '框架 - 十月更新'
 date: 2025-10-01
 author: 'Bny'
+draft: true
 summary: '框架BM25.10.01版本更新，请注意查收！'
 tags:
 - '公告'
@@ -22,6 +23,7 @@ weight: 0
 - (萌新)下载补丁包 → 使用“B.M.安装器”
 - (大佬)复制用户码 → 粘贴到“mods/bmuser.lua”文件。
 ```
+
 <small> **备注**：预览网页 [B.M.用户码](app/buid/?data=2fd67d58-ef45-4031-80fd-324f92b8d028) ，请通过游戏内链接进入。</small>  
 
 ---
