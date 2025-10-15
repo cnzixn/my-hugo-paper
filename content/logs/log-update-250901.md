@@ -2,6 +2,7 @@
 title: '框架 - 九月更新'
 date: 2025-09-07
 author: 'Bny'
+draft: true
 summary: '框架BM25.09.01版本更新，请注意查收！'
 tags:
 - '公告'
@@ -10,7 +11,7 @@ aliases:
 - 'new'
 comments: false
 weight: 0
-url: '/p/3/'
+url: '/p/4/'
 ---
 
 <!-- > 框架 BM25.09.01 版本相关 -->

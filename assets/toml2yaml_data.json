@@ -1,14 +1,13 @@
 {
     "docs/doc-guide.md": "1",
     "logs/log-faq.md": "2",
-    "logs/log-update-250901.md": "3",
-    "logs/log-update-mods.md": "4",
-    "docs/doc-patch.md": "5",
-    "llk/llk001-19元192G-广电飞燕卡-135.md": "6",
-    "llk/llk002-28元350G-广电飞号卡-75.md": "7",
-    "llk/llk003-29元80G-电信飞贤卡-140.md": "8",
-    "llk/llk004-39元160G-电信飞洁卡-130.md": "9",
-    "docs/doc-disclaimer.md": "10",
+    "logs/log-update-250901.md": "4",
+    "logs/log-update-mods.md": "5",
+    "docs/doc-patch.md": "6",
+    "llk/llk001-19元192G-广电飞燕卡-135.md": "7",
+    "llk/llk002-28元350G-广电飞号卡-75.md": "8",
+    "llk/llk003-29元80G-电信飞贤卡-140.md": "9",
+    "llk/llk004-39元160G-电信飞洁卡-130.md": "10",
     "docs/doc-ios-slots.md": "11",
     "docs/doc-klfa.md": "12",
     "docs/doc-trollstore.md": "13",
@@ -812,5 +811,8 @@
     "bms/MOD-BM412-玩家房子.md": "811",
     "docs/doc-wallpaper.md": "812",
     "docs/doc-slots.md": "813",
-    "others/test-markdown-syntax.md": "814"
+    "others/test-markdown-syntax.md": "814",
+    "logs/log-update-251001.md": "3",
+    "e-books/摆脱贫困.md": "815",
+    "e-books/美国反对美国.md": "816"
 }

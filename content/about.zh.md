@@ -104,11 +104,11 @@ searchHidden: true
 
 - 【频道】<span class="ext-url">[兔人协会](https://pd.qq.com/s/bl6w0albb?b=5)</span>，发帖交流便于大家“分享日常”、“反馈问题”。  
 
-- 【主群3k】<span class="ext-url">[614255348](https://qm.qq.com/q/g0weZCVQMU)</span>，🚫暂停入群，仅用于搜索群号找到我们。  
+- 【主群3k】<span class="ext-url">[614255348](https://qm.qq.com/q/g0weZCVQMU)</span>，暂停入群，仅用于搜索群号找到我们。  
 
-- 【分群2k】<span class="ext-url">[696529613</i>](https://qm.qq.com/q/3xoKf5H4EM)</span>，<i class="bi bi-android2">安卓分区，免费加群，群员自治，新人互帮互助。  
+- 【分群2k】<span class="ext-url">[696529613</i>](https://qm.qq.com/q/3xoKf5H4EM)</span>，安卓分区，免费加群，群员自治，新人互帮互助。  
 
-- 【分群1k】<span class="ext-url">[905142474</i>](https://qm.qq.com/q/88L6QyUQVi)</span>，<i class="bi bi-apple">苹果分区，免费加群，群员自治，新人互帮互助。  
+- 【分群1k】<span class="ext-url">[905142474</i>](https://qm.qq.com/q/88L6QyUQVi)</span>，苹果分区，免费加群，群员自治，新人互帮互助。  
 
 
 ---
