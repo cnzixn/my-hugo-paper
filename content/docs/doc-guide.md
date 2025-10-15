@@ -16,7 +16,7 @@ url: '/p/1/'
 
 ## 前言
 
-　现在，是 AI 的时代，要学会使用 AI 解决问题。作为一个普通人，你遇到的那点小麻烦，随便问问“人工智障”就能解决。
+　现在，是 AI 的时代，要学会使用 AI 解决问题。
 
 - <span class="ext-url">[豆包](https://doubao.com)</span>：回答问题快，推荐日常使用。
 - <span class="ext-url">[DeepSeek](https://deepseek.com)</span>：深度思考比较专业(慢)。
@@ -65,7 +65,7 @@ url: '/p/1/'
 
 > 《Shipwrecked》是一款生存冒险或策略类游戏。  
 
-**官方正版**: <span class="ext-url">[Android 1.33](https://play.google.com/store/apps/details?id=com.kleientertainment.doNotStarveShipwrecked)</span> <span class="ext-url">[iOS 1.84](https://apps.apple.com/us/app/dont-starve-shipwrecked/id1147297267?l=zh)</span>  
+**官方正版**: <span class="ext-url">[Android 1.33](https://play.google.com/store/apps/details?id=com.kleientertainment.doNotStarveShipwrecked)</span>、<span class="ext-url">[iOS 1.84](https://apps.apple.com/us/app/dont-starve-shipwrecked/id1147297267?l=zh)</span>  
 
 {{< pan 游戏 >}}  
 
