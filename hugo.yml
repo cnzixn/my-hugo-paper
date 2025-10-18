@@ -99,14 +99,14 @@ languages:
         Title: "🏆 档案馆 - 兔人协会"
         Content: >
           -
-          📌礼包码「<span style="color:red !important;" class="today_password">0000</span>」，测试码「~0000~」  
+          📌礼包码「<span style="color:red !important;" class="today_password">????</span>」，测试码「????」  
           
           📌兔人框架：为饥荒手游提供模组支持。  
           
-          📌请阅读<span class="ext-url">[免责声明](/disclaimer)</span>，再下载本站分享文件。  
+          📌请看完<span class="ext-url">[《免责声明》](/disclaimer)</span>再下载本站分享文件。  
 
 #          - <span style="font-weight: bold; color:red;">此网站未正式使用！！！</span>
-#          - 测试码「<span style="font-weight: bold; color:red;" class="today_password_test">0000</span>」  
+#          - 测试码「<span style="font-weight: bold; color:red;" class="today_password_test">????</span>」  
 
       # editPost:
         # URL: "/cms/#/edit"

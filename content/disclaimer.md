@@ -1,14 +1,15 @@
 ---
 title: '免责声明'
-date: 2025-09-17 00:00:00+08:00
+date: 2025-09-20 00:00:00+08:00
 draft: false
 aliases:
 - 'disclaimer'
 tags:
 - '免责声明'
+comments: false
 ---
 
-# 网站免责声明
+<!-- # 网站免责声明 -->
 
 ## 1. 免责范围
 

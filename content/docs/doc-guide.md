@@ -144,11 +144,11 @@ url: '/p/1/'
     百度：
         /sdcard/Download/BaiduNetdisk/
 
-    迅雷：
-        /sdcard/Android/data/com.xunlei.downloadprovider/files/ThunderDownload/
-
     夸克：
         /sdcard/Download/QuarkDownloads/
+
+<!-- 迅雷： -->
+   <!-- /sdcard/Android/data/com.xunlei.downloadprovider/files/ThunderDownload/ -->
 
 小提示：
 - 某网盘声称“不限速”，结果下载超过1G就提示要开会员，所以我没有用它。

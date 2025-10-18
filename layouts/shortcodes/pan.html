@@ -18,6 +18,10 @@
 
       {{/* 按钮组容器 */}}
       <div class="pan-btn-group">
+
+
+
+
         {{/* 百度网盘按钮（对应 url1） */}}
         {{ $baiduUrl := index (where . "url1" "ne" nil) 0 "url1" }}
         {{ if $baiduUrl }}
@@ -29,19 +33,25 @@
             <img src="/img/pan_baidu.webp" alt="百度网盘">
           </button>
         {{ end }}
-  
-        {{/* 迅雷网盘按钮（对应 url2） */}}
-        {{ $xunleiUrl := index (where . "url2" "ne" nil) 0 "url2" }}
-        {{ if $xunleiUrl }}
-          <button onclick="window.open('{{ $xunleiUrl }}&t={{ $currentDate }}', '_blank')" class="action-btn xunlei" title="迅雷网盘下载">
-            <img src="/img/pan_xunlei.webp" alt="迅雷网盘">
-          </button>
-        {{ else }}
-          <button class="action-btn xunlei" title="暂无迅雷网盘下载" disabled>
-            <img src="/img/pan_xunlei.webp" alt="迅雷网盘">
-          </button>
-        {{ end }}
-  
+
+
+
+
+        <!-- {{/* 迅雷网盘按钮（对应 url2） */}} -->
+        <!-- {{ $xunleiUrl := index (where . "url2" "ne" nil) 0 "url2" }} -->
+        <!-- {{ if $xunleiUrl }} -->
+          <!-- <button onclick="window.open('{{ $xunleiUrl }}&t={{ $currentDate }}', '_blank')" class="action-btn xunlei" title="迅雷网盘下载"> -->
+            <!-- <img src="/img/pan_xunlei.webp" alt="迅雷网盘"> -->
+          <!-- </button> -->
+        <!-- {{ else }} -->
+          <!-- <button class="action-btn xunlei" title="暂无迅雷网盘下载" disabled> -->
+            <!-- <img src="/img/pan_xunlei.webp" alt="迅雷网盘"> -->
+          <!-- </button> -->
+        <!-- {{ end }} -->
+
+
+
+
         {{/* 夸克网盘按钮（对应 url3） */}}
         {{ $quarkUrl := index (where . "url3" "ne" nil) 0 "url3" }}
         {{ if $quarkUrl }}
@@ -54,8 +64,11 @@
           </button>
         {{ end }}
       </div>
-      
-      <small>👈🏻点击图标</small>
+
+
+
+
+      <small>👈🏻点击图标下载</small>
       
     </div>
 

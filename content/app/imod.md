@@ -114,7 +114,7 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
   <small class="note">
     温馨提示：<br>
     • <mark>不消耗流量</mark>，文件在本地处理。<br>
-    • 仅支持 Android / Windows 系统。<br>
+    • 支持 Android / Win / Mac 系统。<br>
     • 推荐使用 Chrome / Edge 浏览器。<br>
   </small>
 </div>
