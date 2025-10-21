@@ -1,8 +1,9 @@
 ---
 title: 'B.M.解密器'
 layout: 'aapp'
+draft: true
 searchHidden: true
-hideTitlt: true
+draft: true
 weight: 250002
 summary: '使用XOR处理文件，防止网盘分享文件被和谐。'
 ---
