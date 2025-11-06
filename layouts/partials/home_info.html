@@ -26,7 +26,7 @@
       <span style="margin-right:10px; flex-shrink:0;">{{ $firstAd.svg | safeHTML }}</span>
     {{ end }}
     <div style="overflow:hidden; flex:1; white-space:nowrap;" class="ad-scroll">
-      <div style="display:inline-block; animation:scroll 3s linear infinite; padding-left:100%;" id="ad-text">
+      <div style="display:inline-block; animation:scroll 5s linear infinite; padding-left:100%;" id="ad-text">
         {{ $firstAd.text | safeHTML }} {{/* 直接用预解析的HTML */}}
       </div>
     </div>
@@ -60,8 +60,8 @@
       if (iconEl) iconEl.innerHTML = ad.svg || '';
       textEl.style.animation = 'none';
       void textEl.offsetWidth;
-      textEl.style.animation = 'scroll 3s linear infinite';
-    }, 3000);
+      textEl.style.animation = 'scroll 5s linear infinite';
+    }, 5000);
   </script>
 {{ else }}
   <div style="padding:1rem; color:#666; font-size:0.9rem;">
