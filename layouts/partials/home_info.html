@@ -1,27 +1,84 @@
 {{- with site.Params.homeInfoParams }}
 
-{{- /* 公告/广告 滚动文字 */ -}}
-{{- $adText := "" }}
-{{- $adUrl := "" }}
-{{- $adSvg := "" }}
-{{- if reflect.IsMap site.Params.announcement }}
-  {{- $adText = site.Params.announcement.text | default "" }}
-  {{- $adUrl = site.Params.announcement.url | default "" }}
-  {{- $adSvg = site.Params.announcement.svg | default "" }}
-{{- end }}
-{{- if and $adText $adUrl }}
-<div class="announcement-bar" onclick="window.location.href='{{ $adUrl }}'">
-  <!-- SVG图标部分 -->
-  {{ $adSvg | safeHTML }}
-  <!-- 滚动容器 -->
-  <div class="announcement-scroll-wrap">
-      <div class="announcement-marquee">
-        {{ $adText | safeHTML | markdownify }}
+
+{{- /* 公告轮播（Markdown全程生效，轮播无失效） */ -}}
+{{ $adData := index site.Data "ads" }}
+{{ $validAds := slice }}
+{{ $debugKeys := slice }}
+
+{{ range $id, $itemData := $adData }}
+  {{ $debugKeys = $debugKeys | append $id }}
+  {{ $text := index (where (slice $itemData) "text" "!=" nil) 0 "text" | default "" }}
+  {{ $url := index (where (slice $itemData) "url" "!=" nil) 0 "url" | default "" }}
+  {{ $svg := index (where (slice $itemData) "svg" "!=" nil) 0 "svg" | default "" }}
+  
+  {{ if and $text $url }}
+    {{/* 关键：提前用Hugo解析Markdown，存为HTML字符串 */}}
+    {{ $parsedText := $text | markdownify | safeHTML }}
+    {{ $validAds = $validAds | append (dict "text" $parsedText "url" $url "svg" $svg) }}
+  {{ end }}
+{{ end }}
+
+{{ if $validAds }}
+  {{ $firstAd := index $validAds 0 }}
+  <div class="announcement-box" id="announcement-box" style=" border-radius:8px; padding:12px 16px; margin:16px 0; display:flex; align-items:center; cursor:pointer;">
+    {{ if $firstAd.svg }}
+      <span style="margin-right:10px; flex-shrink:0;">{{ $firstAd.svg | safeHTML }}</span>
+    {{ end }}
+    <div style="overflow:hidden; flex:1; white-space:nowrap;" class="ad-scroll">
+      <div style="display:inline-block; animation:scroll 3s linear infinite; padding-left:100%;" id="ad-text">
+        {{ $firstAd.text | safeHTML }} {{/* 直接用预解析的HTML */}}
       </div>
+    </div>
   </div>
-</div>
-{{- end }}
-{{- /* 公告/广告 滚动文字结束 */ -}}
+
+  <style>
+    @keyframes scroll {
+      0% { transform: translateX(-16rem); }
+      100% { transform: translateX(-100%); }
+    }
+    .ad-scroll:hover #ad-text { animation-play-state: paused; }
+    /* Markdown链接样式优化 */
+    #ad-text a { color: #2563eb; text-decoration: underline; margin: 0 2px; }
+    #ad-text a:hover { color: #1d4ed8; text-decoration: none; }
+  </style>
+
+  <script>
+    const adsList = {{ $validAds | jsonify | safeJS }};
+    let currentIdx = 0;
+    const box = document.getElementById('announcement-box');
+    const textEl = document.getElementById('ad-text');
+    const iconEl = box.querySelector('span');
+
+    box.onclick = () => window.location.href = adsList[currentIdx].url;
+
+    setInterval(() => {
+      currentIdx = (currentIdx + 1) % adsList.length;
+      const ad = adsList[currentIdx];
+      textEl.innerHTML = ad.text; {{/* 直接加载预解析的HTML，Markdown生效 */}}
+      box.onclick = () => window.location.href = ad.url;
+      if (iconEl) iconEl.innerHTML = ad.svg || '';
+      textEl.style.animation = 'none';
+      void textEl.offsetWidth;
+      textEl.style.animation = 'scroll 3s linear infinite';
+    }, 3000);
+  </script>
+{{ else }}
+  <div style="padding:1rem; color:#666; font-size:0.9rem;">
+    公告未加载：当前读取到ads.yml的键名 → {{ delimit $debugKeys ", " }}<br/>
+    请检查每个键下是否有 "text" 和 "url" 字段（大小写敏感，必须是小写）
+  </div>
+{{ end }}
+
+
+
+
+
+
+
+
+
+
 
 <article class="first-entry home-info">
     <header class="entry-header">

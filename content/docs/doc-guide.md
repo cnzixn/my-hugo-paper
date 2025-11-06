@@ -28,7 +28,7 @@ url: '/p/1/'
 {{< details summary="点击查看 → 文件列表" openByDefault="true" >}}
   - <small>MT管理器.APK</small>  
   - <small>BM25.08.20(1.33.5).APK</small>  
-  - <small>BM25.09.01.ZIP.XZ</small>  
+  - <small>BM25.10.20.ZIP.XZ</small>  
   - <small>BM000.ZIP.XZ</small>  
   - <small>BM001.ZIP.XZ</small>  
   - <small>...</small>  
@@ -54,7 +54,7 @@ url: '/p/1/'
 
 ## 工具
 
-> 一款功能强大的安卓文件管理软件。  
+> 安卓，一款功能强大的文件管理软件。  
 
 **官方网站**: <span class="ext-url">[点击下载](https://mt2.cn)</span>  
 {{< pan 工具 >}}  
@@ -85,7 +85,7 @@ url: '/p/1/'
 
 {{< details summary="点击查看 → 文件说明" openByDefault="true" >}}
     
-    BM25.09.20.ZIP.XZ     -- (必须)兔人框架
+    BM25.10.20.ZIP.XZ     -- (必须)兔人框架
     BM000.ZIP.XZ          -- (推荐)框架-测试包
     
     -- 新人不用安装：
@@ -101,12 +101,25 @@ url: '/p/1/'
 
 > 各位大佬从“创意工坊”移植而来。  
 
-　- 点击查看 → <span class="ext-url">[BM 模组列表](/mods)</span>  
+- 点击查看 → <span class="ext-url">[BM 模组列表](/mods)</span>  
 
-　- 点击搜索→ <span class="ext-url">[模组相关文章](/search)</span>  
+- 点击搜索→ <span class="ext-url">[模组相关文章](/search)</span>  
 
 <!-- {{'  {{<pan"模组">}}  '}} -->
 
+{{< details summary="点击查看 → BM模组说明" openByDefault="true" >}}
+    
+    BM099~14DE2E0DD2C3F2E2149DF62D73B97AEA
+    模组名~验证码：BMXXX的模组名必须有正确的验证码，请勿随意改名
+    
+    bmfilelist.lua：模组签名
+    BMXXX的模组必须有正确的签名文件，请勿随意修改代码
+    
+    开发者：
+    如果你要修改代码，请将模组改名为“任意名字”，但不能是 BMXXX 格式。
+    然后按照 _bmmods.lua 文件中的说明去添加“自制模组”。
+    
+{{< /details >}}
 
 
 {{< details summary="点击查看 → `_bmmods.lua`" openByDefault="true" >}}
@@ -151,8 +164,7 @@ url: '/p/1/'
    <!-- /sdcard/Android/data/com.xunlei.downloadprovider/files/ThunderDownload/ -->
 
 小提示：
-- 某网盘声称“不限速”，结果下载超过1G就提示要开会员，所以我没有用它。
-- 那个“在线解压”要开会员，我建议你看一下[《电子扫盲课》](https://b23.tv/ehsLDnw)。
+- 不要在线解压，不要在线解压，不要在线解压！！！建议看一下[《电子扫盲课》](https://b23.tv/ehsLDnw)。
 - 网盘下载速度慢，你可以在闲鱼搜一下“百度网盘 SVIP”、“夸克网盘 88VIP”。
 
 

@@ -61,7 +61,7 @@ mark {
 }
 
 /* 首页 公告/广告 滚动文字 */
-.announcement-bar {
+.announcement-box {
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -74,7 +74,7 @@ mark {
   gap: 8px;
   cursor: pointer;
 }
-.announcement-bar svg {
+.announcement-box svg {
   width: 18px;
   height: 18px;
   flex-shrink: 0; /* 固定图标宽度，不压缩 */

@@ -13,13 +13,21 @@ weight: -9
 url: '/p/2/'
 ---
 
+
+
+---
+
+Q: 我不会弄，有没有直接安装的整合包？
+
+- 没有，本站只提供框架，是为了让正版玩家能够体验模组。
+
 ---
 
 Q: (手机上)有哈姆雷特吗？有联机版吗？  
 
 - 暂无。安卓推荐 [盖世模拟器](https://gamehub.xiaoji.com/)，可登录 Steam 玩你购买的游戏，也支持 Steam 的云存档。这是国内厂商制作的模拟器，更适合宝宝体质。  
 
-- {{< details summary="点击查看折叠内容" openByDefault="true" >}}
+{{< details summary="点击查看折叠内容" openByDefault="true" >}}
 ![图片](/img/xiaoji1.webp)
 ![图片](/img/xiaoji2.webp)
 {{< /details >}}
@@ -42,12 +50,11 @@ Q: 为什么框架里面的那个按钮优化和制作优化没有了😭这是�
 
 -  部分测试功能，需要“积分”才能使用。  
 
-- {{< details summary="点击查看折叠内容" openByDefault="true" >}}
+{{< details summary="点击查看折叠内容" openByDefault="true" >}}
     - 主页，秘技，B.M.礼包；输入网站首页的“礼包码”，可领取 1 积分。  
-    
 {{< /details >}}
 
-    <!-- - 模组，BM000，模组配置，积分礼包(启用)；每天游戏一定时长可以领取积分。 -->
+<!-- - 模组，BM000，模组配置，积分礼包(启用)；每天游戏一定时长可以领取积分。 -->
 
 <!-- --- -->
 
