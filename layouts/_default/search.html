@@ -1,28 +1,5 @@
 {{- define "main" }}
 
-{{- /* 公告/广告 滚动文字 */ -}}
-{{- $adText := "" }}
-{{- $adUrl := "" }}
-{{- $adSvg := "" }}
-{{- if reflect.IsMap site.Params.announcement }}
-  {{- $adText = site.Params.announcement.text | default "" }}
-  {{- $adUrl = site.Params.announcement.url | default "" }}
-  {{- $adSvg = site.Params.announcement.svg | default "" }}
-{{- end }}
-{{- if and $adText $adUrl }}
-<div class="announcement-bar" onclick="window.location.href='{{ $adUrl }}'">
-  <!-- SVG图标部分 -->
-  {{ $adSvg | safeHTML }}
-  <!-- 滚动容器 -->
-  <div class="announcement-scroll-wrap">
-      <div class="announcement-marquee">
-        {{ $adText | safeHTML | markdownify }}
-      </div>
-  </div>
-</div>
-{{- end }}
-{{- /* 公告/广告 滚动文字结束 */ -}}
-
 <header class="page-header">
     <h1>{{- (printf "%s&nbsp;" .Title ) | htmlUnescape -}}</h1>
     {{- if .Description }}
@@ -37,111 +14,53 @@
     {{- end }}
 </header>
 
-<div id="searchbox">
-    <input id="searchInput" autofocus placeholder="{{ .Params.placeholder | default (printf "%s ↵" .Title) }}"
-        aria-label="search" type="search" autocomplete="off" maxlength="64">
-    <ul id="searchResults" aria-label="search results"></ul>
-</div>
+<!-- 公告 -->
+{{ partial "ads.html" . }}
 
-{{/* 完全修复的标签云效果 - 支持标签排除 */}}
-<div id="tagsList" style="margin-top: 2rem;">
-    <!-- <h4>全部标签</h4> -->
-    <div class="tags-cloud">
-        {{- $tags := .Site.Taxonomies.tags.ByCount -}}
-        {{- if $tags }}
-            {{/* 定义需要排除的标签 */}}
-            {{- $excludeTags := slice "模组" "test" -}}
-            
-            {{/* 遍历所有标签并排除特定标签 */}}
-            {{- range $tag := $tags }}
-                {{- if and (ge .Count 1) (ne .Term "") }}
-                    {{/* 检查当前标签是否在排除列表中 */}}
-                    {{- $shouldExclude := false -}}
-                    {{- range $excludeTag := $excludeTags -}}
-                        {{- if eq $excludeTag $tag.Term -}}
-                            {{- $shouldExclude = true -}}
+{{/* 关键词区域 - 一行左右滑动 + 点击填搜索框 */}}
+<div id="keywordsList" style="margin-top: 2rem;">
+    <h4>热门关键词</h4>
+    <!-- 滑动提示（可选，让用户知道可以左右滑） -->
+    <!-- <div class="scroll-tip">滑动查看更多 →</div> -->
+    <!-- 外层容器：限制宽度，溢出滚动 -->
+    <div class="keywords-scroll-container">
+        <div class="keywords-container">
+            {{- $tags := .Site.Taxonomies.tags.ByCount -}}
+            {{- if $tags }}
+                {{- $excludeTags := slice "模组" "test" "免责声明" -}}
+                {{- range $tag := $tags }}
+                    {{- if and (ge .Count 1) (ne .Term "") }}
+                        {{- $shouldExclude := false -}}
+                        {{- range $excludeTag := $excludeTags -}}
+                            {{- if eq $excludeTag $tag.Term -}}
+                                {{- $shouldExclude = true -}}
+                            {{- end -}}
+                        {{- end -}}
+                        {{- if not $shouldExclude -}}
+                            <span class="keyword-item" 
+                                  title="{{ .Term }}"
+                                  onclick="document.getElementById('searchInput').value = '{{ .Term }}'; 
+                                           document.getElementById('searchInput').dispatchEvent(new Event('keyup'));">
+                                {{ .Term }}
+                            </span>
                         {{- end -}}
                     {{- end -}}
-                    
-                    {{- if not $shouldExclude -}}
-                        <a href="{{ .Page.Permalink }}" 
-                           class="tag-item" 
-                           title="{{ .Term }}（{{ .Count }}篇文章）">
-                            {{ .Term }}
-                            <sup>{{ .Count }}</sup>
-                        </a>
-                    {{- end -}}
-                {{- end -}}
+                {{- end }}
             {{- end }}
-        {{- end }}
+        </div>
     </div>
 </div>
 
-<style>
-/* 优化后的标签云样式 */
-.tags-cloud {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-    justify-content: flex-start;
-    align-items: center;
-    line-height: 1.6;
-    padding: 1.5rem 0;
-}
+<!-- 搜索/结果 -->
+<div id="searchbox">
+    <input id="searchInput" 
+           placeholder="{{ .Params.placeholder | default (printf "%s ↵" .Title) }}"
+           aria-label="search" 
+           type="search" 
+           autocomplete="on" 
+           maxlength="64">
+    <ul id="searchResults" aria-label="search results"></ul>
+</div>
 
-.tag-item {
-    display: inline-flex;
-    align-items: center;
-    padding: 0.4rem 0.9rem;
-    border-radius: 4px;
-    text-decoration: none;
-    transition: all 0.2s ease;
-    background-color: var(--tertiary);
-    color: var(--secondary);
-    white-space: nowrap;
-    border: 1px solid var(--border);
-    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-    font-size: 1em;
-}
-
-.tag-item sup {
-    font-size: 0.85em;
-    margin-left: 0.15rem;
-    font-weight: 500;
-    opacity: 0.9;
-}
-
-.tag-item:hover {
-    background-color: var(--tertiary);
-    color: var(--background);
-    transform: translateY(-2px);
-    box-shadow: 0 3px 6px rgba(0,0,0,0.12);
-}
-
-/* 暗色模式适配 */
-@media (prefers-color-scheme: dark) {
-    .tag-item {
-        background-color: rgba(255, 255, 255, 0.08);
-        border-color: rgba(255,255,255,0.12);
-    }
-    .tag-item:hover {
-        background-color: var(--primary);
-    }
-}
-
-/* 响应式调整 */
-@media (max-width: 768px) {
-    .tags-cloud {
-        gap: 0.5rem;
-    }
-    .tag-item {
-        padding: 0.3rem 0.7rem;
-        font-size: 0.9em;
-    }
-    .tag-item sup {
-        font-size: 0.8em;
-    }
-}
-</style>
 
 {{- end }}{{/* end main */}}

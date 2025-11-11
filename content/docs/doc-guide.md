@@ -18,8 +18,8 @@ url: '/p/1/'
 
 　现在，是 AI 的时代，要学会使用 AI 解决问题。
 
-- <span class="ext-url">[豆包](https://doubao.com)</span>：回答问题快，推荐日常使用。
-- <span class="ext-url">[DeepSeek](https://deepseek.com)</span>：深度思考比较专业(慢)。
+- <mark>[豆包](https://doubao.com)</mark>：回答问题快，推荐日常使用。
+- <mark>[DeepSeek](https://deepseek.com)</mark>：深度思考比较专业(慢)。
 
 - - -
 
@@ -37,11 +37,11 @@ url: '/p/1/'
 
 <br>
 
-苹果：请通过 <span class="ext-url">[B.M.安装器](/app/imod/)</span> 安装模组。
+苹果：请通过 <mark>[B.M.安装器](/app/imod/)</mark> 安装模组。我用的安卓手机录视频，如果没有安卓手机，你需要在电脑上进行操作。
 
 {{< video src="/img/lv_0_20250901210841.mp4" poster="/img/lv_0_20250901210841.webp" scale="80%" >}}  
 
-安卓：请通过 MT管理器 安装模组。
+安卓：使用 MT管理器 安装模组，过程非常的简单。如果你觉得难，请找一下身边的同学/朋友帮忙，他们可以手把手教你操作。
 
 {{< video src="/img/lv_0_20250831182656.mp4" poster="/img/lv_0_20250831182656.webp" scale="80%" >}}  
 
@@ -56,7 +56,7 @@ url: '/p/1/'
 
 > 安卓，一款功能强大的文件管理软件。  
 
-**官方网站**: <span class="ext-url">[点击下载](https://mt2.cn)</span>  
+**官方网站**: <mark>[点击下载](https://mt2.cn)</mark>  
 {{< pan 工具 >}}  
 
 - - -
@@ -65,7 +65,7 @@ url: '/p/1/'
 
 > 《Shipwrecked》是一款生存冒险或策略类游戏。  
 
-**官方正版**: <span class="ext-url">[Android 1.33](https://play.google.com/store/apps/details?id=com.kleientertainment.doNotStarveShipwrecked)</span>、<span class="ext-url">[iOS 1.84](https://apps.apple.com/us/app/dont-starve-shipwrecked/id1147297267?l=zh)</span>  
+**官方正版**: <mark>[Android 1.33](https://play.google.com/store/apps/details?id=com.kleientertainment.doNotStarveShipwrecked)</mark>、<mark>[iOS 1.84](https://apps.apple.com/us/app/dont-starve-shipwrecked/id1147297267?l=zh)</mark>  
 
 {{< pan 游戏 >}}  
 
@@ -101,9 +101,9 @@ url: '/p/1/'
 
 > 各位大佬从“创意工坊”移植而来。  
 
-- 点击查看 → <span class="ext-url">[BM 模组列表](/mods)</span>  
+- 点击查看 → <mark>[BM 模组列表](/mods)</mark>  
 
-- 点击搜索→ <span class="ext-url">[模组相关文章](/search)</span>  
+- 点击搜索→ <mark>[模组相关文章](/search)</mark>  
 
 <!-- {{'  {{<pan"模组">}}  '}} -->
 
@@ -180,7 +180,7 @@ url: '/p/1/'
 <!-- - `0元/年` 淘宝开通88VIP，闲鱼39卖掉“年费-视频权益”，49卖掉“年费-音乐权益”，一共回血88元。 -->  
 <!-- - `10元/年` 闲鱼搜“夸克88VIP”，推荐选择24小时内发布的商品。 -->  
 <!--  -->
-<!-- !<span class="ext-url">[88vip下载速度](/img/1000205033.webp)</span> -->
+<!-- !<mark>[88vip下载速度](/img/1000205033.webp)</mark> -->
 <!-- {{< /details >}} -->
 
 
