@@ -12,52 +12,36 @@ weight: -9
 url: '/p/1/'
 ---
 
+
+
 ---
 
-## 前言
-
-　现在，是 AI 的时代，要学会使用 AI 解决问题。
+　现在，是 AI 的时代，要学会使用 AI 解决一些简单问题。
 
 - <mark>[豆包](https://doubao.com)</mark>：回答问题快，推荐日常使用。
 - <mark>[DeepSeek](https://deepseek.com)</mark>：深度思考比较专业(慢)。
 
-- - -
-
-## 教程
-
-{{< details summary="点击查看 → 文件列表" openByDefault="true" >}}
-  - <small>MT管理器.APK</small>  
-  - <small>BM25.08.20(1.33.5).APK</small>  
-  - <small>BM25.10.20.ZIP.XZ</small>  
-  - <small>BM000.ZIP.XZ</small>  
-  - <small>BM001.ZIP.XZ</small>  
-  - <small>...</small>  
-  - <small>BM035.ZIP.XZ</small>  
-{{< /details >}}
-
-<br>
-
-苹果：请通过 <mark>[B.M.安装器](/app/imod/)</mark> 安装模组。我用的安卓手机录视频，如果没有安卓手机，你需要在电脑上进行操作。
-
-{{< video src="/img/lv_0_20250901210841.mp4" poster="/img/lv_0_20250901210841.webp" scale="80%" >}}  
-
-安卓：使用 MT管理器 安装模组，过程非常的简单。如果你觉得难，请找一下身边的同学/朋友帮忙，他们可以手把手教你操作。
-
-{{< video src="/img/lv_0_20250831182656.mp4" poster="/img/lv_0_20250831182656.webp" scale="80%" >}}  
-
-<small>说明：文件 `XXX.ZIP.XZ` 的 `.XZ` 可删掉，它仅用于防止分享链接因“在线解压”而失效。</small>  
-
-
-<!-- {{"{{< bili BV1k8UFYAEjq >}}"}} -->
 
 - - -
 
-## 工具
+## 网盘
 
-> 安卓，一款功能强大的文件管理软件。  
+电脑，直接右键文件，可以跳转到下载目录。
 
-**官方网站**: <mark>[点击下载](https://mt2.cn)</mark>  
-{{< pan 工具 >}}  
+安卓，下载目录  
+
+    百度：
+        /sdcard/Download/BaiduNetdisk/
+
+    夸克：
+        /sdcard/Download/QuarkDownloads/
+
+<!-- 迅雷： -->
+   <!-- /sdcard/Android/data/com.xunlei.downloadprovider/files/ThunderDownload/ -->
+
+小提示：
+- 不要在线解压，不要在线解压，不要在线解压！！！建议看一下[《电子扫盲课》](https://b23.tv/ehsLDnw)。
+- 网盘下载速度慢，你可以在闲鱼搜一下“百度网盘 SVIP”、“夸克网盘 88VIP”。
 
 - - -
 
@@ -150,23 +134,20 @@ url: '/p/1/'
 
 - - -
 
-## 网盘
+## 工具
 
-(安卓)手机下载目录  
+　 <mark>[B.M.安装器](/app/imod/)</mark> 推荐新人小白使用，可以给安卓/苹果版饥荒装模组。
 
-    百度：
-        /sdcard/Download/BaiduNetdisk/
+{{< video src="/img/lv_0_20250901210841.mp4" poster="/img/lv_0_20250901210841.webp" scale="80%" >}}  
 
-    夸克：
-        /sdcard/Download/QuarkDownloads/
+　 <mark>[MT管理器](https://mt2.cn)</mark> 需要有一定学习能力，仅可给安卓版饥荒装模组。
 
-<!-- 迅雷： -->
-   <!-- /sdcard/Android/data/com.xunlei.downloadprovider/files/ThunderDownload/ -->
+{{< video src="/img/lv_0_20250831182656.mp4" poster="/img/lv_0_20250831182656.webp" scale="80%" >}}  
 
-小提示：
-- 不要在线解压，不要在线解压，不要在线解压！！！建议看一下[《电子扫盲课》](https://b23.tv/ehsLDnw)。
-- 网盘下载速度慢，你可以在闲鱼搜一下“百度网盘 SVIP”、“夸克网盘 88VIP”。
+<small>说明：文件 `XXX.ZIP.XZ` 的 `.XZ` 可删掉，它仅用于防止分享链接因“在线解压”而失效。</small>  
 
+
+<!-- {{"{{< bili BV1k8UFYAEjq >}}"}} -->
 
 <!--  -->
 <!-- {{< details summary="临时使用，推荐“百度网盘 SVIP”" openByDefault="true" >}} -->

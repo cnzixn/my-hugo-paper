@@ -27,7 +27,7 @@
         <div class="keywords-container">
             {{- $tags := .Site.Taxonomies.tags.ByCount -}}
             {{- if $tags }}
-                {{- $excludeTags := slice "模组" "test" "免责声明" -}}
+                {{- $excludeTags := slice "模组" "免责声明" "公告" "资料" "框架" "test" -}}
                 {{- range $tag := $tags }}
                     {{- if and (ge .Count 1) (ne .Term "") }}
                         {{- $shouldExclude := false -}}
