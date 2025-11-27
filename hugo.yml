@@ -19,15 +19,31 @@ minify:
 # ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- #
 markup:
   goldmark:
+    parser:
+      wrapStandAloneImageWithinParagraph: false
+      extensions:
+        # 禁用可能触发代码块的多余扩展（按需保留必要功能）
+        definitionList: true
+        footnote: true
+        linkify: true
+        strikethrough: true
+        table: true
+        taskList: true
+        typographer: true
     renderer:
       unsafe: true
   highlight:
     noClasses: true
     anchorLineNos: false
-    codeFences: true
+    codeFences: true  # 保留代码围栏解析
     guessSyntax: true
     lineNos: false
-    style: "algol_nu" # https://xyproto.github.io/splash/docs/all.html?app_lang=zh-CN
+    style: "algol_nu"
+
+
+
+
+
 
 # privacy:
   # vimeo:
