@@ -18,8 +18,6 @@
 <!-- 广告区域：网页式块级布局（仅显示指定域名广告） -->
 <div class="ads-container">
     {{- range .Site.Data.acards }}
-        {{- /* 过滤条件：仅当 url 包含 "https://h5.lot-ml.com" 时才渲染 */}}
-        {{- if in .url "https://h5.lot-ml.com" }}
         <!-- 单个广告卡片 -->
         <a href="{{ .url }}" class="ad-card" target="_blank" rel="noopener noreferrer">
             <!-- <div class="ad-icon"> -->
@@ -30,10 +28,8 @@
             </div>
             <div class="ad-arrow">→</div> <!-- 引导点击的箭头 -->
         </a>
-        {{- end }}
     {{- end }}
 </div>
-
 
 <!-- 美化样式：适配网页视觉 -->
 <style>

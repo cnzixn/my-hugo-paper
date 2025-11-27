@@ -8,6 +8,7 @@ tags:
 aliases:
 - 'winlator'
 comments: false
+url: '/p/8/'
 ---
 
 > 手机上玩电脑游戏，还是比较舒服的。

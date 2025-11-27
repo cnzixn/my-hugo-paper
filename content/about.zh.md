@@ -19,13 +19,13 @@ searchHidden: true
 
 - 兔人框架  
 
-  - 框架本质上是一个“模组”，修复了被官方删减的模组支持功能。  
+  - 框架已适配 _[苹果1.84](https://apps.apple.com/us/app/dont-starve-shipwrecked/id1147297267?l=zh)_ 和 _[安卓1.33](https://play.google.com/store/apps/details?id=com.kleientertainment.doNotStarveShipwrecked)_ 版本。  
+
+  - 框架本质上是一个“模组”，恢复了被官方删减的模组支持功能。  
   
   - 框架安装后，可以使用“海洋之椅”在“巨人国”(RoG)和“船难”(SW)进行穿越。骑牛、栅栏、打包纸等内容，需要通过模组加入到游戏。  
   
   - “DS补丁”由于早期代码公开，被拿去各种魔改用于“收费”，现已停止维护。框架是“DS补丁”的升级版本。  
-
-  - 框架已适配饥荒 <span class="ext-url">[Android 1.33](https://play.google.com/store/apps/details?id=com.kleientertainment.doNotStarveShipwrecked)</span> 和 <span class="ext-url">[iOS 1.84](https://apps.apple.com/us/app/dont-starve-shipwrecked/id1147297267?l=zh)</span>。  
 
 
 
@@ -58,7 +58,8 @@ searchHidden: true
   - 持续改进和丰富网站的内容。  
 
 - 你可以通过以下方式赞助本站：  
-  - 扫描一下二维码  
+  - _[[橱窗]办流量卡](/llk)_
+  - 扫描以下二维码  
   {{< figure 
     src="/img/pay-qrcode.webp" 
     alt="二维码" 
@@ -102,13 +103,13 @@ searchHidden: true
   <!-- title: 苹果群 -->
   <!-- url: "https://qm.qq.com/q/88L6QyUQVi" -->
 
-- 【频道】<span class="ext-url">[兔人协会](https://pd.qq.com/s/bl6w0albb?b=5)</span>，发帖交流便于大家“分享日常”、“反馈问题”。  
+- 【频道】_[兔人协会](https://pd.qq.com/s/bl6w0albb?b=5)_，发帖交流便于大家“分享日常”、“反馈问题”。  
 
-- 【主群3k】<span class="ext-url">[614255348](https://qm.qq.com/q/g0weZCVQMU)</span>，暂停入群，仅用于搜索群号找到我们。  
+- 【3k】_[614255348](https://qm.qq.com/q/g0weZCVQMU)_，暂停入群，仅用于搜索群号找到我们。  
 
-- 【分群2k】<span class="ext-url">[696529613</i>](https://qm.qq.com/q/3xoKf5H4EM)</span>，安卓分区，免费加群，群员自治，新人互帮互助。  
+- 【2k】_[696529613</i>](https://qm.qq.com/q/3xoKf5H4EM)_，安卓分区，免费加群，群员自治，新人互帮互助。  
 
-- 【分群1k】<span class="ext-url">[905142474</i>](https://qm.qq.com/q/88L6QyUQVi)</span>，苹果分区，免费加群，群员自治，新人互帮互助。  
+- 【1k】_[905142474</i>](https://qm.qq.com/q/88L6QyUQVi)_，苹果分区，免费加群，群员自治，新人互帮互助。  
 
 
 ---

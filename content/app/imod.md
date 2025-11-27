@@ -123,7 +123,7 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
   <h2>1. 选择安装包<span class="pill">自动识别 APK / IPA</span></h2>
   <!-- <p class="muted">拖入或选择 <strong>.apk</strong>（安卓）或 <strong>.ipa</strong>（苹果）。</p> -->
   <div id="pkgDropZone" class="drop-zone">
-    <p>拖放 .apk / .ipa 到这里 或</p>
+    <p>拖放 apk/ipa 文件到这里 或</p>
     <button id="pkgBrowseBtn">选择安装包</button>
     <input type="file" id="pkgFileInput" accept=".apk,.ipa" style="display:none;">
   </div>
@@ -135,9 +135,9 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
   <h2>2. 选择模组文件<span class="pill">支持 BM框架/BM模组/BM补丁/自制模组 </span></h2>
   <!-- <p class="muted">支持 BM 框架 / BM 模组 / BM 补丁 / 三方模组（<code>.zip</code> / <code>.xz</code>）。</p> -->
   <div id="modsDropZone" class="drop-zone">
-    <p>拖放 .zip / .xz 到这里 或</p>
+    <p>拖放 zip/xz/xor 文件到这里 或</p>
     <button id="modsBrowseBtn">选择模组文件</button>
-    <input type="file" id="modsFileInput" accept=".zip,.xz" multiple style="display:none;">
+    <input type="file" id="modsFileInput" accept=".zip,.xz,.xor" multiple style="display:none;">
   </div>
   <div id="modsFileList" class="file-list" style="display:none;"></div>
   <div id="modsError" class="error"></div>

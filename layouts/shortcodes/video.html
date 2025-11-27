@@ -1,34 +1,77 @@
 {{- $videoPath := .Get "src" | default (.Get 0) -}}
-{{- $posterPath := .Get "poster" -}} <!-- 获取封面参数 -->
-{{- $scale := .Get "scale" | default "100%" -}}
+{{- $posterPath := .Get "poster" -}}
+{{- $videoId := print "video-" (md5 $videoPath) -}}
+{{- $floatId := print "float-" (md5 $videoPath) -}}
 
 {{if $videoPath}}
-  
-  <div style="display: flex; justify-content: center; margin: 1em 0;">  
-    <div style="  
-      position: relative;  
-      width: {{ $scale }};  
-      aspect-ratio: 5 / 7.8;  
-      overflow: hidden;  
-      border-radius: 12px;  
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);  
-    ">
-      <video 
-        src="{{ $videoPath }}" 
-        {{ with $posterPath }}poster="{{ . }}"{{ end }}
-        controls 
-        style="  
-          width: 100%;  
-          height: 100%;  
-          object-fit: cover; 
-          border-radius: 12px;  
-        "
-      ></video>  
-    </div>  
-  </div>  
-{{else}}  
-  <h6>请填写视频路径，例如：{{ "{{< video src=\"/img/xxx.mp4\" >}}" }}</h6>  
+  <!-- 封面触发区 -->
+  <div style="text-align: center; margin: 1em 0;">
+    <div style="
+      display: inline-block;
+      position: relative;
+      max-width: 100%;
+      cursor: pointer;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    " onclick="openFloat('{{ $videoId }}', '{{ $floatId }}')">
+      {{ with $posterPath }}
+        <img src="{{ . }}" style="max-width: 100%; height: auto;" alt="视频封面">
+      {{ else }}
+        <video src="{{ $videoPath }}" style="max-width: 100%; height: auto;" preload="metadata"></video>
+      {{ end }}
+      <!-- 播放按钮 -->
+      <div style="
+        position: absolute;
+        inset: 0;
+        background: rgba(0,0,0,0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      ">
+        <div style="
+          width: 60px; height: 60px;
+          border-radius: 50%;
+          background: rgba(255,255,255,0.9);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        ">
+          <span style="color: #000; font-size: 24px; margin-left: 5px;">▶</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 浮窗容器 -->
+  <div id="{{ $floatId }}" style="
+    display: none;
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 90vw;
+    max-width: 600px;
+    background: #000;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.5);
+  ">
+    <video id="{{ $videoId }}" src="{{ $videoPath }}" {{ with $posterPath }}poster="{{ . }}"{{ end }} controls style="width: 100%; height: auto;"></video>
+  </div>
+
+  <script>
+    function openFloat(videoId, floatId) {
+      const floatEl = document.getElementById(floatId);
+      const video = document.getElementById(videoId);
+      
+      floatEl.style.display = 'block';
+      video.play();
+      
+      // 暂停关闭浮窗
+      video.onpause = () => floatEl.style.display = 'none';
+    }
+  </script>
+{{else}}
+  <h6 style="text-align: center; color: #666;">请填写视频路径，例如：{{ "{{< video src=\"/img/xxx.mp4\" >}}" }}</h6>
 {{end}}
-
-
-

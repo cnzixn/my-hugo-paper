@@ -8,7 +8,7 @@ tags:
 aliases:
 - 'ynxg'
 comments: false
-url: '/p/397/'
+url: '/p/395/'
 ---
 
 

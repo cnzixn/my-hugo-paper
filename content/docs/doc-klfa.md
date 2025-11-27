@@ -8,7 +8,7 @@ tags:
 - '资料'
 aliases:
 - 'klfa'
-url: '/p/12/'
+url: '/p/10/'
 ---
 
 !<span class="ext-url">[图片](/img/Image_1752847449499.webp)</span>

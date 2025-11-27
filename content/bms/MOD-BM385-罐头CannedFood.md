@@ -7,7 +7,7 @@ tags:
 - '实用'
 aliases:
 - 'BM385'
-url: '/p/751/'
+url: '/p/749/'
 ---
 
 > 本文介绍了模组 **罐头CannedFood** 的功能与特点。

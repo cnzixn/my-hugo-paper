@@ -7,10 +7,13 @@ tags:
 - '资料'
 aliases:
 - 'guide'
-comments: true
+comments: false
 weight: -9
 url: '/p/1/'
 ---
+
+<!-- 自动跳转标签，跳转到目标页面 -->
+<meta http-equiv="refresh" content="0;url=/app/guide">
 
 
 
@@ -53,7 +56,7 @@ url: '/p/1/'
 
 {{< pan 游戏 >}}  
 
-<small> **免责**：<br>　目前“国区”无法购买正版手游(单机版)，网盘分享只是提供一个“干净”的试玩版本。<br>　我们尊重版权，请大家去 AppStore 、Play商店 购买正版(可能需要“海外”账号)。如果你不会“科学上网”，可以上 Steam 或 Wegame 购买一份 DST 补票。</small>  
+  <small> **免责声明**：<br>　目前，国内“应用商店”未上架手游单机版，网盘分享仅供试玩。<br>　我们尊重版权，请大家去 _[AppStore](https://play.google.com/store/apps/details?id=com.kleientertainment.doNotStarveShipwrecked)_ 、_[Play商店](https://apps.apple.com/us/app/dont-starve-shipwrecked/id1147297267?l=zh)_ 购买正版。<br>　如果你不会“科学上网”，可以上 Steam 购买一份 DST 补票。</small>  
 
 
 - - -
