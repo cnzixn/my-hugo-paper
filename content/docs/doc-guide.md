@@ -13,7 +13,18 @@ url: '/p/1/'
 ---
 
 <!-- 自动跳转标签，跳转到目标页面 -->
-<meta http-equiv="refresh" content="0;url=/app/guide">
+<!-- <meta http-equiv="refresh" content="0;url=/app/guide"> -->
+
+<script>
+// 若 window.location 失效，备用方案确保跳转
+if (window.location.replace) {
+  // replace 方法不会在历史记录中留下原页面，跳转更流畅
+  window.location.replace("/app/guide");
+} else {
+  window.location.href = "/app/guide";
+}
+</script>
+
 
 <!-- <p style="text-align: center; margin-top: 50px;"> -->
  <!-- 页面将在 3 秒后自动跳转到新人指引页面...<br> -->

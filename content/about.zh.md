@@ -21,7 +21,7 @@ searchHidden: true
 
   - 框架已适配 _[苹果1.84](https://apps.apple.com/us/app/dont-starve-shipwrecked/id1147297267?l=zh)_ 和 _[安卓1.33](https://play.google.com/store/apps/details?id=com.kleientertainment.doNotStarveShipwrecked)_ 版本。  
 
-  - 框架本质上是一个“模组”，恢复了被官方删减的模组支持功能。  
+  - 框架本质上是一个“模组”，恢复了被官方删减的模组功能。  
   
   - 框架安装后，可以使用“海洋之椅”在“巨人国”(RoG)和“船难”(SW)进行穿越。骑牛、栅栏、打包纸等内容，需要通过模组加入到游戏。  
   
