@@ -82,7 +82,7 @@ summary: "一组教学小卡片，教你如何安装模组。"
 
   {{< pan "框架" >}}
 
-　备注：文件`BM000(词库+壁纸)`是扩展内容，新人玩家不用了解。  
+  <small>备注：文件`BM000(词库+壁纸)`是扩展内容，新人玩家不用了解。</small>  
   </div>
   <div class="task-nav">
     <button class="btn prev-btn">上一步</button>
@@ -112,17 +112,17 @@ summary: "一组教学小卡片，教你如何安装模组。"
 <div class="task-card" data-task>
   <h2>卡片<span class="card-number">5</span>：安装兔人框架/模组</h2>
   <div class="task-content">
-　工具：
+  根据需要，选择模组安装工具：
   <div class="btn-group">
-    <button class="btn" onclick="window.open('/app/imod', '_blank')">(通用)B.M.安装器</button>
-    <button class="btn" onclick="window.open('https://mt2.cn', '_blank')">(安卓)MT管理器</button>
+    <button class="btn" onclick="window.open('/app/imod', '_blank')">B.M.安装器</button>
+    <button class="btn" onclick="window.open('https://mt2.cn', '_blank')">MT管理器</button>
   </div>
 
-　演示：  
-  <small>(提示：视频暂停，可退出视频播放浮窗)</small>
+  查看相应的视频演示：  
+  <small>(视频暂停，可退出播放浮窗)</small>
   <div class="btn-group">
-    <button class="btn" onclick="installMethod('auto')">(通用)B.M.安装器</button>
-    <button class="btn" onclick="installMethod('manual')">(安卓)MT管理器</button>
+    <button class="btn" onclick="installMethod('auto')">B.M.安装器</button>
+    <button class="btn" onclick="installMethod('manual')">MT管理器</button>
   </div>
   <div id="install-guide-auto" style="margin-top:15px; display:none;">
     {{< video src="/img/lv_0_20250901210841.mp4" poster="/img/lv_0_20250901210841.webp" scale="90%" >}}  
@@ -131,7 +131,7 @@ summary: "一组教学小卡片，教你如何安装模组。"
     {{< video src="/img/lv_0_20250831182656.mp4" poster="/img/lv_0_20250831182656.webp" scale="90%" >}}  
   </div>
 
-  <small>备注：若使用MT管理器，则需要使用 _[B.M.解密器](/app/xor)_ 处理`.XOR`的文件。</small>  
+  <small>备注：使用(安卓)MT管理器，需通过 _[B.M.解密器](/app/xor)_ 处理`.XOR`的文件。</small>  
   </div>
   <div class="task-nav">
     <button class="btn prev-btn">上一步</button>
@@ -242,21 +242,6 @@ init();
 </script>
 
 <style>
-/* 基础重置 */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-}
-
-body {
-  line-height: 1.7;
-  background: var(--theme);
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
 
 /* 标题 */
 h1 {
@@ -363,7 +348,7 @@ h1 {
 
 /* 按钮基础样式 */
 .btn {
-  padding: 0.3rem 0.6rem;
+  padding: 0.3rem 2rem;
   border-radius: 4px;
   border: none;
   font-size: 0.9rem;
@@ -386,12 +371,13 @@ h1 {
   opacity: 0.7;
 }
 
+
 /* 任务导航 */
 .task-nav {
   display: flex;
   justify-content: center;
   margin: 1rem 0;
-  gap: 2rem;
+  gap: 0.75rem;
 }
 
 /* 响应式调整 */
@@ -409,9 +395,8 @@ h1 {
 
 /* 网盘卡片 */
 .pan-actions {
-  transform: scale(0.8);
+  transform: scale(90%);
   transform-origin: top left;
-  margin-bottom: -1rem;
-  width: 125%;
+  margin-bottom: -0.5rem;
 }
 </style>
