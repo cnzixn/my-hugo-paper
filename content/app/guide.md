@@ -30,8 +30,8 @@ summary: "一组教学小卡片，教你如何安装模组。"
   - _[DeepSeek](https://deepseek.com)_：深度思考比较专业(慢)。  
   </div>
   <div class="task-nav">
-    <button class="btn prev-btn" disabled>上一步</button>
-    <button class="btn next-btn">下一步</button>
+    <button class="btn prev-btn" disabled>上一个</button>
+    <button class="btn next-btn">下一个</button>
   </div>
 </div>
 
@@ -48,8 +48,8 @@ summary: "一组教学小卡片，教你如何安装模组。"
 
   </div>
   <div class="task-nav">
-    <button class="btn prev-btn">上一步</button>
-    <button class="btn next-btn">下一步</button>
+    <button class="btn prev-btn">上一个</button>
+    <button class="btn next-btn">下一个</button>
   </div>
 </div>
 
@@ -69,8 +69,8 @@ summary: "一组教学小卡片，教你如何安装模组。"
   <small> **免责声明**：<br> 目前，国内“应用商店”未上架手游单机版，网盘分享仅供试玩。<br> 如果你不会“科学上网”，可以上 Steam 购买一份 DST 补票。</small>  
   </div>
   <div class="task-nav">
-    <button class="btn prev-btn">上一步</button>
-    <button class="btn next-btn">下一步</button>
+    <button class="btn prev-btn">上一个</button>
+    <button class="btn next-btn">下一个</button>
   </div>
 </div>
 
@@ -85,8 +85,8 @@ summary: "一组教学小卡片，教你如何安装模组。"
   <small>备注：文件`BM000(词库+壁纸)`是扩展内容，新人玩家不用了解。</small>  
   </div>
   <div class="task-nav">
-    <button class="btn prev-btn">上一步</button>
-    <button class="btn next-btn">下一步</button>
+    <button class="btn prev-btn">上一个</button>
+    <button class="btn next-btn">下一个</button>
   </div>
 </div>
 
@@ -104,8 +104,8 @@ summary: "一组教学小卡片，教你如何安装模组。"
       
   </div>
   <div class="task-nav">
-    <button class="btn prev-btn">上一步</button>
-    <button class="btn next-btn">下一步</button>
+    <button class="btn prev-btn">上一个</button>
+    <button class="btn next-btn">下一个</button>
   </div>
 </div>
 
@@ -114,15 +114,15 @@ summary: "一组教学小卡片，教你如何安装模组。"
   <div class="task-content">
   根据需要，选择模组安装工具：
   <div class="btn-group">
-    <button class="btn" onclick="window.open('/app/imod', '_blank')">B.M.安装器</button>
-    <button class="btn" onclick="window.open('https://mt2.cn', '_blank')">MT管理器</button>
+    <button class="btn" onclick="window.open('/app/imod', '_blank')">🧰B.M.安装器</button>
+    <button class="btn" onclick="window.open('https://mt2.cn', '_blank')">🧰MT管理器</button>
   </div>
 
   查看相应的视频演示：  
-  <small>(视频暂停，可退出播放浮窗)</small>
+  <small>(Tip：视频暂停，可退出播放浮窗)</small>
   <div class="btn-group">
-    <button class="btn" onclick="installMethod('auto')">B.M.安装器</button>
-    <button class="btn" onclick="installMethod('manual')">MT管理器</button>
+    <button class="btn" onclick="installMethod('auto')">📽B.M.安装器</button>
+    <button class="btn" onclick="installMethod('manual')">📽MT管理器</button>
   </div>
   <div id="install-guide-auto" style="margin-top:15px; display:none;">
     {{< video src="/img/lv_0_20250901210841.mp4" poster="/img/lv_0_20250901210841.webp" scale="90%" >}}  
@@ -134,8 +134,8 @@ summary: "一组教学小卡片，教你如何安装模组。"
   <small>备注：使用(安卓)MT管理器，需通过 _[B.M.解密器](/app/xor)_ 处理`.XOR`的文件。</small>  
   </div>
   <div class="task-nav">
-    <button class="btn prev-btn">上一步</button>
-    <button class="btn next-btn">下一步</button>
+    <button class="btn prev-btn">上一个</button>
+    <button class="btn next-btn">下一个</button>
   </div>
 </div>
 
@@ -149,8 +149,8 @@ summary: "一组教学小卡片，教你如何安装模组。"
   <p style="color:#2ecc71; font-size:16px; font-weight:bold;"> 恭喜，已完成全部学习！</p>
   </div>
   <div class="task-nav">
-    <button class="btn prev-btn">上一步</button>
-    <button class="btn next-btn" disabled>下一步</button>
+    <button class="btn prev-btn">上一个</button>
+    <button class="btn next-btn" disabled>下一个</button>
   </div>
 </div>
 
@@ -205,9 +205,9 @@ function updateNavButtons() {
     const prevBtn = card.querySelector('.prev-btn');
     const nextBtn = card.querySelector('.next-btn');
 
-    // 第一个卡片禁用上一步
+    // 第一个卡片禁用上一个
     prevBtn.disabled = index === 0;
-    // 最后一个卡片禁用下一步
+    // 最后一个卡片禁用下一个
     nextBtn.disabled = index === totalTasks - 1;
 
     // 绑定按钮点击事件
@@ -348,7 +348,7 @@ h1 {
 
 /* 按钮基础样式 */
 .btn {
-  padding: 0.3rem 2rem;
+  padding: 0.3rem 1.8rem;
   border-radius: 4px;
   border: none;
   font-size: 0.9rem;
