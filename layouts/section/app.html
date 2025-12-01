@@ -1,0 +1,104 @@
+{{ define "main" }}
+<header class="page-header">
+    <h1>{{- (printf "%s&nbsp;" .Title ) | htmlUnescape -}}</h1>
+    {{- if .Description }}
+    <div class="post-description">
+        {{ .Description }}
+    </div>
+    {{- end }}
+    {{- if not (.Param "hideMeta") }}
+    <div class="post-meta">
+        {{- partial "translation_list.html" . -}}
+    </div>
+    {{- end }}
+</header>
+
+<!-- 公告 -->
+{{ partial "ads.html" . }}
+
+<main class="post-list">
+  <!-- 模板逻辑：过滤 appHidden: true 的文章 + 整卡跳转 + 草稿标识 -->
+  {{ range where .Pages "Params.appHidden" "!=" true }}
+    <a href="{{ .RelPermalink }}" class="app-card-link">
+      <div class="app-card">
+        <!-- 核心：PaperMod 风格草稿标识 -->
+        <div class="app-card-header">
+          <h3 class="app-card-title">{{ .Title }}</h3>
+          {{- if .Draft }}
+            <span class="entry-hint" title="Draft">
+              <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+                <path
+                  d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+              </svg>
+            </span>
+          {{- end }}
+        </div>
+        {{ if .Summary }}
+          <p class="app-card-summary">{{ .Summary }}</p>
+        {{ end }}
+      </div>
+    </a>
+  {{ end }}
+</main>
+
+<!-- 单独存放 CSS 样式 -->
+<style>
+/* 卡片链接：消除默认样式，确保整卡可点击 */
+.app-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* 卡片主体样式 */
+.app-card {
+  margin: 1.5rem 0;
+  padding: 1.2rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background: var(--theme);
+}
+
+/* 卡片悬浮交互 */
+.app-card:hover {
+  border-color: var(--tertiary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* 标题+草稿标识容器 */
+.app-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+/* 卡片标题样式 */
+.app-card-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.15rem;
+  flex: 1;
+}
+
+/* PaperMod 风格草稿标识 */
+.draft-badge {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--error);
+  border: 1px solid var(--error-light);
+  border-radius: 4px;
+  background: var(--error-bg);
+}
+
+/* 卡片摘要样式 */
+.app-card-summary {
+  margin: 0;
+  color: var(--primary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+</style>
+{{ end }}

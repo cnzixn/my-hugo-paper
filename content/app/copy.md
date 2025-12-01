@@ -2,7 +2,7 @@
 title: 'B.M.剪贴板'
 layout: 'aapp'
 searchHidden: true
-hideTitlt: true
+appHidden: true # 自定义实现，App列表隐藏
 weight: 250009
 summary: '通过访问链接将[数据]导出，方便复制使用。'
 ---
