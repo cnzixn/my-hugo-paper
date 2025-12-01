@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (!dataParam) {
     loading.style.display = 'none';
-    error.innerHTML = '<p>缺少 data 参数，请传入 Base64 加密的链接</p>';
+    error.innerHTML = '<p>链接解析失败，缺少 data 参数</p>';
     error.style.display = 'block';
     return;
   }
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const targetUrl = base64Decode(dataParam);
   if (!targetUrl || !targetUrl.startsWith('http')) {
     loading.style.display = 'none';
-    error.innerHTML = '<p>链接解析失败，请确保是有效的 Base64 加密网址</p>';
+    error.innerHTML = '<p>链接解析失败，请确保是有效的网址</p>';
     error.style.display = 'block';
     return;
   }
