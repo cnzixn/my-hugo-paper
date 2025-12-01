@@ -1,6 +1,5 @@
 ---
 title: '关于'
-layout: 'single'
 date: 2025-01-01
 author: 'Bny'
 searchHidden: true
