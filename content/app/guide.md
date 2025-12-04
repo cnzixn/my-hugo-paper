@@ -119,16 +119,16 @@ summary: "一组教学小卡片，教你如何安装模组。"
   </div>
 
   查看相应的视频演示：  
-  <small>(Tip：视频暂停，可退出播放浮窗)</small>
+  <small>(Tip：拖动进度条到结尾，可直接退出播放)</small>
   <div class="btn-group">
     <button class="btn" onclick="installMethod('auto')">📽B.M.安装器</button>
     <button class="btn" onclick="installMethod('manual')">📽MT管理器</button>
   </div>
   <div id="install-guide-auto" style="margin-top:15px; display:none;">
-    {{< video src="/img/lv_0_20250901210841.mp4" poster="/img/lv_0_20250901210841.webp" scale="90%" >}}  
+    {{< video id="install-guide-auto-video" src="/img/lv_0_20250901210841.mp4" poster="/img/lv_0_20250901210841.webp" crop="true" cropHeight="85%" >}}  
   </div>
   <div id="install-guide-manual" style="margin-top:15px; display:none;">
-    {{< video src="/img/lv_0_20250831182656.mp4" poster="/img/lv_0_20250831182656.webp" scale="90%" >}}  
+    {{< video id="install-guide-manual-video" src="/img/lv_0_20250831182656.mp4" poster="/img/lv_0_20250831182656.webp" crop="true" cropHeight="75%" >}}  
   </div>
 
   <small>备注：使用(安卓)MT管理器，需通过 _[B.M.解密器](/app/xor)_ 处理`.XOR`的文件。</small>  
@@ -224,18 +224,69 @@ function updateProgressBar() {
   progressBar.style.width = `${progress}%`;
 }
 
-// 安装方式切换函数
-function installMethod(type) {
-  const guide1 = document.getElementById('install-guide-auto');
-  const guide2 = document.getElementById('install-guide-manual');
-  if (type === 'auto') {
-    guide1.style.display = 'block';
-    guide2.style.display = 'none';
-  } else {
-    guide1.style.display = 'none';
-    guide2.style.display = 'block';
-  }
-}
+let currentPlayingVideoId = null;
+ // 停止所有视频+隐藏浮窗
+ function stopAllVideos() {
+   if (currentPlayingVideoId) {
+     const oldVideo = document.getElementById(`video-${currentPlayingVideoId}`);
+     const oldFloat = document.getElementById(`float-${currentPlayingVideoId}`);
+     if (oldVideo) {
+       oldVideo.pause();
+       oldVideo.currentTime = 0;
+       oldVideo.onpause = null;
+       oldVideo.onended = null;
+     }
+     if (oldFloat) oldFloat.style.display = 'none';
+     // 隐藏旧视频的父容器
+     if (currentPlayingVideoId === 'install-guide-auto-video') {
+       document.getElementById('install-guide-auto').style.display = 'none';
+     } else {
+       document.getElementById('install-guide-manual').style.display = 'none';
+     }
+     currentPlayingVideoId = null;
+   }
+ }
+ function installMethod(type) {
+   stopAllVideos(); // 先停旧视频
+   const guideAuto = document.getElementById('install-guide-auto');
+   const guideManual = document.getElementById('install-guide-manual');
+   const videoCustomId = type === 'auto' ? 'install-guide-auto-video' : 'install-guide-manual-video';
+   const videoElId = `video-${videoCustomId}`;
+   const floatElId = `float-${videoCustomId}`;
+   // 显示当前视频的父容器（关键修复！），但设置height:0隐藏封面
+   if (type === 'auto') {
+     guideAuto.style.display = 'block';
+     guideManual.style.display = 'none';
+   } else {
+     guideManual.style.display = 'block';
+     guideAuto.style.display = 'none';
+   }
+   // 获取元素并播放
+   const videoEl = document.getElementById(videoElId);
+   const floatEl = document.getElementById(floatElId);
+   if (!videoEl || !floatEl) {
+     console.log('元素未找到：', videoElId, floatElId);
+     return;
+   }
+   // 强制显示浮窗（双重保障）
+   floatEl.style.display = 'block';
+   currentPlayingVideoId = videoCustomId;
+   // 播放视频
+   videoEl.play().catch(err => {
+     alert('自动播放被浏览器阻止，请点击视频内播放按钮');
+     console.log('播放失败：', err);
+   });
+   videoEl.onended = function() {
+     floatEl.style.display = 'none';
+     if (type === 'auto') guideAuto.style.display = 'none';
+     else guideManual.style.display = 'none';
+     currentPlayingVideoId = null;
+   };
+ }
+ // 覆盖模板函数
+ function triggerVideoPlay(customId) {
+   installMethod(customId === 'install-guide-auto-video' ? 'auto' : 'manual');
+ }
 
 // 初始化
 init();

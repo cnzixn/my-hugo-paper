@@ -1,20 +1,28 @@
+{{- /* 视频短代码：直接拼接ID，避免模板解析问题 */ -}}
 {{- $videoPath := .Get "src" | default (.Get 0) -}}
 {{- $posterPath := .Get "poster" -}}
-{{- $videoId := print "video-" (md5 $videoPath) -}}
-{{- $floatId := print "float-" (md5 $videoPath) -}}
+{{- $customId := .Get "id" -}}{{/* 必须唯一：如"install-guide-auto-video0" */}}
+{{- $crop := .Get "crop" | default "false" -}}
+{{- $cropWidth := .Get "cropWidth" | default "90%" -}}
+{{- $cropHeight := .Get "cropHeight" | default "auto" -}}
+{{- /* 直接拼接ID字符串，不依赖模板变量解析 */ -}}
+{{- $floatIdStr := print "float-" $customId -}}
+{{- $videoIdStr := print "video-" $customId -}}
+{{- $triggerIdStr := print "trigger-" $customId -}}
 
 {{if $videoPath}}
-  <!-- 封面触发区 -->
+  <!-- 封面触发区（直接写死拼接后的ID字符串，确保生效） -->
   <div style="text-align: center; margin: 1em 0;">
-    <div style="
-      display: inline-block;
-      position: relative;
-      max-width: 100%;
-      cursor: pointer;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    " onclick="openFloat('{{ $videoId }}', '{{ $floatId }}')">
+    <div id="{{ $triggerIdStr }}"
+      style="
+        display: inline-block;
+        position: relative;
+        max-width: 100%;
+        cursor: pointer;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      " onclick="videoPlayer.triggerVideoPlay('{{ $floatIdStr }}', '{{ $videoIdStr }}')">
       {{ with $posterPath }}
         <img src="{{ . }}" style="max-width: 100%; height: auto;" alt="视频封面">
       {{ else }}
@@ -43,35 +51,82 @@
     </div>
   </div>
 
-  <!-- 浮窗容器 -->
-  <div id="{{ $floatId }}" style="
+  <!-- 浮窗容器（ID直接拼接，确保与onclick一致） -->
+  <div id="{{ $floatIdStr }}" style="
     display: none;
     position: fixed;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1000;
-    width: 90vw;
-    max-width: 600px;
+    z-index: 9999;
     background: #000;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 30px rgba(0,0,0,0.5);
+    {{- if eq $crop "true" }}
+      width: {{ $cropWidth }};
+      height: {{ $cropHeight }};
+    {{- else }}
+      width: 90vw;
+      height: auto;
+    {{- end }}
   ">
-    <video id="{{ $videoId }}" src="{{ $videoPath }}" {{ with $posterPath }}poster="{{ . }}"{{ end }} controls style="width: 100%; height: auto;"></video>
+    <!-- 视频元素（ID直接拼接，与封面onclick精准匹配） -->
+    <video id="{{ $videoIdStr }}" 
+      src="{{ $videoPath }}" 
+      {{ with $posterPath }}poster="{{ . }}"{{ end }}
+      controls 
+      style="
+        width: 100%;
+        height: 100%;
+        {{- if eq $crop "true" }}
+          object-fit: cover;
+          object-position: center;
+        {{- else }}
+          object-fit: contain;
+        {{- end }}
+      "
+      playsinline webkit-playsinline
+      onended="videoPlayer.closeVideoFloat('{{ $floatIdStr }}', '{{ $videoIdStr }}')">
+    </video>
   </div>
-
+  
   <script>
-    function openFloat(videoId, floatId) {
-      const floatEl = document.getElementById(floatId);
-      const video = document.getElementById(videoId);
-      
-      floatEl.style.display = 'block';
-      video.play();
-      
-      // 暂停关闭浮窗
-      video.onpause = () => floatEl.style.display = 'none';
+window.videoPlayer = window.videoPlayer || {
+  currentOpenVideo: null,
+  triggerVideoPlay: function(floatId, videoId) {
+    // 关闭已打开视频
+    if (this.currentOpenVideo) {
+      this.closeVideoFloat(this.currentOpenVideo.floatId, this.currentOpenVideo.videoId);
     }
-  </script>
+    const floatEl = document.getElementById(floatId);
+    const video = document.getElementById(videoId);
+    if (!floatEl || !video) {
+      console.log('未找到视频元素：', floatId, videoId);
+      return;
+    }
+    floatEl.style.display = 'block';
+    this.currentOpenVideo = { floatId: floatId, videoId: videoId };
+    video.play().catch(err => {
+      console.log('自动播放被拦截，手动点击视频播放：', err);
+      // 自动播放失败时，让用户手动点击视频
+      video.style.pointerEvents = 'auto';
+    });
+  },
+  closeVideoFloat: function(floatId, videoId) {
+    const floatEl = document.getElementById(floatId);
+    const video = document.getElementById(videoId);
+    if (floatEl) floatEl.style.display = 'none';
+    if (video) {
+      video.pause();
+      video.currentTime = 0;
+    }
+    if (this.currentOpenVideo && this.currentOpenVideo.floatId === floatId) {
+      this.currentOpenVideo = null;
+    }
+  }
+};
+</script>
+
 {{else}}
-  <h6 style="text-align: center; color: #666;">请填写视频路径，例如：{{ "{{< video src=\"/img/xxx.mp4\" >}}" }}</h6>
+  <h6 style="text-align: center; color: #666;">视频路径不能为空</h6>
 {{end}}
