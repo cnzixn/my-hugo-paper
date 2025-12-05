@@ -4,5 +4,5 @@ searchHidden: true
 ---
 
 <!-- <small> -->
-- 个人收藏，书籍来源于网络。
+- 个人收藏书籍
 <!-- </small> -->

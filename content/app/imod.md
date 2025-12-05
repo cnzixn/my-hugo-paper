@@ -102,10 +102,72 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
     color: var(--secondary); /* 标签用次要色 */
   }
   .muted { color: var(--secondary); } /* 弱化文本用次要色 */
+    /* 自定义 Safari 提示弹窗样式 */
+  .safari-alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--theme);
+    border: 2px solid #d00;
+    border-radius: var(--radius);
+    padding: 30px 25px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    z-index: 9999;
+    text-align: center;
+    display: none; /* 默认隐藏 */
+  }
+  .safari-alert h3 {
+    color: #d00;
+    margin: 0 0 15px 0;
+    font-size: 18px;
+  }
+  .safari-alert p {
+    margin: 0 0 20px 0;
+    line-height: 1.8;
+    color: var(--content);
+  }
+  .safari-alert .btn {
+    background: var(--secondary);
+    color: var(--theme);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: .2s;
+  }
+  .safari-alert .btn:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+  /* 遮罩层 */
+  .alert-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    z-index: 9998;
+    display: none; /* 默认隐藏 */
+  }
 </style>
 
 <!-- </head> -->
 <!-- <body> -->
+
+
+
+<!-- 遮罩层 + 自定义弹窗 -->
+<div class="alert-overlay" id="alertOverlay"></div>
+<div class="safari-alert" id="safariAlert">
+  <h3>提示</h3>
+  <p>抱歉，暂不支持 Safari 浏览器！<br>苹果用户请使用电脑访问此页面。</p>
+  <button class="btn" id="closeAlert">我知道了</button>
+</div>
 
 <h1>B.M.安装器</h1>
 <!-- <span class="pill">自动识别 APK / IPA</span> -->
@@ -185,6 +247,33 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
 <!-- <script src="/js/imod.js"></script> -->
 {{< js-app-imod >}}
 
+<script>
+  // 精准检测 Safari 浏览器（排除 Chrome、Edge 等伪装情况）
+  function detectSafari() {
+    const userAgent = navigator.userAgent.toLowerCase();
+    return userAgent.includes('safari') && !userAgent.includes('chrome') && !userAgent.includes('edge');
+  }
+
+  // 获取弹窗和遮罩层元素
+  const safariAlert = document.getElementById('safariAlert');
+  const alertOverlay = document.getElementById('alertOverlay');
+  const closeAlertBtn = document.getElementById('closeAlert');
+
+  // 页面加载后执行检测
+  window.addEventListener('load', function() {
+    if (detectSafari()) {
+      // 显示弹窗和遮罩层
+      safariAlert.style.display = 'block';
+      alertOverlay.style.display = 'block';
+    }
+  });
+
+  // 关闭弹窗
+  closeAlertBtn.addEventListener('click', function() {
+    safariAlert.style.display = 'none';
+    alertOverlay.style.display = 'none';
+  });
+</script>
 
 
 <!-- </body> -->
