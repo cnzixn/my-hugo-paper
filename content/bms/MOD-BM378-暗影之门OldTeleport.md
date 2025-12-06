@@ -7,7 +7,7 @@ tags:
 - '辅助'
 aliases:
 - 'BM378'
-url: '/p/804/'
+url: '/p/812/'
 ---
 
 > 本文介绍了模组 **暗影之门OldTeleport** 的功能与特点。

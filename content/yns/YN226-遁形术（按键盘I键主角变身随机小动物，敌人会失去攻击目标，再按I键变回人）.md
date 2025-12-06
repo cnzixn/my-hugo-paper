@@ -7,7 +7,7 @@ tags:
 aliases:
 - 'YN226'
 comments: false
-url: '/p/319/'
+url: '/p/327/'
 ---
 
 > 代码来源于“易宁”大佬的分享，仅供学习，不要直接复制粘贴。
