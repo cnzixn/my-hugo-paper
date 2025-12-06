@@ -3,6 +3,16 @@
 # cd /sdcard/acode/my-hugo-paper/assets/ ; python pan.py
 
 
+# 百度网盘(网页)脚本批量分享
+# 查找  文件名称: (.*?) 文件大小: (.*?) 分享链接:(.*?) 提取码:(.*?) .*
+# 替换  文件名称:$1 文件大小:$2 分享链接:$3?pwd=$4 提取码:$4
+
+# 夸克网盘(客户端)直接批量分享
+# 查找  .*?「(.*?)」.*\n链接：(.*?)\n提取码：(.*)
+# 替换  文件名称:$1 分享链接:$2?pwd=$3 提取码:$3
+
+
+
 import re
 import yaml
 from pathlib import Path
@@ -73,37 +83,40 @@ def extract_pan_info(file_path, is_baidu=False):
     return info_dict
 
 def extract_names_from_txt(name_file_path):
-    """从 pan_name.txt 提取BM编号→名称的映射"""
+    """从 pan_list.txt 提取BM编号→名称的映射（适配格式：BMxxx  类型.名称）"""
     name_dict = {}
     if not Path(name_file_path).exists():
-        print(f"警告：名称文件 {name_file_path} 未找到，跳过BM名称提取")
+        print(f"⚠️  警告：名称文件 {name_file_path} 未找到，跳过BM名称提取")
         return name_dict
     
-    bm_file_pattern = re.compile(r'^(BM\d+)\.(.*)', re.IGNORECASE)
+    # 精准匹配：开头BM+3位数字， followed by 至少2个空格，再跟名称（兼容多空格）
+    bm_pattern = re.compile(r'^(BM\d{3})\s{2,}(.*)$', re.IGNORECASE)
     
     try:
         with open(name_file_path, 'r', encoding='utf-8') as f:
             for line_num, line in enumerate(f, 1):
                 line = line.strip()
-                if not line:
+                if not line:  # 跳过空行
                     continue
                 
-                file_match = bm_file_pattern.match(line)
-                if not file_match:
+                match = bm_pattern.match(line)
+                if not match:
+                    print(f"❌ 第{line_num}行格式异常，跳过：{line}")
                     continue
                 
-                bm_id = file_match.group(1).upper()
-                rest_part = file_match.group(2)
-                last_dot_index = rest_part.rfind('.')
-                name = rest_part[:last_dot_index].strip() if last_dot_index != -1 else rest_part.strip()
+                bm_id = match.group(1).upper()  # BM编号统一转大写（防小写输入）
+                full_name = match.group(2).strip()  # 名称去除首尾空格（防冗余空格）
                 
-                if name:
-                    name_dict[bm_id] = name
-                    print(f"已匹配BM名称：{bm_id} → {name}")
+                # 核心修复：之前误用未定义变量name，改为full_name
+                name_dict[bm_id] = full_name
+                print(f"✅ 第{line_num}行匹配成功：{bm_id} → {full_name}")
     
     except Exception as e:
-        print(f"读取名称文件 {name_file_path} 时发生错误：{e}")
+        print(f"💥 读取名称文件 {name_file_path} 时发生错误：{str(e)}")
+    
+    print(f"\n📊 名称提取完成，共匹配 {len(name_dict)} 个BM模组\n")
     return name_dict
+
 
 def main():
     """主函数：按你的指定格式组装final_data"""
