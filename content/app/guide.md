@@ -100,7 +100,7 @@ summary: "一组教学小卡片，教你如何安装模组。"
    <button class="btn" onclick="window.open('/search', '_blank')">🔍搜索模组</button>
   </div>
   
-　如果你移植了“新的”模组，欢迎投稿：_[admin@bxq.me](mailto:admin@bxq.me)_
+　如果你有新的模组，欢迎投稿分享：_[admin@bxq.me](mailto:admin@bxq.me)_（请用网盘分享文件）。
       
   </div>
   <div class="task-nav">
