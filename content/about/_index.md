@@ -3,7 +3,6 @@ title: '关于'
 date: 2025-01-01
 author: 'Bny'
 searchHidden: true
-url: '/p/820/'
 ---
 
 

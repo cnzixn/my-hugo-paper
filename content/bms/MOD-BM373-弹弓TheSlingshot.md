@@ -7,7 +7,7 @@ tags:
 - '装备'
 aliases:
 - 'BM373'
-url: '/p/755/'
+url: '/p/756/'
 ---
 
 > 本文介绍了模组 **弹弓TheSlingshot** 的功能与特点。

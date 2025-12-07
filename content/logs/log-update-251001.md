@@ -2,7 +2,7 @@
 title: '框架 - 十月更新'
 date: 2025-10-15
 author: 'Bny'
-draft: false
+draft: true
 summary: '框架BM25.10.15版本更新，请注意查收！'
 tags:
 - '公告'
@@ -11,7 +11,7 @@ aliases:
 - 'new'
 comments: false
 weight: -8
-url: '/p/2/'
+url: '/p/3/'
 ---
 
 
