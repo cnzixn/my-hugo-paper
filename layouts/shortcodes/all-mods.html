@@ -1,90 +1,162 @@
-<!-- /mods 页面-->
 {{ $panData := index site.Data "pan" }}
 {{ $currentDate := now.Format "20060102" }}
 
-<div class="mods-list">
-  {{/* 仅遍历 BM 开头的键值对（过滤非 BM 条目） */}}
-  {{ range $id, $itemData := $panData }}
-    {{/* 核心过滤：仅保留以 "BM" 开头的条目（不区分大小写，适配 BM/bm 等情况） */}}
-    {{ if hasPrefix (lower $id) "bm" }}
-      <div class="mod-item">
-        <div class="item-main">
-          <div class="item-info">
-            <a href="/p/{{ $id }}" class="mod-id" target="_self"> {{ $id }} </a>
-            
-            <span class="mod-name">
-              {{ $name := index (where $itemData "name" "!=" nil) 0 "name" | default $id }}
-              {{ $name }}
-              {{ $size := index (where $itemData "size" "!=" nil) 0 "size" }}
-              {{ if $size }}({{ $size }}){{ end }}
-            </span>
-          </div>
+{{/* 计算总BM条目数用于显示 */}}
+{{ $bmCount := 0 }}
+{{ range $id, $itemData := $panData }}
+  {{ if hasPrefix (lower $id) "bm" }}
+    {{ $bmCount = add $bmCount 1 }}
+  {{ end }}
+{{ end }}
 
+{{/* 排序控制栏 */}}
+<div class="sort-controls">
+  <div class="sort-info">
+    <span>共 {{ $bmCount }} 个BM条目</span>
+  </div>
+  <div class="sort-buttons">
+    <button id="sort-asc" class="sort-btn active" data-sort="asc">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M11 5h10"></path>
+        <path d="M11 9h7"></path>
+        <path d="M11 13h4"></path>
+        <path d="m3 17 3 3 3-3"></path>
+        <path d="M6 18V4"></path>
+      </svg>
+      正序 (A→Z)
+    </button>
+    <button id="sort-desc" class="sort-btn" data-sort="desc">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M11 5h10"></path>
+        <path d="M11 9h7"></path>
+        <path d="M11 13h4"></path>
+        <path d="m3 7 3-3 3 3"></path>
+        <path d="M6 4v14"></path>
+      </svg>
+      倒序 (Z→A)
+    </button>
+  </div>
+</div>
 
+{{/* 创建有序列表的切片 */}}
+{{ $bmItems := slice }}
+{{ range $id, $itemData := $panData }}
+  {{ if hasPrefix (lower $id) "bm" }}
+    {{ $bmItems = $bmItems | append (dict "id" $id "data" $itemData) }}
+  {{ end }}
+{{ end }}
 
-          <div class="item-actions">
-            {{/* 百度网盘（url1） */}}
-            {{ $baiduUrl := index (where $itemData "url1" "ne" nil) 0 "url1" }}
-            {{ if $baiduUrl }}
-              <button onclick="window.open('{{ $baiduUrl }}&t={{ $currentDate }}', '_blank')" class="action-btn baidu" title="百度网盘下载">
-                <img src="/img/pan_baidu.webp" alt="百度">
-              </button>
-            {{ else }}
-              <button class="action-btn baidu" title="暂无百度下载" disabled>
-                <img src="/img/pan_baidu.webp" alt="百度">
-              </button>
-            {{ end }}
+{{/* 按ID排序（默认正序） */}}
+{{ $sortedItems := sort $bmItems "id" "asc" }}
 
+<div id="mods-list" class="mods-list">
+  {{ range $sortedItems }}
+    {{ $id := .id }}
+    {{ $itemData := .data }}
+    <div class="mod-item" data-id="{{ $id | lower }}">
+      <div class="item-main">
+        <div class="item-info">
+          <a href="/p/{{ $id }}" class="mod-id" target="_self"> {{ $id }} </a>
+          
+          <span class="mod-name">
+            {{ $name := index (where $itemData "name" "!=" nil) 0 "name" | default $id }}
+            {{ $name }}
+            {{ $size := index (where $itemData "size" "!=" nil) 0 "size" }}
+            {{ if $size }}({{ $size }}){{ end }}
+          </span>
+        </div>
 
+        <div class="item-actions">
+          {{/* 百度网盘（url1） */}}
+          {{ $baiduUrl := index (where $itemData "url1" "ne" nil) 0 "url1" }}
+          {{ if $baiduUrl }}
+            <button onclick="window.open('{{ $baiduUrl }}&t={{ $currentDate }}', '_blank')" class="action-btn baidu" title="百度网盘下载">
+              <img src="/img/pan_baidu.webp" alt="百度">
+            </button>
+          {{ else }}
+            <button class="action-btn baidu" title="暂无百度下载" disabled>
+              <img src="/img/pan_baidu.webp" alt="百度">
+            </button>
+          {{ end }}
 
-            <!-- {{/* 迅雷网盘（url2） */}} -->
-            <!-- {{ $xunleiUrl := index (where $itemData "url2" "ne" nil) 0 "url2" }} -->
-            <!-- {{ if $xunleiUrl }} -->
-              <!-- <button onclick="window.open('{{ $xunleiUrl }}&t={{ $currentDate }}', '_blank')" class="action-btn xunlei" title="迅雷网盘下载"> -->
-                <!-- <img src="/img/pan_xunlei.webp" alt="迅雷"> -->
-              <!-- </button> -->
-            <!-- {{ else }} -->
-              <!-- <button class="action-btn xunlei" title="暂无迅雷下载" disabled> -->
-                <!-- <img src="/img/pan_xunlei.webp" alt="迅雷"> -->
-              <!-- </button> -->
-            <!-- {{ end }} -->
-
-
-
-            {{/* 夸克网盘（url3） */}}
-            {{ $quarkUrl := index (where $itemData "url3" "ne" nil) 0 "url3" }}
-            {{ if $quarkUrl }}
-              <button onclick="window.open('{{ $quarkUrl }}&t={{ $currentDate }}', '_blank')" class="action-btn quark" title="夸克网盘下载">
-                <img src="/img/pan_quark.webp" alt="夸克">
-              </button>
-            {{ else }}
-              <button class="action-btn quark" title="暂无夸克下载" disabled>
-                <img src="/img/pan_quark.webp" alt="夸克">
-              </button>
-            {{ end }}
-
-
-
-          </div>
+          {{/* 夸克网盘（url3） */}}
+          {{ $quarkUrl := index (where $itemData "url3" "ne" nil) 0 "url3" }}
+          {{ if $quarkUrl }}
+            <button onclick="window.open('{{ $quarkUrl }}&t={{ $currentDate }}', '_blank')" class="action-btn quark" title="夸克网盘下载">
+              <img src="/img/pan_quark.webp" alt="夸克">
+            </button>
+          {{ else }}
+            <button class="action-btn quark" title="暂无夸克下载" disabled>
+              <img src="/img/pan_quark.webp" alt="夸克">
+            </button>
+          {{ end }}
         </div>
       </div>
-    {{ end }}
+    </div>
   {{ end }}
 </div>
 
-{{/* 可选：添加说明文本，告知用户当前仅公开 BM 链接 */}}
-<!-- <div class="mods-note" style="margin-top: 1rem; color: var(--secondary); font-size: 0.9rem;"> -->
-  <!-- 注：目前暂时只公开 BMXXX 系列链接，后续可能开放全部资源。 -->
-<!-- </div> -->
-
-
-
 <style>
+/* 排序控制栏样式 */
+.sort-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem 0 1rem 0;
+  padding: 0.75rem 1rem;
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.sort-info {
+  font-size: 0.9rem;
+  color: var(--secondary);
+}
+
+.sort-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.sort-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.9rem;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--content);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sort-btn:hover {
+  border-color: var(--primary);
+  background: var(--entry);
+}
+
+.sort-btn.active {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.sort-btn svg {
+  stroke: currentColor;
+}
+
+.sort-btn.active svg {
+  stroke: white;
+}
+
+/* 原有样式保持不变 */
 .mods-list {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  margin: 1.5rem 0;
 }
 
 .mod-item {
@@ -128,27 +200,20 @@
 .mod-name {
   font-size: 0.6rem;
   font-weight: 500;
-  white-space: nowrap; /* 强制文字不换行（关键，确保横向滚动） */
-  /* 删掉以下2行：不再需要省略号，改为完整显示 */
-  /* overflow: hidden; */
-  /* text-overflow: ellipsis; */
-  padding: 0 3px; /* 可选，增加文字左右内边距，避免贴边 */
-
-  /* 新增以下3行：让容器支持横向滚动 */
-  overflow-x: auto;    /* 超出宽度时显示横向滚动条 */
-  overflow-y: hidden;   /* 禁止纵向滚动（避免高度异常） */
-  padding-bottom: 3px; /* 给滚动条预留空间，避免遮挡文字 */
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 3px;
 }
 
-/* 优化滚动条样式 */
 .mod-name::-webkit-scrollbar {
-  height: 1.5px; /* 横向滚动条高度 */
+  height: 1.5px;
 }
 .mod-name::-webkit-scrollbar-thumb {
   border-radius: 3px;
 }
 .mod-name::-webkit-scrollbar-track {
-  background-color: var(--secondary); /* 轨道颜色（保持原设置） */
+  background-color: var(--secondary);
   border: 0.6px solid var(--border);
   border-radius: 3px;
 }
@@ -159,8 +224,6 @@
   flex-shrink: 0;
 }
 
-
-/* 按钮基础样式：精简冗余属性 */
 .action-btn {
   display: inline-flex;
   align-items: center;
@@ -176,7 +239,6 @@
   border-radius: 4px;
 }
 
-/* 按钮图片：统一边框与尺寸 */
 .action-btn img {
   width: 32px;
   height: 32px;
@@ -185,17 +247,15 @@
   object-fit: cover;
 }
 
-/* 禁用按钮样式：保持统一透明度 */
 .action-btn:disabled {
   pointer-events: none;
-  opacity: 0.5; /* 统一禁用状态透明度 */
+  opacity: 0.5;
 }
 
 .action-btn:disabled img {
   filter: grayscale(100%);
 }
 
-/* 按钮交互：统一缩放与边框效果 */
 .action-btn:hover {
   opacity: 0.9;
   transform: scale(1.08);
@@ -206,35 +266,23 @@
   border-color: var(--primary);
 }
 
-.action-na {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 24px;
-  height: 24px;
-  color: var(--secondary);
-  font-size: 0.9rem;
-}
-
-.item-details {
-  margin-top: 0.75rem;
-  padding-top: 0.75rem;
-  border-top: 1px solid var(--border);
-  display: flex;
-  gap: 1rem;
-  font-size: 0.8rem;
-}
-
-.detail-code {
-  font-family: monospace;
-  background: var(--code-bg);
-  padding: 0.2rem 0.4rem;
-  border-radius: 3px;
-  color: var(--secondary);
-}
-
 /* 移动端优化 */
 @media (max-width: 480px) {
+  .sort-controls {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: flex-start;
+  }
+  
+  .sort-buttons {
+    width: 100%;
+  }
+  
+  .sort-btn {
+    flex: 1;
+    justify-content: center;
+  }
+  
   .mod-item {
     padding: 0.875rem;
   }
@@ -254,15 +302,85 @@
   .mod-name {
     font-size: 0.875rem;
   }
-  
-  .item-details {
-    flex-direction: column;
-    gap: 0.375rem;
-  }
 }
-
-/* 区分不同网盘的hover效果（可选） */
-.action-btn.baidu:hover img { filter: grayscale(0%); }
-.action-btn.quark:hover img { filter: grayscale(0%); }
-.action-btn.xunlei:hover img { filter: grayscale(0%); }
 </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const sortAscBtn = document.getElementById('sort-asc');
+  const sortDescBtn = document.getElementById('sort-desc');
+  const modsList = document.getElementById('mods-list');
+  const modItems = Array.from(modsList.querySelectorAll('.mod-item'));
+  
+  // 保存原始顺序（正序）
+  const originalOrder = modItems.map(item => item.cloneNode(true));
+  
+  // 设置当前排序状态
+  let currentSort = 'asc';
+  
+  // 排序函数
+  function sortItems(order) {
+    // 移除所有项目
+    modItems.forEach(item => item.remove());
+    
+    // 排序数组
+    const sortedItems = [...modItems].sort((a, b) => {
+      const idA = a.getAttribute('data-id');
+      const idB = b.getAttribute('data-id');
+      
+      if (order === 'asc') {
+        return idA.localeCompare(idB);
+      } else {
+        return idB.localeCompare(idA);
+      }
+    });
+    
+    // 重新添加排序后的项目
+    sortedItems.forEach(item => modsList.appendChild(item));
+    
+    // 更新按钮状态
+    updateSortButtons(order);
+    
+    // 保存当前排序状态
+    currentSort = order;
+    
+    // 保存到localStorage
+    localStorage.setItem('mods-sort-preference', order);
+  }
+  
+  // 更新按钮状态
+  function updateSortButtons(activeSort) {
+    if (activeSort === 'asc') {
+      sortAscBtn.classList.add('active');
+      sortDescBtn.classList.remove('active');
+    } else {
+      sortAscBtn.classList.remove('active');
+      sortDescBtn.classList.add('active');
+    }
+  }
+  
+  // 事件监听
+  sortAscBtn.addEventListener('click', () => sortItems('asc'));
+  sortDescBtn.addEventListener('click', () => sortItems('desc'));
+  
+  // 检查localStorage中的排序偏好
+  const savedSort = localStorage.getItem('mods-sort-preference');
+  if (savedSort && savedSort !== currentSort) {
+    sortItems(savedSort);
+  }
+  
+  // 添加排序动画效果
+  modsList.addEventListener('DOMNodeInserted', function(e) {
+    if (e.target.classList && e.target.classList.contains('mod-item')) {
+      e.target.style.opacity = '0';
+      e.target.style.transform = 'translateY(10px)';
+      
+      setTimeout(() => {
+        e.target.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'translateY(0)';
+      }, 10);
+    }
+  });
+});
+</script>

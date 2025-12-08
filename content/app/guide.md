@@ -26,8 +26,11 @@ summary: "一组教学小卡片，教你如何安装模组。"
 
 　现在是 AI 的时代，要学会使用 AI 解决一些小问题：  
 
-  - _[豆包](https://doubao.com)_：回答问题快，推荐日常使用。  
-  - _[DeepSeek](https://deepseek.com)_：深度思考比较专业(慢)。  
+　- _[豆包](https://doubao.com)_：回答问题快，推荐日常使用。  
+　- _[DeepSeek](https://deepseek.com)_：深度思考比较专业(慢)。  
+
+　
+
   </div>
   <div class="task-nav">
     <button class="btn prev-btn" disabled>上一个</button>
@@ -37,14 +40,16 @@ summary: "一组教学小卡片，教你如何安装模组。"
 
 
 <div class="task-card" data-task>
-  <h2>卡片<span class="card-number">2</span>：文件说明</h2>
+  <h2>卡片<span class="card-number">2</span>：网盘&文件</h2>
   <div class="task-content">
 
-　经常有人反馈文件失效，不得已才改文件后缀名、加密文件。
+　经常有反馈文件失效的，还有“在线解压”交智商税的，所以网盘分享：
 
-　`.XZ` 就是 ZIP 压缩文件，可直接用 _[MT管理器](https://mt2.cn)_ 打开。
+　`.XZ` 是 ZIP 压缩文件(仅改名)，可直接用 _[MT管理器](https://mt2.cn)_ 打开。
 
-　`.XOR` 是加密文件，可通过 _[B.M.解密器](/app/xor)_ 转为 ZIP 压缩文件。
+　`.XOR` 是加密文件，通过 _[B.M.解密器](/app/xor)_ 可以还原为 ZIP 压缩文件。
+
+　夸克浏览器：点击链接后，如果需要提取码，请更新一下版本再试。
 
   </div>
   <div class="task-nav">
@@ -56,13 +61,15 @@ summary: "一组教学小卡片，教你如何安装模组。"
 <div class="task-card" data-task>
   <h2>卡片<span class="card-number">2</span>：获取安装包</h2>
   <div class="task-content">
-　你需要购买正版游戏，然后再提取安装包：
+　你需要购买正版游戏，然后提取安装包：
   <div class="btn-group">
    <button class="btn" onclick="window.open('https://apps.apple.com/us/app/dont-starve-shipwrecked/id1147297267?l=zh', '_blank')">苹果版</button>
    <button class="btn" onclick="window.open('https://play.google.com/store/apps/details?id=com.kleientertainment.doNotStarveShipwrecked', '_blank')">安卓版</button>
   </div>
+  
+  
 
-　如果无法购买，你可以通过网盘下载：
+　如果无法购买，你可以通过网盘下载试玩：
 
   {{< pan 游戏 >}}  
 
