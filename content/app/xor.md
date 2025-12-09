@@ -183,25 +183,22 @@ summary: '使用XOR处理文件，防止网盘分享文件被和谐。'
   }
 </style>
 
-<!-- 遮罩层 + 自定义弹窗 -->
-<div class="alert-overlay" id="alertOverlay"></div>
-<div class="safari-alert" id="safariAlert">
-  <h3>提示</h3>
-  <p>抱歉，暂不支持 Safari 浏览器！<br>苹果用户请使用电脑访问此页面。</p>
-  <button class="btn" id="closeAlert">我知道了</button>
-</div>
+
 
 <h1>B.M.解密器</h1>
 <!-- <span class="pill">任意格式 | 后缀不区分大小写 | 本地安全</span> -->
 
+
 <div class="section">
   <small class="note">
     温馨提示：<br>
-    • <mark>不消耗流量</mark>，文件在本地处理。<br>
-    • 支持 Android / Win / Mac 系统。<br>
-    • 推荐使用 Chrome / Edge 浏览器。<br>
+    • 本地处理文件<mark>不消耗流量</mark>。<br>
+    • 暂不支持 iPhone/iPad 设备。<br>
+    • 兼容 Chrome/Edge 等浏览器。<br>
   </small>
 </div>
+
+
 
 <div class="section">
   <h2>1. 选择文件<span class="pill">支持任意格式</span></h2>
@@ -243,30 +240,4 @@ summary: '使用XOR处理文件，防止网盘分享文件被和谐。'
 <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
 {{< js-app-xor >}}
 
-<script>
-  // 精准检测 Safari 浏览器（排除 Chrome、Edge 等伪装情况）
-  function detectSafari() {
-    const userAgent = navigator.userAgent.toLowerCase();
-    return userAgent.includes('safari') && !userAgent.includes('chrome') && !userAgent.includes('edge');
-  }
 
-  // 获取弹窗和遮罩层元素
-  const safariAlert = document.getElementById('safariAlert');
-  const alertOverlay = document.getElementById('alertOverlay');
-  const closeAlertBtn = document.getElementById('closeAlert');
-
-  // 页面加载后执行检测
-  window.addEventListener('load', function() {
-    if (detectSafari()) {
-      // 显示弹窗和遮罩层
-      safariAlert.style.display = 'block';
-      alertOverlay.style.display = 'block';
-    }
-  });
-
-  // 关闭弹窗
-  closeAlertBtn.addEventListener('click', function() {
-    safariAlert.style.display = 'none';
-    alertOverlay.style.display = 'none';
-  });
-</script>
