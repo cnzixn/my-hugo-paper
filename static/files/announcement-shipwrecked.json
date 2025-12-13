@@ -3,10 +3,10 @@
   "date": "25-12-12",
   "sc": {
       "title": "B.M.",
-      "content": "框架测试结束！",
+      "content": "本次框架测试结束！",
       "button": "查看",
       "url": "https://d.bxq.me/p/new/",
-      "new": "当前版本过低！"
+      "new": "本次框架测试结束！"
   },
   "en": {
       "title": "B.M.",
