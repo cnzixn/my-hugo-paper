@@ -57,7 +57,7 @@ searchHidden: true
   - 持续改进和丰富网站的内容。  
 
 - 你可以通过以下方式赞助本站：  
-  - _[[橱窗]办流量卡](/llk)_
+  - _[[橱窗]办理流量卡](/llk)_
   - 扫描以下二维码  
   {{< figure 
     src="/img/pay-qrcode.webp" 

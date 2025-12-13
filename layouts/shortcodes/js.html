@@ -1,0 +1,4 @@
+{{/* 通用 JS 短代码：{{ js "xxx.js" }} 修复语法错误 */}}
+{{ $jsFileName := index .Params 0 }}
+{{ $jsFile := resources.Get (printf "js/%s" $jsFileName) | fingerprint }}
+<script defer src="{{ $jsFile.RelPermalink }}"></script>

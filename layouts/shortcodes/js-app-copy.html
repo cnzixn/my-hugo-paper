@@ -1,3 +1,0 @@
-
-{{ $temp := resources.Get "js/app-copy.js" | fingerprint }}
-<script defer src="{{ $temp.RelPermalink }}"></script>

@@ -241,7 +241,7 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
 <!-- <script defer src="/js/bv.js"></script> -->
 <!-- <script src="/js/klfa.js"></script> -->
 <!-- <script src="/js/imod.js"></script> -->
-{{< js-app-imod >}}
+{{< js "app-imod.js" >}}
 
 
 

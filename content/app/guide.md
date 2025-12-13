@@ -59,29 +59,6 @@ summary: "一组教学小卡片，教你如何安装模组。"
 </div>
 
 <div class="task-card" data-task>
-  <h2>卡片<span class="card-number">2</span>：获取安装包</h2>
-  <div class="task-content">
-　你需要购买正版游戏，然后提取安装包：
-  <div class="btn-group">
-   <button class="btn" onclick="window.open('https://apps.apple.com/us/app/dont-starve-shipwrecked/id1147297267?l=zh', '_blank')">苹果版</button>
-   <button class="btn" onclick="window.open('https://play.google.com/store/apps/details?id=com.kleientertainment.doNotStarveShipwrecked', '_blank')">安卓版</button>
-  </div>
-  
-  
-
-　如果无法购买，你可以通过网盘下载试玩：
-
-  {{< pan 游戏 >}}  
-
-  <small> **免责声明**：<br> 目前，国内“应用商店”未上架手游单机版，网盘分享仅供试玩。<br> 如果你不会“科学上网”，可以上 Steam 购买一份 DST 补票。</small>  
-  </div>
-  <div class="task-nav">
-    <button class="btn prev-btn">上一个</button>
-    <button class="btn next-btn">下一个</button>
-  </div>
-</div>
-
-<div class="task-card" data-task>
   <h2>卡片<span class="card-number">3</span>：获取兔人框架</h2>
   <div class="task-content">
 
@@ -90,6 +67,31 @@ summary: "一组教学小卡片，教你如何安装模组。"
   {{< pan "框架" >}}
 
   <small>备注：文件`BM000(词库+壁纸)`是扩展内容，新人玩家不用了解。</small>  
+  </div>
+  <div class="task-nav">
+    <button class="btn prev-btn">上一个</button>
+    <button class="btn next-btn">下一个</button>
+  </div>
+</div>
+
+<div class="task-card" data-task>
+  <h2>卡片<span class="card-number">2</span>：获取安装包</h2>
+  <div class="task-content">
+　你需要购买正版游戏，然后提取安装包：
+  <div class="btn-group">
+   <button class="btn" onclick="window.open('https://apps.apple.com/us/app/dont-starve-shipwrecked/id1147297267?l=zh', '_blank')">购买苹果版</button>
+   <button class="btn" onclick="window.open('https://play.google.com/store/apps/details?id=com.kleientertainment.doNotStarveShipwrecked', '_blank')">购买安卓版</button>
+  </div>
+
+　如果无法购买，你可以免费下载试玩版：
+  <div class="btn-group">
+   <button class="btn" onclick="window.open('https://ipa.store/1299.html', '_blank')">试玩苹果版</button>
+   <button class="btn" onclick="window.open('http://m.k73.com/down/addj/640060.html', '_blank')">试玩安卓版</button>
+  </div>
+
+  <!-- {{< pan 游戏 >}} -->  
+
+  <small> **免责声明**：试玩版来源于网络，仅供用于测试框架功能。 </small>  
   </div>
   <div class="task-nav">
     <button class="btn prev-btn">上一个</button>
@@ -121,15 +123,15 @@ summary: "一组教学小卡片，教你如何安装模组。"
   <div class="task-content">
   根据需要，选择模组安装工具：
   <div class="btn-group">
-    <button class="btn" onclick="window.open('/app/imod', '_blank')">🧰B.M.安装器</button>
-    <button class="btn" onclick="window.open('https://mt2.cn', '_blank')">🧰MT管理器</button>
+    <button class="btn" onclick="window.open('/app/imod', '_blank')">通用版</button>
+    <button class="btn" onclick="window.open('https://mt2.cn', '_blank')">安卓版</button>
   </div>
 
-  查看相应的视频演示：  
+  视频演示(上下对应)：  
   <small>(Tip：拖动进度条到结尾，可直接退出播放)</small>
   <div class="btn-group">
-    <button class="btn" onclick="installMethod('auto')">📽B.M.安装器</button>
-    <button class="btn" onclick="installMethod('manual')">📽MT管理器</button>
+    <button class="btn" onclick="installMethod('auto')">视频一</button>
+    <button class="btn" onclick="installMethod('manual')">视频二</button>
   </div>
   <div id="install-guide-auto" style="margin-top:15px; display:none;">
     {{< video id="install-guide-auto-video" src="/img/lv_0_20250901210841.mp4" poster="/img/lv_0_20250901210841.webp" crop="true" cropHeight="85%" >}}  
@@ -138,7 +140,7 @@ summary: "一组教学小卡片，教你如何安装模组。"
     {{< video id="install-guide-manual-video" src="/img/lv_0_20250831182656.mp4" poster="/img/lv_0_20250831182656.webp" crop="true" cropHeight="75%" >}}  
   </div>
 
-  <small>备注：使用(安卓)MT管理器，需通过 _[B.M.解密器](/app/xor)_ 处理`.XOR`的文件。</small>  
+  <small>备注：(安卓版)使用MT管理器，需通过 _[B.M.解密器](/app/xor)_ 处理`.XOR`的文件。</small>  
   </div>
   <div class="task-nav">
     <button class="btn prev-btn">上一个</button>
@@ -151,7 +153,7 @@ summary: "一组教学小卡片，教你如何安装模组。"
   <div class="task-content">
 　苹果：请自行搜索相关教程，关键词：自签、巨魔。
 
-　安卓：MT管理器，长按安装包，点击选项中的“签名”。
+　安卓：使用MT管理器，长按安装包，点击弹框中的“签名”。
 
   <p style="color:#2ecc71; font-size:16px; font-weight:bold;"> 恭喜，已完成全部学习！</p>
   </div>

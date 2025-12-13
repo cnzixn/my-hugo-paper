@@ -36,7 +36,7 @@ summary: '通过链接获取用户码，生成“BM补丁”文件。'
 
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 
-{{< js-app-buid >}}
+{{< js "app-buid.js" >}}
 
 <style>
 /* 基础样式 */

@@ -3,107 +3,107 @@
 A-0000-000:
   text: "【关于】我的流量卡"
   url: "/p/llk/"
-  svg: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reception-4" viewBox="0 0 16 16">  <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-8zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-11z"/></svg>'
+  
 
 Z-9999-999:
   text: "【查询】我的订单信息"
   url: "https://h5.lot-ml.com/Search/Index"
-  svg: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reception-4" viewBox="0 0 16 16">  <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-8zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-11z"/></svg>'
+  
 
 
 # C-2044-50:
   # text: "【联通】19元200G流量"
   # url: "https://h5.lot-ml.com/h5orderEn/index?pudID=dc362b3fc1b29b94&userid=133b6394b8178a11"
   # url: "/link/?data=aHR0cHMlM0ElMkYlMkZoNS5sb3QtbWwuY29tJTJGaDVvcmRlckVuJTJGaW5kZXglM0ZwdWRJRCUzRGRjMzYyYjNmYzFiMjliOTQlMjZ1c2VyaWQlM0QxMzNiNjM5NGI4MTc4YTEx"
-  # svg: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reception-4" viewBox="0 0 16 16">  <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-8zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-11z"/></svg>'
+  # 
 
 A-2043-80:
   text: "【广电】28元350G流量200分钟🔥"
-  url: "https://h5.lot-ml.com/h5orderEn/index?pudID=e21545d2cec4a43d&userid=133b6394b8178a11"
+  # url: "https://h5.lot-ml.com/h5orderEn/index?pudID=e21545d2cec4a43d&userid=133b6394b8178a11"
   url: "/link/?data=aHR0cHMlM0ElMkYlMkZoNS5sb3QtbWwuY29tJTJGaDVvcmRlckVuJTJGaW5kZXglM0ZwdWRJRCUzRGUyMTU0NWQyY2VjNGE0M2QlMjZ1c2VyaWQlM0QxMzNiNjM5NGI4MTc4YTEx"
-  svg: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reception-4" viewBox="0 0 16 16">  <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-8zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-11z"/></svg>'
+  
 
 
 B-2034-150:
   text: "【电信】29元185G流量"
-  url: "https://h5.lot-ml.com/h5orderEn/index?pudID=2ff326f6d7096a14&userid=133b6394b8178a11"
+  # url: "https://h5.lot-ml.com/h5orderEn/index?pudID=2ff326f6d7096a14&userid=133b6394b8178a11"
   url: "/link/?data=aHR0cHMlM0ElMkYlMkZoNS5sb3QtbWwuY29tJTJGaDVvcmRlckVuJTJGaW5kZXglM0ZwdWRJRCUzRDJmZjMyNmY2ZDcwOTZhMTQlMjZ1c2VyaWQlM0QxMzNiNjM5NGI4MTc4YTEx"
-  svg: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reception-4" viewBox="0 0 16 16">  <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-8zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-11z"/></svg>'
+  
 
 
-C-2030-80:
-  text: "【联通】29元300G流量300分钟🔥"
-  url: "https://h5.lot-ml.com/h5orderEn/index?pudID=9fdef82d6624644c&userid=133b6394b8178a11"
-  url: "/link/?data=aHR0cHMlM0ElMkYlMkZoNS5sb3QtbWwuY29tJTJGaDVvcmRlckVuJTJGaW5kZXglM0ZwdWRJRCUzRDlmZGVmODJkNjYyNDY0NGMlMjZ1c2VyaWQlM0QxMzNiNjM5NGI4MTc4YTEx"
-  svg: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reception-4" viewBox="0 0 16 16">  <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-8zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-11z"/></svg>'
+# C-2030-80:
+  # text: "【联通】29元300G流量300分钟🔥"
+  # url: "https://h5.lot-ml.com/h5orderEn/index?pudID=9fdef82d6624644c&userid=133b6394b8178a11"
+  # url: "/link/?data=aHR0cHMlM0ElMkYlMkZoNS5sb3QtbWwuY29tJTJGaDVvcmRlckVuJTJGaW5kZXglM0ZwdWRJRCUzRDlmZGVmODJkNjYyNDY0NGMlMjZ1c2VyaWQlM0QxMzNiNjM5NGI4MTc4YTEx"
+  # 
 
-D-2015-100:
-  text: "【移动】29元185G流量(首充50)"
-  url: "https://h5.lot-ml.com/h5orderEn/index?pudID=e623b707eb0055e8&userid=133b6394b8178a11"
-  url: "/link/?data=aHR0cHM6Ly9oNS5sb3QtbWwuY29tL2g1b3JkZXJFbi9pbmRleD9wdWRJRD1lNjIzYjcwN2ViMDA1NWU4JnVzZXJpZD0xMzNiNjM5NGI4MTc4YTEx"
-  svg: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reception-4" viewBox="0 0 16 16">  <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-8zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-11z"/></svg>'
+# D-2015-100:
+  # text: "【移动】29元185G流量(首充50)"
+  # url: "https://h5.lot-ml.com/h5orderEn/index?pudID=e623b707eb0055e8&userid=133b6394b8178a11"
+  # url: "/link/?data=aHR0cHM6Ly9oNS5sb3QtbWwuY29tL2g1b3JkZXJFbi9pbmRleD9wdWRJRD1lNjIzYjcwN2ViMDA1NWU4JnVzZXJpZD0xMzNiNjM5NGI4MTc4YTEx"
+  # 
 
 # C-2011-60:
   # text: "【联通】29元300G流量300分钟🔥"
   # url: "https://h5.lot-ml.com/h5orderEn/index?pudID=4f5924cc889152da&userid=133b6394b8178a11"
   # url: "/link/?data=aHR0cHM6Ly9oNS5sb3QtbWwuY29tL2g1b3JkZXJFbi9pbmRleD9wdWRJRD00ZjU5MjRjYzg4OTE1MmRhJnVzZXJpZD0xMzNiNjM5NGI4MTc4YTEx"
-  # svg: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reception-4" viewBox="0 0 16 16">  <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-8zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-11z"/></svg>'
+  # 
 
 # B-2008-120:
   # text: "【电信】29元235G流量"
   # url: "https://h5.lot-ml.com/h5orderEn/index?pudID=02f3dd3bdda0177d&userid=133b6394b8178a11"
-  # svg: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reception-4" viewBox="0 0 16 16">  <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-8zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-11z"/></svg>'
+  # 
 
 A-1996-135:
   text: "【广电】19元192G流量"
-  url: "https://h5.lot-ml.com/h5orderEn/index?pudID=c6ec64cbbf17de66&userid=133b6394b8178a11"
+  # url: "https://h5.lot-ml.com/h5orderEn/index?pudID=c6ec64cbbf17de66&userid=133b6394b8178a11"
   url: "/link/?data=aHR0cHM6Ly9oNS5sb3QtbWwuY29tL2g1b3JkZXJFbi9pbmRleD9wdWRJRD1jNmVjNjRjYmJmMTdkZTY2JnVzZXJpZD0xMzNiNjM5NGI4MTc4YTEx"
-  svg: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reception-4" viewBox="0 0 16 16">  <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-8zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-11z"/></svg>'
+  
 
 # A-1995-55:
   # text: "【广电】28元350G流量200分钟🔥"
   # url: "https://h5.lot-ml.com/h5orderEn/index?pudID=e21545d2cec4a43d&userid=133b6394b8178a11"
   # url: "/link/?data=aHR0cHM6Ly9oNS5sb3QtbWwuY29tL2g1b3JkZXJFbi9pbmRleD9wdWRJRD1lMjE1NDVkMmNlYzRhNDNkJnVzZXJpZD0xMzNiNjM5NGI4MTc4YTEx"
-  # svg: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reception-4" viewBox="0 0 16 16">  <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-8zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-11z"/></svg>'
+  # 
 
 # B-1992-110:
   # text: "【电信】29元185G流量200分钟"
   # url: "https://h5.lot-ml.com/h5orderEn/index?pudID=d581e5419c53074d&userid=133b6394b8178a11"
-  # svg: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reception-4" viewBox="0 0 16 16">  <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-8zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-11z"/></svg>'
+  # 
 
 # B-1960-125:
   # text: "【电信】19元185G流量"
   # url: "https://h5.lot-ml.com/h5orderEn/index?pudID=8253c7f75eb08bb6&userid=133b6394b8178a11"
-  # svg: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reception-4" viewBox="0 0 16 16">  <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-8zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-11z"/></svg>'
+  # 
 
 # B-1959-155:
   # text: "【电信】29元185G流量"
   # url: "https://h5.lot-ml.com/h5orderEn/index?pudID=ac72ad8bc5904a5a&userid=133b6394b8178a11"
   # url: "/link/?data=aHR0cHM6Ly9oNS5sb3QtbWwuY29tL2g1b3JkZXJFbi9pbmRleD9wdWRJRD1hYzcyYWQ4YmM1OTA0YTVhJnVzZXJpZD0xMzNiNjM5NGI4MTc4YTEx"
-  # svg: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reception-4" viewBox="0 0 16 16">  <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-8zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-11z"/></svg>'
+  # 
 
 # A-1958-120:
   # text: "【广电】19元192G流量"
   # url: "https://h5.lot-ml.com/h5orderEn/index?pudID=95ef056866787f7f&userid=133b6394b8178a11"
-  # svg: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reception-4" viewBox="0 0 16 16">  <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-8zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-11z"/></svg>'
+  # 
 
-# A-1956-180:
-  # text: "【广电】29元192G流量"
-  # url: "https://h5.lot-ml.com/h5orderEn/index?pudID=c6542121eeb0e000&userid=133b6394b8178a11"
-  # svg: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reception-4" viewBox="0 0 16 16">  <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-8zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-11z"/></svg>'
+A-1956-180:
+  text: "【广电】29元192G流量"
+  url: "https://h5.lot-ml.com/h5orderEn/index?pudID=c6542121eeb0e000&userid=133b6394b8178a11"
+  
 
 # D-1955-60:
   # text: "【移动】19元135G流量(首充50)"
   # url: "https://h5.lot-ml.com/h5orderEn/index?pudID=1b008b02abeff6d0&userid=133b6394b8178a11"
   # url: "/link/?data=aHR0cHM6Ly9oNS5sb3QtbWwuY29tL2g1b3JkZXJFbi9pbmRleD9wdWRJRD0xYjAwOGIwMmFiZWZmNmQwJnVzZXJpZD0xMzNiNjM5NGI4MTc4YTEx"
-  # svg: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reception-4" viewBox="0 0 16 16">  <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-8zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-11z"/></svg>'
+  # 
 
 # B-1936-140:
   # text: "【电信】29元185G流量100分钟"
   # url: "https://h5.lot-ml.com/h5orderEn/index?pudID=25190ff7126c61af&userid=133b6394b8178a11"
-  # svg: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reception-4" viewBox="0 0 16 16">  <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-8zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-11z"/></svg>'
+  # 
 
 # A-1905-085:
   # text: "【广电】28元350G流量200分钟"
   # url: "https://h5.lot-ml.com/h5orderEn/index?pudID=28ffbc8cd4a2b2d5&userid=133b6394b8178a11"
-  # svg: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reception-4" viewBox="0 0 16 16">  <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-8zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-11z"/></svg>'
+  # 
