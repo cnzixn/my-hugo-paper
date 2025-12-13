@@ -165,6 +165,6 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
 <!-- <span class="pill">自动识别 APK / IPA</span> -->
 
 <div class="section">
-<h2 style="color: red; margin: 15px 0; font-size: 18px;">暂不提供服务</h2>
+<h2 style="color: red; margin: 15px 0; font-size: 18px;">暂不提供服务，iOS框架测试结束！</h2>
 </div>
 
