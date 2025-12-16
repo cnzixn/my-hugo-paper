@@ -29,7 +29,7 @@ summary: "一组教学小卡片，教你如何安装模组。"
 　- _[豆包](https://doubao.com)_：回答问题快，推荐日常使用。  
 　- _[DeepSeek](https://deepseek.com)_：深度思考比较专业(慢)。  
 
-　
+<small>Tip：简单问题自己解决，问网友可能会被无视。</small>
 
   </div>
   <div class="task-nav">
@@ -49,7 +49,39 @@ summary: "一组教学小卡片，教你如何安装模组。"
 
 　`.XOR` 是加密文件，通过 _[B.M.解密器](/app/xor)_ 可以还原为 ZIP 压缩文件。
 
-　夸克浏览器：点击链接后，如果需要提取码，请更新一下版本再试。
+<small>Tip：夸克网盘如果需要提取码，请更新一下版本。</small>
+
+  </div>
+  <div class="task-nav">
+    <button class="btn prev-btn">上一个</button>
+    <button class="btn next-btn">下一个</button>
+  </div>
+</div>
+
+<div class="task-card" data-task>
+  <h2>卡片<span class="card-number">2</span>：获取安装包</h2>
+  <div class="task-content">
+官方正版：需要购买，然后提取安装包：
+  <div class="btn-group">
+   <button class="btn" onclick="window.open('https://apps.apple.com/us/app/dont-starve-shipwrecked/id1147297267?l=zh', '_blank')">购买苹果版</button>
+   <button class="btn" onclick="window.open('https://play.google.com/store/apps/details?id=com.kleientertainment.doNotStarveShipwrecked', '_blank')">购买安卓版</button>
+  </div>
+
+<!-- 免费试玩：无需购买，用于表明来源： -->
+  <!-- <div class="btn-group"> -->
+   <!-- <button class="btn" onclick="window.open('https://pan.baidu.com/wap/init?surl=f5D3VGi56R0PftWKigdoPg&pwd=uqn5')">直接下载↓</button> -->
+   <!-- <button class="btn" onclick="window.open('https://api.ddooo.com/downm/151548', '_blank')">直接下载↓</button> -->
+  <!-- </div> -->
+  <!-- <div class="btn-group"> -->
+   <!-- <button class="btn" onclick="window.open('https://ipa.store/1299.html')">苹果版详情</button> -->
+   <!-- <button class="btn" onclick="window.open('https://m.ddooo.com/softdown/151548.htm', '_blank')">安卓版详情</button> -->
+  <!-- </div> -->
+
+网盘分享：适配框架，用于测试模组：
+  {{< pan 游戏 >}}  
+
+  <small>免责：游戏文件来源于 _[ipa.store](https://ipa.store/1299.html)_ 、_[ddooo.com](https://m.ddooo.com/softdown/151548.htm)_ 等网站。如果有条件，请购买支持官方正版。此游戏在国内暂时未上架，分享仅为了方便玩家。</small>  
+
 
   </div>
   <div class="task-nav">
@@ -62,7 +94,7 @@ summary: "一组教学小卡片，教你如何安装模组。"
   <h2>卡片<span class="card-number">3</span>：获取兔人框架</h2>
   <div class="task-content">
 
-　兔人框架 `BM25.10.20.ZIP` ，已适配 _[苹果1.84](https://apps.apple.com/us/app/dont-starve-shipwrecked/id1147297267?l=zh)_ 和 _[安卓1.33](https://play.google.com/store/apps/details?id=com.kleientertainment.doNotStarveShipwrecked)_ 版本。
+　兔人框架 `BM25.10.20.ZIP` ，已适配官方版本 _[苹果1.84](https://apps.apple.com/us/app/dont-starve-shipwrecked/id1147297267?l=zh)_ 和 _[安卓1.33](https://play.google.com/store/apps/details?id=com.kleientertainment.doNotStarveShipwrecked)_ 。
 
   {{< pan "框架" >}}
 
@@ -74,30 +106,6 @@ summary: "一组教学小卡片，教你如何安装模组。"
   </div>
 </div>
 
-<div class="task-card" data-task>
-  <h2>卡片<span class="card-number">2</span>：获取安装包</h2>
-  <div class="task-content">
-　你需要购买正版游戏，然后提取安装包：
-  <div class="btn-group">
-   <button class="btn" onclick="window.open('https://apps.apple.com/us/app/dont-starve-shipwrecked/id1147297267?l=zh', '_blank')">购买苹果版</button>
-   <button class="btn" onclick="window.open('https://play.google.com/store/apps/details?id=com.kleientertainment.doNotStarveShipwrecked', '_blank')">购买安卓版</button>
-  </div>
-
-　如果无法购买，你可以免费下载试玩版：
-  <div class="btn-group">
-   <button class="btn" onclick="window.open('https://ipa.store/1299.html', '_blank')">试玩苹果版</button>
-   <button class="btn" onclick="window.open('http://m.k73.com/down/addj/640060.html', '_blank')">试玩安卓版</button>
-  </div>
-
-  <!-- {{< pan 游戏 >}} -->  
-
-  <small> **免责声明**：试玩版来源于网络，仅供用于测试框架功能。 </small>  
-  </div>
-  <div class="task-nav">
-    <button class="btn prev-btn">上一个</button>
-    <button class="btn next-btn">下一个</button>
-  </div>
-</div>
 
 <div class="task-card" data-task>
   <h2>卡片<span class="card-number">4</span>：获取兔人模组</h2>

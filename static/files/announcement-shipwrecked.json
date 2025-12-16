@@ -1,6 +1,7 @@
 {
-  "lv": 251212,
-  "date": "25-12-12",
+  "lv": 251215,
+  "version": 251215,
+  "date": "25-12-15",
   "sc": {
       "title": "B.M.",
       "content": "本次框架测试结束！",
@@ -9,11 +10,11 @@
       "new": "本次框架测试结束！"
   },
   "en": {
-      "title": "B.M.",
-      "content": "251018 has been updated",
-      "button": "Details",
+"title": "B.M.",
+      "content": "This framework test is over!",
+      "button": "View",
       "url": "https://d.bxq.me/p/new/",
-      "new": "The version is too low!"
+      "new": "This framework test is over!"
   },
-  "note": "Klei商店　快来看看Klei商店最新上架的好东西吧！　http://store.kleientertainment.com"
+  "note": "version变动才会跳公告 Klei商店　快来看看Klei商店最新上架的好东西吧！　http://store.kleientertainment.com"
 }
