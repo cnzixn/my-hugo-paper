@@ -24,11 +24,11 @@ summary: 'CDK统一管理系统，包含生成、查看、删除功能'
 <h2>管理员登录</h2>
 <div class="form-group">
 <label for="username">用户</label>
-<input type="text" id="username" class="form-input" value="cnzixn@qq.com">
+<input type="text" id="username" class="form-input" value="">
 </div>
 <div class="form-group">
 <label for="password">密码</label>
-<input type="password" id="password" class="form-input" value="d55224488">
+<input type="password" id="password" class="form-input" value="">
 </div>
 <div class="button-group">
 <button class="search-btn" onclick="login()">登录</button>
