@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>模组文件MD5校验工具（标准32位）</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            padding: 20px; 
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .container {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h3 { 
+            color: #333;
+            margin-top: 0;
+        }
+        #zipInput { 
+            padding: 12px; 
+            margin-bottom: 20px;
+            width: 100%;
+            box-sizing: border-box;
+            border: 2px dashed #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .input-group { 
+            margin: 20px 0; 
+            padding: 15px;
+            background: white;
+            border-radius: 4px;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+        #officialMd5 { 
+            padding: 10px; 
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            width: 100%;
+        }
+        button:hover {
+            background: #45a049;
+        }
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        #result {
+            padding: 20px;
+            border-radius: 6px;
+            margin-top: 20px;
+            font-family: monospace;
+            font-size: 14px;
+            line-height: 1.5;
+            min-height: 100px;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+        .success { 
+            background: #e8f5e9; 
+            color: #2e7d32;
+            border-left: 4px solid #4CAF50;
+        }
+        .error { 
+            background: #ffebee; 
+            color: #c62828;
+            border-left: 4px solid #f44336;
+        }
+        .warning { 
+            background: #fff3e0; 
+            color: #ef6c00;
+            border-left: 4px solid #ff9800;
+        }
+        .info { 
+            background: #e3f2fd; 
+            color: #1565c0;
+            border-left: 4px solid #2196f3;
+        }
+        .processing { 
+            background: #f5f5f5; 
+            color: #666;
+            border-left: 4px solid #9e9e9e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>模组文件MD5校验工具（标准32位）</h3>
+        <p>上传模组压缩包，自动校验 mainfunction.lua 的 MD5 哈希值</p>
+        
+        <input type="file" id="zipInput" accept=".zip,.rar,.7z" />
+        <p style="font-size: 12px; color: #666;">支持 .zip 格式压缩包</p>
+        
+        <div id="uploadStatus" class="info" style="display: none;"></div>
+        
+        <div class="input-group">
+            <label>输入官方MD5校验码（32位）：</label>
+            <input type="text" id="officialMd5" 
+                   placeholder="粘贴官方提供的32位MD5校验码（不区分大小写）"
+                   pattern="[a-fA-F0-9]{32}"
+                   title="请输入32位十六进制MD5值" />
+            <button id="compareBtn" onclick="compareMd5()" disabled>点击比对MD5</button>
+        </div>
+
+        <div id="result"></div>
+    </div>
+
+    <!-- 引入解压库和MD5计算库 -->
+    <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/spark-md5@3.0.2/spark-md5.min.js"></script>
+
+    <script>
+        let calculatedMd5 = '';
+        let isProcessing = false;
+
+        // 更新UI状态
+        function updateUIState() {
+            const compareBtn = document.getElementById('compareBtn');
+            compareBtn.disabled = !calculatedMd5 || isProcessing;
+            compareBtn.textContent = isProcessing ? '处理中...' : '点击比对MD5';
+        }
+
+        // 显示消息
+        function showMessage(type, message) {
+            const resultDom = document.getElementById('result');
+            resultDom.className = type;
+            resultDom.textContent = message;
+        }
+
+        // 正确的Uint8Array转十六进制函数
+        function uint8ArrayToHex(uint8Array) {
+            return Array.from(uint8Array)
+                .map(b => b.toString(16).padStart(2, '0'))
+                .join('');
+        }
+
+        // 处理压缩包并计算MD5
+        document.getElementById('zipInput').addEventListener('change', async (e) => {
+            const file = e.target.files[0];
+            const statusDom = document.getElementById('uploadStatus');
+            isProcessing = true;
+            updateUIState();
+            
+            if (!file) {
+                isProcessing = false;
+                updateUIState();
+                return;
+            }
+
+            // 验证文件类型
+            const fileName = file.name.toLowerCase();
+            if (!fileName.endsWith('.zip')) {
+                showMessage('error', '❌ 请上传.zip格式的压缩包文件');
+                statusDom.style.display = 'none';
+                isProcessing = false;
+                updateUIState();
+                return;
+            }
+
+            try {
+                statusDom.style.display = 'block';
+                statusDom.textContent = '正在解压压缩包...';
+                statusDom.className = 'info';
+                
+                const jszip = new JSZip();
+                const zipContent = await jszip.loadAsync(file);
+
+                // 查找目标文件
+                let targetFile = null;
+                let targetFilePath = '';
+                
+                // 先精确查找 mainfunction.lua
+                for (const filePath in zipContent.files) {
+                    const fileNameLower = filePath.toLowerCase();
+                    if (fileNameLower === 'mainfunction.lua' || 
+                        fileNameLower.endsWith('/mainfunction.lua')) {
+                        targetFile = zipContent.files[filePath];
+                        targetFilePath = filePath;
+                        break;
+                    }
+                }
+                
+                // 如果没找到，再尝试其他可能的文件名
+                if (!targetFile) {
+                    for (const filePath in zipContent.files) {
+                        const fileNameLower = filePath.toLowerCase();
+                        if (fileNameLower.includes('mainfunction') && fileNameLower.endsWith('.lua')) {
+                            targetFile = zipContent.files[filePath];
+                            targetFilePath = filePath;
+                            break;
+                        }
+                    }
+                }
+
+                if (!targetFile) {
+                    showMessage('error', '❌ 压缩包中未找到 mainfunction.lua 文件\n\n可用的lua文件：\n' + 
+                        Object.keys(zipContent.files)
+                            .filter(f => f.toLowerCase().endsWith('.lua'))
+                            .map(f => `• ${f}`)
+                            .join('\n') || '（无lua文件）');
+                    statusDom.style.display = 'none';
+                    isProcessing = false;
+                    updateUIState();
+                    return;
+                }
+
+                statusDom.textContent = `找到文件: ${targetFilePath}\n正在计算MD5...`;
+                
+                // 读取文件内容
+                const fileData = await targetFile.async("arraybuffer");
+                
+                // 计算MD5
+                const spark = new SparkMD5.ArrayBuffer();
+                spark.append(fileData);
+                calculatedMd5 = spark.end(); // 直接获取32位十六进制MD5
+                
+                statusDom.style.display = 'none';
+                showMessage('success', 
+                    `✅ MD5计算完成！\n\n文件：${targetFilePath}\n文件大小：${fileData.byteLength.toLocaleString()} 字节\n\n计算得到的MD5（32位）：\n${calculatedMd5}\n\n请复制上方MD5值，或在下框输入官方MD5进行比对`);
+                
+            } catch (err) {
+                console.error('处理失败:', err);
+                showMessage('error', `❌ 处理失败：${err.message || '未知错误'}\n\n请确保：\n1. 文件是有效的压缩包\n2. 文件没有损坏\n3. 文件大小不超过浏览器限制`);
+                statusDom.style.display = 'none';
+            } finally {
+                isProcessing = false;
+                updateUIState();
+            }
+        });
+
+        // 比对计算结果与官方MD5
+        function compareMd5() {
+            if (isProcessing || !calculatedMd5) return;
+            
+            const officialInput = document.getElementById('officialMd5');
+            let officialMd5 = officialInput.value.trim().toLowerCase();
+            
+            // 移除可能的空格和连字符
+            officialMd5 = officialMd5.replace(/[\s-]/g, '');
+            
+            if (!officialMd5) {
+                showMessage('warning', '⚠️ 请输入官方MD5校验码');
+                officialInput.focus();
+                return;
+            }
+            
+            // 验证格式
+            if (!/^[a-f0-9]{32}$/.test(officialMd5)) {
+                showMessage('error', '❌ 请输入有效的32位MD5校验码\n\nMD5应为32位十六进制字符（0-9, a-f）\n\n当前输入：' + officialMd5);
+                officialInput.focus();
+                officialInput.select();
+                return;
+            }
+            
+            if (officialMd5 === calculatedMd5.toLowerCase()) {
+                showMessage('success', 
+                    `✅ 比对成功！MD5完全匹配！\n\n计算结果：${calculatedMd5}\n官方校验码：${officialMd5}\n\n🎉 模组文件完整性验证通过！\n文件未被修改，可以安全安装。`);
+            } else {
+                showMessage('error', 
+                    `❌ 比对失败！MD5不匹配！\n\n计算结果：${calculatedMd5}\n官方校验码：${officialMd5}\n\n⚠️ 警告：文件可能已被修改！\n请勿安装此模组文件！\n\n请检查：\n1. 确认官方MD5值正确\n2. 确认下载的文件完整\n3. 确认是原始官方文件`);
+            }
+        }
+
+        // 实时验证输入
+        document.getElementById('officialMd5').addEventListener('input', function(e) {
+            let value = this.value.trim();
+            // 移除所有非十六进制字符
+            value = value.replace(/[^a-fA-F0-9]/g, '');
+            this.value = value.toLowerCase();
+        });
+
+        // 支持拖拽上传
+        const dropZone = document.body;
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            e.dataTransfer.dropEffect = 'copy';
+        });
+
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            const files = e.dataTransfer.files;
+            if (files.length > 0) {
+                const file = files[0];
+                if (file.name.toLowerCase().endsWith('.zip')) {
+                    const fileInput = document.getElementById('zipInput');
+                    const dataTransfer = new DataTransfer();
+                    dataTransfer.items.add(file);
+                    fileInput.files = dataTransfer.files;
+                    
+                    // 触发change事件
+                    const event = new Event('change', { bubbles: true });
+                    fileInput.dispatchEvent(event);
+                } else {
+                    showMessage('error', '❌ 请拖拽.zip格式的压缩包文件');
+                }
+            }
+        });
+
+        // 点击输入框时全选
+        document.getElementById('officialMd5').addEventListener('click', function() {
+            this.select();
+        });
+
+        // 初始化
+        updateUIState();
+        
+        // 测试函数（仅用于调试）
+        window.testMd5 = function() {
+            // 测试计算字符串的MD5
+            const testString = "hello world";
+            const spark = new SparkMD5();
+            spark.append(testString);
+            const md5 = spark.end();
+            console.log('测试 "hello world" 的MD5:', md5);
+            return md5;
+        };
+    </script>
+</body>
+</html>
