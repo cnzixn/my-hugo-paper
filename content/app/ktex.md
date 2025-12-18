@@ -334,7 +334,7 @@ summary: '饥荒TEX贴图处理工具，可以进行png和tex互相转化。'
 
 
 <!-- <script src="/js/ktex.js"></script> -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script> -->
 
 <script>
     // 网页交互功能

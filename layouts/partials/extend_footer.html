@@ -2,22 +2,23 @@
 {{- /*     Insert any custom code web-analytics, resources, etc. here */ -}}
 {{- /* Footer custom content area end */ -}}
 
+<!-- 外部 CDN 脚本 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/spark-md5/3.0.2/spark-md5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
 
-{{ $temp := resources.Get "js/bv.encrypt.js" | fingerprint }}
-<script defer src="{{ $temp.RelPermalink }}"></script>
+{{/* 批量加载 JS：按环境选择 dev/prod 文件夹，带指纹防缓存 */}}
+{{ $jsFiles := slice "bv.encrypt" "pv.encrypt" "dc.encrypt" "klfa.encrypt" "ktex.encrypt" "app-imod" "app-buid" "app-cdk" "app-xor" }}
+{{ $envDir := cond (eq hugo.Environment "development") "dev" "prod" }} {{/* 环境对应文件夹 */}}
 
-{{ $temp := resources.Get "js/pv.encrypt.js" | fingerprint }}
-<script defer src="{{ $temp.RelPermalink }}"></script>
-
-{{ $temp := resources.Get "js/bpt.encrypt.js" | fingerprint }}
-<script defer src="{{ $temp.RelPermalink }}"></script>
-
-
-{{ $temp := resources.Get "js/klfa.encrypt.js" | fingerprint }}
-<script defer src="{{ $temp.RelPermalink }}"></script>
-
-{{ $temp := resources.Get "js/ktex.encrypt.js" | fingerprint }}
-<script defer src="{{ $temp.RelPermalink }}"></script>
-
-
-
+{{ range $file := $jsFiles }}
+  {{ $jsFilePath := printf "js/%s/%s.js" $envDir $file }} {{/* 拼接路径：js/dev/xxx.js 或 js/prod/xxx.js */}}
+  {{ $jsFile := resources.Get $jsFilePath }}
+  
+  {{ if $jsFile }}
+    {{ $jsFileWithFingerprint := $jsFile | fingerprint }} {{/* 指纹防缓存 */}}
+    <script defer src="{{ $jsFileWithFingerprint.RelPermalink }}"></script>
+  {{ else }}
+    {{ warnf "缺失 JS 文件：%s（检查路径和文件名）" $jsFilePath }}
+  {{ end }}
+{{ end }}

@@ -1,4 +1,9 @@
-{{/* 通用 JS 短代码：{{ js "xxx.js" }} 修复语法错误 */}}
-{{ $jsFileName := index .Params 0 }}
+{{/* 通用 JS 短代码：{{ js "脚本名" }}，本地加载 脚本名.1.js，服务器加载 脚本名.2.js */}}
+{{ $baseName := index .Params 0 }} {{/* 接收传入的脚本名（不含版本和后缀） */}}
+{{ $env := hugo.Environment }}
+
+{{/* 按环境拼接完整文件名：本地=xxx.1.js，服务器=xxx.2.js */}}
+{{ $jsFileName := cond (eq $env "development") (printf "%s.1.js" $baseName) (printf "%s.2.js" $baseName) }}
 {{ $jsFile := resources.Get (printf "js/%s" $jsFileName) | fingerprint }}
+
 <script defer src="{{ $jsFile.RelPermalink }}"></script>

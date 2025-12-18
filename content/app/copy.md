@@ -40,8 +40,6 @@ summary: '通过访问链接将[数据]导出，方便复制使用。'
   <div class="error" id="app-copy-error-msg"></div>
 </div>
 
-<!-- <script defer src="/js/app-copy.js"></script> -->
-{{< js "app-cdk.js" >}}
 
 
   <style>

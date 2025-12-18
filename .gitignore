@@ -1,4 +1,4 @@
 # 忽略Hugo生成的public目录
+assets/js/dev/
 /public/
 /resources/
-/_js
