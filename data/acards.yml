@@ -3,13 +3,39 @@
 A-0000-000:
   text: "【关于】我的流量卡"
   url: "/p/llk/"
-  
 
 Z-9999-999:
   text: "【查询】我的订单信息"
   url: "https://h5.lot-ml.com/Search/Index"
-  
 
+
+
+
+
+
+
+
+
+A-2128-90:
+  text: "【广电】28元350G流量200分钟🔥"
+  # url: "https://h5.lot-ml.com/h5orderEn/index?pudID=fcc02e2648866d30&userid=133b6394b8178a11"
+  url: "/link/?data=aHR0cHMlM0ElMkYlMkZoNS5sb3QtbWwuY29tJTJGaDVvcmRlckVuJTJGaW5kZXglM0ZwdWRJRCUzRGZjYzAyZTI2NDg4NjZkMzAlMjZ1c2VyaWQlM0QxMzNiNjM5NGI4MTc4YTEx"
+
+C-2122-85:
+  text: "【联通】29元300G流量300分钟🔥"
+  # url: "https://h5.lot-ml.com/h5orderEn/index?pudID=a6782e1c1a447411&userid=133b6394b8178a11"
+  url: "/link/?data=aHR0cHMlM0ElMkYlMkZoNS5sb3QtbWwuY29tJTJGaDVvcmRlckVuJTJGaW5kZXglM0ZwdWRJRCUzRGE2NzgyZTFjMWE0NDc0MTElMjZ1c2VyaWQlM0QxMzNiNjM5NGI4MTc4YTEx"
+
+
+
+
+
+
+
+
+# A-1956-180:
+  # text: "【广电】29元192G流量"
+  # url: "https://h5.lot-ml.com/h5orderEn/index?pudID=c6542121eeb0e000&userid=133b6394b8178a11"
 
 # C-2044-50:
   # text: "【联通】19元200G流量"
@@ -17,18 +43,13 @@ Z-9999-999:
   # url: "/link/?data=aHR0cHMlM0ElMkYlMkZoNS5sb3QtbWwuY29tJTJGaDVvcmRlckVuJTJGaW5kZXglM0ZwdWRJRCUzRGRjMzYyYjNmYzFiMjliOTQlMjZ1c2VyaWQlM0QxMzNiNjM5NGI4MTc4YTEx"
   # 
 
-A-2043-80:
-  text: "【广电】28元350G流量200分钟🔥"
-  # url: "https://h5.lot-ml.com/h5orderEn/index?pudID=e21545d2cec4a43d&userid=133b6394b8178a11"
-  url: "/link/?data=aHR0cHMlM0ElMkYlMkZoNS5sb3QtbWwuY29tJTJGaDVvcmRlckVuJTJGaW5kZXglM0ZwdWRJRCUzRGUyMTU0NWQyY2VjNGE0M2QlMjZ1c2VyaWQlM0QxMzNiNjM5NGI4MTc4YTEx"
+# A-2043-80:
+  # text: "【广电】28元350G流量200分钟🔥"
+  # # url: "https://h5.lot-ml.com/h5orderEn/index?pudID=e21545d2cec4a43d&userid=133b6394b8178a11"
+  # url: "/link/?data=aHR0cHMlM0ElMkYlMkZoNS5sb3QtbWwuY29tJTJGaDVvcmRlckVuJTJGaW5kZXglM0ZwdWRJRCUzRGUyMTU0NWQyY2VjNGE0M2QlMjZ1c2VyaWQlM0QxMzNiNjM5NGI4MTc4YTEx"
   
 
 
-B-2034-150:
-  text: "【电信】29元185G流量"
-  # url: "https://h5.lot-ml.com/h5orderEn/index?pudID=2ff326f6d7096a14&userid=133b6394b8178a11"
-  url: "/link/?data=aHR0cHMlM0ElMkYlMkZoNS5sb3QtbWwuY29tJTJGaDVvcmRlckVuJTJGaW5kZXglM0ZwdWRJRCUzRDJmZjMyNmY2ZDcwOTZhMTQlMjZ1c2VyaWQlM0QxMzNiNjM5NGI4MTc4YTEx"
-  
 
 
 # C-2030-80:
@@ -54,10 +75,10 @@ B-2034-150:
   # url: "https://h5.lot-ml.com/h5orderEn/index?pudID=02f3dd3bdda0177d&userid=133b6394b8178a11"
   # 
 
-A-1996-135:
-  text: "【广电】19元192G流量"
-  # url: "https://h5.lot-ml.com/h5orderEn/index?pudID=c6ec64cbbf17de66&userid=133b6394b8178a11"
-  url: "/link/?data=aHR0cHM6Ly9oNS5sb3QtbWwuY29tL2g1b3JkZXJFbi9pbmRleD9wdWRJRD1jNmVjNjRjYmJmMTdkZTY2JnVzZXJpZD0xMzNiNjM5NGI4MTc4YTEx"
+# A-1996-135:
+  # text: "【广电】19元192G流量"
+  # # url: "https://h5.lot-ml.com/h5orderEn/index?pudID=c6ec64cbbf17de66&userid=133b6394b8178a11"
+  # url: "/link/?data=aHR0cHM6Ly9oNS5sb3QtbWwuY29tL2g1b3JkZXJFbi9pbmRleD9wdWRJRD1jNmVjNjRjYmJmMTdkZTY2JnVzZXJpZD0xMzNiNjM5NGI4MTc4YTEx"
   
 
 # A-1995-55:
@@ -87,9 +108,6 @@ A-1996-135:
   # url: "https://h5.lot-ml.com/h5orderEn/index?pudID=95ef056866787f7f&userid=133b6394b8178a11"
   # 
 
-A-1956-180:
-  text: "【广电】29元192G流量"
-  url: "https://h5.lot-ml.com/h5orderEn/index?pudID=c6542121eeb0e000&userid=133b6394b8178a11"
   
 
 # D-1955-60:
