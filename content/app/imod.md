@@ -184,7 +184,7 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
   <div id="pkgDropZone" class="drop-zone">
     <p>拖放 apk/ipa 文件到这里 或</p>
     <button id="pkgBrowseBtn">选择安装包</button>
-    <input type="file" id="pkgFileInput" accept=".apk,.ipa" style="display:none;">
+    <input type="file" id="pkgFileInput" style="display:none;">
   </div>
   <div id="pkgFileInfo" class="file-info" style="display:none;"></div>
   <div id="pkgError" class="error"></div>
@@ -196,7 +196,7 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
   <div id="modsDropZone" class="drop-zone">
     <p>拖放 zip/xz/xor 文件到这里 或</p>
     <button id="modsBrowseBtn">选择模组文件</button>
-    <input type="file" id="modsFileInput" accept=".zip,.xz,.xor" multiple style="display:none;">
+    <input type="file" id="modsFileInput" multiple style="display:none;">
   </div>
   <div id="modsFileList" class="file-list" style="display:none;"></div>
   <div id="modsError" class="error"></div>
