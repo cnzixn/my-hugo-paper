@@ -2,8 +2,8 @@
 {{ $baseName := index .Params 0 }} {{/* 接收传入的脚本名（不含版本和后缀） */}}
 {{ $env := hugo.Environment }}
 
-{{/* 按环境拼接完整文件名：本地=xxx.1.js，服务器=xxx.2.js */}}
-{{ $jsFileName := cond (eq $env "development") (printf "%s.1.js" $baseName) (printf "%s.2.js" $baseName) }}
-{{ $jsFile := resources.Get (printf "js/%s" $jsFileName) | fingerprint }}
+{{/* 按环境拼接完整文件名：开发=js/dev/xxx.js，线上=js/prod/xxx.js */}}
+{{ $jsFileName := cond (eq $env "development") (printf "js/prod/%s.js" $baseName) (printf "js/dev/%s.js" $baseName) }}
+{{ $jsFile := resources.Get (printf "%s" $jsFileName) | fingerprint }}
 
 <script defer src="{{ $jsFile.RelPermalink }}"></script>

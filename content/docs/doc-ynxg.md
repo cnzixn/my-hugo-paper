@@ -8,7 +8,7 @@ tags:
 aliases:
 - 'ynxg'
 comments: false
-url: '/p/404/'
+url: '/p/402/'
 ---
 
 

@@ -1,6 +1,6 @@
 # 橱窗数据
 
-A-0000-000:
+Z-0000-000:
   text: "【关于】我的流量卡"
   url: "/p/llk/"
 
@@ -14,7 +14,10 @@ Z-9999-999:
 
 
 
-
+B-2133-80:
+  text: "【电信】29元185G流量"
+  # url: "https://h5.lot-ml.com/h5orderEn/index?pudID=71fdfc41ec34e6e3&userid=133b6394b8178a11"
+  url: "/link/?data=aHR0cHMlM0ElMkYlMkZoNS5sb3QtbWwuY29tJTJGaDVvcmRlckVuJTJGaW5kZXglM0ZwdWRJRCUzRDcxZmRmYzQxZWMzNGU2ZTMlMjZ1c2VyaWQlM0QxMzNiNjM5NGI4MTc4YTEx"
 
 A-2128-90:
   text: "【广电】28元350G流量200分钟🔥"

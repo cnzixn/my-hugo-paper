@@ -8,7 +8,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
 
 {{/* 批量加载 JS：按环境选择 dev/prod 文件夹，带指纹防缓存 */}}
-{{ $jsFiles := slice "bv.encrypt" "pv.encrypt" "dc.encrypt" "klfa.encrypt" "ktex.encrypt" "app-imod" "app-buid" "app-cdk" "app-xor" }}
+{{ $jsFiles := slice "bv.encrypt" "pv.encrypt" "dc.encrypt" "dc2.encrypt" "klfa.encrypt" "ktex.encrypt" "app-imod" "app-buid" "app-cdk" "app-xor" }}
 {{ $envDir := cond (eq hugo.Environment "development") "dev" "prod" }} {{/* 环境对应文件夹 */}}
 
 {{ range $file := $jsFiles }}

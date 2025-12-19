@@ -3,7 +3,7 @@ title: '橱窗-工具'
 layout: 'aapp'
 draft: false
 searchHidden: true
-appHidden: true # 自定义实现，App列表隐藏
+appHidden: true
 weight: 250003
 summary: '生成橱窗页面所需的加密链接'
 ---

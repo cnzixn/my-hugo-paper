@@ -2,7 +2,7 @@
 title: "橱窗"
 layout: 'aapp'
 searchHidden: true
-appHidden: true # 自定义实现，App列表隐藏
+appHidden: true
 url: "/link"
 ---
 

@@ -2,6 +2,7 @@
 title: 'B.M.用户码'
 layout: 'aapp'
 searchHidden: true
+appHidden: true
 draft: true
 weight: 250003
 summary: '通过链接获取用户码，生成“BM补丁”文件。'
