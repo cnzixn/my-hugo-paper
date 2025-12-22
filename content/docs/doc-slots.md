@@ -13,33 +13,41 @@ url: '/p/818/'
 
 
 ### 〇、设置存档目录  
-存档默认保存在“内部”，建议设置为“外部”，设置后请“修复存档”、“导出存档”。  
 
-卸载游戏时，“内部”、“外部”文件夹都会被自动删除。如需“备份”导出的存档文件，请将 files 文件夹复制到其他文件夹(例：/sdcard/download)。  
+存档默认保存在“内部”(数据目录1)，建议设置为“外部”(数据目录2)，设置后请“修复存档”、“导出存档”。  
+
+卸载游戏时，“内部”、“外部”目录都会被自动删除。如需“备份”导出的存档文件，请将 files 目录复制到其他目录(例：/sdcard/download)。  
+
 ![图片](/img/lAWBvaZj526UESR.webp)  
+
+<small>PS：MT管理器，点击 -> {安装包} -> {数据目录2}，可快速跳转“外部”目录。“内部”目录受系统保护，需要root权限才能访问。</small>
 
 ---
 
 ### 一、“内部”与“外部”目录  
 
-框架支持添加到“不同”版本，请注意这里`包名`有变化。
 
-内部：`/data/data/<package>/`
+![图片](/img/o7ElukfGOHILdMa.webp)
+
+内部：`/data/data/<package>/`  
+
 ```lua
 /data/data/hei.kleientertainment.doNotStarveShipwrecked/
 ```
 
-![图片](/img/o7ElukfGOHILdMa.webp)  
+---
+
+
+![图片](/img/6NeRqFsbrIfmX7u.webp)
 
 外部：`/sdcard/Android/data/<package>/`  
+
 ```lua
 /sdcard/Android/data/hei.kleientertainment.doNotStarveShipwrecked/
 ```
 
-![图片](/img/6NeRqFsbrIfmX7u.webp)  
-
->获取权限
-- “外部”文件夹可能“无权访问、无权操作”，推荐使用“MT管理器”+“Shizuku”获取操作权限。  
+> 此目录可能需要手动授权(Android11+)
+- 推荐使用“MT管理器”+“Shizuku”获取操作权限。  
 - 手机QQ下载的文件，大家应该都会弄。这里的存档文件与之类似，简单说一下流程：MT管理器->设置->安装Shiziku->打开Shiziku(内部自带教程)。  
 
 ![图片](/img/tAOYdK1EyqxDl28.webp)  

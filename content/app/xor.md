@@ -181,6 +181,51 @@ summary: '使用XOR处理文件，防止网盘分享文件被和谐。'
     z-index: 9998;
     display: none; /* 默认隐藏 */
   }
+  /* 遮罩层样式 */
+  .modal-mask {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+  }
+  /* 弹窗内容样式 */
+  .modal-content {
+      background: #fff;
+      padding: 25px;
+      border-radius: 8px;
+      width: 320px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  .note mark {
+      background-color: #fff3cd;
+      color: #856404;
+      padding: 0 3px;
+  }
+  .modal-buttons {
+      margin-top: 20px;
+      text-align: center;
+  }
+  .modal-btn {
+      padding: 6px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      // margin-left: 10px;
+  }
+  .close-btn {
+      background: #e9ecef;
+      color: #495057;
+  }
+  .no-prompt-btn {
+      background: #007bff;
+      color: #fff;
+  }
 </style>
 
 
@@ -188,16 +233,21 @@ summary: '使用XOR处理文件，防止网盘分享文件被和谐。'
 <h1>B.M.解密器</h1>
 <!-- <span class="pill">任意格式 | 后缀不区分大小写 | 本地安全</span> -->
 
-
-<div class="section">
+<!-- 弹窗容器 -->
+<div class="modal-mask" id="tipModal">
+  <div class="modal-content">
   <small class="note">
-    温馨提示：<br>
-    • 本地处理文件<mark>不消耗流量</mark>。<br>
-    • 暂不支持 iPhone/iPad 设备。<br>
-    • 兼容 Chrome/Edge 等浏览器。<br>
+      温馨提示：<br>
+      • 本地处理文件<mark>不消耗流量</mark>。<br>
+      • 暂不支持 iPhone/iPad 设备。<br>
+      • 仅支持 Chrome/Edge 浏览器。<br>
   </small>
+  <div class="modal-buttons">
+      <!-- <button class="modal-btn close-btn" onclick="closeModal()">关闭</button> -->
+      <button class="modal-btn no-prompt-btn" onclick="noMorePrompt()">不再提示</button>
+  </div>
+  </div>
 </div>
-
 
 
 <div class="section">
@@ -241,3 +291,35 @@ summary: '使用XOR处理文件，防止网盘分享文件被和谐。'
 
 
 
+
+<script>
+    // 获取弹窗元素
+    const modal = document.getElementById('tipModal');
+
+    // 检查Cookie，判断是否显示弹窗
+    function checkPromptCookie() {
+        const cookies = document.cookie.split(';');
+        for (let cookie of cookies) {
+            const [name, value] = cookie.trim().split('=');
+            if (name === 'noShowTip' && value === 'true') {
+                modal.style.display = 'none';
+            }
+        }
+    }
+
+    // 关闭弹窗
+    function closeModal() {
+        modal.style.display = 'none';
+    }
+
+    // 不再提示，设置Cookie（有效期7天）
+    function noMorePrompt() {
+        const date = new Date();
+        date.setTime(date.getTime() + 7 * 24 * 60 * 60 * 1000);
+        document.cookie = `noShowTip=true; expires=${date.toUTCString()}; path=/app/xor`;
+        closeModal();
+    }
+
+    // 页面加载时检查Cookie并显示弹窗
+    window.onload = checkPromptCookie;
+</script>

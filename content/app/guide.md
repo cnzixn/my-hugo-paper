@@ -94,7 +94,7 @@ summary: "一组教学小卡片，教你如何安装模组。"
   <h2>卡片<span class="card-number">3</span>：获取兔人框架</h2>
   <div class="task-content">
 
-　兔人框架 `BM25.10.20.ZIP` ，已适配官方版本 _[苹果1.84](https://apps.apple.com/us/app/dont-starve-shipwrecked/id1147297267?l=zh)_ 和 _[安卓1.33](https://play.google.com/store/apps/details?id=com.kleientertainment.doNotStarveShipwrecked)_ 。
+　兔人框架 `BM26.01.01.ZIP` ，已适配官方版本 _[苹果1.84](https://apps.apple.com/us/app/dont-starve-shipwrecked/id1147297267?l=zh)_ 和 _[安卓1.33](https://play.google.com/store/apps/details?id=com.kleientertainment.doNotStarveShipwrecked)_ 。
 
   {{< pan "框架" >}}
 
@@ -136,7 +136,6 @@ summary: "一组教学小卡片，教你如何安装模组。"
   </div>
 
   视频演示(上下对应)：  
-  <small>(Tip：拖动进度条到结尾，可直接退出播放)</small>
   <div class="btn-group">
     <button class="btn" onclick="installMethod('auto')">视频一</button>
     <button class="btn" onclick="installMethod('manual')">视频二</button>
@@ -148,7 +147,7 @@ summary: "一组教学小卡片，教你如何安装模组。"
     {{< video id="install-guide-manual-video" src="/img/lv_0_20250831182656.mp4" poster="/img/lv_0_20250831182656.webp" crop="true" cropHeight="75%" >}}  
   </div>
 
-  <small>备注：(安卓版)使用MT管理器，需通过 _[B.M.解密器](/app/xor)_ 处理`.XOR`的文件。</small>  
+  <small>Tip：拖动进度条到结尾，可直接退出播放</small>
   </div>
   <div class="task-nav">
     <button class="btn prev-btn">上一个</button>
