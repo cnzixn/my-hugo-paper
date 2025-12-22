@@ -189,7 +189,7 @@ summary: '使用XOR处理文件，防止网盘分享文件被和谐。'
       width: 100%;
       height: 100%;
       background: rgba(0, 0, 0, 0.5);
-      display: flex;
+      display: none;
       justify-content: center;
       align-items: center;
       z-index: 9999;
@@ -293,33 +293,39 @@ summary: '使用XOR处理文件，防止网盘分享文件被和谐。'
 
 
 <script>
-    // 获取弹窗元素
-    const modal = document.getElementById('tipModal');
+// 获取弹窗元素
+const modal = document.getElementById('tipModal');
 
-    // 检查Cookie，判断是否显示弹窗
-    function checkPromptCookie() {
-        const cookies = document.cookie.split(';');
-        for (let cookie of cookies) {
-            const [name, value] = cookie.trim().split('=');
-            if (name === 'no_show_tip_app_xor' && value === 'true') {
-                modal.style.display = 'none';
-            }
+// 检查Cookie，判断是否显示弹窗（补全核心逻辑）
+function checkPromptCookie() {
+    const cookies = document.cookie.split(';');
+    let hasHideCookie = false; // 标记是否存在“隐藏弹窗”的Cookie
+    for (let cookie of cookies) {
+        const [name, value] = cookie.trim().split('=');
+        if (name === 'no_show_tip_app_xor' && value === 'true') {
+            hasHideCookie = true;
+            break; // 找到后直接退出循环，提升效率
         }
     }
+    // 关键：无Cookie则显示弹窗，有则隐藏
+    modal.style.display = hasHideCookie ? 'none' : 'flex';
+}
 
-    // 关闭弹窗
-    function closeModal() {
-        modal.style.display = 'none';
-    }
+// 关闭弹窗
+function closeModal() {
+    modal.style.display = 'none';
+}
 
-    // 不再提示，设置Cookie（有效期7天）
-    function noMorePrompt() {
-        const date = new Date();
-        date.setTime(date.getTime() + 7 * 24 * 60 * 60 * 1000);
-        document.cookie = `no_show_tip_app_xor=true; expires=${date.toUTCString()}; path=/`;
-        closeModal();
-    }
+// 不再提示，设置Cookie（有效期7天）
+function noMorePrompt() {
+    const date = new Date();
+    date.setTime(date.getTime() + 7 * 24 * 60 * 60 * 1000);
+    document.cookie = `no_show_tip_app_xor=true; expires=${date.toUTCString()}; path=/`;
+    closeModal();
+}
 
-    // 页面加载时检查Cookie并显示弹窗
-    window.onload = checkPromptCookie;
+// 页面加载时执行检查
+window.onload = checkPromptCookie;
+
 </script>
+
