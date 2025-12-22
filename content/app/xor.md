@@ -301,7 +301,7 @@ summary: '使用XOR处理文件，防止网盘分享文件被和谐。'
         const cookies = document.cookie.split(';');
         for (let cookie of cookies) {
             const [name, value] = cookie.trim().split('=');
-            if (name === 'noShowTip' && value === 'true') {
+            if (name === 'no_show_tip_app_xor' && value === 'true') {
                 modal.style.display = 'none';
             }
         }
@@ -316,7 +316,7 @@ summary: '使用XOR处理文件，防止网盘分享文件被和谐。'
     function noMorePrompt() {
         const date = new Date();
         date.setTime(date.getTime() + 7 * 24 * 60 * 60 * 1000);
-        document.cookie = `noShowTip=true; expires=${date.toUTCString()}; path=/app/xor`;
+        document.cookie = `no_show_tip_app_xor=true; expires=${date.toUTCString()}; path=/`;
         closeModal();
     }
 

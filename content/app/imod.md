@@ -313,7 +313,7 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
         const cookies = document.cookie.split(';');
         for (let cookie of cookies) {
             const [name, value] = cookie.trim().split('=');
-            if (name === 'noShowTip' && value === 'true') {
+            if (name === 'no_show_tip_app_imod' && value === 'true') {
                 modal.style.display = 'none';
             }
         }
@@ -328,7 +328,7 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
     function noMorePrompt() {
         const date = new Date();
         date.setTime(date.getTime() + 7 * 24 * 60 * 60 * 1000);
-        document.cookie = `noShowTip=true; expires=${date.toUTCString()}; path=/app/iomd`;
+        document.cookie = `no_show_tip_app_imod=true; expires=${date.toUTCString()}; path=/`;
         closeModal();
     }
 
