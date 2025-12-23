@@ -302,7 +302,7 @@ function checkPromptCookie() {
     let hasHideCookie = false; // 标记是否存在“隐藏弹窗”的Cookie
     for (let cookie of cookies) {
         const [name, value] = cookie.trim().split('=');
-        if (name === 'no_show_tip_app_xor' && value === 'true') {
+        if (name === 'no_show_tip_app_xor_251224' && value === 'true') {
             hasHideCookie = true;
             break; // 找到后直接退出循环，提升效率
         }
@@ -320,7 +320,7 @@ function closeModal() {
 function noMorePrompt() {
     const date = new Date();
     date.setTime(date.getTime() + 7 * 24 * 60 * 60 * 1000);
-    document.cookie = `no_show_tip_app_xor=true; expires=${date.toUTCString()}; path=/`;
+    document.cookie = `no_show_tip_app_xor_251224=true; expires=${date.toUTCString()}; path=/`;
     closeModal();
 }
 

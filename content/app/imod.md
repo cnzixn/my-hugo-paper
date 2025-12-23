@@ -229,6 +229,7 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
       • 本地处理文件<mark>不消耗流量</mark>。<br>
       • 暂不支持 iPhone/iPad 设备。<br>
       • 仅支持 Chrome/Edge 浏览器。<br>
+      • 框架限定<mark>[测试2]241224</mark>版本！<br>
   </small>
   <div class="modal-buttons">
       <!-- <button class="modal-btn close-btn" onclick="closeModal()">关闭</button> -->
@@ -314,7 +315,7 @@ function checkPromptCookie() {
     let hasHideCookie = false; // 标记是否存在“隐藏弹窗”的Cookie
     for (let cookie of cookies) {
         const [name, value] = cookie.trim().split('=');
-        if (name === 'no_show_tip_app_imod' && value === 'true') {
+        if (name === 'no_show_tip_app_imod_251224' && value === 'true') {
             hasHideCookie = true;
             break; // 找到后直接退出循环，提升效率
         }
@@ -332,7 +333,7 @@ function closeModal() {
 function noMorePrompt() {
     const date = new Date();
     date.setTime(date.getTime() + 7 * 24 * 60 * 60 * 1000);
-    document.cookie = `no_show_tip_app_imod=true; expires=${date.toUTCString()}; path=/`;
+    document.cookie = `no_show_tip_app_imod_251224=true; expires=${date.toUTCString()}; path=/`;
     closeModal();
 }
 
