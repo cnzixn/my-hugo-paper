@@ -42,9 +42,11 @@ url: '/p/2/'
 
 ---
 
-　年底了，来给家人们上点福利，点击下方链接上车：
+　年底了，来给家人们上点福利，点击下方链接上车(开个玩笑)：
 
-{{< figure src="/img/Image_1766017365.webp" align=center attr="" link="https://m.tb.cn/h.7Weq3Bp?tk=TqUjfvxAog2" >}}
+{{< figure src="/img/Image_1766017365.webp" align=center attr="赞助作者并领取CDK" link="https://m.tb.cn/h.7Weq3Bp?tk=TqUjfvxAog2" >}}
+
+　我并没有精力为所有人解决问题，如果你愿意“赞助”，我也愿意花时间去为你修Bug。提前说一下，我这里不是许愿池，不能实现你的愿望，比如说：帮我移植一下 XXX 模组。
 
 ---
 
