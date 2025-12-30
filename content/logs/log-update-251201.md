@@ -2,7 +2,7 @@
 title: '框架 - 一月更新'
 date: 2025-12-30
 author: 'Bny'
-draft: true
+draft: false
 summary: '框架BM26.01.01版本更新，请注意查收！'
 tags:
 - '公告'
@@ -16,31 +16,33 @@ url: '/p/2/'
 
 ### 文件下载
 
-{{< pan "框架" >}}
+<!-- {{< pan "框架" >}} -->
 
-备注：框架中的 BM000 是个人自用模组，用不习惯可以删掉。发出来是让各位玩家帮我免费测试，主打一个“白嫖”测试员！
+网盘暂未上传...
+
+相关文章：《[关于 CDK 系统的详细说明](/p/cdk)》
 
 ---
 
 ### 更新说明
 
-26.01.01
+- BM安装器：拒绝安装未经验证的框架（适用于B.M.260101）
 
-- BM安装器：拒绝安装未经验证的框架。
-
-- CDK验证：使用模组功能需要CDK验证通过。(备注：关于 CDK 的[详细说明](/p/cdk))
+- CDK验证：使用模组功能需要激活码验证通过。
 
 - 布局优化：图标按钮支持拖动/按键微调位置。
   ```
-  -- 设置按钮可以被拖动(供模组作者使用)
+  -- SetButtonCanBeDrag，设置按钮可以被拖动
   -- 参数：按钮(Widget)，自定义名称(string)
-
-  inst.HUD.controls:SetButtonCanBeDrag(inst.HUD.controls.inv, "bt_inventory")  -- 物品栏
+  -- 物品栏可拖动
+  inst.HUD.controls:SetButtonCanBeDrag(inst.HUD.controls.inv, "bt_inventory")
   ```
 
 - BM礼包：框架中旧的积分系统下线。网站“礼包码”的算法更新。(备注：旧框架需更新，否则无法使用相关功能)
 
 - 资源加载：优化进入/退出游戏时资源加载，避免部分设备因内存不足而闪退。
+
+- 
 
 ---
 
