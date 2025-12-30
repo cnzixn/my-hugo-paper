@@ -57,7 +57,7 @@ searchHidden: true
   - 持续改进和丰富网站的内容。  
 
 - 你可以通过以下方式赞助本站：  
-  - _[赞助并领取CDK](https://m.tb.cn/h.7Weq3Bp?tk=TqUjfvxAog2)_
+  <!-- - _[赞助并领取CDK](https://m.tb.cn/h.7Weq3Bp?tk=TqUjfvxAog2)_ -->
   - 扫描以下二维码  
   {{< figure 
     src="/img/pay-qrcode.webp" 

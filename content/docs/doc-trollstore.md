@@ -8,7 +8,7 @@ tags:
 - '资料'
 aliases:
 - 'trollstore'
-url: '/p/18/'
+url: '/p/19/'
 ---
 
 > 把吃灰好久的果子拿出来折腾一下，用 Win10 电脑给 iPhone 6s 安装巨魔商店。  
