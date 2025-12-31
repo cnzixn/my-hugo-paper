@@ -229,7 +229,7 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
       • 本地处理文件<mark>不消耗流量</mark>。<br>
       • 暂不支持 iPhone/iPad 设备。<br>
       • 仅支持 Chrome/Edge 浏览器。<br>
-      • 框架限定<mark>[测试]251225</mark>版本！<br>
+      • 框架限定<mark>B.M.260101</mark>版本！<br>
   </small>
   <div class="modal-buttons">
       <!-- <button class="modal-btn close-btn" onclick="closeModal()">关闭</button> -->
