@@ -147,35 +147,13 @@ summary: 'CDK统一管理系统，包含生成、查看、删除功能'
   </div>
   
   <!-- 日志查询过滤条件 -->
-  <div class="logs-filters" style="margin-bottom: 15px; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; align-items: end;">
-  <div class="filter-item">
-  <label for="logs-operation-type">操作类型:</label>
-  <input type="text" id="logs-operation-type" placeholder="例如: VERIFY, GENERATE" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
+  <div class="logs-filters" style="margin-bottom: 15px; display: grid; grid-template-columns: 1fr auto auto; gap: 15px; align-items: end;">
+  <div class="filter-item" style="grid-column: 1 / -1;">
+  <label for="logs-search-content">搜索内容:</label>
+  <input type="text" id="logs-search-content" placeholder="搜索操作类型、操作者、操作内容等" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
   </div>
-  <div class="filter-item">
-  <label for="logs-operator">操作者:</label>
-  <input type="text" id="logs-operator" placeholder="例如: admin, system" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
-  </div>
-  <div class="filter-item">
-  <label for="logs-success">操作结果:</label>
-  <select id="logs-success" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
-  <option value="">全部</option>
-  <option value="true">成功</option>
-  <option value="false">失败</option>
-  </select>
-  </div>
-  <div class="filter-item">
-  <label for="logs-start-date">开始日期:</label>
-  <input type="date" id="logs-start-date" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
-  </div>
-  <div class="filter-item">
-  <label for="logs-end-date">结束日期:</label>
-  <input type="date" id="logs-end-date" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
-  </div>
-  <div class="filter-item" style="grid-column: 1 / -1; display: flex; gap: 10px;">
   <button type="button" class="search-btn" onclick="logsCurrentPage=1;loadLogs()">查询日志</button>
   <button type="button" class="reset-btn" onclick="resetLogFilters()">重置筛选</button>
-  </div>
   </div>
   
   <!-- 日志列表 -->
@@ -1541,9 +1519,9 @@ async function toggleCDKDetails(cdkCode) {
                 <strong>绑定UID:</strong> ${cdkData.uid || '未绑定'}
             </div>
             <div class="cdk-meta">
-                <strong>创建时间:</strong> ${new Date(cdkData.createdAt).toLocaleString()}
-                ${cdkData.boundAt ? `<br><strong>绑定时间:</strong> ${new Date(cdkData.boundAt).toLocaleString()}` : ''}
-                ${cdkData.expireAt ? `<br><strong>过期时间:</strong> ${new Date(cdkData.expireAt).toLocaleString()}` : ''}
+                <strong>创建时间:</strong> ${convertToLocalTime(cdkData.createdAt)}
+                ${cdkData.boundAt ? `<br><strong>绑定时间:</strong> ${convertToLocalTime(cdkData.boundAt)}` : ''}
+                ${cdkData.expireAt ? `<br><strong>过期时间:</strong> ${convertToLocalTime(cdkData.expireAt)}` : ''}
                 <br><strong>有效期:</strong> ${cdkData.days || 0} 天
             </div>`;
             detailsDiv.innerHTML = detailsHtml;
@@ -1616,12 +1594,7 @@ function listCDK() {
                     ? 'border-left: 4px solid #f44336; background-color: #fff5f5;' 
                     : 'border-left: 4px solid #4CAF50; background-color: #f9fff9;';
                 
-                // 修复日期显示问题
-                const formatDate = (dateStr) => {
-                    if (!dateStr) return '未设置';
-                    const date = new Date(dateStr);
-                    return isNaN(date) ? '无效日期' : date.toLocaleString();
-                };
+                // 复用全局的convertToLocalTime函数进行时间转换
                 
                 // 修复有效期显示问题
                 const validDays = cdk.days || 0;
@@ -1632,7 +1605,7 @@ function listCDK() {
                     ...cdk,
                     code: formattedCode
                 };
-                listHtml += generateCDKItemHTML(cdkItem, isUsed, cardStyle, formatDate);
+                listHtml += generateCDKItemHTML(cdkItem, isUsed, cardStyle, convertToLocalTime);
             });
 
             listHtml += '</div>';
@@ -1695,11 +1668,7 @@ let logsTotalCount = 0;
 
 // 重置日志筛选条件
 function resetLogFilters() {
-    document.getElementById('logs-operation-type').value = '';
-    document.getElementById('logs-operator').value = '';
-    document.getElementById('logs-success').value = '';
-    document.getElementById('logs-start-date').value = '';
-    document.getElementById('logs-end-date').value = '';
+    document.getElementById('logs-search-content').value = '';
     logsCurrentPage = 1;
     loadLogs();
 }
@@ -1715,11 +1684,7 @@ async function loadLogs() {
         `;
         
         // 获取筛选条件
-        const operationType = document.getElementById('logs-operation-type').value;
-        const operator = document.getElementById('logs-operator').value;
-        const success = document.getElementById('logs-success').value;
-        const startDate = document.getElementById('logs-start-date').value;
-        const endDate = document.getElementById('logs-end-date').value;
+        const searchContent = document.getElementById('logs-search-content').value;
         
         // 构建查询参数
         let queryParams = new URLSearchParams({
@@ -1727,11 +1692,7 @@ async function loadLogs() {
             pageSize: logsPageSize
         });
         
-        if (operationType) queryParams.append('operationType', operationType);
-        if (operator) queryParams.append('operator', operator);
-        if (success) queryParams.append('success', success);
-        if (startDate) queryParams.append('startDate', startDate);
-        if (endDate) queryParams.append('endDate', endDate);
+        if (searchContent) queryParams.append('searchContent', searchContent);
         
         // 调用API加载日志
         const response = await apiRequest(`${apiUrl}/api/admin/logs?${queryParams}`, {
@@ -1766,13 +1727,22 @@ async function loadLogs() {
 function convertToLocalTime(utcTimeStr) {
     if (!utcTimeStr) return '-';
     try {
-        const date = new Date(utcTimeStr);
-        if (isNaN(date.getTime())) return utcTimeStr;
+        // 确保时间字符串是标准的ISO 8601格式
+        const normalizedTimeStr = utcTimeStr.replace(' ', 'T') + 'Z';
+        const date = new Date(normalizedTimeStr);
+        if (isNaN(date.getTime())) {
+            // 如果标准化后仍无法解析，尝试直接解析原始字符串
+            const fallbackDate = new Date(utcTimeStr);
+            if (isNaN(fallbackDate.getTime())) {
+                return '无效日期';
+            }
+            return fallbackDate.toLocaleString();
+        }
         // 转换为当地时间的格式化字符串
         return date.toLocaleString();
     } catch (e) {
         console.error('时间转换错误:', e);
-        return utcTimeStr;
+        return '无效日期';
     }
 }
 
@@ -2154,18 +2124,11 @@ function searchCDK() {
                     ? 'border-left: 4px solid #f44336; background-color: #fff5f5;' 
                     : 'border-left: 4px solid #4CAF50; background-color: #f9fff9;';
                 
-                // 修复日期显示问题
-                const formatDate = (dateStr) => {
-                    if (!dateStr) return '未设置';
-                    const date = new Date(dateStr);
-                    return isNaN(date) ? '无效日期' : date.toLocaleString();
-                };
-                
                 // 修复有效期显示问题
                 const validDays = cdk.days || 0;
                 
                 // 使用统一函数生成CDK项
-                resultHtml += generateCDKItemHTML(cdk, isUsed, cardStyle, formatDate);
+                resultHtml += generateCDKItemHTML(cdk, isUsed, cardStyle, convertToLocalTime);
             });
             
             resultHtml += '</div>';

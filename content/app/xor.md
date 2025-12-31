@@ -316,10 +316,10 @@ function closeModal() {
     modal.style.display = 'none';
 }
 
-// 不再提示，设置Cookie（有效期7天）
+// 不再提示，设置Cookie（有效期x天）
 function noMorePrompt() {
     const date = new Date();
-    date.setTime(date.getTime() + 7 * 24 * 60 * 60 * 1000);
+    date.setTime(date.getTime() + 1 * 24 * 60 * 60 * 1000);
     document.cookie = `no_show_tip_app_xor_251224=true; expires=${date.toUTCString()}; path=/`;
     closeModal();
 }
