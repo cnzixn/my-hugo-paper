@@ -1,1 +1,1451 @@
-const _0x3c14=['J8OCwohow7Y=','J8OKQsOUTQ==','w4rCuDDDkw==','w4E/w44sw7Y=','wqbDpU0vwr8=','w7s0w4oew4g=','w63CtQPDjMOU','OTbDisO9PQ==','Z8KwNMOowoA=','w4nCpyw=','BsK+AUlA','A08DOsKr','w5nDmsKPwqdO','SMKEwp7CpCg=','VhoQw5zClA==','wrLDplUrwqE=','wqfCrcKuwqfDnA==','ZzPCnsKs','CmPDgyo=','NgzCgcOuRg==','V8Kaw4ZbIg==','6KWM5p6HHsO3GuWOquaUpOWno+i0isO5','w44aAsOLwok=','BmMhOGg=','w5d7HHFF','w4soFcO0wqU=','w5J4MkVcRMOecsOy','KB/Dh8KrXQ==','w5TCrSfDkA==','wpLCgcOxw53CqCfDiMOVw7rDt8KU','w6bCnMOlw5zDkg==','FcOpwqjDnA==','w6tiUXhf','w7HChjR7wpI=','w5QIMndj','wonCrMOfwrDCnA==','H8KUEGV6','w73CpMO7wokbw6ltw7QjCsKF','byh9wr3Dgw==','KMO7e8OSQw==','DMOoTjdl','wrzClcK3wr3Dng==','KMKKZsKSX38rSsKjL8KGw4HDqcO3wqTCig==','wqTClsOfAcO+','E8OMdzRU','FivCnMO+ew==','w7DDn8Kkwpx8','w6rCmcOawrg7','wq7CnMKtwrTDvA==','w6bCpwXDv8Ot','wr/CpxnDv8Kzwr3DhMKjRmTDrw==','w74jwqLCiA==','G8OpworDs8Ok','w60kHWkVe8KALsK3wpA4LVrDnl/CugVFSsOsw5wDwpbCgA==','w7wQAsODwpw=','ZTHCjcKyfA==','w4XCtz1Rwo0=','w5jCtzcGw5g=','wofCj8Ozw5vCuQ==','w7XClSfDpMOW','wqTDpHUdwoA=','XHPDjzVbw7o=','D8OLXTJG','fcKrfm45','w5fCnhrDvMO0','w6fDi8KQwo9D','wqHDjH0Tw7M=','wrnDsFACw7U=','w6PCoitOwoI=','w6QWGVlz','GsOcVQ9h','w7bCpzvDh8Oi','DTLDg8KuWD4Uw70Bw5Vgf2LDkg05wodcTg==','VMONcArDrg==','NjfCk8Offw==','w4IfwqTCqsKd','KGwePX0=','w59pKFBBTg==','PivDn8O5ExLDpQ==','w5LCh8Oawp4H','V8KYWkQz','w6xmaWFk','wrDDsHkiXA==','wqXCpx3Dpg==','H8O+XcO9Yw==','wq3CpsK9wrHDhg==','wpTDjHQQwpY=','wr7Dr2Uyw4g=','OCfCiElH','w4RPJsOCHg==','Jj/Do8KYfA==','wq7DsE4nYA==','wrbDjnshwrs=','D2jDhDnChsKG','MMOMP8KDQsOTdEfCiA==','w5sUOUVC','NGQjDUA=','VSABw4DCug==','Ll8pH3s=','FXo6LGA=','KcKkCA==','IsKaZsKWX34=','wqvCrsKUwp7Dsw==','M8OdwpPDk8Oo','EcKcIH1D','w4nCpsO/wqsL','w4rCuhckbw==','w585JXxU','w6zCoMOCw4zDnQ==','RcK4w7TDgMO9','w6lVLl5G','X2zDhyVD','woXCrcKGwr7DmQ==','TsOlZxbDphkn','J3kUL2I=','SMKTwr/CjBQ=','PsORwoLDhsOh','wonCvcKhwoHDgw==','DDPCoW1S','bMOmSzjDvQ==','AcOgwq3DhMOgw7nDiMOuw6HCtA==','w5YbM8O2woY=','N3wvCnc=','wqZYwoDCuw==','fixl','w7rClhTDv8O2','wrnCvy/DjMKa','FiPDksK2','AWHDhT3CmQ==','MH7DrhDCpA==','bsK6I8OGwrY=','wrbDvXYEwoE=','Ih0EDCw=','AcKIf8KWTg==','aMKQN8OZwqs=','w7E7HcK2w5o=','EMO0M8KYSQ==','BcO5ahhB','wofDn2oKwoE=','TMOSZRfDtw==','w5x/FV1C','AcO5PcKgbA==','w4HCpg3DicOH','dMKzEMOOwrU=','EsOpwrDDkQ==','w6N8fHpO','K8KkAWg=','w5sbw7cow4M=','wovDg34K','f1PDjBND','GcOWwpJRw7Q=','YyVVwrnDig==','w50XEsOIwrc=','Az3CvMOdXQ==','wqnCtsKFwoDDicOMwoPCh8O2w7U=','w5zCisOjwqwM','wojCh8O3w7bClA==','cQN4wpHDlw==','w6jCjMOBw7vDjg==','FRHDosKvYw==','wqzDkF4DXQ==','YDHCgsKzUg==','w7wVw40ww7U=','PMK7JlVp','CsOscwpH','PlcqDMKT','w643wrbCtMKM','w7bCvRLDiMOr','R8Kpw4VeOA==','wqZcwpHCo8OW','WcKzKcO3','w4xFflhIwqUV','L8OufMOfFA==','f3zDrwB4','w5xyA8OKGA==','IVMmAsKWN1tIw67Dn2XCpg==','GsOQwrNSw54=','w6ENBsOpwqo=','KDvDoMKNbg==','wpPChMKlwrPDnA==','KFk8Jg==','wpHDinEHw6k=','EMK7LVh9','wrjDj1Iuw5M=','ScKQQVoE','w6x+dUBO','wozCucONwqnCgg==','bTLClsKwUXxT','woPCvsOdLMO+','L2sgDmbCrg==','S8Kqw6JzOg==','LsOZScOwC8OfIjoqaW8RKsKgw47Di1fDu8OU','w6HCiw1GwpQlw7zCgMOQw7o=','S8K1wofCtwQ=','FcK+GlxK','w7wRBGh6','wr/CsMO4worCoQ==','OsKtR8Kzfw==','FTwLDjI=','w6oOwqPCqDA=','w6EkFcOEwrw=','KMOZRcOxOsOebGYpcnU=','FX0vImE=','OzLDnMKkHBzDrFnDgcK8w4bCtRcZEFwmalpKwpHDlVk=','NcOSWcOgAcO+ZA==','DsKDP0Bj','w6sRwoHClC8=','AWHDnzrCnA==','wrHCkMOfEsOj','KSPDg8KeWA==','5aS15Ymd5aWx6La0w5Y=','fDFywq3DljfDtMKsQw==','w7sIBMKAw4I=','fgnCgMKtUA==','w6fCtBwKeQ==','M8K9KEth','w4IPwoDCtQ==','w7snwqTCkyk8wqFCw5/DmsK+wowOw7kZw4TDgAYhBUs=','VMKLw6RoPA==','w5IVOcKrw5Y=','wrjCkgjDu8Kl','NsO6aMOxMA==','w5bCtCNEwr8=','MsKdAEd2','w5dAJ01S','w74VCsO2wqw=','Z8KtwpzChC4=','czh0wqvDng==','CcOiXMOCcQ==','w6YACsK+w60=','IMKsZ8KdWA==','LMOwfC5o','Mk4+JsKo','MQYgPBs=','w4IBwoLCqsKgwoXCiA==','MlMhNw==','wrrCrMKBw5/DvcORwobCkg==','QMKTQ0Q/','OcO1S8OoAQ==','cMKZworCjDE=','w47CpzsvbhQ=','wo3CoyU4NR/DggJzwr5IwpfCtMOHwq3ov5bmm7fmtYPorI/mlK7mjpTvvJnnlKrku5PpqoLorqjliZLogLA=','wq/CjcOpwovCsA==','wqLDk2A0ew==','GcOiGMK7UA==','Gyo2KAZYeA==','AsKxS8KMBhHDnWDCh8O5em9mEcO1EMOlw4vDrsO2w7TDsjLCmFpPw6zClC82wqsIw4HDmg==','dMKGLcOpwpk=','wrvCtRbDvcK0','w4lkCHRw','wrjClsOBAg==','HcOqwqfDssOM','WVrDsyhY','w7BpJGNs','GQ7DlcODPA==','w7Qiw7MTw5Q=','S8OubRTDqj4=','w5XDmsK5wq1l','f1jDtyBq','wpzCgMOTw4jCsA==','w70nwqPCkg==','Hh7Cs3Rh','J10QBcKD','GcO3wrVSw6w=','bMK+EsOLwps=','SMKJT3EE','E8OXwoxIw7M=','wr/CpwHDp8Kz','JVk8MMKWMVxCw7jDhWM=','NMKLFGdEw68hAcKzO2h/JQ==','woHDgnYWwpzDtzQ=','wr7Ct8OFw4PCnw==','w5IlBMOBwqs=','OsKacMKFaHkqUMOma8Ku','FsK5UsKfaA==','AsK+cMKyZA==','VcKhA8O3wo0=','MsO+wqFrw5M=','wrnCm8Ozw4LCvw==','ZcKoUlg=','K8Oxc8OFdw==','w7ELwoDCvhY=','XDBAwrHDrw==','wr3CusOYAcOf','C2rDrS7CnQ==','w5rCoS0qaw==','OMOlwrPDqsOU','AA/CvcOnfw==','w40nwqrCviw=','wpLCgcOxw53CsznDmA==','P8ODLMK0Vg==','eDzClMK2Ww==','L1g7Nw==','V8Kqw4pxPw==','w4MAwp7Cris=','LMO/Y8OSVFXDlXDCn8KCMGJoOMKxOcKaw4TCk8KPw6s=','VRl6wpzDkg==','XMKIwo/CgwI=','w5fCkitCwpw=','w7rChA8mWQ==','IsOOEsK/Vg==','w7kswpnCiSM=','w6smKMOewro=','wovCqizDssKP','w6NWM8OmGQ==','Ex7CmsOJVg==','w6vCjRxBwqM=','woLCmsOmw4LCuQ==','FMKfIlZR','GcKqaMO/w7YAF8KkA8K/w5wIw751wrk=','eE/DpyRL','w5kIw7o+w4M=','FMK7R8KIRg==','J8KTb8Kdew==','ShbCr8KHSw==','wrPCp8O0w6vCjQ==','wo/DlksEa8KJU8K8BmUHwpPCiMODw6HDhUrDt1lA','HcOJWcO0bQ==','wqYjwqDClnQxw64dwoTDhcOxw40Ow7BN6L2u5puP5rWm6K+U5pWX5oyK77ys55So5LqZ6aqK6K2D5Yuh6IOH','K8ONWsOSaQ==','woHCuj7DkcKd','w7jCmMOsw6bDgQ==','KsK+RsKiUg==','woHCvsOkwr/CjQ==','IMK5HWJZ','w4tLe2Zl','Wwcpw7LChw==','RsK3f3U+','wqHDg04lw5A=','w5M5KsO9wr4=','WghVwoXDhA==','w6rCrsOmwo4=','w7vCmj0GaA==','UWbDkX9Mw70DLsK3w694MEdCFcOVw4g=','OS3DmcOnCxbDrg==','w4PCkBIwfQ==','FcOxNMK9cw==','wr9cwr3CjMOS','w53Cp8ORwrQI','wqjCugvDu8K6wpPDnw==','wrzCiMO+LMOE','w6MjN8K+w6g=','wozCksOtwpfCgg==','TcKew5R2Pg==','HizDpMOaLg==','wr3DsnojeA==','UWbDkT5W','w7Qqw6o5w74=','FF0LFsKA','ecK0IsOhwoA=','wqTCuMOMw4jCkw==','w5dpJEJS','bhMFw6TCgw==','w6A3wqnCrsKi','w4skKMOdwqg=','G2zDkhHCgw==','w4tVAsOjIA==','w6/CmzsKew==','eMKnHcO1wog=','w6/DgMKpwrtM','HcObQBtVw6ECw63DuMKKw4JjOQM+Cw==','woPCr8O8AcOj','w5fCvsOLw5rDvw==','AmY7G8KY','DsOJwptww78=','ejzCs8KvdA==','w7nDnMKnwpdF','aDvCu8KVcA==','wrjCksOcwpTCog==','w7t2DnNn','EzQiIQc=','wqLDvWYjaQ==','w6nCo8O8wo4Kw4how7Y0AA==','BGrDjyw=','w5w/w6E+w6k=','w7knFMOUwonDu1dJDMKmwr5tw6TClGLDoA==','McKuHHk=','D8OOworDtsOn','wqXCqsOUw6HCnQ==','eiZ/wrvDiS/DuA==','woLCnsOzw4fCqA==','FcO4P8KFUQ==','LEPDvCzCtw==','WRswwrzCj8OlQsKDw79OU8K1GzILFzQd','JcONwrXDssOI','BGrDt8OXXy7CtwjDjMOzw7zCn1ZpWBpjNxB4wqHCkHbDjQ==','PcOhAcKJTA==','w4plOcOKJA==','w4LCpsOqw6XDucOUXA==','BMKRLGtN','JMKNCGpV','VcOucx/DvzUk','IsKIHVND','Fz/Cs0Re','w6A2wrXCiw==','DcKTFVdo','wrLDpE4hwr4=','w6PCkxxYwq4=','w6/CigDDs8O6','P8OTUMO1EMOdZw==','eQkGw6HCjw==','fljDkTl4','BMOIfSpt','JMOqwq5hw4k=','YMOaRSTDiw==','F8OaXQ==','wrfDs2QlY8KJfQ==','D2LDjQ==','JMKcOWl+','bsK1WU0yw67Dqg==','w5/DpMKcwrl1','KsOTZcOvcQ==','QsKlCcOpwrQ=','MMOKbjJF','wonCosOLw7vCjQ==','U3TDsAVt','w7wzwrzCsyg=','w6bCoTrDr8Oa','BMOXUMOeZw==','wrDCk8Ktwp/DqA==','w6ccw68Nw7I=','6K2p5oqA5Yi95ae35YmZ','RXrDthVj','woDDgHkpwqs=','AMOPwrXDmsO1','GsOGfRBm','KSfDjcO7HBs=','FF/Dpi3Clw==','BMODf8OOVQ==','CsOybMOGFw==','w73CpMO7wokAw7d9','P8O4Txlr','w6EiAF5j','BSI8Oxw=','LkTDniTCkA==','w7MkwqnCq8KA','wqPCssKDwp7Dmg==','SAUJw77ClA==','ejjDgypuw4AUJsO2wrVwJngpAcORw5HCoMOVw45XfsOgFxU=','KBvDrsKzWQ==','P8OdVsOiXg==','ZsKYYG0E','wpF8wrfCgsOR','w4pvKMOAJhw9wr1B','w40oGsKQw5E=','wqDCncKUwrrDhA==','JsKYT8KBRA==','csKOwofCpwo=','w50uDk1TP1YDNg==','w7VEF3xg','w5A3D0Y=','C2AzOcKO','wr5Ywp3CqMOHdQ==','w4rCm8O3wpMY','w43ClT5EwrM=','a8KzwobCsAI=','w5bCmxjDi8Ov','NXkBJXs=','wpvCr8OOHcOA','NQ3CisOpdA==','woHDhXkXwrDDtDUgwrNp','w4NjdUZi','w4fCqTfDiw==','w5BLM3lh','wrXDv3shRg==','w5xjMsOJMw==','w6zChxPDnMOY','worDsnMZ','AnwkJ8K7','LXXDjCnCpw==','wqrDrG4pwoc=','w7gMwpnCnBM=','McKuF3low7HDvsKTw7LDqMK3','woTCs8OMwr3CkVjDgsOR','PcOMTcOpAA==','wobCmALDrsKF','Uyg3w7fCnw==','wpzCnsOmw7bCkQ==','JMK7H2FS','wo3CiTvDrcKw','wpnCpMKPwpPDnA==','wqDCthbDrMKiwpo=','GsOtwqrDl8Oxw4I=','BQ/CvFx4','w4JCDcOSFQ==','woTDvWEBw4w=','B2TDmS7CnsKPcQ==','wr7CgMOzw6vCtQ==','QcKfP8OuwoY=','w5U9Hw==','w6U0PGlx','AcOqEcKiQg==','UXXDlTtAw7w=','LMOmwopuw5E=','woXCr8Ovw57Crw==','w6bCtQTDh8Op','IMOUL8KfRQ==','wpLDjmQzw48=','w6/DvsKqwoF4','wozDq30aYg==','w4haJcO8FA==','P8OPNcKSVMOVels=','J0oXJEM=','wp16wobChMO5','wq7CtcO7MsO9','LR3DsMKKSA==','w4jCp8Ogw7PDrsO3Xw==','CXzDjz3Cig==','P8OUXMO3OsOeZncNaA==','w64nwqTCpy8mw7MEwp/Cj8Ohw4k=','EynCq8OpQHzChsKOccOvcw==','w5fDo8Kxwph/','wq/DoSQ1Y8KLa8KOAmATwoHCjsO9wojCvnbDtWpoOmtvwovDpVDDoQI5RsOveQ==','NsOSMcKWVw==','ajFYwpLDgg==','w54pwrbCiBY=','wqXDuU4jbw==','SBTCi8KAdw==','WcKkO8OgwqY=','PMKafMKEWXhkC8KhJcOxw4nCvcK1wpHDkMKdwrfDn8KfwrE=','w4YLL2VP','w4jCp8Oiw7k=','w6zCjCUjTQ==','McOMOcKQSw==','RMKgw5dBKQ==','w7o1Clx/','wqzDoF8Iwp4=','NxcqAic=','C8OMD8KyVg==','wr3Cv8KWwpw=','wrXDrHp7b8KKaMKDXXYfwoXCiMOqw4TCsWrDv2p0K2A=','w6XCtsK7wpkAw7Vrw6MlEMKUwphqdjXClcOxTiBfPcOWw6fCiT3Cu8OHwr7CicOWwoLCgw==','ETbCtcO/QXTCoA==','w78VC8KSw6MfwrUDSMOpwoQ=','HcOHwpTDmcON','w5bDjcKVwq9b','wpnCsMKXwovDuw==','IMOWwoNXw4s=','w41FdFI=','5beD5L6i55eh5YaI5a+45pe15b265aWk5Ymh','w4QUw70y','E0cVNcKp','w4YbworCixg=','ccK3X3Edw6LCo8KbwqbDusO2w4zDpH7DpQ==','w7x8LsOADA==','IGEgGmbCtDoVD8Kjcg==','wrXCl8O4DcOZ','w7HDhsK3wqJ4','AizChEJhwpU=','asK/Q3sxw6fDosK9F8OEfMOEU8KL','w6TDocKpwrZ7','F2zDiDLClw==','wq/CuxnDucKVwp3DgsKsYnM=','wo7Dgn8=','w5tLW0dt','wpzDrWoSw7I=','BMOoPsKkeg==','TzFUwr3DiQ==','B3UqBMKG','OD/CtcOnbQ==','SsKLcWkI','w6/CoxAjUg==','w6s4wpvCrhw=','JzXDhMKhWQ==','w7F+C2dN','KcKuAWpfw7Y=','FhXCjcOaZQ==','AMK+NXxP','w6RnIFl4','w4oowrrCoMKi','woHDjHUXw4w=','KcOyfsOLQxvDnSvDj8OXfms8K8Kl','fi3CrMKQWg==','Y8ODQiDDpg==','w71CNlxi','NW8iHHc=','BjDDksKOaQ==','wpPCtsKwwrHDnA==','w6RkKsOHMQ==','W8KDRWQr','w4TChsOLw6TDsA==','acK/VUs=','E8KqGmdN','HTDDj8OoKw==','wqbDjnMMw4I=','ECwYPjQ=','5pal5pa75oyB5Y+i5aSm5Yqo','JMOyGsKARQ==','VMKKRloF','w5LCpRvDlMOP','JsO5b8OFVw==','wrl5wpvClcOF','BMO5dcOLSg==','w4cLwr/CsRQ=','w6QoPk9a','GQAlCRw=','InoEFcKp','dScxw5nCmg==','wo7ClBPDkcKs','aMKgw5h1Cw==','w4gTw5osw7U=','DMOwwohuw54=','w5wkwp/ClRM=','Oh0UOxo=','w47CpTl5wo0=','wpXCi8O9w5vCuw==','RsK7wqfCgiM=','w7wPEcOrwpg=','w5scwqDCicKo','BW8dPFs=','aTfCn8Knew==','IVXDvRDCoQ==','X8KGHMOIwpA=','woN4wpvCncO1','H8OIwq5uw7s=','eiV4wqvDjQ==','woPDjmkSwrk=','w5vCnsOCwpkC','w7hiYFtQ','w6UtwrPChy87w64D','w6fDucKHwo1d','UsK1wqjChgIjEQwWwoo=','w5dNCGRM','woTCmADDkcK5','LXoJDXc=','w75veHlh','PwrCoGhS','WMKpwqzCmQ==','w63CjcOmwoMf','w4M8w5IRw5w=','wr3DlHshWA==','AS3CosOgSw==','JSDCk1J+','MMORHsKAcg==','fcKiw5ZPCw==','LMKPClRx','w7fDkcKMwqd9','BjYzLhs=','w4wKw6tww4XCqMKDPCQMTMOqAcO3worCsDw=','AxLDncOtJw==','VsK4wr3CsS0pGAw5wopDXcKSw7M=','w4nCgAIbQw==','SMKbNMO6wqA=','G8OuwpdRw7c=','w6tiRWFr','TRosw4TCnw==','wqLCoMO3McOH','wrPDjlAgZw==','w6ZtSmJw','IGEgGn3Cqio=','w7picn1J','wrrDv2Umw5U=','wonCt8OtwprChA==','K8KHbcKSaHkpScOia8K+','w405B8Kzw6Q=','w78RKsOnwpQ=','B8KYfsK0Zg==','VjzCtsKmSw==','IlcmIg==','D8KwcMKEaA==','HMOAwqhRw6g=','ehtpwo3DtA==','OMOewrJow5Q=','NmAsEGo=','HcKURMKJaA==','LmUWG8Kq','WxXCt8Kvbg==','OMOwaR1Mw6oYw7zDmsKXw714PQk+HQ==','PMOwT8OQQQ==','VcOubhzDqDMCeC1NHQ==','LQvCmFRw','ESwzJBA=','K8OTcwhn','w7LCp8O3w6/Dpw==','w4wOw68vw4/CpcKGMWw=','SsKpw4hbKQ==','w50tw4IMw5I=','M1oFBMKu','e8KYKMOlwoU=','w5ENwq3CusKF','w6R5UX9I','w5tPaF9kwqYeOEjCqCU=','bMKCw7ZhOA==','wrXDrHo6dQ==','DMONQXNUw7YNw6k=','BhnDgcKjfw==','w5HCscOzw7DDtA==','dMK5QVU1','RMOkbQDDqiQ0czBOCw==','w5PCr8OkwrE8','wrnCpcOnw7TCsw==','w6laNlhf','w4bCo8O3w6DDsQ==','w79zRmp1','EsKGPmJN','w5jDhMKTwoxO','P8K5I11M','w7VFNXR8','wpPDkFQfw6s=','w419E8OSMQ==','w5PCjBwyUg==','w7LCjx/Ds8On','CcObRcOmNA==','awAMw6nCrw==','J8KzHFp8','NVMaLMKs','w7fCri3DnMOj','OMOZX8OwHg==','XyXCmsKTSw==','w4t2IMOoFA==','w68HKcKgw5A=','w5AqwoTCpQ0=','w5wuBWZ+','PcO1esOXT1fCkA==','wp7DqWUPw5g=','wrLCvcKcwpDDuw==','w5TDp8KZwpBVZMK2','IxvDu8OZFg==','WQg0w7jCg8Ok','McOpfTdy','KcOLwqBxw5s=','MgjDhcOQDg==','wrjCu8KQwofDuMONw4fDisORw7QqAcKvacO2w4rCrcO4Dg==','w4XCrMOmw6M=','Yhs6w6nCnA==','w43DucKpwqZJ','w6ZTMsOzMw==','w54KBMOEwrs=','w44YwonCq8KpwoXCgsOlSg==','XzLCrsKubQ==','w4bCqz5zwpE=','JQHCumhd','KsOHM8KmYw==','w7kqw7U8w5Q=','KCodCT0=','w57DpsKQwoVER8K1','ZMKswo7Cggo=','DTLDmsK0XDV3wr0Ow4xq','OMO3dhll','NMOHM8KB','ABI0Ji8=','w5oTw4LCusKgwofCnsOmYcKgwqZ0LsKYwoQ9woEYw47CtMOJK8OwAMOfw4XDoRTChlLDuMKK','f8K0L8OqwoY=','I8KPP25j','wovDvm8Dwqc=','OnYqBXY=','w6RmM2JP','wpjDo3Y8w4k=','w4M8DG5G','FnfDhwTChQ==','BMOnwqLDqcOV','SyA0w4nCog==','M2EfNsKt','Gz7DhMKrRjFN','w5nDoMKOwoVBSsKp','HicoCgg=','w5xyKsOXNQA=','5bau5L+D55SV5Ye55a+A5pSI5byN5aSf5Ym6','NMO2eMOrag==','OMOtbwlJ','w5jDscKYwpZuRMK9YsO4DsOx','Zw7Cj8Klag==','ZcOMaCnDpA==','b8KIw5RNCw==','LXTDvCzChg==','CnnDjzM=','L8KPeMKdUg==','bwE1w4TClg==','wqbClsOUw4vCiw==','wqXDv2EBw7U=','wpzCvcONwrDCgA==','MhvDhsKTXA==','NsK/FmFO','wozDq1Epwok=','MwDDpMOFDA==','UcOmZjjDjQ==','R8KdKMOiwq8=','L8OIRMOpHA==','w544EcKww44=','w4HCgClHwp4=','KcOMwppRw5s=','w7DDn8Kcwo9B','ZMOYTSDDlQ==','wo/DomUDw4c=','NMK+BEhk','woRqwrvCtcOb','w7jCp8O2wqkY','w4/Cv8Otwow+','wp53woLCgcOg','w43CjMORw6fDhg==','D8OuwphKw4s=','wqrDmHQJwpA=','MTXCosOJWw==','w6J2DsOOHg==','acKzRE4xw6PDtg==','wqPCvcKRwrPDrA==','T8KbQWg+','wqPDhnE6w5Q=','w7QFwoLCoMKN','wqXCjcOWC8OJ','w4Yowp7CtAw=','eg5kwobDsg==','wrvDiXQ+w6c=','OcKIIUtI','J8OWGMKbcw==','bMK0w715Bg==','wpfDnU4bbg==','AsORwpzDpsOu','w6PChwhxwqEvw7bCkcOdw6fCkD1WwqAuKA==','LkjDuw3CnA==','D8O1QcOKdQ==','wqVVwprCo8OWPcOzcRImGMOPfcOoSw==','w7XCoRowSA==','w48vJ8OHwrs=','w6xjCsO/Jg==','NUk/A2I=','IWHDoQrCqg==','wrnDuXklbcKCfQ==','ecKGOMOqwrQ=','w7lID2RF','wrzCi8OgwqzCjQ==','HSzCglJ5','a8KUA8O7wrM=','w6HCjBxN','LcORY8O/aA==','NcO4R8OzSQ==','w6NDHkd+','wojDqVAcw5U=','MGsiDHHCsg==','w5jDscKewpBdX8K5YMO3','w6BQPsOuHA==','fcKCw6VWHMKtwok=','w43CnDLDk8OR','EMKgAXRp','w73Co8O0wogsw7R8w7IWEQ==','woROwpLChMOA','TgRAwqfDgA==','McOdRcONHMOYZXo4','cVnDmSds','EsKmBVxP','w6s/w7QNw4k=','wpDDjkEBZg==','wr7DrVsdZA==','wq/CkMOHP8Ok','LMOFwoBDw6g=','JsOLwpZfw7A=','w7PCn8OHwpM5','w681woHCsx0=','w6suwr/ChTA=','w5wbFcKIw60=','GcONQztU','KWIhJV4=','w4/CqTvDmcOUw7A=','w4ZJZWpB','DwDDrsKKXg==','ZcO5TiPDpg==','RsKPPMOnwqo=','LMO7eMOLTA==','wpvCqMOWwrDCgA==','wovCs8OBwq/CkUPDmMOcZQhA','GSjCmEs=','W8K7P8OIwpA=','IGwfPlA=','MS7DocKpXg==','VBDCkMKZXA==','w6oaHcOQwpE=','w7wqA8OhwpPDv0A=','HMKPOmt7','wrrDgm8kw6Y=','CsOeSCtG','NMOFIsK2TMOZeFDCgsKBVll9wpg=','BCU+OBs=','w7oyw7MKw7w=','w4pYYkRV','WcKew6ddMg==','w5PCgsOhwoAN','DgbDtMOqPg==','XjsZw5nCug==','G8OcesO9Tg==','YCB5wpDDrg==','aThYwpjDgg==','wrPDuX4TYMKAdcKfHmEywozCqMOr','w6PCmxA/dw==','dQ0Kw57CrQ==','cikOw5nCnA==','O8OoZcOIVA==','D8KdTsKBSA==','w7xiRXNU','Z8KVw7RUDA==','IsKhHHtM','X2PDuT11','w57DpsKTwoZCR8K1','QgrCvMKFZg==','w7hBdkVq','HsOQdsORIQ==','w5LCvcO9w7rDsw==','KywGDig=','wqfCksO5wq7CoA==','IMOJGcKpeA==','w7HClxVYwrI=','NUIzN8KHDEtLw6nDiWU=','wqjDoW8gw6s=','AyjCkm1wwpTDtyLCnQ==','bMO4YhHDuQ==','aR84w6fCvQ==','O8KbXcKdeQ==','Ew8BBC0=','I8OnwrTDmsOP','BTjCqcOi','DznCmkls','PcKHQcKrTw==','GyYZLhY=','IATCrUh4','w5PCo8OxwowY','Gy3CvsOh','M8O6SR9P','w5PCpjIZaQ==','AsOtwrfDhA==','w6J/L8OTIQ==','w549BVhBOw==','ZMKuUlM=','RgrCkMKaeA==','CXgEMcKn','worCtFEILMK4M8OSUD4rwqvDgcOSwovCtS/CuTVGFiUSwoI=','w6DCk8OHw7DDsA==','ZMO+bTfDtQ==','L8KYCUlB','w4nDm8Kywrd5','w4zCg8O7wqIO','EVs4EsKG','ccO7RhvDsw==','HsO1wrhYw70=','w6vCqx1DwoM=','w5XCsDw8fyjDiAp+','UsKRwrrCuio=','HsObwoDDqMON','w6UBI8Krw5g=','GsKdcMKTaA==','w7duM8O1HQ==','w7o2wqnCij4=','woZtwp3CrsOB','FMONQTg=','CMOywqFrw7Y=','w4gawonCtA==','w5ALOk1B','w4AJJsOcwqk=','w5UMwqrCtsKG','MHo3BXc=','LsOMwo5/w60=','wq/CrMKWwp3DuA==','GMKhKFx8','McKIA0Ff','w6nCjglcwo8=','w4EsGVZbNA==','wo3DoUQgw64=','BMOdc8OgDA==','P8KBM2pF','wqTDsVUGw4Q=','wqDDqk89w4M=','bcKmw6RgJg==','MMKcBQ==','wqzCp8K9wrzDjw==','VjHCocKCSA==','BEDDhAfCsA==','RMO/ZQfDnA==','DUzDvSTCng==','KcKkDGxfw7fDv8KJ','FGvDhCjCkA==','w6rDpcKqwqNp','TBtd5Lul5p6M5oi95YqtwqdMesKH5YyT5pSr772D6KyI56O25L6Iwpt5VuaiouW/r+ausOeimw==','w63CgMOhwqIh','w60uwqPCkgs=','DyXDlMOqMg==','JsKkAX5fw6zDpcKEw6PDqcKx','wqZYwovCu8OwcsK1cQU9CQ==','NsKJAWpJ','woLClcKcwqjDpQ==','wodVwpHCi8Ob','XcK+w55rIw==','M8Ovwo14w44=','F8O7UxpB','BSvCiWdc','w6gRw4scw6s=','wo/CucObwpnCiVTDgMOafxNwwoXDk8On','EMOJd8OpHw==','F3I6AsKu','TREtw4vCmw==','S8Kcw5dOIw==','wqPCksK2wojDvQ==','wqLCgcODAsOm','ZsK/I8O0wqg=','PcOydsOOSA==','DwrDo8OlLw==','w6sIHFVv','w5ISKsO9wqw=','K30TEsK0','BcO3HsKJSA==','w4jCrgXDqsOP','NMOuB8KeWQ==','w7XCqcO2wrgm','J8K9QMK9WA==','woHDilkwQw==','eDlhwqTDnw==','w5dtMlY=','w7PChihBwrQ=','wpnCisOtw6TCsw==','WsKSwpnCnQk=','UmPDmQJB','wpLCocOZw5nCvw==','w4FcfnJs','AsOUwp1jw5A=','Xhoyw5bCgw==','e8KBEsO5wqs=','fRIRw6jCpQ==','DsOlVsOWNQ==','w4YawonCvBc=','w45rV1Fy','wqXDmXA1Qw==','w5DCnhTDpMON','wobCqcOjwpvCqw==','EWw7AFc=','wrbCncOow4vChg==','w5HDjMKowoR9','RMK2wq3ClhA=','PBLDtcOBKQ==','GcOJZ8O0HQ==','w58bw7Qxw4w=','VMKvwrvCmzM=','HMKDK2px','GsOWwpZIw4w=','OS3DgsO6CwHDqUPCmMK3w5U=','w6/CnD7DqsOU','CcKBHkN4','wp/DonQC','wpvCkcOLEcOb','JsOQwp19w4A=','w6JzfmlG','5YWN5a2k5aeE5YuC5aWw6LWpTw==','wqbCu8KKwpXDvsOL','w6s3CcO9wpo=','JMOyWcOkYw==','WMKMZFgS','w7HDn8KRwqRE','MsKuH358','w6oAA8KKw5k=','wqzDlkEhw7U=','w7kRN8Opwpg=','w60FHcKFw5QZwrQZDcKtwqwLw7ApFHY=','w6rDosKbwptg','SMKuOcOmwrMITsK3Xg==','woLDrE8+YQ==','w7sUw7kxw7Q=','w7tuW2Rm','UzMtw7bCpA==','wo/CtsOcwqrCgg==','WwQuw6LCg8OmVw==','Fg3DpsOeKg==','L8OYTMOPEA==','FUbDuRHCpg==','ScOtQh3Dqw==','Un7DqyFl','JysiJzQ=','BMOYHcKWdw==','wqFJworCo8OW','w4HCtwlfwr4=','wqHCq8O5wr/Crw==','FSY2JSk=','IMKzDGhbw6rDucKIw7k=','w5cqGVBH','acKXwp/CuRc=','BcO4wqjDmcOx','w4vCtjAl','wp7DiHAjw4M=','woLDlHAQw7Q=','wpfDmF8Mwro=','LsKmCmVz','wqjClsKlwp7DhQ==','woLDqWEZ','w4NFdw==','JFsUAlM=','ehzCiMKzTQ==','wq3CucKBwoA=','O8OWVsOoRA==','wr7Cu8KcwobDicOMwonClsOSw68w','w4vCpilZwo8=','AMOFwozDvcOm','w45aYEde','w4gBwqjCoT8=','JMK8eMK5ZQ==','wrvClMO6woTClg==','w4DCiBwtTA==','w63CmsOewpAD','w7lkYk1h','GijCiElw','dETDqRlF','J8KJJVVU','w4XCoMO3w6bDusOZQA==','FyAjDDg=','w45iP8OK','wrxtwpLCp8OU','wrLCkMOcF8OAU2c=','wrFrwrzCrsOY','w7oeN8Kqw5Y=','w648MsKpw4I=','ajTCi8KzUnFP','RMK1L8OCwqU=','wpjCl8KwwrzDqw==','w5RCF1pM','HMK3ZsKpSg==','RHPDmSZsw70dI8O/w7Vp','w6h/cWFj','JVk8MMKNL0w=','w5QOEVhm','w5M3woHCmMKh','SDoPw6LCuA==','QQIow4nCpA==','wqvCg8Ovw6TCkw==','wrbDsWsaVA==','QsOGw4wTSMOiw5MbE8OKe2PCrlDDpAAnwpw9ccKuTMKKwpvDnMK/RcKBwq4MKyjDg8OW','wobDlk8kQw==','DsORWsOpdA==','WMKMw4NtIQ==','w7E+OG9U','IsKeNWZq','E34dL8Ky','w7vCucOnwpUd','w5VgJWRC','JMO2U8OWSg==','TsK5NMOwwqwQQg==','5pWi5paT5oyC','CF0PPX0=','w6vDp8Kfwpl/','woPDt2w4QQ==','YsK4NsOGwqo=','wq3CowjDp8Kv','5YaU5a2l5aai5Yuq5aeU6LSUwpc=','asOvcjjDjQ==','wqfCj8Oqw4TCug==','w6zCvzfDssOz','wonDqGMP','w4gEMsK8w5A=','OMOVTsO1FcOQew==','woLDvX88ag==','SsK8PcOnwoY=','w5p9XV5o','RcKOwo3Crjs=','w4zCncOWw7/DgA==','wqLCicOHw6LCiw==','VDDCiMKJcQ==','w53CqMOQwokm','eA7Cr8KXWg==','5aSD5Ymr5aeJ6LemBDA=','w4HChhzDm8O2','PsOkwrp/w5A=','UsKywrnCjQ==','BUYfIkc=','BjzCo8O4T2rCoMKH','w4Yjw705w48=','WT7Ct8K7bA==','w7IZG8K+w6g=','HsOxwpdTw4s=','wqvDqWEzwpY=','B2IcAcK4','wrFSwp3CvMOHb8KuZhQ8Dw==','KMOdX8OpHA==','w4jDvMK6wpxk','DcKZYMKnYA==','wp/CnsOZIsOh','bcKIw7FKC8Kg','wovCtMOOwq7Cpl7DicOaUBM=','6KS35pyMXwRA5Yyn5pWo5aeL6LWVLw==','TsK+O8OxwoATQ8K9ccK3','w7PCtTrDkMOD','VMO/eh/Duw==','NAE9HRE=','MGDDnBvCvg==','6KaJ5pyXwoxpw5TljJ3mlZXlp43otKHCqg==','esKEw6NIBMKpwoI='];(function(_0x43ea44,_0x3c1450){const _0x2c59a8=function(_0x3a7047){while(--_0x3a7047){_0x43ea44['push'](_0x43ea44['shift']());}};const _0xef0d0e=function(){const _0xa82c04={'data':{'key':'cookie','value':'timeout'},'setCookie':function(_0x3c9afa,_0x5b0b24,_0x2f5b63,_0x8aa66d){_0x8aa66d=_0x8aa66d||{};let _0xf0b15a=_0x5b0b24+'='+_0x2f5b63;let _0x416b2c=0x0;for(let _0x365bb5=0x0,_0x2ff86d=_0x3c9afa['length'];_0x365bb5<_0x2ff86d;_0x365bb5++){const _0x4f5617=_0x3c9afa[_0x365bb5];_0xf0b15a+=';\x20'+_0x4f5617;const _0xc0739a=_0x3c9afa[_0x4f5617];_0x3c9afa['push'](_0xc0739a);_0x2ff86d=_0x3c9afa['length'];if(_0xc0739a!==!![]){_0xf0b15a+='='+_0xc0739a;}}_0x8aa66d['cookie']=_0xf0b15a;},'removeCookie':function(){return'dev';},'getCookie':function(_0x156e80,_0x43bb58){_0x156e80=_0x156e80||function(_0x1d3fb7){return _0x1d3fb7;};const _0x3a208d=_0x156e80(new RegExp('(?:^|;\x20)'+_0x43bb58['replace'](/([.$?*|{}()[]\/+^])/g,'$1')+'=([^;]*)'));const _0x27a00b=function(_0x833e34,_0x29a643){_0x833e34(++_0x29a643);};_0x27a00b(_0x2c59a8,_0x3c1450);return _0x3a208d?decodeURIComponent(_0x3a208d[0x1]):undefined;}};const _0x2fd921=function(){const _0x94848b=new RegExp('\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*[\x27|\x22].+[\x27|\x22];?\x20*}');return _0x94848b['test'](_0xa82c04['removeCookie']['toString']());};_0xa82c04['updateCookie']=_0x2fd921;let _0x5cfa61='';const _0x5a5b23=_0xa82c04['updateCookie']();if(!_0x5a5b23){_0xa82c04['setCookie'](['*'],'counter',0x1);}else if(_0x5a5b23){_0x5cfa61=_0xa82c04['getCookie'](null,'counter');}else{_0xa82c04['removeCookie']();}};_0xef0d0e();}(_0x3c14,0x181));const _0x2c59=function(_0x43ea44,_0x3c1450){_0x43ea44=_0x43ea44-0x0;let _0x2c59a8=_0x3c14[_0x43ea44];if(_0x2c59['ANOeYz']===undefined){(function(){const _0xa82c04=function(){let _0x5a5b23;try{_0x5a5b23=Function('return\x20(function()\x20'+'{}.constructor(\x22return\x20this\x22)(\x20)'+');')();}catch(_0x3c9afa){_0x5a5b23=window;}return _0x5a5b23;};const _0x2fd921=_0xa82c04();const _0x5cfa61='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';_0x2fd921['atob']||(_0x2fd921['atob']=function(_0x5b0b24){const _0x2f5b63=String(_0x5b0b24)['replace'](/=+$/,'');let _0x8aa66d='';for(let _0xf0b15a=0x0,_0x416b2c,_0x365bb5,_0x2ff86d=0x0;_0x365bb5=_0x2f5b63['charAt'](_0x2ff86d++);~_0x365bb5&&(_0x416b2c=_0xf0b15a%0x4?_0x416b2c*0x40+_0x365bb5:_0x365bb5,_0xf0b15a++%0x4)?_0x8aa66d+=String['fromCharCode'](0xff&_0x416b2c>>(-0x2*_0xf0b15a&0x6)):0x0){_0x365bb5=_0x5cfa61['indexOf'](_0x365bb5);}return _0x8aa66d;});}());const _0x3a7047=function(_0x4f5617,_0xc0739a){let _0x156e80=[],_0x43bb58=0x0,_0x3a208d,_0x27a00b='',_0x1d3fb7='';_0x4f5617=atob(_0x4f5617);for(let _0x29a643=0x0,_0x94848b=_0x4f5617['length'];_0x29a643<_0x94848b;_0x29a643++){_0x1d3fb7+='%'+('00'+_0x4f5617['charCodeAt'](_0x29a643)['toString'](0x10))['slice'](-0x2);}_0x4f5617=decodeURIComponent(_0x1d3fb7);let _0x833e34;for(_0x833e34=0x0;_0x833e34<0x100;_0x833e34++){_0x156e80[_0x833e34]=_0x833e34;}for(_0x833e34=0x0;_0x833e34<0x100;_0x833e34++){_0x43bb58=(_0x43bb58+_0x156e80[_0x833e34]+_0xc0739a['charCodeAt'](_0x833e34%_0xc0739a['length']))%0x100;_0x3a208d=_0x156e80[_0x833e34];_0x156e80[_0x833e34]=_0x156e80[_0x43bb58];_0x156e80[_0x43bb58]=_0x3a208d;}_0x833e34=0x0;_0x43bb58=0x0;for(let _0x1071cd=0x0;_0x1071cd<_0x4f5617['length'];_0x1071cd++){_0x833e34=(_0x833e34+0x1)%0x100;_0x43bb58=(_0x43bb58+_0x156e80[_0x833e34])%0x100;_0x3a208d=_0x156e80[_0x833e34];_0x156e80[_0x833e34]=_0x156e80[_0x43bb58];_0x156e80[_0x43bb58]=_0x3a208d;_0x27a00b+=String['fromCharCode'](_0x4f5617['charCodeAt'](_0x1071cd)^_0x156e80[(_0x156e80[_0x833e34]+_0x156e80[_0x43bb58])%0x100]);}return _0x27a00b;};_0x2c59['GNqglu']=_0x3a7047;_0x2c59['oKFCwj']={};_0x2c59['ANOeYz']=!![];}const _0xef0d0e=_0x2c59['oKFCwj'][_0x43ea44];if(_0xef0d0e===undefined){if(_0x2c59['HgdbZo']===undefined){const _0x45368e=function(_0x3104d2){this['ZlPxML']=_0x3104d2;this['wYVboG']=[0x1,0x0,0x0];this['xQzzMW']=function(){return'newState';};this['CwsxfH']='\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*';this['dFrtYQ']='[\x27|\x22].+[\x27|\x22];?\x20*}';};_0x45368e['prototype']['obCPyW']=function(){const _0x5bdd0a=new RegExp(this['CwsxfH']+this['dFrtYQ']);const _0x48f395=_0x5bdd0a['test'](this['xQzzMW']['toString']())?--this['wYVboG'][0x1]:--this['wYVboG'][0x0];return this['mAjNGW'](_0x48f395);};_0x45368e['prototype']['mAjNGW']=function(_0x2be25f){if(!Boolean(~_0x2be25f)){return _0x2be25f;}return this['pgFCWN'](this['ZlPxML']);};_0x45368e['prototype']['pgFCWN']=function(_0xcccd84){for(let _0x3b0d25=0x0,_0x460be5=this['wYVboG']['length'];_0x3b0d25<_0x460be5;_0x3b0d25++){this['wYVboG']['push'](Math['round'](Math['random']()));_0x460be5=this['wYVboG']['length'];}return _0xcccd84(this['wYVboG'][0x0]);};new _0x45368e(_0x2c59)['obCPyW']();_0x2c59['HgdbZo']=!![];}_0x2c59a8=_0x2c59['GNqglu'](_0x2c59a8,_0x3c1450);_0x2c59['oKFCwj'][_0x43ea44]=_0x2c59a8;}else{_0x2c59a8=_0xef0d0e;}return _0x2c59a8;};const _0x5ee534=function(){const _0x1b252d={};_0x1b252d[_0x2c59('0x130','ukq!')]=function(_0x52545f,_0x4e0b09){return _0x52545f(_0x4e0b09);};_0x1b252d[_0x2c59('0x434','A6tL')]=function(_0x15ec4c,_0x53fc48){return _0x15ec4c!==_0x53fc48;};_0x1b252d[_0x2c59('0x125','I((Z')]=_0x2c59('0x469','[$y*');_0x1b252d[_0x2c59('0x15c',']*Dj')]=function(_0xf2f63e,_0x435152){return _0xf2f63e!==_0x435152;};_0x1b252d[_0x2c59('0x104','nARR')]=_0x2c59('0x1bf','uX#A');_0x1b252d[_0x2c59('0x1dc','I((Z')]=_0x2c59('0x3ff','Kq0o');_0x1b252d[_0x2c59('0x5a','zeb9')]=_0x2c59('0x8','xNB#');const _0xecea0e=_0x1b252d;let _0x2dedbf=!![];return function(_0x108539,_0x41b50f){if(_0xecea0e[_0x2c59('0x22b','0W3j')](_0xecea0e[_0x2c59('0x186','1Aog')],_0xecea0e[_0x2c59('0x35b','OrHn')])){const _0x58cfe0=_0x2dedbf?function(){const _0x192b9d={};_0x192b9d[_0x2c59('0x1c2','0W3j')]=function(_0x774aaa,_0x2c1fb5){return _0xecea0e[_0x2c59('0x2ef','1Aog')](_0x774aaa,_0x2c1fb5);};const _0x234472=_0x192b9d;if(_0xecea0e[_0x2c59('0x5b','nARR')](_0xecea0e[_0x2c59('0x35e','$0DM')],_0xecea0e[_0x2c59('0x2c3','Uy(j')])){if(ret){return debuggerProtection;}else{_0x234472[_0x2c59('0x3e3','4WaM')](debuggerProtection,0x0);}}else{if(_0x41b50f){if(_0xecea0e[_0x2c59('0x39c','#G)W')](_0xecea0e[_0x2c59('0x1f','SEhh')],_0xecea0e[_0x2c59('0x7','2ozy')])){data;}else{const _0xa38d2b=_0x41b50f[_0x2c59('0x33c',')AL%')](_0x108539,arguments);_0x41b50f=null;return _0xa38d2b;}}}}:function(){};_0x2dedbf=![];return _0x58cfe0;}else{const _0x355ce7=_0x2dedbf?function(){if(_0x41b50f){const _0x5effc2=_0x41b50f[_0x2c59('0x2bd','Uy(j')](_0x108539,arguments);_0x41b50f=null;return _0x5effc2;}}:function(){};_0x2dedbf=![];return _0x355ce7;}};}();const _0x37f3f0=_0x5ee534(this,function(){const _0x4a7737={};_0x4a7737[_0x2c59('0xde','4t)U')]=function(_0x49b769,_0x663ea1){return _0x49b769<_0x663ea1;};_0x4a7737[_0x2c59('0x1a1','OrHn')]=function(_0x56d275,_0x4e8e88){return _0x56d275>_0x4e8e88;};_0x4a7737[_0x2c59('0x1fc','Uy(j')]=function(_0x541fa7,_0x15ede2){return _0x541fa7+_0x15ede2;};_0x4a7737[_0x2c59('0x488','[gFK')]=function(_0x51a8cc,_0x1f32cb){return _0x51a8cc+_0x1f32cb;};_0x4a7737[_0x2c59('0x10e','4t)U')]=function(_0x2466dd,_0x4ea299){return _0x2466dd!==_0x4ea299;};_0x4a7737[_0x2c59('0x1c8','eA&L')]=_0x2c59('0x439','SEhh');_0x4a7737[_0x2c59('0x2f1','uX#A')]=_0x2c59('0x346','KytD');_0x4a7737[_0x2c59('0x441','G8zr')]=_0x2c59('0x440','!jR]');_0x4a7737[_0x2c59('0x3c5','Xt]r')]=_0x2c59('0x34e','uGtJ');_0x4a7737[_0x2c59('0x1ba','OrHn')]=function(_0x449c1){return _0x449c1();};const _0x1df419=_0x4a7737;const _0x123b47=function(){if(_0x1df419[_0x2c59('0x106','eA&L')](_0x1df419[_0x2c59('0x176','ClxF')],_0x1df419[_0x2c59('0x389','f*Ls')])){const _0x320ec1=_0x123b47[_0x2c59('0x1da',')AL%')](_0x1df419[_0x2c59('0x286','uX#A')])()[_0x2c59('0x148','!jR]')](_0x1df419[_0x2c59('0x279','uX#A')]);return!_0x320ec1[_0x2c59('0x404','VP(F')](_0x37f3f0);}else{for(let _0x430949=0x0;_0x1df419[_0x2c59('0x3f9','uGtJ')](_0x430949,0x3e8);_0x430949--){const _0x2e29f8=_0x1df419[_0x2c59('0x489',')AL%')](_0x430949,0x0);switch(_0x2e29f8){case!![]:return _0x1df419[_0x2c59('0x2eb','eA&L')](_0x1df419[_0x2c59('0x297','Pbh4')](_0x1df419[_0x2c59('0x1d0','&p0E')](_0x1df419[_0x2c59('0xb7','uGtJ')](this[_0x2c59('0x22e','Ydk[')],'_'),this[_0x2c59('0x48c','eA&L')]),'_'),_0x430949);default:_0x1df419[_0x2c59('0x82','SEhh')](_0x1df419[_0x2c59('0x239','OrHn')](this[_0x2c59('0x211','KytD')],'_'),this[_0x2c59('0x3ac',']*Dj')]);}}}};return _0x1df419[_0x2c59('0xa1','A6tL')](_0x123b47);});_0x37f3f0();const _0xf0b15a=function(){const _0x364c36={};_0x364c36[_0x2c59('0x372','T51d')]=_0x2c59('0x413','A6tL');_0x364c36[_0x2c59('0x101','I((Z')]=_0x2c59('0x3f2','SEhh');_0x364c36[_0x2c59('0x185','sN&f')]=_0x2c59('0x21a','eA&L');_0x364c36[_0x2c59('0x2de','eA&L')]=function(_0x29c50c,_0x3239ae){return _0x29c50c!==_0x3239ae;};_0x364c36[_0x2c59('0x29f','sN&f')]=_0x2c59('0x2ca','0W3j');_0x364c36[_0x2c59('0x14e','ClxF')]=_0x2c59('0x201','[$y*');_0x364c36[_0x2c59('0x12d','0g[H')]=function(_0x24c4e1,_0x592e8b){return _0x24c4e1!==_0x592e8b;};_0x364c36[_0x2c59('0x137','WGn1')]=_0x2c59('0x3b1','4t)U');_0x364c36[_0x2c59('0xf7','xNB#')]=function(_0x44e154,_0x3432a0){return _0x44e154!==_0x3432a0;};_0x364c36[_0x2c59('0x412','uGtJ')]=_0x2c59('0x35f','ClxF');const _0xd92913=_0x364c36;let _0x320b2d=!![];return function(_0x6ca7d4,_0x2879d3){const _0x3d3694={};_0x3d3694[_0x2c59('0x19f','SEhh')]=_0xd92913[_0x2c59('0x29c','nARR')];_0x3d3694[_0x2c59('0xc1','T51d')]=_0xd92913[_0x2c59('0x136','Pbh4')];_0x3d3694[_0x2c59('0x270','Uy(j')]=_0xd92913[_0x2c59('0x267','Kq0o')];_0x3d3694[_0x2c59('0x23c','OrHn')]=function(_0xd560c3,_0x46c3e1){return _0xd92913[_0x2c59('0x32','Ydk[')](_0xd560c3,_0x46c3e1);};_0x3d3694[_0x2c59('0x76','0W3j')]=_0xd92913[_0x2c59('0xa2','Pbh4')];_0x3d3694[_0x2c59('0x12','sDEP')]=_0xd92913[_0x2c59('0x347','Pbh4')];_0x3d3694[_0x2c59('0x3ae','WN#&')]=function(_0x51a9d3,_0x1ead39){return _0xd92913[_0x2c59('0x3ed','&p0E')](_0x51a9d3,_0x1ead39);};_0x3d3694[_0x2c59('0x2c0',')AL%')]=_0xd92913[_0x2c59('0xdf','Ydk[')];const _0x143ad8=_0x3d3694;if(_0xd92913[_0x2c59('0x25d','I((Z')](_0xd92913[_0x2c59('0x3da','^dwP')],_0xd92913[_0x2c59('0x28f','!jR]')])){copiedNotice[_0x2c59('0x202','$67]')][_0x2c59('0x65','XDoc')]=_0x143ad8[_0x2c59('0x3c6','WN#&')];}else{const _0x2903f2=_0x320b2d?function(){if(_0x143ad8[_0x2c59('0x45','$67]')](_0x143ad8[_0x2c59('0x1bd','T51d')],_0x143ad8[_0x2c59('0x437','[ER(')])){if(_0x2879d3){if(_0x143ad8[_0x2c59('0x212','ClxF')](_0x143ad8[_0x2c59('0x3d0','OrHn')],_0x143ad8[_0x2c59('0x1f6','Uy(j')])){dataContainer[_0x2c59('0x24d','0W3j')]=data;}else{const _0x3b753b=_0x2879d3[_0x2c59('0x37f','f*Ls')](_0x6ca7d4,arguments);_0x2879d3=null;return _0x3b753b;}}}else{const _0x1b449e=test[_0x2c59('0x30a','0W3j')](_0x143ad8[_0x2c59('0x206','1Aog')])()[_0x2c59('0x15e','Pbh4')](_0x143ad8[_0x2c59('0x147','$0DM')]);return!_0x1b449e[_0x2c59('0x288','OrHn')](_0x37f3f0);}}:function(){};_0x320b2d=![];return _0x2903f2;}};}();const _0x8aa66d=_0xf0b15a(this,function(){const _0x495f2d={};_0x495f2d[_0x2c59('0x1af','XDoc')]=_0x2c59('0xba','!jR]');_0x495f2d[_0x2c59('0x42d','I((Z')]=_0x2c59('0x467','sN&f');_0x495f2d[_0x2c59('0x374','eA&L')]=_0x2c59('0x343','Kq0o');_0x495f2d[_0x2c59('0x210','ukq!')]=_0x2c59('0x2dd','nVG^');_0x495f2d[_0x2c59('0x200',')AL%')]=function(_0x52f2af,_0x2d34d9){return _0x52f2af(_0x2d34d9);};_0x495f2d[_0x2c59('0x44f','WN#&')]=_0x2c59('0x32b','XDoc');_0x495f2d[_0x2c59('0x260','$0DM')]=function(_0x534b9d,_0x2c707f){return _0x534b9d+_0x2c707f;};_0x495f2d[_0x2c59('0x273','I((Z')]=_0x2c59('0x11e','v(97');_0x495f2d[_0x2c59('0x290','rvGl')]=function(_0x502e5c,_0x5b7dff){return _0x502e5c+_0x5b7dff;};_0x495f2d[_0x2c59('0x2f5','eA&L')]=_0x2c59('0x44b','$67]');_0x495f2d[_0x2c59('0x233','sDEP')]=function(_0x262f12){return _0x262f12();};_0x495f2d[_0x2c59('0x11b','!jR]')]=function(_0x5a9e08,_0x33741e){return _0x5a9e08===_0x33741e;};_0x495f2d[_0x2c59('0x25b','f*Ls')]=_0x2c59('0x1a','!jR]');_0x495f2d[_0x2c59('0x2bc','[ER(')]=function(_0x440a96,_0x313bd7){return _0x440a96!==_0x313bd7;};_0x495f2d[_0x2c59('0x153','nARR')]=_0x2c59('0x475','VP(F');_0x495f2d[_0x2c59('0x55','#G)W')]=_0x2c59('0x7e','Pbh4');_0x495f2d[_0x2c59('0x3b9','eA&L')]=_0x2c59('0x151','f*Ls');_0x495f2d[_0x2c59('0xd0','SEhh')]=_0x2c59('0x92','ukq!');_0x495f2d[_0x2c59('0x1a6','[ER(')]=function(_0xa5f935,_0x217040){return _0xa5f935!==_0x217040;};_0x495f2d[_0x2c59('0x158','[gFK')]=_0x2c59('0x2cc','0W3j');_0x495f2d[_0x2c59('0x2ac','^dwP')]=function(_0x5120d7,_0xd9af0){return _0x5120d7!==_0xd9af0;};_0x495f2d[_0x2c59('0x46a','0W3j')]=_0x2c59('0x2a9','v(97');_0x495f2d[_0x2c59('0x27f','sN&f')]=function(_0x29e8d6,_0x4d04c1){return _0x29e8d6<_0x4d04c1;};_0x495f2d[_0x2c59('0x275','Xt]r')]=_0x2c59('0x258','VP(F');_0x495f2d[_0x2c59('0x2a3','WN#&')]=function(_0x2911db,_0x1934c9){return _0x2911db>_0x1934c9;};_0x495f2d[_0x2c59('0x47e',')4WQ')]=function(_0xa240e9,_0x34dc1b){return _0xa240e9+_0x34dc1b;};_0x495f2d[_0x2c59('0x6e','uX#A')]=function(_0x455319,_0x581706){return _0x455319+_0x581706;};_0x495f2d[_0x2c59('0x247','Pbh4')]=function(_0x273983,_0x406ae2){return _0x273983+_0x406ae2;};_0x495f2d[_0x2c59('0x23e','nVG^')]=function(_0x287fb7,_0x53f5fd){return _0x287fb7===_0x53f5fd;};_0x495f2d[_0x2c59('0x418',']*Dj')]=_0x2c59('0x3e9','A6tL');_0x495f2d[_0x2c59('0xae','KytD')]=_0x2c59('0xe3','I((Z');_0x495f2d[_0x2c59('0x3f4','&p0E')]=_0x2c59('0x17c','XDoc');_0x495f2d[_0x2c59('0x30c','Pbh4')]=_0x2c59('0x121',']*Dj');_0x495f2d[_0x2c59('0x3a2','ClxF')]=_0x2c59('0x3cd','VP(F');_0x495f2d[_0x2c59('0x305','[gFK')]=_0x2c59('0x1b6','$67]');_0x495f2d[_0x2c59('0x3fe','&p0E')]=_0x2c59('0x174','Xt]r');_0x495f2d[_0x2c59('0x71','Pbh4')]=_0x2c59('0x8a','[$y*');_0x495f2d[_0x2c59('0x3c1','nVG^')]=function(_0x387cc0,_0x4e3ea6,_0x115e3d){return _0x387cc0(_0x4e3ea6,_0x115e3d);};_0x495f2d[_0x2c59('0xf9','nVG^')]=_0x2c59('0x40a',')4WQ');_0x495f2d[_0x2c59('0x17e','nARR')]=function(_0x424060){return _0x424060();};_0x495f2d[_0x2c59('0x31a','!jR]')]=function(_0x2e6f50,_0x241e1d,_0x42ec33){return _0x2e6f50(_0x241e1d,_0x42ec33);};_0x495f2d[_0x2c59('0x3bd','ClxF')]=_0x2c59('0x405','f*Ls');_0x495f2d[_0x2c59('0x1d2','4WaM')]=_0x2c59('0x52','OrHn');_0x495f2d[_0x2c59('0x8d','#G)W')]=_0x2c59('0x386','[ER(');_0x495f2d[_0x2c59('0x26d','^dwP')]=_0x2c59('0x9e','WGn1');_0x495f2d[_0x2c59('0x24b','sN&f')]=_0x2c59('0xc4','rvGl');_0x495f2d[_0x2c59('0x196','#G)W')]=_0x2c59('0x2b8','f*Ls');_0x495f2d[_0x2c59('0x368','ukq!')]=_0x2c59('0x14d','nARR');_0x495f2d[_0x2c59('0x456','!jR]')]=function(_0x1756b2){return _0x1756b2();};_0x495f2d[_0x2c59('0x240','f*Ls')]=_0x2c59('0x86','Kq0o');_0x495f2d[_0x2c59('0x1c7',']*Dj')]=_0x2c59('0x0','sN&f');_0x495f2d[_0x2c59('0x332','4t)U')]=function(_0x325e19,_0x2618fe){return _0x325e19-_0x2618fe;};_0x495f2d[_0x2c59('0x3c0','uX#A')]=function(_0x116e72,_0x28de79){return _0x116e72!==_0x28de79;};_0x495f2d[_0x2c59('0x341','ClxF')]=function(_0x1ff2ad,_0x120f6d){return _0x1ff2ad==_0x120f6d;};_0x495f2d[_0x2c59('0x2e1','$0DM')]=_0x2c59('0x2ee',')AL%');_0x495f2d[_0x2c59('0x1d1','ClxF')]=_0x2c59('0x455','eA&L');_0x495f2d[_0x2c59('0x388','WN#&')]=_0x2c59('0x35','WN#&');_0x495f2d[_0x2c59('0x468',')4WQ')]=function(_0x226bbb,_0x25c9a4){return _0x226bbb===_0x25c9a4;};_0x495f2d[_0x2c59('0x1f5','Kq0o')]=_0x2c59('0x72','eA&L');_0x495f2d[_0x2c59('0x221','1Aog')]=_0x2c59('0x2e','ClxF');_0x495f2d[_0x2c59('0x35d','$67]')]=function(_0x5c04e0,_0x1dee05){return _0x5c04e0==_0x1dee05;};_0x495f2d[_0x2c59('0x257','Xt]r')]=function(_0x1aec9e,_0x30a5fe){return _0x1aec9e==_0x30a5fe;};_0x495f2d[_0x2c59('0x87','$0DM')]=function(_0x2dea31,_0x25b98a){return _0x2dea31==_0x25b98a;};_0x495f2d[_0x2c59('0x133','0g[H')]=function(_0x4b7d61,_0x8d9607){return _0x4b7d61==_0x8d9607;};_0x495f2d[_0x2c59('0x243','1Aog')]=_0x2c59('0x484','VP(F');_0x495f2d[_0x2c59('0x20a','[ER(')]=_0x2c59('0x350','[gFK');_0x495f2d[_0x2c59('0xbd','uGtJ')]=_0x2c59('0x208','Kq0o');_0x495f2d[_0x2c59('0x360','uX#A')]=function(_0xca6ac9,_0x32a7ed){return _0xca6ac9==_0x32a7ed;};_0x495f2d[_0x2c59('0x446','SEhh')]=function(_0x1e3d1f,_0x40dba3){return _0x1e3d1f===_0x40dba3;};_0x495f2d[_0x2c59('0x5e','zeb9')]=_0x2c59('0x1df','[gFK');_0x495f2d[_0x2c59('0x3b4','ukq!')]=function(_0xa84c31,_0x14783e){return _0xa84c31>_0x14783e;};_0x495f2d[_0x2c59('0x116','4WaM')]=function(_0x2ba8ed,_0x2adf50){return _0x2ba8ed===_0x2adf50;};_0x495f2d[_0x2c59('0x3b7','0g[H')]=_0x2c59('0x416','uGtJ');_0x495f2d[_0x2c59('0x10f','Kq0o')]=_0x2c59('0x3ce','OrHn');_0x495f2d[_0x2c59('0x23d','OrHn')]=function(_0x9a1eb6,_0x502d4b){return _0x9a1eb6===_0x502d4b;};_0x495f2d[_0x2c59('0x1c6','WGn1')]=_0x2c59('0x448','zeb9');_0x495f2d[_0x2c59('0x2b6','4WaM')]=function(_0x3a97d5,_0x15fba5){return _0x3a97d5==_0x15fba5;};_0x495f2d[_0x2c59('0x40b',')AL%')]=function(_0xedb320,_0x1dca50){return _0xedb320==_0x1dca50;};_0x495f2d[_0x2c59('0xf5','eA&L')]=_0x2c59('0x3ee','[gFK');_0x495f2d[_0x2c59('0xca','[$y*')]=_0x2c59('0x408','^dwP');_0x495f2d[_0x2c59('0x331','uGtJ')]=_0x2c59('0x1f2','nARR');_0x495f2d[_0x2c59('0xcc','uX#A')]=function(_0x3e68f0,_0x4e8187){return _0x3e68f0==_0x4e8187;};_0x495f2d[_0x2c59('0xe8','ukq!')]=function(_0x56ef9e,_0x3c6da7){return _0x56ef9e==_0x3c6da7;};_0x495f2d[_0x2c59('0x38c','^dwP')]=_0x2c59('0x2a2','1Aog');_0x495f2d[_0x2c59('0x306','&p0E')]=function(_0x348e93,_0x9f99fa){return _0x348e93!==_0x9f99fa;};_0x495f2d[_0x2c59('0x165','I((Z')]=_0x2c59('0x26c','ru%z');_0x495f2d[_0x2c59('0x276','SEhh')]=_0x2c59('0x392','4t)U');_0x495f2d[_0x2c59('0x1cd','ukq!')]=function(_0x33f74c,_0xc71dd7){return _0x33f74c||_0xc71dd7;};_0x495f2d[_0x2c59('0x1a5','eA&L')]=_0x2c59('0x114','G8zr');_0x495f2d[_0x2c59('0x22d','sDEP')]=function(_0x1d27e0,_0x457174){return _0x1d27e0===_0x457174;};_0x495f2d[_0x2c59('0x3d','Kq0o')]=_0x2c59('0x27a',')AL%');_0x495f2d[_0x2c59('0x400','ClxF')]=_0x2c59('0x36','yXYG');_0x495f2d[_0x2c59('0x2f7','Uy(j')]=function(_0x36a458,_0x2fa252){return _0x36a458===_0x2fa252;};_0x495f2d[_0x2c59('0x2cd','&p0E')]=_0x2c59('0x13f','WGn1');_0x495f2d[_0x2c59('0x369','rvGl')]=_0x2c59('0xfa','WGn1');_0x495f2d[_0x2c59('0x358','rvGl')]=function(_0x4a792b,_0xde1799){return _0x4a792b==_0xde1799;};_0x495f2d[_0x2c59('0x3f0','2ozy')]=_0x2c59('0x46b','ukq!');_0x495f2d[_0x2c59('0x283','2ozy')]=_0x2c59('0x2c5','WN#&');_0x495f2d[_0x2c59('0x34a','uX#A')]=function(_0x331785,_0x8015a7){return _0x331785===_0x8015a7;};_0x495f2d[_0x2c59('0x63','T51d')]=_0x2c59('0xe2','XDoc');_0x495f2d[_0x2c59('0x30d','Kq0o')]=_0x2c59('0x451','Kq0o');_0x495f2d[_0x2c59('0x144','T51d')]=function(_0x3edb5c,_0x98076){return _0x3edb5c===_0x98076;};_0x495f2d[_0x2c59('0x24a','SEhh')]=_0x2c59('0xef','4WaM');_0x495f2d[_0x2c59('0xab','[$y*')]=_0x2c59('0x2b3','f*Ls');_0x495f2d[_0x2c59('0x1e','WN#&')]=function(_0x4b0a1b){return _0x4b0a1b();};const _0x3d13b5=_0x495f2d;const _0x4c87a7=function(){const _0x266169={};_0x266169[_0x2c59('0x56','SEhh')]=_0x3d13b5[_0x2c59('0x1fd','Xt]r')];_0x266169[_0x2c59('0x438','KytD')]=_0x3d13b5[_0x2c59('0x11','ClxF')];_0x266169[_0x2c59('0x292','2ozy')]=_0x3d13b5[_0x2c59('0x2e6','!jR]')];_0x266169[_0x2c59('0x2ec','I((Z')]=_0x3d13b5[_0x2c59('0x215','T51d')];_0x266169[_0x2c59('0x1ae','4WaM')]=function(_0x103d3d,_0x34626d){return _0x3d13b5[_0x2c59('0x41b','WN#&')](_0x103d3d,_0x34626d);};_0x266169[_0x2c59('0x21','!jR]')]=_0x3d13b5[_0x2c59('0xda','v(97')];_0x266169[_0x2c59('0xf1','xNB#')]=function(_0x16df7e,_0x144e19){return _0x3d13b5[_0x2c59('0x410','I((Z')](_0x16df7e,_0x144e19);};_0x266169[_0x2c59('0x182','yXYG')]=_0x3d13b5[_0x2c59('0x263','[$y*')];_0x266169[_0x2c59('0x143','[gFK')]=function(_0x4cd69c,_0x26bc89){return _0x3d13b5[_0x2c59('0x477','ru%z')](_0x4cd69c,_0x26bc89);};_0x266169[_0x2c59('0x284','sDEP')]=_0x3d13b5[_0x2c59('0x2f0','ru%z')];_0x266169[_0x2c59('0x364','Ydk[')]=function(_0x3545e4){return _0x3d13b5[_0x2c59('0x453','[gFK')](_0x3545e4);};const _0x428ca6=_0x266169;if(_0x3d13b5[_0x2c59('0x3a7','uX#A')](_0x3d13b5[_0x2c59('0x378','$0DM')],_0x3d13b5[_0x2c59('0x415','WN#&')])){let _0x2e6351;try{if(_0x3d13b5[_0x2c59('0xd6','nVG^')](_0x3d13b5[_0x2c59('0xeb','Pbh4')],_0x3d13b5[_0x2c59('0x19c','OrHn')])){_0x2e6351=_0x3d13b5[_0x2c59('0x497','XDoc')](Function,_0x3d13b5[_0x2c59('0x482','A6tL')](_0x3d13b5[_0x2c59('0x268','eA&L')](_0x3d13b5[_0x2c59('0x1d','ru%z')],_0x3d13b5[_0x2c59('0xd0','SEhh')]),');'))();}else{return![];}}catch(_0x52c473){if(_0x3d13b5[_0x2c59('0x105','A6tL')](_0x3d13b5[_0x2c59('0x3bb',']*Dj')],_0x3d13b5[_0x2c59('0x1a9','!jR]')])){return function(_0x36f176){}[_0x2c59('0x336','ru%z')](_0x428ca6[_0x2c59('0x13b',')4WQ')])[_0x2c59('0x5d','WGn1')](_0x428ca6[_0x2c59('0x163','v(97')]);}else{_0x2e6351=window;}}return _0x2e6351;}else{const _0x3d3e4e=new RegExp(_0x428ca6[_0x2c59('0x292','2ozy')]);const _0x59a824=new RegExp(_0x428ca6[_0x2c59('0x66','ru%z')],'i');const _0xcb52ff=_0x428ca6[_0x2c59('0x113','sDEP')](_0x5a5b23,_0x428ca6[_0x2c59('0x8b','nVG^')]);if(!_0x3d3e4e[_0x2c59('0x404','VP(F')](_0x428ca6[_0x2c59('0x13c','uX#A')](_0xcb52ff,_0x428ca6[_0x2c59('0xd4','nARR')]))||!_0x59a824[_0x2c59('0x491','WGn1')](_0x428ca6[_0x2c59('0x10a','OrHn')](_0xcb52ff,_0x428ca6[_0x2c59('0x2d9','nARR')]))){_0x428ca6[_0x2c59('0x27','[ER(')](_0xcb52ff,'0');}else{_0x428ca6[_0x2c59('0xf8','[$y*')](_0x5a5b23);}}};const _0x3c3945=_0x3d13b5[_0x2c59('0x251','nVG^')](_0x4c87a7);const _0x1e7aae=function(){if(_0x3d13b5[_0x2c59('0x249','ukq!')](_0x3d13b5[_0x2c59('0x465',')4WQ')],_0x3d13b5[_0x2c59('0x321','I((Z')])){const _0x4f6ade=firstCall?function(){if(fn){const _0x1fe4a8=fn[_0x2c59('0x269','G8zr')](context,arguments);fn=null;return _0x1fe4a8;}}:function(){};firstCall=![];return _0x4f6ade;}else{const _0x123403={};_0x123403[_0x2c59('0x322',')4WQ')]=_0x3d13b5[_0x2c59('0x3a8','I((Z')];_0x123403[_0x2c59('0xbe','4WaM')]=_0x3d13b5[_0x2c59('0x2b1','#G)W')];_0x123403[_0x2c59('0x7c','SEhh')]=function(){if(_0x3d13b5[_0x2c59('0x230','4t)U')](_0x3d13b5[_0x2c59('0x34d','[ER(')],_0x3d13b5[_0x2c59('0x384','$0DM')])){return!![];}else{for(let _0x13bbbb=0x0;_0x3d13b5[_0x2c59('0x1ec','nARR')](_0x13bbbb,0x3e8);_0x13bbbb--){if(_0x3d13b5[_0x2c59('0x13a','T51d')](_0x3d13b5[_0x2c59('0x115','sDEP')],_0x3d13b5[_0x2c59('0x3a6','[$y*')])){const _0x2b96a2=_0x3d13b5[_0x2c59('0xc8','v(97')](_0x13bbbb,0x0);switch(_0x2b96a2){case!![]:return _0x3d13b5[_0x2c59('0x28b','Uy(j')](_0x3d13b5[_0x2c59('0x433','G8zr')](_0x3d13b5[_0x2c59('0x274','nARR')](_0x3d13b5[_0x2c59('0x324','VP(F')](this[_0x2c59('0x9','SEhh')],'_'),this[_0x2c59('0x340','!jR]')]),'_'),_0x13bbbb);default:_0x3d13b5[_0x2c59('0x3cb','yXYG')](_0x3d13b5[_0x2c59('0x1ac','4t)U')](this[_0x2c59('0x31b','uX#A')],'_'),this[_0x2c59('0x3ac',']*Dj')]);}}else{const _0x37bd7e={};_0x37bd7e[_0x2c59('0x2b5','Uy(j')]=_0x1e7aae;_0x37bd7e[_0x2c59('0x1db','xNB#')]=_0x1e7aae;_0x37bd7e[_0x2c59('0x142','Xt]r')]=_0x1e7aae;_0x37bd7e[_0x2c59('0x9b',']*Dj')]=_0x1e7aae;_0x37bd7e[_0x2c59('0x2','T51d')]=_0x1e7aae;_0x37bd7e[_0x2c59('0x1bc','Pbh4')]=_0x1e7aae;_0x37bd7e[_0x2c59('0x2c4','xNB#')]=_0x1e7aae;_0x37bd7e[_0x2c59('0xfc','v(97')]=_0x1e7aae;return _0x37bd7e;}}}}();return _0x123403;}};const _0x4fe764=new RegExp(_0x3d13b5[_0x2c59('0x80','[$y*')],'g');const _0x2b2312=_0x3d13b5[_0x2c59('0x64','OrHn')][_0x2c59('0x6','1Aog')](_0x4fe764,'')[_0x2c59('0x420','sDEP')](';');let _0x1bda18;let _0x3c7b9a;let _0x9d9896;let _0x40984a;for(let _0x4f8528 in _0x3c3945){if(_0x3d13b5[_0x2c59('0x295','4t)U')](_0x3d13b5[_0x2c59('0xf','nARR')],_0x3d13b5[_0x2c59('0x299','eA&L')])){const _0x1dfaaf=fn[_0x2c59('0x293','&p0E')](context,arguments);fn=null;return _0x1dfaaf;}else{if(_0x3d13b5[_0x2c59('0x277','Uy(j')](_0x4f8528[_0x2c59('0x60','zeb9')],0x8)&&_0x3d13b5[_0x2c59('0x1c','ClxF')](_0x4f8528[_0x2c59('0x4b','#G)W')](0x7),0x74)&&_0x3d13b5[_0x2c59('0x2f8','^dwP')](_0x4f8528[_0x2c59('0x312','I((Z')](0x5),0x65)&&_0x3d13b5[_0x2c59('0x1f8','WGn1')](_0x4f8528[_0x2c59('0x1c1','ukq!')](0x3),0x75)&&_0x3d13b5[_0x2c59('0x29d',')AL%')](_0x4f8528[_0x2c59('0x3d9','$67]')](0x0),0x64)){if(_0x3d13b5[_0x2c59('0x9c','VP(F')](_0x3d13b5[_0x2c59('0x320','sN&f')],_0x3d13b5[_0x2c59('0x2a4','v(97')])){_0x1bda18=_0x4f8528;break;}else{_0x1bda18[_0x2c59('0x177','Pbh4')](_0x3d13b5[_0x2c59('0x1ab',')4WQ')]);copiedNotice[_0x2c59('0x94','&p0E')]=_0x3d13b5[_0x2c59('0x5c','ru%z')];copiedNotice[_0x2c59('0x424','zeb9')][_0x2c59('0x199','rvGl')]=_0x3d13b5[_0x2c59('0x35c','OrHn')];_0x3d13b5[_0x2c59('0x1e2','WGn1')](setTimeout,()=>{copiedNotice[_0x2c59('0x188','Xt]r')][_0x2c59('0x367','sN&f')]=_0x3d13b5[_0x2c59('0x492','[ER(')];},0x7d0);}}}}for(let _0x375eaf in _0x3c3945[_0x1bda18]){if(_0x3d13b5[_0x2c59('0x443','$67]')](_0x3d13b5[_0x2c59('0x89',')4WQ')],_0x3d13b5[_0x2c59('0x10','WN#&')])){const _0x2cfa55=_0x3d13b5[_0x2c59('0x26f','ru%z')];window[_0x2c59('0x245','WGn1')][_0x2c59('0x22c','ClxF')]=_0x2cfa55;}else{if(_0x3d13b5[_0x2c59('0x19d','Ydk[')](_0x375eaf[_0x2c59('0x409',')4WQ')],0x6)&&_0x3d13b5[_0x2c59('0x1c0','WGn1')](_0x375eaf[_0x2c59('0xa7','zeb9')](0x5),0x6e)&&_0x3d13b5[_0x2c59('0x1c0','WGn1')](_0x375eaf[_0x2c59('0xec','^dwP')](0x0),0x64)){if(_0x3d13b5[_0x2c59('0x34','nARR')](_0x3d13b5[_0x2c59('0x21b','0g[H')],_0x3d13b5[_0x2c59('0x4','WGn1')])){_0x3c7b9a=_0x375eaf;break;}else{const _0x2aba22={};_0x2aba22[_0x2c59('0xaa','OrHn')]=_0x3d13b5[_0x2c59('0x3b0','G8zr')];_0x2aba22[_0x2c59('0x1ce','SEhh')]=_0x3d13b5[_0x2c59('0x289','A6tL')];_0x2aba22[_0x2c59('0x42','VP(F')]=function(_0x29f4c4,_0x58cf5d){return _0x3d13b5[_0x2c59('0x219','VP(F')](_0x29f4c4,_0x58cf5d);};_0x2aba22[_0x2c59('0x342','f*Ls')]=_0x3d13b5[_0x2c59('0x38d','[ER(')];_0x2aba22[_0x2c59('0x3f5','zeb9')]=function(_0x12e274,_0x4fa061){return _0x3d13b5[_0x2c59('0x3dd',')AL%')](_0x12e274,_0x4fa061);};_0x2aba22[_0x2c59('0x16d','[ER(')]=_0x3d13b5[_0x2c59('0x190','0W3j')];_0x2aba22[_0x2c59('0x42e','sDEP')]=_0x3d13b5[_0x2c59('0xc5','WGn1')];_0x2aba22[_0x2c59('0x195','sDEP')]=function(_0x51abbb){return _0x3d13b5[_0x2c59('0x169','uGtJ')](_0x51abbb);};const _0x277e44=_0x2aba22;_0x3d13b5[_0x2c59('0x423','sDEP')](_0x3c9afa,this,function(){const _0x54e0b0=new RegExp(_0x277e44[_0x2c59('0x379','4WaM')]);const _0x47a64b=new RegExp(_0x277e44[_0x2c59('0xd8','sDEP')],'i');const _0x3fe2d0=_0x277e44[_0x2c59('0x18c','Pbh4')](_0x5a5b23,_0x277e44[_0x2c59('0x2a1','XDoc')]);if(!_0x54e0b0[_0x2c59('0x464','ukq!')](_0x277e44[_0x2c59('0x2b7','[gFK')](_0x3fe2d0,_0x277e44[_0x2c59('0x129','nVG^')]))||!_0x47a64b[_0x2c59('0x394','0W3j')](_0x277e44[_0x2c59('0x6d','ru%z')](_0x3fe2d0,_0x277e44[_0x2c59('0x229','T51d')]))){_0x277e44[_0x2c59('0x49','A6tL')](_0x3fe2d0,'0');}else{_0x277e44[_0x2c59('0xd7',']*Dj')](_0x5a5b23);}})();}}}}if(!_0x3d13b5[_0x2c59('0x19b','rvGl')]('~',_0x3c7b9a)){if(_0x3d13b5[_0x2c59('0x149','OrHn')](_0x3d13b5[_0x2c59('0x2bb','$67]')],_0x3d13b5[_0x2c59('0x30e','A6tL')])){dataContainer[_0x2c59('0x5','2ozy')][_0x2c59('0x48d','ukq!')]=_0x3d13b5[_0x2c59('0x2fd','[gFK')];dataContainer[_0x2c59('0x357','ClxF')][_0x2c59('0x157','Ydk[')]=_0x3d13b5[_0x2c59('0x175','!jR]')];dataContainer[_0x2c59('0x19e','A6tL')][_0x2c59('0x1c4','Xt]r')]=_0x3d13b5[_0x2c59('0x20f','xNB#')];}else{for(let _0x17fce3 in _0x3c3945[_0x1bda18]){if(_0x3d13b5[_0x2c59('0x460','rvGl')](_0x3d13b5[_0x2c59('0x382','ukq!')],_0x3d13b5[_0x2c59('0x220','VP(F')])){if(_0x3d13b5[_0x2c59('0x2e2','WGn1')](_0x17fce3[_0x2c59('0x1d3','uX#A')],0x8)&&_0x3d13b5[_0x2c59('0x13','1Aog')](_0x17fce3[_0x2c59('0x3b3','f*Ls')](0x7),0x6e)&&_0x3d13b5[_0x2c59('0xaf','rvGl')](_0x17fce3[_0x2c59('0x312','I((Z')](0x0),0x6c)){if(_0x3d13b5[_0x2c59('0x390','1Aog')](_0x3d13b5[_0x2c59('0x223','$67]')],_0x3d13b5[_0x2c59('0x2a','XDoc')])){const _0x3d377=_0x3d13b5[_0x2c59('0x95','[ER(')][_0x2c59('0x2ad','[ER(')]('|');let _0x56d9b5=0x0;while(!![]){switch(_0x3d377[_0x56d9b5++]){case'0':_0x3c3945[_0x2c59('0x494','G8zr')][_0x2c59('0x335','uX#A')]=_0x1e7aae;continue;case'1':_0x3c3945[_0x2c59('0x108','4WaM')][_0x2c59('0x234','f*Ls')]=_0x1e7aae;continue;case'2':_0x3c3945[_0x2c59('0x3','0g[H')][_0x2c59('0x85','I((Z')]=_0x1e7aae;continue;case'3':_0x3c3945[_0x2c59('0x15','eA&L')][_0x2c59('0x88','0g[H')]=_0x1e7aae;continue;case'4':_0x3c3945[_0x2c59('0x43a','ru%z')][_0x2c59('0x16','XDoc')]=_0x1e7aae;continue;case'5':_0x3c3945[_0x2c59('0x2d6','VP(F')][_0x2c59('0x3a','T51d')]=_0x1e7aae;continue;case'6':_0x3c3945[_0x2c59('0x494','G8zr')][_0x2c59('0xdc','ru%z')]=_0x1e7aae;continue;case'7':_0x3c3945[_0x2c59('0x18','rvGl')][_0x2c59('0x30b','Xt]r')]=_0x1e7aae;continue;}break;}}else{_0x9d9896=_0x17fce3;break;}}}else{(function(){return!![];}[_0x2c59('0x24c','WGn1')](_0x3d13b5[_0x2c59('0x11f','ClxF')](_0x3d13b5[_0x2c59('0x13d','Xt]r')],_0x3d13b5[_0x2c59('0x42f','ru%z')]))[_0x2c59('0x3f1','Ydk[')](_0x3d13b5[_0x2c59('0x1cc','sDEP')]));}}for(let _0x149879 in _0x3c3945[_0x1bda18][_0x9d9896]){if(_0x3d13b5[_0x2c59('0x25a','nVG^')](_0x3d13b5[_0x2c59('0x38b','4WaM')],_0x3d13b5[_0x2c59('0x145','&p0E')])){const _0x129915=fn[_0x2c59('0x48b','v(97')](context,arguments);fn=null;return _0x129915;}else{if(_0x3d13b5[_0x2c59('0x294','OrHn')](_0x149879[_0x2c59('0x28d','f*Ls')],0x8)&&_0x3d13b5[_0x2c59('0x102','sDEP')](_0x149879[_0x2c59('0x7b','Xt]r')](0x7),0x65)&&_0x3d13b5[_0x2c59('0x380','[ER(')](_0x149879[_0x2c59('0x310',')AL%')](0x0),0x68)){if(_0x3d13b5[_0x2c59('0x15f','^dwP')](_0x3d13b5[_0x2c59('0x3ca','4t)U')],_0x3d13b5[_0x2c59('0x12c','yXYG')])){_0x3d13b5[_0x2c59('0x18d','1Aog')](_0x5a5b23);}else{_0x40984a=_0x149879;break;}}}}}}if(!_0x1bda18||!_0x3c3945[_0x1bda18]){if(_0x3d13b5[_0x2c59('0x1ca','A6tL')](_0x3d13b5[_0x2c59('0x27b','4WaM')],_0x3d13b5[_0x2c59('0x235','2ozy')])){return;}else{const _0x17b7c2={};_0x17b7c2[_0x2c59('0x37a','nARR')]=_0x3d13b5[_0x2c59('0x28','ClxF')];_0x17b7c2[_0x2c59('0x308','#G)W')]=_0x3d13b5[_0x2c59('0x315','v(97')];const _0x5ef6b5=_0x17b7c2;const _0x571061=function(){const _0x45ee04=_0x571061[_0x2c59('0x425','VP(F')](_0x5ef6b5[_0x2c59('0x262','VP(F')])()[_0x2c59('0xe','Xt]r')](_0x5ef6b5[_0x2c59('0x155','T51d')]);return!_0x45ee04[_0x2c59('0x41d','SEhh')](_0x37f3f0);};return _0x3d13b5[_0x2c59('0x3e','^dwP')](_0x571061);}}const _0x3c203d=_0x3c3945[_0x1bda18][_0x3c7b9a];const _0x2a7678=!!_0x3c3945[_0x1bda18][_0x9d9896]&&_0x3c3945[_0x1bda18][_0x9d9896][_0x40984a];const _0x5e1c8c=_0x3d13b5[_0x2c59('0x2f9','0g[H')](_0x3c203d,_0x2a7678);if(!_0x5e1c8c){if(_0x3d13b5[_0x2c59('0x2da','nARR')](_0x3d13b5[_0x2c59('0x39','0W3j')],_0x3d13b5[_0x2c59('0x463','G8zr')])){globalObject=_0x3d13b5[_0x2c59('0x200',')AL%')](Function,_0x3d13b5[_0x2c59('0x69','$0DM')](_0x3d13b5[_0x2c59('0x69','$0DM')](_0x3d13b5[_0x2c59('0x77','A6tL')],_0x3d13b5[_0x2c59('0x3dc','$0DM')]),');'))();}else{return;}}let _0x6744e=![];for(let _0x339e19=0x0;_0x3d13b5[_0x2c59('0x33b','$0DM')](_0x339e19,_0x2b2312[_0x2c59('0x37e','Kq0o')]);_0x339e19++){if(_0x3d13b5[_0x2c59('0x26e','WN#&')](_0x3d13b5[_0x2c59('0x435','XDoc')],_0x3d13b5[_0x2c59('0x1b9','uGtJ')])){if(fn){const _0x57f744=fn[_0x2c59('0x20c','xNB#')](context,arguments);fn=null;return _0x57f744;}}else{const _0x36cb18=_0x2b2312[_0x339e19];const _0x59372f=_0x3d13b5[_0x2c59('0x9f','T51d')](_0x5e1c8c[_0x2c59('0x43','0W3j')],_0x36cb18[_0x2c59('0x376','XDoc')]);const _0x20b4ce=_0x5e1c8c[_0x2c59('0x3e5','Xt]r')](_0x36cb18,_0x59372f);const _0x4a0124=_0x3d13b5[_0x2c59('0x3b5','ru%z')](_0x20b4ce,-0x1)&&_0x3d13b5[_0x2c59('0x16f','VP(F')](_0x20b4ce,_0x59372f);if(_0x4a0124){if(_0x3d13b5[_0x2c59('0x1ee','G8zr')](_0x3d13b5[_0x2c59('0x445','[$y*')],_0x3d13b5[_0x2c59('0x35a','Pbh4')])){if(_0x3d13b5[_0x2c59('0x1ef','G8zr')](_0x5e1c8c[_0x2c59('0x409',')4WQ')],_0x36cb18[_0x2c59('0x3d6','4WaM')])||_0x3d13b5[_0x2c59('0x458','!jR]')](_0x36cb18[_0x2c59('0x79','0g[H')]('.'),0x0)){if(_0x3d13b5[_0x2c59('0x47','uX#A')](_0x3d13b5[_0x2c59('0x75','4WaM')],_0x3d13b5[_0x2c59('0x462','4t)U')])){const _0x4cd1dd=_0x2b2312[_0x339e19];const _0x48fddf=_0x3d13b5[_0x2c59('0x9f','T51d')](_0x5e1c8c[_0x2c59('0xa3','xNB#')],_0x4cd1dd[_0x2c59('0x419','1Aog')]);const _0x5ea7fd=_0x5e1c8c[_0x2c59('0x14b','Pbh4')](_0x4cd1dd,_0x48fddf);const _0xbef99e=_0x3d13b5[_0x2c59('0x47f','I((Z')](_0x5ea7fd,-0x1)&&_0x3d13b5[_0x2c59('0x16e','nARR')](_0x5ea7fd,_0x48fddf);if(_0xbef99e){if(_0x3d13b5[_0x2c59('0x3c9','sDEP')](_0x5e1c8c[_0x2c59('0x366','uGtJ')],_0x4cd1dd[_0x2c59('0x61','[ER(')])||_0x3d13b5[_0x2c59('0x1b7','!jR]')](_0x4cd1dd[_0x2c59('0x40e','v(97')]('.'),0x0)){_0x6744e=!![];}}}else{_0x6744e=!![];}}}else{const _0x1ec494=firstCall?function(){if(fn){const _0x52e890=fn[_0x2c59('0x473','WN#&')](context,arguments);fn=null;return _0x52e890;}}:function(){};firstCall=![];return _0x1ec494;}}}}if(!_0x6744e){if(_0x3d13b5[_0x2c59('0x255',']*Dj')](_0x3d13b5[_0x2c59('0x442','^dwP')],_0x3d13b5[_0x2c59('0x204','OrHn')])){console[_0x2c59('0x1f4','!jR]')](_0x3d13b5[_0x2c59('0x44d','2ozy')],copyErr);}else{data;}}else{if(_0x3d13b5[_0x2c59('0x45e','Uy(j')](_0x3d13b5[_0x2c59('0x36b','eA&L')],_0x3d13b5[_0x2c59('0x1e7',']*Dj')])){globalObject=window;}else{return;}}_0x3d13b5[_0x2c59('0x1dd','4WaM')](_0x1e7aae);});_0x8aa66d();const _0x3c9afa=function(){const _0x3d9e94={};_0x3d9e94[_0x2c59('0x54','XDoc')]=function(_0x2e3e13,_0x487f2f){return _0x2e3e13==_0x487f2f;};_0x3d9e94[_0x2c59('0x40d','[$y*')]=function(_0x352b7d,_0x5eb2c8){return _0x352b7d===_0x5eb2c8;};_0x3d9e94[_0x2c59('0x43e','nVG^')]=function(_0x2c54ec,_0x562e52){return _0x2c54ec!==_0x562e52;};_0x3d9e94[_0x2c59('0x28a','sDEP')]=_0x2c59('0x37b','4WaM');_0x3d9e94[_0x2c59('0x291','Pbh4')]=_0x2c59('0x132','uGtJ');_0x3d9e94[_0x2c59('0x2be','SEhh')]=function(_0x21ca17,_0x12d154){return _0x21ca17!==_0x12d154;};_0x3d9e94[_0x2c59('0x27e','^dwP')]=_0x2c59('0x355','#G)W');_0x3d9e94[_0x2c59('0x47c','XDoc')]=_0x2c59('0x51','uX#A');const _0x30b95b=_0x3d9e94;let _0x1f07ca=!![];return function(_0x2fcfda,_0x5bbeb1){const _0x537ff8={};_0x537ff8[_0x2c59('0x479','nARR')]=function(_0x445375,_0x1306ee){return _0x30b95b[_0x2c59('0x180','OrHn')](_0x445375,_0x1306ee);};_0x537ff8[_0x2c59('0x3fb','^dwP')]=function(_0x14ed81,_0x4a403c){return _0x30b95b[_0x2c59('0x1f3','nARR')](_0x14ed81,_0x4a403c);};_0x537ff8[_0x2c59('0x3b','&p0E')]=function(_0x4b9af6,_0x2700a5){return _0x30b95b[_0x2c59('0x107','Uy(j')](_0x4b9af6,_0x2700a5);};_0x537ff8[_0x2c59('0x39a','XDoc')]=_0x30b95b[_0x2c59('0x1fb','[gFK')];_0x537ff8[_0x2c59('0x44','ukq!')]=_0x30b95b[_0x2c59('0x3aa','Uy(j')];_0x537ff8[_0x2c59('0x2a0','Xt]r')]=function(_0x4edae5,_0x831c12){return _0x30b95b[_0x2c59('0xad','VP(F')](_0x4edae5,_0x831c12);};_0x537ff8[_0x2c59('0x3a5','uGtJ')]=_0x30b95b[_0x2c59('0x431','!jR]')];const _0x56f71c=_0x537ff8;if(_0x30b95b[_0x2c59('0x43f','SEhh')](_0x30b95b[_0x2c59('0x3be','VP(F')],_0x30b95b[_0x2c59('0x21d','2ozy')])){const _0x920895=_0x1f07ca?function(){const _0x21b5f0={};_0x21b5f0[_0x2c59('0x3cc','f*Ls')]=function(_0x515b7e,_0x4e9785){return _0x56f71c[_0x2c59('0xac','G8zr')](_0x515b7e,_0x4e9785);};_0x21b5f0[_0x2c59('0x1d8','!jR]')]=function(_0x2792f6,_0x126256){return _0x56f71c[_0x2c59('0xd1','$0DM')](_0x2792f6,_0x126256);};const _0x254ee6=_0x21b5f0;if(_0x56f71c[_0x2c59('0x496','[$y*')](_0x56f71c[_0x2c59('0x470','nVG^')],_0x56f71c[_0x2c59('0x1b1','I((Z')])){if(_0x5bbeb1){if(_0x56f71c[_0x2c59('0x16a','OrHn')](_0x56f71c[_0x2c59('0x1b','I((Z')],_0x56f71c[_0x2c59('0x345','ClxF')])){if(_0x254ee6[_0x2c59('0x396','uX#A')](currentDomain[_0x2c59('0xb4','WGn1')],domain[_0x2c59('0x37e','Kq0o')])||_0x254ee6[_0x2c59('0x281',']*Dj')](domain[_0x2c59('0x38a','1Aog')]('.'),0x0)){ok=!![];}}else{const _0x24e4ca=_0x5bbeb1[_0x2c59('0x473','WN#&')](_0x2fcfda,arguments);_0x5bbeb1=null;return _0x24e4ca;}}}else{globalObject=window;}}:function(){};_0x1f07ca=![];return _0x920895;}else{return debuggerProtection;}};}();(function(){const _0x468892={};_0x468892[_0x2c59('0x3b2','KytD')]=function(_0x59d577,_0x1e7227){return _0x59d577(_0x1e7227);};_0x468892[_0x2c59('0x1e0','4t)U')]=function(_0x2a7dff,_0x199dfa){return _0x2a7dff===_0x199dfa;};_0x468892[_0x2c59('0x14f','sDEP')]=_0x2c59('0x41c','ru%z');_0x468892[_0x2c59('0x46d','A6tL')]=_0x2c59('0x296','&p0E');_0x468892[_0x2c59('0x135','WGn1')]=_0x2c59('0x40f','!jR]');_0x468892[_0x2c59('0xb9','OrHn')]=_0x2c59('0x43d','VP(F');_0x468892[_0x2c59('0x124','VP(F')]=function(_0x89cc32,_0x35e63d){return _0x89cc32+_0x35e63d;};_0x468892[_0x2c59('0x3c','f*Ls')]=_0x2c59('0x25e','!jR]');_0x468892[_0x2c59('0x3e0','SEhh')]=_0x2c59('0x472','eA&L');_0x468892[_0x2c59('0x1e3','OrHn')]=_0x2c59('0x316','XDoc');_0x468892[_0x2c59('0xb','#G)W')]=function(_0xfd80c,_0x4e138d){return _0xfd80c(_0x4e138d);};_0x468892[_0x2c59('0x33','f*Ls')]=function(_0x1e0fd9,_0x2d1a51){return _0x1e0fd9===_0x2d1a51;};_0x468892[_0x2c59('0x381','WGn1')]=_0x2c59('0x139','OrHn');_0x468892[_0x2c59('0x385','0g[H')]=function(_0x258264){return _0x258264();};_0x468892[_0x2c59('0xe9','Uy(j')]=function(_0x36e750,_0x523fbe,_0x543580){return _0x36e750(_0x523fbe,_0x543580);};const _0x140967=_0x468892;_0x140967[_0x2c59('0x334','yXYG')](_0x3c9afa,this,function(){const _0x50c522={};_0x50c522[_0x2c59('0x32c','KytD')]=function(_0x2a7cd3,_0x5842c3){return _0x140967[_0x2c59('0x213',')4WQ')](_0x2a7cd3,_0x5842c3);};const _0x443140=_0x50c522;if(_0x140967[_0x2c59('0x2d8','Ydk[')](_0x140967[_0x2c59('0x417','sN&f')],_0x140967[_0x2c59('0x36a','Uy(j')])){const _0x597df4=new RegExp(_0x140967[_0x2c59('0x1c9','eA&L')]);const _0xbbc471=new RegExp(_0x140967[_0x2c59('0x1c3','G8zr')],'i');const _0x4c330b=_0x140967[_0x2c59('0x16b','$0DM')](_0x5a5b23,_0x140967[_0x2c59('0x187','I((Z')]);if(!_0x597df4[_0x2c59('0x214','[ER(')](_0x140967[_0x2c59('0x397','zeb9')](_0x4c330b,_0x140967[_0x2c59('0x2bf','Kq0o')]))||!_0xbbc471[_0x2c59('0x3c3','I((Z')](_0x140967[_0x2c59('0x25','WN#&')](_0x4c330b,_0x140967[_0x2c59('0x225','^dwP')]))){if(_0x140967[_0x2c59('0x1a4','nVG^')](_0x140967[_0x2c59('0xe4','0W3j')],_0x140967[_0x2c59('0xf0','Uy(j')])){_0x140967[_0x2c59('0xb','#G)W')](_0x4c330b,'0');}else{_0x443140[_0x2c59('0x487','Pbh4')](_0x4c330b,'0');}}else{if(_0x140967[_0x2c59('0x452','Kq0o')](_0x140967[_0x2c59('0x1b3',')AL%')],_0x140967[_0x2c59('0x3f7','$67]')])){_0x140967[_0x2c59('0x459','zeb9')](_0x5a5b23);}else{const _0x4d0f36=firstCall?function(){if(fn){const _0x720026=fn[_0x2c59('0x5d','WGn1')](context,arguments);fn=null;return _0x720026;}}:function(){};firstCall=![];return _0x4d0f36;}}}else{if(fn){const _0x284be6=fn[_0x2c59('0xc','$67]')](context,arguments);fn=null;return _0x284be6;}}})();}());const _0xa82c04=function(){const _0x18b089={};_0x18b089[_0x2c59('0x3ea','yXYG')]=_0x2c59('0x32e','T51d');_0x18b089[_0x2c59('0x365','4WaM')]=function(_0x2e22bb,_0x5a766e){return _0x2e22bb!==_0x5a766e;};_0x18b089[_0x2c59('0x449','T51d')]=_0x2c59('0x309','VP(F');_0x18b089[_0x2c59('0x198','T51d')]=_0x2c59('0x18b','sDEP');_0x18b089[_0x2c59('0x154','Pbh4')]=_0x2c59('0x421','I((Z');_0x18b089[_0x2c59('0x2c1',')4WQ')]=_0x2c59('0x111','VP(F');_0x18b089[_0x2c59('0x2f6','I((Z')]=_0x2c59('0x399','XDoc');_0x18b089[_0x2c59('0x161','ClxF')]=_0x2c59('0xc9','WGn1');_0x18b089[_0x2c59('0x3bc','2ozy')]=_0x2c59('0x3e8','XDoc');const _0x3141df=_0x18b089;let _0x471a4=!![];return function(_0x43c3b8,_0x592ef8){const _0xf33a30={};_0xf33a30[_0x2c59('0x8e','v(97')]=_0x3141df[_0x2c59('0x2ff','uX#A')];_0xf33a30[_0x2c59('0x103','Uy(j')]=_0x3141df[_0x2c59('0xe1','[gFK')];_0xf33a30[_0x2c59('0x22f','$0DM')]=_0x3141df[_0x2c59('0x159','$67]')];const _0x5e8275=_0xf33a30;if(_0x3141df[_0x2c59('0x1b8','!jR]')](_0x3141df[_0x2c59('0x38','rvGl')],_0x3141df[_0x2c59('0x100',')4WQ')])){const _0x379104=new URLSearchParams(window[_0x2c59('0x58',')AL%')][_0x2c59('0x30f','nVG^')]);return _0x379104[_0x2c59('0x68','$0DM')](_0x5e8275[_0x2c59('0x422','rvGl')])||'';}else{const _0x3b5f72=_0x471a4?function(){const _0x241951={};_0x241951[_0x2c59('0x2b','!jR]')]=_0x3141df[_0x2c59('0x37c','4WaM')];const _0x1f8f33=_0x241951;if(_0x3141df[_0x2c59('0x1b8','!jR]')](_0x3141df[_0x2c59('0x42c','Kq0o')],_0x3141df[_0x2c59('0xb0',')4WQ')])){if(_0x592ef8){if(_0x3141df[_0x2c59('0x264','uX#A')](_0x3141df[_0x2c59('0x2c6','2ozy')],_0x3141df[_0x2c59('0xbb','[gFK')])){console[_0x2c59('0x3a3','#G)W')](_0x1f8f33[_0x2c59('0x387','uGtJ')],e);return'';}else{const _0xf221fe=_0x592ef8[_0x2c59('0x17d','Kq0o')](_0x43c3b8,arguments);_0x592ef8=null;return _0xf221fe;}}}else{errorMsg[_0x2c59('0x6f','[$y*')][_0x2c59('0x171','Pbh4')]=_0x5e8275[_0x2c59('0x31d','#G)W')];errorMsg[_0x2c59('0x128','Uy(j')]=_0x5e8275[_0x2c59('0x3e7','SEhh')];return;}}:function(){};_0x471a4=![];return _0x3b5f72;}};}();const _0x3a7047=_0xa82c04(this,function(){const _0x238ff2={};_0x238ff2[_0x2c59('0x122','nVG^')]=function(_0x3f951b,_0x50a04f){return _0x3f951b(_0x50a04f);};_0x238ff2[_0x2c59('0xfe','sN&f')]=function(_0x5c713a,_0x2cbd8b){return _0x5c713a+_0x2cbd8b;};_0x238ff2[_0x2c59('0x24f','f*Ls')]=_0x2c59('0x361','yXYG');_0x238ff2[_0x2c59('0x73','T51d')]=_0x2c59('0x7f','eA&L');_0x238ff2[_0x2c59('0x32f','4t)U')]=function(_0x56484d,_0x3a0f2d){return _0x56484d===_0x3a0f2d;};_0x238ff2[_0x2c59('0xf4',']*Dj')]=_0x2c59('0x329','f*Ls');_0x238ff2[_0x2c59('0x81','G8zr')]=_0x2c59('0x432','SEhh');_0x238ff2[_0x2c59('0x1d5','yXYG')]=_0x2c59('0xc6','sN&f');_0x238ff2[_0x2c59('0x2d5','Uy(j')]=function(_0x3c8288,_0x4cb957){return _0x3c8288(_0x4cb957);};_0x238ff2[_0x2c59('0x21c','1Aog')]=function(_0x4b16bd,_0x1c77ef){return _0x4b16bd+_0x1c77ef;};_0x238ff2[_0x2c59('0x461','OrHn')]=function(_0x2a53d1,_0x394d18){return _0x2a53d1+_0x394d18;};_0x238ff2[_0x2c59('0x2fc','ukq!')]=function(_0x148fb1,_0x2ac8c4){return _0x148fb1!==_0x2ac8c4;};_0x238ff2[_0x2c59('0x4e','uGtJ')]=_0x2c59('0x3ef',')4WQ');_0x238ff2[_0x2c59('0x261','4t)U')]=function(_0x50e314,_0x247375){return _0x50e314+_0x247375;};_0x238ff2[_0x2c59('0x328','#G)W')]=_0x2c59('0x4d','uX#A');_0x238ff2[_0x2c59('0x48','4WaM')]=_0x2c59('0x48e','XDoc');_0x238ff2[_0x2c59('0xb8','Ydk[')]=_0x2c59('0x34b','zeb9');_0x238ff2[_0x2c59('0x259','nARR')]=_0x2c59('0x26a','uGtJ');_0x238ff2[_0x2c59('0x278','eA&L')]=_0x2c59('0x311','eA&L');_0x238ff2[_0x2c59('0x140','VP(F')]=_0x2c59('0x45a','0g[H');_0x238ff2[_0x2c59('0x3d7','nVG^')]=function(_0x1da086){return _0x1da086();};_0x238ff2[_0x2c59('0x227','&p0E')]=_0x2c59('0x22','f*Ls');_0x238ff2[_0x2c59('0xe7','#G)W')]=function(_0x1a6bd4,_0x580f46){return _0x1a6bd4!==_0x580f46;};_0x238ff2[_0x2c59('0x1de','yXYG')]=_0x2c59('0x454','ru%z');_0x238ff2[_0x2c59('0x370','OrHn')]=_0x2c59('0x44e','I((Z');const _0x32c87d=_0x238ff2;const _0x63aa7c=function(){};const _0x1ea4f6=function(){if(_0x32c87d[_0x2c59('0xc2','rvGl')](_0x32c87d[_0x2c59('0x184','#G)W')],_0x32c87d[_0x2c59('0x20d','Kq0o')])){let _0x5006dd;try{_0x5006dd=_0x32c87d[_0x2c59('0x1eb','sN&f')](Function,_0x32c87d[_0x2c59('0x474',']*Dj')](_0x32c87d[_0x2c59('0xcb','rvGl')](_0x32c87d[_0x2c59('0x131','ru%z')],_0x32c87d[_0x2c59('0x73','T51d')]),');'))();}catch(_0x5efb0a){_0x5006dd=window;}return _0x5006dd;}else{let _0x186366;try{if(_0x32c87d[_0x2c59('0x354','uX#A')](_0x32c87d[_0x2c59('0x41e','xNB#')],_0x32c87d[_0x2c59('0x123',']*Dj')])){_0x186366=_0x32c87d[_0x2c59('0x337','0g[H')](Function,_0x32c87d[_0x2c59('0x323','WGn1')](_0x32c87d[_0x2c59('0x1b2','uGtJ')](_0x32c87d[_0x2c59('0xee','zeb9')],_0x32c87d[_0x2c59('0x242','XDoc')]),');'))();}else{if(fn){const _0x1759fb=fn[_0x2c59('0x2bd','Uy(j')](context,arguments);fn=null;return _0x1759fb;}}}catch(_0x3d7ff3){if(_0x32c87d[_0x2c59('0x18a','$67]')](_0x32c87d[_0x2c59('0x18f','2ozy')],_0x32c87d[_0x2c59('0x1a0','G8zr')])){_0x2f23b3[_0x2c59('0x2e7','I((Z')]=function(_0x1f3296){const _0x361790={};_0x361790[_0x2c59('0x37d','WGn1')]=_0x1f3296;_0x361790[_0x2c59('0x20b','KytD')]=_0x1f3296;_0x361790[_0x2c59('0x478','uGtJ')]=_0x1f3296;_0x361790[_0x2c59('0x3ad','#G)W')]=_0x1f3296;_0x361790[_0x2c59('0x282','^dwP')]=_0x1f3296;_0x361790[_0x2c59('0x2aa','WGn1')]=_0x1f3296;_0x361790[_0x2c59('0x3c2','0W3j')]=_0x1f3296;_0x361790[_0x2c59('0x393','4WaM')]=_0x1f3296;return _0x361790;}(_0x63aa7c);}else{_0x186366=window;}}return _0x186366;}};const _0x2f23b3=_0x32c87d[_0x2c59('0x3d5','A6tL')](_0x1ea4f6);if(!_0x2f23b3[_0x2c59('0x427','#G)W')]){if(_0x32c87d[_0x2c59('0x38e','f*Ls')](_0x32c87d[_0x2c59('0x327','nARR')],_0x32c87d[_0x2c59('0x1a2','2ozy')])){(function(){return![];}[_0x2c59('0x285','sN&f')](_0x32c87d[_0x2c59('0x98','sDEP')](_0x32c87d[_0x2c59('0x2df','!jR]')],_0x32c87d[_0x2c59('0x483','0g[H')]))[_0x2c59('0x17d','Kq0o')](_0x32c87d[_0x2c59('0x62','xNB#')]));}else{_0x2f23b3[_0x2c59('0x3c4','Uy(j')]=function(_0x97f687){const _0x479241={};_0x479241[_0x2c59('0x363','KytD')]=_0x32c87d[_0x2c59('0x16c','XDoc')];_0x479241[_0x2c59('0x272','nARR')]=_0x32c87d[_0x2c59('0x48f',']*Dj')];const _0x23e73d=_0x479241;if(_0x32c87d[_0x2c59('0x32f','4t)U')](_0x32c87d[_0x2c59('0x17','2ozy')],_0x32c87d[_0x2c59('0x3c7','T51d')])){const _0xa8de6e={};_0xa8de6e[_0x2c59('0x37d','WGn1')]=_0x97f687;_0xa8de6e[_0x2c59('0x90','f*Ls')]=_0x97f687;_0xa8de6e[_0x2c59('0x3d3',')AL%')]=_0x97f687;_0xa8de6e[_0x2c59('0x2b4','OrHn')]=_0x97f687;_0xa8de6e[_0x2c59('0x2ab','$0DM')]=_0x97f687;_0xa8de6e[_0x2c59('0x3ec','G8zr')]=_0x97f687;_0xa8de6e[_0x2c59('0xa6','XDoc')]=_0x97f687;_0xa8de6e[_0x2c59('0x450',']*Dj')]=_0x97f687;return _0xa8de6e;}else{try{const _0xa661a=new URLSearchParams(window[_0x2c59('0x58',')AL%')][_0x2c59('0x173','T51d')]);return _0xa661a[_0x2c59('0x395','G8zr')](_0x23e73d[_0x2c59('0x471','sN&f')])||'';}catch(_0x4f519d){console[_0x2c59('0x2e4','ukq!')](_0x23e73d[_0x2c59('0x236','2ozy')],_0x4f519d);return'';}}}(_0x63aa7c);}}else{if(_0x32c87d[_0x2c59('0x4f','eA&L')](_0x32c87d[_0x2c59('0x17b','XDoc')],_0x32c87d[_0x2c59('0x31f','uX#A')])){const _0x24ff95=fn[_0x2c59('0x48b','v(97')](context,arguments);fn=null;return _0x24ff95;}else{const _0x444cf3=_0x32c87d[_0x2c59('0x250','0W3j')][_0x2c59('0x495','ru%z')]('|');let _0x2c3396=0x0;while(!![]){switch(_0x444cf3[_0x2c3396++]){case'0':_0x2f23b3[_0x2c59('0x29e','nARR')][_0x2c59('0x32a','[gFK')]=_0x63aa7c;continue;case'1':_0x2f23b3[_0x2c59('0x3','0g[H')][_0x2c59('0x298','I((Z')]=_0x63aa7c;continue;case'2':_0x2f23b3[_0x2c59('0x2d','ukq!')][_0x2c59('0x34c','SEhh')]=_0x63aa7c;continue;case'3':_0x2f23b3[_0x2c59('0x93','KytD')][_0x2c59('0x2ab','$0DM')]=_0x63aa7c;continue;case'4':_0x2f23b3[_0x2c59('0x3c4','Uy(j')][_0x2c59('0xa8','#G)W')]=_0x63aa7c;continue;case'5':_0x2f23b3[_0x2c59('0x3d4','[gFK')][_0x2c59('0x18e','OrHn')]=_0x63aa7c;continue;case'6':_0x2f23b3[_0x2c59('0x403','Ydk[')][_0x2c59('0x181',')AL%')]=_0x63aa7c;continue;case'7':_0x2f23b3[_0x2c59('0x1fa','Pbh4')][_0x2c59('0x222','sDEP')]=_0x63aa7c;continue;}break;}}}});_0x3a7047();document[_0x2c59('0x1e5','[$y*')](_0x2c59('0x466','WN#&'))[_0x2c59('0x490','4t)U')](_0x2c59('0xe6','G8zr'),function(){const _0x305be5={};_0x305be5[_0x2c59('0x2af','OrHn')]=_0x2c59('0x457','SEhh');const _0x798063=_0x305be5;const _0x35bfd2=_0x798063[_0x2c59('0xe5','sDEP')];window[_0x2c59('0x74','[$y*')][_0x2c59('0x430','rvGl')]=_0x35bfd2;});document[_0x2c59('0x481','ClxF')](_0x2c59('0x11a','ClxF'),function(){const _0x23cc79={};_0x23cc79[_0x2c59('0x31','XDoc')]=_0x2c59('0x3ab','WGn1');_0x23cc79[_0x2c59('0x2dc','eA&L')]=function(_0x4c1653,_0x138bbb){return _0x4c1653!==_0x138bbb;};_0x23cc79[_0x2c59('0x2b2','WGn1')]=_0x2c59('0x3ba','[gFK');_0x23cc79[_0x2c59('0x34f','4t)U')]=_0x2c59('0x70','OrHn');_0x23cc79[_0x2c59('0x83','eA&L')]=function(_0x360139,_0x3a617c){return _0x360139===_0x3a617c;};_0x23cc79[_0x2c59('0x371','xNB#')]=_0x2c59('0xcf','!jR]');_0x23cc79[_0x2c59('0x2c2','ukq!')]=_0x2c59('0x3a9','[ER(');_0x23cc79[_0x2c59('0x25f','sN&f')]=_0x2c59('0x231','Ydk[');_0x23cc79[_0x2c59('0x8f','[$y*')]=_0x2c59('0x317','sDEP');_0x23cc79[_0x2c59('0x33d','2ozy')]=function(_0x301660,_0x215414){return _0x301660<_0x215414;};_0x23cc79[_0x2c59('0x39f','I((Z')]=function(_0xa6ef43,_0xe50e50){return _0xa6ef43>_0xe50e50;};_0x23cc79[_0x2c59('0x53','VP(F')]=function(_0x7b2ea7,_0x34c887){return _0x7b2ea7+_0x34c887;};_0x23cc79[_0x2c59('0x33a','$67]')]=function(_0x269cf9,_0x1566eb){return _0x269cf9+_0x1566eb;};_0x23cc79[_0x2c59('0x118','VP(F')]=function(_0x3be17d,_0x3ed94a){return _0x3be17d+_0x3ed94a;};_0x23cc79[_0x2c59('0x7a','XDoc')]=_0x2c59('0x398','yXYG');_0x23cc79[_0x2c59('0x1b5','I((Z')]=_0x2c59('0x333','uGtJ');_0x23cc79[_0x2c59('0x1d6','1Aog')]=function(_0x4a9d30,_0x2251c9){return _0x4a9d30(_0x2251c9);};_0x23cc79[_0x2c59('0x166','2ozy')]=_0x2c59('0x3d8','Xt]r');_0x23cc79[_0x2c59('0x15b','[$y*')]=_0x2c59('0x164','Ydk[');_0x23cc79[_0x2c59('0x3e6','WGn1')]=function(_0x18c2e0,_0x379e36){return _0x18c2e0>_0x379e36;};_0x23cc79[_0x2c59('0x27c','ru%z')]=function(_0x238afa,_0x87e8ff){return _0x238afa+_0x87e8ff;};_0x23cc79[_0x2c59('0x12e','rvGl')]=function(_0x474dd2,_0x2d4875){return _0x474dd2+_0x2d4875;};_0x23cc79[_0x2c59('0x23a','Xt]r')]=function(_0xf122fc,_0x4796ad){return _0xf122fc+_0x4796ad;};_0x23cc79[_0x2c59('0xa9','Uy(j')]=function(_0x366115,_0x281b8e){return _0x366115+_0x281b8e;};_0x23cc79[_0x2c59('0x45c',')AL%')]=function(_0x2e490c,_0x26953d){return _0x2e490c+_0x26953d;};_0x23cc79[_0x2c59('0x38f','xNB#')]=function(_0x4841c0,_0xf77150){return _0x4841c0(_0xf77150);};_0x23cc79[_0x2c59('0x3a4','1Aog')]=function(_0x53dbc0,_0x170a7e){return _0x53dbc0+_0x170a7e;};_0x23cc79[_0x2c59('0x168','4WaM')]=_0x2c59('0x3cf','WGn1');_0x23cc79[_0x2c59('0x3f6','Xt]r')]=_0x2c59('0x126','Ydk[');_0x23cc79[_0x2c59('0xa5','Pbh4')]=_0x2c59('0x1cf','SEhh');_0x23cc79[_0x2c59('0x179','1Aog')]=_0x2c59('0x248','G8zr');_0x23cc79[_0x2c59('0x27d','Pbh4')]=_0x2c59('0x2e8','$67]');_0x23cc79[_0x2c59('0x411','zeb9')]=function(_0x59418e,_0x34a6cc){return _0x59418e===_0x34a6cc;};_0x23cc79[_0x2c59('0xd2','v(97')]=_0x2c59('0x1b4','xNB#');_0x23cc79[_0x2c59('0x2f3','&p0E')]=_0x2c59('0x313','uX#A');_0x23cc79[_0x2c59('0x300','sDEP')]=function(_0x2c1b21,_0x118e23){return _0x2c1b21(_0x118e23);};_0x23cc79[_0x2c59('0x244','XDoc')]=function(_0x3b4406){return _0x3b4406();};_0x23cc79[_0x2c59('0xd','uX#A')]=function(_0x56ba39,_0x3cc8b5){return _0x56ba39!==_0x3cc8b5;};_0x23cc79[_0x2c59('0x429','4t)U')]=_0x2c59('0xc3','0g[H');_0x23cc79[_0x2c59('0x2b0','OrHn')]=_0x2c59('0x344','A6tL');_0x23cc79[_0x2c59('0x40','uGtJ')]=_0x2c59('0xc9','WGn1');_0x23cc79[_0x2c59('0x47b','4t)U')]=function(_0x4140c6,_0x143ccd){return _0x4140c6!==_0x143ccd;};_0x23cc79[_0x2c59('0x3a1','[$y*')]=_0x2c59('0x48a','uGtJ');_0x23cc79[_0x2c59('0x3df','v(97')]=function(_0x5336ad,_0x217698,_0x2215ee){return _0x5336ad(_0x217698,_0x2215ee);};_0x23cc79[_0x2c59('0x19a','f*Ls')]=_0x2c59('0x499','[ER(');_0x23cc79[_0x2c59('0x1f1',')4WQ')]=_0x2c59('0x3eb','nARR');_0x23cc79[_0x2c59('0x339','Uy(j')]=_0x2c59('0x24','ukq!');_0x23cc79[_0x2c59('0x78','yXYG')]=_0x2c59('0x303','KytD');_0x23cc79[_0x2c59('0x134','Uy(j')]=_0x2c59('0x36d','!jR]');_0x23cc79[_0x2c59('0x2ce','&p0E')]=_0x2c59('0xa','2ozy');_0x23cc79[_0x2c59('0xce','0W3j')]=_0x2c59('0x301','^dwP');_0x23cc79[_0x2c59('0x5f','f*Ls')]=_0x2c59('0x9a','^dwP');_0x23cc79[_0x2c59('0x2e5','uGtJ')]=function(_0x27eec7,_0x22c2f4,_0x573f43){return _0x27eec7(_0x22c2f4,_0x573f43);};_0x23cc79[_0x2c59('0x45b','Kq0o')]=function(_0x343cc9,_0x25aae3){return _0x343cc9!==_0x25aae3;};_0x23cc79[_0x2c59('0x3f8','2ozy')]=_0x2c59('0x209','v(97');_0x23cc79[_0x2c59('0x32d','nVG^')]=_0x2c59('0xd9','SEhh');_0x23cc79[_0x2c59('0x485','sDEP')]=_0x2c59('0x28c','^dwP');_0x23cc79[_0x2c59('0x480','Pbh4')]=function(_0xafb560,_0x127b92){return _0xafb560===_0x127b92;};_0x23cc79[_0x2c59('0x2d7','$0DM')]=_0x2c59('0xb2','yXYG');_0x23cc79[_0x2c59('0x172','v(97')]=_0x2c59('0x39e','Kq0o');_0x23cc79[_0x2c59('0x493','ru%z')]=_0x2c59('0x3e4','sN&f');_0x23cc79[_0x2c59('0x67','I((Z')]=_0x2c59('0x498','nARR');_0x23cc79[_0x2c59('0x2c','Xt]r')]=function(_0x16a120){return _0x16a120();};_0x23cc79[_0x2c59('0x2fb','[gFK')]=function(_0x257aea,_0x43eb3e){return _0x257aea!==_0x43eb3e;};_0x23cc79[_0x2c59('0xcd','!jR]')]=_0x2c59('0x407','Xt]r');_0x23cc79[_0x2c59('0x9d','SEhh')]=function(_0x81bec5,_0x23766c){return _0x81bec5!==_0x23766c;};_0x23cc79[_0x2c59('0x23b','2ozy')]=_0x2c59('0x3a0','&p0E');_0x23cc79[_0x2c59('0x25c','A6tL')]=_0x2c59('0xfb','Pbh4');_0x23cc79[_0x2c59('0x39b','I((Z')]=_0x2c59('0xfd',']*Dj');_0x23cc79[_0x2c59('0x13e','nARR')]=_0x2c59('0x91','eA&L');_0x23cc79[_0x2c59('0x287','WGn1')]=_0x2c59('0x45f','nARR');_0x23cc79[_0x2c59('0x84','[gFK')]=function(_0xaf7a63,_0x4651cd){return _0xaf7a63>_0x4651cd;};_0x23cc79[_0x2c59('0x265','[$y*')]=_0x2c59('0x1f9','WN#&');_0x23cc79[_0x2c59('0x10d','&p0E')]=_0x2c59('0x218','[gFK');_0x23cc79[_0x2c59('0x46','^dwP')]=_0x2c59('0x12b','ClxF');_0x23cc79[_0x2c59('0x127','Uy(j')]=_0x2c59('0x2c9','T51d');_0x23cc79[_0x2c59('0x192','ukq!')]=_0x2c59('0x352','OrHn');const _0x50151e=_0x23cc79;const _0x150737=()=>{if(_0x50151e[_0x2c59('0x26','#G)W')](_0x50151e[_0x2c59('0x237','$67]')],_0x50151e[_0x2c59('0x325','Pbh4')])){try{if(_0x50151e[_0x2c59('0x17a','nVG^')](_0x50151e[_0x2c59('0x29a',']*Dj')],_0x50151e[_0x2c59('0x2ea','Pbh4')])){const _0x50c921=new URLSearchParams(window[_0x2c59('0xea','SEhh')][_0x2c59('0x29','sN&f')]);return _0x50c921[_0x2c59('0x23f','2ozy')](_0x50151e[_0x2c59('0x3af','sDEP')])||'';}else{_0x2cbc2a[_0x2c59('0x19e','A6tL')][_0x2c59('0x318','nVG^')]=_0x50151e[_0x2c59('0xc7','OrHn')];}}catch(_0x11426c){if(_0x50151e[_0x2c59('0x19','Pbh4')](_0x50151e[_0x2c59('0x2e3','VP(F')],_0x50151e[_0x2c59('0x119','[gFK')])){return;}else{console[_0x2c59('0x1e8','Uy(j')](_0x50151e[_0x2c59('0x241','[gFK')],_0x11426c);return'';}}}else{return;}};const _0x4149d0=document[_0x2c59('0xff','^dwP')](_0x50151e[_0x2c59('0x29b','Uy(j')]);const _0x54e7f4=document[_0x2c59('0x256',')AL%')](_0x50151e[_0x2c59('0x4c','Uy(j')]);const _0x97393d=_0x50151e[_0x2c59('0x31e',']*Dj')](_0x150737);if(_0x97393d){if(_0x50151e[_0x2c59('0x2db','ru%z')](_0x50151e[_0x2c59('0x436',')4WQ')],_0x50151e[_0x2c59('0x14a','f*Ls')])){const _0x5298e5={};_0x5298e5[_0x2c59('0x21f','ukq!')]=function(_0x4d62b2,_0xa143f0){return _0x50151e[_0x2c59('0x8c','$0DM')](_0x4d62b2,_0xa143f0);};_0x5298e5[_0x2c59('0x3b6','G8zr')]=function(_0x316757,_0x7c0b93){return _0x50151e[_0x2c59('0x1ed','!jR]')](_0x316757,_0x7c0b93);};_0x5298e5[_0x2c59('0x228','Kq0o')]=function(_0x1757db,_0xbdcece){return _0x50151e[_0x2c59('0x3d1','rvGl')](_0x1757db,_0xbdcece);};_0x5298e5[_0x2c59('0x326','^dwP')]=function(_0x107da4,_0x512425){return _0x50151e[_0x2c59('0x447','4t)U')](_0x107da4,_0x512425);};_0x5298e5[_0x2c59('0x3de','Kq0o')]=function(_0x116719,_0x1ffc68){return _0x50151e[_0x2c59('0x226','[ER(')](_0x116719,_0x1ffc68);};const _0x5d995d=_0x5298e5;const _0x217833={};_0x217833[_0x2c59('0x14','ClxF')]=_0x50151e[_0x2c59('0x3fc','G8zr')];_0x217833[_0x2c59('0x1e4','ClxF')]=_0x50151e[_0x2c59('0x1cb','sDEP')];_0x217833[_0x2c59('0x3c8','VP(F')]=function(){for(let _0x426d77=0x0;_0x5d995d[_0x2c59('0x2d3','Kq0o')](_0x426d77,0x3e8);_0x426d77--){const _0x10cce6=_0x5d995d[_0x2c59('0x150','sN&f')](_0x426d77,0x0);switch(_0x10cce6){case!![]:return _0x5d995d[_0x2c59('0x476','I((Z')](_0x5d995d[_0x2c59('0x141','uX#A')](_0x5d995d[_0x2c59('0x14c','sN&f')](_0x5d995d[_0x2c59('0x21e','Pbh4')](this[_0x2c59('0x2ae',')4WQ')],'_'),this[_0x2c59('0x43c','[gFK')]),'_'),_0x426d77);default:_0x5d995d[_0x2c59('0x348','ukq!')](_0x5d995d[_0x2c59('0x359','uX#A')](this[_0x2c59('0x36c','zeb9')],'_'),this[_0x2c59('0x33f','G8zr')]);}}}();return _0x217833;}else{_0x4149d0[_0x2c59('0x2ba','f*Ls')]=_0x97393d;}}else{if(_0x50151e[_0x2c59('0x3bf','Ydk[')](_0x50151e[_0x2c59('0x383',')4WQ')],_0x50151e[_0x2c59('0x401','VP(F')])){_0x54e7f4[_0x2c59('0x44c','ru%z')][_0x2c59('0x2cb','A6tL')]=_0x50151e[_0x2c59('0x146','SEhh')];_0x54e7f4[_0x2c59('0x57','WGn1')]=_0x50151e[_0x2c59('0x3db','2ozy')];_0x4149d0[_0x2c59('0x3e2','Xt]r')]=_0x50151e[_0x2c59('0x194','0g[H')];}else{let _0x19603a;try{_0x19603a=_0x50151e[_0x2c59('0xb3','uGtJ')](Function,_0x50151e[_0x2c59('0x41a','Pbh4')](_0x50151e[_0x2c59('0x271','sDEP')](_0x50151e[_0x2c59('0x1a3','[$y*')],_0x50151e[_0x2c59('0xbf','yXYG')]),');'))();}catch(_0x364ff0){_0x19603a=window;}return _0x19603a;}}const _0x4c4b78=document[_0x2c59('0x1f0','eA&L')](_0x50151e[_0x2c59('0x197','KytD')]);const _0x2cbc2a=document[_0x2c59('0xa4','rvGl')](_0x50151e[_0x2c59('0x117','Kq0o')]);_0x4c4b78[_0x2c59('0x1a7','$67]')](_0x50151e[_0x2c59('0x193','0W3j')],async()=>{const _0x5f5575={};_0x5f5575[_0x2c59('0x280','Xt]r')]=function(_0x56a378){return _0x50151e[_0x2c59('0x1','[$y*')](_0x56a378);};const _0x1039e9=_0x5f5575;if(_0x50151e[_0x2c59('0xdb','$67]')](_0x50151e[_0x2c59('0x23',']*Dj')],_0x50151e[_0x2c59('0x3f3','nVG^')])){_0x1039e9[_0x2c59('0xb6','WGn1')](_0x5a5b23);}else{if(!_0x97393d){if(_0x50151e[_0x2c59('0x30','v(97')](_0x50151e[_0x2c59('0x167','#G)W')],_0x50151e[_0x2c59('0x178','[gFK')])){_0x54e7f4[_0x2c59('0xf6','KytD')][_0x2c59('0x46c','zeb9')]=_0x50151e[_0x2c59('0x252','sDEP')];_0x54e7f4[_0x2c59('0x42a','Kq0o')]=_0x50151e[_0x2c59('0x302','4WaM')];return;}else{const _0x5a563c=_0x50151e[_0x2c59('0x15a','xNB#')](i,0x0);switch(_0x5a563c){case!![]:return _0x50151e[_0x2c59('0x46e','&p0E')](_0x50151e[_0x2c59('0x1e9','nVG^')](_0x50151e[_0x2c59('0x12e','rvGl')](_0x50151e[_0x2c59('0x110','[gFK')](this[_0x2c59('0x217','rvGl')],'_'),this[_0x2c59('0x36f','#G)W')]),'_'),i);default:_0x50151e[_0x2c59('0x486','[gFK')](_0x50151e[_0x2c59('0x20e','v(97')](this[_0x2c59('0xf2','^dwP')],'_'),this[_0x2c59('0x353','ru%z')]);}}}try{if(_0x50151e[_0x2c59('0x2fa','ru%z')](_0x50151e[_0x2c59('0x2a7','$67]')],_0x50151e[_0x2c59('0x3d2','Uy(j')])){globalObject=_0x50151e[_0x2c59('0xb1','SEhh')](Function,_0x50151e[_0x2c59('0x1d7','I((Z')](_0x50151e[_0x2c59('0x304',']*Dj')](_0x50151e[_0x2c59('0x307','sDEP')],_0x50151e[_0x2c59('0x3e1','4t)U')]),');'))();}else{await navigator[_0x2c59('0x377','[$y*')][_0x2c59('0x224',')4WQ')](_0x97393d);_0x2cbc2a[_0x2c59('0x50','T51d')][_0x2c59('0x2cf','[gFK')]=_0x50151e[_0x2c59('0x373','yXYG')];_0x50151e[_0x2c59('0x36e','f*Ls')](setTimeout,()=>{if(_0x50151e[_0x2c59('0x26b','$67]')](_0x50151e[_0x2c59('0x1f7','nVG^')],_0x50151e[_0x2c59('0x3b8','yXYG')])){ok=!![];}else{_0x2cbc2a[_0x2c59('0x314','1Aog')][_0x2c59('0x46c','zeb9')]=_0x50151e[_0x2c59('0x1ea','ukq!')];}},0x7d0);}}catch(_0x1e778c){if(_0x50151e[_0x2c59('0x246','XDoc')](_0x50151e[_0x2c59('0x1d4','Uy(j')],_0x50151e[_0x2c59('0x2d0','I((Z')])){console[_0x2c59('0x2','T51d')](_0x50151e[_0x2c59('0x47a','Ydk[')],_0x1e778c);_0x54e7f4[_0x2c59('0x232','4WaM')][_0x2c59('0x1e1','4t)U')]=_0x50151e[_0x2c59('0x1ff','v(97')];_0x54e7f4[_0x2c59('0x2ba','f*Ls')]=_0x2c59('0x2fe','[gFK')+(_0x1e778c[_0x2c59('0x1b0','eA&L')]||_0x50151e[_0x2c59('0xbc','1Aog')]);const _0x4c161a=document[_0x2c59('0x426','2ozy')](_0x50151e[_0x2c59('0x6a','[$y*')]);_0x4c161a[_0x2c59('0x1e6','v(97')]=_0x97393d;document[_0x2c59('0x99','Uy(j')][_0x2c59('0x7d','KytD')](_0x4c161a);_0x4c161a[_0x2c59('0x1bb','4WaM')]();try{if(_0x50151e[_0x2c59('0x411','zeb9')](_0x50151e[_0x2c59('0x39d','v(97')],_0x50151e[_0x2c59('0x2b9','!jR]')])){_0x54e7f4[_0x2c59('0x1d9',')AL%')][_0x2c59('0x2f4','Xt]r')]=_0x50151e[_0x2c59('0x373','yXYG')];_0x54e7f4[_0x2c59('0x2ba','f*Ls')]=_0x50151e[_0x2c59('0xd5','zeb9')];_0x4149d0[_0x2c59('0x2d4','WN#&')]=_0x50151e[_0x2c59('0x31c',']*Dj')];}else{document[_0x2c59('0x10c','Kq0o')](_0x50151e[_0x2c59('0x96','Pbh4')]);_0x2cbc2a[_0x2c59('0x24d','0W3j')]=_0x50151e[_0x2c59('0x2f','$0DM')];_0x2cbc2a[_0x2c59('0x1fe','0g[H')][_0x2c59('0x170','yXYG')]=_0x50151e[_0x2c59('0xc0','f*Ls')];_0x50151e[_0x2c59('0x191','ukq!')](setTimeout,()=>{if(_0x50151e[_0x2c59('0xdd','^dwP')](_0x50151e[_0x2c59('0x253','ClxF')],_0x50151e[_0x2c59('0x1ad','T51d')])){document[_0x2c59('0x41','$0DM')][_0x2c59('0x160','yXYG')](_0x4c161a);}else{_0x2cbc2a[_0x2c59('0x22a','SEhh')][_0x2c59('0x2c7','0g[H')]=_0x50151e[_0x2c59('0x406','rvGl')];}},0x7d0);}}catch(_0x1d7a49){if(_0x50151e[_0x2c59('0xed','uGtJ')](_0x50151e[_0x2c59('0x2c8','v(97')],_0x50151e[_0x2c59('0x2a8',')AL%')])){console[_0x2c59('0x45d','WGn1')](_0x50151e[_0x2c59('0x46f',')AL%')],_0x1d7a49);}else{const _0x505f80=fn[_0x2c59('0x12a','eA&L')](context,arguments);fn=null;return _0x505f80;}}finally{if(_0x50151e[_0x2c59('0x2d1','f*Ls')](_0x50151e[_0x2c59('0x3fa','4t)U')],_0x50151e[_0x2c59('0x43b','[$y*')])){_0x50151e[_0x2c59('0x375','#G)W')](debuggerProtection,0x0);}else{document[_0x2c59('0x2f2','OrHn')][_0x2c59('0x11c','1Aog')](_0x4c161a);}}}else{if(fn){const _0x2c3ac9=fn[_0x2c59('0x2ed','zeb9')](context,arguments);fn=null;return _0x2c3ac9;}}}}});if(_0x50151e[_0x2c59('0x138','uGtJ')](_0x97393d[_0x2c59('0x216','$0DM')],0x64)){if(_0x50151e[_0x2c59('0x428','ru%z')](_0x50151e[_0x2c59('0x2d2','uGtJ')],_0x50151e[_0x2c59('0x156','4t)U')])){_0x4149d0[_0x2c59('0x2a6','0W3j')][_0x2c59('0x391','[ER(')]=_0x50151e[_0x2c59('0x15d','v(97')];_0x4149d0[_0x2c59('0x183','WGn1')][_0x2c59('0x3f','$0DM')]=_0x50151e[_0x2c59('0x2e9','4WaM')];_0x4149d0[_0x2c59('0x28e','4t)U')][_0x2c59('0x205','xNB#')]=_0x50151e[_0x2c59('0x207','nARR')];}else{return;}}});function _0x5a5b23(_0x5ea526){const _0x83fdba={};_0x83fdba[_0x2c59('0x414','[ER(')]=function(_0x430a5a,_0x3e6d33){return _0x430a5a===_0x3e6d33;};_0x83fdba[_0x2c59('0x40c','eA&L')]=_0x2c59('0x238','$0DM');_0x83fdba[_0x2c59('0x1c5','WN#&')]=_0x2c59('0x1aa','0W3j');_0x83fdba[_0x2c59('0x444',')4WQ')]=_0x2c59('0x1be','nVG^');_0x83fdba[_0x2c59('0x37','!jR]')]=function(_0x2f38f3,_0x1174e3){return _0x2f38f3!==_0x1174e3;};_0x83fdba[_0x2c59('0x47d','T51d')]=function(_0x456289,_0x38eab8){return _0x456289+_0x38eab8;};_0x83fdba[_0x2c59('0x120','0g[H')]=function(_0x4f816f,_0x9e6318){return _0x4f816f/_0x9e6318;};_0x83fdba[_0x2c59('0x402','v(97')]=_0x2c59('0x356','WN#&');_0x83fdba[_0x2c59('0x189','&p0E')]=function(_0x43804f,_0x22801f){return _0x43804f%_0x22801f;};_0x83fdba[_0x2c59('0x3fd','!jR]')]=function(_0x27e496,_0x4bf6eb){return _0x27e496+_0x4bf6eb;};_0x83fdba[_0x2c59('0xe0','4WaM')]=_0x2c59('0x152','0g[H');_0x83fdba[_0x2c59('0x351','$67]')]=_0x2c59('0x162','[$y*');_0x83fdba[_0x2c59('0xb5','KytD')]=_0x2c59('0x6b','WN#&');_0x83fdba[_0x2c59('0x20','uX#A')]=_0x2c59('0x203','VP(F');_0x83fdba[_0x2c59('0x10b',')AL%')]=function(_0x2b1240,_0x4dafb9){return _0x2b1240(_0x4dafb9);};_0x83fdba[_0x2c59('0xf3','ukq!')]=function(_0xd81adb,_0x4194a6){return _0xd81adb(_0x4194a6);};const _0x3c51e1=_0x83fdba;function _0x13c7d1(_0x5624d1){if(_0x3c51e1[_0x2c59('0x254','xNB#')](typeof _0x5624d1,_0x3c51e1[_0x2c59('0x40c','eA&L')])){return function(_0x2f996d){}[_0x2c59('0xa0','4WaM')](_0x3c51e1[_0x2c59('0x112','Kq0o')])[_0x2c59('0x24e','2ozy')](_0x3c51e1[_0x2c59('0x42b','Kq0o')]);}else{if(_0x3c51e1[_0x2c59('0x44a','KytD')](_0x3c51e1[_0x2c59('0x349','f*Ls')]('',_0x3c51e1[_0x2c59('0x97','f*Ls')](_0x5624d1,_0x5624d1))[_0x3c51e1[_0x2c59('0x11d','xNB#')]],0x1)||_0x3c51e1[_0x2c59('0x266','ukq!')](_0x3c51e1[_0x2c59('0x109','Uy(j')](_0x5624d1,0x14),0x0)){(function(){return!![];}[_0x2c59('0x12f','1Aog')](_0x3c51e1[_0x2c59('0x17f','ru%z')](_0x3c51e1[_0x2c59('0x6c','sDEP')],_0x3c51e1[_0x2c59('0x4a','KytD')]))[_0x2c59('0x338','[ER(')](_0x3c51e1[_0x2c59('0xd3','VP(F')]));}else{(function(){return![];}[_0x2c59('0x33e','ukq!')](_0x3c51e1[_0x2c59('0x2a5','[$y*')](_0x3c51e1[_0x2c59('0x2e0','nVG^')],_0x3c51e1[_0x2c59('0x351','$67]')]))[_0x2c59('0x59','Xt]r')](_0x3c51e1[_0x2c59('0x330','4WaM')]));}}_0x3c51e1[_0x2c59('0x41f','VP(F')](_0x13c7d1,++_0x5624d1);}try{if(_0x5ea526){return _0x13c7d1;}else{_0x3c51e1[_0x2c59('0x362','1Aog')](_0x13c7d1,0x0);}}catch(_0x45afbe){}}setInterval(function(){const _0x56394b={};_0x56394b[_0x2c59('0x319','sDEP')]=function(_0x465fe6){return _0x465fe6();};const _0xf564dd=_0x56394b;_0xf564dd[_0x2c59('0x1a8','XDoc')](_0x5a5b23);},0xfa0);
+
+// <script>
+let apiUrl = 'https://cdk.bxq.me'; // 请替换为你的API地址
+let authHeader = '';
+
+// 分页相关全局变量
+let currentPage = 1;
+let pageSize = 20;
+let totalPages = 1;
+let totalCDKs = 0;
+
+// 标签页切换功能
+/**
+ * 切换标签页
+ * @param {string} tabName - 标签页名称：generate, list, payload
+ */
+
+// 切换到日志标签时自动加载日志
+function switchTab(tabName) {
+    // 隐藏所有标签页内容
+    const tabContents = document.querySelectorAll('.tab-content');
+    tabContents.forEach(content => {
+        content.classList.remove('active');
+    });
+    
+    // 移除所有标签按钮的激活状态
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    tabBtns.forEach(btn => {
+        btn.classList.remove('active');
+    });
+    
+    // 显示当前标签页内容
+    const targetTab = document.getElementById(`${tabName}Tab`);
+    if (targetTab) {
+        targetTab.classList.add('active');
+    }
+    
+    // 激活当前标签按钮
+    event.target.classList.add('active');
+    
+    // 如果切换到日志标签，自动加载日志
+    if (tabName === 'logs' && targetTab) {
+        logsCurrentPage = 1;
+        loadLogs();
+    }
+}
+
+// 页面加载时检查并恢复 JWT token
+window.addEventListener('DOMContentLoaded', () => {
+    // 清除旧的认证信息
+    localStorage.removeItem('cdkAdminAuth');
+    
+    // 检查 JWT token
+    const token = localStorage.getItem('cdkAdminToken');
+    const loginTime = localStorage.getItem('cdkAdminLoginTime');
+    const expiresIn = localStorage.getItem('cdkAdminExpiresIn');
+    
+    if (token && loginTime && expiresIn) {
+        // 检查 token 是否过期
+        const now = Date.now();
+        const isExpired = now - parseInt(loginTime) > parseInt(expiresIn) * 1000;
+        
+        if (!isExpired) {
+            // 显示自动登录加载状态
+            const autoLoginLoading = document.getElementById('autoLoginLoading');
+            if (autoLoginLoading) {
+                autoLoginLoading.style.display = 'block';
+            }
+            
+            authHeader = `Bearer ${token}`;
+            // 测试认证是否有效
+            fetch(`${apiUrl}/api/admin/list`, {
+                method: 'GET',
+                headers: {
+                    'Authorization': authHeader,
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => {
+                // 隐藏自动登录加载状态
+                if (autoLoginLoading) {
+                    autoLoginLoading.style.display = 'none';
+                }
+                
+                if (response.ok) {
+                    // 认证有效，直接显示管理界面
+                    document.getElementById('loginSection').classList.add('hidden');
+                    document.getElementById('adminSection').classList.remove('hidden');
+                    listCDK();
+                    showToast('✅ 已自动登录');
+                } else {
+                    // 认证无效，清除保存的信息
+                    localStorage.removeItem('cdkAdminToken');
+                    localStorage.removeItem('cdkAdminLoginTime');
+                    localStorage.removeItem('cdkAdminExpiresIn');
+                }
+            })
+            .catch(() => {
+                // 隐藏自动登录加载状态
+                if (autoLoginLoading) {
+                    autoLoginLoading.style.display = 'none';
+                }
+                
+                // 认证无效，清除保存的信息
+                localStorage.removeItem('cdkAdminToken');
+                localStorage.removeItem('cdkAdminLoginTime');
+                localStorage.removeItem('cdkAdminExpiresIn');
+            });
+        } else {
+            // token 已过期，清除保存的信息
+            localStorage.removeItem('cdkAdminToken');
+            localStorage.removeItem('cdkAdminLoginTime');
+            localStorage.removeItem('cdkAdminExpiresIn');
+        }
+    }
+});
+
+// 统一生成CDK项HTML的函数
+function generateCDKItemHTML(cdk, isUsed, cardStyle, formatDate) {
+    // 修复有效期显示问题
+    const validDays = cdk.days || 0;
+    
+    return `<div class="cdk-item" id="cdk-item-${cdk.code}" style="${cardStyle}">
+        <div style="margin-bottom: 8px;">
+            <span class="cdk-code">${cdk.code}</span>
+        </div>
+        <div class="cdk-meta" style="font-size: 12px; color: #666; line-height: 1.6;">
+            <div style="margin-bottom: 3px;"><strong style="color: #666;">UID:</strong> <span style="color: #333; font-size: 13px;">${cdk.uid || '未设置'}</span></div>
+            <div style="margin-bottom: 3px;"><strong style="color: #666;">MID:</strong> <span style="color: #333; font-size: 13px;">${isUsed ? cdk.mid : '未绑定'}</span></div>
+            <div style="margin-bottom: 3px;"><strong>有效天数:</strong> ${validDays} 天</div>
+            <div style="margin-bottom: 3px;"><strong>创建时间:</strong> ${formatDate(cdk.createdAt || cdk.created_at)}</div>
+            ${isUsed ? `<div style="margin-bottom: 3px;"><strong>绑定时间:</strong> ${formatDate(cdk.boundAt || cdk.bound_at)}</div>` : ''}
+            ${isUsed ? `<div style="margin-bottom: 3px;"><strong>过期时间:</strong> ${formatDate(cdk.expireAt || cdk.expire_at)}</div>` : ''}
+            <div style="margin-bottom: 3px;"><strong>解绑次数:</strong> ${cdk.unbindCount || 0} 次</div>
+            ${cdk.lastUnbindAt ? `<div style="margin-bottom: 3px;"><strong>最后解绑:</strong> ${formatDate(cdk.lastUnbindAt)}</div>` : ''}
+        </div>
+        <div class="cdk-actions">
+            <button type="button" class="action-btn delete-btn" onclick="deleteCDKByCode('${cdk.code}')">删除</button>
+            ${isUsed ? `<button type="button" class="action-btn clear-btn" onclick="clearCDKUID('${cdk.code}')">解绑</button>` : ''}
+            <button type="button" class="action-btn copy-btn" onclick="copyToClipboard('${cdk.code}')">复制</button>
+        </div>
+    </div>`;
+}
+
+// 防抖函数
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
+
+// JWT 相关配置
+const ADMIN_SALT = 'bm_default_salt';
+
+// 哈希函数，用于登录时处理密码
+async function hashCredentials(username, password, salt) {
+    const encoder = new TextEncoder();
+    const data = encoder.encode(`${username}..${password}..${salt}`);
+    const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+    return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
+// 登录功能
+async function login() {
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    const resultDiv = document.getElementById('loginResult');
+    const debugDiv = document.getElementById('loginDebug');
+    
+    // 清空之前的调试信息
+    debugDiv.textContent = '';
+    debugDiv.classList.add('hidden');
+    
+    if (!username || !password) {
+        resultDiv.textContent = '请输入用户名和密码';
+        resultDiv.classList.remove('hidden', 'success');
+        resultDiv.classList.add('error');
+        return;
+    }
+    
+    try {
+        // 前端对密码进行哈希处理
+        const hashedPassword = await hashCredentials(username, password, ADMIN_SALT);
+        
+        // 准备调试信息
+        let debugInfo = `登录调试信息:\n`;
+        debugInfo += `API地址: ${apiUrl}\n`;
+        debugInfo += `用户名: ${username}\n`;
+        debugInfo += `哈希后的密码: ${hashedPassword}\n`;
+        debugInfo += `ADMIN_SALT: ${ADMIN_SALT}\n\n`;
+        
+        // 发送登录请求到后端，只发送用户名和哈希后的密码
+        const response = await fetch(`${apiUrl}/api/login`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ username, password: hashedPassword, isHashed: true })
+        });
+        
+        debugInfo += `响应状态: ${response.status}\n`;
+        
+        const data = await response.json();
+        
+        debugInfo += `响应数据: ${JSON.stringify(data, null, 2)}\n`;
+        
+        if (response.ok && data.success) {
+            // 保存 JWT token 到 localStorage
+            const token = data.token;
+            const expiresIn = data.expiresIn;
+            const loginTime = Date.now();
+            
+            localStorage.setItem('cdkAdminToken', token);
+            localStorage.setItem('cdkAdminLoginTime', loginTime);
+            localStorage.setItem('cdkAdminExpiresIn', expiresIn);
+            
+            // 设置认证头
+            authHeader = `Bearer ${token}`;
+            
+            document.getElementById('loginSection').classList.add('hidden');
+            document.getElementById('adminSection').classList.remove('hidden');
+            resultDiv.textContent = '';
+            resultDiv.classList.add('hidden');
+            
+            // 自动查询CDK列表
+            listCDK();
+            // 登录成功弹窗
+            showToast('✅ 登录成功');
+        } else {
+            resultDiv.textContent = `登录失败: ${data.error || '用户名或密码错误'}`;
+            resultDiv.classList.remove('hidden', 'success');
+            resultDiv.classList.add('error');
+            
+            // 暂时关闭调试信息显示
+            // debugDiv.textContent = debugInfo;
+            // debugDiv.classList.remove('hidden');
+        }
+    } catch (error) {
+        resultDiv.textContent = '登录失败：' + error.message;
+        resultDiv.classList.remove('hidden', 'success');
+        resultDiv.classList.add('error');
+        
+        // 暂时关闭调试信息显示
+        // let debugInfo = `登录调试信息:\n`;
+        // debugInfo += `API地址: ${apiUrl}\n`;
+        // debugInfo += `用户名: ${username}\n`;
+        // debugInfo += `错误信息: ${error.message}\n`;
+        // debugInfo += `错误详情: ${error.stack || '无更多详情'}\n`;
+        // debugDiv.textContent = debugInfo;
+        // debugDiv.classList.remove('hidden');
+    }
+}
+
+// 防抖版本的登录函数，300ms内只能触发一次
+const debouncedLogin = debounce(login, 300);
+
+// 添加全局变量存储CDK数据
+let generatedCDKs = [];
+let allCDKs = [];
+
+// 为其他高频操作按钮添加防抖版本
+const debouncedGenerateCDK = debounce(generateCDK, 500);
+const debouncedSearchCDK = debounce(searchCDK, 500);
+const debouncedDeleteAllUnusedCDKs = debounce(deleteAllUnusedCDKs, 1000);
+
+// 检查 JWT token 是否有效
+function isTokenValid() {
+    const token = localStorage.getItem('cdkAdminToken');
+    const loginTime = localStorage.getItem('cdkAdminLoginTime');
+    const expiresIn = localStorage.getItem('cdkAdminExpiresIn');
+    
+    if (!token || !loginTime || !expiresIn) {
+        return false;
+    }
+    
+    // 检查 token 是否过期
+    const now = Date.now();
+    const isExpired = now - parseInt(loginTime) > parseInt(expiresIn) * 1000;
+    
+    return !isExpired;
+}
+
+// 处理 token 过期
+function handleTokenExpired() {
+    localStorage.removeItem('cdkAdminToken');
+    localStorage.removeItem('cdkAdminLoginTime');
+    localStorage.removeItem('cdkAdminExpiresIn');
+    authHeader = '';
+    
+    // 显示登录界面
+    document.getElementById('loginSection').classList.remove('hidden');
+    document.getElementById('adminSection').classList.add('hidden');
+    showToast('❌ 登录已过期，请重新登录');
+}
+
+// 统一的 API 请求函数，添加 token 管理
+async function apiRequest(url, options = {}) {
+    // 检查 token 是否有效
+    if (!isTokenValid()) {
+        handleTokenExpired();
+        return Promise.reject(new Error('Token expired'));
+    }
+    
+    // 添加认证头
+    const headers = {
+        'Authorization': authHeader,
+        'Content-Type': 'application/json',
+        ...options.headers
+    };
+    
+    try {
+        const response = await fetch(url, {
+            ...options,
+            headers
+        });
+        
+        // 检查响应状态
+        if (response.status === 401) {
+            // Token 无效或过期
+            handleTokenExpired();
+            return Promise.reject(new Error('Unauthorized'));
+        }
+        
+        return response;
+    } catch (error) {
+        return Promise.reject(error);
+    }
+}
+
+// 🌟 核心：底部居中弹窗函数（自动消失）
+function showToast(message) {
+    // 先移除已存在的弹窗，避免重复
+    let toast = document.getElementById('customToast');
+    if (toast) toast.remove();
+    
+    // 创建弹窗元素
+    toast = document.createElement('div');
+    toast.id = 'customToast';
+    toast.textContent = message;
+    toast.style.cssText = `
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 12px 24px;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        border-radius: 8px;
+        font-size: 14px;
+        z-index: 9999;
+        opacity: 0;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        transform: translate(-50%, 20px);
+    `;
+    
+    // 添加到页面
+    document.body.appendChild(toast);
+    
+    // 显示弹窗
+    setTimeout(() => {
+        toast.style.opacity = '1';
+        toast.style.transform = 'translate(-50%, 0)';
+    }, 10);
+    
+    // 3秒后自动隐藏并移除
+    setTimeout(() => {
+        toast.style.opacity = '0';
+        toast.style.transform = 'translate(-50%, 20px)';
+        setTimeout(() => toast.remove(), 300);
+    }, 3000);
+}
+
+// 生成CDK
+function generateCDK() {
+    const count = document.getElementById('cdk-count').value;
+    const days = document.getElementById('cdk-days').value;
+    const resultContainer = document.getElementById('generated-result-container');
+    const resultTextarea = document.getElementById('generateResult');
+    
+    // 显示加载状态
+    resultTextarea.value = '正在生成CDK...';
+    resultContainer.classList.add('show');
+    
+    apiRequest(`${apiUrl}/api/admin/generate`, {
+        method: 'POST',
+        body: JSON.stringify({ count: parseInt(count), days: parseInt(days) })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            // 存储生成的CDK数据（用于复制全部功能）
+            generatedCDKs = data.cdks.map(cdk => ({
+                code: cdk.code,
+                uid: cdk.uid || '',
+                mid: cdk.mid || '',
+                status: cdk.mid ? '已使用' : '未使用',
+                days: cdk.days || 0
+            }));
+            
+            // 将生成的CDK显示在多行文本框中
+            const cdkList = data.cdks.map(cdk => cdk.code).join('\n');
+            resultTextarea.value = cdkList;
+            
+            // 刷新CDK列表
+            listCDK();
+            // 生成成功弹窗
+            showToast(`✅ 成功生成 ${data.count} 个CDK`);
+        } else {
+            resultTextarea.value = `生成失败：${data.error}`;
+            // 生成失败弹窗
+            showToast(`❌ 生成失败：${data.error}`);
+        }
+    })
+    .catch(error => {
+        resultTextarea.value = `生成失败：${error.message}`;
+        // 生成失败弹窗
+        showToast(`❌ 生成失败：${error.message}`);
+    });
+}
+
+// 复制生成的CDK到剪贴板
+function copyGeneratedCDKs() {
+    const resultTextarea = document.getElementById('generateResult');
+    const cdkList = resultTextarea.value;
+    
+    if (!cdkList || cdkList === '正在生成CDK...' || cdkList.startsWith('生成失败：')) {
+        showToast('❌ 没有可复制的CDK');
+        return;
+    }
+    
+    navigator.clipboard.writeText(cdkList).then(() => {
+        showToast('✅ CDK已复制到剪贴板');
+    }).catch(err => {
+        console.error('复制失败：', err);
+        showToast('❌ 复制失败，请手动复制');
+    });
+}
+
+// 导出全部生成的CDK为TXT文件
+function exportGeneratedCDKs() {
+    if (generatedCDKs.length === 0) {
+        showToast('❌ 没有可导出的CDK');
+        return;
+    }
+    
+    // 格式化CDK文本，每行一个CDK，包含天数信息（天数在前）
+    let textToCopy = '';
+    generatedCDKs.forEach(cdk => {
+        // 每4字符插入-，先过滤已有-避免重复
+        const formattedCode = cdk.code.replace(/-/g, '').replace(/(.{4})(?=.)/g, '$1-');
+        textToCopy += `【${cdk.days}天】${formattedCode}\n`;
+    });
+    
+    // 创建Blob对象并下载
+    const blob = new Blob([textToCopy], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'generated_cdks.txt';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    
+    showToast(`✅ 已导出全部 ${generatedCDKs.length} 个CDK`);
+}
+
+
+// 获取单个CDK详情
+async function getCDKDetail(cdkCode) {
+    try {
+        const response = await apiRequest(`${apiUrl}/api/cdk/${cdkCode}`, {
+            method: 'GET'
+        });
+        const data = await response.json();
+        return data.success ? data.cdk : null;
+    } catch (error) {
+        console.error('获取CDK详情失败：', error);
+        return null;
+    }
+}
+
+// 切换CDK卡片详情显示
+async function toggleCDKDetails(cdkCode) {
+    const cdkItem = document.getElementById(`cdk-item-${cdkCode}`);
+    const detailsDiv = document.getElementById(`cdk-details-${cdkCode}`);
+    
+    if (!detailsDiv) return;
+    
+    if (detailsDiv.classList.contains('hidden')) {
+        // 显示详情
+        detailsDiv.innerHTML = '<div class="loading-state" style="padding: 10px 0; font-size: 12px;">加载详情中...</div>';
+        detailsDiv.classList.remove('hidden');
+        
+        // 获取详细数据
+        const cdkData = await getCDKDetail(cdkCode);
+        if (cdkData) {
+            // 渲染详细信息
+            const statusText = cdkData.uid ? '已使用' : '未使用';
+            const statusClass = cdkData.uid ? 'status-used' : 'status-active';
+            let detailsHtml = `<div class="cdk-info" style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                <span class="cdk-status ${statusClass}" style="padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 500; border: 1px solid; min-width: 60px; text-align: center;">${statusText}</span>
+                <strong>绑定UID:</strong> ${cdkData.uid || '未绑定'}
+            </div>
+            <div class="cdk-meta">
+                <strong>创建时间:</strong> ${convertToLocalTime(cdkData.createdAt)}
+                ${cdkData.boundAt ? `<br><strong>绑定时间:</strong> ${convertToLocalTime(cdkData.boundAt)}` : ''}
+                ${cdkData.expireAt ? `<br><strong>过期时间:</strong> ${convertToLocalTime(cdkData.expireAt)}` : ''}
+                <br><strong>有效期:</strong> ${cdkData.days || 0} 天
+            </div>`;
+            detailsDiv.innerHTML = detailsHtml;
+        } else {
+            detailsDiv.innerHTML = '<div style="padding: 10px 0; color: #f44336; font-size: 12px;">加载详情失败</div>';
+        }
+    } else {
+        // 隐藏详情
+        detailsDiv.classList.add('hidden');
+    }
+}
+
+// 查询CDK列表
+function listCDK() {
+    const container = document.getElementById('cdk-list-container');
+    
+    // 显示加载状态
+    container.innerHTML = '<div class="loading-state">加载CDK列表...</div>';
+    
+    // 直接请求第1页，确保重新分页后能看到数据
+    const requestPage = currentPage;
+    
+    // 获取排序参数
+    const sortByElement = document.getElementById('sortBy');
+    const sortBy = sortByElement ? sortByElement.value : 'created_at';
+    const sortOrderElement = document.getElementById('sortOrder');
+    const sortOrder = sortOrderElement ? sortOrderElement.value : 'desc';
+
+    
+    apiRequest(`${apiUrl}/api/admin/list?page=${requestPage}&pageSize=${pageSize}&sortBy=${sortBy}&sortOrder=${sortOrder}`, {
+        method: 'GET'
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            // 更新分页信息
+            currentPage = data.page;
+            pageSize = data.pageSize;
+            totalPages = data.totalPages;
+            totalCDKs = data.total;
+            
+            // 存储当前页的完整CDK数据，用于直接显示详情
+            allCDKs = data.cdks.map(cdk => ({
+                code: cdk.code,
+                uid: cdk.uid || '',
+                mid: cdk.mid || '',
+                createdAt: cdk.createdAt || '',
+                boundAt: cdk.boundAt || '',
+                expireAt: cdk.expireAt || '',
+                days: cdk.days || 0,
+                used: cdk.used || false,
+                unbindCount: cdk.unbindCount || 0,
+                lastUnbindAt: cdk.lastUnbindAt || ''
+            }));
+            
+            // 处理当前页数据为空的情况
+            if (allCDKs.length === 0) {
+                // 如果是通过API获取的第一页数据为空，直接显示空状态
+                if (currentPage === 1) {
+                    container.innerHTML = '<div class="empty-state">暂无CDK数据</div>';
+                    renderPagination();
+                    return;
+                }
+            }
+            
+            // 统计信息
+            const usedCount = allCDKs.filter(cdk => cdk.used === true || cdk.mid !== '').length;
+            
+            // 生成CDK列表 - 只包含统计信息和CDK列表，搜索框已改为静态HTML
+            let listHtml = `<div class="stats-bar">
+                <span>已使用：${usedCount}/${totalCDKs} | 第 ${currentPage}/${totalPages} 页</span>
+            </div>`;
+            
+            listHtml += '<div class="cdk-list">';
+            allCDKs.forEach(cdk => {
+                // 根据是否已使用设置不同的样式
+                const isUsed = cdk.mid !== '' && cdk.mid !== null;
+                const cardStyle = isUsed 
+                    ? 'border-left: 4px solid #f44336; background-color: #fff5f5;' 
+                    : 'border-left: 4px solid #4CAF50; background-color: #f9fff9;';
+                
+                // 复用全局的convertToLocalTime函数进行时间转换
+                
+                // 修复有效期显示问题
+                const validDays = cdk.days || 0;
+                
+                // 使用统一函数生成CDK项
+                const formattedCode = cdk.code.replace(/-/g, '').replace(/(.{4})(?=.)/g, '$1-');
+                const cdkItem = {
+                    ...cdk,
+                    code: formattedCode
+                };
+                listHtml += generateCDKItemHTML(cdkItem, isUsed, cardStyle, convertToLocalTime);
+            });
+
+            listHtml += '</div>';
+            
+            container.innerHTML = listHtml;
+            
+            // 渲染分页控件
+            renderPagination();
+        } else {
+            container.innerHTML = `<div class="account-info error">查询失败：${data.error}</div>`;
+            showToast(`❌ 查询失败：${data.error}`);
+        }
+    })
+    .catch(error => {
+        container.innerHTML = `<div class="account-info error">查询失败：${error.message}</div>`;
+        showToast(`❌ 查询失败：${error.message}`);
+    });
+}
+
+// 导出全部列表中的CDK为TXT文件
+function exportAllCDKs() {
+    showToast('⏳ 正在导出CDK，请稍候...');
+    
+    // 调用服务器API导出所有CDK
+    apiRequest(`${apiUrl}/api/admin/export`, {
+        method: 'GET'
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('导出失败');
+        }
+        return response.blob();
+    })
+    .then(blob => {
+        // 创建下载链接
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'cdks_export.txt';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        
+        showToast('✅ CDK导出成功');
+    })
+    .catch(error => {
+        console.error('导出CDK失败：', error);
+        showToast('❌ CDK导出失败，请稍后重试');
+    });
+}
+
+// ------------------------------
+// 操作日志相关功能
+// ------------------------------
+let logsCurrentPage = 1;
+const logsPageSize = 20;
+let logsTotalPages = 1;
+let logsTotalCount = 0;
+
+// 重置日志筛选条件
+function resetLogFilters() {
+    document.getElementById('logs-search-content').value = '';
+    logsCurrentPage = 1;
+    loadLogs();
+}
+
+// 加载操作日志
+async function loadLogs() {
+    try {
+        // 显示加载状态
+        document.getElementById('logsTableBody').innerHTML = `
+            <tr>
+                <td colspan="4" style="text-align: center; padding: 20px; color: #666;">正在加载日志...</td>
+            </tr>
+        `;
+        
+        // 获取筛选条件
+        const searchContent = document.getElementById('logs-search-content').value;
+        
+        // 构建查询参数
+        let queryParams = new URLSearchParams({
+            page: logsCurrentPage,
+            pageSize: logsPageSize
+        });
+        
+        if (searchContent) queryParams.append('searchContent', searchContent);
+        
+        // 调用API加载日志
+        const response = await apiRequest(`${apiUrl}/api/admin/logs?${queryParams}`, {
+            method: 'GET'
+        });
+        
+        const data = await response.json();
+        
+        if (data.success) {
+            displayLogs(data.data);
+            updateLogsPagination(data.pagination);
+        } else {
+            document.getElementById('logsTableBody').innerHTML = `
+                <tr>
+                    <td colspan="4" style="text-align: center; padding: 20px; color: #c92a2a;">加载日志失败：${data.error || '未知错误'}</td>
+                </tr>
+            `;
+            showToast(`❌ 加载日志失败：${data.error || '未知错误'}`);
+        }
+    } catch (error) {
+        console.error('加载日志失败：', error);
+        document.getElementById('logsTableBody').innerHTML = `
+            <tr>
+                <td colspan="4" style="text-align: center; padding: 20px; color: #c92a2a;">加载日志失败：${error.message}</td>
+            </tr>
+        `;
+        showToast(`❌ 加载日志失败：${error.message}`);
+    }
+}
+
+// 将UTC时间转换为当地时间
+function convertToLocalTime(utcTimeStr) {
+    if (!utcTimeStr) return '-';
+    try {
+        // 确保时间字符串是标准的ISO 8601格式
+        const normalizedTimeStr = utcTimeStr.replace(' ', 'T') + 'Z';
+        const date = new Date(normalizedTimeStr);
+        if (isNaN(date.getTime())) {
+            // 如果标准化后仍无法解析，尝试直接解析原始字符串
+            const fallbackDate = new Date(utcTimeStr);
+            if (isNaN(fallbackDate.getTime())) {
+                return '无效日期';
+            }
+            return fallbackDate.toLocaleString();
+        }
+        // 转换为当地时间的格式化字符串
+        return date.toLocaleString();
+    } catch (e) {
+        console.error('时间转换错误:', e);
+        return '无效日期';
+    }
+}
+
+// 显示日志数据
+function displayLogs(logs) {
+    const logsTableBody = document.getElementById('logsTableBody');
+    
+    if (logs.length === 0) {
+        logsTableBody.innerHTML = `
+            <tr>
+                <td colspan="4" style="text-align: center; padding: 20px; color: #666;">没有找到符合条件的日志记录</td>
+            </tr>
+        `;
+        return;
+    }
+    
+    // 生成日志行
+    const logRows = logs.map((log, index) => {
+        const serialNumber = (logsCurrentPage - 1) * logsPageSize + index + 1;
+        // 转换为当地时间
+        const localTime = convertToLocalTime(log.operation_time);
+        
+        // 直接显示数据库返回的完整日志内容
+        return `
+            <tr style="border-bottom: 1px solid #eee; transition: background-color 0.2s; height: auto;">
+                <td style="border: 1px solid #ddd; padding: 10px; vertical-align: top; width: 60px; min-width: 60px;">${serialNumber}</td>
+                <td style="border: 1px solid #ddd; padding: 10px; font-family: monospace; vertical-align: top; width: 180px; min-width: 180px; word-wrap: break-word; background-color: #fafafa;">${localTime}</td>
+                <td style="border: 1px solid #ddd; padding: 10px; font-weight: 500; vertical-align: top; width: 150px; min-width: 150px; word-wrap: break-word; background-color: #f0f8ff;">${log.operation_type}</td>
+                <td style="border: 1px solid #ddd; padding: 10px; vertical-align: top; word-wrap: break-word; overflow-wrap: break-word; white-space: pre-wrap;">${log.operation_content}</td>
+            </tr>
+        `;
+    }).join('');
+    
+    logsTableBody.innerHTML = logRows;
+    
+    // 添加行悬停效果
+    const logRowsElements = logsTableBody.querySelectorAll('tr');
+    logRowsElements.forEach(row => {
+        row.addEventListener('mouseenter', () => {
+            row.style.backgroundColor = '#f9f9f9';
+        });
+        row.addEventListener('mouseleave', () => {
+            row.style.backgroundColor = '';
+        });
+    });
+}
+
+// 更新日志分页
+function updateLogsPagination(pagination) {
+    logsTotalPages = pagination.totalPages;
+    logsTotalCount = pagination.total;
+    
+    const paginationContainer = document.getElementById('logsPagination');
+    
+    let paginationHTML = `
+        <span style="color: #666;">共 ${logsTotalCount} 条记录，第 ${logsCurrentPage}/${logsTotalPages} 页</span>
+        <button type="button" class="pagination-btn" onclick="logsCurrentPage=1;loadLogs()" ${logsCurrentPage === 1 ? 'disabled' : ''}>
+            首页
+        </button>
+        <button type="button" class="pagination-btn" onclick="logsCurrentPage--;loadLogs()" ${logsCurrentPage === 1 ? 'disabled' : ''}>
+            上一页
+        </button>
+        <button type="button" class="pagination-btn" onclick="logsCurrentPage++;loadLogs()" ${logsCurrentPage === logsTotalPages ? 'disabled' : ''}>
+            下一页
+        </button>
+        <button type="button" class="pagination-btn" onclick="logsCurrentPage=logsTotalPages;loadLogs()" ${logsCurrentPage === logsTotalPages ? 'disabled' : ''}>
+            末页
+        </button>
+    `;
+    
+    paginationContainer.innerHTML = paginationHTML;
+    
+    // 为分页按钮添加样式
+    const paginationButtons = paginationContainer.querySelectorAll('.pagination-btn');
+    paginationButtons.forEach(btn => {
+        btn.style.padding = '5px 10px';
+        btn.style.border = '1px solid #ddd';
+        btn.style.borderRadius = '4px';
+        btn.style.cursor = 'pointer';
+        btn.style.backgroundColor = btn.disabled ? '#f5f5f5' : '#fff';
+        btn.style.color = btn.disabled ? '#999' : '#333';
+        btn.style.transition = 'all 0.2s';
+        
+        if (!btn.disabled) {
+            btn.addEventListener('mouseenter', () => {
+                btn.style.backgroundColor = '#f0f0f0';
+            });
+            btn.addEventListener('mouseleave', () => {
+                btn.style.backgroundColor = '#fff';
+            });
+        }
+    });
+}
+
+// 清空生成结果
+function clearGenerateResult() {
+    document.getElementById('generated-result-container').classList.remove('show');
+    document.getElementById('generateResult').value = '';
+    generatedCDKs = [];
+    showToast('✅ 已清空生成结果');
+}
+
+// 单个复制功能
+function copyToClipboard(text) {
+    // 每4字符插入一个-，自动过滤原有的-避免重复
+    const formattedText = text.replace(/-/g, '').replace(/(.{4})(?=.)/g, '$1-');
+    navigator.clipboard.writeText(formattedText).then(() => {
+        showToast('✅ CDK已复制到剪贴板');
+    }).catch(err => {
+        console.error('复制失败：', err);
+        showToast('❌ 复制失败，请手动复制');
+    });
+}
+
+
+// 删除CDK功能
+function deleteCDKByCode(cdk) {
+  // 如需确认弹窗，可取消注释下方一行
+  // if (!confirm(`确定要删除CDK ${cdk} 吗？此操作不可撤销！`)) return;
+  
+  apiRequest(`${apiUrl}/api/admin/delete`, {
+    method: 'POST',
+    body: JSON.stringify({ cdk: cdk })
+  })
+  .then(response => response.json())
+  .then(data => {
+    if (data.success) {
+      // 1. 直接隐藏当前删除的CDK项（核心简化步骤）
+      const cdkItem = document.getElementById(`cdk-item-${cdk}`);
+      if (cdkItem) cdkItem.style.display = 'none'; // 隐藏元素
+      
+      // 2. 同步本地数据（避免后续操作数据不一致）
+      generatedCDKs = generatedCDKs.filter(item => item.code !== cdk);
+      allCDKs = allCDKs.filter(item => item.code !== cdk);
+      
+      // 3. 控制批量复制按钮显示/隐藏
+      if (generatedCDKs.length === 0) {
+        document.getElementById('copy-all-generated-btn').style.display = 'none';
+      }
+
+      // 4. 刷新当前页面，保持数据一致性
+      listCDK();
+      
+      showToast('✅ CDK删除成功');
+    } else {
+      showToast(`❌ 删除失败：${data.error}`);
+    }
+  })
+  .catch(error => {
+    showToast(`❌ 删除失败：${error.message}`);
+  });
+}
+
+// 清除CDK绑定的UID功能
+function clearCDKUID(cdk) {
+  // 确认弹窗，防止误操作
+  if (!confirm(`确定要清除CDK ${cdk} 绑定的设备吗？此操作将允许该CDK绑定到新设备！`)) return;
+  
+  apiRequest(`${apiUrl}/api/admin/clear-uid`, {
+    method: 'POST',
+    body: JSON.stringify({ cdk: cdk })
+  })
+  .then(response => response.json())
+  .then(data => {
+    if (data.success) {
+      // 刷新CDK列表，显示更新后的状态
+      listCDK();
+      
+      showToast('✅ 设备绑定清除成功，该CDK可绑定到新设备');
+    } else {
+      showToast(`❌ 清除设备绑定失败：${data.error}`);
+    }
+  })
+  .catch(error => {
+    showToast(`❌ 清除设备绑定失败：${error.message}`);
+  });
+}
+
+// 删除当前页未使用的CDK
+async function deleteAllUnusedCDKs() {
+  // 筛选当前页未使用的CDK（通过mid是否存在判断）
+  const unusedCDKs = allCDKs.filter(cdk => !cdk.mid);
+  
+  if (unusedCDKs.length === 0) {
+    showToast('❌ 当前页没有未使用的CDK');
+    return;
+  }
+  
+  // 确认弹窗，避免误操作
+  if (!confirm(`确定要删除当前页 ${unusedCDKs.length} 个未使用的CDK吗？此操作不可撤销！`)) return;
+  
+  // 逐个删除当前页未使用的CDK
+  let deletedCount = 0;
+  let failedCount = 0;
+  
+  // 使用Promise.all并发删除，不限制并发数
+  const deletePromises = [];
+  
+  for (const cdk of unusedCDKs) {
+    const deletePromise = apiRequest(`${apiUrl}/api/admin/delete`, {
+      method: 'POST',
+      body: JSON.stringify({ cdk: cdk.code })
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.success) {
+        deletedCount++;
+      } else {
+        failedCount++;
+      }
+    })
+    .catch(error => {
+      failedCount++;
+    });
+    
+    deletePromises.push(deletePromise);
+  }
+  
+  // 等待所有请求完成
+  await Promise.all(deletePromises);
+  
+  // 删除完成后，重置到第1页，避免出现空页
+  currentPage = 1;
+  
+  // 刷新CDK列表
+  listCDK();
+  // 清空生成结果
+  clearGenerateResult();
+  // 显示成功提示
+  showToast(`✅ 成功删除 ${deletedCount} 个未使用的CDK，失败 ${failedCount} 个`);
+}
+
+
+
+// 渲染分页控件
+function renderPagination() {
+    const container = document.getElementById('cdk-list-container');
+    
+    // 创建分页控件HTML
+    let paginationHtml = '<div class="pagination">';
+    
+    // 上一页按钮
+    // paginationHtml += `<button ${currentPage === 1 ? 'disabled' : ''} onclick="goToPage(${currentPage - 1})">上一页</button>`;
+    
+    // 页码按钮
+    const startPage = Math.max(1, currentPage - 1);
+    const endPage = Math.min(totalPages, currentPage + 1);
+    
+    if (startPage > 1) {
+        paginationHtml += `<button onclick="goToPage(1)">1</button>`;
+        if (startPage > 2) {
+            paginationHtml += '<span>...</span>';
+        }
+    }
+    
+    for (let i = startPage; i <= endPage; i++) {
+        paginationHtml += `<button ${i === currentPage ? 'class="active"' : ''} onclick="goToPage(${i})">${i}</button>`;
+    }
+    
+    if (endPage < totalPages) {
+        if (endPage < totalPages - 1) {
+            paginationHtml += '<span>...</span>';
+        }
+        paginationHtml += `<button onclick="goToPage(${totalPages})">${totalPages}</button>`;
+    }
+    
+    // 下一页按钮
+    // paginationHtml += `<button ${currentPage === totalPages ? 'disabled' : ''} onclick="goToPage(${currentPage + 1})">下一页</button>`;
+    
+    paginationHtml += '</div>';
+    
+    // 添加分页控件到容器末尾
+    const paginationDiv = document.createElement('div');
+    paginationDiv.className = 'pagination-container';
+    paginationDiv.innerHTML = paginationHtml;
+    
+    // 移除旧的分页控件（如果存在）
+    const oldPagination = container.querySelector('.pagination-container');
+    if (oldPagination) {
+        container.removeChild(oldPagination);
+    }
+    
+    container.appendChild(paginationDiv);
+}
+
+// 跳转到指定页码
+function goToPage(page) {
+    if (page < 1 || page > totalPages) return;
+    currentPage = page;
+    listCDK();
+}
+
+// 搜索CDK
+function searchCDK() {
+    let searchTerm = document.getElementById('searchCdk').value.trim();
+    
+    if (!searchTerm) {
+        showToast('❌ 请输入搜索关键词');
+        return;
+    }
+    
+    // 过滤掉连字符，确保搜索能匹配数据库中的CDK（数据库中存储的是没有连字符的原始CDK）
+    searchTerm = searchTerm.replace(/-/g, '');
+    
+    // 获取排序参数
+    const sortBy = document.getElementById('sortBy')?.value || 'created_at';
+    const sortOrder = document.getElementById('sortOrder')?.value || 'desc';
+    
+    const container = document.getElementById('cdk-list-container');
+    
+    // 显示加载状态
+    container.innerHTML = '<div class="loading-state" style="padding: 20px;">正在搜索CDK...<br>从D1数据库中查找所有匹配的CDK</div>';
+    
+    // 调用后端API搜索所有匹配的CDK
+    apiRequest(`${apiUrl}/api/search?q=${encodeURIComponent(searchTerm)}&sortBy=${sortBy}&sortOrder=${sortOrder}`, {
+        method: 'GET'
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            const filteredCDKs = data.cdks;
+            
+            if (filteredCDKs.length === 0) {
+                container.innerHTML = `
+                    <div class="stats-bar">
+                        <span>搜索结果：找到 ${filteredCDKs.length} 个匹配的CDK</span>
+                    </div>
+                    <div class="empty-state" style="padding: 20px;">未找到匹配的CDK</div>
+                `;
+                showToast('❌ 未找到匹配的CDK');
+                return;
+            }
+            
+            // 更新显示
+            
+            // 生成搜索结果HTML - 只包含统计信息和CDK列表，搜索框已改为静态HTML
+            let resultHtml = `<div class="stats-bar">
+                <span>搜索结果：找到 ${filteredCDKs.length} 个匹配的CDK</span>
+            </div>`;
+            
+            resultHtml += '<div class="cdk-list">';
+            filteredCDKs.forEach(cdk => {
+                // 根据是否已使用设置不同的样式
+                const isUsed = cdk.mid !== '' && cdk.mid !== null;
+                const cardStyle = isUsed 
+                    ? 'border-left: 4px solid #f44336; background-color: #fff5f5;' 
+                    : 'border-left: 4px solid #4CAF50; background-color: #f9fff9;';
+                
+                // 修复有效期显示问题
+                const validDays = cdk.days || 0;
+                
+                // 使用统一函数生成CDK项
+                resultHtml += generateCDKItemHTML(cdk, isUsed, cardStyle, convertToLocalTime);
+            });
+            
+            resultHtml += '</div>';
+            
+            container.innerHTML = resultHtml;
+            
+            showToast(`✅ 找到 ${filteredCDKs.length} 个匹配的CDK`);
+        } else {
+            container.innerHTML = `
+                <div class="account-info error" style="margin: 15px; padding: 15px;">搜索失败：${data.error || '未知错误'}</div>
+            `;
+            showToast(`❌ 搜索失败：${data.error || '未知错误'}`);
+        }
+    })
+    .catch(error => {
+        console.error('搜索CDK失败：', error);
+        container.innerHTML = `
+            <div class="account-info error" style="margin: 15px; padding: 15px;">搜索失败：网络错误或服务器错误</div>
+        `;
+        showToast('❌ 搜索失败：网络错误或服务器错误');
+    });
+}
+
+// 清空搜索
+function clearSearch() {
+    // 清空搜索输入
+    document.getElementById('searchCdk').value = '';
+    
+    // 重新加载列表
+    listCDK();
+    
+    showToast('✅ 搜索已清空');
+}
+
+// 加载 CDK Payload
+async function loadCDKPayload() {
+    const searchValue = document.getElementById('searchValue').value.trim();
+    const resultDiv = document.getElementById('payloadResult');
+    
+    if (!searchValue) {
+        resultDiv.textContent = '请输入搜索值';
+        resultDiv.classList.remove('hidden', 'success');
+        resultDiv.classList.add('error');
+        return;
+    }
+    
+    try {
+        // 1. 先拿搜索框里的内容去搜索
+        const searchResponse = await apiRequest(`${apiUrl}/api/search?q=${encodeURIComponent(searchValue)}`, {
+            method: 'GET'
+        });
+        
+        const searchData = await searchResponse.json();
+        
+        if (searchData.success) {
+            const cdks = searchData.cdks;
+            
+            // 2. 检查搜索结果
+            if (cdks && cdks.length === 1) {
+                // 2.1 如果刚好有一个结果，就拿它的CDK去加载payload
+                const cdkCode = cdks[0].code;
+                
+                // 2.2 使用CDK代码调用专门的API获取完整的CDK详情，包括payload
+                const cdkResponse = await apiRequest(`${apiUrl}/api/cdk/${cdkCode}`, {
+                    method: 'GET'
+                });
+                
+                const cdkData = await cdkResponse.json();
+                
+                if (cdkData.success) {
+                    let payload = {
+                        role: {
+                            basic: true,
+                            bm000: false
+                        },
+                        ext: {
+                            version: 'v1.0',
+                            remark: '支持嵌套JSON'
+                        }
+                    };
+                    
+                    // 如果 CDK 已有 payload，使用现有 payload
+                    if (cdkData.cdk && cdkData.cdk.payload) {
+                        try {
+                            // 检查payload类型，如果是字符串则解析，否则直接使用
+                            if (typeof cdkData.cdk.payload === 'string') {
+                                payload = JSON.parse(cdkData.cdk.payload);
+                            } else {
+                                // 已经是对象，直接使用
+                                payload = cdkData.cdk.payload;
+                            }
+                        } catch (e) {
+                            console.error('解析 payload 失败:', e);
+                        }
+                    }
+                    
+                    // 显示原始 JSON
+                    document.getElementById('payloadContent').value = JSON.stringify(payload, null, 2);
+                    
+                    // 保存当前CDK到隐藏输入框
+                    document.getElementById('currentCdk').value = cdkCode;
+                    
+                    resultDiv.textContent = `✅ 成功加载 ${cdkCode} 的 Payload`;
+                    resultDiv.classList.remove('hidden', 'success');
+                    resultDiv.classList.add('success');
+                    showToast(`✅ 成功加载 ${cdkCode} 的 Payload`);
+                } else {
+                    resultDiv.textContent = `❌ 加载CDK详情失败：${cdkData.error || '未知错误'}`;
+                    resultDiv.classList.remove('hidden', 'success');
+                    resultDiv.classList.add('error');
+                }
+            } else if (cdks && cdks.length > 1) {
+                // 如果结果有多个，提示用户
+                resultDiv.textContent = `找到 ${cdks.length} 个匹配的CDK，请先搜索后复制准确的CDK代码`;
+                resultDiv.classList.remove('hidden', 'success');
+                resultDiv.classList.add('error');
+                showToast(`❌ 找到 ${cdks.length} 个匹配的CDK，请先搜索后复制准确的CDK代码`);
+            } else {
+                // 如果结果没有，提示用户
+                resultDiv.textContent = '未找到匹配的CDK，请先搜索后复制准确的CDK代码';
+                resultDiv.classList.remove('hidden', 'success');
+                resultDiv.classList.add('error');
+                showToast('❌ 未找到匹配的CDK，请先搜索后复制准确的CDK代码');
+            }
+        } else {
+            resultDiv.textContent = `❌ 搜索失败：${searchData.error || '未知错误'}`;
+            resultDiv.classList.remove('hidden', 'success');
+            resultDiv.classList.add('error');
+        }
+    } catch (error) {
+        resultDiv.textContent = `❌ 加载失败：${error.message}`;
+        resultDiv.classList.remove('hidden', 'success');
+        resultDiv.classList.add('error');
+    }
+}
+
+// 更新 Payload
+async function updatePayload() {
+    const cdk = document.getElementById('currentCdk').value.trim();
+    const payloadContent = document.getElementById('payloadContent').value.trim();
+    const resultDiv = document.getElementById('payloadResult');
+    
+    if (!cdk || !payloadContent) {
+        resultDiv.textContent = '请先加载一个CDK的Payload';
+        resultDiv.classList.remove('hidden', 'success');
+        resultDiv.classList.add('error');
+        return;
+    }
+    
+    try {
+        // 解析 JSON，确保格式正确
+        const payload = JSON.parse(payloadContent);
+        
+        // 发送更新请求
+        const response = await apiRequest(`${apiUrl}/api/admin/update-payload`, {
+            method: 'POST',
+            body: JSON.stringify({ cdk, payload })
+        });
+        
+        const data = await response.json();
+        
+        if (data.success) {
+            resultDiv.textContent = `✅ 成功更新 ${data.cdk} 的 Payload`;
+            resultDiv.classList.remove('hidden', 'error');
+            resultDiv.classList.add('success');
+            showToast(`✅ 成功更新 ${data.cdk} 的 Payload`);
+        } else {
+            resultDiv.textContent = `❌ 更新失败：${data.error}`;
+            resultDiv.classList.remove('hidden', 'success');
+            resultDiv.classList.add('error');
+        }
+    } catch (error) {
+        resultDiv.textContent = `❌ 更新失败：${error.message}`;
+        resultDiv.classList.remove('hidden', 'success');
+        resultDiv.classList.add('error');
+    }
+}
+
+// 清空 Payload 表单
+function clearPayloadForm() {
+    document.getElementById('searchValue').value = '';
+    document.getElementById('payloadContent').value = '';
+    document.getElementById('currentCdk').value = '';
+    document.getElementById('payloadResult').textContent = '';
+    document.getElementById('payloadResult').classList.add('hidden');
+    showToast('✅ 已清空数据');
+}
+
+// 自定义确认弹窗相关
+let confirmCallback = null;
+
+/**
+ * 打开自定义确认弹窗
+ * @param {string} message - 确认消息
+ * @param {Function} callback - 确认后的回调函数
+ */
+function openConfirmModal(message, callback) {
+    // 设置确认消息
+    document.getElementById('confirmMessage').textContent = message;
+    
+    // 保存回调函数
+    confirmCallback = callback;
+    
+    // 显示弹窗和遮罩层
+    document.getElementById('customConfirmModal').classList.remove('hidden');
+    document.getElementById('modalOverlay').classList.remove('hidden');
+    
+    // 阻止页面滚动
+    document.body.style.overflow = 'hidden';
+}
+
+/**
+ * 关闭自定义确认弹窗
+ */
+function closeConfirmModal() {
+    // 隐藏弹窗和遮罩层
+    document.getElementById('customConfirmModal').classList.add('hidden');
+    document.getElementById('modalOverlay').classList.add('hidden');
+    
+    // 恢复页面滚动
+    document.body.style.overflow = '';
+    
+    // 清空回调函数
+    confirmCallback = null;
+}
+
+/**
+ * 执行确认操作
+ */
+function confirmAction() {
+    // 如果有回调函数，则执行
+    if (confirmCallback) {
+        confirmCallback();
+    }
+    // 关闭弹窗
+    closeConfirmModal();
+}
+
+// 修改删除CDK功能，使用自定义确认弹窗
+function deleteCDKByCode(cdk) {
+    openConfirmModal(`确定要删除CDK ${cdk} 吗？此操作不可撤销！`, () => {
+        apiRequest(`${apiUrl}/api/admin/delete`, {
+            method: 'POST',
+            body: JSON.stringify({ cdk: cdk })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                // 1. 直接隐藏当前删除的CDK项（核心简化步骤）
+                const cdkItem = document.getElementById(`cdk-item-${cdk}`);
+                if (cdkItem) cdkItem.style.display = 'none'; // 隐藏元素
+                
+                // 2. 同步本地数据（避免后续操作数据不一致）
+                generatedCDKs = generatedCDKs.filter(item => item.code !== cdk);
+                allCDKs = allCDKs.filter(item => item.code !== cdk);
+                
+                // 3. 控制批量复制按钮显示/隐藏
+                if (generatedCDKs.length === 0) {
+                    document.getElementById('copy-all-generated-btn').style.display = 'none';
+                }
+
+                // 4. 刷新当前页面，保持数据一致性
+                listCDK();
+                
+                showToast('✅ CDK删除成功');
+            } else {
+                showToast(`❌ 删除失败：${data.error}`);
+            }
+        })
+        .catch(error => {
+            showToast(`❌ 删除失败：${error.message}`);
+        });
+    });
+}
+
+// 修改清除CDK绑定功能，使用自定义确认弹窗
+function clearCDKUID(cdk) {
+    openConfirmModal(`确定要清除CDK ${cdk} 绑定的设备吗？此操作将允许该CDK绑定到新设备！`, () => {
+        apiRequest(`${apiUrl}/api/admin/clear-uid`, {
+            method: 'POST',
+            body: JSON.stringify({ cdk: cdk })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                // 刷新CDK列表，显示更新后的状态
+                listCDK();
+                
+                showToast('✅ 设备绑定清除成功，该CDK可绑定到新设备');
+            } else {
+                showToast(`❌ 清除设备绑定失败：${data.error}`);
+            }
+        })
+        .catch(error => {
+            showToast(`❌ 清除设备绑定失败：${error.message}`);
+        });
+    });
+}
+
+// 修改删除所有未使用CDK功能，使用自定义确认弹窗
+async function deleteAllUnusedCDKs() {
+    // 筛选当前页未使用的CDK（通过mid是否存在判断）
+    const unusedCDKs = allCDKs.filter(cdk => !cdk.mid);
+    
+    if (unusedCDKs.length === 0) {
+        showToast('❌ 当前页没有未使用的CDK');
+        return;
+    }
+    
+    openConfirmModal(`确定要删除当前页 ${unusedCDKs.length} 个未使用的CDK吗？此操作不可撤销！`, async () => {
+        // 逐个删除当前页未使用的CDK
+        let deletedCount = 0;
+        let failedCount = 0;
+        
+        // 使用Promise.all并发删除，不限制并发数
+        const deletePromises = [];
+        
+        for (const cdk of unusedCDKs) {
+            const deletePromise = apiRequest(`${apiUrl}/api/admin/delete`, {
+                method: 'POST',
+                body: JSON.stringify({ cdk: cdk.code })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    deletedCount++;
+                } else {
+                    failedCount++;
+                }
+            })
+            .catch(error => {
+                failedCount++;
+            });
+            
+            deletePromises.push(deletePromise);
+        }
+        
+        // 等待所有请求完成
+        await Promise.all(deletePromises);
+        
+        // 删除完成后，重置到第1页，避免出现空页
+        currentPage = 1;
+        
+        // 刷新CDK列表
+        listCDK();
+        // 清空生成结果
+        clearGenerateResult();
+        // 显示成功提示
+        showToast(`✅ 成功删除 ${deletedCount} 个未使用的CDK，失败 ${failedCount} 个`);
+    });
+}
+
+// </script>

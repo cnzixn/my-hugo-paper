@@ -95,16 +95,6 @@ summary: 'CDK统一管理系统，包含生成、查看、删除功能'
   <!-- 搜索区域 - 静态HTML -->
   <div class="search-container" style="margin-bottom: 15px; display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
   <input type="text" id="searchCdk" placeholder="搜索CDK或UID..." style="padding: 10px 16px; border: 1px solid #ddd; border-radius: 6px; width: 300px; font-size: 14px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); transition: all 0.2s ease; outline: none;">
-  <select id="sortBy" style="padding: 10px 16px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); transition: all 0.2s ease; outline: none;">
-  <option value="created_at">按创建时间</option>
-  <option value="expire_at">按过期时间</option>
-  <option value="unbind_count">按解绑次数</option>
-  <option value="days">按有效天数</option>
-  </select>
-  <select id="sortOrder" style="padding: 10px 16px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); transition: all 0.2s ease; outline: none;">
-  <option value="desc">降序</option>
-  <option value="asc">升序</option>
-  </select>
   <button type="button" class="search-btn" onclick="debouncedSearchCDK()" style="padding: 10px 24px; background-color: #2196F3; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 14px; font-weight: 500; box-shadow: 0 2px 5px rgba(0,0,0,0.15); transition: all 0.2s ease; min-width: 100px;">搜索</button>
   <!-- <button type="button" class="reset-btn" onclick="clearSearch()" style="padding: 10px 24px; background-color: #6c757d; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 14px; font-weight: 500; box-shadow: 0 2px 5px rgba(0,0,0,0.15); transition: all 0.2s ease; min-width: 100px;">重置</button> -->
   </div>
@@ -172,7 +162,7 @@ summary: 'CDK统一管理系统，包含生成、查看、删除功能'
   <thead>
   <tr style="background-color: #f5f5f5;">
   <th style="border: 1px solid #ddd; padding: 10px; text-align: left; width: 60px; min-width: 60px;">序号</th>
-  <th style="border: 1px solid #ddd; padding: 10px; text-align: left; width: 180px; min-width: 180px; font-family: monospace;">时间</th>
+  <th style="border: 1px solid #ddd; padding: 10px; text-align: left; width: 180px; min-width: 180px; font-family: monospace;">操作时间</th>
   <th style="border: 1px solid #ddd; padding: 10px; text-align: left; width: 150px; min-width: 150px;">事件类型</th>
   <th style="border: 1px solid #ddd; padding: 10px; text-align: left; word-wrap: break-word; vertical-align: top;">内容</th>
   </tr>
@@ -214,8 +204,6 @@ summary: 'CDK统一管理系统，包含生成、查看、删除功能'
 <!-- 遮罩层 -->
 <div id="modalOverlay" class="modal-overlay hidden"></div>
 </div>
-
-
 
 
 <style>
