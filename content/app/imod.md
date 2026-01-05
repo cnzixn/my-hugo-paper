@@ -217,31 +217,36 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
 
 <!-- 更新框架时需要将 md5 填到 imod.js -->
 
-
 <h1>B.M.安装器</h1>
 <!-- <span class="pill">自动识别 APK / IPA</span> -->
 
+<!-- 等待提示：加载中显示 -->
+<div id="loadingTip" style="text-align: center; padding: 30px; font-size: 16px; color: #666;">
+  正在初始化工具，请稍候...
+</div>
+
 <!-- 弹窗容器 -->
-<div class="modal-mask" id="tipModal">
+<div class="modal-mask" id="tipModal" style="display: none;">
   <div class="modal-content">
   <small class="note">
       温馨提示：<br>
       • 本地处理文件<mark>不消耗流量</mark>。<br>
       • 暂不支持 iPhone/iPad 设备。<br>
       • 仅支持 Chrome/Edge 浏览器。<br>
-      • 框架限定<mark>B.M.260101</mark>版本！<br>
+      • 框架仅支持<mark>B.M.260101</mark>版本。<br>
+      • 此工具仅供开发人员测试使用。
   </small>
   <div class="modal-buttons">
       <!-- <button class="modal-btn close-btn" onclick="closeModal()">关闭</button> -->
-      <button class="modal-btn no-prompt-btn" onclick="noMorePrompt()">不再提示</button>
+      <button class="modal-btn no-prompt-btn" onclick="noMorePrompt()">我知道了</button>
   </div>
   </div>
 </div>
 
 
-<div class="section">
+<!-- 所有 section 初始隐藏 -->
+<div class="section" id="section1" style="display: none;">
   <h2>1. 选择安装包<span class="pill">自动识别 APK / IPA</span></h2>
-  <!-- <p class="muted">拖入或选择 <strong>.apk</strong>（安卓）或 <strong>.ipa</strong>（苹果）。</p> -->
   <div id="pkgDropZone" class="drop-zone">
     <p>拖放 apk/ipa 文件到这里 或</p>
     <button id="pkgBrowseBtn">选择安装包</button>
@@ -251,9 +256,8 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
   <div id="pkgError" class="error"></div>
 </div>
 
-<div class="section">
+<div class="section" id="section2" style="display: none;">
   <h2>2. 选择模组文件<span class="pill">支持 BM框架/BM模组/BM补丁/自制模组 </span></h2>
-  <!-- <p class="muted">支持 BM 框架 / BM 模组 / BM 补丁 / 三方模组（<code>.zip</code> / <code>.xz</code>）。</p> -->
   <div id="modsDropZone" class="drop-zone">
     <p>拖放 zip/xz/xor 文件到这里 或</p>
     <button id="modsBrowseBtn">选择模组文件</button>
@@ -263,7 +267,7 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
   <div id="modsError" class="error"></div>
 </div>
 
-<div class="section">
+<div class="section" id="section3" style="display: none;">
   <h2>3. 安装模组</h2>
   <div class="muted" id="platformHint">当前平台：未选择</div>
   <button id="installBtn" disabled>开始安装</button>
@@ -272,10 +276,6 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
     <p id="installProgressText">准备就绪</p>
   </div>
   <div id="installError" class="error"></div>
-  <!-- <div id="installResult" style="display:none;"> -->
-   <!-- <button id="downloadBtn" class="btn-view-counter">保存生成文件</button> -->
-   <!-- <span class="muted" id="resultHint"></span> -->
-  <!-- </div> -->
   
 <div id="installResult" style="display: none;">
   <div class="platform-result" id="androidResult" style="display:none;">
@@ -290,8 +290,6 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
 
   <div class="muted" id="resultHint" style="margin-top:12px;"></div>
 </div>
-
-
 </div>
 
 <!-- 必需库 -->
@@ -304,24 +302,35 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
 <!-- <script src="/js/klfa.js"></script> -->
 <!-- <script src="/js/imod.js"></script> -->
 
-
 <script>
-// 获取弹窗元素
+// 获取核心元素
 const modal = document.getElementById('tipModal');
+const loadingTip = document.getElementById('loadingTip');
+const sections = [
+  document.getElementById('section1'),
+  document.getElementById('section2'),
+  document.getElementById('section3')
+];
 
-// 检查Cookie，判断是否显示弹窗（补全核心逻辑）
+// 检查Cookie，判断是否显示弹窗
 function checkPromptCookie() {
     const cookies = document.cookie.split(';');
-    let hasHideCookie = false; // 标记是否存在“隐藏弹窗”的Cookie
+    let hasHideCookie = false;
     for (let cookie of cookies) {
         const [name, value] = cookie.trim().split('=');
         if (name === 'no_show_tip_app_imod_251224' && value === 'true') {
             hasHideCookie = true;
-            break; // 找到后直接退出循环，提升效率
+            break;
         }
     }
-    // 关键：无Cookie则显示弹窗，有则隐藏
-    modal.style.display = hasHideCookie ? 'none' : 'flex';
+    // 显示弹窗或直接展示section
+    if (hasHideCookie) {
+        modal.style.display = 'none';
+        showMainContent();
+    } else {
+        modal.style.display = 'flex';
+        showMainContent();
+    }
 }
 
 // 关闭弹窗
@@ -329,7 +338,7 @@ function closeModal() {
     modal.style.display = 'none';
 }
 
-// 不再提示，设置Cookie（有效期x天）
+// 不再提示，设置Cookie（有效期1天）
 function noMorePrompt() {
     const date = new Date();
     date.setTime(date.getTime() + 1 * 24 * 60 * 60 * 1000);
@@ -337,14 +346,17 @@ function noMorePrompt() {
     closeModal();
 }
 
-// 页面加载时执行检查
-window.onload = checkPromptCookie;
+// 显示主内容：隐藏加载提示，显示所有section
+function showMainContent() {
+    loadingTip.style.display = 'none';
+    sections.forEach(section => {
+        section.style.display = 'block'; // 可根据需要改为 flex 等
+    });
+}
 
+// 页面加载完成后执行初始化
+window.onload = function() {
+    // 确保弹窗DOM加载完成后再检查Cookie
+    setTimeout(checkPromptCookie, 0); 
+};
 </script>
-
-
-
-
-
-<!-- </body> -->
-<!-- </html> -->

@@ -229,12 +229,16 @@ summary: '使用XOR处理文件，防止网盘分享文件被和谐。'
 </style>
 
 
-
 <h1>B.M.解密器</h1>
 <!-- <span class="pill">任意格式 | 后缀不区分大小写 | 本地安全</span> -->
 
+<!-- 加载提示：初始化时显示 -->
+<div id="loadingTip" style="text-align: center; padding: 30px; font-size: 16px; color: #666;">
+  正在初始化工具，请稍候...
+</div>
+
 <!-- 弹窗容器 -->
-<div class="modal-mask" id="tipModal">
+<div class="modal-mask" id="tipModal" style="display: none;">
   <div class="modal-content">
   <small class="note">
       温馨提示：<br>
@@ -243,17 +247,14 @@ summary: '使用XOR处理文件，防止网盘分享文件被和谐。'
       • 仅支持 Chrome/Edge 浏览器。<br>
   </small>
   <div class="modal-buttons">
-      <!-- <button class="modal-btn close-btn" onclick="closeModal()">关闭</button> -->
       <button class="modal-btn no-prompt-btn" onclick="noMorePrompt()">不再提示</button>
   </div>
   </div>
 </div>
 
-
-<div class="section">
+<!-- 所有 section 初始隐藏 -->
+<div class="section" id="section1" style="display: none;">
   <h2>1. 选择文件<span class="pill">支持任意格式</span></h2>
-  <!-- <p class="muted">拖入或选择任意格式文件</p> -->
-  <!-- <p class="case-hint">提示：后缀不区分大小写（如.ZIP、.Zip、.zip.xor、.ZIP.XOR均能正确识别）</p> -->
   <div class="limit-hint">⚠️ 最多选择100个文件，当前已选：<span id="fileCount">0</span>/100</div>
   
   <div id="fileDropZone" class="drop-zone">
@@ -266,7 +267,7 @@ summary: '使用XOR处理文件，防止网盘分享文件被和谐。'
   <div id="fileError" class="error"></div>
 </div>
 
-<div class="section">
+<div class="section" id="section2" style="display: none;">
   <h2>2. 处理文件</h2>
   <p class="muted">处理后单文件将直接下载，多文件将自动打包为ZIP压缩包下载。</p>
   
@@ -289,26 +290,28 @@ summary: '使用XOR处理文件，防止网盘分享文件被和谐。'
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script> -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script> -->
 
-
-
-
 <script>
-// 获取弹窗元素
+// 获取核心元素
 const modal = document.getElementById('tipModal');
+const loadingTip = document.getElementById('loadingTip');
+const section1 = document.getElementById('section1');
+const section2 = document.getElementById('section2');
 
-// 检查Cookie，判断是否显示弹窗（补全核心逻辑）
+// 检查Cookie，判断是否显示弹窗
 function checkPromptCookie() {
     const cookies = document.cookie.split(';');
-    let hasHideCookie = false; // 标记是否存在“隐藏弹窗”的Cookie
+    let hasHideCookie = false;
     for (let cookie of cookies) {
         const [name, value] = cookie.trim().split('=');
         if (name === 'no_show_tip_app_xor_251224' && value === 'true') {
             hasHideCookie = true;
-            break; // 找到后直接退出循环，提升效率
+            break;
         }
     }
-    // 关键：无Cookie则显示弹窗，有则隐藏
+    // 根据Cookie状态控制弹窗显示
     modal.style.display = hasHideCookie ? 'none' : 'flex';
+    // 弹窗加载完成后显示主内容
+    showMainContent();
 }
 
 // 关闭弹窗
@@ -316,7 +319,7 @@ function closeModal() {
     modal.style.display = 'none';
 }
 
-// 不再提示，设置Cookie（有效期x天）
+// 不再提示，设置Cookie（有效期1天）
 function noMorePrompt() {
     const date = new Date();
     date.setTime(date.getTime() + 1 * 24 * 60 * 60 * 1000);
@@ -324,8 +327,15 @@ function noMorePrompt() {
     closeModal();
 }
 
-// 页面加载时执行检查
-window.onload = checkPromptCookie;
+// 显示主内容：隐藏加载提示，展示两个section
+function showMainContent() {
+    loadingTip.style.display = 'none';
+    section1.style.display = 'block';
+    section2.style.display = 'block';
+}
 
+// 页面加载完成后执行初始化，确保DOM完全加载
+window.onload = function() {
+    setTimeout(checkPromptCookie, 0);
+};
 </script>
-
