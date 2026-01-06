@@ -297,6 +297,11 @@ const loadingTip = document.getElementById('loadingTip');
 const section1 = document.getElementById('section1');
 const section2 = document.getElementById('section2');
 
+// 检测是否为 iPad/iPhone 设备
+function isIOSDevice() {
+  return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+}
+
 // 检查Cookie，判断是否显示弹窗
 function checkPromptCookie() {
     const cookies = document.cookie.split(';');
@@ -329,6 +334,15 @@ function noMorePrompt() {
 
 // 显示主内容：隐藏加载提示，展示两个section
 function showMainContent() {
+    // 判断是否为iOS设备
+    if(isIOSDevice()){
+        loadingTip.innerHTML = '<span style="color: #ff4444; font-weight: bold;">⚠️ 暂不支持 iPad/iPhone 设备！</span>';
+        // 永久隐藏弹窗和功能区
+        modal.style.display = 'none';
+        section1.style.display = 'none';
+        section2.style.display = 'none';
+        return;
+    }
     loadingTip.style.display = 'none';
     section1.style.display = 'block';
     section2.style.display = 'block';

@@ -304,6 +304,7 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
 
 <script>
 // 获取核心元素
+// 获取核心元素
 const modal = document.getElementById('tipModal');
 const loadingTip = document.getElementById('loadingTip');
 const sections = [
@@ -311,6 +312,11 @@ const sections = [
   document.getElementById('section2'),
   document.getElementById('section3')
 ];
+
+// 新增：检测是否为 iPad/iPhone 设备
+function isIOSDevice() {
+  return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+}
 
 // 检查Cookie，判断是否显示弹窗
 function checkPromptCookie() {
@@ -348,6 +354,14 @@ function noMorePrompt() {
 
 // 显示主内容：隐藏加载提示，显示所有section
 function showMainContent() {
+    // 新增：优先检测iOS设备
+    if (isIOSDevice()) {
+        loadingTip.innerHTML = '<span style="color: #ff4444; font-weight: bold; font-size: 16px;">⚠️ 暂不支持 iPad/iPhone 设备！</span>';
+        modal.style.display = 'none'; // 隐藏弹窗
+        sections.forEach(section => section.style.display = 'none'); // 隐藏所有功能区
+        return; // 终止后续逻辑
+    }
+
     loadingTip.style.display = 'none';
     sections.forEach(section => {
         section.style.display = 'block'; // 可根据需要改为 flex 等
@@ -359,4 +373,5 @@ window.onload = function() {
     // 确保弹窗DOM加载完成后再检查Cookie
     setTimeout(checkPromptCookie, 0); 
 };
+
 </script>
