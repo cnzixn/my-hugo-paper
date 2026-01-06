@@ -231,10 +231,10 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
   <small class="note">
       温馨提示：<br>
       • 本地处理文件<mark>不消耗流量</mark>。<br>
-      • 暂不支持 iPhone/iPad 设备。<br>
-      • 仅支持 Chrome/Edge 浏览器。<br>
+      • 强烈建议使用 Edge 浏览器。<br>
+      • 暂不支持 iPad/iPhone 设备。<br>
       • 框架仅支持<mark>B.M.260101</mark>版本。<br>
-      • 此工具仅供开发人员测试使用。
+      • 此工具仅可安装少量模组测试。
   </small>
   <div class="modal-buttons">
       <!-- <button class="modal-btn close-btn" onclick="closeModal()">关闭</button> -->

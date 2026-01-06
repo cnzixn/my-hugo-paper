@@ -243,8 +243,8 @@ summary: '使用XOR处理文件，防止网盘分享文件被和谐。'
   <small class="note">
       温馨提示：<br>
       • 本地处理文件<mark>不消耗流量</mark>。<br>
-      • 暂不支持 iPhone/iPad 设备。<br>
-      • 仅支持 Chrome/Edge 浏览器。<br>
+      • 强烈建议使用 Edge 浏览器。<br>
+      • 暂不支持 iPad/iPhone 设备。<br>
   </small>
   <div class="modal-buttons">
       <button class="modal-btn no-prompt-btn" onclick="noMorePrompt()">不再提示</button>
