@@ -225,17 +225,21 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
   正在初始化工具，请稍候...
 </div>
 
+
+
+
 <!-- 弹窗容器 -->
 <div class="modal-mask" id="tipModal" style="display: none;">
   <div class="modal-content">
   <small class="note">
-      温馨提示：<br>
-      • 本地处理文件<mark>不消耗流量</mark>。<br>
-      • 强烈建议使用 Edge 浏览器。<br>
-      • 暂不支持 iPad/iPhone 设备。<br>
-      • 框架仅支持<mark>B.M.260101</mark>版本。<br>
-      • 此工具仅可安装少量模组测试。
+    温馨提示：<br>
+    - 本地处理文件<mark>不消耗流量</mark>。<br>
+    - 建议用 <a href="https://www.microsoft.com/edge/download?form=MA13FJ" target="_blank" style="color: #007bff; text-decoration: none;">Edge</a>、<a href="https://www.quark.cn/" target="_blank" style="color: #007bff; text-decoration: none;">夸克</a> 浏览器。<br>
+    - <span style="color: #e74c3c; font-weight: 600;">不支持 iPad 和 iPhone 设备</span>。<br>
+    - 仅支持框架<mark>B.M.260101</mark>版本。<br>
+    - 此工具仅可安装少量模组测试。
   </small>
+
   <div class="modal-buttons">
       <!-- <button class="modal-btn close-btn" onclick="closeModal()">关闭</button> -->
       <button class="modal-btn no-prompt-btn" onclick="noMorePrompt()">我知道了</button>
