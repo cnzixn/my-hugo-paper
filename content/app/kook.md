@@ -18,11 +18,10 @@ summary: 'KOOK服务器邀请卡片'
    width: 90%;
    max-width: 500px;
    margin: 50px auto;
-   background: #fff;
    border-radius: 12px;
    padding: 2rem 1.5rem;
    text-align: center;
-   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+   box-shadow: 0 4px 12px var(--tertiary);
   }
   .kook-avatar {
    width: 80px;
@@ -39,16 +38,14 @@ summary: 'KOOK服务器邀请卡片'
   .kook-name {
    font-size: 1.5rem;
    font-weight: 600;
-   color: #1d1d1f;
    margin-bottom: 2rem;
   }
   .kook-btn {
    width: 100%;
    padding: 1rem;
-   background: #000;
-   color: #fff;
-   border: none;
    border-radius: 8px;
+   background: var(--secondary);
+   color: var(--theme);
    font-size: 1.1rem;
    cursor: pointer;
    transition: opacity 0.2s;
@@ -62,8 +59,6 @@ summary: 'KOOK服务器邀请卡片'
    top: 20px;
    left: 50%;
    transform: translateX(-50%);
-   background: rgba(0,0,0,0.8);
-   color: #fff;
    padding: 0.8rem 1.5rem;
    border-radius: 6px;
    font-size: 0.9rem;
@@ -83,7 +78,7 @@ summary: 'KOOK服务器邀请卡片'
  <div id="kook-invite-card">
   <img src="/img/ic_launcher.webp" class="kook-avatar" alt="服务器头像">
   <h2 class="kook-name">兔人框架交流区（试运行）</h2>
-  <button class="kook-btn" id="acceptBtn">加入服务器</button>
+  <button class="kook-btn" id="acceptBtn">接受邀请</button>
  </div>
 
  <!-- <div class="copied-toast" id="copiedToast">已复制服务器链接</div> -->
@@ -92,7 +87,7 @@ summary: 'KOOK服务器邀请卡片'
   // 核心配置
   const COPY_URL = "https://kook.vip/DCWH7f";
   const KOOK_SCHEME = "kook://join?guild_id=DCWH7f";
-  const DOWNLOAD_URL = "https://kookapp.cn/";
+  const DOWNLOAD_URL = "https://kookapp.cn";
 
   const acceptBtn = document.getElementById('acceptBtn');
   // const copiedToast = document.getElementById('copiedToast');
