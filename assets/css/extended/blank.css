@@ -35,91 +35,68 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 
 
 /*首页，社交软件图标*/
-/* 外层容器：横向排列图标，控制间距 */
-.social-icons {
-  display: flex;
-  gap: 24px; /* 图标之间的间距，可根据需求调整 */
-  align-items: flex-start;
-}
 
-/* 单个图标项：纵向排列，使标题在 SVG 下方 */
-.social-icon-item {
+/* 外层 必横排 */
+.social-group{
+  display: flex;
+  gap: 24px;
+  /*justify-content: center;*/
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+}
+/* 单个按钮 内部图标+文字竖排 */
+.social-btn{
+  border: none;
+  background: transparent;
+  padding: 8px 0;
   display: flex;
   flex-direction: column;
-  align-items: center; /* 水平居中，保证标题在 SVG 正下方 */
-  gap: 4px; /* SVG 与标题的垂直间距，可调整 */
-  text-decoration: none;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+/* 图标容器+气泡 */
+.icon-box{
+  position: relative;
+  width: 24px; /* 固定宽度，图标不缩 */
 }
 
-/* SVG 包装器：作为气泡的相对定位基准 */
-.svg-wrapper {
-  position: relative; /* 气泡基于此定位 */
-  display: inline-block;
-}
-
-/* SVG 图标：设置尺寸 */
-.social-svg {
-  width: 24px;
-  height: 24px;
-  display: block;
-}
-
-/* 气泡样式：定位在 SVG 右上方 */
-.cdk-badge {
+.social-icon{width:24px;height:24px;display:block;}
+/* CDK气泡+三角 */
+.cdk-tag{
   position: absolute;
-    top: 0px;
-    right: -85px;
-  font-size: 12px;
-  padding: 4px 8px;
-  border-radius: 4px;
-  background-color: #ff7d00;
-  color: #fff;
-  font-weight: 600;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  top: 0;
+  right: -85px;
+  font-size:12px;
+  padding:4px 8px;
+  border-radius:4px;
+  background:#ff7d00;
+  color:#fff;
+  font-weight:600;
   white-space: nowrap;
-  z-index: 2;
+  pointer-events: none; /* 不占点击区域 */
+  z-index: 1; /* 不压图标 */
 }
 
-/* 气泡小三角：贴合气泡左下角，指向图标 */
-.cdk-badge::after {
-  content: "";
-  position: absolute;
-  /* 水平方向：左边缘对齐气泡左边缘后，再向左偏移小三角宽度的一半，视觉更居中 */
-  left: 0;
+.cdk-tag::after{
+  content:'';
+  position:absolute;
+  left:0;
+  top:0;
   transform: translateX(-50%);
-  /* 垂直方向：气泡底部对齐，小三角顶部与气泡底部衔接 */
-  top: -1px
-  bottom: 0;
-  width: 0;
-  height: 0;
-  /* 核心：右侧实色，上下透明，形成向左的小三角 */
-  border-right: 8px solid #ff7d00;
-  border-top: 6px solid transparent;
-  border-bottom: 6px solid transparent;
+  border-right:8px solid #ff7d00;
+  border-top:6px solid transparent;
+  border-bottom:6px solid transparent;
 }
+/* 按钮文字 */
+.btn-text{font-size:14px;text-align:center;white-space:nowrap;}
 
-
-/* 标题样式：在 SVG 正下方 */
-.social-icon-title {
-  font-size: 14px;
-  text-align: center;
-  white-space: nowrap;
-}
-
-/* 响应式适配（可选） */
-@media (max-width: 768px) {
-  .social-icons {
-    gap: 16px;
-  }
-  .cdk-badge {
-    font-size: 10px;
-    padding: 3px 6px;
-    top: 0px;
-    right: -70px;
-  }
-  .social-icon-title {
-    font-size: 12px;
-  }
+/* 小屏适配 */
+@media (max-width:768px){
+  .social-group{gap:16px;}
+  .cdk-tag{font-size:10px;padding:3px 6px;right:-70px;}
+  .btn-text{font-size:12px;}
 }
 
 

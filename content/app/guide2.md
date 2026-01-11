@@ -1,13 +1,13 @@
 ---
-title: "B.M.小卡片1"
+title: "B.M.小卡片2"
 layout: "aapp"
 searchHidden: true
 hideTitlt: true
 weight: 250000
-summary: "一组教学小卡片，教你如何安装模组。"
+summary: "一组教学小卡片，教你如何使用Shizuku。"
 ---
 
-<h1>B.M.小卡片1</h1>
+<h1>B.M.小卡片2</h1>
 
 <!-- 进度条容器 -->
 <div class="progress-container">
@@ -20,14 +20,17 @@ summary: "一组教学小卡片，教你如何安装模组。"
 <div class="task-container">
 
 <div class="task-card active" data-task>
-  <h2>卡片<span class="card-number">1</span>：开始</h2>
+  <h2>卡片<span class="card-number">1</span>：下载Shizuku</h2>
   <div class="task-content">
-　这是一组教学小卡片，教你如何安装模组。
+  
+  从官网或网盘下载安装包：  
 
-　现在是 AI 的时代，要学会使用 AI 解决一些小问题：  
+  Shizuku：[https://shizuku.rikka.app](https://shizuku.rikka.app/zh-hans/)  
 
-　- _[豆包](https://doubao.com)_：回答问题快，推荐日常使用。  
-　- _[DeepSeek](https://deepseek.com)_：深度思考比较专业(慢)。  
+  {{< pan "工具" >}}  
+
+
+  <small>Tip：安卓用户，需要进行此流程授权，让 MT管理器 可以访问`Android/data`目录。</small>
 
   </div>
   <div class="task-nav">
@@ -38,16 +41,12 @@ summary: "一组教学小卡片，教你如何安装模组。"
 
 
 <div class="task-card" data-task>
-  <h2>卡片<span class="card-number">2</span>：网盘&文件</h2>
+  <h2>卡片<span class="card-number">2</span>：开始配对</h2>
   <div class="task-content">
 
-　经常有反馈文件失效的，还有“在线解压”交智商税的，所以网盘分享：
+　安装并打开 Shizuku，手机连上任意Wifi(热点)，点击“配对”
 
-　`.XZ` 是 ZIP 压缩文件(仅改名)，可直接用 _[MT管理器](https://mt2.cn)_ 打开。
-
-　`.XOR` 是加密文件，通过 _[B.M.解密器](/app/xor)_ 可以还原为 ZIP 压缩文件。
-
-<small>Tip：夸克网盘如果需要提取码，请更新一下版本。</small>
+{{< figure src="/img/Screenshot_20260111_01.webp" align=center attr="" link="" >}}
 
   </div>
   <div class="task-nav">
@@ -57,29 +56,14 @@ summary: "一组教学小卡片，教你如何安装模组。"
 </div>
 
 <div class="task-card" data-task>
-  <h2>卡片<span class="card-number">2</span>：游戏安装包</h2>
+  <h2>卡片<span class="card-number">2</span>：开始配对</h2>
   <div class="task-content">
-方法一：购买官方版，然后提取安装包：
-  <div class="btn-group">
-   <button class="btn" onclick="window.open('https://apps.apple.com/us/app/dont-starve-shipwrecked/id1147297267?l=zh', '_blank')">购买苹果版</button>
-   <button class="btn" onclick="window.open('https://play.google.com/store/apps/details?id=com.kleientertainment.doNotStarveShipwrecked', '_blank')">购买安卓版</button>
-  </div>
 
-<!-- 免费试玩：无需购买，用于表明来源： -->
-  <!-- <div class="btn-group"> -->
-   <!-- <button class="btn" onclick="window.open('https://pan.baidu.com/wap/init?surl=f5D3VGi56R0PftWKigdoPg&pwd=uqn5')">直接下载↓</button> -->
-   <!-- <button class="btn" onclick="window.open('https://api.ddooo.com/downm/151548', '_blank')">直接下载↓</button> -->
-  <!-- </div> -->
-  <!-- <div class="btn-group"> -->
-   <!-- <button class="btn" onclick="window.open('https://ipa.store/1299.html')">苹果版详情</button> -->
-   <!-- <button class="btn" onclick="window.open('https://m.ddooo.com/softdown/151548.htm', '_blank')">安卓版详情</button> -->
-  <!-- </div> -->
+　按照下面步骤操作即可，特别注意红字：打开无线调试的开关后，再点击“无线调试”这几个字。
 
-方法二：下载试玩版，仅用于测试模组：
-  {{< pan 游戏 >}}  
+  {{< figure src="/img/Screenshot_20260111_02.webp" align=center attr="" link="" >}}
 
-  <small>免责：试玩版来源于 _[ipa.store](https://ipa.store/1299.html)_ 、_[ddooo.com](https://m.ddooo.com/softdown/151548.htm)_ 等网站。此游戏在国内暂时未上架，网盘分享仅为了方便玩家体验游戏内容。</small>  
-
+  <small>Tip：手机没有开发者选项？开启流程：设置，关于本机，版本号(快速点击)。</small>
 
   </div>
   <div class="task-nav">
@@ -89,14 +73,28 @@ summary: "一组教学小卡片，教你如何安装模组。"
 </div>
 
 <div class="task-card" data-task>
-  <h2>卡片<span class="card-number">3</span>：兔人框架</h2>
+  <h2>卡片<span class="card-number">2</span>：输入配对码</h2>
   <div class="task-content">
 
-　兔人框架 `BM26.01.01.ZIP` ，已适配官方版本 _[苹果1.84](https://apps.apple.com/us/app/dont-starve-shipwrecked/id1147297267?l=zh)_ 和 _[安卓1.33](https://play.google.com/store/apps/details?id=com.kleientertainment.doNotStarveShipwrecked)_ 。
+　在 Shizuku 的输入框输入配对码，点击右侧小飞机
 
-  {{< pan "框架" >}}
+{{< figure src="/img/Screenshot_20260111_03.webp" align=center attr="" link="" >}}
 
-  <small>备注：文件`BM000(词库+壁纸)`是扩展内容，新人玩家不用了解。</small>  
+  </div>
+  <div class="task-nav">
+    <button class="btn prev-btn">上一个</button>
+    <button class="btn next-btn">下一个</button>
+  </div>
+</div>
+
+<div class="task-card" data-task>
+  <h2>卡片<span class="card-number">2</span>：启动</h2>
+  <div class="task-content">
+
+　配对完成后，再次打开 Shizuku，点击“启动”
+
+{{< figure src="/img/Screenshot_20260111_01.webp" align=center attr="" link="" >}}
+
   </div>
   <div class="task-nav">
     <button class="btn prev-btn">上一个</button>
@@ -106,62 +104,13 @@ summary: "一组教学小卡片，教你如何安装模组。"
 
 
 <div class="task-card" data-task>
-  <h2>卡片<span class="card-number">4</span>：兔人模组</h2>
+  <h2>卡片<span class="card-number">6</span>：授权</h2>
   <div class="task-content">
+　
+  打开 MT管理器 ，它就会提醒你授权，点击“始终允许”
 
-　兔人模组 `BMXXX.ZIP` ，来源于创意工坊，由各位大佬移植，我们只是收集整理并分享：
-  <div class="btn-group">
-   <button class="btn" onclick="window.open('/mods', '_blank')">📋模组列表</button>
-   <button class="btn" onclick="window.open('/search', '_blank')">🔍搜索模组</button>
-  </div>
-  
-　如果你有新的模组，欢迎投稿分享：_[admin@bxq.me](mailto:admin@bxq.me)_（请用网盘分享文件）。
-      
-  </div>
-  <div class="task-nav">
-    <button class="btn prev-btn">上一个</button>
-    <button class="btn next-btn">下一个</button>
-  </div>
-</div>
+{{< figure src="/img/Screenshot_20260111_04.webp" align=center attr="" link="" >}}
 
-
-<div class="task-card" data-task>
-  <h2>卡片<span class="card-number">5</span>：安装框架/模组</h2>
-  <div class="task-content">
-  根据需要，选择模组安装工具：
-  <div class="btn-group">
-    <button class="btn" onclick="window.open('/app/imod', '_blank')">通用版</button>
-    <button class="btn" onclick="window.open('https://mt2.cn', '_blank')">安卓版</button>
-  </div>
-
-  视频演示(上下对应)：  
-  <div class="btn-group">
-    <button class="btn" onclick="installMethod('auto')">视频一</button>
-    <button class="btn" onclick="installMethod('manual')">视频二</button>
-  </div>
-  <div id="install-guide-auto" style="margin-top:15px; display:none;">
-    {{< video id="install-guide-auto-video" src="/img/lv_0_20250901210841.mp4" poster="/img/lv_0_20250901210841.webp" crop="true" cropHeight="85%" >}}  
-  </div>
-  <div id="install-guide-manual" style="margin-top:15px; display:none;">
-    {{< video id="install-guide-manual-video" src="/img/lv_0_20250831182656.mp4" poster="/img/lv_0_20250831182656.webp" crop="true" cropHeight="75%" >}}  
-  </div>
-
-  <small>Tip：拖动进度条到结尾，可直接退出播放</small>
-  </div>
-  <div class="task-nav">
-    <button class="btn prev-btn">上一个</button>
-    <button class="btn next-btn">下一个</button>
-  </div>
-</div>
-
-<div class="task-card" data-task>
-  <h2>卡片<span class="card-number">6</span>：签名并安装</h2>
-  <div class="task-content">
-　苹果：请自行搜索相关教程，关键词：自签、巨魔。
-
-　安卓：使用MT管理器，长按安装包，点击弹框中的“签名”。
-
-  <p style="color:#2ecc71; font-size:16px; font-weight:bold;"> 恭喜，已完成全部学习！</p>
   </div>
   <div class="task-nav">
     <button class="btn prev-btn">上一个</button>
@@ -173,7 +122,7 @@ summary: "一组教学小卡片，教你如何安装模组。"
 </div>
 
 <script>
-
+// 全局变量
 // 全局变量
 let currentTaskIndex = 0;
 let taskCards = [];
@@ -440,6 +389,8 @@ h1 {
   transform-origin: top left;
   margin-bottom: -0.5rem;
 }
+
+.android-card{display:none;} /* 强制默认隐藏，关键修复 */
 
 </style>
 

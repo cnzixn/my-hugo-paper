@@ -13,7 +13,6 @@ summary: 'KOOK服务器邀请卡片'
  <meta charset="utf-8"/>
  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"/>
  <style>
-  /* 仅卡片相关样式，无多余代码 */
   #kook-invite-card {
    width: 90%;
    max-width: 500px;
@@ -27,7 +26,6 @@ summary: 'KOOK服务器邀请卡片'
    width: 80px;
    height: 80px;
    border-radius: 16px;
-   /* 三重保障强制居中 */
    display: block;
    margin: 0 auto 1.5rem;
    position: relative;
@@ -49,28 +47,21 @@ summary: 'KOOK服务器邀请卡片'
    font-size: 1.1rem;
    cursor: pointer;
    transition: opacity 0.2s;
+   border: none;
   }
   .kook-btn:hover {
    opacity: 0.9;
   }
-  /* 复制提示 */
-  .copied-toast {
-   position: fixed;
-   top: 20px;
-   left: 50%;
-   transform: translateX(-50%);
-   padding: 0.8rem 1.5rem;
-   border-radius: 6px;
-   font-size: 0.9rem;
-   z-index: 9999;
-   display: none;
-   animation: fade 2s forwards;
+  .kook-btn:disabled {
+   background: #ccc;
+   cursor: not-allowed;
+   opacity: 1;
   }
-  @keyframes fade {
-   0% { opacity: 0; }
-   10% { opacity: 1; }
-   90% { opacity: 1; }
-   100% { opacity: 0; }
+  .tip-text {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 1rem;
+    line-height: 1.5;
   }
  </style>
 </head>
@@ -79,39 +70,57 @@ summary: 'KOOK服务器邀请卡片'
   <img src="/img/ic_launcher.webp" class="kook-avatar" alt="服务器头像">
   <h2 class="kook-name">兔人框架交流区（试运行）</h2>
   <button class="kook-btn" id="acceptBtn">接受邀请</button>
+  <p class="tip-text" id="jumpTip" style="display:none;">未能打开KOOK?<br>3秒后进入下载页面</p>
  </div>
 
- <!-- <div class="copied-toast" id="copiedToast">已复制服务器链接</div> -->
-
  <script>
-  // 核心配置
   const COPY_URL = "https://kook.vip/DCWH7f";
   const KOOK_SCHEME = "kook://join?guild_id=DCWH7f";
   const DOWNLOAD_URL = "https://kookapp.cn";
 
   const acceptBtn = document.getElementById('acceptBtn');
-  // const copiedToast = document.getElementById('copiedToast');
+  const jumpTip = document.getElementById('jumpTip');
+  let countdownTimer = null;
 
-  // 复制链接函数
-  function copyUrl() {
-   const textarea = document.createElement('textarea');
-   textarea.value = COPY_URL;
-   textarea.style.position = 'absolute';
-   textarea.style.left = '-9999px';
-   document.body.appendChild(textarea);
-   textarea.select();
-   document.execCommand('copy');
-   document.body.removeChild(textarea);
-   
-   // copiedToast.style.display = 'block';
-   // setTimeout(() => copiedToast.style.display = 'none', 2000);
+  async function copyUrl() {
+    try {
+      await navigator.clipboard.writeText(COPY_URL);
+    } catch (err) {
+      const textarea = document.createElement('textarea');
+      textarea.value = COPY_URL;
+      textarea.style.position = 'absolute';
+      textarea.style.left = '-9999px';
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textarea);
+    }
   }
 
-  // 按钮点击事件
   acceptBtn.addEventListener('click', () => {
+   acceptBtn.disabled = true;
+   acceptBtn.innerText = '已复制邀请链接';
+   jumpTip.style.display = 'block';
    copyUrl();
    window.location.href = KOOK_SCHEME;
-   setTimeout(() => window.location.href = DOWNLOAD_URL, 3000);
+   
+   let sec = 3;
+   countdownTimer = setInterval(() => {
+     sec--;
+     if(sec <= 0){
+       clearInterval(countdownTimer);
+     }
+     jumpTip.innerText = `未能打开KOOK?\n${sec}秒后进入下载页面`;
+   },1000);
+
+   setTimeout(() => {
+     window.location.href = DOWNLOAD_URL;
+     clearInterval(countdownTimer);
+     acceptBtn.disabled = false;
+     acceptBtn.innerText = '接受邀请';
+     jumpTip.style.display = 'none';
+     jumpTip.innerText = '未能打开KOOK?\n3秒后进入下载页面';
+   }, 3000);
   });
  </script>
 </body>

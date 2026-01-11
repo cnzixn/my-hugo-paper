@@ -1,17 +1,11 @@
-<div class="social-icons" {{ with .align}}align="{{.}}" {{- end }}>
-    {{- range site.Params.socialIcons }}
-    <a href="{{ trim .url " " | safeURL }}" target="_blank" rel="noopener noreferrer me"
-        title="{{ (.title | default .name) | title }}" class="social-icon-item">
-        <!-- SVG 容器，作为气泡的定位基准 -->
-        <div class="svg-wrapper">
-            {{ partial "svg.html" (merge . (dict "class" "social-svg")) }}
-            <!-- 仅“频道”显示气泡 -->
-            {{- if eq .title "频道" -}}
-            <span class="cdk-badge">免费领CDK</span>
-            {{- end -}}
-        </div>
-        <!-- 标题，在 SVG 正下方 -->
-        <span class="social-icon-title">{{ (.title | default .name) | title }}</span>
-    </a>
-    {{- end }}
+<div class="social-group" style="display:flex;flex-direction:row;align-items:center;gap:24px;flex-wrap:wrap;width:100%;">
+  {{- range site.Params.socialIcons }}
+  <button onclick="window.open('{{ trim .url " " | safeURL }}','_blank')" class="social-btn" type="button">
+    <div class="icon-box">
+      {{ partial "svg.html" (merge . (dict "class" "social-icon")) }}
+      {{- if eq .title "频道" }}<span class="cdk-tag">免费领CDK</span>{{- end }}
+    </div>
+    <span class="btn-text">{{ (.title | default .name) | title }}</span>
+  </button>
+  {{- end }}
 </div>
