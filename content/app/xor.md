@@ -336,7 +336,7 @@ function noMorePrompt() {
 function showMainContent() {
     // 判断是否为iOS设备
     if(isIOSDevice()){
-        loadingTip.innerHTML = '<span style="color: #ff4444; font-weight: bold;">⚠️ 暂不支持 iPad/iPhone 设备！</span>';
+        loadingTip.innerHTML = '<span style="color: #ff4444; font-weight: bold;">暂不支持 iPad/iPhone 设备！<br> 请使用电脑或安卓设备访问。</span>';
         // 永久隐藏弹窗和功能区
         modal.style.display = 'none';
         section1.style.display = 'none';

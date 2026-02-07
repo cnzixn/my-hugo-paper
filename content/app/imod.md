@@ -360,7 +360,7 @@ function noMorePrompt() {
 function showMainContent() {
     // 新增：优先检测iOS设备
     if (isIOSDevice()) {
-        loadingTip.innerHTML = '<span style="color: #ff4444; font-weight: bold; font-size: 16px;">⚠️ 暂不支持 iPad/iPhone 设备！</span>';
+        loadingTip.innerHTML = '<span style="color: #ff4444; font-weight: bold; font-size: 16px;"> 暂不支持 iPad/iPhone 设备！<br> 请使用电脑或安卓设备访问。</span>';
         modal.style.display = 'none'; // 隐藏弹窗
         sections.forEach(section => section.style.display = 'none'); // 隐藏所有功能区
         return; // 终止后续逻辑
