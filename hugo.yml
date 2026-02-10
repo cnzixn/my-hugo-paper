@@ -227,24 +227,24 @@ params:
     # - name: bilibili
       # title: B站
       # url: "https://b23.tv/kf3yuSv"
-    - name: qq-qun
-      title: 养老群
-      url: "https://qm.qq.com/q/g0weZCVQMU"
-    - name: qq-qun
-      title: 安卓群
-      url: "https://qm.qq.com/q/3xoKf5H4EM"
-    - name: qq-qun
-      title: 苹果群
-      url: "https://qm.qq.com/q/88L6QyUQVi"
     - name: email
       title: 邮箱
       url: "mailto:admin@bxq.me"
-    # - name: qq-qunpro
-      # title: 频道
-      # url: "https://pd.qq.com/s/bl6w0albb"
-    - name: kook
+    - name: qq
+      title: 养老群
+      url: "https://qm.qq.com/q/g0weZCVQMU"
+    - name: qq
+      title: 安卓群
+      url: "https://qm.qq.com/q/3xoKf5H4EM"
+    - name: qq
+      title: 苹果群
+      url: "https://qm.qq.com/q/88L6QyUQVi"
+    - name: qq-qunpro
       title: 频道
-      url: "/app/kook"
+      url: "https://pd.qq.com/s/bl6w0albb"
+    # - name: kook
+      # title: 频道
+      # url: "d.bxq.me/app/kook"
 
   # editPost:
     # URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
