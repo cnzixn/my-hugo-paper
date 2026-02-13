@@ -2,7 +2,7 @@
 title: "B.M.小卡片2"
 layout: "aapp"
 searchHidden: true
-hideTitlt: true
+appHidden: true
 weight: 250000
 summary: "一组教学小卡片，教你如何使用Shizuku。"
 ---

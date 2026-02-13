@@ -1,13 +1,13 @@
 ---
-title: "B.M.小卡片1"
+title: "B.M.小卡片"
 layout: "aapp"
 searchHidden: true
-hideTitlt: true
+appHidden: false
 weight: 250000
 summary: "一组教学小卡片，教你如何安装模组。"
 ---
 
-<h1>B.M.小卡片1</h1>
+<h1>B.M.小卡片</h1>
 
 <!-- 进度条容器 -->
 <div class="progress-container">
