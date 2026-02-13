@@ -2,7 +2,7 @@
 title: '框架 - 一月更新'
 date: 2025-12-30
 author: 'Bny'
-draft: false
+draft: true
 summary: '框架BM26.01.01版本更新，请注意查收！'
 tags:
 - '公告'
@@ -11,7 +11,7 @@ aliases:
 - 'new'
 comments: false
 weight: -8
-url: '/p/2/'
+url: '/p/3/'
 ---
 
 ### 文件下载

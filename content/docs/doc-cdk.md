@@ -3,12 +3,13 @@ title: '框架 - CDK系统'
 date: 2025-12-28
 author: 'Bny'
 summary: '此文章详细介绍兔人框架的 CDK 系统。'
+draft: true
 tags:
 - '资料'
 aliases:
 - 'cdk'
 comments: false
-url: '/p/14/'
+url: '/p/16/'
 ---
 
 <!-- ### 〇、什么是框架？ -->
