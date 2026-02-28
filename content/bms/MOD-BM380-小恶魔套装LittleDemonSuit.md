@@ -7,7 +7,7 @@ tags:
 - '装备'
 aliases:
 - 'BM380'
-url: '/p/729/'
+url: '/p/730/'
 ---
 
 > 本文介绍了模组 **小恶魔套装LittleDemonSuit** 的功能与特点。

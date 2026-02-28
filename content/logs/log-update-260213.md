@@ -1,8 +1,8 @@
 ---
 title: '框架 - 二月更新'
-date: 2026-02-13T07:00:00+08:00
+date: 2026-02-13 07:00:00+08:00
 author: 'Bny'
-draft: false
+draft: true
 summary: '框架BM26.02.13版本更新，请注意查收！'
 tags:
 - '公告'
@@ -11,7 +11,7 @@ aliases:
 - 'new'
 comments: false
 weight: -8
-url: '/p/2/'
+url: '/p/3/'
 ---
 
 ### 文件下载
