@@ -65,7 +65,6 @@
   >
 </button>
 
-
           <span class="mod-name">
             {{ $id }}
             {{ $name := index (where $itemData "name" "!=" nil) 0 "name" | default "未知" }}
@@ -207,7 +206,7 @@
 }
 
 .mod-name {
-  font-size: 0.6rem;
+  font-size: 1.1rem; /* 👈 桌面端文字放大 */
   font-weight: 500;
   white-space: nowrap;
   overflow-x: auto;
@@ -232,12 +231,14 @@
   gap: 0.5rem;
   flex-shrink: 0;
 }
+
+/* 👈 桌面端按钮样式修复 */
 .action-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
+  width: 40px; /* 👈 桌面端按钮放大 */
+  height: 40px;
   text-decoration: none;
   transition: all 0.2s ease;
   border: none;
@@ -245,7 +246,7 @@
   padding: 0;
   cursor: pointer;
   border-radius: 4px;
-  flex-shrink: 0; 
+  flex-shrink: 0;
 }
 
 .action-btn img {
@@ -253,7 +254,7 @@
   height: 100%;
   border: 1px solid var(--border);
   border-radius: 3px;
-  object-fit: cover;     /* 保证填满，不变形 */
+  object-fit: contain; /* 👈 防止图片拉伸 */
   display: block;
 }
 
@@ -275,7 +276,6 @@
   filter: grayscale(0%);
   border-color: var(--primary);
 }
-
 
 /* 移动端优化 */
 @media (max-width: 480px) {
@@ -311,7 +311,13 @@
   }
   
   .mod-name {
-    font-size: 0.875rem;
+    font-size: 0.875rem; /* 手机端保持原大小 */
+  }
+  
+  /* 手机端按钮恢复原大小 */
+  .action-btn {
+      width: 32px;
+      height: 32px;
   }
 }
 </style>
