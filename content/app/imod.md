@@ -253,18 +253,18 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
   <h1 style="text-align: center; color: var(--primary); margin-bottom: 30px;">B.M.</h1>
   <div class="form-group">
     <label for="loginUid" style="display: block; margin-bottom: 8px; color: var(--content); font-weight: bold;">QQ 号</label>
-    <input type="text" id="loginUid" name="loginUid" placeholder="请输入 QQ 号" required style="width: 100%; padding: 12px; border: 1px solid var(--border); border-radius: var(--radius); font-size: 16px;">
+    <input type="text" id="loginUid" name="loginUid" placeholder="请输入 QQ 号" required style="width: 100%; padding: 12px; border: 1px solid var(--border); border-radius: var(--radius); font-size: 16px; height: 44px; box-sizing: border-box;">
   </div>
   <div class="form-group">
     <label for="loginCode" style="display: block; margin-bottom: 8px; color: var(--content); font-weight: bold;">验证码</label>
     <div style="display: flex; gap: 10px; align-items: center;">
-      <input type="text" id="loginCode" name="loginCode" placeholder="请输入验证码" required style="flex: 1; padding: 12px; border: 1px solid var(--border); border-radius: var(--radius); font-size: 16px; height: 44px; box-sizing: border-box;">
-      <button type="button" id="sendCodeBtn" style="padding: 0 20px; background-color: var(--secondary); color: var(--theme); border: none; border-radius: var(--radius); cursor: pointer; font-size: 14px; white-space: nowrap; height: 44px; display: flex; align-items: center; justify-content: center;">发送</button>
+      <input type="text" id="loginCode" name="loginCode" placeholder="请输入验证码" required style="flex: 6; padding: 12px; border: 1px solid var(--border); border-radius: var(--radius); font-size: 16px; height: 44px; box-sizing: border-box; min-width: 0;">
+      <button type="button" id="sendCodeBtn" style="flex: 4; padding: 0 20px; background-color: var(--secondary); color: var(--theme); border: none; border-radius: var(--radius); cursor: pointer; font-size: 14px; white-space: nowrap; height: 44px; display: flex; align-items: center; justify-content: center;">发送</button>
     </div>
   </div>
-  <div style="margin-bottom: 20px; position: relative;">
-    <div id="loginError" class="error" style="padding: 12px; border-radius: var(--radius); text-align: center; font-size: 14px; height: 48px; line-height: 24px; display: flex; align-items: center; justify-content: center; box-sizing: border-box; background-color: rgba(255, 255, 255, 0.95); position: absolute; top: 0; left: 0; width: 100%; z-index: 10; display: none;"></div>
-    <button id="loginBtn" style="width: 100%; padding: 12px; background-color: #52c41a; color: white; border: none; border-radius: var(--radius); cursor: pointer; font-size: 16px; font-weight: bold;">登录</button>
+  <div style="margin-bottom: 20px; position: relative; height: 48px;">
+    <div id="loginError" class="error" style="padding: 12px; border-radius: var(--radius); text-align: center; font-size: 16px; font-weight: bold; height: 48px; line-height: 24px; display: flex; align-items: center; justify-content: center; box-sizing: border-box; background-color: #fff2f0; color: #ff4d4f; border: 1px solid #ffccc7; position: absolute; top: 0; left: 0; width: 100%; z-index: 10; display: none;"></div>
+    <button id="loginBtn" style="width: 100%; padding: 12px; background-color: #52c41a; color: white; border: none; border-radius: var(--radius); cursor: pointer; font-size: 16px; font-weight: bold; height: 48px; box-sizing: border-box;">登录</button>
   </div>
 </div>
 
