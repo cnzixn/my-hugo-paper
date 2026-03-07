@@ -263,7 +263,7 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
     </div>
   </div>
   <div style="margin-bottom: 20px; position: relative; height: 48px;">
-      <button id="loginBtn" style="width: 100%; padding: 12px; background-color: #52c41a; color: white; border: none; border-radius: var(--radius); cursor: pointer; font-size: 16px; font-weight: bold; height: 48px; box-sizing: border-box; position: relative;">登录</button>
+      <button id="loginBtn" style="width: 100%; padding: 12px; background-color: #52c41a; color: white; border: none; border-radius: var(--radius); cursor: pointer; font-size: 16px; font-weight: bold; height: 48px; box-sizing: border-box; position: relative; z-index: 15;">登录</button>
       <div id="loginError" class="error" style="padding: 12px; border-radius: var(--radius); text-align: center; font-size: 16px; font-weight: bold; height: 48px; line-height: 24px; display: flex; align-items: center; justify-content: center; box-sizing: border-box; background-color: #fff2f0; color: #ff4d4f; border: 1px solid #ffccc7; position: absolute; top: 0; left: 0; width: 100%; z-index: 10; display: none;"></div>
   </div>
 
