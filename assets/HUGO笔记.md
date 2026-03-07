@@ -63,9 +63,7 @@ git push -u origin main
 
 本地自用命令(备忘)
 
-cd /sdcard/acode/*paper/
-
-hugo --gc server -D --noBuildLock
+cd /sdcard/acode/*paper/ ; hugo --gc server -D --noBuildLock
 
 
 # 1. 先获取远程更新（不合并）
