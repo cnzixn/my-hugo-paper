@@ -329,7 +329,6 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
 
 <script>
 // 获取核心元素
-// 获取核心元素
 const modal = document.getElementById('tipModal');
 const loadingTip = document.getElementById('loadingTip');
 const sections = [
@@ -400,4 +399,9 @@ window.onload = function() {
         // 隐藏提示弹窗
         const modal = document.getElementById('tipModal');
         if (modal) {
-            modal.style.display = 'none
+            modal.style.display = 'none';
+        }
+    }, 0); 
+};
+
+</script>
