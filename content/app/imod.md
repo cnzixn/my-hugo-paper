@@ -250,7 +250,7 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
 
 <!-- 登录表单 -->
 <div class="section" id="loginSection" style="display: block; max-width: 400px; margin: 0 auto;">
-  <!-- <h1 style="text-align: center; color: var(--primary); margin-bottom: 30px;">B.M.</h1> -->
+  <h1 style="text-align: center; color: var(--primary); margin-bottom: 30px;">升级维护中...</h1>
   <div class="form-group">
     <label for="loginUid" style="display: block; margin: 8px 0; color: var(--content); font-weight: bold;">QQ 号</label>
     <input type="text" id="loginUid" name="loginUid" placeholder="请输入 QQ 号" required style="width: 100%; padding: 12px; border: 1px solid var(--border); border-radius: var(--radius); font-size: 16px; height: 44px; box-sizing: border-box;">

@@ -2,7 +2,7 @@
 title: 'B.M.安装器'
 layout: 'aapp'
 searchHidden: true
-appHidden: false
+appHidden: true
 weight: 250001
 summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
 ---
