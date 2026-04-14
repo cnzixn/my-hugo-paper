@@ -7,33 +7,27 @@ weight: 250001
 summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
 ---
 
-<!-- <!DOCTYPE html> -->
-<!-- <html lang="zh-CN"> -->
-<!-- <head> -->
-<!-- <meta charset="UTF-8" /> -->
-<!-- <meta name="viewport" content="width=device-width,initial-scale=1" /> -->
-<!-- <title>模组安装器（安卓/苹果自动识别）</title> -->
 <style>
   body { 
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "PingFang SC","Hiragino Sans GB","Microsoft YaHei", sans-serif;  
     line-height: 1.6; 
-    color: var(--content); /* 适配文本主色 */
+    color: var(--content);
   }
   h1 { 
     text-align: center; 
     margin-bottom: 16px; 
-    color: var(--primary); /* 标题用主色 */
+    color: var(--primary);
   }
-  .note { color: var(--secondary); } /* 次要文本色 */
+  .note { color: var(--secondary); }
   .section { 
     margin: 20px 0 28px; 
     padding: 20px; 
-    border: 1px solid var(--border); /* 统一边框色 */
-    border-radius: var(--radius); /* 复用全局圆角 */
-    background: var(--entry); /* 卡片背景色 */
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--entry);
   }
   .drop-zone { 
-    border: 2px dashed var(--tertiary); /*  tertiary色做虚线边框 */
+    border: 2px dashed var(--tertiary);
     padding: 20px; 
     text-align: center; 
     margin: 10px 0; 
@@ -41,7 +35,7 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
     border-radius: var(--radius); 
     transition: .2s; 
   }
-  .drop-zone.drag-over { border-color: var(--secondary); } /* 拖拽时用次要色 */
+  .drop-zone.drag-over { border-color: var(--secondary); }
   .section button { 
     border-radius: 10px; 
     padding: 10px; 
@@ -49,34 +43,43 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
     cursor: pointer; 
     display: block; 
     width: 220px; 
-    background-color: var(--secondary); /* 按钮用次要色 */
-    color: var(--theme); /* 按钮文字用主题色（亮模式白/暗模式深灰） */
+    background-color: var(--secondary);
+    color: var(--theme);
     border: 0; 
     font-size: 16px; 
-    transition: .2s; /* 优化过渡效果 */
+    transition: .2s;
+    /* 修复手机焦点不消失 */
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent !important;
   }
   .section button:hover { 
     transform: translateY(-1px); 
-    box-shadow: 0 2px 8px var(--secondary); /* 阴影色与按钮色一致 */
-    opacity: 0.9; /* 增加hover透明度变化 */
+    box-shadow: 0 2px 8px var(--secondary);
+    opacity: 0.9;
+  }
+  /* 强制移除点击后的焦点框 */
+  button:focus, button:active, button:hover {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: transparent !important;
   }
   .file-info, .file-list { 
     margin: 10px 0; 
     padding: 10px; 
     border: 1px solid var(--border); 
     border-radius: var(--radius); 
-    background: var(--theme); /* 用主题色做背景 */
+    background: var(--theme);
   }
   .file-info, .file-list { white-space: nowrap; overflow-x: auto; }
   .file-item { 
     padding: 6px 4px; 
-    border-bottom: 1px solid var(--border); /* 统一分割线 */
+    border-bottom: 1px solid var(--border);
   }
   .file-item:last-child { border-bottom: none; }
   .progress-container { margin: 12px 0; display: none; }
   .progress-bar { 
     height: 6px; 
-    border: 1px solid var(--secondary); /* 进度条边框用次要色 */
+    border: 1px solid var(--secondary);
     border-radius: 6px; 
     overflow: hidden; 
   }
@@ -84,14 +87,14 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
     height: 100%; 
     width: 0%; 
     transition: width 0.3s; 
-    background-color: #4cd964; /* 保留原有成功绿（通用且醒目） */
+    background-color: #4cd964;
   }
   .error { 
-    color: #d00; /* 保留错误红（警示色无需适配） */
+    color: #d00;
     margin: 10px 0; 
     display: none; 
   }
-  small strong { color: var(--primary); } /* 强调文本用主色 */
+  small strong { color: var(--primary); }
   .pill { 
     display:inline-block; 
     padding:2px 8px; 
@@ -99,10 +102,10 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
     border:1px solid var(--border); 
     margin-left:8px; 
     font-size:12px; 
-    color: var(--secondary); /* 标签用次要色 */
+    color: var(--secondary);
   }
-  .muted { color: var(--secondary); } /* 弱化文本用次要色 */
-    /* 自定义 Safari 提示弹窗样式 */
+  .muted { color: var(--secondary); }
+
   .safari-alert {
     position: fixed;
     top: 50%;
@@ -117,7 +120,7 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
     box-shadow: 0 4px 20px rgba(0,0,0,0.15);
     z-index: 9999;
     text-align: center;
-    display: none; /* 默认隐藏 */
+    display: none;
   }
   .safari-alert h3 {
     color: #d00;
@@ -143,7 +146,6 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
     opacity: 0.9;
     transform: translateY(-1px);
   }
-  /* 遮罩层 */
   .alert-overlay {
     position: fixed;
     top: 0;
@@ -152,20 +154,8 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
     height: 100%;
     background: rgba(0,0,0,0.3);
     z-index: 9998;
-    display: none; /* 默认隐藏 */
+    display: none;
   }
-  /* 遮罩层 */
-  .alert-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.3);
-    z-index: 9998;
-    display: none; /* 默认隐藏 */
-  }
-  /* 遮罩层样式 */
   .modal-mask {
       position: fixed;
       top: 0;
@@ -178,7 +168,6 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
       align-items: center;
       z-index: 9999;
   }
-  /* 弹窗内容样式 */
   .modal-content {
       background: #fff;
       padding: 25px;
@@ -200,7 +189,6 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
       border: none;
       border-radius: 4px;
       cursor: pointer;
-      // margin-left: 10px;
   }
   .close-btn {
       background: #e9ecef;
@@ -212,23 +200,12 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
   }
 </style>
 
-<!-- </head> -->
-<!-- <body> -->
-
-<!-- 更新框架时需要将 md5 填到 imod.js -->
-
 <h1>B.M.安装器</h1>
-<!-- <span class="pill">自动识别 APK / IPA</span> -->
 
-<!-- 等待提示：加载中显示 -->
 <div id="loadingTip" style="text-align: center; padding: 30px; font-size: 16px; color: #666;">
   正在初始化工具，请稍候...
 </div>
 
-
-
-
-<!-- 弹窗容器 -->
 <div class="modal-mask" id="tipModal" style="display: none;">
   <div class="modal-content">
   <small class="note">
@@ -241,14 +218,31 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
   </small>
 
   <div class="modal-buttons">
-      <!-- <button class="modal-btn close-btn" onclick="closeModal()">关闭</button> -->
       <button class="modal-btn no-prompt-btn" onclick="noMorePrompt()">我知道了</button>
   </div>
   </div>
 </div>
 
+<!-- 登录框默认隐藏：display: none -->
+<div class="section" id="loginSection" style="display: none; max-width: 400px; margin: 0 auto;">
+  <h3 style="text-align: center; color: var(--primary); margin-bottom: 30px;">B.M.验证</h3>
+  <div class="form-group">
+    <!-- <label for="loginUid" style="display: block; margin: 8px 0; color: var(--content); font-weight: bold;">QQ 号</label> -->
+    <input type="text" id="loginUid" name="loginUid" placeholder="请输入 QQ 号（用于接收验证码邮件）" required style="width: 100%; padding: 12px; border: 1px solid var(--border); border-radius: var(--radius); font-size: 16px; height: 44px; box-sizing: border-box;">
+  </div>
+  <div class="form-group">
+    <!-- <label for="loginCode" style="display: block; margin: 8px 0; color: var(--content); font-weight: bold;">验证码</label> -->
+    <div style="display: flex; gap: 10px; align-items: center;">
+      <input type="text" id="loginCode" name="loginCode" placeholder="请输入 6 位验证码" required style="flex: 6; padding: 12px; border: 1px solid var(--border); border-radius: var(--radius); font-size: 16px; height: 44px; box-sizing: border-box; min-width: 0;">
+      <button type="button" id="sendCodeBtn" style="flex: 4; padding: 0 20px; background-color: var(--secondary); color: var(--theme); border: none; border-radius: var(--radius); cursor: pointer; font-size: 14px; white-space: nowrap; height: 44px; display: flex; align-items: center; justify-content: center; outline: none !important;">发送验证码</button>
+    </div>
+  </div>
+  <div style="margin-bottom: 20px; position: relative; height: 48px;">
+    <button type="button" id="loginBtn" style="position: absolute; left:0; top:0; width:100%; height:48px; padding: 12px; background-color: var(--secondary); color: var(--theme); border: none; border-radius: var(--radius); cursor: pointer; font-size: 16px; font-weight: bold; box-sizing: border-box; z-index:1; outline: none !important; -webkit-tap-highlight-color: transparent !important;">登录</button>
+    <div id="loginError" class="error" style="position: absolute; left:0; top:0; width:100%; height:48px; padding: 12px; border-radius: var(--radius); font-size: 16px; font-weight: bold; display: flex; align-items: center; justify-content: center; box-sizing: border-box; background-color: #fff2f0; color: #ff4d4f; border: 1px solid #ffccc7; z-index:2; display: none;"></div>
+  </div>
+</div>
 
-<!-- 所有 section 初始隐藏 -->
 <div class="section" id="section1" style="display: none;">
   <h2>1. 选择安装包<span class="pill">自动识别 APK / IPA</span></h2>
   <div id="pkgDropZone" class="drop-zone">
@@ -296,19 +290,7 @@ summary: '支持安装BM框架/BM模组/BM补丁/自制模组。'
 </div>
 </div>
 
-<!-- 必需库 -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script> -->
-<!-- 引入 SparkMD5 库 -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/spark-md5/3.0.2/spark-md5.min.js"></script> -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script> -->
-
-<!-- <script defer src="/js/bv.js"></script> -->
-<!-- <script src="/js/klfa.js"></script> -->
-<!-- <script src="/js/imod.js"></script> -->
-
 <script>
-// 获取核心元素
-// 获取核心元素
 const modal = document.getElementById('tipModal');
 const loadingTip = document.getElementById('loadingTip');
 const sections = [
@@ -317,12 +299,10 @@ const sections = [
   document.getElementById('section3')
 ];
 
-// 新增：检测是否为 iPad/iPhone 设备
 function isIOSDevice() {
   return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 }
 
-// 检查Cookie，判断是否显示弹窗
 function checkPromptCookie() {
     const cookies = document.cookie.split(';');
     let hasHideCookie = false;
@@ -333,7 +313,6 @@ function checkPromptCookie() {
             break;
         }
     }
-    // 显示弹窗或直接展示section
     if (hasHideCookie) {
         modal.style.display = 'none';
         showMainContent();
@@ -343,12 +322,10 @@ function checkPromptCookie() {
     }
 }
 
-// 关闭弹窗
 function closeModal() {
     modal.style.display = 'none';
 }
 
-// 不再提示，设置Cookie（有效期1天）
 function noMorePrompt() {
     const date = new Date();
     date.setTime(date.getTime() + 1 * 24 * 60 * 60 * 1000);
@@ -356,26 +333,23 @@ function noMorePrompt() {
     closeModal();
 }
 
-// 显示主内容：隐藏加载提示，显示所有section
-function showMainContent() {
-    // 新增：优先检测iOS设备
-    if (isIOSDevice()) {
-        loadingTip.innerHTML = '<span style="color: #ff4444; font-weight: bold; font-size: 16px;"> 暂不支持 iPad/iPhone 设备！<br> 请使用电脑或安卓设备访问。</span>';
-        modal.style.display = 'none'; // 隐藏弹窗
-        sections.forEach(section => section.style.display = 'none'); // 隐藏所有功能区
-        return; // 终止后续逻辑
-    }
-
-    loadingTip.style.display = 'none';
-    sections.forEach(section => {
-        section.style.display = 'block'; // 可根据需要改为 flex 等
-    });
-}
-
-// 页面加载完成后执行初始化
 window.onload = function() {
-    // 确保弹窗DOM加载完成后再检查Cookie
-    setTimeout(checkPromptCookie, 0); 
-};
-
+    setTimeout(() => {
+        if (loadingTip) {
+            loadingTip.style.display = 'none';
+        }
+        
+        if (isIOSDevice()) {
+            if (loadingTip) {
+                loadingTip.innerHTML = '<span style="color: #ff4444; font-weight: bold; font-size: 16px;"> 暂不支持 iPad/iPhone 设备！<br> 请使用电脑或安卓设备访问。</span>';
+                loadingTip.style.display = 'block';
+            }
+            return;
+        }
+        
+        if (modal) {
+            modal.style.display = 'none';
+        }
+    }, 0); 
+}; 
 </script>
