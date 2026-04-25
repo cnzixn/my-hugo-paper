@@ -1,7 +1,7 @@
 ---
 title: 'B.M.解密器'
 layout: 'aapp'
-draft: false
+draft: true
 searchHidden: true
 appHidden: false
 weight: 250002

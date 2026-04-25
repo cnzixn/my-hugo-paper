@@ -41,13 +41,13 @@ summary: "一组教学小卡片，教你如何安装模组。"
   <h2>卡片<span class="card-number">2</span>：网盘&文件</h2>
   <div class="task-content">
 
-　经常有反馈文件失效的，还有“在线解压”交智商税的，所以网盘分享：
+　经常有玩家反馈文件失效，还有“在线解压”交智商税的，所以网盘分享：
 
 　`.XZ` 是 ZIP 压缩文件(仅改名)，可直接用 _[MT管理器](https://mt2.cn)_ 打开。
 
 　`.XOR` 是加密文件，通过 _[B.M.解密器](/app/xor)_ 可以还原为 ZIP 压缩文件。
 
-<small>Tip：夸克网盘如果需要提取码，请更新一下版本。</small>
+　<small>Tip：夸克网盘如果需要提取码，请更新一下版本。</small>
 
   </div>
   <div class="task-nav">
@@ -59,7 +59,7 @@ summary: "一组教学小卡片，教你如何安装模组。"
 <div class="task-card" data-task>
   <h2>卡片<span class="card-number">2</span>：游戏安装包</h2>
   <div class="task-content">
-方法一：购买官方版，然后提取安装包：
+🛍官方版，付费支持正版：
   <div class="btn-group">
    <button class="btn" onclick="window.open('https://apps.apple.com/us/app/dont-starve-shipwrecked/id1147297267?l=zh', '_blank')">购买苹果版</button>
    <button class="btn" onclick="window.open('https://play.google.com/store/apps/details?id=com.kleientertainment.doNotStarveShipwrecked', '_blank')">购买安卓版</button>
@@ -75,10 +75,10 @@ summary: "一组教学小卡片，教你如何安装模组。"
    <!-- <button class="btn" onclick="window.open('https://m.ddooo.com/softdown/151548.htm', '_blank')">安卓版详情</button> -->
   <!-- </div> -->
 
-方法二：下载试玩版，仅用于测试模组：
+🔥试玩版，适用于测试模组：
   {{< pan 游戏 >}}  
 
-  <small>免责：试玩版来源于 _[ipa.store](https://ipa.store/1299.html)_ 、_[ddooo.com](https://m.ddooo.com/softdown/151548.htm)_ 等网站。此游戏在国内暂时未上架，网盘分享仅为了方便玩家体验游戏内容。</small>  
+  <small>免责：试玩版来源于 _[ipa.store](https://ipa.store/1299.html)_ 、_[ddooo.com](https://m.ddooo.com/softdown/151548.htm)_ 等网站。此游戏国内未上架，网盘分享仅供试玩。</small>  
 
 
   </div>
@@ -92,7 +92,7 @@ summary: "一组教学小卡片，教你如何安装模组。"
   <h2>卡片<span class="card-number">3</span>：兔人框架</h2>
   <div class="task-content">
 
-　兔人框架 `BM26.02.13.ZIP` ，已适配官方版本 _[苹果1.84](https://apps.apple.com/us/app/dont-starve-shipwrecked/id1147297267?l=zh)_ 和 _[安卓1.33](https://play.google.com/store/apps/details?id=com.kleientertainment.doNotStarveShipwrecked)_ 。
+　兔人框架 `BM26.05.01.ZIP` ，已适配官方版本 _[苹果1.84](https://apps.apple.com/us/app/dont-starve-shipwrecked/id1147297267?l=zh)_ 和 _[安卓1.33.5](https://play.google.com/store/apps/details?id=com.kleientertainment.doNotStarveShipwrecked)_ 。
 
   {{< pan "框架" >}}
 
