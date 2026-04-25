@@ -5,6 +5,10 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 */
 
 
+
+
+
+
 /* 图片添加边框（全局生效） */
 .post-content img {
   /* 边框样式：浅灰色细边框，与白色图片形成区分 */
@@ -23,10 +27,6 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 .post-content pre {
   border-radius: var(--radius); /* 使用主题默认圆角变量，保持风格统一 */
   overflow: hidden; /* 避免内部内容超出圆角范围 */
-}
-
-
-
 }
 
 
