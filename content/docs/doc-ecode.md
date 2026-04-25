@@ -8,7 +8,7 @@ tags:
 aliases:
 - 'ecode'
 comments: false
-url: '/p/18/'
+url: '/p/20/'
 ---
 
 ![图片](/img/Image_1770937507572.webp)

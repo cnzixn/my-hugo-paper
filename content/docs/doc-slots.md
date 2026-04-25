@@ -8,7 +8,7 @@ tags:
 aliases:
 - 'slots'
 comments: false
-url: '/p/824/'
+url: '/p/826/'
 ---
 
 

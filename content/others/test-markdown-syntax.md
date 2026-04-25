@@ -14,7 +14,7 @@ description: 'Sample article showcasing basic Markdown syntax and formatting for
   HTML elements.'
 aliases:
 - 'test'
-url: '/p/825/'
+url: '/p/827/'
 ---
 This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
 

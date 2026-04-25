@@ -7,7 +7,7 @@ tags:
 - '装备'
 aliases:
 - 'BM383'
-url: '/p/819/'
+url: '/p/821/'
 ---
 
 > 本文介绍了模组 **鱼的故事FishStories** 的功能与特点。
