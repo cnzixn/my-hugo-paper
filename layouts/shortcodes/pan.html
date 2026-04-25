@@ -3,82 +3,47 @@
 {{ with index site.Data.pan $name }}
 
   <div class="pan-actions">
-    {{/* 1. 文件大小：已注释（保留代码） */}}
-    {{/* <div class="pan-text-group">
-      {{ range . }}
-        {{ if and .size (ne .size "0B") }}
-          <strong>文件大小: </strong> {{ .size }}
-        {{ end }}
-      {{ end }}
-    </div> */}}
-
-    {{/* 2. 网盘链接+按钮组 */}}
+    {{/* 网盘链接+按钮组 */}}
     <div class="pan-text-group">
-      <strong>网盘: </strong>
+      <strong>链接：</strong>
 
       {{/* 按钮组容器 */}}
       <div class="pan-btn-group">
 
-
-
-
-        {{/* 百度网盘按钮（对应 url1） */}}
+        {{/* 百度网盘按钮（图标+文字） */}}
         {{ $baiduUrl := index (where . "url1" "ne" nil) 0 "url1" }}
         {{ if $baiduUrl }}
           <button onclick="window.open('{{ $baiduUrl }}&t={{ $currentDate }}', '_blank')" class="action-btn baidu" title="百度网盘下载">
             <img src="/img/pan_baidu.webp" alt="百度网盘">
+            <span>百度网盘</span>
           </button>
         {{ else }}
           <button class="action-btn baidu" title="暂无百度网盘下载" disabled>
             <img src="/img/pan_baidu.webp" alt="百度网盘">
+            <span>百度网盘</span>
           </button>
         {{ end }}
 
-
-
-
-        <!-- {{/* 迅雷网盘按钮（对应 url2） */}} -->
-        <!-- {{ $xunleiUrl := index (where . "url2" "ne" nil) 0 "url2" }} -->
-        <!-- {{ if $xunleiUrl }} -->
-          <!-- <button onclick="window.open('{{ $xunleiUrl }}&t={{ $currentDate }}', '_blank')" class="action-btn xunlei" title="迅雷网盘下载"> -->
-            <!-- <img src="/img/pan_xunlei.webp" alt="迅雷网盘"> -->
-          <!-- </button> -->
-        <!-- {{ else }} -->
-          <!-- <button class="action-btn xunlei" title="暂无迅雷网盘下载" disabled> -->
-            <!-- <img src="/img/pan_xunlei.webp" alt="迅雷网盘"> -->
-          <!-- </button> -->
-        <!-- {{ end }} -->
-
-
-
-
-        {{/* 夸克网盘按钮（对应 url3） */}}
+        {{/* 夸克网盘按钮（图标+文字） */}}
         {{ $quarkUrl := index (where . "url3" "ne" nil) 0 "url3" }}
         {{ if $quarkUrl }}
           <button onclick="window.open('{{ $quarkUrl }}&t={{ $currentDate }}', '_blank')" class="action-btn quark" title="夸克网盘下载">
             <img src="/img/pan_quark.webp" alt="夸克网盘">
+            <span>夸克网盘</span>
           </button>
         {{ else }}
           <button class="action-btn quark" title="暂无夸克网盘下载" disabled>
             <img src="/img/pan_quark.webp" alt="夸克网盘">
+            <span>夸克网盘</span>
           </button>
         {{ end }}
       </div>
 
-
-
-
-      <small>👈🏻点击图标下载文件</small>
-      
     </div>
 
-    {{/* 3. 注意：支持换行显示 */}}
+    {{/* 底部注意提醒 */}}
     <div class="pan-text-group pan-text-remind">
-      <small><small>
-        <strong style="color:red !important;">注意: </strong>
-        <span>可能有部分文件失效，请换另一个网盘试试。</span>
-        <br><span>百度网盘分享 .XZ 文件，夸克网盘分享 .XOR 文件。</span>
-      </small></small>
+        <span><strong>注意: </strong>部分文件可能失效，去另一网盘看看。</span>
     </div>
   </div>
 {{ else }}
@@ -88,120 +53,119 @@
 {{ end }}
 
 
-  <style>
-    /* 网盘容器：统一外层边距与内边距 */
-    .pan-actions {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: flex-start; /* 顶部对齐，适配换行文本 */
-      gap: 0.8rem; /* 统一文本组之间的间距 */
-      background: var(--entry);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 1rem; /* 统一容器内边距 */
-      margin: 1.5rem 0; /* 统一容器外间距 */
-    }
 
-    /* 文本组：统一内部对齐与间距 */
-    .pan-text-group {
-      display: flex;
-      align-items: flex-start; /* 顶部对齐，避免换行后文字错位 */
-      gap: 0.5rem; /* 统一文本与后续元素的间距 */
-      width: 100%; /* 强制占满一行 */
-      line-height: 1.6; /* 增加行高，提升换行后可读性 */
-    }
 
-    /* 注意文本组：支持换行，文字独立占行 */
-    .pan-text-remind {
-      gap: 0.3rem;
-    }
-    /* 提醒文本容器：允许换行，宽度自适应 */
-    .pan-text-remind span {
-      flex: 1; /* 占满剩余宽度，确保长文本自动换行 */
-      white-space: normal; /* 允许自动换行 */
-    }
 
-    /* 文本样式：统一权重与颜色 */
-    .pan-actions strong {
-      color: var(--primary);
-      font-weight: 600; /* 稍加重以突出标题 */
-      padding-top: 0.1rem; /* 微调对齐，与换行文本基线一致 */
-    }
+<style>
+/* 外层容器 */
+.pan-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  margin: 0.5rem 0;
+}
 
-    /* 按钮组：统一按钮间距，移除多余边距 */
-    .pan-btn-group {
-      display: flex;
-      gap: 0.6rem; /* 统一按钮之间的间距 */
-      margin: 0; /* 移除多余上间距 */
-    }
+/* 行水平居中 */
+.pan-text-group {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+  width: 100%;
+  line-height: 1;
+  margin: 0;
+}
 
-    /* 按钮基础样式：精简冗余属性 */
-    .action-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 32px;
-      height: 32px;
-      text-decoration: none;
-      transition: all 0.2s ease;
-      border: none;
-      background: transparent;
-      padding: 0;
-      cursor: pointer;
-      border-radius: 4px;
-    }
+/* 提示文字 */
+.pan-text-remind {
+  gap: 0.3rem;
+  font-size: 0.8rem;
+}
+.pan-text-remind span {
+  white-space: normal;
+}
 
-    /* 按钮图片：统一边框与尺寸 */
-    .action-btn img {
-      width: 32px;
-      height: 32px;
-      border: 1px solid var(--border);
-      border-radius: 3px;
-      object-fit: cover;
-    }
+.pan-actions strong {
+  color: var(--primary);
+  font-weight: 600;
+  line-height: 1;
+  margin: 0;
+}
 
-    /* 禁用按钮样式：保持统一透明度 */
-    .action-btn:disabled {
-      pointer-events: none;
-      opacity: 0.5; /* 统一禁用状态透明度 */
-    }
+/* 按钮组 */
+.pan-btn-group {
+  display: flex;
+  gap: 0.7rem;
+  margin: 0;
+}
 
-    .action-btn:disabled img {
-      filter: grayscale(100%);
-    }
+/* 核心按钮：极致紧凑 */
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1rem;
+  border: 1px solid var(--border);
+  background: transparent;
+  margin: 0.5rem;
+  height: auto;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
 
-    /* 按钮交互：统一缩放与边框效果 */
-    .action-btn:hover {
-      opacity: 0.9;
-      transform: scale(1.08);
-    }
+/* 图标 */
+.action-btn img {
+  width: 20px;
+  height: 20px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+}
 
-    .action-btn:hover img {
-      filter: grayscale(0%);
-      border-color: var(--primary);
-    }
+/* 文字 */
+.action-btn span {
+  color: var(--primary);
+  line-height: 1;
+  padding: 0;
+  margin: 0.5rem 0;
+}
 
-    /* 移动端适配：按比例缩小间距与尺寸 */
-    @media (max-width: 480px) {
-      .pan-actions {
-        padding: 0.8rem; /* 按比例缩小内边距 */
-        gap: 0.6rem; /* 缩小文本组间距 */
-        margin: 1rem 0; /* 缩小外间距 */
-      }
+/* 禁用 */
+.action-btn:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.action-btn:disabled img {
+  filter: grayscale(100%);
+}
 
-      .pan-text-group {
-        gap: 0.4rem; /* 缩小文本内部间距 */
-        line-height: 1.5; /* 适配移动端行高 */
-      }
+/* hover */
+.action-btn:hover {
+  border-color: var(--primary);
+  background: rgba(0,0,0,0.02);
+}
 
-      .pan-btn-group {
-        gap: 0.4rem; /* 缩小按钮间距 */
-      }
-
-      .action-btn,
-      .action-btn img {
-        width: 28px;
-        height: 28px; /* 按钮尺寸适配移动端 */
-      }
-    }
-  </style>
+/* 移动端 */
+@media (max-width: 480px) {
+  .pan-actions {
+    padding: 0.5rem 0.8rem;
+    gap: 0.4rem;
+    margin: 0.5rem 0;
+  }
+  .action-btn {
+    padding: 0 4px;
+    font-size: 0.88rem;
+  }
+  .action-btn img {
+    width: 18px;
+    height: 18px;
+  }
+}
+</style>

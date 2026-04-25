@@ -130,7 +130,7 @@ summary: "一组教学小卡片，教你如何安装模组。"
   <div class="task-content">
   根据需要，选择模组安装工具：
   <div class="btn-group">
-    <button class="btn" onclick="window.open('/app/imod', '_blank')">通用版</button>
+    <button class="btn" onclick="window.open('https://c.bxq.me/#imod', '_blank')">通用版</button>
     <button class="btn" onclick="window.open('https://mt2.cn', '_blank')">安卓版</button>
   </div>
 

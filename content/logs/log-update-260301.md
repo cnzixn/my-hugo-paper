@@ -2,16 +2,15 @@
 title: '框架 - 三月更新'
 date: 2026-02-28 07:00:00+08:00
 author: 'Bny'
-draft: false
+draft: true
 summary: '框架BM.260301版本更新，请注意查收！'
 tags:
 - '公告'
 - '框架'
 aliases:
-- 'new'
+- 'BM26.03.01'
 comments: false
 weight: -8
-url: '/p/2/'
 ---
 
 ### 文件下载

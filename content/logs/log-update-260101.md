@@ -8,10 +8,9 @@ tags:
 - '公告'
 - '框架'
 aliases:
-- 'new'
+- 'BM26.01.01'
 comments: false
 weight: -8
-url: '/p/4/'
 ---
 
 ### 文件下载
