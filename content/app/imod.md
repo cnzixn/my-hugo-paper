@@ -1,6 +1,7 @@
 ---
 title: 'B.M.安装器'
 layout: 'aapp'
+draft: true
 searchHidden: true
 appHidden: true
 weight: 250001
