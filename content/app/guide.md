@@ -126,32 +126,39 @@ summary: "一组教学小卡片，教你如何安装模组。"
 
 
 <div class="task-card" data-task>
-  <h2>卡片<span class="card-number">5</span>：安装框架/模组</h2>
-  <div class="task-content">
-  根据需要，选择模组安装工具：
-  <div class="btn-group">
-    <button class="btn" onclick="window.open('https://c.bxq.me/#imod', '_blank')">通用版</button>
-    <button class="btn" onclick="window.open('https://mt2.cn', '_blank')">安卓版</button>
-  </div>
+<h2>卡片<span class="card-number">5</span>：安装框架/模组</h2>
+<div class="task-content">
 
-  视频演示(上下对应)：  
-  <div class="btn-group">
-    <button class="btn" onclick="installMethod('auto')">视频一</button>
-    <button class="btn" onclick="installMethod('manual')">视频二</button>
-  </div>
-  <div id="install-guide-auto" style="margin-top:15px; display:none;">
-    {{< video id="install-guide-auto-video" src="/img/lv_0_20250901210841.mp4" poster="/img/lv_0_20250901210841.webp" crop="true" cropHeight="85%" >}}  
-  </div>
-  <div id="install-guide-manual" style="margin-top:15px; display:none;">
-    {{< video id="install-guide-manual-video" src="/img/lv_0_20250831182656.mp4" poster="/img/lv_0_20250831182656.webp" crop="true" cropHeight="75%" >}}  
-  </div>
+<div>
+方法一，苹果&安卓
+<div class="btn-group">
+  <button class="btn" onclick="window.open('https://c.bxq.me/#imod', '_blank')">imod工具</button>
+  <button class="btn" onclick="installMethod('auto')">查看视频</button>
+</div>
+</div>
 
-  <small>Tip：拖动进度条到结尾，可直接退出播放</small>
-  </div>
-  <div class="task-nav">
-    <button class="btn prev-btn">上一个</button>
-    <button class="btn next-btn">下一个</button>
-  </div>
+<div style="margin-top:10px;">
+方法二，仅限安卓使用
+<div class="btn-group">
+  <button class="btn" onclick="window.open('https://mt2.cn', '_blank')">MT管理器</button>
+  <button class="btn" onclick="installMethod('manual')">查看视频</button>
+</div>
+</div>
+
+<div id="install-guide-auto" style="margin-top:15px; display:none;">
+{{< video id="install-guide-auto-video" src="/img/lv_0_20250901210841.mp4" poster="/img/lv_0_20250901210841.webp" crop="true" cropHeight="85%" >}}
+</div>
+<div id="install-guide-manual" style="margin-top:15px; display:none;">
+{{< video id="install-guide-manual-video" src="/img/lv_0_20250831182656.mp4" poster="/img/lv_0_20250831182656.webp" crop="true" cropHeight="75%" >}}
+</div>
+
+<small>Tip1：拖动进度条到结尾，可直接退出播放<br></small>
+<small>Tip2：框架需要用 imod 安装，否则验证不通过。</small>
+</div>
+<div class="task-nav">
+<button class="btn prev-btn">上一个</button>
+<button class="btn next-btn">下一个</button>
+</div>
 </div>
 
 <div class="task-card" data-task>
