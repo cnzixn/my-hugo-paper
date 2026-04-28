@@ -41,7 +41,7 @@ summary: "一组教学小卡片，教你如何安装模组。"
   <h2>卡片<span class="card-number">2</span>：网盘&文件</h2>
   <div class="task-content">
 
-　经常有玩家反馈文件失效，还有“在线解压”交智商税的，所以网盘分享：
+　经常有玩家反馈[*文件失效*](/img/Screenshot_20260426.webp)，还有“在线解压”交智商税的，所以网盘分享：
 
 　`.XZ` 是 ZIP 压缩文件(仅改名)，可直接用 _[MT管理器](https://mt2.cn)_ 打开。
 
@@ -78,7 +78,7 @@ summary: "一组教学小卡片，教你如何安装模组。"
 🔥试玩版，适用于测试模组：
   {{< pan 游戏 >}}  
 
-  <small>免责：试玩版来源于 _[ipa.store](https://ipa.store/1299.html)_ 、_[ddooo.com](https://m.ddooo.com/softdown/151548.htm)_ 等网站。此游戏国内未上架，网盘分享仅供试玩。</small>  
+  <small>免责：游戏文件来源于 _[ipa.store](https://ipa.store/1299.html)_ 、_[ddooo.com](https://m.ddooo.com/softdown/151548.htm)_ 等网站。此游戏国内未上架，网盘分享仅供试玩。</small>  
 
 
   </div>
