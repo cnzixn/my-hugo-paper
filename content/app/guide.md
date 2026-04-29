@@ -152,7 +152,7 @@ summary: "一组教学小卡片，教你如何安装模组。"
 {{< video id="install-guide-manual-video" src="/img/lv_0_20250831182656.mp4" poster="/img/lv_0_20250831182656.webp" crop="true" cropHeight="75%" >}}
 </div>
 
-<small>Tip1：拖动进度条到结尾，可直接退出播放<br></small>
+<small>Tip1：拖动进度条到结尾，可直接退出视频播放。<br></small>
 <small>Tip2：框架需要用 imod 安装，否则验证不通过。</small>
 </div>
 <div class="task-nav">
@@ -164,7 +164,7 @@ summary: "一组教学小卡片，教你如何安装模组。"
 <div class="task-card" data-task>
   <h2>卡片<span class="card-number">6</span>：签名并安装</h2>
   <div class="task-content">
-　苹果：请自行搜索相关教程，关键词：自签、巨魔。
+　苹果：请自行搜索相关教程，关键词：自签、巨魔、LiveContainer。
 
 　安卓：使用MT管理器，长按安装包，点击弹框中的“签名”。
 
