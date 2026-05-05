@@ -1,18 +1,19 @@
 {
   "ver": "260505",
   "zh": {
+      "size": 30,
       "title": "B.M.",
       "button": "详细",
       "url": "https://d.bxq.me/p/new/",
-      "msg": "- 新增公告系统...\n- 每次进入游戏，自动更新B.M.验证数据。\n- 游戏内禁止共用账号，检测间隔 30 分钟。\n- B.M.服务记录 IP 地址，用于封禁异常账号。\n- 以上内容为测试文本，以实际框架功能为准。",
-      "size": 30
+      "msg": "- 新增公告系统...\n- 每次进入游戏，自动更新B.M.验证数据。\n- 游戏内禁止共用账号，检测间隔 30 分钟。\n- B.M.服务记录 IP 地址，用于封禁异常账号。\n- 最近有骗子倒卖B.M.相关资源，举报请联系我们。\n\n* 以上内容为测试文本，以实际框架功能为准。"
   },
   "en": {
+      "size": 30,
       "title": "B.M.",
       "button": "Details",
       "url": "https://d.bxq.me/p/new/",
-      "msg": "- Added announcement system...\n- B.M. verification data is automatically updated on each game launch.\n- Account sharing is prohibited in-game; checks are performed every 30 minutes.\n- B.M. service records IP addresses to ban abnormal accounts.\n- The above is test text; actual framework features apply.",
-      "size": 30
+      "msg": "- Added announcement system...\n- B.M. verification data is automatically updated on each game launch.\n- Account sharing is prohibited in-game, with checks every 30 minutes.\n- B.M. service records IP addresses to ban abnormal accounts.\n- Recently there have been scammers reselling B.M. related resources. Please contact us to report.\n\n* The above is test text, subject to actual framework functionality."
+
   },
   "ban": {
       "uid": ["10001"]
