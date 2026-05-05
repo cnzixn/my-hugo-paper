@@ -1,16 +1,16 @@
 {
-  "ver": "260501",
+  "ver": "260502",
   "zh": {
       "title": "B.M.",
-      "button": "查看",
+      "button": "详细",
       "url": "https://d.bxq.me/p/new/",
-      "msg": "- 因倒卖现象严重，旧版本框架已禁用！\n- 因倒卖现象严重，旧版本框架已禁用！\n- 因倒卖现象严重，旧版本框架已禁用！"
+      "msg": "- 本次为公告内容测试。\n- 新增公告系统...\n- 自动更新验证数据。\n- 游戏内禁止共用账号。\n- B.M.服务记录 IP 地址。"
   },
   "en": {
       "title": "B.M.",
-      "button": "View",
+      "button": "Details",
       "url": "https://d.bxq.me/p/new/",
-      "msg": "- Resale rampant, old framework disabled!\n- Resale rampant, old framework disabled!\n- Resale rampant, old framework disabled!\n"
+      "msg": "- This is an announcement test.\n- Added announcement system.\n- Auto-update verification data.\n- Account sharing is prohibited in-game.\n- B.M. service records IP addresses."
   },
   "ban": {
       "uid": ["10001"]
