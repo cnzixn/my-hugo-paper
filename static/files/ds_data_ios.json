@@ -1,0 +1,20 @@
+{
+  "ver": "260501",
+  "zh": {
+      "title": "B.M.",
+      "button": "查看",
+      "url": "https://d.bxq.me/p/new/",
+      "msg": "- 因倒卖现象严重，旧版本框架已禁用！\n- 因倒卖现象严重，旧版本框架已禁用！\n- 因倒卖现象严重，旧版本框架已禁用！"
+  },
+  "en": {
+      "title": "B.M.",
+      "button": "View",
+      "url": "https://d.bxq.me/p/new/",
+      "msg": "- Resale rampant, old framework disabled!\n- Resale rampant, old framework disabled!\n- Resale rampant, old framework disabled!\n"
+  },
+  "ban": {
+      "uid": ["10001"]
+      "ver": ["251201"]
+  },
+  "note": "检测 ver 变动才会跳公告 Klei商店 快来看看Klei商店最新上架的好东西吧！ http://store.kleientertainment.com"
+}
