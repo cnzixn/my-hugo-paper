@@ -59,11 +59,14 @@ summary: "一组教学小卡片，教你如何安装模组。"
 <div class="task-card" data-task>
   <h2>卡片<span class="card-number">2</span>：游戏安装包</h2>
   <div class="task-content">
-🛍官方版，付费支持正版：
+  🛍官方版，付费支持正版：
   <div class="btn-group">
    <button class="btn" onclick="window.open('https://apps.apple.com/us/app/dont-starve-shipwrecked/id1147297267?l=zh', '_blank')">购买苹果版</button>
    <button class="btn" onclick="window.open('https://play.google.com/store/apps/details?id=com.kleientertainment.doNotStarveShipwrecked', '_blank')">购买安卓版</button>
   </div>
+  <small>　Tip: 国区暂未上架，需使用“加速器”访问。</small>
+  
+  
 
 <!-- 免费试玩：无需购买，用于表明来源： -->
   <!-- <div class="btn-group"> -->
@@ -78,7 +81,7 @@ summary: "一组教学小卡片，教你如何安装模组。"
 🔥试玩版，适用于测试模组：
   {{< pan 游戏 >}}  
 
-  <small>免责：游戏文件来源于 _[ipa.store](https://ipa.store/1299.html)_ 、_[ddooo.com](https://m.ddooo.com/softdown/151548.htm)_ 等网站。此游戏国内未上架，网盘分享仅供试玩。</small>  
+  <small>免责：游戏文件来源于 _[ipa.store](https://ipa.store/1299.html)_ 、_[ddooo.com](https://m.ddooo.com/softdown/151548.htm)_ 等网站。网盘免费分享，仅供试玩。</small>  
 
 
   </div>
