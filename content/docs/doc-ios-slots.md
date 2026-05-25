@@ -8,7 +8,7 @@ tags:
 aliases:
 - 'icloud'
 comments: false
-url: '/p/22/'
+url: '/p/23/'
 ---
 
 > 本文介绍 iOS 如何使用 iCloud 云存档。

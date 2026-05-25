@@ -164,8 +164,28 @@ summary: "一组教学小卡片，教你如何安装模组。"
 </div>
 </div>
 
+
 <div class="task-card" data-task>
-  <h2>卡片<span class="card-number">6</span>：签名并安装</h2>
+  <h2>卡片<span class="card-number">6</span>：文件互传</h2>
+  <div class="task-content">
+
+  无需互联网，与附近设备共享文件。
+  
+  官网：[https://localsend.org](https://localsend.org)
+
+  {{< pan "LocalSend" >}}
+
+  <small>Tip：手机 A 开热点，其他手机/电脑连 WIFI 即可。<br></small>
+
+  </div>
+  <div class="task-nav">
+    <button class="btn prev-btn">上一个</button>
+    <button class="btn next-btn" disabled>下一个</button>
+  </div>
+</div>
+
+<div class="task-card" data-task>
+  <h2>卡片<span class="card-number">7</span>：签名并安装</h2>
   <div class="task-content">
 　苹果：请自行搜索相关教程，关键词：自签、巨魔、LiveContainer。
 

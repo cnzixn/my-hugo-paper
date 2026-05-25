@@ -2560,3 +2560,13 @@ DST-HUD:
 - url1: https://pan.baidu.com/s/1dLdK-KGnCOhDwASrkNcZvg?pwd=nc7z
 - url2: https://pan.xunlei.com/s/VO_4qcZopT1AEdEw-9Rr556TA1?pwd=ch3t
 - url3: https://pan.quark.cn/s/353fb1693294?pwd=meff
+LocalSend:
+- name: LocalSend
+- size: 0B
+- url1: https://pan.baidu.com/s/1PhOEpp_JpVlzphWADtYH-g?pwd=imai
+- url2: https://pan.xunlei.com
+- url3: https://pan.quark.cn/s/aff6e6ec6796?pwd=zKi5
+
+
+
+
