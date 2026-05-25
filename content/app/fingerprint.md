@@ -1,0 +1,46 @@
+---
+title: "指纹"
+layout: 'aapp'
+searchHidden: true
+appHidden: true
+url: "/test"
+---
+
+<title>设备指纹稳定性测试</title>
+
+
+<div class="box">
+    <h2>设备指纹稳定性检测</h2>
+    <div class="item">
+        <label>当前设备指纹ID：</label>
+        <div class="hash" id="fpId">加载中...</div>
+    </div>
+    <button class="btn" onclick="getFingerprint()">重新获取指纹</button>
+    <p class="tip">多次刷新、重启浏览器、切换无痕模式，对比指纹是否一致判断稳定性</p>
+</div>
+
+<!-- 引入FingerprintJS v5 CDN -->
+<script src="https://openfpcdn.io/fingerprintjs/v5/iife.min.js"></script>
+
+<script>
+  async function getFingerprint(){
+    const fp = await FingerprintJS.load();
+    const result = await fp.get();
+    document.getElementById('fpId').innerText = result.visitorId;
+  }
+  // 页面初始化自动获取
+  getFingerprint();
+</script>
+
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,sans-serif;}
+  body{padding:30px;background:#f5f7fa;color:#333;}
+  .box{max-width:800px;margin:0 auto;background:#fff;padding:25px;border-radius:12px;box-shadow:0 2px 12px #0001;}
+  h2{margin-bottom:20px;color:#222;}
+  .item{margin:15px 0;}
+  label{display:block;margin-bottom:6px;font-weight:500;}
+  .hash{word-break:break-all;padding:12px;background:#f1f3f6;border-radius:6px;font-family:monospace;}
+  .btn{padding:10px 20px;background:#2563eb;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:15px;}
+  .btn:hover{background:#1d4ed8;}
+  .tip{margin-top:10px;color:#666;font-size:14px;}
+</style>
