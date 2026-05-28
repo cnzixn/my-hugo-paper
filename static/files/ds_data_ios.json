@@ -1,19 +1,18 @@
 {
-  "ver": "260505",
+  "ver": "260528",
   "zh": {
       "size": 30,
       "title": "B.M.",
       "button": "详细",
       "url": "https://d.bxq.me/p/new/",
-      "msg": "2026/05/05\n\n- 新增公告系统...\n- 每次进入游戏，自动更新B.M.验证数据。\n- B.M.服务记录 IP 地址，用于封禁异常账号。\n- 遇到骗子倒卖B.M.相关资源，请向我们举报。\n\n* 以上内容为测试文本，以实际框架功能为准。"
+      "msg": "2026/05/28\n\n- 加强 imod 验证，请勿借号给他人！\n- 新增“动作轮盘”，默认关闭。\n- 遇到倒卖B.M.相关资源，请向我们举报。"
   },
   "en": {
-      "size": 30,
-      "title": "B.M.",
-      "button": "Details",
-      "url": "https://d.bxq.me/p/new/",
-      "msg": "2026/05/05\n\n- Added announcement system...\n- B.M. verification data is automatically updated on each game launch.\n- B.M. service records IP addresses to ban abnormal accounts.\n- Recently there have been scammers reselling B.M. related resources. Please contact us to report.\n\n* The above is test text, subject to actual framework functionality."
-
+    "size": 30,
+    "title": "B.M.",
+    "button": "Details",
+    "url": "https://d.bxq.me/p/new/",
+    "msg": "May 28, 2026\n\n- Strengthened iMOD verification. Do not share your account with others!\n- Added Action Wheel (disabled by default).\n- Please report any unauthorized resale of B.M. related resources."
   },
   "ban": {
       "uid": ["10001"]
