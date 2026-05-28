@@ -3,14 +3,9 @@
 {{ with index site.Data.pan $name }}
 
   <div class="pan-actions">
-    {{/* 网盘链接+按钮组 */}}
     <div class="pan-text-group">
       <strong>链接：</strong>
-
-      {{/* 按钮组容器 */}}
       <div class="pan-btn-group">
-
-        {{/* 百度网盘按钮（图标+文字） */}}
         {{ $baiduUrl := index (where . "url1" "ne" nil) 0 "url1" }}
         {{ if $baiduUrl }}
           <button onclick="window.open('{{ $baiduUrl }}&t={{ $currentDate }}', '_blank')" class="action-btn baidu" title="百度网盘下载">
@@ -24,7 +19,6 @@
           </button>
         {{ end }}
 
-        {{/* 夸克网盘按钮（图标+文字） */}}
         {{ $quarkUrl := index (where . "url3" "ne" nil) 0 "url3" }}
         {{ if $quarkUrl }}
           <button onclick="window.open('{{ $quarkUrl }}&t={{ $currentDate }}', '_blank')" class="action-btn quark" title="夸克网盘下载">
@@ -38,10 +32,7 @@
           </button>
         {{ end }}
       </div>
-
     </div>
-
-    {{/* 底部注意提醒 */}}
     <div class="pan-text-group pan-text-remind">
         <span><strong>注意: </strong>部分文件可能失效，去另一网盘看看。</span>
     </div>
@@ -52,12 +43,8 @@
   </div>
 {{ end }}
 
-
-
-
-
 <style>
-/* 外层容器 */
+/* 外层卡片 完全对齐你现有主题卡片样式 */
 .pan-actions {
   display: flex;
   flex-wrap: wrap;
@@ -65,11 +52,12 @@
   background: var(--entry);
   border: 1px solid var(--border);
   border-radius: 8px;
-  padding: 0.6rem 1rem;
+  padding: 1rem;
   margin: 0.5rem 0;
+  transition: all 0.2s ease;
 }
 
-/* 行水平居中 */
+/* 行布局 */
 .pan-text-group {
   display: flex;
   align-items: center;
@@ -79,10 +67,11 @@
   margin: 0;
 }
 
-/* 提示文字 */
+/* 底部提醒文字 */
 .pan-text-remind {
   gap: 0.3rem;
   font-size: 0.8rem;
+  color: var(--secondary);
 }
 .pan-text-remind span {
   white-space: normal;
@@ -95,31 +84,32 @@
   margin: 0;
 }
 
-/* 按钮组 */
+/* 按钮组容器 */
 .pan-btn-group {
   display: flex;
-  gap: 0.7rem;
+  gap: 0.5rem;
   margin: 0;
 }
 
-/* 核心按钮：极致紧凑 */
+/* 按钮样式 统一主题风格 */
 .action-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.1rem;
+  gap: 0.4rem;
   border: 1px solid var(--border);
-  background: transparent;
-  margin: 0.5rem;
+  background: var(--code-bg);
+  padding: 0.5rem 0.9rem;
   height: auto;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
+  color: var(--content);
   white-space: nowrap;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
   transition: all 0.2s ease;
+  margin: 0;
 }
 
-/* 图标 */
 .action-btn img {
   width: 20px;
   height: 20px;
@@ -127,17 +117,17 @@
   padding: 0;
   margin: 0;
   vertical-align: middle;
+  object-fit: contain;
 }
 
-/* 文字 */
 .action-btn span {
-  color: var(--primary);
+  color: var(--content);
   line-height: 1;
   padding: 0;
-  margin: 0.5rem 0;
+  margin: 0;
 }
 
-/* 禁用 */
+/* 禁用状态 */
 .action-btn:disabled {
   opacity: 0.5;
   pointer-events: none;
@@ -146,22 +136,21 @@
   filter: grayscale(100%);
 }
 
-/* hover */
+/* Hover 对齐主题按钮规则 */
 .action-btn:hover {
   border-color: var(--primary);
-  background: rgba(0,0,0,0.02);
+  background: var(--entry);
 }
 
-/* 移动端 */
+/* 移动端适配 */
 @media (max-width: 480px) {
   .pan-actions {
-    padding: 0.5rem 0.8rem;
-    gap: 0.4rem;
+    padding: 0.875rem;
     margin: 0.5rem 0;
   }
   .action-btn {
-    padding: 0 4px;
-    font-size: 0.88rem;
+    padding: 0.4rem 0.7rem;
+    font-size: 0.8rem;
   }
   .action-btn img {
     width: 18px;

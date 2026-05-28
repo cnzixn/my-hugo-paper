@@ -95,7 +95,7 @@ summary: "一组教学小卡片，教你如何安装模组。"
   <h2>卡片<span class="card-number">3</span>：兔人框架</h2>
   <div class="task-content">
 
-　兔人框架 `BM26.05.01.ZIP` ，已适配官方版本 _[苹果1.84](https://apps.apple.com/us/app/dont-starve-shipwrecked/id1147297267?l=zh)_ 和 _[安卓1.33.5](https://play.google.com/store/apps/details?id=com.kleientertainment.doNotStarveShipwrecked)_ 。
+　兔人框架 `BM26.06.01.ZIP` ，已适配官方版本 _[苹果1.84](https://apps.apple.com/us/app/dont-starve-shipwrecked/id1147297267?l=zh)_ 和 _[安卓1.33.5](https://play.google.com/store/apps/details?id=com.kleientertainment.doNotStarveShipwrecked)_ 。
 
   {{< pan "框架" >}}
 
@@ -175,7 +175,7 @@ summary: "一组教学小卡片，教你如何安装模组。"
 
   {{< pan "LocalSend" >}}
 
-  <small>Tip：手机 A 开热点，其他手机/电脑连 WIFI 即可。<br></small>
+  <small>Tip：支持iOS，手机 A 开热点，其他手机/电脑连 WIFI 即可。<br></small>
 
   </div>
   <div class="task-nav">
@@ -428,8 +428,9 @@ h1 {
 }
 
 .btn {
-  background: var(--secondary);
-  color: var(--theme);
+  border: 1px solid var(--border);
+  background: var(--code-bg);
+  color: var(--content);
 }
 
 .btn:hover:not(:disabled) {
