@@ -8,91 +8,28 @@ url: "/fingerprint"
 
 <title>设备指纹稳定性测试</title>
 
+
 <div class="box">
-    <h2>设备指纹｜IP属地+FP混合DeviceID算法</h2>
+    <h2>设备指纹稳定性检测</h2>
     <div class="item">
-        <label>FingerprintJS原生visitorId：</label>
+        <label>当前设备指纹ID：</label>
         <div class="hash" id="fpId">加载中...</div>
     </div>
-    <div class="item">
-        <label>IP解析省份：</label>
-        <div class="hash" id="provTxt">加载中...</div>
-    </div>
-    <div class="item">
-        <label>MD5原始拼接串：</label>
-        <div class="hash" id="rawStr" style="font-size:12px;">加载中...</div>
-    </div>
-    <div class="item">
-        <label>最终 Web DeviceId：</label>
-        <div class="hash" id="deviceId">加载中...</div>
-    </div>
-    <button class="btn" onclick="getFingerprint()">重新生成ID</button>
-    <p class="tip">算法：省份 + FP指纹 + 固定盐 → MD5 → web_xxxx</p>
+    <button class="btn" onclick="getFingerprint()">重新获取指纹</button>
+    <p class="tip">多次刷新、重启浏览器、切换无痕模式，对比指纹是否一致判断稳定性</p>
 </div>
 
-<script src="https://c.bxq.me/js/ipsd.js/1.0.0/ipsd.min.js"></script>
+<!-- 引入FingerprintJS v5 CDN -->
 <script src="https://openfpcdn.io/fingerprintjs/v5/iife.min.js"></script>
-<!-- 备用MD5，解决http环境WebCrypto不可用 -->
-<script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.19.0/js/md5.min.js"></script>
 
 <script>
-const SALT = "WebFp@2026LocKey";
-
-// 统一MD5，兼容http/https全环境
-function computeMD5(str) {
-    return md5(str);
-}
-
-// 包装ipsd同步方法为Promise，加3秒超时，防止卡死
-function getProvinceAsync() {
-    return new Promise((resolve) => {
-        // 超时兜底
-        const timer = setTimeout(() => resolve('unknown'), 3000);
-        try {
-            // ipsd是同步返回，非await
-            const p = getProvince();
-            clearTimeout(timer);
-            resolve(p || 'unknown');
-        } catch (err) {
-            clearTimeout(timer);
-            resolve('unknown');
-        }
-    });
-}
-function getLocAsync() {
-    return new Promise(res => {
-        setTimeout(()=>{
-            try{res(getLocationInfo()||{})}catch{res({})}
-        },3000)
-    })
-}
-
-async function getFingerprint(){
-    // 并行获取
-    const [fpLoader, province] = await Promise.all([
-        FingerprintJS.load(),
-        getProvinceAsync()
-    ])
-    const resFp = await fpLoader.get();
-    const fpId = resFp.visitorId;
-
-    const rawSource = `${province}|${fpId}|${SALT}`;
-    const md5Val = computeMD5(rawSource);
-    const deviceId = 'web_' + md5Val;
-
-    // 回填DOM
-    document.getElementById('fpId').innerText = fpId;
-    document.getElementById('provTxt').innerText = province;
-    document.getElementById('rawStr').innerText = rawSource;
-    document.getElementById('deviceId').innerText = deviceId;
-
-    const loc = await getLocAsync();
-    console.log('省份:', province);
-    console.log('完整位置信息:', loc);
-}
-
-// 页面初始化
-getFingerprint();
+  async function getFingerprint(){
+    const fp = await FingerprintJS.load();
+    const result = await fp.get();
+    document.getElementById('fpId').innerText = result.visitorId;
+  }
+  // 页面初始化自动获取
+  getFingerprint();
 </script>
 
 <style>
