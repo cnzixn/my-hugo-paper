@@ -31,7 +31,7 @@ url: "/fingerprint"
 </div>
 
 <!-- 1. 引入IP属地JS -->
-<script src="https://c.bxq.me/js/ipsd.js"></script>
+<script src="https://c.bxq.me/js/ipsd.js/1.0.0/ipsd.min.js"></script>
 <!-- 2. FP5指纹库 -->
 <script src="https://openfpcdn.io/fingerprintjs/v5/iife.min.js"></script>
 
