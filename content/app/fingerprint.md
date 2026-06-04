@@ -30,55 +30,68 @@ url: "/fingerprint"
     <p class="tip">算法：省份 + FP指纹 + 固定盐 → MD5 → web_xxxx</p>
 </div>
 
-<!-- 1. 引入IP属地JS -->
 <script src="https://c.bxq.me/js/ipsd.js/1.0.0/ipsd.min.js"></script>
-<!-- 2. FP5指纹库 -->
 <script src="https://openfpcdn.io/fingerprintjs/v5/iife.min.js"></script>
+<!-- 备用MD5，解决http环境WebCrypto不可用 -->
+<script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.19.0/js/md5.min.js"></script>
 
 <script>
-/** MD5计算 */
-async function computeMD5(str) {
-    const encoder = new TextEncoder();
-    const data = encoder.encode(str);
-    const hashBuf = await crypto.subtle.digest('MD5', data);
-    return Array.from(new Uint8Array(hashBuf))
-        .map(b => b.toString(16).padStart(2, '0'))
-        .join('');
-}
-
-// 固定加盐（防彩虹表，可自行修改）
 const SALT = "WebFp@2026LocKey";
 
+// 统一MD5，兼容http/https全环境
+function computeMD5(str) {
+    return md5(str);
+}
+
+// 包装ipsd同步方法为Promise，加3秒超时，防止卡死
+function getProvinceAsync() {
+    return new Promise((resolve) => {
+        // 超时兜底
+        const timer = setTimeout(() => resolve('unknown'), 3000);
+        try {
+            // ipsd是同步返回，非await
+            const p = getProvince();
+            clearTimeout(timer);
+            resolve(p || 'unknown');
+        } catch (err) {
+            clearTimeout(timer);
+            resolve('unknown');
+        }
+    });
+}
+function getLocAsync() {
+    return new Promise(res => {
+        setTimeout(()=>{
+            try{res(getLocationInfo()||{})}catch{res({})}
+        },3000)
+    })
+}
+
 async function getFingerprint(){
-    // 1.获取指纹
-    const fp = await FingerprintJS.load();
-    const resFp = await fp.get();
+    // 并行获取
+    const [fpLoader, province] = await Promise.all([
+        FingerprintJS.load(),
+        getProvinceAsync()
+    ])
+    const resFp = await fpLoader.get();
     const fpId = resFp.visitorId;
 
-    // 2.调用ipsd内置方法拿省份
-    let province = '';
-    try{
-        province = await getProvince();
-    }catch(e){
-        province = "unknown";
-    }
-
-    // 核心拼接规则：省份+指纹+盐
     const rawSource = `${province}|${fpId}|${SALT}`;
-    const md5Val = await computeMD5(rawSource);
+    const md5Val = computeMD5(rawSource);
     const deviceId = 'web_' + md5Val;
 
-    // 页面回填
+    // 回填DOM
     document.getElementById('fpId').innerText = fpId;
     document.getElementById('provTxt').innerText = province;
     document.getElementById('rawStr').innerText = rawSource;
     document.getElementById('deviceId').innerText = deviceId;
 
+    const loc = await getLocAsync();
     console.log('省份:', province);
-    console.log('完整位置信息:', await getLocationInfo?.()??'无详细数据');
+    console.log('完整位置信息:', loc);
 }
 
-// 初始化执行
+// 页面初始化
 getFingerprint();
 </script>
 
