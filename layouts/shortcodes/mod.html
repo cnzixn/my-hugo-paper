@@ -8,7 +8,7 @@
   {{ $size := index (where $panData "size" "!=" nil) 0 "size" | default "未知大小" }}
   
   {{/* 输出格式：模组名(文件大小) */}}
-  <span class="mod-info">[{{ $key }}] {{ $name }}({{ $size }})</span>
+  <span class="mod-info">[{{ $key }}] {{ $name }} ({{ $size }})</span>
 {{ else }}
   {{/* 键值不存在时的提示 */}}
   <span class="mod-info text-gray-500">[{{ $key }}] 未找到</span>

@@ -18,8 +18,8 @@ searchHidden: true
 - 兔人框架  
 
   - 框架支持的官方游戏版本：  
-    1. Android 1.23 - [1.33.5](https://play.google.com/store/apps/details?id=com.kleientertainment.doNotStarveShipwrecked)
-    2. iOS [1.84](https://apps.apple.com/us/app/dont-starve-shipwrecked/id1147297267?l=zh)
+    1. 安卓 1.23 - [1.33.5](https://play.google.com/store/apps/details?id=com.kleientertainment.doNotStarveShipwrecked)
+    2. 苹果 [1.84](https://apps.apple.com/us/app/dont-starve-shipwrecked/id1147297267?l=zh)
 
   - 框架本质上是一个“模组”，恢复了被官方删减的模组功能。  
   
@@ -32,10 +32,8 @@ searchHidden: true
 - 兔人模组
 
   - 各位玩家大佬从“创意工坊”移植而来的模组，兔人协会将适用于框架的模组进行整理，统一命名为 BMXXX 格式。  
-
-  - 模组 BM000 是一个测试包，删掉也不影响使用框架。这个模组不会公开代码，想要学习请去看官方原版代码。  
   
-  - 提醒：为避免影响到其他版本，模组“加密”仅限框架使用。如果你有需要，可以联系我们索要“源码”，或前往创意工坊下载原模组。  
+  - 为避免引起一些不必要的麻烦，本站模组仅限框架使用。如果你有其他需求，请前往创意工坊下载原模组。  
   
   - 欢迎大佬投稿新移植的模组，请邮件联系我们：[*admin@bxq.me*](mailto:admin@bxq.me)  
 
@@ -76,10 +74,10 @@ searchHidden: true
 - 你可以获得的特权：  
   - 50+，作者好友位，专属技术支持。
   - 99+，群专属头衔，永久纪念标识。
-  - `⚠️警告` 本站不会主动联系你，谨防上当受骗。如需领取上述特权，请加入社群/频道，私信群主/频道主。
+  - 警告：本站不会主动联系你，谨防上当受骗。如需领取上述特权，请加入社群/频道，私信群主/频道主。
 
 - 重要声明：
-  - 赞助是“自愿打赏”，并非商业行为。  
+  - 赞助是“自愿打赏”，并非商业行为，不支持退款。  
 
 
 ---
@@ -107,7 +105,7 @@ searchHidden: true
 
 - 【频道】_[兔人协会](https://pd.qq.com/s/bl6w0albb?b=5)_，发帖交流便于大家“分享日常”、“反馈问题”。  
 
-- 【3k】_[614255348](https://qm.qq.com/q/g0weZCVQMU)_，暂停入群，仅用于搜索群号找到我们。  
+- 【2k】_[614255348](https://qm.qq.com/q/g0weZCVQMU)_，暂停入群，仅用于搜索群号找到我们。  
 
 - 【2k】_[696529613</i>](https://qm.qq.com/q/3xoKf5H4EM)_，安卓分区，免费加群，群员自治，新人互帮互助。  
 
