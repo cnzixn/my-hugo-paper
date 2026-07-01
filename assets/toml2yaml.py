@@ -1,8 +1,5 @@
 #!/data/data/com.termux/files/usr/bin/python3
 
-
-# cd /sdcard/acode/my-hugo-paper/assets/ ; python toml2yaml.py
-
 import os
 import re
 import json
@@ -40,17 +37,12 @@ def get_file_identifier(file_path):
 
 # ===== 读取文件的weight和date值 =====
 def get_file_sort_keys(file_path):
-    """
-    读取单个md文件的排序键：(weight, -date_timestamp)
-    weight默认无穷大，date默认最早时间（timestamp=0）
-    """
     weight = float('inf')
-    date_timestamp = 0  # 默认为最早时间（1970-01-01），确保无date的排最后
+    date_timestamp = 0
 
     with open(file_path, 'r', encoding='utf-8') as f:
         content = f.read()
     
-    # 先试TOML格式
     toml_pattern = re.compile(r'^\+\+\+\n(.*?)\n\+\+\+', re.DOTALL)
     toml_match = toml_pattern.search(content)
     if toml_match:
@@ -59,58 +51,44 @@ def get_file_sort_keys(file_path):
             if 'weight' in data:
                 weight = data['weight']
             if 'date' in data:
-                # 解析date为时间戳（兼容date、datetime、字符串）
                 date_val = data['date']
                 if isinstance(date_val, str):
-                    # 字符串转datetime（处理Z时区）
                     date_obj = datetime.fromisoformat(date_val.replace('Z', '+00:00'))
                 elif isinstance(date_val, date) and not isinstance(date_val, datetime):
-                    # date对象转datetime（默认UTC 0点）
                     date_obj = datetime.combine(date_val, datetime.min.time(), tzinfo=timezone.utc)
                 else:
-                    # datetime对象直接使用
                     date_obj = date_val
-                # 确保datetime有时区，无则默认UTC
                 if date_obj.tzinfo is None or date_obj.tzinfo.utcoffset(date_obj) is None:
                     date_obj = date_obj.replace(tzinfo=timezone.utc)
                 date_timestamp = date_obj.timestamp()
         except (toml.TomlDecodeError, ValueError):
-            pass  # 解析失败保持默认值
+            pass
     
-    # 再试YAML格式
-    else:
-        yaml_pattern = re.compile(r'^---\n(.*?)\n---', re.DOTALL)
-        yaml_match = yaml_pattern.search(content)
-        if yaml_match:
-            try:
-                data = yaml.safe_load(yaml_match.group(1)) or {}
-                if 'weight' in data:
-                    weight = data['weight']
-                if 'date' in data:
-                    # 解析date为时间戳（兼容date、datetime、字符串）
-                    date_val = data['date']
-                    if isinstance(date_val, str):
-                        # 字符串转datetime（处理Z时区）
-                        date_obj = datetime.fromisoformat(date_val.replace('Z', '+00:00'))
-                    elif isinstance(date_val, date) and not isinstance(date_val, datetime):
-                        # date对象转datetime（默认UTC 0点）
-                        date_obj = datetime.combine(date_val, datetime.min.time(), tzinfo=timezone.utc)
-                    else:
-                        # datetime对象直接使用
-                        date_obj = date_val
-                    # 确保datetime有时区，无则默认UTC
-                    if date_obj.tzinfo is None or date_obj.tzinfo.utcoffset(date_obj) is None:
-                        date_obj = date_obj.replace(tzinfo=timezone.utc)
-                    date_timestamp = date_obj.timestamp()
-            except (yaml.YAMLError, ValueError):
-                pass  # 解析失败保持默认值
+    yaml_pattern = re.compile(r'^---\n(.*?)\n---', re.DOTALL)
+    yaml_match = yaml_pattern.search(content)
+    if yaml_match:
+        try:
+            data = yaml.safe_load(yaml_match.group(1)) or {}
+            if 'weight' in data:
+                weight = data['weight']
+            if 'date' in data:
+                date_val = data['date']
+                if isinstance(date_val, str):
+                    date_obj = datetime.fromisoformat(date_val.replace('Z', '+00:00'))
+                elif isinstance(date_val, date) and not isinstance(date_val, datetime):
+                    date_obj = datetime.combine(date_val, datetime.min.time(), tzinfo=timezone.utc)
+                else:
+                    date_obj = date_val
+                if date_obj.tzinfo is None or date_obj.tzinfo.utcoffset(date_obj) is None:
+                    date_obj = date_obj.replace(tzinfo=timezone.utc)
+                date_timestamp = date_obj.timestamp()
+        except (yaml.YAMLError, ValueError):
+            pass
 
-    # 返回排序键：先按weight升序，再按-date_timestamp升序（即date降序）
     return (weight, -date_timestamp)
 
-# ===== 自定义YAML处理器（键无引号，字符串值单引号）=====
+# ===== 自定义YAML处理器 =====
 def str_presenter(dumper, data):
-    """仅对字符串值添加单引号，键保持无引号"""
     if '\n' in data:
         return dumper.represent_scalar('tag:yaml.org,2002:str', data, style='|')
     return dumper.represent_scalar('tag:yaml.org,2002:str', data, style="'")
@@ -119,13 +97,11 @@ yaml.add_representer(str, str_presenter)
 
 # ===== 处理文件 =====
 def process_file(file_path, article_id):
-    """根据排序后的ID处理文件，生成对应url"""
     with open(file_path, 'r', encoding='utf-8') as f:
         content = f.read()
 
     new_url = f"{URL_PREFIX}{article_id}/"
 
-    # 1. 处理TOML格式
     toml_pattern = re.compile(r'^\+\+\+\n(.*?)\n\+\+\+', re.DOTALL)
     toml_match = toml_pattern.search(content)
     if toml_match:
@@ -149,7 +125,6 @@ def process_file(file_path, article_id):
             print(f"❌ TOML错误 {file_path}: {e}")
             return
 
-    # 2. 处理YAML格式
     yaml_pattern = re.compile(r'^---\n(.*?)\n---', re.DOTALL)
     yaml_match = yaml_pattern.search(content)
     if yaml_match:
@@ -173,19 +148,26 @@ def process_file(file_path, article_id):
             print(f"❌ YAML错误 {file_path}: {e}")
             return
 
-    # 3. 无Front Matter时添加
     new_front = f"---\nurl: '{new_url}'\n---\n"
     new_content = new_front + content
     with open(file_path, 'w', encoding='utf-8') as f:
         f.write(new_content)
     print(f"✅ 新增Front Matter: {file_path} (ID: {article_id})")
 
+# ===== 获取新文件可用最小空闲ID =====
+def get_next_free_id(mapping):
+    used_ids = set(int(v) for v in mapping.values())
+    next_id = 1
+    while next_id in used_ids:
+        next_id += 1
+    return str(next_id)
+
 # ===== 主函数 =====
 def main():
     ensure_mapping_file_exists()
     mapping = load_mapping()
 
-    # 1. 不在content根目录 2. 文件名不是_index.md 3. 不在content/app目录下
+    # 筛选md文件
     md_files = []
     for file in Path(CONTENT_DIR).glob("**/*.md"):
         if (file.parent.resolve() != Path(CONTENT_DIR).resolve() 
@@ -197,23 +179,41 @@ def main():
         print("⚠️  未找到任何符合条件的md文件（需在子目录且非_index.md）")
         return
 
-    # 2. 排序：先按weight升序，weight相同则按date降序
+    # 按规则排序，仅用于新文件分配ID顺序
     sorted_files = sorted(md_files, key=lambda x: get_file_sort_keys(x))
 
-    # 3. 按排序结果分配ID并处理文件，更新映射
-    for idx, file_path in enumerate(sorted_files, start=1):
-        file_identifier = get_file_identifier(file_path)
-        mapping[file_identifier] = str(idx)  # 用排序索引作为ID
-        process_file(file_path, str(idx))
+    # 分离旧文件、新文件
+    old_files = []
+    new_files = []
+    file_id_map = {}
+    for f in sorted_files:
+        fid = get_file_identifier(f)
+        if fid in mapping:
+            old_files.append(f)
+            file_id_map[fid] = mapping[fid]
+        else:
+            new_files.append(f)
 
-    # 4. 清理映射中已删除的文件（可选，保持映射文件干净）
+    # 旧文件直接沿用原有ID，不修改
+    for f in old_files:
+        fid = get_file_identifier(f)
+        aid = file_id_map[fid]
+        process_file(f, aid)
+
+    # 新文件按排序顺序依次分配最小空闲ID
+    for f in new_files:
+        new_aid = get_next_free_id(mapping)
+        fid = get_file_identifier(f)
+        mapping[fid] = new_aid
+        process_file(f, new_aid)
+
+    # 清理已删除文件的映射记录
     existing_identifiers = [get_file_identifier(f) for f in md_files]
     cleaned_mapping = {k: v for k, v in mapping.items() if k in existing_identifiers}
     mapping = cleaned_mapping
 
-    # 5. 保存更新后的映射
     save_mapping(mapping)
-    print(f"🎉 处理完成！共处理 {len(md_files)} 个文件（仅子目录，排除根目录及_index.md）")
+    print(f"🎉 处理完成！旧文件{len(old_files)}个(保留原有ID)，新文件{len(new_files)}个，总计{len(md_files)}个")
 
 if __name__ == "__main__":
     main()
