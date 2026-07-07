@@ -1,0 +1,146 @@
+<style>
+.dst-grid-wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 14px;
+  margin: 1rem 0;
+}
+.dst-card-item {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 12px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.dst-card-item:hover {
+  background-color: #f7fafc;
+  border-color: #94a3b8;
+}
+.dst-preview-img {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+}
+.dst-name-text {
+  font-size: 0.9rem;
+  color: #222;
+}
+.dst-code-box {
+  background:#f1f1f1;
+  padding:2px 5px;
+  border-radius:4px;
+  font-family:monospace;
+  font-size:0.78rem;
+  color:#222;
+}
+.dst-tip {
+  font-size: 0.75rem;
+  color: #2563eb;
+  height: 18px;
+}
+</style>
+
+<div class="dst-grid-wrap" id="dstGridContainer"></div>
+
+<script>
+// 饥荒图标总数据（统一维护，新增只改这里）
+const dstEmojiData = [
+  {name:"arcane",char:"󰀀",hex:"F0000",code:983040},
+  {name:"beefalo",char:"󰀁",hex:"F0001",code:983041},
+  {name:"chest",char:"󰀂",hex:"F0002",code:983042},
+  {name:"chester",char:"󰀃",hex:"F0003",code:983043},
+  {name:"crockpot",char:"󰀄",hex:"F0004",code:983044},
+  {name:"eyeball",char:"󰀅",hex:"F0005",code:983045},
+  {name:"faketeeth",char:"󰀆",hex:"F0006",code:983046},
+  {name:"farm",char:"󰀇",hex:"F0007",code:983047},
+  {name:"fire",char:"󰀈",hex:"F0008",code:983048},
+  {name:"ghost",char:"󰀉",hex:"F0009",code:983049},
+  {name:"grave",char:"󰀊",hex:"F000A",code:983050},
+  {name:"hambat",char:"󰀋",hex:"F000B",code:983051},
+  {name:"hammer",char:"󰀌",hex:"F000C",code:983052},
+  {name:"heart",char:"󰀍",hex:"F000D",code:983053},
+  {name:"hunger",char:"󰀎",hex:"F000E",code:983054},
+  {name:"lightbulb",char:"󰀏",hex:"F000F",code:983055},
+  {name:"pig",char:"󰀐",hex:"F0010",code:983056},
+  {name:"poop",char:"󰀑",hex:"F0011",code:983057},
+  {name:"redgem",char:"󰀒",hex:"F0012",code:983058},
+  {name:"sanity",char:"󰀓",hex:"F0013",code:983059},
+  {name:"sciencemachine",char:"󰀔",hex:"F0014",code:983060},
+  {name:"skull",char:"󰀕",hex:"F0015",code:983061},
+  {name:"tophat",char:"󰀖",hex:"F0016",code:983062},
+  {name:"web",char:"󰀗",hex:"F0017",code:983063},
+  {name:"battle",char:"󰀘",hex:"F0018",code:983064},
+  {name:"flex",char:"󰀙",hex:"F0019",code:983065},
+  {name:"gold",char:"󰀚",hex:"F001A",code:983066},
+  {name:"torch",char:"󰀛",hex:"F001B",code:983067},
+  {name:"abigail",char:"󰀜",hex:"F001C",code:983068},
+  {name:"alchemy",char:"󰀝",hex:"F001D",code:983069},
+  {name:"backpack",char:"󰀞",hex:"F001E",code:983070},
+  {name:"beehive",char:"󰀟",hex:"F001F",code:983071},
+  {name:"berry",char:"󰀠",hex:"F0020",code:983072},
+  {name:"carrot",char:"󰀡",hex:"F0021",code:983073},
+  {name:"egg",char:"󰀢",hex:"F0022",code:983074},
+  {name:"eyeplant",char:"󰀣",hex:"F0023",code:983075},
+  {name:"firepit",char:"󰀤",hex:"F0024",code:983076},
+  {name:"horn",char:"󰀥",hex:"F0025",code:983077},
+  {name:"meat",char:"󰀦",hex:"F0026",code:983078},
+  {name:"refine",char:"󰀧",hex:"F0027",code:983079},
+  {name:"salt",char:"󰀨",hex:"F0028",code:983080},
+  {name:"shadow",char:"󰀩",hex:"F0029",code:983081},
+  {name:"shovel",char:"󰀪",hex:"F002A",code:983082},
+  {name:"thumbsup",char:"󰀫",hex:"F002B",code:983083},
+  {name:"trap",char:"󰀬",hex:"F002C",code:983084},
+  {name:"trophy",char:"󰀭",hex:"F002D",code:983085},
+  {name:"wave",char:"󰀮",hex:"F002E",code:983086},
+  {name:"wormhole",char:"󰀯",hex:"F002F",code:983087},
+  {name:"portal",char:"󰀰",hex:"F0030",code:983088},
+  {name:"touchstone",char:"󰀱",hex:"F0031",code:983089}
+];
+
+// 复制函数
+function copyDstSymbol(text, tipDom) {
+  const temp = document.createElement('textarea');
+  temp.value = text;
+  document.body.appendChild(temp);
+  temp.select();
+  document.execCommand('copy');
+  document.body.removeChild(temp);
+  tipDom.innerText = "已复制";
+  setTimeout(()=>tipDom.innerText = "",1200);
+}
+
+// 动态渲染全部卡片
+function renderDstEmojiList(){
+  const container = document.getElementById("dstGridContainer");
+  dstEmojiData.forEach(item=>{
+    const tipId = `tip-${item.name}`;
+    const imgSrc = `/img/dst-emoji/U+${item.hex}.png`;
+    const copyText = `${item.char}${item.name}`;
+
+    const card = document.createElement("div");
+    card.className = "dst-card-item";
+    // 直接闭包携带完整 copyText，不读取页面DOM文本
+    card.onclick = function(){
+      const tipDom = document.getElementById(tipId);
+      copyDstSymbol(copyText, tipDom);
+    };
+
+    card.innerHTML = `
+      <img class="dst-preview-img" src="${imgSrc}" alt="${item.name}">
+      <span class="dst-name-text">
+        <span class="dst-code-box">${item.char}${item.name}</span>
+      </span>
+      <span id="${tipId}" class="dst-tip"></span>
+    `;
+    container.appendChild(card);
+  })
+}
+
+
+// 页面加载完成渲染
+window.addEventListener("DOMContentLoaded", renderDstEmojiList);
+</script>
