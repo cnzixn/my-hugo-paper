@@ -8,6 +8,7 @@ tags:
 aliases:
 - 'emoji'
 comments: false
+url: '/p/829/'
 ---
 
 

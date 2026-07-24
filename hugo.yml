@@ -1,7 +1,7 @@
 # baseURL: 'https://example.org/'
 # languageCode: 'zh-cn'
 title: "档案馆"
-copyright: "© 2025 档案馆 - 兔人协会"
+# copyright: "© 2025 档案馆 - 兔人协会"
 theme: "PaperMod"
 
 

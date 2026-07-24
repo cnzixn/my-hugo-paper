@@ -1,11 +1,8 @@
 {{- if not (.Param "hidePageViews") -}}
 <span class="page-view-counter">
   <span>&nbsp;·&nbsp;</span>
-  {{ i18n "views" | default "Views" }}: 
-  <span class="view-count">Loading...</span>
+  {{ i18n "views" | default "Views" }}:
+  <!-- data-pv 自动读取当前页面PV，脚本自动填充数值 -->
+  <span class="view-count" data-pv>Loading...</span>
 </span>
 {{- end }}
-
-{{- /* 加载访问量统计脚本 */ -}}
-<!-- <script defer src="/js/pv.js"></script> -->
-

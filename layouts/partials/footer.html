@@ -4,7 +4,7 @@
         {{- if site.Copyright }}
         <span>{{ site.Copyright | markdownify }}</span>
         {{- else }}
-        <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ site.Title }}</a></span>
+        <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ site.Title }} - 兔人协会</a></span>
         {{- end }}
         {{- print " · "}}
     {{- end }}
@@ -18,6 +18,12 @@
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+
+    {{/* ========== 新增：全站统计 26.07.25 ========== */}}
+    <br>
+    <span>
+        总访客：<span data-uv="site">--</span> | 总浏览：<span data-pv="site">--</span>
     </span>
 </footer>
 {{- end }}

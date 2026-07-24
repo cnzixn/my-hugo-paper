@@ -1,5 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/python3
 
+# cd /storage/emulated/0/acode/my-hugo-paper/assets/ ; python toml2yaml.py
+
 import os
 import re
 import json
