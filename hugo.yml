@@ -33,11 +33,12 @@ markup:
     renderer:
       unsafe: true
   highlight:
-    noClasses: true
-    anchorLineNos: false
+    noClasses: false
+    anchorLineNos: true
     codeFences: true  # 保留代码围栏解析
     guessSyntax: true
-    lineNos: false
+    lineNos: true
+    lineNumbersInTable: false
     style: "algol_nu"
 
 
@@ -294,6 +295,7 @@ params:
 
   customCSS:
     - "css/extended/blank.css"  # 对应 assets/css/blank.css
+    # - "css/extended/code-editor.css"
 
 
 # ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- #
