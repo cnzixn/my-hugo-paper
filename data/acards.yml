@@ -10,24 +10,27 @@ Z-9999-999:
 
 
 
-
-
-
-
-B-2133-80:
-  text: "【电信】29元185G流量"
-  # url: "https://h5.lot-ml.com/h5orderEn/index?pudID=71fdfc41ec34e6e3&userid=133b6394b8178a11"
-  url: "/link/?data=aHR0cHMlM0ElMkYlMkZoNS5sb3QtbWwuY29tJTJGaDVvcmRlckVuJTJGaW5kZXglM0ZwdWRJRCUzRDcxZmRmYzQxZWMzNGU2ZTMlMjZ1c2VyaWQlM0QxMzNiNjM5NGI4MTc4YTEx"
-
-A-2128-90:
-  text: "【广电】28元350G流量200分钟🔥"
+A-3424-170:
+  text: "【广电】29元230G流量🔥"
   # url: "https://h5.lot-ml.com/h5orderEn/index?pudID=fcc02e2648866d30&userid=133b6394b8178a11"
-  url: "/link/?data=aHR0cHMlM0ElMkYlMkZoNS5sb3QtbWwuY29tJTJGaDVvcmRlckVuJTJGaW5kZXglM0ZwdWRJRCUzRGZjYzAyZTI2NDg4NjZkMzAlMjZ1c2VyaWQlM0QxMzNiNjM5NGI4MTc4YTEx"
+  url: "/link/?data=aHR0cHMlM0ElMkYlMkZoNS5yaW1pYW42NjYuY24lMkZoNW9yZGVyRW4lMkZpbmRleCUzRnB1ZElEJTNEOGIyMGE0YjRjMzhjYjVjOSUyNnVzZXJpZCUzRDEzM2I2Mzk0YjgxNzhhMTE"
 
-C-2122-85:
-  text: "【联通】29元300G流量300分钟🔥"
-  # url: "https://h5.lot-ml.com/h5orderEn/index?pudID=a6782e1c1a447411&userid=133b6394b8178a11"
-  url: "/link/?data=aHR0cHMlM0ElMkYlMkZoNS5sb3QtbWwuY29tJTJGaDVvcmRlckVuJTJGaW5kZXglM0ZwdWRJRCUzRGE2NzgyZTFjMWE0NDc0MTElMjZ1c2VyaWQlM0QxMzNiNjM5NGI4MTc4YTEx"
+
+
+# B-2133-80:
+  # text: "【电信】29元185G流量"
+  # # url: "https://h5.lot-ml.com/h5orderEn/index?pudID=71fdfc41ec34e6e3&userid=133b6394b8178a11"
+  # url: "/link/?data=aHR0cHMlM0ElMkYlMkZoNS5sb3QtbWwuY29tJTJGaDVvcmRlckVuJTJGaW5kZXglM0ZwdWRJRCUzRDcxZmRmYzQxZWMzNGU2ZTMlMjZ1c2VyaWQlM0QxMzNiNjM5NGI4MTc4YTEx"
+
+# A-2128-90:
+  # text: "【广电】28元350G流量200分钟🔥"
+  # # url: "https://h5.lot-ml.com/h5orderEn/index?pudID=fcc02e2648866d30&userid=133b6394b8178a11"
+  # url: "/link/?data=aHR0cHMlM0ElMkYlMkZoNS5sb3QtbWwuY29tJTJGaDVvcmRlckVuJTJGaW5kZXglM0ZwdWRJRCUzRGZjYzAyZTI2NDg4NjZkMzAlMjZ1c2VyaWQlM0QxMzNiNjM5NGI4MTc4YTEx"
+
+# C-2122-85:
+  # text: "【联通】29元300G流量300分钟🔥"
+  # # url: "https://h5.lot-ml.com/h5orderEn/index?pudID=a6782e1c1a447411&userid=133b6394b8178a11"
+  # url: "/link/?data=aHR0cHMlM0ElMkYlMkZoNS5sb3QtbWwuY29tJTJGaDVvcmRlckVuJTJGaW5kZXglM0ZwdWRJRCUzRGE2NzgyZTFjMWE0NDc0MTElMjZ1c2VyaWQlM0QxMzNiNjM5NGI4MTc4YTEx"
 
 
 

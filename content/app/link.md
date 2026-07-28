@@ -1,5 +1,5 @@
 ---
-title: "橱窗"
+title: "链接"
 layout: 'aapp'
 searchHidden: true
 appHidden: true
@@ -11,7 +11,7 @@ url: "/link"
   width: 100%;
   max-width: 1200px;
   height: 80vh;
-  margin: 2rem auto;
+  margin: 0.1rem auto;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 12px rgba(0,0,0,0.1);
